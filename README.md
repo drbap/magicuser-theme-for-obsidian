@@ -21,7 +21,12 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 - Select the theme and click **Install and use**
 
 # Light and Dark Modes
+
 ![Light and Dark Mode Headings](images/magicuser_modes_headings.png)
+
+# Caret Colors for Improved Visibility
+
+![Dark mode caret color](images/magicuser_caret.png)
 
 # Feedback
   
