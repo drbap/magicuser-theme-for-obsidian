@@ -28,6 +28,18 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 
 ![Dark mode caret color](images/magicuser_caret.png)
 
+# Search Highlight in Current Note
+
+![Search Highlight in Current Note](images/magicuser_search.png)
+
+# Code Theme (Light and Dark)
+
+![MagicUser theme for programming](images/magicuser_codes.png)
+
+# Links in Different Colors
+
+![MagicUser Internal and External Links](images/magicuser_links.png)
+
 # Feedback
   
 If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
