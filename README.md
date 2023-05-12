@@ -1,6 +1,8 @@
 ![MagicUser theme for Obsidian](screenshot.png)
 
-# ✨**MagicUser**✨ Theme - Version: **1.0.0**
+# ✨**MagicUser**✨ Theme
+
+➡️ **Current Version**: **1.0.1**
 
 ![MagicUser Theme icon](magic_user_theme_icon.png)
 
