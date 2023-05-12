@@ -657,7 +657,7 @@ body.is-translucent:not(.is-fullscreen) {
   --mu-link-hover: #d372ff;
   --mu-external-link: #00a9dd;
   --mu-external-link-hover: #00c3ff;
-
+  --tab-divider-color: #003364;
 }
 
 .search-result-file-matched-text {
@@ -738,6 +738,14 @@ body.is-translucent:not(.is-fullscreen) {
   background-color: var(--mu-background-color-2);
 }
 
+.theme-dark .workspace-tab-header:not(.is-active) {
+  color: #00a3a3;
+}
+
+.theme-dark .workspace-tab-header:not(.is-active):hover {
+  color: var(--mu-cyan-2);
+}
+
 /* ======================================================== */
 /* Light theme settings */
 /* ======================================================== */
@@ -798,8 +806,8 @@ body.is-translucent:not(.is-fullscreen) {
   --code-string: #0000ff;
   --code-tag: var(--mu-magenta-1);
   --code-value: #ffa300;
+  --tab-divider-color: #003364;
 }
-
 
 .theme-light * {
   caret-color: var(--mu-magenta-1) !important;
@@ -858,5 +866,14 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
-  background-color: #c0ccf5;
+  background-color: #c0ccf588;
 }
+
+.theme-light .workspace-tab-header:not(.is-active) {
+  color: #00a3a3;
+}
+
+.theme-light .workspace-tab-header:not(.is-active):hover {
+  color: var(--mu-cyan-2);
+}
+
