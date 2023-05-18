@@ -1,4 +1,4 @@
-![MagicUser theme for Obsidian](screenshot.png)
+![MagicUser theme for Obsidian](images/screenshot_big.png)
 
 # ✨**MagicUser**✨ Theme
 
