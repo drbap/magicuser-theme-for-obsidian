@@ -2,8 +2,6 @@
 
 # ✨**MagicUser**✨ Theme
 
-➡️ **Current Version**: **1.0.1**
-
 ![MagicUser Theme icon](magic_user_theme_icon.png)
 
 ✨ **MagicUser** is a custom theme for Obsidian.md aiming to create a pleasant environment for note-taking activities with greater focus and concentration. It has **light theme** and **dark theme** for day/night use.
