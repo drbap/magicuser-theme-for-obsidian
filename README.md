@@ -44,7 +44,5 @@ Special congratulations to the Obsidian.md team for creating a great software ap
   
 If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
 
-# Disclaimer
 
-This theme has been tested on Windows computer. Hope it works well on other platforms. If you find an issue, please let me know.
-  
+
