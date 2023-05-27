@@ -238,8 +238,8 @@ body {
 
   /* Indentation guide */
   --indentation-guide-width: 1px;
-  --indentation-guide-color: rgba(var(--mono-rgb-100), 0.12);
-  --indentation-guide-color-active: rgba(var(--mono-rgb-100), 0.3);
+  --indentation-guide-color: #00a3ff48;
+  --indentation-guide-color-active: #bf00ff;
 
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -316,10 +316,6 @@ body {
   --nav-item-background-hover: var(--background-modifier-hover);
   --nav-item-background-active: var(--background-modifier-hover);
   --nav-item-background-selected: hsla(var(--color-accent-hsl), 0.15);
-  --nav-item-padding: var(--size-4-1) var(--size-4-2);
-  --nav-item-parent-padding: var(--nav-item-padding);
-  --nav-item-children-padding-left: var(--size-4-2);
-  --nav-item-children-margin-left: var(--size-4-3);
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
   --nav-item-weight-active: inherit;
@@ -577,7 +573,7 @@ body {
   --text-error: var(--color-red);
   --text-success: var(--color-green);
   --text-selection: hsla(var(--color-accent-hsl), 0.2);
-  --text-highlight-bg: #ffff0064;
+  --text-highlight-bg: #ffff0088;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
@@ -585,7 +581,6 @@ body {
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
-
 }
 
 body.is-translucent {
