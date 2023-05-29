@@ -7,7 +7,9 @@
 - Color tabs hovers
 - Bookmarked tabs (new color)
 - Improved state of active nav items
-- many other small adjustments to improve overall visibility
+- Improved settings window (titles / subtitles)
+- Modal transparency and color
+- Many other small adjustments to improve overall visibility
 
 ## [1.0.2] - 2023-05-27
 ### Fixed
