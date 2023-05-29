@@ -2,8 +2,8 @@
 
 ## [1.1.1] - 2023-05-29
 ### Added
-- Folder icons
-- Note icons
+- Folder icon
+- Note icon
 
 ## [1.1.0] - 2023-05-29
 ### Fixed
