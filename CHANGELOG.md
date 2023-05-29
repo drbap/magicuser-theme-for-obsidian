@@ -1,4 +1,14 @@
 # Changelog
+
+## [1.1.0] - 2023-05-29
+### Fixed
+**Light Theme** and **Dark theme**
+- Adjustments to improve search highlight readability in dark mode
+- Color tabs hovers
+- Bookmarked tabs (new color)
+- Improved state of active nav items
+- many other small adjustments to improve overall visibility
+
 ## [1.0.2] - 2023-05-27
 ### Fixed
 **Light Theme** and **Dark theme**
