@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.1] - 2023-05-29
+### Added
+- Folder icons
+- Note icons
+
 ## [1.1.0] - 2023-05-29
 ### Fixed
 - Adjustments to improve search highlight readability in dark mode
