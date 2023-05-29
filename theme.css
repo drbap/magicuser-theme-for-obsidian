@@ -917,3 +917,7 @@ body.is-translucent:not(.is-fullscreen) {
 .theme-dark .search-result-file-matched-text {
 	color: #000;
 }
+
+.workspace-tab-header-status-icon.mod-pinned:hover {
+	background-color: #00a3ff48 !important;
+}
