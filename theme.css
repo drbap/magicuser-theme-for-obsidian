@@ -921,3 +921,32 @@ body.is-translucent:not(.is-fullscreen) {
 .workspace-tab-header-status-icon.mod-pinned:hover {
 	background-color: #00a3ff48 !important;
 }
+
+.nav-folder .nav-folder-title-content:not(:nth-child(1)):before {
+
+
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300cfcf; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
+	width: 20px;
+	height: 20px;
+	padding-right: 8px;
+	zoom: 75%;
+	vertical-align: middle;
+}
+
+.nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1)):before {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%23008282; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
+	width: 20px;
+	height: 20px;
+	padding-right: 8px;
+	zoom: 75%;
+	vertical-align: middle;
+}
+
+.nav-file-title-content:before {
+	content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%23f1f1f1; stroke:%23a3a3a3; stroke-width:1' d='M3 2 C3 2 17 2 17 2 C17 2 17 19 17 19 C17 19 3 19 3 19 C3 19 3 2 3 2 z'/%3E%3Cpath style='fill:%23000000; stroke:none' d='M6 7 C6 7 14 7 14 7 C14 7 14 8 14 8 C14 8 6 8 6 8 C6 8 6 7 6 7 z'/%3E%3Cpath style='fill:%23000000; stroke:none' d='M6 10 C6 10 14 10 14 10 C14 10 14 11 14 11 C14 11 6 11 6 11 C6 11 6 10 6 10 z'/%3E%3Cpath style='fill:%23000000; stroke:none' d='M6 13 C6 13 14 13 14 13 C14 13 14 14 14 14 C14 14 6 14 6 14 C6 14 6 13 6 13 z'/%3E%3C/svg%3E%0A");
+	width: 20px;
+	height: 20px;
+	padding-right: 8px;
+	zoom: 75%;
+	vertical-align: middle;
+}
