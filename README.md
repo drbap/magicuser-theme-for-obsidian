@@ -24,6 +24,10 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 
 ![Light and Dark Mode Headings](images/magicuser_modes_headings.png)
 
+# Folders and Notes Icons
+
+![Folder and Notes Icons](images/folder_note_icons.png)
+
 # Caret Colors for Improved Visibility
 
 ![Dark mode caret color](images/magicuser_caret.png)
