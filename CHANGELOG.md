@@ -2,7 +2,6 @@
 
 ## [1.1.0] - 2023-05-29
 ### Fixed
-**Light Theme** and **Dark theme**
 - Adjustments to improve search highlight readability in dark mode
 - Color tabs hovers
 - Bookmarked tabs (new color)
