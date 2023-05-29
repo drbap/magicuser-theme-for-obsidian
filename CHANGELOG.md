@@ -4,11 +4,11 @@
 ### Fixed
 - Adjustments to improve search highlight readability in dark mode
 - Color tabs hovers
-- Bookmarked tabs (new color)
+- Bookmarked tabs (new color - background icon)
 - Improved state of active nav items
 - Improved settings window (titles / subtitles)
 - Modal transparency and color
-- Many other small adjustments to improve overall visibility
+- Many other small adjustments to improve user experience
 
 ## [1.0.2] - 2023-05-27
 ### Fixed
