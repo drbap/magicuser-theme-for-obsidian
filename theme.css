@@ -910,8 +910,7 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #007fff;
 }
 
-.workspace-tab-header
-{
+.workspace-tab-header {
 	background-color: var(--background-secondary);
 }
 
