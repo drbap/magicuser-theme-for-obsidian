@@ -16,7 +16,7 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 
 - Open Obsidian **Settings** -> select **Appearance**
 
-- Search for **MagicUser**
+- Themes -> Manage -> Search for **MagicUser**
 
 - Select the theme and click **Install and use**
 
