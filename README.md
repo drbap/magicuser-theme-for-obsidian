@@ -12,7 +12,7 @@ Thanks for using it 👍.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
 
-# Installation
+## Installation
 
 - Open Obsidian **Settings** -> select **Appearance**
 
@@ -20,33 +20,30 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 
 - Select the theme -> **Install and use**
 
-# Light and Dark Modes
+## Light and Dark Modes
 
 ![Light and Dark Mode Headings](images/magicuser_modes_headings.png)
 
-# Folders and Notes Icons
+## Folders and Notes Icons
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
 
-# Caret Colors for Improved Visibility
+## Caret Colors for Improved Visibility
 
 ![Dark mode caret color](images/magicuser_caret.png)
 
-# Search Highlight in Current Note
+## Search Highlight in Current Note
 
 ![Search Highlight in Current Note](images/magicuser_search.png)
 
-# Code Theme (Light and Dark)
+## Code Theme (Light and Dark)
 
 ![MagicUser theme for programming](images/magicuser_codes.png)
 
-# Links in Different Colors
+## Links in Different Colors
 
 ![MagicUser Internal and External Links](images/magicuser_links.png)
 
-# Feedback
+## Feedback
   
 If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
-
-
-
