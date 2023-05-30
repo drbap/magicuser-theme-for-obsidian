@@ -1,6 +1,6 @@
-![MagicUser theme for Obsidian](images/screenshot_big.png)
+# ✨**MagicUser**✨ Theme for Obsidian
 
-# ✨**MagicUser**✨ Theme
+![MagicUser theme for Obsidian](images/screenshot_big.png)
 
 ![MagicUser Theme icon](magic_user_theme_icon.png)
 
