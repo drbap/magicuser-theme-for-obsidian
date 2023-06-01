@@ -14,11 +14,11 @@ Special congratulations to the Obsidian.md team for creating a great software ap
 
 ## Installation
 
-- Open Obsidian **Settings** -> select **Appearance**
+1. Open Obsidian **Settings** -> select **Appearance**
 
-- **Themes** -> **Manage** -> search for **MagicUser**
+2. **Themes** -> click **Manage** -> search for **MagicUser**
 
-- Select the theme -> **Install and use**
+3. Select the theme -> click **Install and use**
 
 ## Light and Dark Modes
 
