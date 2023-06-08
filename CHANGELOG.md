@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.0] - 2023-06-07
+### Added
+- 20+ custom checkbox icons
+
+### Improvements
+- Adjustments on notes icons
+
 ## [1.1.1] - 2023-05-29
 ### Added
 - Folder icon
