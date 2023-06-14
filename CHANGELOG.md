@@ -2,7 +2,7 @@
 
 ## [2.0.1] - 2023-06-13
 ### Improvements
-- New notes icons
+- New note icon
 - Light mode: new sidebar background color
 
 ## [2.0.0] - 2023-06-07
