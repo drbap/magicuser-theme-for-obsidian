@@ -743,7 +743,7 @@ body.is-translucent:not(.is-fullscreen) {
 
 .theme-light {
 	--mu-background-color-1: #fff;
-	--mu-background-color-2: #dde4fa;
+	--mu-background-color-2: #d1dfff;
 	--mu-titlebar-background: #003388;
 	--mu-color-lig: #007fff;
 	--mu-gray-1: #a3a3a3;
@@ -857,7 +857,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
-	background-color: #c0ccf588;
+	background-color: #d1dfff;
 }
 
 .theme-light input.slider {
@@ -941,7 +941,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .nav-file-title-content:before {
-	content: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%23e8e8e8; stroke:%23828282; stroke-width:1' d='M3 2 C3 2 17 2 17 2 C17 2 17 19 17 19 C17 19 3 19 3 19 C3 19 3 2 3 2 z'/%3E%3Cpath style='fill:%23a3a3a3; stroke:none' d='M6 7 C6 7 14 7 14 7 C14 7 14 8 14 8 C14 8 6 8 6 8 C6 8 6 7 6 7 z'/%3E%3Cpath style='fill:%23a3a3a3; stroke:none' d='M6 10 C6 10 14 10 14 10 C14 10 14 11 14 11 C14 11 6 11 6 11 C6 11 6 10 6 10 z'/%3E%3Cpath style='fill:%23a3a3a3; stroke:none' d='M6 13 C6 13 14 13 14 13 C14 13 14 14 14 14 C14 14 6 14 6 14 C6 14 6 13 6 13 z'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' width='20' height='20' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m432 176v268c0 11.3-8.51 20.5-19.1 20.5h-314c-10.6 0-19.1-9.12-19.1-20.5v-374c0-11.3-1.15-20.5 9.45-20.5h231' fill='%23e8e8e8' fill-rule='evenodd' stroke='%23828282' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20.4' /%3E%3Cpath d='m335 52.8-0.947 108 96.3 0.233z' fill='%23828282' stroke='%23828282' stroke-width='10.6'/%3E%3C/svg%3E%0A");
 	width: 20px;
 	height: 20px;
 	padding-right: 8px;
@@ -1439,6 +1439,7 @@ li[data-task="3"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 /* Phone */
 input[data-task="f"]:checked,
 li[data-task="f"]>input:checked,
@@ -1463,6 +1464,7 @@ li[data-task="f"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 /* Flight */
 input[data-task="F"]:checked,
 li[data-task="F"]>input:checked,
@@ -1487,6 +1489,7 @@ li[data-task="F"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 /* Email */
 input[data-task="e"]:checked,
 li[data-task="e"]>input:checked,
@@ -1511,6 +1514,7 @@ li[data-task="e"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 /* Magic Wand for Special Highlights and Tips */
 input[data-task="m"]:checked,
 li[data-task="m"]>input:checked,
@@ -1535,6 +1539,7 @@ li[data-task="m"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 /* Time, Clock */
 input[data-task="t"]:checked,
 li[data-task="t"]>input:checked,
