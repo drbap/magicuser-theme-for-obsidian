@@ -24,24 +24,24 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ## Light and Dark Modes
 
-![Light and Dark Mode Headings](images/magicuser_modes_headings.png)
+![Light and Dark Mode Headings](images/magicuser_obsidian_headings.png)
 
 
 ## Caret Colors for Improved Visibility
 
-![Dark mode caret color](images/magicuser_caret.png)
+![Dark mode caret color](images/magicuser_caret_colors.png)
 
 ## Search Highlight in Current Note
 
-![Search Highlight in Current Note](images/magicuser_search.png)
+![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
 ## Code Theme (Light and Dark)
 
-![MagicUser theme for programming](images/magicuser_codes.png)
+![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
 
-## Links in Different Colors
+## Mobile Display
 
-![MagicUser Internal and External Links](images/magicuser_links.png)
+![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
 
 ## Feedback
   
