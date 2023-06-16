@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.0.0] - 2023-06-15
+### Improvements
+- Dark and light themes redesigned for mobile consistency (tablets and smartphones)
+- New light mode (light blue background color for less eye strain)
+- New folder colors
+- New notes color (sidebar)
+- New icons color (side menu and right-click menus)
+- Search highlights improvements (dark and light themes)
+- Caret colors to improve focus (blue-cyan for dark mode and hot purple for light mode)
+- Canvas adjustments
+- Buttons colors
+- Modal and prompt borders
+- Many small adjustments to reduce distraction and create a better writing/study experience
+
 ## [2.0.1] - 2023-06-13
 ### Improvements
 - New note icon
