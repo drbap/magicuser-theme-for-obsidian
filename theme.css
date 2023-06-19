@@ -747,12 +747,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-dark button {
+.theme-dark button:not(.mod-cta) {
 	color: #f1f1f1;
 	background-color: #00a3ff30;
 }
 
-.theme-dark button:hover {
+.theme-dark button:not(.mod-cta):hover {
 	color: #f1f1f1;
 	background-color: #00a3ff40;
 }
@@ -920,12 +920,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-light button {
+.theme-light button:not(.mod-cta) {
 	color: #000;
 	background-color: #00a3ff30;
 }
 
-.theme-light button:hover {
+.theme-light button:not(.mod-cta):hover {
 	color: #000;
 	background-color: #00a3ff40
 }
