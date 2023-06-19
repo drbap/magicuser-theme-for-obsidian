@@ -747,12 +747,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-dark button:not(.mod-cta) {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true']) {
 	color: #f1f1f1;
 	background-color: #00a3ff30;
 }
 
-.theme-dark button:not(.mod-cta):hover {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true']):hover {
 	color: #f1f1f1;
 	background-color: #00a3ff40;
 }
@@ -920,12 +920,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-light button:not(.mod-cta) {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true']) {
 	color: #000;
 	background-color: #00a3ff30;
 }
 
-.theme-light button:not(.mod-cta):hover {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true']):hover {
 	color: #000;
 	background-color: #00a3ff40
 }
