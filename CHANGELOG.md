@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.1] - 2023-06-19
+### Improvements
+- Dark and light themes: settings buttons with accent colors.
+
 ## [3.0.0] - 2023-06-15
 ### Improvements
 - Dark and light themes redesigned for mobile consistency (tablets and smartphones)
