@@ -2,7 +2,7 @@
 
 ## [3.0.2] - 2023-06-19
 ### Fixed
-- Dark and light themes: buttons colors/hovers when disabled.
+- Dark and light themes: buttons color/hover effect when disabled.
 
 ## [3.0.1] - 2023-06-19
 ### Improvements
