@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.0.2] - 2023-06-19
+### Fixed
+- Dark and light themes: buttons colors/hovers when disabled.
+
 ## [3.0.1] - 2023-06-19
 ### Improvements
 - Dark and light themes: settings buttons with accent colors.
