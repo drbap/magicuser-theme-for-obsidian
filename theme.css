@@ -577,6 +577,19 @@ body {
 	--text-highlight-bg: #ffff0088;
 	--text-accent: var(--color-accent);
 	--text-accent-hover: var(--color-accent-2);
+
+	/* MagicUser Callouts */
+	--mu-callout-magic: 207, 88, 255;
+	--mu-callout-green: 0, 180, 88;
+	--mu-callout-blue: 0, 136, 255;
+	--mu-callout-orange: 255, 97, 0;
+	--mu-callout-yellow: 237, 188, 0;
+	--mu-callout-red: 255, 48, 48;
+	--mu-callout-pink: 255, 18, 241;
+	--mu-callout-purple: 201, 0, 255;
+	--mu-callout-video: 237, 48, 48;
+	--mu-callout-mic: 0, 188, 82;
+	--mu-callout-paperclip: 255, 163, 33;
 }
 
 body.is-translucent {
@@ -645,7 +658,7 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff48 !important;
 }
 
-.nav-folder .nav-folder-title-content:not(:nth-child(1)):before {
+.nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
 	width: 20px;
 	height: 20px;
@@ -654,7 +667,7 @@ body.is-translucent:not(.is-fullscreen) {
 	vertical-align: middle;
 }
 
-.nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1)):before {
+.nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
 	width: 20px;
 	height: 20px;
@@ -663,7 +676,7 @@ body.is-translucent:not(.is-fullscreen) {
 	vertical-align: middle;
 }
 
-.nav-file-title-content:before {
+.nav-file-title-content::before {
 	content: url("data:image/svg+xml,%3Csvg version='1.1' width='20' height='20' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m432 176v268c0 11.3-8.51 20.5-19.1 20.5h-314c-10.6 0-19.1-9.12-19.1-20.5v-374c0-11.3-1.15-20.5 9.45-20.5h231' fill='none' fill-rule='evenodd' stroke='%230048cf' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20.4' /%3E%3Cpath d='m335 52.8-0.947 108 96.3 0.233z' fill='%230048cf' stroke='%230048cf' stroke-width='10.6'/%3E%3C/svg%3E%0A");
 	width: 20px;
 	height: 20px;
@@ -1640,6 +1653,112 @@ li[data-task="g"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
+}
+
+/* Callouts */
+/* Magic Callout */
+.callout[data-callout="magic"] {
+	--callout-color: var(--mu-callout-magic);
+	--callout-icon: wand-2;
+	border: .2rem double rgb(var(--mu-callout-magic));
+}
+
+/* Highlighters */
+.callout[data-callout="hl-green"] {
+	--callout-color: var(--mu-callout-green);
+	--callout-icon: highlighter;
+}
+
+
+.callout[data-callout="hl-blue"] {
+	--callout-color: var(--mu-callout-blue);
+	--callout-icon: highlighter;
+}
+
+.callout[data-callout="hl-orange"] {
+	--callout-color: var(--mu-callout-orange);
+	--callout-icon: highlighter;
+}
+
+.callout[data-callout="hl-yellow"] {
+	--callout-color: var(--mu-callout-yellow);
+	--callout-icon: highlighter;
+}
+
+.callout[data-callout="hl-red"] {
+	--callout-color: var(--mu-callout-red);
+	--callout-icon: highlighter;
+}
+
+.callout[data-callout="hl-pink"] {
+	--callout-color: var(--mu-callout-pink);
+	--callout-icon: highlighter;
+}
+
+.callout[data-callout="hl-purple"] {
+	--callout-color: var(--mu-callout-purple);
+	--callout-icon: highlighter;
+}
+
+/* Pens */
+.callout[data-callout="p-green"] {
+	--callout-color: var(--mu-callout-green);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-green));
+}
+
+.callout[data-callout="p-blue"] {
+	--callout-color: var(--mu-callout-blue);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-blue));
+}
+
+.callout[data-callout="p-orange"] {
+	--callout-color: var(--mu-callout-orange);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-orange));
+}
+
+.callout[data-callout="p-yellow"] {
+	--callout-color: var(--mu-callout-yellow);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-yellow));
+}
+
+.callout[data-callout="p-red"] {
+	--callout-color: var(--mu-callout-red);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-red));
+}
+
+.callout[data-callout="p-pink"] {
+	--callout-color: var(--mu-callout-pink);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-pink));
+}
+
+.callout[data-callout="p-purple"] {
+	--callout-color: var(--mu-callout-purple);
+	--callout-icon: pen-tool;
+	border: .1rem solid rgb(var(--mu-callout-purple));
+}
+
+/* Video */
+.callout[data-callout="video"] {
+	--callout-color: var(--mu-callout-video);
+	--callout-icon: video;
+}
+
+/* Mic */
+.callout[data-callout="mic"] {
+	--callout-color: var(--mu-callout-mic);
+	--callout-icon: mic;
+}
+
+/* Clip */
+.callout[data-callout="clip"] {
+	--callout-color: var(--mu-callout-paperclip);
+	--callout-icon: paperclip;
 }
 
 /* Extra Mobile Adjustments */
