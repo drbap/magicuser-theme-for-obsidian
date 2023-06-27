@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.1.0] - 2023-06-27
+### Improvements
+- Additional callouts in various colors (18 callouts).
+
 ## [3.0.2] - 2023-06-19
 ### Fixed
 - Dark and light themes: buttons color/hover effect when disabled.
