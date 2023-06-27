@@ -18,6 +18,12 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
 
+## Additional Callouts
+
+![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
+
+![Additional Callouts](images/magicuser_callouts_02.png)
+
 ## Folders and Notes Icons
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
