@@ -24,6 +24,41 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Additional Callouts](images/magicuser_callouts_02.png)
 
+**Highlighter Callouts**
+- `>[!hl-` + `color] Your Callout Title`
+- Colors: green, blue, orange, yellow, red, pink, purple
+
+Example: *highlighter green callout*
+```
+>[!hl-green] Your callout title here
+>Callout text here
+
+```
+
+**Pen Callouts**
+- `>[!p-` + `color] Your Callout Title`
+- Colors: green, blue, orange, yellow, red, pink, purple
+
+Example: *pen blue callout*
+```
+>[!p-blue] Your callout title here
+>Callout text here
+
+```
+
+**Video, Mic, Clip and Magic Callouts**
+- `>[!video] Your Callout Title`
+- `>[!mic] Your Callout Title`
+- `>[!clip] Your Callout Title`
+- `>[!magic] Your Callout Title`
+
+Example: *magic callout*
+```
+>[!magic] Special Tip
+>Callout text here
+
+```
+ 
 ## Folders and Notes Icons
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
