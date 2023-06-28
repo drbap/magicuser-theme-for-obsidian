@@ -25,8 +25,10 @@ I hope this theme helps to increase your productivity and inspiration.
 ![Additional Callouts](images/magicuser_callouts_02.png)
 
 **Highlighter Callouts**
-- `>[!hl-` + `color] Your Callout Title`
-- Colors: green, blue, orange, yellow, red, pink, purple
+
+`>[!hl-` + `color] Your Callout Title`
+
+Colors: green, blue, orange, yellow, red, pink, purple
 
 Example: *highlighter green callout*
 ```
@@ -36,8 +38,10 @@ Example: *highlighter green callout*
 ```
 
 **Pen Callouts**
-- `>[!p-` + `color] Your Callout Title`
-- Colors: green, blue, orange, yellow, red, pink, purple
+
+`>[!p-` + `color] Your Callout Title`
+
+Colors: green, blue, orange, yellow, red, pink, purple
 
 Example: *pen blue callout*
 ```
@@ -47,10 +51,14 @@ Example: *pen blue callout*
 ```
 
 **Video, Mic, Clip and Magic Callouts**
-- `>[!video] Your Callout Title`
-- `>[!mic] Your Callout Title`
-- `>[!clip] Your Callout Title`
-- `>[!magic] Your Callout Title`
+
+`>[!video] Your Callout Title`
+
+`>[!mic] Your Callout Title`
+
+`>[!clip] Your Callout Title`
+
+`>[!magic] Your Callout Title`
 
 Example: *magic callout*
 ```
