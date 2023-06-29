@@ -590,6 +590,12 @@ body {
 	--mu-callout-video: 237, 48, 48;
 	--mu-callout-mic: 0, 188, 82;
 	--mu-callout-paperclip: 255, 163, 33;
+	--mu-callout-book: 0, 163, 255;
+	--mu-callout-target: 255, 72, 72;
+	--mu-callout-comment: 0, 188, 188;
+	--mu-callout-pro: 0, 197, 88;
+	--mu-callout-con: 228, 48, 48;
+	--mu-callout-link: 48, 142, 255;
 }
 
 body.is-translucent {
@@ -760,12 +766,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true']) {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning) {
 	color: #f1f1f1;
 	background-color: #00a3ff30;
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true']):hover {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning):hover {
 	color: #f1f1f1;
 	background-color: #00a3ff40;
 }
@@ -933,12 +939,12 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #00a3ff20
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true']) {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning) {
 	color: #000;
 	background-color: #00a3ff30;
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true']):hover {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning):hover {
 	color: #000;
 	background-color: #00a3ff40
 }
@@ -1759,6 +1765,52 @@ li[data-task="g"]>p>input:checked::after {
 .callout[data-callout="clip"] {
 	--callout-color: var(--mu-callout-paperclip);
 	--callout-icon: paperclip;
+}
+
+/* Book */
+.callout[data-callout="book"] {
+	--callout-color: var(--mu-callout-book);
+	--callout-icon: book-open;
+}
+
+/* Target */
+.callout[data-callout="target"] {
+	--callout-color: var(--mu-callout-target);
+	--callout-icon: target;
+}
+
+/* Pros */
+.callout[data-callout="pro"],
+.callout[data-callout="pros"] {
+	--callout-color: var(--mu-callout-pro);
+	--callout-icon: thumbs-up;
+	border-left: .3rem solid rgb(var(--mu-callout-pro));
+	border-radius: 0;
+}
+
+/* Cons */
+.callout[data-callout="con"],
+.callout[data-callout="cons"] {
+	--callout-color: var(--mu-callout-con);
+	--callout-icon: thumbs-down;
+	border-left: .3rem solid rgb(var(--mu-callout-con));
+	border-radius: 0;
+}
+
+/* Link */
+.callout[data-callout="link"],
+.callout[data-callout="links"] {
+	--callout-color: var(--mu-callout-link);
+	--callout-icon: link;
+	border-left: .3rem solid rgb(var(--mu-callout-link));
+	border-radius: 0;
+	background: none;
+}
+
+/* Comment */
+.callout[data-callout="comment"] {
+	--callout-color: var(--mu-callout-comment);
+	--callout-icon: message-square;
 }
 
 /* Extra Mobile Adjustments */
