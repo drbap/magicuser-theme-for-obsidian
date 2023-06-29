@@ -3,7 +3,7 @@
 ## [3.3.0] - 2023-06-29
 ### Improvements
 - Proper cursor color while selecting text (light and dark themes).
-- Proper cursor color on additional cursors and multiple selections(light and dark themes).
+- Proper cursor color on additional cursors and multiple selections (light and dark themes).
 
 ## [3.2.0] - 2023-06-28
 ### Improvements
