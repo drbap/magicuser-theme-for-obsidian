@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.2.0] - 2023-06-28
+### Improvements
+- Additional callouts: book, comment, target. pros, cons, link (6 callouts).
+### Fixed
+- Note/folder delete button color fix.
+
 ## [3.1.0] - 2023-06-27
 ### Improvements
 - Additional callouts in various colors (18 callouts).
