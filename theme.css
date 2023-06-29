@@ -851,6 +851,12 @@ body.is-translucent:not(.is-fullscreen) {
 	color: #00a3ff;
 }
 
+.theme-dark .CodeMirror-cursor,
+.theme-dark .cm-cursor,
+.theme-dark .cm-dropCursor {
+	border-color: #00cfff !important;
+}
+
 /* ======================================================== */
 /* Light theme settings */
 /* ======================================================== */
@@ -1018,6 +1024,12 @@ body.is-translucent:not(.is-fullscreen) {
 
 .theme-light .setting-item.setting-item-heading>.setting-item-info>.setting-item-name {
 	color: #0048f1;
+}
+
+.theme-light .CodeMirror-cursor,
+.theme-light .cm-cursor,
+.theme-light .cm-dropCursor {
+	border-color: #cf00ff !important;
 }
 
 /* Extra checkboxes */
