@@ -52,27 +52,27 @@ Example: *pen blue callout*
 
 ```
 
-**Video, Mic, Clip, Book, Comment, Target, Pros, Cons, Link, and Magic Callouts**
+**Specific Callouts**
 
-`>[!video] Your Callout Title`
+`>[!video]`
 
-`>[!mic] Your Callout Title`
+`>[!mic]`
 
-`>[!clip] Your Callout Title`
+`>[!clip]`
 
-`>[!book] Your Callout Title`
+`>[!book]`
 
-`>[!comment] Your Callout Title`
+`>[!comment]`
 
-`>[!target] Your Callout Title`
+`>[!target]`
 
-`>[!pro] Your Callout Title` or `>[!pros] Your Callout Title`
+`>[!pro]` or `>[!pros]`
 
-`>[!con] Your Callout Title` or `>[!cons] Your Callout Title`
+`>[!con]` or `>[!cons]`
 
-`>[!link] Your Callout Title` or `>[!links] Your Callout Title`
+`>[!link]` or `>[!links]`
 
-`>[!magic] Your Callout Title`
+`>[!magic]`
 
 Example: *magic callout*
 ```
