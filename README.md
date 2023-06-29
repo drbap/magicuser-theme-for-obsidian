@@ -24,6 +24,8 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Additional Callouts](images/magicuser_callouts_02.png)
 
+![Additional Callouts](images/magicuser_callouts_03.png)
+
 **Highlighter Callouts**
 
 `>[!hl-` + `color] Your Callout Title`
@@ -50,13 +52,25 @@ Example: *pen blue callout*
 
 ```
 
-**Video, Mic, Clip and Magic Callouts**
+**Video, Mic, Clip, Book, Comment, Target, Pros, Cons, Link, and Magic Callouts**
 
 `>[!video] Your Callout Title`
 
 `>[!mic] Your Callout Title`
 
 `>[!clip] Your Callout Title`
+
+`>[!book] Your Callout Title`
+
+`>[!comment] Your Callout Title`
+
+`>[!target] Your Callout Title`
+
+`>[!pro] Your Callout Title` or `>[!pros] Your Callout Title`
+
+`>[!con] Your Callout Title` or `>[!cons] Your Callout Title`
+
+`>[!link] Your Callout Title` or `>[!links] Your Callout Title`
 
 `>[!magic] Your Callout Title`
 
