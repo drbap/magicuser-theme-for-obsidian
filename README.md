@@ -94,6 +94,10 @@ Example: *magic callout*
 
 ![Dark mode caret color](images/magicuser_caret_colors.png)
 
+## Caret Width (Selection and Multiple Cursors)
+
+![Dark mode caret width](images/magicuser_caret_width.png)
+
 ## Search Highlight in Current Note
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
