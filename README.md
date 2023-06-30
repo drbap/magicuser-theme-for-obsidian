@@ -98,6 +98,9 @@ Example: *magic callout*
 
 ![Dark mode caret width](images/magicuser_caret_width.png)
 
+- When selecting text, the main edit cursor/caret will have a **different width** for better visibility (**no blinking caret**).
+- Additional carets/cursors have a different width and no blinking carets (solid appearance).
+
 ## Search Highlight in Current Note
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
