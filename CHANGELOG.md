@@ -4,7 +4,7 @@
 ### Improvements
 - New width of the primary edit cursor during text selection - for improved visibility and comfort while selecting text.
 - No caret blinking during text selection.
-- Additional cursors with different width and also no caret blinking. Easier to see the additional cursors.
+- Additional cursors with different width and also no caret blinking. Easier to see the multiple carets/cursors.
 
 ## [3.3.0] - 2023-06-29
 ### Improvements
