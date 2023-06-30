@@ -1032,6 +1032,14 @@ body.is-translucent:not(.is-fullscreen) {
 	border-color: #cf00ff !important;
 }
 
+.cm-layer.cm-layer-above.cm-cursorLayer {
+	animation: none !important;
+}
+
+.cm-cursor, .cm-dropCursor  {
+	border-left-width: 3px !important;
+}
+
 /* Extra checkboxes */
 input[data-task="!"]:checked,
 li[data-task="!"]>input:checked,
