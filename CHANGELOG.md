@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.4.1] - 2023-07-01
+### Fix
+- Folder title color when dragged (light and dark themes).
+
 ## [3.4.0] - 2023-06-30
 ### Improvements
 - New width of the primary edit cursor during text selection - for improved visibility and comfort while selecting text.
