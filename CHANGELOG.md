@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.5.0] - 2023-07-21
+### Improvements
+- New quote callouts (7 colors)
+- Tags - monospace font.
+
 ## [3.4.1] - 2023-07-01
 ### Fix
 - Folder title color when dragged (light and dark themes).
