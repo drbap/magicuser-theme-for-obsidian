@@ -56,7 +56,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Quote Callouts**
 
-`>[!q-` + `color] Quote text`
+`>[!q-` + `color] Quote`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
