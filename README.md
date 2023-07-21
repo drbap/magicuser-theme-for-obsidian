@@ -16,7 +16,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ## Key Features Navigation
 
-- [Custom Checkbox Icons](https://github.com/drbap/magicuser-theme-for-obsidian#custom-checkbox-icons)
+- [Custom Checkbox Icons](#custom-checkbox-icons)
 
 ## Custom Checkbox Icons
 
