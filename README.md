@@ -54,7 +54,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ```
 
-**Quotes Callouts**
+**Quote Callouts**
 
 `>[!q-` + `color] Quote text`
 
