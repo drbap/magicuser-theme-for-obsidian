@@ -28,7 +28,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Additional Callouts Quotes](images/magicuser_callouts_quotes.png)
 
-**Highlighter Callouts**
+### Highlighter Callouts
 
 `>[!hl-` + `color] Your Callout Title`
 
@@ -41,7 +41,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ```
 
-**Pen Callouts**
+### Pen Callouts
 
 `>[!p-` + `color] Your Callout Title`
 
@@ -54,7 +54,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ```
 
-**Quote Callouts**
+### Quote Callouts
 
 `>[!q-` + `color] Quote`
 
@@ -67,7 +67,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ```
 
-**Specific Callouts**
+### Specific Callouts
 
 `>[!video]`
 
@@ -89,7 +89,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 `>[!magic]`
 
-Example: *magic callout*
+**Example**: *magic callout*
 ```
 >[!magic] Special Tip
 >Callout text here
