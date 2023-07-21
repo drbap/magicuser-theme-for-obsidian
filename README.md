@@ -73,7 +73,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 `>[!mic]`
 
-`>[!clip]`
+`>[!clip]` or `>[!paperclip]`
 
 `>[!book]`
 
