@@ -14,6 +14,10 @@ I hope this theme helps to increase your productivity and inspiration.
 
 3. Select the theme -> click **Install and use**
 
+## Key Features Navigation
+
+- [Custom Checkbox Icons](https://github.com/drbap/magicuser-theme-for-obsidian#custom-checkbox-icons)
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
