@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.6.0] - 2023-07-21
+### Improvements
+- Tables layout
+
 ## [3.5.0] - 2023-07-21
 ### Improvements
 - New quote callouts (7 colors)
