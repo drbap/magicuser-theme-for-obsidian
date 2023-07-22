@@ -2,11 +2,12 @@
 
 ## [3.6.0] - 2023-07-21
 ### Improvements
-- Tables layout
+- New tables layout.
+- Table row hover.
 
 ## [3.5.0] - 2023-07-21
 ### Improvements
-- New quote callouts (7 colors)
+- New quote callouts (7 colors).
 - Tags - monospace font.
 
 ## [3.4.1] - 2023-07-01
