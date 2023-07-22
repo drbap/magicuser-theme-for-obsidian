@@ -668,6 +668,7 @@ body.is-translucent:not(.is-fullscreen) {
 .tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged {
 	color: #f1f1f1 !important;
 }
+
 .tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged svg {
 	color: #f1f1f1 !important;
 	stroke: #f1f1f1 !important;
@@ -1049,7 +1050,8 @@ body.is-translucent:not(.is-fullscreen) {
 	animation: none !important;
 }
 
-.cm-cursor, .cm-dropCursor  {
+.cm-cursor,
+.cm-dropCursor {
 	border-left-width: 3px !important;
 }
 
@@ -1795,7 +1797,8 @@ li[data-task="g"]>p>input:checked::after {
 }
 
 /* Clip */
-.callout[data-callout="clip"], .callout[data-callout="paperclip"] {
+.callout[data-callout="clip"],
+.callout[data-callout="paperclip"] {
 	--callout-color: var(--mu-callout-paperclip);
 	--callout-icon: paperclip;
 }
@@ -1847,66 +1850,116 @@ li[data-task="g"]>p>input:checked::after {
 }
 
 /* Quote blue */
-.callout[data-callout="q-blue"] {	
+.callout[data-callout="q-blue"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-blue),0.2);
+	background-color: rgba(var(--mu-callout-blue), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-blue));
 	border-radius: 0;
 }
 
 /* Quote green */
-.callout[data-callout="q-green"] {	
+.callout[data-callout="q-green"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-green),0.2);
+	background-color: rgba(var(--mu-callout-green), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-green));
 	border-radius: 0;
 }
 
 /* Quote orange */
-.callout[data-callout="q-orange"] {	
+.callout[data-callout="q-orange"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-orange),0.2);
+	background-color: rgba(var(--mu-callout-orange), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-orange));
 	border-radius: 0;
 }
 
 /* Quote yellow */
-.callout[data-callout="q-yellow"] {	
+.callout[data-callout="q-yellow"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-yellow),0.2);
+	background-color: rgba(var(--mu-callout-yellow), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-yellow));
 	border-radius: 0;
 }
 
 /* Quote red */
-.callout[data-callout="q-red"] {	
+.callout[data-callout="q-red"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-red),0.2);
+	background-color: rgba(var(--mu-callout-red), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-red));
 	border-radius: 0;
 }
 
 /* Quote pink */
-.callout[data-callout="q-pink"] {	
+.callout[data-callout="q-pink"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-pink),0.2);
+	background-color: rgba(var(--mu-callout-pink), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-pink));
 	border-radius: 0;
 }
 
 /* Quote purple */
-.callout[data-callout="q-purple"] {	
+.callout[data-callout="q-purple"] {
 	--callout-color: var(--mu-text-1);
 	--callout-icon: var(--mu-quote-icon);
-	background-color: rgba(var(--mu-callout-purple),0.2);
+	background-color: rgba(var(--mu-callout-purple), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-purple));
 	border-radius: 0;
+}
+
+/* Tables Styles Light and Dark Theme */
+
+.theme-light table {
+	width: 100%;
+	border: 2px solid #004882;
+}
+
+.theme-light th {
+	background-color: #004882 !important;
+	color: #f1f1f1 !important;
+}
+
+.theme-light td {
+	background-color: #007fff10 !important;
+}
+
+.theme-light tr:nth-child(even) {
+	background-color: #007fff20 !important;
+}
+
+.theme-light tr:hover {
+	background-color: #ffff0048 !important;
+}
+
+.theme-dark table {
+	width: 100%;
+	border: 2px solid #004882;
+}
+
+.theme-dark th {
+	background-color: #004882 !important;
+	color: #f1f1f1 !important;
+}
+
+.theme-dark td {
+	background-color: #007fff10 !important;
+}
+
+.theme-dark tr:nth-child(even) {
+	background-color: #007fff02 !important;
+}
+
+.theme-dark tr:hover {
+	background-color: #ffff0048 !important;
+}
+
+th, td {
+  border: 0 !important;
 }
 
 /* Extra Mobile Adjustments */
