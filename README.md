@@ -30,69 +30,69 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ### Highlighter Callouts
 
-`>[!hl-` + `color] Your Callout Title`
+`> [!hl-` + `color] Your Callout Title`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *highlighter green callout*
 ```
->[!hl-green] Your callout title here
->Callout text here
+> [!hl-green] Your callout title here
+> Callout text here
 
 ```
 
 ### Pen Callouts
 
-`>[!p-` + `color] Your Callout Title`
+`> [!p-` + `color] Your Callout Title`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *pen blue callout*
 ```
->[!p-blue] Your callout title here
->Callout text here
+> [!p-blue] Your callout title here
+> Callout text here
 
 ```
 
 ### Quote Callouts
 
-`>[!q-` + `color] Quote`
+`> [!q-` + `color] Quote`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *Quote green callout*
 ```
->[!q-green] Quote
->Quote author or comment
+> [!q-green] Quote
+> Quote author or comment
 
 ```
 
 ### Specific Callouts
 
-`>[!video]`
+`> [!video]`
 
-`>[!mic]`
+`> [!mic]`
 
-`>[!clip]` or `>[!paperclip]`
+`> [!clip]` or `> [!paperclip]`
 
-`>[!book]`
+`> [!book]`
 
-`>[!comment]`
+`> [!comment]`
 
-`>[!target]`
+`> [!target]`
 
-`>[!pro]` or `>[!pros]`
+`> [!pro]` or `> [!pros]`
 
-`>[!con]` or `>[!cons]`
+`> [!con]` or `> [!cons]`
 
-`>[!link]` or `>[!links]`
+`> [!link]` or `> [!links]`
 
-`>[!magic]`
+`> [!magic]`
 
 **Example**: *magic callout*
 ```
->[!magic] Special Tip
->Callout text here
+> [!magic] Special Tip
+> Callout text here
 
 ```
  
