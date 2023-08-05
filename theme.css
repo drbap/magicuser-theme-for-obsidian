@@ -30,6 +30,48 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+===========================================================
+CheckBox Icons and Callout Icons License and Attribution
+===========================================================
+Most of the icons for the checkboxes and the quote icon were created by me (Bernardo Pires - @drbap). MIT License. You can find the comment in the embedded SVG.
+
+The icons used by other callouts and some checkboxes icons are from Lucide Icons used by Obsidian. Lucide is totally free for commercial use and personal use, the Lucide icon library is licensed under the ISC License. You can find more information below:
+
+Lucide Icons Link:
+https://lucide.dev/
+
+Lucide Github Link:
+https://github.com/lucide-icons/lucide
+
+Lucide Icons License:
+ISC License
+
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+=============================
+Acknowledgements
+=============================
+Some checkbox icons were inpired by Minimal Theme by Stephan Ango @kepano and Things Theme by Colin Eckert (@colineckert). You can find more information about @kepano and @colineckert. Please check their themes and support their work at the links below:
+
+Minimal Theme by Stephan Ango (@kepano)
+https://github.com/kepano/obsidian-minimal
+
+Things Theme by Colin Eckert (@colineckert)
+https://github.com/colineckert/obsidian-things
+
 */
 /* ======================================================== */
 @charset "UTF-8";
@@ -1696,6 +1738,204 @@ li[data-task="g"]>p>input:checked::after {
 	mask-image: none;
 }
 
+/*
+Extra Checkbox Icons
+Icons from Lucide Icons
+ISC License (it is on the top of the page)
+https://lucide.dev
+
+key
+- [w] win
+- [u] up
+- [d] down
+- [D] draft pull request
+- [P] open pull request
+- [M] merged pull request 
+ */
+
+/* Win */
+input[data-task="w"]:checked,
+li[data-task="w"]>input:checked,
+li[data-task="w"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="w"]:checked::after,
+li[data-task="w"]>input:checked::after,
+li[data-task="w"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23a300a3' stroke='%23bf00ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-cake'%3E%3Cpath d='M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8'/%3E%3Cpath d='M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1'/%3E%3Cpath d='M2 21h20'/%3E%3Cpath d='M7 8v2'/%3E%3Cpath d='M12 8v2'/%3E%3Cpath d='M17 8v2'/%3E%3Cpath d='M7 4h.01'/%3E%3Cpath d='M12 4h.01'/%3E%3Cpath d='M17 4h.01'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Up */
+input[data-task="u"]:checked,
+li[data-task="u"]>input:checked,
+li[data-task="u"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="u"]:checked::after,
+li[data-task="u"]>input:checked::after,
+li[data-task="u"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300bf53' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-trending-up'%3E%3Cpolyline points='22 7 13.5 15.5 8.5 10.5 2 17'/%3E%3Cpolyline points='16 7 22 7 22 13'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Down */
+input[data-task="d"]:checked,
+li[data-task="d"]>input:checked,
+li[data-task="d"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="d"]:checked::after,
+li[data-task="d"]>input:checked::after,
+li[data-task="d"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f10000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-trending-down'%3E%3Cpolyline points='22 17 13.5 8.5 8.5 13.5 2 7'/%3E%3Cpolyline points='16 17 22 17 22 11'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Key */
+input[data-task="k"]:checked,
+li[data-task="k"]>input:checked,
+li[data-task="k"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="k"]:checked::after,
+li[data-task="k"]>input:checked::after,
+li[data-task="k"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffd700' stroke='%2348484882' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4a6.5 6.5 0 1 0-4-4Z'/%3E%3Ccircle cx='16.5' cy='7.5' r='.5'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Draft Pull Request */
+input[data-task="D"]:checked,
+li[data-task="D"]>input:checked,
+li[data-task="D"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="D"]:checked::after,
+li[data-task="D"]>input:checked::after,
+li[data-task="D"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23a3a3a3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-git-pull-request-draft'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M18 6V5'/%3E%3Cpath d='M18 11v-1'/%3E%3Cline x1='6' x2='6' y1='9' y2='21'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Open Pull Request */
+input[data-task="P"]:checked,
+li[data-task="P"]>input:checked,
+li[data-task="P"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="P"]:checked::after,
+li[data-task="P"]>input:checked::after,
+li[data-task="P"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300bf53' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-git-pull-request'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M13 6h3a2 2 0 0 1 2 2v7'/%3E%3Cline x1='6' x2='6' y1='9' y2='21'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+*[data-task="P"] .cm-list-1 {
+	color:#00bf53;
+}
+
+/* Merged Pull Request */
+input[data-task="M"]:checked,
+li[data-task="M"]>input:checked,
+li[data-task="M"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="M"]:checked::after,
+li[data-task="M"]>input:checked::after,
+li[data-task="M"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d228ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-git-merge'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M6 21V9a9 9 0 0 0 9 9'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 80%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+*[data-task="M"] .cm-list-1 {
+	color:#828282;
+}
+
 /* Callouts */
 /* Magic Callout */
 .callout[data-callout="magic"] {
@@ -1958,8 +2198,9 @@ li[data-task="g"]>p>input:checked::after {
 	background-color: #ffff0048 !important;
 }
 
-th, td {
-  border: 0 !important;
+th,
+td {
+	border: 0 !important;
 }
 
 /* Extra Mobile Adjustments */
