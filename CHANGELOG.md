@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.7.0] - 2023-08-05
+### Improvements
+- New checkbox icons (7 icons).
+
 ## [3.6.0] - 2023-07-21
 ### Improvements
 - New tables layout.
