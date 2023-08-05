@@ -18,6 +18,9 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
 
+## Additional Checkbox Icons (Extra 1)
+![Custom Checkbox Icons - Extra 1](images/magicuser_checkboxes_icons_extra_1.png)
+
 ## Additional Callouts
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
@@ -166,5 +169,18 @@ If you have any issues and/or suggestions, please submit an issue. I will try to
 MagicUser Theme for Obsidian
 
 MIT License ⓒ Bernardo Pires
+
+Most of the icons for the checkboxes and the quote icon were created by me (MIT License). You can find the comment in the embedded SVGs.
+
+The icons used by other callouts and some checkboxes icons are from [Lucide](https://lucide.dev/) Icons used by Obsidian. The Lucide icon library is licensed under the ISC License.
+
+Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango (@kepano) and the Things Theme by Colin Eckert (@colineckert). You can find more information about @kepano and @colineckert below, please check their themes and support their work:
+
+- [Minimal Theme by Stephan Ango](https://github.com/kepano/obsidian-minimal)
+
+- [Things Theme by Colin Eckert](https://github.com/colineckert/obsidian-things)
+
+**Tranks for the Suggestions**
+- Thanks to @alitekdemir for the suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
