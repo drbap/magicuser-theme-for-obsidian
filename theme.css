@@ -638,7 +638,8 @@ body {
 	--mu-callout-pro: 0, 197, 88;
 	--mu-callout-con: 228, 48, 48;
 	--mu-callout-link: 48, 142, 255;
-	--mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor" stroke-width="1px"/></svg>';
+	--mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
+	--mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
 }
 
 body.is-translucent {
@@ -717,7 +718,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
 	width: 20px;
 	height: 20px;
 	padding-right: 8px;
@@ -726,7 +727,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
 	width: 20px;
 	height: 20px;
 	padding-right: 8px;
@@ -735,7 +736,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .nav-file-title-content::before {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' width='20' height='20' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m432 176v268c0 11.3-8.51 20.5-19.1 20.5h-314c-10.6 0-19.1-9.12-19.1-20.5v-374c0-11.3-1.15-20.5 9.45-20.5h231' fill='none' fill-rule='evenodd' stroke='%230048cf' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20.4' /%3E%3Cpath d='m335 52.8-0.947 108 96.3 0.233z' fill='%230048cf' stroke='%230048cf' stroke-width='10.6'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' width='20' height='20' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m432 176v268c0 11.3-8.51 20.5-19.1 20.5h-314c-10.6 0-19.1-9.12-19.1-20.5v-374c0-11.3-1.15-20.5 9.45-20.5h231' fill='none' fill-rule='evenodd' stroke='%230048cf' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20.4' /%3E%3Cpath d='m335 52.8-0.947 108 96.3 0.233z' fill='%230048cf' stroke='%230048cf' stroke-width='10.6'/%3E%3C/svg%3E");
 	width: 20px;
 	height: 20px;
 	padding-right: 8px;
@@ -1231,7 +1232,7 @@ li[data-task="p"]>p>input:checked {
 input[data-task="p"]:checked::after,
 li[data-task="p"]>input:checked::after,
 li[data-task="p"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m15.4 442h121l-4.57-176-117-1.62zm277 26.2c-44.7-8.36-88.6-21.4-134-23.9v-180c27.2-12.2 51-24.9 60.9-51 0 0 17.1-42.7 35.5-58 20.2-20.3 40.9-36.3 46.9-64.9 8.96-19.5 15.7-58.1 50.8-48.3 27.9 18.1 12.5 39 10.3 68.2-6.27 27.4-33 36.3-37.6 64.2 4.08 8.57 14.3 18.3 25.4 16.6 38.9 0.709 70.2-2.15 108 6.85 22.6 11.9 34.4 39.4 18.9 60.9-3.48 7.19-9.57 14.5-2 21.3 12.5 14.8 11.9 35-2.32 48.6-5.7 6.22-10 12.6-4.7 20.5 8.19 16.3-0.869 32.8-11.6 45.6-7.18 5.9-5.41 13.6-3.23 21.3 8.28 25.8-16.1 38.6-37.5 42.5-40.4 7.91-82.3 15.2-124 9.79z' fill='%2300cf48'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m15.4 442h121l-4.57-176-117-1.62zm277 26.2c-44.7-8.36-88.6-21.4-134-23.9v-180c27.2-12.2 51-24.9 60.9-51 0 0 17.1-42.7 35.5-58 20.2-20.3 40.9-36.3 46.9-64.9 8.96-19.5 15.7-58.1 50.8-48.3 27.9 18.1 12.5 39 10.3 68.2-6.27 27.4-33 36.3-37.6 64.2 4.08 8.57 14.3 18.3 25.4 16.6 38.9 0.709 70.2-2.15 108 6.85 22.6 11.9 34.4 39.4 18.9 60.9-3.48 7.19-9.57 14.5-2 21.3 12.5 14.8 11.9 35-2.32 48.6-5.7 6.22-10 12.6-4.7 20.5 8.19 16.3-0.869 32.8-11.6 45.6-7.18 5.9-5.41 13.6-3.23 21.3 8.28 25.8-16.1 38.6-37.5 42.5-40.4 7.91-82.3 15.2-124 9.79z' fill='%2300cf48'/%3E%3C/svg%3E");
 	vertical-align: middle;
 	background: transparent;
 	position: absolute;
@@ -1253,7 +1254,7 @@ li[data-task="c"]>p>input:checked {
 input[data-task="c"]:checked::after,
 li[data-task="c"]>input:checked::after,
 li[data-task="c"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m15.4 68.6h121l-4.57 176-117 1.62zm277-26.2c-44.7 8.36-88.6 21.4-134 23.9v180c27.2 12.2 51 24.9 60.9 51 0 0 17.1 42.7 35.5 58 20.2 20.3 40.9 36.3 46.9 64.9 8.96 19.5 15.7 58.1 50.8 48.3 27.9-18.1 12.5-39 10.3-68.2-6.27-27.4-33-36.3-37.6-64.2 4.08-8.57 14.3-18.3 25.4-16.6 38.9-0.709 70.2 2.15 108-6.85 22.6-11.9 34.4-39.4 18.9-60.9-3.48-7.19-9.57-14.5-2-21.3 12.5-14.8 11.9-35-2.32-48.6-5.7-6.22-10-12.6-4.7-20.5 8.19-16.3-0.869-32.8-11.6-45.6-7.18-5.9-5.41-13.6-3.23-21.3 8.28-25.8-16.1-38.6-37.5-42.5-40.4-7.91-82.3-15.2-124-9.79z' fill='%23f14848'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m15.4 68.6h121l-4.57 176-117 1.62zm277-26.2c-44.7 8.36-88.6 21.4-134 23.9v180c27.2 12.2 51 24.9 60.9 51 0 0 17.1 42.7 35.5 58 20.2 20.3 40.9 36.3 46.9 64.9 8.96 19.5 15.7 58.1 50.8 48.3 27.9-18.1 12.5-39 10.3-68.2-6.27-27.4-33-36.3-37.6-64.2 4.08-8.57 14.3-18.3 25.4-16.6 38.9-0.709 70.2 2.15 108-6.85 22.6-11.9 34.4-39.4 18.9-60.9-3.48-7.19-9.57-14.5-2-21.3 12.5-14.8 11.9-35-2.32-48.6-5.7-6.22-10-12.6-4.7-20.5 8.19-16.3-0.869-32.8-11.6-45.6-7.18-5.9-5.41-13.6-3.23-21.3 8.28-25.8-16.1-38.6-37.5-42.5-40.4-7.91-82.3-15.2-124-9.79z' fill='%23f14848'/%3E%3C/svg%3E");
 	vertical-align: middle;
 	background: transparent;
 	position: absolute;
@@ -1298,7 +1299,7 @@ li[data-task="l"]>p>input:checked {
 input[data-task="l"]:checked::after,
 li[data-task="l"]>input:checked::after,
 li[data-task="l"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m252 15.3c-104 2e-6 -188 83-188 185 0 102 188 297 188 297s188-195 188-297c0-102-84.4-185-188-185zm0 123a64 64 0 0 1 64 64 64 64 0 0 1-64 64 64 64 0 0 1-64-64 64 64 0 0 1 64-64z' fill='%23f14848' stroke-linecap='round' stroke-width='2.8'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m252 15.3c-104 2e-6 -188 83-188 185 0 102 188 297 188 297s188-195 188-297c0-102-84.4-185-188-185zm0 123a64 64 0 0 1 64 64 64 64 0 0 1-64 64 64 64 0 0 1-64-64 64 64 0 0 1 64-64z' fill='%23f14848' stroke-linecap='round' stroke-width='2.8'/%3E%3C/svg%3E");
 	vertical-align: middle;
 	background: transparent;
 	position: absolute;
@@ -1525,7 +1526,7 @@ li[data-task="1"]>p>input:checked {
 input[data-task="1"]:checked::after,
 li[data-task="1"]>input:checked::after,
 li[data-task="1"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m42.8 417h426l-201-322z' fill='%2300cf48'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m42.8 417h426l-201-322z' fill='%2300cf48'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1650,7 +1651,7 @@ li[data-task="e"]>p>input:checked {
 input[data-task="e"]:checked::after,
 li[data-task="e"]>input:checked::after,
 li[data-task="e"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Crect x='10.7' y='81.8' width='486' height='338' rx='22' ry='19.6' fill='%23cfcfcf'/%3E%3Cpath d='m43.9 396 128-177m284 177-128-177m-285-112 216 174 206-174' fill='none' stroke='%23484848' stroke-width='20.6'/%3E%3C/svg%3E%0A");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Crect x='10.7' y='81.8' width='486' height='338' rx='22' ry='19.6' fill='%23cfcfcf'/%3E%3Cpath d='m43.9 396 128-177m284 177-128-177m-285-112 216 174 206-174' fill='none' stroke='%23484848' stroke-width='20.6'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1749,9 +1750,6 @@ https://lucide.dev
 - [w] win
 - [u] up
 - [d] down
-- [D] draft pull request
-- [P] open pull request
-- [M] merged pull request 
 
 */
 
@@ -1855,6 +1853,15 @@ li[data-task="d"]>p>input:checked::after {
 	mask-image: none;
 }
 
+/* 
+Pull Request Icons
+Created by Bernardo Pires (drbap)
+License MIT
+- [D] draft pull request
+- [P] open pull request
+- [M] merged pull request
+*/
+
 /* Draft Pull Request */
 input[data-task="D"]:checked,
 li[data-task="D"]>input:checked,
@@ -1867,7 +1874,7 @@ li[data-task="D"]>p>input:checked {
 input[data-task="D"]:checked::after,
 li[data-task="D"]>input:checked::after,
 li[data-task="D"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a3a3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M18 6V5'/%3E%3Cpath d='M18 11v-1'/%3E%3Cline x1='6' x2='6' y1='9' y2='21'/%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m397 146v-54m0 197v-54m59.7 190a59.7 59.7 0 0 1-59.7 59.7 59.7 59.7 0 0 1-59.7-59.7 59.7 59.7 0 0 1 59.7-59.7 59.7 59.7 0 0 1 59.7 59.7zm-332-383a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7zm0 120v202zm0 204a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7z' fill='none' stroke='%23a3a3a3' stroke-linecap='round' stroke-width='33.8'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1892,7 +1899,7 @@ li[data-task="P"]>p>input:checked {
 input[data-task="P"]:checked::after,
 li[data-task="P"]>input:checked::after,
 li[data-task="P"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300bf53' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M13 6h3a2 2 0 0 1 2 2v7'/%3E%3Cline x1='6' x2='6' y1='9' y2='21'/%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m266 93.3 53.6 53.5m77.2-53.5h-131l55.6-55.7m75.3 302v-247m59.7 332a59.7 59.7 0 0 1-59.7 59.7 59.7 59.7 0 0 1-59.7-59.7 59.7 59.7 0 0 1 59.7-59.7 59.7 59.7 0 0 1 59.7 59.7zm-332-383a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7zm0 120v202zm0 204a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7z' fill='none' stroke='%2300bf53' stroke-linecap='round' stroke-linejoin='round' stroke-width='40'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1921,7 +1928,7 @@ li[data-task="M"]>p>input:checked {
 input[data-task="M"]:checked::after,
 li[data-task="M"]>input:checked::after,
 li[data-task="M"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d228ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='18' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Cpath d='M6 21V9a9 9 0 0 0 9 9'/%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m330 310s-197-12.1-203-92.5m330 96a59.7 59.7 0 0 1-59.7 59.7 59.7 59.7 0 0 1-59.7-59.7 59.7 59.7 0 0 1 59.7-59.7 59.7 59.7 0 0 1 59.7 59.7zm-332-271a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7zm0 120v202zm0 204a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7z' fill='none' stroke='%23d228ff' stroke-width='40'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -2151,6 +2158,218 @@ li[data-task="M"]>p>input:checked::after {
 	background-color: rgba(var(--mu-callout-purple), 0.2);
 	border-left: .3rem solid rgb(var(--mu-callout-purple));
 	border-radius: 0;
+}
+
+/* Box blue */
+.callout[data-callout="b-blue"] {
+	--callout-color: var(--mu-callout-blue);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-blue), 0.3);
+	border-radius: 0;
+}
+
+/* Box green */
+.callout[data-callout="b-green"] {
+	--callout-color: var(--mu-callout-green);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-green), 0.3);
+	border-radius: 0;
+}
+
+/* Box orange */
+.callout[data-callout="b-orange"] {
+	--callout-color: var(--mu-callout-orange);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-orange), 0.3);
+	border-radius: 0;
+}
+
+/* Box yellow */
+.callout[data-callout="b-yellow"] {
+	--callout-color: var(--mu-callout-yellow);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-yellow), 0.3);
+	border-radius: 0;
+}
+
+/* Box red */
+.callout[data-callout="b-red"] {
+	--callout-color: var(--mu-callout-red);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-red), 0.3);
+	border-radius: 0;
+}
+
+/* Box pink */
+.callout[data-callout="b-pink"] {
+	--callout-color: var(--mu-callout-pink);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-pink), 0.3);
+	border-radius: 0;
+}
+
+/* Box purple */
+.callout[data-callout="b-purple"] {
+	--callout-color: var(--mu-callout-purple);
+	--callout-icon: var(--mu-box-callout-icon);
+	background-color: rgba(var(--mu-callout-purple), 0.3);
+	border-radius: 0;
+}
+
+.callout[data-callout="b-green"] .callout-title-inner,
+.callout[data-callout="b-blue"] .callout-title-inner,
+.callout[data-callout="b-orange"] .callout-title-inner,
+.callout[data-callout="b-yellow"] .callout-title-inner,
+.callout[data-callout="b-red"] .callout-title-inner,
+.callout[data-callout="b-pink"] .callout-title-inner,
+.callout[data-callout="b-purple"] .callout-title-inner {
+	color: var(--mu-text-1);
+}
+
+/* Headings Callouts */
+
+.callout[data-callout="h1-blue"],
+.callout[data-callout="h2-blue"],
+.callout[data-callout="h3-blue"],
+.callout[data-callout="h4-blue"],
+.callout[data-callout="h5-blue"],
+.callout[data-callout="h6-blue"] {
+	--callout-color: var(--mu-callout-blue);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-blue), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-green"],
+.callout[data-callout="h2-green"],
+.callout[data-callout="h3-green"],
+.callout[data-callout="h4-green"],
+.callout[data-callout="h5-green"],
+.callout[data-callout="h6-green"] {
+	--callout-color: var(--mu-callout-green);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-green), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-orange"],
+.callout[data-callout="h2-orange"],
+.callout[data-callout="h3-orange"],
+.callout[data-callout="h4-orange"],
+.callout[data-callout="h5-orange"],
+.callout[data-callout="h6-orange"] {
+	--callout-color: var(--mu-callout-orange);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-orange), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-yellow"],
+.callout[data-callout="h2-yellow"],
+.callout[data-callout="h3-yellow"],
+.callout[data-callout="h4-yellow"],
+.callout[data-callout="h5-yellow"],
+.callout[data-callout="h6-yellow"] {
+	--callout-color: var(--mu-callout-yellow);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-yellow), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-red"],
+.callout[data-callout="h2-red"],
+.callout[data-callout="h3-red"],
+.callout[data-callout="h4-red"],
+.callout[data-callout="h5-red"],
+.callout[data-callout="h6-red"] {
+	--callout-color: var(--mu-callout-red);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-red), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-pink"],
+.callout[data-callout="h2-pink"],
+.callout[data-callout="h3-pink"],
+.callout[data-callout="h4-pink"],
+.callout[data-callout="h5-pink"],
+.callout[data-callout="h6-pink"] {
+	--callout-color: var(--mu-callout-pink);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-pink), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-purple"],
+.callout[data-callout="h2-purple"],
+.callout[data-callout="h3-purple"],
+.callout[data-callout="h4-purple"],
+.callout[data-callout="h5-purple"],
+.callout[data-callout="h6-purple"] {
+	--callout-color: var(--mu-callout-purple);
+	--callout-icon: "";
+	background-color: rgba(var(--mu-callout-purple), 0.2);
+	border-radius: 0;
+}
+
+.callout[data-callout="h1-blue"],
+.callout[data-callout="h1-green"],
+.callout[data-callout="h1-orange"],
+.callout[data-callout="h1-yellow"],
+.callout[data-callout="h1-red"],
+.callout[data-callout="h1-pink"],
+.callout[data-callout="h1-purple"] {
+	font-size: var(--h1-size);
+}
+
+.callout[data-callout="h2-blue"],
+.callout[data-callout="h2-green"],
+.callout[data-callout="h2-orange"],
+.callout[data-callout="h2-yellow"],
+.callout[data-callout="h2-red"],
+.callout[data-callout="h2-pink"],
+.callout[data-callout="h2-purple"] {
+	font-size: var(--h2-size);
+}
+
+.callout[data-callout="h3-blue"],
+.callout[data-callout="h3-green"],
+.callout[data-callout="h3-orange"],
+.callout[data-callout="h3-yellow"],
+.callout[data-callout="h3-red"],
+.callout[data-callout="h3-pink"],
+.callout[data-callout="h3-purple"] {
+	font-size: var(--h3-size);
+}
+
+.callout[data-callout="h4-blue"],
+.callout[data-callout="h4-green"],
+.callout[data-callout="h4-orange"],
+.callout[data-callout="h4-yellow"],
+.callout[data-callout="h4-red"],
+.callout[data-callout="h4-pink"],
+.callout[data-callout="h4-purple"] {
+	font-size: var(--h4-size);
+}
+
+.callout[data-callout="h5-blue"],
+.callout[data-callout="h5-green"],
+.callout[data-callout="h5-orange"],
+.callout[data-callout="h5-yellow"],
+.callout[data-callout="h5-red"],
+.callout[data-callout="h5-pink"],
+.callout[data-callout="h5-purple"] {
+	font-size: var(--h5-size);
+}
+
+.callout[data-callout="h6-blue"],
+.callout[data-callout="h6-green"],
+.callout[data-callout="h6-orange"],
+.callout[data-callout="h6-yellow"],
+.callout[data-callout="h6-red"],
+.callout[data-callout="h6-pink"],
+.callout[data-callout="h6-purple"] {
+	font-size: var(--h6-size);
 }
 
 /* Tables Styles Light and Dark Theme */
