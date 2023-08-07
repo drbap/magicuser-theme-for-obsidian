@@ -87,7 +87,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ```
 
-### Callouts Headings
+### Callouts Headings (H1 - H6)
 
 `> [!h1 to h6-` + `color] Quote`
 
