@@ -89,7 +89,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ### Callouts Headings (H1 - H6)
 
-`> [!h1 to h6-` + `color] Quote`
+`> [!h1 to h6-` + `color] Your Title`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
