@@ -76,7 +76,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ### Box Callouts
 
-`> [!b-` + `color] Quote`
+`> [!b-` + `color] Your Callout Title`
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
