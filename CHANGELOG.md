@@ -3,8 +3,8 @@
 ## [3.8.0] - 2023-08-07
 ### Improvements
 - New box callouts (7 colors).
-- New callouts headings h1 to h6 (6 sizes - 7 colors).
-- New pull request icons (draft, open and merged pull request).
+- New callout headings - h1 to h6 (6 sizes - 7 colors).
+- New pull request icons (draft, open and merged pull request icons).
 
 ## [3.7.1] - 2023-08-06
 ### Fixed
