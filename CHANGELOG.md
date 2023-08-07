@@ -1,5 +1,9 @@
 # Changelog
 
+## [3.7.1] - 2023-08-06
+### Fixed
+- Fixes the size of new checkbox icons when changing font size (7 icons).
+
 ## [3.7.0] - 2023-08-05
 ### Improvements
 - New checkbox icons (7 icons).
