@@ -31,6 +31,10 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Additional Callouts Quotes](images/magicuser_callouts_quotes.png)
 
+![Additional Callouts Boxes](images/magicuser_callouts_box.png)
+
+![Additional Callouts Headings](images/magicuser_obsidian_callout_headings.png)
+
 ### Highlighter Callouts
 
 `> [!hl-` + `color] Your Callout Title`
@@ -67,6 +71,31 @@ I hope this theme helps to increase your productivity and inspiration.
 ```
 > [!q-green] Quote
 > Quote author or comment
+
+```
+
+### Box Callouts
+
+`> [!b-` + `color] Quote`
+
+**Colors**: green, blue, orange, yellow, red, pink, purple
+
+**Example**: *Box green callout*
+```
+> [!b-green] Your callout title here
+> Callout text here
+
+```
+
+### Callouts Headings
+
+`> [!h1 to h6-` + `color] Quote`
+
+**Colors**: green, blue, orange, yellow, red, pink, purple
+
+**Example**: *H1 green text callout*
+```
+> [!h1-green] Your h1 title here
 
 ```
 
