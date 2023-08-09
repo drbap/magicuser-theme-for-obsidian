@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.9.0] - 2023-08-09
+### Improvements
+- New checkbox icons (9 icons).
+
+
+### Fixed
+- Open pull request icon SVG adjustment.
+- Checkboxes with `-[X]` have the same appearance as the ones created with `-[x]`.
+
 ## [3.8.0] - 2023-08-07
 ### Improvements
 - New box callouts (7 colors).
