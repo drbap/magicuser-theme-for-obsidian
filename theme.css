@@ -1493,14 +1493,20 @@ li[data-task='"']>p>input:checked::after {
 
 input[data-task="x"]:checked,
 li[data-task="x"]>input:checked,
-li[data-task="x"]>p>input:checked {
+li[data-task="x"]>p>input:checked,
+input[data-task="X"]:checked,
+li[data-task="X"]>input:checked,
+li[data-task="X"]>p>input:checked {
 	--checkbox-color: #00cf48;
 	--checkbox-color-hover: #00d84c;
 }
 
 input[data-task="x"]:checked::after,
 li[data-task="x"]>input:checked::after,
-li[data-task="x"]>p>input:checked::after {
+li[data-task="x"]>p>input:checked::after,
+input[data-task="X"]:checked::after,
+li[data-task="X"]>input:checked::after,
+li[data-task="X"]>p>input:checked::after {
 	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m45.9 241 167 151 249-309' fill='none' stroke='%23008200' stroke-width='88'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
@@ -1899,7 +1905,7 @@ li[data-task="P"]>p>input:checked {
 input[data-task="P"]:checked::after,
 li[data-task="P"]>input:checked::after,
 li[data-task="P"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m266 93.3 53.6 53.5m77.2-53.5h-131l55.6-55.7m75.3 302v-247m59.7 332a59.7 59.7 0 0 1-59.7 59.7 59.7 59.7 0 0 1-59.7-59.7 59.7 59.7 0 0 1 59.7-59.7 59.7 59.7 0 0 1 59.7 59.7zm-332-383a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7zm0 120v202zm0 204a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7z' fill='none' stroke='%2300bf53' stroke-linecap='round' stroke-linejoin='round' stroke-width='40'/%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m266 93.3 53.6 53.5m77.1 200 0.1-254h-131l55.6-55.7m135 387c0 33-26.7 59.7-59.7 59.7s-59.7-26.7-59.7-59.7 26.7-59.7 59.7-59.7 59.7 26.7 59.7 59.7zm-332-383c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7zm0 120v202zm0 204c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7z' fill='none' stroke='%2300bf53' stroke-linecap='round' stroke-linejoin='round' stroke-width='40'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1928,7 +1934,7 @@ li[data-task="M"]>p>input:checked {
 input[data-task="M"]:checked::after,
 li[data-task="M"]>input:checked::after,
 li[data-task="M"]>p>input:checked::after {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m330 310s-197-12.1-203-92.5m330 96a59.7 59.7 0 0 1-59.7 59.7 59.7 59.7 0 0 1-59.7-59.7 59.7 59.7 0 0 1 59.7-59.7 59.7 59.7 0 0 1 59.7 59.7zm-332-271a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7zm0 120v202zm0 204a59.7 59.7 0 0 0-59.7 59.7 59.7 59.7 0 0 0 59.7 59.7 59.7 59.7 0 0 0 59.7-59.7 59.7 59.7 0 0 0-59.7-59.7z' fill='none' stroke='%23d228ff' stroke-width='40'/%3E%3C/svg%3E");
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m330 310s-199-12.1-205-92.5m332 96c0 33-26.7 59.7-59.7 59.7s-59.7-26.7-59.7-59.7 26.7-59.7 59.7-59.7 59.7 26.7 59.7 59.7zm-332-271c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7zm0 120v202zm0 204c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7z' fill='none' stroke='%23d228ff' stroke-width='40'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
@@ -1943,6 +1949,232 @@ li[data-task="M"]>p>input:checked::after {
 
 *[data-task="M"] .cm-list-1 {
 	color: #828282;
+}
+
+/* Git Branch */
+input[data-task="B"]:checked,
+li[data-task="B"]>input:checked,
+li[data-task="B"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="B"]:checked::after,
+li[data-task="B"]>input:checked::after,
+li[data-task="B"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m125 364c0-154 260 2.7 260-162m72.5-68.9c0 33-26.7 59.7-59.7 59.7s-59.7-26.7-59.7-59.7 26.7-59.7 59.7-59.7 59.7 26.7 59.7 59.7zm-332-91c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7zm0 120v202zm0 204c-33 0-59.7 26.7-59.7 59.7s26.7 59.7 59.7 59.7 59.7-26.7 59.7-59.7-26.7-59.7-59.7-59.7z' fill='none' stroke='%23ff5f00' stroke-linecap='round' stroke-linejoin='round' stroke-width='40'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* User */
+input[data-task="U"]:checked,
+li[data-task="U"]>input:checked,
+li[data-task="U"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="U"]:checked::after,
+li[data-task="U"]>input:checked::after,
+li[data-task="U"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m256 291c-129 9e-5 -233 46.2-235 113-0.586 24.3-3.96 43.7-2.94 58.7-1.35 26.1 3.49 38.6 32.6 38.6h412c29.1 0 33.9-12.4 32.6-38.6 1.02-15-2.36-34.4-2.94-58.7-1.61-66.5-106-113-235-113-0.313 1.5e-4 -0.622 0.01-0.935 0.0102-0.313-6.9e-4 -0.621-0.0101-0.935-0.0102zm118-143a118 118 0 0 1-118 118 118 118 0 0 1-118-118 118 118 0 0 1 118-118 118 118 0 0 1 118 118z' fill='%230072d3' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Passw */
+input[data-task="W"]:checked,
+li[data-task="W"]>input:checked,
+li[data-task="W"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="W"]:checked::after,
+li[data-task="W"]>input:checked::after,
+li[data-task="W"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m258 22c-2.15-0.04-4.29-0.0365-6.42 0.0098-10.2 0.222-20.3 1.42-30 3.37-25.8 5.2-49.3 15.5-67.5 31.2-17.2 14.9-31.4 39.2-26 65.1l3.27 103c-35 1.57-62.8 30.2-62.8 65.6v134c0 36.4 29.3 65.7 65.7 65.7h243c36.4 0 65.7-29.3 65.7-65.7v-134c0-36.4-29.3-65.7-65.7-65.7h-4.05l1.28-120-3.19-13.9c-15.4-30.8-41.2-51.1-68.5-60.7-14.9-5.28-30.2-7.72-45.3-8zm-5.26 60.7c10.7-0.204 21.2 1.23 30.3 4.46 12.8 4.53 23.2 11.7 31.2 24.8l-1.2 113h-121l-3.42-108-1.22-7.53c0.0428-0.226 0.696-1.83 6.4-6.76 7.78-6.72 23-14.3 39.8-17.7 6.3-1.27 12.8-1.98 19.2-2.1zm1.62 204c22.9 1.8e-4 44.3 17.5 44.3 41.8-1.2e-4 12.9-6.14 23.8-15.2 31.3 0 0.0126 4e-3 0.0244 4e-3 0.0371v57.7c0 15.3-13 28.4-28.4 28.4h-0.562c-15.3 0-28.4-13-28.4-28.4v-57.2c-9.5-7.47-16-18.6-16-31.8 2.2e-4 -24.3 21.4-41.8 44.3-41.8z' fill='%23a3a3a3'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+/* Cart */
+input[data-task="C"]:checked,
+li[data-task="C"]>input:checked,
+li[data-task="C"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="C"]:checked::after,
+li[data-task="C"]>input:checked::after,
+li[data-task="C"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff5f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='8' cy='21' r='1'/%3E%3Ccircle cx='19' cy='21' r='1'/%3E%3Cpath d='M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Add */
+input[data-task="a"]:checked,
+li[data-task="a"]>input:checked,
+li[data-task="a"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="a"]:checked::after,
+li[data-task="a"]>input:checked::after,
+li[data-task="a"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300bf53' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M8 12h8'/%3E%3Cpath d='M12 8v8'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Remove */
+input[data-task="r"]:checked,
+li[data-task="r"]>input:checked,
+li[data-task="r"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="r"]:checked::after,
+li[data-task="r"]>input:checked::after,
+li[data-task="r"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ff4848' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M8 12h8'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Issue */
+input[data-task="o"]:checked,
+li[data-task="o"]>input:checked,
+li[data-task="o"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="o"]:checked::after,
+li[data-task="o"]>input:checked::after,
+li[data-task="o"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a3a3a3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+/* Closed Issue */
+input[data-task="O"]:checked,
+li[data-task="O"]>input:checked,
+li[data-task="O"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="O"]:checked::after,
+li[data-task="O"]>input:checked::after,
+li[data-task="O"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23dd28ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+*[data-task="O"] .cm-list-1 {
+	color: #828282;
+}
+/* Test */
+input[data-task="T"]:checked,
+li[data-task="T"]>input:checked,
+li[data-task="T"]>p>input:checked {
+	border-width: 0;
+	--checkbox-color: transparent;
+	--checkbox-color-hover: transparent;
+}
+
+input[data-task="T"]:checked::after,
+li[data-task="T"]>input:checked::after,
+li[data-task="T"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300a3a348' stroke='%2300bfbf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2'/%3E%3Cpath d='M8.5 2h7'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
 }
 
 /* Callouts */
