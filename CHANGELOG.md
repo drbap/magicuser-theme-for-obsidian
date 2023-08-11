@@ -40,7 +40,7 @@
 - Tags - monospace font.
 
 ## [3.4.1] - 2023-07-01
-### Fix
+### Fixed
 - Folder title color when dragged (light and dark themes).
 
 ## [3.4.0] - 2023-06-30
