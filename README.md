@@ -44,7 +44,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
-**Example**: *highlighter green callout*
+**Example**: *Highlighter green callout*
 ```
 > [!hl-green] Your callout title here
 > Callout text here
@@ -70,7 +70,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
-**Example**: *Quote green callout*
+**Example**: *quote green callout*
 ```
 > [!q-green] Quote
 > Quote author or comment
@@ -83,7 +83,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
-**Example**: *Box green callout*
+**Example**: *box green callout*
 ```
 > [!b-green] Your callout title here
 > Callout text here
@@ -96,7 +96,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
-**Example**: *H1 green text callout*
+**Example**: *h1 green text callout*
 ```
 > [!h1-green] Your h1 title here
 
