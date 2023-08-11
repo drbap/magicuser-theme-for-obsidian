@@ -188,6 +188,8 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
 
+The syntax highlighting is similar to the MagicUser themes for VS Code.
+
 ## Mobile Display
 
 ![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
