@@ -1,15 +1,11 @@
-/* ==========================================================================
+/* =====================================================
 MagicUser Theme by Bernardo Pires (@drbap)
 
 MagicUser is a custom theme for Obsidian.md to create a pleasant environment for note-taking activities with greater focus and concentration. It has light theme and dark theme for day/night use.
-
 I hope this theme helps you to be more productive and inspired.
-
-Thanks for using it
 
 GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
-=============================================================================
 
 MIT License
 
@@ -31,12 +27,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-===========================================================
-CheckBox Icons and Callout Icons License and Attribution
-===========================================================
-Most of the icons for the checkboxes and the quote icon were created by me (Bernardo Pires - @drbap). MIT License. You can find the comment in the embedded SVG.
+=============================
+Icons License and Attribution
 
-The icons used by other callouts and some checkboxes icons are from Lucide Icons used by Obsidian. Lucide is totally free for commercial use and personal use, the Lucide icon library is licensed under the ISC License. You can find more information below:
+Most of the icons for the checkboxes and the quote icon were created by me (Bernardo Pires - @drbap - MIT License). You can find the comment in the embedded SVG.
+
+The icons used by the file icon, some callouts and checkboxes icons are from Lucide icons used by Obsidian. Lucide is totally free for commercial use and personal use, the Lucide icon library is licensed under the ISC License. You can find more information below:
 
 Lucide Icons Link:
 https://lucide.dev/
@@ -63,7 +59,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 =============================
 Acknowledgements
-=============================
+
 Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango (@kepano) and the Things Theme by Colin Eckert (@colineckert). You can find more information about @kepano and @colineckert below, please check their themes and support their work:
 
 Minimal Theme by Stephan Ango (@kepano)
@@ -72,8 +68,9 @@ https://github.com/kepano/obsidian-minimal
 Things Theme by Colin Eckert (@colineckert)
 https://github.com/colineckert/obsidian-things
 
+=============================
 */
-/* ======================================================== */
+
 @charset "UTF-8";
 
 body {
@@ -117,12 +114,12 @@ body {
 	--code-comment: #a3a3a3;
 	--code-function: #00d300;
 	--code-important: #ff7f00;
-	--code-keyword: var(--mu-magenta-1);
+	--code-keyword: var(--mu-purple-1);
 	--code-operator: var(--mu-text-1);
 	--code-property: #007fff;
-	--code-punctuation: var(--mu-magenta-1);
+	--code-punctuation: var(--mu-purple-1);
 	--code-string: #00c3ff;
-	--code-tag: var(--mu-magenta-1);
+	--code-tag: var(--mu-purple-1);
 	--code-value: #ffa300;
 
 	/* Collapse icons */
@@ -133,7 +130,7 @@ body {
 	--cursor: default;
 	--cursor-link: pointer;
 
-	/* Dividers between panes */
+	/* Dividers */
 	--divider-color: var(--mu-divider-color);
 	--divider-color-hover: var(--mu-purple-1);
 	--divider-width: 1px;
@@ -367,7 +364,7 @@ body {
 	--nav-collapse-icon-color: #0072d3;
 	--nav-collapse-icon-color-collapsed: #0072d3;
 
-	/* Modals -> settings, community themes, community plugins */
+	/* Modals */
 	--modal-background: var(--background-primary);
 	--modal-width: 90vw;
 	--modal-height: 85vh;
@@ -379,7 +376,7 @@ body {
 	--modal-radius: var(--radius-l);
 	--modal-community-sidebar-width: 280px;
 
-	/* Popovers -> file previews */
+	/* Popovers */
 	--popover-width: 450px;
 	--popover-height: 400px;
 	--popover-max-height: 70vh;
@@ -387,7 +384,7 @@ body {
 	--popover-pdf-height: 800px;
 	--popover-font-size: var(--font-text-size);
 
-	/* Prompts -> quick switcher, command palette */
+	/* Prompts */
 	--prompt-width: 700px;
 	--prompt-max-width: 80vw;
 	--prompt-max-height: 70vh;
@@ -418,7 +415,7 @@ body {
 	--search-icon-size: 18px;
 	--search-result-background: var(--background-primary);
 
-	/* Layout sizing - Default for padding and margins */
+	/* Layout sizing */
 	--size-2-1: 2px;
 	--size-2-2: 4px;
 	--size-2-3: 6px;
@@ -463,12 +460,6 @@ body {
 	--status-bar-position: fixed;
 	--status-bar-radius: var(--radius-m) 0 0 0;
 	--status-bar-scroll-padding: calc(var(--status-bar-font-size) + 18px);
-
-	/* Swatch for color inputs */
-	--swatch-radius: 14px;
-	--swatch-height: 24px;
-	--swatch-width: 24px;
-	--swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15);
 
 	/* Tabs */
 	--tab-background-active: var(--background-primary);
@@ -551,7 +542,6 @@ body {
 	--titlebar-text-color-focused: var(--mu-titlebar-text);
 	--titlebar-text-weight: var(--font-semibold);
 
-
 	/* Toggles */
 	--toggle-border-width: 2px;
 	--toggle-width: 40px;
@@ -581,7 +571,6 @@ body {
 
 	/* ============================================= */
 	/* Color mappings  */
-	/* ============================================= */
 	/* Accent HSL values */
 	--accent-h: 254;
 	--accent-s: 80%;
@@ -719,8 +708,6 @@ body.is-translucent:not(.is-fullscreen) {
 
 .nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
-	width: 20px;
-	height: 20px;
 	padding-right: 8px;
 	zoom: var(--mu-folder-icon-zoom);
 	vertical-align: middle;
@@ -728,17 +715,13 @@ body.is-translucent:not(.is-fullscreen) {
 
 .nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
-	width: 20px;
-	height: 20px;
 	padding-right: 8px;
 	zoom: var(--mu-folder-icon-zoom);
 	vertical-align: middle;
 }
 
 .nav-file-title-content::before {
-	content: url("data:image/svg+xml,%3Csvg version='1.1' width='20' height='20' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m432 176v268c0 11.3-8.51 20.5-19.1 20.5h-314c-10.6 0-19.1-9.12-19.1-20.5v-374c0-11.3-1.15-20.5 9.45-20.5h231' fill='none' fill-rule='evenodd' stroke='%230048cf' stroke-dashoffset='211' stroke-linecap='square' stroke-linejoin='round' stroke-width='20.4' /%3E%3Cpath d='m335 52.8-0.947 108 96.3 0.233z' fill='%230048cf' stroke='%230048cf' stroke-width='10.6'/%3E%3C/svg%3E");
-	width: 20px;
-	height: 20px;
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
 	padding-right: 8px;
 	zoom: var(--mu-notes-icon-zoom);
 	vertical-align: middle;
@@ -797,7 +780,7 @@ body.is-translucent:not(.is-fullscreen) {
 	--interactive-hover: #007fff20;
 }
 
-/* ======================================================== */
+
 /* Dark theme settings */
 /* ======================================================== */
 
@@ -914,7 +897,6 @@ body.is-translucent:not(.is-fullscreen) {
 	border-color: #00cfff !important;
 }
 
-/* ======================================================== */
 /* Light theme settings */
 /* ======================================================== */
 
@@ -964,12 +946,12 @@ body.is-translucent:not(.is-fullscreen) {
 	--code-comment: #a3a3a3;
 	--code-function: #00ae00;
 	--code-important: #ff7f00;
-	--code-keyword: var(--mu-magenta-1);
+	--code-keyword: #c300f1;
 	--code-operator: #000;
 	--code-property: #007fff;
-	--code-punctuation: var(--mu-magenta-1);
+	--code-punctuation: #c300f1;
 	--code-string: #0000ff;
-	--code-tag: var(--mu-magenta-1);
+	--code-tag: #c300f1;
 	--code-value: #ffa300;
 	--tab-divider-color: #003364;
 	--mu-folder-icon-zoom: 82%;
@@ -1101,11 +1083,132 @@ body.is-translucent:not(.is-fullscreen) {
 /* Extra checkboxes */
 input[data-task="!"]:checked,
 li[data-task="!"]>input:checked,
-li[data-task="!"]>p>input:checked {
+li[data-task="!"]>p>input:checked,
+input[data-task="?"]:checked,
+li[data-task="?"]>input:checked,
+li[data-task="?"]>p>input:checked,
+input[type=checkbox][data-task="-"]:checked::before,
+li[data-task="-"]>input:checked::before,
+li[data-task="-"]>p>input:checked::before,
+input[data-task="b"]:checked,
+li[data-task="b"]>input:checked,
+li[data-task="b"]>p>input:checked,
+input[data-task="I"]:checked,
+li[data-task="I"]>input:checked,
+li[data-task="I"]>p>input:checked,
+input[data-task="p"]:checked,
+li[data-task="p"]>input:checked,
+li[data-task="p"]>p>input:checked,
+input[data-task="c"]:checked,
+li[data-task="c"]>input:checked,
+li[data-task="c"]>p>input:checked,
+input[data-task="i"]:checked,
+li[data-task="i"]>input:checked,
+li[data-task="i"]>p>input:checked,
+input[data-task="l"]:checked,
+li[data-task="l"]>input:checked,
+li[data-task="l"]>p>input:checked,
+input[data-task="s"]:checked,
+li[data-task="s"]>input:checked,
+li[data-task="s"]>p>input:checked,
+input[data-task="*"]:checked,
+li[data-task="*"]>input:checked,
+li[data-task="*"]>p>input:checked,
+input[data-task="n"]:checked,
+li[data-task="n"]>input:checked,
+li[data-task="n"]>p>input:checked,
+input[data-task="S"]:checked,
+li[data-task="S"]>input:checked,
+li[data-task="S"]>p>input:checked,
+input[data-task="/"]:checked,
+li[data-task="/"]>input:checked,
+li[data-task="/"]>p>input:checked,
+input[data-task="<"]:checked,
+li[data-task="<"]>input:checked,
+li[data-task="<"]>p>input:checked,
+input[data-task=">"]:checked,
+li[data-task=">"]>input:checked,
+li[data-task=">"]>p>input:checked,
+input[data-task='"']:checked,
+li[data-task='"']>input:checked,
+li[data-task='"']>p>input:checked,
+input[data-task="1"]:checked,
+li[data-task="1"]>input:checked,
+li[data-task="1"]>p>input:checked,
+input[data-task="2"]:checked,
+li[data-task="2"]>input:checked,
+li[data-task="2"]>p>input:checked,
+input[data-task="3"]:checked,
+li[data-task="3"]>input:checked,
+li[data-task="3"]>p>input:checked,
+input[data-task="f"]:checked,
+li[data-task="f"]>input:checked,
+li[data-task="f"]>p>input:checked,
+input[data-task="F"]:checked,
+li[data-task="F"]>input:checked,
+li[data-task="F"]>p>input:checked,
+input[data-task="e"]:checked,
+li[data-task="e"]>input:checked,
+li[data-task="e"]>p>input:checked,
+input[data-task="m"]:checked,
+li[data-task="m"]>input:checked,
+li[data-task="m"]>p>input:checked,
+input[data-task="t"]:checked,
+li[data-task="t"]>input:checked,
+li[data-task="t"]>p>input:checked,
+input[data-task="g"]:checked,
+li[data-task="g"]>input:checked,
+li[data-task="g"]>p>input:checked,
+input[data-task="k"]:checked,
+li[data-task="k"]>input:checked,
+li[data-task="k"]>p>input:checked,
+input[data-task="w"]:checked,
+li[data-task="w"]>input:checked,
+li[data-task="w"]>p>input:checked,
+input[data-task="u"]:checked,
+li[data-task="u"]>input:checked,
+li[data-task="u"]>p>input:checked,
+input[data-task="d"]:checked,
+li[data-task="d"]>input:checked,
+li[data-task="d"]>p>input:checked,
+input[data-task="D"]:checked,
+li[data-task="D"]>input:checked,
+li[data-task="D"]>p>input:checked,
+input[data-task="P"]:checked,
+li[data-task="P"]>input:checked,
+li[data-task="P"]>p>input:checked,
+input[data-task="M"]:checked,
+li[data-task="M"]>input:checked,
+li[data-task="M"]>p>input:checked,
+input[data-task="B"]:checked,
+li[data-task="B"]>input:checked,
+li[data-task="B"]>p>input:checked,
+input[data-task="U"]:checked,
+li[data-task="U"]>input:checked,
+li[data-task="U"]>p>input:checked,
+input[data-task="W"]:checked,
+li[data-task="W"]>input:checked,
+li[data-task="W"]>p>input:checked,
+input[data-task="C"]:checked,
+li[data-task="C"]>input:checked,
+li[data-task="C"]>p>input:checked,
+input[data-task="a"]:checked,
+li[data-task="a"]>input:checked,
+li[data-task="a"]>p>input:checked,
+input[data-task="r"]:checked,
+li[data-task="r"]>input:checked,
+li[data-task="r"]>p>input:checked,
+input[data-task="o"]:checked,
+li[data-task="o"]>input:checked,
+li[data-task="o"]>p>input:checked,
+input[data-task="O"]:checked,
+li[data-task="O"]>input:checked,
+li[data-task="O"]>p>input:checked,
+input[data-task="T"]:checked,
+li[data-task="T"]>input:checked,
+li[data-task="T"]>p>input:checked {
 	--checkbox-color-hover: transparent;
 	--checkbox-color: transparent;
-	background-color: transparent;
-	border-color: transparent;
 	border-width: 0;
 }
 
@@ -1123,16 +1226,6 @@ li[data-task="!"]>p>input:checked::after {
 	mask-image: none;
 }
 
-input[data-task="?"]:checked,
-li[data-task="?"]>input:checked,
-li[data-task="?"]>p>input:checked {
-	--checkbox-color-hover: transparent;
-	--checkbox-color: transparent;
-	background-color: transparent;
-	border-color: transparent;
-	border-width: 0;
-}
-
 input[data-task="?"]:checked::after,
 li[data-task="?"]>input:checked::after,
 li[data-task="?"]>p>input:checked::after {
@@ -1148,17 +1241,6 @@ li[data-task="?"]>p>input:checked::after {
 }
 
 /* Cancelled */
-input[type=checkbox][data-task="-"]:checked::before,
-li[data-task="-"]>input:checked::before,
-li[data-task="-"]>p>input:checked::before {
-	--checkbox-color-hover: transparent;
-	--checkbox-color: transparent;
-	background-color: transparent;
-	border-color: transparent;
-	border-width: 0;
-}
-
-
 input[data-task="-"]:checked::after,
 li[data-task="-"]>input:checked::after,
 li[data-task="-"]>p>input:checked::after {
@@ -1177,14 +1259,6 @@ li[data-task="-"]>p>input:checked::after {
 	color: white;
 }
 
-input[data-task="b"]:checked,
-li[data-task="b"]>input:checked,
-li[data-task="b"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="b"]:checked::after,
 li[data-task="b"]>input:checked::after,
 li[data-task="b"]>p>input:checked::after {
@@ -1197,14 +1271,6 @@ li[data-task="b"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
-}
-
-input[data-task="I"]:checked,
-li[data-task="I"]>input:checked,
-li[data-task="I"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
 }
 
 input[data-task="I"]:checked::after,
@@ -1221,14 +1287,6 @@ li[data-task="I"]>p>input:checked::after {
 	mask-image: none;
 }
 
-input[data-task="p"]:checked,
-li[data-task="p"]>input:checked,
-li[data-task="p"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="p"]:checked::after,
 li[data-task="p"]>input:checked::after,
 li[data-task="p"]>p>input:checked::after {
@@ -1241,14 +1299,6 @@ li[data-task="p"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
-}
-
-input[data-task="c"]:checked,
-li[data-task="c"]>input:checked,
-li[data-task="c"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
 }
 
 input[data-task="c"]:checked::after,
@@ -1265,14 +1315,6 @@ li[data-task="c"]>p>input:checked::after {
 	mask-image: none;
 }
 
-input[data-task="i"]:checked,
-li[data-task="i"]>input:checked,
-li[data-task="i"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="i"]:checked::after,
 li[data-task="i"]>input:checked::after,
 li[data-task="i"]>p>input:checked::after {
@@ -1285,14 +1327,6 @@ li[data-task="i"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
-}
-
-input[data-task="l"]:checked,
-li[data-task="l"]>input:checked,
-li[data-task="l"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
 }
 
 /* Location */
@@ -1311,14 +1345,6 @@ li[data-task="l"]>p>input:checked::after {
 }
 
 /* Star */
-input[data-task="s"]:checked,
-li[data-task="s"]>input:checked,
-li[data-task="s"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="s"]:checked::after,
 li[data-task="s"]>input:checked::after,
 li[data-task="s"]>p>input:checked::after {
@@ -1331,14 +1357,6 @@ li[data-task="s"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
-}
-
-input[data-task="*"]:checked,
-li[data-task="*"]>input:checked,
-li[data-task="*"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
 }
 
 input[data-task="*"]:checked::after,
@@ -1356,14 +1374,6 @@ li[data-task="*"]>p>input:checked::after {
 }
 
 /* Note or pin note */
-input[data-task="n"]:checked,
-li[data-task="n"]>input:checked,
-li[data-task="n"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="n"]:checked::after,
 li[data-task="n"]>input:checked::after,
 li[data-task="n"]>p>input:checked::after {
@@ -1377,15 +1387,6 @@ li[data-task="n"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
-
-input[data-task="S"]:checked,
-li[data-task="S"]>input:checked,
-li[data-task="S"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 
 input[data-task="S"]:checked::after,
 li[data-task="S"]>input:checked::after,
@@ -1402,14 +1403,6 @@ li[data-task="S"]>p>input:checked::after {
 }
 
 /* Work in Progress */
-input[data-task="/"]:checked,
-li[data-task="/"]>input:checked,
-li[data-task="/"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="/"]:checked::after,
 li[data-task="/"]>input:checked::after,
 li[data-task="/"]>p>input:checked::after {
@@ -1425,14 +1418,6 @@ li[data-task="/"]>p>input:checked::after {
 }
 
 /* Scheduled */
-input[data-task="<"]:checked,
-li[data-task="<"]>input:checked,
-li[data-task="<"]>p>input:checked {
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-	border-width: 0;
-}
-
 input[data-task="<"]:checked::after,
 li[data-task="<"]>input:checked::after,
 li[data-task="<"]>p>input:checked::after {
@@ -1447,14 +1432,6 @@ li[data-task="<"]>p>input:checked::after {
 	mask-image: none;
 }
 
-input[data-task=">"]:checked,
-li[data-task=">"]>input:checked,
-li[data-task=">"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task=">"]:checked::after,
 li[data-task=">"]>input:checked::after,
 li[data-task=">"]>p>input:checked::after {
@@ -1467,14 +1444,6 @@ li[data-task=">"]>p>input:checked::after {
 	zoom: 100%;
 	-webkit-mask-image: none;
 	mask-image: none;
-}
-
-input[data-task='"']:checked,
-li[data-task='"']>input:checked,
-li[data-task='"']>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
 }
 
 input[data-task='"']:checked::after,
@@ -1521,14 +1490,6 @@ li[data-task="X"]>p>input:checked::after {
 }
 
 /* Arrow Up */
-input[data-task="1"]:checked,
-li[data-task="1"]>input:checked,
-li[data-task="1"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="1"]:checked::after,
 li[data-task="1"]>input:checked::after,
 li[data-task="1"]>p>input:checked::after {
@@ -1546,14 +1507,6 @@ li[data-task="1"]>p>input:checked::after {
 }
 
 /* Arrow Down */
-input[data-task="2"]:checked,
-li[data-task="2"]>input:checked,
-li[data-task="2"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="2"]:checked::after,
 li[data-task="2"]>input:checked::after,
 li[data-task="2"]>p>input:checked::after {
@@ -1571,14 +1524,6 @@ li[data-task="2"]>p>input:checked::after {
 }
 
 /* Arrow Down */
-input[data-task="3"]:checked,
-li[data-task="3"]>input:checked,
-li[data-task="3"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="3"]:checked::after,
 li[data-task="3"]>input:checked::after,
 li[data-task="3"]>p>input:checked::after {
@@ -1596,14 +1541,6 @@ li[data-task="3"]>p>input:checked::after {
 }
 
 /* Phone */
-input[data-task="f"]:checked,
-li[data-task="f"]>input:checked,
-li[data-task="f"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="f"]:checked::after,
 li[data-task="f"]>input:checked::after,
 li[data-task="f"]>p>input:checked::after {
@@ -1621,14 +1558,6 @@ li[data-task="f"]>p>input:checked::after {
 }
 
 /* Flight */
-input[data-task="F"]:checked,
-li[data-task="F"]>input:checked,
-li[data-task="F"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="F"]:checked::after,
 li[data-task="F"]>input:checked::after,
 li[data-task="F"]>p>input:checked::after {
@@ -1646,14 +1575,6 @@ li[data-task="F"]>p>input:checked::after {
 }
 
 /* Email */
-input[data-task="e"]:checked,
-li[data-task="e"]>input:checked,
-li[data-task="e"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="e"]:checked::after,
 li[data-task="e"]>input:checked::after,
 li[data-task="e"]>p>input:checked::after {
@@ -1671,14 +1592,6 @@ li[data-task="e"]>p>input:checked::after {
 }
 
 /* Magic Wand for Special Highlights and Tips */
-input[data-task="m"]:checked,
-li[data-task="m"]>input:checked,
-li[data-task="m"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="m"]:checked::after,
 li[data-task="m"]>input:checked::after,
 li[data-task="m"]>p>input:checked::after {
@@ -1696,14 +1609,6 @@ li[data-task="m"]>p>input:checked::after {
 }
 
 /* Time, Clock */
-input[data-task="t"]:checked,
-li[data-task="t"]>input:checked,
-li[data-task="t"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="t"]:checked::after,
 li[data-task="t"]>input:checked::after,
 li[data-task="t"]>p>input:checked::after {
@@ -1721,14 +1626,6 @@ li[data-task="t"]>p>input:checked::after {
 }
 
 /* Results, Graphics, Stats */
-input[data-task="g"]:checked,
-li[data-task="g"]>input:checked,
-li[data-task="g"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="g"]:checked::after,
 li[data-task="g"]>input:checked::after,
 li[data-task="g"]>p>input:checked::after {
@@ -1746,28 +1643,14 @@ li[data-task="g"]>p>input:checked::after {
 }
 
 /*
-
 Extra Checkbox Icons
 Icons from Lucide Icons
 ISC License (it is on the top of the page)
 https://lucide.dev
-
-- [k] key
-- [w] win
-- [u] up
-- [d] down
-
+key, win, up, down, cart, add, remove, issue, closed issue, test
 */
 
 /* Key */
-input[data-task="k"]:checked,
-li[data-task="k"]>input:checked,
-li[data-task="k"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="k"]:checked::after,
 li[data-task="k"]>input:checked::after,
 li[data-task="k"]>p>input:checked::after {
@@ -1785,14 +1668,6 @@ li[data-task="k"]>p>input:checked::after {
 }
 
 /* Win */
-input[data-task="w"]:checked,
-li[data-task="w"]>input:checked,
-li[data-task="w"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="w"]:checked::after,
 li[data-task="w"]>input:checked::after,
 li[data-task="w"]>p>input:checked::after {
@@ -1810,14 +1685,6 @@ li[data-task="w"]>p>input:checked::after {
 }
 
 /* Up */
-input[data-task="u"]:checked,
-li[data-task="u"]>input:checked,
-li[data-task="u"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="u"]:checked::after,
 li[data-task="u"]>input:checked::after,
 li[data-task="u"]>p>input:checked::after {
@@ -1835,14 +1702,6 @@ li[data-task="u"]>p>input:checked::after {
 }
 
 /* Down */
-input[data-task="d"]:checked,
-li[data-task="d"]>input:checked,
-li[data-task="d"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="d"]:checked::after,
 li[data-task="d"]>input:checked::after,
 li[data-task="d"]>p>input:checked::after {
@@ -1860,23 +1719,16 @@ li[data-task="d"]>p>input:checked::after {
 }
 
 /* 
-Pull Request Icons
+Branch and Pull Request Icons
 Created by Bernardo Pires (drbap)
 License MIT
 - [D] draft pull request
 - [P] open pull request
 - [M] merged pull request
+- [B] branch
 */
 
 /* Draft Pull Request */
-input[data-task="D"]:checked,
-li[data-task="D"]>input:checked,
-li[data-task="D"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="D"]:checked::after,
 li[data-task="D"]>input:checked::after,
 li[data-task="D"]>p>input:checked::after {
@@ -1894,14 +1746,6 @@ li[data-task="D"]>p>input:checked::after {
 }
 
 /* Open Pull Request */
-input[data-task="P"]:checked,
-li[data-task="P"]>input:checked,
-li[data-task="P"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="P"]:checked::after,
 li[data-task="P"]>input:checked::after,
 li[data-task="P"]>p>input:checked::after {
@@ -1923,14 +1767,6 @@ li[data-task="P"]>p>input:checked::after {
 }
 
 /* Merged Pull Request */
-input[data-task="M"]:checked,
-li[data-task="M"]>input:checked,
-li[data-task="M"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="M"]:checked::after,
 li[data-task="M"]>input:checked::after,
 li[data-task="M"]>p>input:checked::after {
@@ -1952,14 +1788,6 @@ li[data-task="M"]>p>input:checked::after {
 }
 
 /* Git Branch */
-input[data-task="B"]:checked,
-li[data-task="B"]>input:checked,
-li[data-task="B"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="B"]:checked::after,
 li[data-task="B"]>input:checked::after,
 li[data-task="B"]>p>input:checked::after {
@@ -1977,14 +1805,6 @@ li[data-task="B"]>p>input:checked::after {
 }
 
 /* User */
-input[data-task="U"]:checked,
-li[data-task="U"]>input:checked,
-li[data-task="U"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="U"]:checked::after,
 li[data-task="U"]>input:checked::after,
 li[data-task="U"]>p>input:checked::after {
@@ -2002,14 +1822,6 @@ li[data-task="U"]>p>input:checked::after {
 }
 
 /* Passw */
-input[data-task="W"]:checked,
-li[data-task="W"]>input:checked,
-li[data-task="W"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="W"]:checked::after,
 li[data-task="W"]>input:checked::after,
 li[data-task="W"]>p>input:checked::after {
@@ -2025,15 +1837,8 @@ li[data-task="W"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
-/* Cart */
-input[data-task="C"]:checked,
-li[data-task="C"]>input:checked,
-li[data-task="C"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
 
+/* Cart */
 input[data-task="C"]:checked::after,
 li[data-task="C"]>input:checked::after,
 li[data-task="C"]>p>input:checked::after {
@@ -2051,14 +1856,6 @@ li[data-task="C"]>p>input:checked::after {
 }
 
 /* Add */
-input[data-task="a"]:checked,
-li[data-task="a"]>input:checked,
-li[data-task="a"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="a"]:checked::after,
 li[data-task="a"]>input:checked::after,
 li[data-task="a"]>p>input:checked::after {
@@ -2076,14 +1873,6 @@ li[data-task="a"]>p>input:checked::after {
 }
 
 /* Remove */
-input[data-task="r"]:checked,
-li[data-task="r"]>input:checked,
-li[data-task="r"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="r"]:checked::after,
 li[data-task="r"]>input:checked::after,
 li[data-task="r"]>p>input:checked::after {
@@ -2101,14 +1890,6 @@ li[data-task="r"]>p>input:checked::after {
 }
 
 /* Issue */
-input[data-task="o"]:checked,
-li[data-task="o"]>input:checked,
-li[data-task="o"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="o"]:checked::after,
 li[data-task="o"]>input:checked::after,
 li[data-task="o"]>p>input:checked::after {
@@ -2126,14 +1907,6 @@ li[data-task="o"]>p>input:checked::after {
 }
 
 /* Closed Issue */
-input[data-task="O"]:checked,
-li[data-task="O"]>input:checked,
-li[data-task="O"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
-
 input[data-task="O"]:checked::after,
 li[data-task="O"]>input:checked::after,
 li[data-task="O"]>p>input:checked::after {
@@ -2149,18 +1922,12 @@ li[data-task="O"]>p>input:checked::after {
 	-webkit-mask-image: none;
 	mask-image: none;
 }
+
 *[data-task="O"] .cm-list-1 {
 	color: #828282;
 }
-/* Test */
-input[data-task="T"]:checked,
-li[data-task="T"]>input:checked,
-li[data-task="T"]>p>input:checked {
-	border-width: 0;
-	--checkbox-color: transparent;
-	--checkbox-color-hover: transparent;
-}
 
+/* Test */
 input[data-task="T"]:checked::after,
 li[data-task="T"]>input:checked::after,
 li[data-task="T"]>p>input:checked::after {
@@ -2459,7 +2226,6 @@ li[data-task="T"]>p>input:checked::after {
 }
 
 /* Headings Callouts */
-
 .callout[data-callout="h1-blue"],
 .callout[data-callout="h2-blue"],
 .callout[data-callout="h3-blue"],
