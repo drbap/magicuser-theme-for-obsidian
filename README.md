@@ -44,7 +44,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
-**Example**: *Highlighter green callout*
+**Example**: *highlighter green callout*
 ```
 > [!hl-green] Your callout title here
 > Callout text here
@@ -149,6 +149,7 @@ I hope this theme helps to increase your productivity and inspiration.
 ![Dark mode caret width](images/magicuser_caret_width.png)
 
 - When selecting text, the main edit cursor/caret will have a **different width** for better visibility (**no blinking caret**).
+  
 - Additional carets/cursors have a different width and no blinking carets (solid appearance).
 
 ## Search Highlight in Current Note
