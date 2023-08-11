@@ -3,8 +3,8 @@
 ## [4.0.0] - 2023-08-10
 ### Improvements
 - New notes icon.
-- Code syntax highlighting adjustments to be similar to the MagicUser themes for VS Code.
-- Overall CSS adjustments to improve performance (reduce filesize).
+- Code syntax highlighting adjustments to be similar to the MagicUser themes for VS Code
+- Overall CSS adjustments to improve performance and reduce filesize.
 
 ## [3.9.0] - 2023-08-09
 ### Improvements
