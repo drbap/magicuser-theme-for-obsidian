@@ -2,8 +2,8 @@
 
 ## [4.0.0] - 2023-08-10
 ### Improvements
-- New file icons.
-- Code syntax highlighting adjustments (keywords) to be similar to MagicUser theme for VS Code (light and dark theme).
+- New notes icon.
+- Code syntax highlighting adjustments (keywords) to be similar to MagicUser theme for VS Code (light and dark mode).
 - Overall CSS adjustments to improve performance (reduce filesize).
 
 ## [3.9.0] - 2023-08-09
