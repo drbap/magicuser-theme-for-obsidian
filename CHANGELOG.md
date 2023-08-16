@@ -3,7 +3,7 @@
 ## [4.1.0] - 2023-08-16
 ### Improvements
 - Code: attribute color same as MagicUser themes for VS Code (light and dark theme).
-- More code syntax highlighting adjustments to be similar to the MagicUser themes for VS Code (light and dark theme).
+- More code syntax highlighting adjustments to be similar to the MagicUser themes for VS Code.
 
 ## [4.0.0] - 2023-08-10
 ### Improvements
