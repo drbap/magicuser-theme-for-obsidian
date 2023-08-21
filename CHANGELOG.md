@@ -1,5 +1,18 @@
 # Changelog
 
+## [4.2.0] - 2023-08-20
+### Improvements
+- New checkbox icons (Extra 3 screenshot icons).
+  - `- [G] ` Group / Users
+  - `- [R] ` Reference / Repository
+  - `- [E] ` Eye / View
+  - `- [A] ` Activity
+  - `- [L] ` Lesson / Presentation
+  - `- [h] ` Home
+  - `- [H] ` Health / Fitness
+  - `- [Q] ` Quality
+- Added `- [q] ` to trigger quote checkbox.
+
 ## [4.1.0] - 2023-08-16
 ### Improvements
 - Code: attribute color same as MagicUser themes for VS Code (light and dark theme).
