@@ -24,6 +24,9 @@ I hope this theme helps to increase your productivity and inspiration.
 ## Additional Checkbox Icons (Extra 2)
 ![Custom Checkbox Icons - Extra 2](images/magicuser_checkboxes_icons_extra_2.png)
 
+## Additional Checkbox Icons (Extra 3)
+![Custom Checkbox Icons - Extra 3](images/magicuser_checkboxes_icons_extra_3.png)
+
 ## Additional Callouts
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
