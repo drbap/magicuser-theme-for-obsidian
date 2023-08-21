@@ -18,13 +18,13 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
 
-## Checkbox Icons (Extra 1)
+### Checkbox Icons (Extra 1)
 ![Custom Checkbox Icons - Extra 1](images/magicuser_checkboxes_icons_extra_1.png)
 
-## Checkbox Icons (Extra 2)
+### Checkbox Icons (Extra 2)
 ![Custom Checkbox Icons - Extra 2](images/magicuser_checkboxes_icons_extra_2.png)
 
-## Checkbox Icons (Extra 3)
+### Checkbox Icons (Extra 3)
 ![Custom Checkbox Icons - Extra 3](images/magicuser_checkboxes_icons_extra_3.png)
 
 ## Additional Callouts
