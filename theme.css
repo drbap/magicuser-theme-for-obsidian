@@ -1206,7 +1206,34 @@ li[data-task="O"]>input:checked,
 li[data-task="O"]>p>input:checked,
 input[data-task="T"]:checked,
 li[data-task="T"]>input:checked,
-li[data-task="T"]>p>input:checked {
+li[data-task="T"]>p>input:checked,
+input[data-task="E"]:checked,
+li[data-task="E"]>input:checked,
+li[data-task="E"]>p>input:checked,
+input[data-task="Q"]:checked,
+li[data-task="Q"]>input:checked,
+li[data-task="Q"]>p>input:checked,
+input[data-task="q"]:checked,
+li[data-task="q"]>input:checked,
+li[data-task="q"]>p>input:checked,
+input[data-task="G"]:checked,
+li[data-task="G"]>input:checked,
+li[data-task="G"]>p>input:checked,
+input[data-task="L"]:checked,
+li[data-task="L"]>input:checked,
+li[data-task="L"]>p>input:checked,
+input[data-task="h"]:checked,
+li[data-task="h"]>input:checked,
+li[data-task="h"]>p>input:checked,
+input[data-task="H"]:checked,
+li[data-task="H"]>input:checked,
+li[data-task="H"]>p>input:checked,
+input[data-task="A"]:checked,
+li[data-task="A"]>input:checked,
+li[data-task="A"]>p>input:checked,
+input[data-task="R"]:checked,
+li[data-task="R"]>input:checked,
+li[data-task="R"]>p>input:checked {
 	--checkbox-color-hover: transparent;
 	--checkbox-color: transparent;
 	border-width: 0;
@@ -1373,7 +1400,6 @@ li[data-task="*"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Note or pin note */
 input[data-task="n"]:checked::after,
 li[data-task="n"]>input:checked::after,
 li[data-task="n"]>p>input:checked::after {
@@ -1417,7 +1443,6 @@ li[data-task="/"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Scheduled */
 input[data-task="<"]:checked::after,
 li[data-task="<"]>input:checked::after,
 li[data-task="<"]>p>input:checked::after {
@@ -1446,6 +1471,9 @@ li[data-task=">"]>p>input:checked::after {
 	mask-image: none;
 }
 
+input[data-task="q"]:checked::after,
+li[data-task="q"]>input:checked::after,
+li[data-task="q"]>p>input:checked::after,
 input[data-task='"']:checked::after,
 li[data-task='"']>input:checked::after,
 li[data-task='"']>p>input:checked::after {
@@ -1489,7 +1517,6 @@ li[data-task="X"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Arrow Up */
 input[data-task="1"]:checked::after,
 li[data-task="1"]>input:checked::after,
 li[data-task="1"]>p>input:checked::after {
@@ -1506,7 +1533,6 @@ li[data-task="1"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Arrow Down */
 input[data-task="2"]:checked::after,
 li[data-task="2"]>input:checked::after,
 li[data-task="2"]>p>input:checked::after {
@@ -1523,7 +1549,6 @@ li[data-task="2"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Arrow Down */
 input[data-task="3"]:checked::after,
 li[data-task="3"]>input:checked::after,
 li[data-task="3"]>p>input:checked::after {
@@ -1540,7 +1565,6 @@ li[data-task="3"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Phone */
 input[data-task="f"]:checked::after,
 li[data-task="f"]>input:checked::after,
 li[data-task="f"]>p>input:checked::after {
@@ -1557,7 +1581,6 @@ li[data-task="f"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Flight */
 input[data-task="F"]:checked::after,
 li[data-task="F"]>input:checked::after,
 li[data-task="F"]>p>input:checked::after {
@@ -1574,7 +1597,6 @@ li[data-task="F"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Email */
 input[data-task="e"]:checked::after,
 li[data-task="e"]>input:checked::after,
 li[data-task="e"]>p>input:checked::after {
@@ -1608,7 +1630,7 @@ li[data-task="m"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Time, Clock */
+/* Time */
 input[data-task="t"]:checked::after,
 li[data-task="t"]>input:checked::after,
 li[data-task="t"]>p>input:checked::after {
@@ -1625,7 +1647,6 @@ li[data-task="t"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* Results, Graphics, Stats */
 input[data-task="g"]:checked::after,
 li[data-task="g"]>input:checked::after,
 li[data-task="g"]>p>input:checked::after {
@@ -1932,6 +1953,134 @@ input[data-task="T"]:checked::after,
 li[data-task="T"]>input:checked::after,
 li[data-task="T"]>p>input:checked::after {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300a3a348' stroke='%2300bfbf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2'/%3E%3Cpath d='M8.5 2h7'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="R"]:checked::after,
+li[data-task="R"]>input:checked::after,
+li[data-task="R"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23cf00ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20'/%3E%3Cpolyline fill='%23cf00ff' points='10 2 10 10 13 7 16 10 16 2'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="E"]:checked::after,
+li[data-task="E"]>input:checked::after,
+li[data-task="E"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300a3ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath fill='none' d='M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z'/%3E%3Ccircle fill='none' cx='12' cy='12' r='3'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="Q"]:checked::after,
+li[data-task="Q"]>input:checked::after,
+li[data-task="Q"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300a3ff88' stroke='%2300a3ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3h12l4 6-10 13L2 9Z'/%3E%3Cpath d='M11 3 8 9l4 13 4-13-3-6'/%3E%3Cpath d='M2 9h20'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="L"]:checked::after,
+li[data-task="L"]>input:checked::after,
+li[data-task="L"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m33 64h446v311h-446z' fill='%23f1f1f1' fill-rule='evenodd' stroke='%23828282' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='40' /%3E%3Cpath d='m321 325c-99 7e-5 -178 35-180 86-0.4 19-3 33-2 45-1 20 3 30 25 30h315c22 0 26-9 25-30 0.8-11-2-26-2-45-1-51-81-86-180-86-0.2 1e-4 -0.5 8e-3 -0.7 8e-3 -0.2-5e-4 -0.5-8e-3 -0.7-8e-3zm90-109a90 90 0 0 1-90 90 90 90 0 0 1-90-90 90 90 0 0 1 90-90 90 90 0 0 1 90 90z' fill='%230072d3' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="h"]:checked::after,
+li[data-task="h"]>input:checked::after,
+li[data-task="h"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m258 57-248 195 70 0.3v203h135v-153h80v153h134v-201l73 0.3-105-85' fill='%2300a3ff' fill-rule='evenodd' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="A"]:checked::after,
+li[data-task="A"]>input:checked::after,
+li[data-task="A"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300bf48' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 12h-4l-3 9L9 3l-3 9H2'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="H"]:checked::after,
+li[data-task="H"]>input:checked::after,
+li[data-task="H"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230072d3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='18.5' cy='17.5' r='3.5'/%3E%3Ccircle cx='5.5' cy='17.5' r='3.5'/%3E%3Ccircle cx='15' cy='5' r='1'/%3E%3Cpath d='M12 17.5V14l-3-3 4-3 2 3h2'/%3E%3C/svg%3E");
+	background: transparent;
+	vertical-align: middle;
+	position: absolute;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	top: 0;
+	left: 0;
+	zoom: 100%;
+	-webkit-mask-image: none;
+	mask-image: none;
+}
+
+input[data-task="G"]:checked::after,
+li[data-task="G"]>input:checked::after,
+li[data-task="G"]>p>input:checked::after {
+	content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m147 239c-74 8e-5 -133 27-134 65-0.3 14-2 25-2 34-0.8 15 2 22 19 22h235c17 0 19-7 19-22 0.6-9-1-20-2-34-0.9-38-60-65-134-65-0.2 8e-5 -0.4 6e-3 -0.5 6e-3 -0.2-4e-4 -0.4-6e-3 -0.5-6e-3zm67-83a67 68 0 0 1-67 68 67 68 0 0 1-67-68 67 68 0 0 1 67-68 67 68 0 0 1 67 68zm167 239c-63 1e-5 -114 23-115 56-0.3 12-2 22-1 29-0.7 13 2 19 16 19h202c14 0 17-6 16-19 0.5-7-1-17-1-29-0.8-33-52-56-115-56-0.2 6e-5 -0.3 5e-3 -0.5 5e-3 -0.2-3e-4 -0.3-5e-3 -0.5-5e-3zm58-71a58 59 0 0 1-58 59 58 59 0 0 1-58-59 58 59 0 0 1 58-59 58 59 0 0 1 58 59zm-58-182c-63 1e-5 -114 23-115 56-0.3 12-2 22-1 29-0.7 13 2 19 16 19h202c14 0 17-6 16-19 0.5-7-1-17-1-29-0.8-33-52-56-115-56-0.2 6e-5 -0.3 5e-3 -0.5 5e-3 -0.2-3e-4 -0.3-5e-3 -0.5-5e-3zm58-71a58 59 0 0 1-58 59 58 59 0 0 1-58-59 58 59 0 0 1 58-59 58 59 0 0 1 58 59z' fill='%230072d3'/%3E%3C/svg%3E");
 	background: transparent;
 	vertical-align: middle;
 	position: absolute;
