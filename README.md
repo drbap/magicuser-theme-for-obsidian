@@ -30,6 +30,7 @@ I hope this theme helps to increase your productivity and inspiration.
 ## Additional Callouts
 
 ### Pen and Highlighter Callouts
+
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
