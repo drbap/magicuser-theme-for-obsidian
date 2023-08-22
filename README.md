@@ -29,36 +29,16 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ## Additional Callouts
 
+### Pen and Highlighter Callouts
+**Colors**: green, blue, orange, yellow, red, pink, purple
+
 ![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
 
-![Additional Callouts](images/magicuser_callouts_02.png)
-
-![Additional Callouts](images/magicuser_callouts_03.png)
-
-![Additional Callouts Quotes](images/magicuser_callouts_quotes.png)
-
-![Additional Callouts Boxes](images/magicuser_callouts_box.png)
-
-![Additional Callouts Headings](images/magicuser_obsidian_callout_headings.png)
-
-### Highlighter Callouts
-
+#### Highlighter Callouts
 `> [!hl-` + `color] Your Callout Title`
 
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *highlighter green callout*
-```
-> [!hl-green] Your callout title here
-> Callout text here
-
-```
-
-### Pen Callouts
-
+#### Pen Callouts
 `> [!p-` + `color] Your Callout Title`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *pen blue callout*
 ```
@@ -69,9 +49,11 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ### Quote Callouts
 
-`> [!q-` + `color] Quote`
-
 **Colors**: green, blue, orange, yellow, red, pink, purple
+
+![Additional Callouts Quotes](images/magicuser_callouts_quotes.png)
+
+`> [!q-` + `color] Quote`
 
 **Example**: *quote green callout*
 ```
@@ -82,9 +64,11 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ### Box Callouts
 
-`> [!b-` + `color] Your Callout Title`
-
 **Colors**: green, blue, orange, yellow, red, pink, purple
+
+![Additional Callouts Boxes](images/magicuser_callouts_box.png)
+
+`> [!b-` + `color] Your Callout Title`
 
 **Example**: *box green callout*
 ```
@@ -94,10 +78,11 @@ I hope this theme helps to increase your productivity and inspiration.
 ```
 
 ### Callouts Headings (H1 - H6)
+**Colors**: green, blue, orange, yellow, red, pink, purple
+
+![Additional Callouts Headings](images/magicuser_obsidian_callout_headings.png)
 
 `> [!h1 to h6-` + `color] Your Title`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *h1 green text callout*
 ```
@@ -106,6 +91,10 @@ I hope this theme helps to increase your productivity and inspiration.
 ```
 
 ### Specific Callouts
+
+![Additional Callouts](images/magicuser_callouts_02.png)
+
+![Additional Callouts](images/magicuser_callouts_03.png)
 
 `> [!video]`
 
