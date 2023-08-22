@@ -83,15 +83,16 @@ Colors: green, blue, orange, yellow, red, pink, purple
 
 ```
 
-### Callouts Headings (H1 - H6)
+### Callout Headings (H1 - H6)
 
-![Additional Callouts Headings](images/magicuser_obsidian_callout_headings.png)
+![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
 
 `> [!h1 to h6-` + `color] Your Title`
 
 Colors: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *h1 green text callout*
+
 ```
 > [!h1-green] Your h1 title here
 
@@ -124,6 +125,7 @@ Colors: green, blue, orange, yellow, red, pink, purple
 `> [!magic]`
 
 **Example**: *magic callout*
+
 ```
 > [!magic] Special Tip
 > Callout text here
