@@ -29,7 +29,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ## Additional Callouts
 
-### Pen and Highlighter Callouts
+### Highlighter and Pen Callouts
 
 **Colors**: green, blue, orange, yellow, red, pink, purple
 
