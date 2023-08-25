@@ -1,5 +1,9 @@
 # Changelog
 
+## [4.2.1] - 2023-08-25
+### Improvements
+- Sidebar multiple selection color.
+
 ## [4.2.0] - 2023-08-20
 ### Improvements
 - New checkbox icons (Extra 3 screenshot icons).
