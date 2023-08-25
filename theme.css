@@ -354,7 +354,7 @@ body {
 	--nav-item-color-active: var(--text-normal);
 	--nav-item-color-selected: var(--text-normal);
 	--nav-item-color-highlighted: var(--text-accent-hover);
-	--nav-item-background-selected: #ff0000;
+	--nav-item-background-selected: #0072d338;
 	--nav-item-weight: inherit;
 	--nav-item-weight-hover: inherit;
 	--nav-item-weight-active: inherit;
