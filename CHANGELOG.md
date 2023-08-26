@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.3.0] - 2023-08-26
+### Improvements
+- Inline title size.
+- H1 - H6 colors and size adjustments.
+- File header title adjustments.
+- Highlight folder with purple color - by clicking on the folder name - tab title bar.
+- Small UI adjustments for overall theme consistency.
+
 ## [4.2.1] - 2023-08-25
 ### Improvements
 - Sidebar multiple selection color.
