@@ -156,10 +156,10 @@ body {
 	--file-line-width: 700px;
 	--file-folding-offset: 24px;
 	--file-margins: var(--size-4-8);
-	--file-header-font-size: var(--font-ui-small);
-	--file-header-font-weight: 400;
-	--file-header-border: var(--border-width) solid transparent;
-	--file-header-justify: center;
+	--file-header-font-size: var(--font-ui-medium);
+	--file-header-font-weight: 600;
+	--file-header-border: 1px solid #007fff20;
+	--file-header-justify: left;
 
 	/* Relative font sizes */
 	--font-smallest: 0.8em;
@@ -223,10 +223,10 @@ body {
 	--h6-line-height: var(--line-height-normal);
 	--h1-size: 2em;
 	--h2-size: 1.5em;
-	--h3-size: 1.4em;
-	--h4-size: 1.3em;
-	--h5-size: 1.2em;
-	--h6-size: 1.1em;
+	--h3-size: 1.17em;
+	--h4-size: 1em;
+	--h5-size: .83em;
+	--h6-size: .67em;
 	--h1-style: normal;
 	--h2-style: normal;
 	--h3-style: normal;
@@ -240,11 +240,11 @@ body {
 	--h5-variant: normal;
 	--h6-variant: normal;
 	--h1-weight: 800;
-	--h2-weight: 700;
-	--h3-weight: 700;
-	--h4-weight: 700;
-	--h5-weight: 700;
-	--h6-weight: 700;
+	--h2-weight: 800;
+	--h3-weight: 800;
+	--h4-weight: 800;
+	--h5-weight: 800;
+	--h6-weight: 800;
 
 	/* View header */
 	--header-height: 40px;
@@ -288,7 +288,7 @@ body {
 	--inline-title-style: var(--h1-style);
 	--inline-title-variant: var(--h1-variant);
 	--inline-title-weight: var(--h1-weight);
-	--inline-title-margin-bottom: 0.5em;
+	--inline-title-margin-bottom: .5em;
 
 	/* Inputs */
 	--input-height: 30px;
@@ -463,14 +463,14 @@ body {
 
 	/* Tabs */
 	--tab-background-active: var(--background-primary);
-	--tab-text-color: var(--text-faint);
+	--tab-text-color: var(--text-muted);
 	--tab-text-color-active: var(--text-muted);
 	--tab-text-color-focused: var(--text-muted);
-	--tab-text-color-focused-active: var(--text-muted);
-	--tab-text-color-focused-highlighted: var(--text-accent);
+	--tab-text-color-focused-active: var(--text-normal);
+	--tab-text-color-focused-highlighted: var(--text-normal);
 	--tab-text-color-focused-active-current: var(--text-normal);
 	--tab-font-size: var(--font-ui-small);
-	--tab-font-weight: inherit;
+	--tab-font-weight: 500;
 	--tab-container-background: var(--background-secondary);
 	--tab-divider-color: #007fff20;
 	--tab-outline-color: var(--divider-color);
@@ -657,6 +657,14 @@ body.is-translucent:not(.is-fullscreen) {
 	background-color: #000;
 }
 
+.tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-flashing {
+	background-color: #bf00ff48 !important;
+}
+
+.community-item .suggestion-highlight {
+	background-color: #ffff0064 !important;
+}
+
 .menu-separator {
 	border-color: #007fff30;
 }
@@ -754,11 +762,11 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
 	--mu-font-mono: "JetBrains Mono", "Operator Mono", "Consolas", "Roboto Mono", monospace;
 	--mu-h1: #00a3ff;
-	--mu-h2: #00a3ffd8;
-	--mu-h3: #00a3ffcf;
-	--mu-h4: #00a3ffcf;
-	--mu-h5: #00a3ffb3;
-	--mu-h6: #00a3ffb3;
+	--mu-h2: #00a3ff;
+	--mu-h3: #00a3ff;
+	--mu-h4: #00a3ff;
+	--mu-h5: #00a3ff;
+	--mu-h6: #00a3ff;
 	--mu-green-1: #20f120;
 	--mu-green-2: #20a320;
 	--mu-icon: #5382d3;
@@ -827,7 +835,7 @@ body.is-translucent:not(.is-fullscreen) {
 
 .theme-dark .inline-title {
 	font-family: var(--mu-font-mono);
-	font-size: var(--font-small);
+	font-size: var(--font-smaller);
 	font-weight: bold;
 	color: var(--mu-text-title);
 }
@@ -919,11 +927,11 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
 	--mu-font-mono: "JetBrains Mono", "Consolas", "Roboto Mono", monospace;
 	--mu-h1: #007fff;
-	--mu-h2: #007fffd8;
-	--mu-h3: #007fffcf;
-	--mu-h4: #007fffcf;
-	--mu-h5: #007fffb3;
-	--mu-h6: #007fffb3;
+	--mu-h2: #007fff;
+	--mu-h3: #007fff;
+	--mu-h4: #007fff;
+	--mu-h5: #007fff;
+	--mu-h6: #007fff;
 	--mu-green-1: #20f120;
 	--mu-green-2: #20a320;
 	--mu-icon: #5382d3;
@@ -1001,7 +1009,7 @@ body.is-translucent:not(.is-fullscreen) {
 
 .theme-light .inline-title {
 	font-family: var(--mu-font-mono);
-	font-size: var(--font-small);
+	font-size: var(--font-smaller);
 	font-weight: bold;
 	color: var(--mu-text-title);
 }
