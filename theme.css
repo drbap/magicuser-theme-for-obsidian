@@ -447,10 +447,6 @@ body {
 	--slider-track-background: var(--background-modifier-border);
 	--slider-track-height: 3px;
 
-	/* Sidebar */
-	--sidebar-markdown-font-size: calc(var(--font-text-size) * 0.9);
-	--sidebar-tab-text-display: none;
-
 	/* Status bar */
 	--status-bar-background: var(--background-secondary);
 	--status-bar-border-color: var(--divider-color);
