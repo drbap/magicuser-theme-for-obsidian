@@ -3,7 +3,7 @@
 ## [4.4.0] - 2023-09-01
 ### Improvements
 - Properties layout (light and dark theme).
-- Improved search popup - search operators highlighted.
+- Improved search popup (search operators highlighted).
 - Improved input text/input search  background color.
 - New placeholder color.
 
