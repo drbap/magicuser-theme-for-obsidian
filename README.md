@@ -157,6 +157,10 @@ Colors: green, blue, orange, yellow, red, pink, purple
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
+## Properties Layout
+
+![Properties](images/magicuser_properties.png)
+
 ## Tables Layout
 
 ![Table Layout](images/magicuser_theme_tables.png)
