@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.0] - 2023-09-01
+### Improvements
+- Properties layout.
+- Improved search popup - search operators.
+- Improved input text color.
+- New placeholder color.
+
 ## [4.3.0] - 2023-08-26
 ### Improvements
 - Inline title size.
