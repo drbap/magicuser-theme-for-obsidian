@@ -6,6 +6,20 @@
 
 I hope this theme helps to increase your productivity and inspiration.
 
+**Navigation**
+- [Installation](#installation)
+- [MagicUser Themes](#magicuser-themes-4-themes)
+- [Custom Checkbox Icons](#custom-checkbox-icons)
+- [Additional Callouts](#additional-callouts)
+- [Folders and Notes Icons](#folders-and-notes-icons)
+- **Caret**: [Caret Colors](#caret-colors-for-improved-visibility) | [Caret Width](#caret-width-selection-and-multiple-cursors)
+- [Properties Layout](#properties-layout)
+- [Tables Layout](#tables-layout)
+- [Code Theme](#code-theme-light-and-dark)
+- [Mobile Display](#mobile-display)
+- [Feedback](#feedback)
+- [License and Acknowledgements](#license-and-acknowledgements)
+
 ## Installation
 
 1. Open Obsidian **Settings** -> select **Appearance**
