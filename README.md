@@ -1,8 +1,8 @@
-# ✨**MagicUser**✨ Theme
+# ✨**MagicUser**✨ Theme for Obsidian
 
 ![MagicUser theme for Obsidian](images/screenshot_big.png)
 
-✨ **MagicUser** is a custom theme for Obsidian.md aiming to create a pleasant environment for note-taking activities with greater focus and concentration. It has **light theme** and **dark theme** for day/night use.
+✨ **MagicUser** is a custom theme for Obsidian.md aiming to create a pleasant environment for note-taking activities with greater focus and concentration. It has 2 **light themes** and 2 **dark themes** for day/night use.
 
 I hope this theme helps to increase your productivity and inspiration.
 
@@ -13,6 +13,14 @@ I hope this theme helps to increase your productivity and inspiration.
 2. **Themes** -> click **Manage** -> search for **MagicUser**
 
 3. Select the theme -> click **Install and use**
+
+## MagicUser Themes (4 Themes)
+
+![MagicUser Themes](images/magicuser_obsidian_themes.png)
+
+In order to activate the Teal and White background themes, turn on "Translucent Window" (no extra plug-in required).
+
+- Options -> Appearance -> Advanced -> **Translucent window**
 
 ## Custom Checkbox Icons
 
@@ -135,11 +143,6 @@ Colors: green, blue, orange, yellow, red, pink, purple
 ## Folders and Notes Icons
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
-
-## Light and Dark Modes
-
-![Light and Dark Mode Headings](images/magicuser_obsidian_headings.png)
-
 
 ## Caret Colors for Improved Visibility
 
