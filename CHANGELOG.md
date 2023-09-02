@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.0.1] - 2023-09-02
+### Fixed
+- Properties gap adjustment.
+
 ## [5.0.0] - 2023-09-02
 ### Improvements
 - 2 new themes (teal and white background - translucent window on).
