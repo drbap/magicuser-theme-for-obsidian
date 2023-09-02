@@ -76,7 +76,7 @@ https://github.com/colineckert/obsidian-things
 body {
 	/* Blockquotes */
 	--blockquote-border-thickness: 4px;
-	--blockquote-border-color: var(--mu-purple-1);
+	--blockquote-border-color: var(--mu-color-lig);
 	--blockquote-font-style: normal;
 	--blockquote-color: var(--mu-blockquote-foreground);
 	--blockquote-background-color: var(--mu-blockquote-background);
@@ -598,7 +598,7 @@ body {
 	--font-ui-large: 20px;
 
 	/* Workspace */
-	--workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
+	--workspace-background-translucent: rgba(var(--mono-rgb-0), .8);
 
 	/* ============================================= */
 	/* Color mappings  */
@@ -663,7 +663,7 @@ body {
 }
 
 body.is-translucent {
-	background-color: var(--mu-background-color-2);
+	background-color: var(--mu-translucent-background);
 }
 
 body.is-translucent .titlebar {
@@ -674,6 +674,48 @@ body.is-translucent:not(.is-fullscreen) {
 	--nav-collapse-icon-color: #0072d3;
 	--nav-collapse-icon-color-collapsed: #0072d3;
 	--divider-color: rgba(0, 0, 0, 0);
+}
+
+body.is-translucent .titlebar-button-container.mod-right {
+	background-color: transparent;
+}
+
+body.is-translucent.theme-light .titlebar-button-container.mod-right {
+	color: #000;
+}
+
+body.is-translucent.theme-dark .titlebar-button-container.mod-right {
+	color: #f1f1f1;
+}
+
+body.is-translucent.theme-light {
+	--mu-background-color-1: #fff;
+	--mu-background-color-2: #f1f1f1;
+	--mu-setting-color: #cfcfcf20;
+	--mu-translucent-background: #a3a3a3;
+	--titlebar-background: #f1f1f1;
+	--titlebar-background-focused: #f1f1f1;
+	--mu-titlebar-background: #f1f1f1;
+}
+
+body.is-translucent.theme-dark {
+	--mu-background-color-1: #002828;
+	--mu-background-color-2: #001818;
+	--mu-setting-color: #cfcfcf20;
+	--mu-translucent-background: #001818;
+	--titlebar-background: #001818;
+	--titlebar-background-focused: #001818;
+	--mu-titlebar-background: #001818;
+}
+
+body.is-translucent.theme-light input[type="search"],
+body.is-translucent.theme-light input[type="text"] {
+	background-color: #fff !important;
+}
+
+body.is-translucent.theme-dark input[type="search"],
+body.is-translucent.theme-dark input[type="text"] {
+	background-color: #002828 !important;
 }
 
 .cm-s-obsidian span.cm-formatting-link,
@@ -798,7 +840,7 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-text-title: hsl(278, 80%, 60%);
 	--mu-text-bold: inherit;
 	--mu-blockquote-foreground: #f1f1f1;
-	--mu-blockquote-background: #b372ff40;
+	--mu-blockquote-background: #cfcfcf20;
 	--mu-divider-color: #b372ff10;
 	--mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
 	--mu-font-mono: "JetBrains Mono", "Operator Mono", "Consolas", "Roboto Mono", monospace;
@@ -823,6 +865,7 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-external-link: #00a9dd;
 	--mu-external-link-hover: #00c3ff;
 	--tab-divider-color: #003364;
+	--mu-setting-color: #00367278;
 	--mu-folder-icon-zoom: 82%;
 	--mu-notes-icon-zoom: 72%;
 	--interactive-normal: #001122;
@@ -930,7 +973,7 @@ body.is-translucent:not(.is-fullscreen) {
 	display: flex;
 	align-items: center;
 	padding: 0.75em 0;
-	border-top: 1px solid #00367278;
+	border-top: 1px solid var(--mu-setting-color);
 }
 
 .theme-dark .vertical-tab-header-group-title {
@@ -964,7 +1007,7 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-text-title: #a200ff;
 	--mu-text-bold: inherit;
 	--mu-blockquote-foreground: #000;
-	--mu-blockquote-background: #b372ff40;
+	--mu-blockquote-background: #cfcfcf88;
 	--mu-divider-color: #b372ff10;
 	--mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
 	--mu-font-mono: "JetBrains Mono", "Consolas", "Roboto Mono", monospace;
@@ -984,6 +1027,7 @@ body.is-translucent:not(.is-fullscreen) {
 	--mu-vault-title: var(--mu-purple-2);
 	--mu-sidebar-folder: #0072d3;
 	--mu-table-background: #fff;
+	--mu-setting-color: #82828220;
 	--mu-link: #a200ff;
 	--mu-link-hover: #c300ff;
 	--mu-external-link: #0033ff;
@@ -1093,7 +1137,7 @@ body.is-translucent:not(.is-fullscreen) {
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
-	background-color: #d1dfff;
+	background-color: var(--mu-background-color-2);
 }
 
 .theme-light input.slider {
@@ -1109,7 +1153,7 @@ body.is-translucent:not(.is-fullscreen) {
 	display: flex;
 	align-items: center;
 	padding: 0.75em 0;
-	border-top: 1px solid #82828220;
+	border-top: 1px solid var(--mu-setting-color);
 }
 
 .theme-light .vertical-tab-header-group-title {
@@ -2641,13 +2685,12 @@ td {
 	--mu-notes-icon-zoom: 100%;
 }
 
-.is-mobile .workspace-tab-header-container,
-.is-mobile .sidebar-toggle-button.mod-right {
-	background-color: #003388 !important;
-}
-
 .is-mobile .mobile-toolbar {
 	background-color: var(--mu-background-color-2);
+}
+
+.is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left, .is-translucent:not(.is-fullscreen) .workspace-tabs, .is-translucent:not(.is-fullscreen) .workspace-split.mod-root, .is-translucent:not(.is-fullscreen) .sidebar-toggle-button, .is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tab-header-container, .is-translucent:not(.is-fullscreen) .mod-right-split .workspace-tab-header-container, .is-translucent:not(.is-fullscreen) .mod-top .workspace-tab-header-container, .is-translucent:not(.is-fullscreen) .workspace-tabs .workspace-leaf, .is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left:before {
+	background-color: var(--mu-titlebar-background) !important;
 }
 
 /* Properties */
