@@ -2,7 +2,7 @@
 
 ## [5.0.0] - 2023-09-02
 ### Improvements
-- 2 New Themes (Teal and White background -translucent window on).
+- 2 new themes (teal and white background - translucent window on).
 - Blockquote new colors (light and dark modes).
 - Adjustments for overall theme consistency when using translucent window on.
 
