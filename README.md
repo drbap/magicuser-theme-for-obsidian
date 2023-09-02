@@ -18,9 +18,9 @@ I hope this theme helps to increase your productivity and inspiration.
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
-In order to activate the Teal and White background themes, turn on "Translucent Window" (no extra plug-in required).
+In order to activate the Teal and White background themes, turn on "**Translucent window**" (no extra plug-in required).
 
-- Options -> Appearance -> Advanced -> **Translucent window**
+- **Options** -> Appearance -> Advanced -> **Translucent window**
 
 ## Custom Checkbox Icons
 
