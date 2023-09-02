@@ -377,7 +377,7 @@ body {
 	--metadata-divider-color-hover: transparent;
 	--metadata-divider-color-focus: transparent;
 	--metadata-divider-width: 0;
-	--metadata-gap: 0;
+	--metadata-gap: 2px;
 	--metadata-property-padding: 0;
 	--metadata-property-radius: 6px;
 	--metadata-property-background: transparent;
