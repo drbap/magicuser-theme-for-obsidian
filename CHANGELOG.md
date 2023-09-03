@@ -2,7 +2,7 @@
 
 ## [5.0.1] - 2023-09-02
 ### Fixed
-- Properties gap (light and dark modes).
+- Properties gap.
 
 ## [5.0.0] - 2023-09-02
 ### Improvements
