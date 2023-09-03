@@ -2,7 +2,7 @@
 
 ## [5.0.1] - 2023-09-02
 ### Fixed
-- Properties gap (hover border and property input).
+- Properties gap (hover border and input).
 
 ## [5.0.0] - 2023-09-02
 ### Improvements
