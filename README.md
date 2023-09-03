@@ -7,6 +7,7 @@
 I hope this theme helps to increase your productivity and inspiration.
 
 **Navigation**
+
 - [Installation](#installation)
 - [MagicUser Themes](#magicuser-themes-4-themes)
 - [Custom Checkbox Icons](#custom-checkbox-icons)
