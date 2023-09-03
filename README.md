@@ -8,7 +8,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 **Navigation**
 
-- [Installation](#installation)
+- [Installation and Themes](#installation)
 - **Checkbox Icons**: [Custom Checkbox Icons](#custom-checkbox-icons)
 - **Extra Callouts**: [Additional Callouts](#additional-callouts)
 - **Icons**: [Folders and Notes Icons](#folders-and-notes-icons)
