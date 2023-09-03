@@ -9,14 +9,14 @@ I hope this theme helps to increase your productivity and inspiration.
 **Navigation**
 
 - [Installation](#installation)
-- **Themes**: [MagicUser Themes](#magicuser-themes-4-themes)
+- **Themes**: [MagicUser Themes (4 Themes)](#magicuser-themes-4-themes)
 - **Checkbox Icons**: [Custom Checkbox Icons](#custom-checkbox-icons)
 - **Extra Callouts**: [Additional Callouts](#additional-callouts)
 - **Icons**: [Folders and Notes Icons](#folders-and-notes-icons)
-- **Caret**: [Caret Colors](#caret-colors-for-improved-visibility) | [Caret Width](#caret-width-selection-and-multiple-cursors)
+- **Caret**: [Caret Colors and Caret Width](#caret-colors-for-improved-visibility)
 - **Properties**: [Properties Layout](#properties-layout)
 - **Tables**: [Tables Layout](#tables-layout)
-- **Code**: [Code Theme](#code-theme-light-and-dark)
+- **Code**: [Code Theme (Light and Dark)](#code-theme-light-and-dark)
 - **Mobile**: [Mobile Display](#mobile-display)
 - [License and Acknowledgements](#license-and-acknowledgements)
 
