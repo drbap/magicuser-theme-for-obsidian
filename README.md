@@ -18,7 +18,6 @@ I hope this theme helps to increase your productivity and inspiration.
 - **Tables**: [Tables Layout](#tables-layout)
 - **Code**: [Code Theme](#code-theme-light-and-dark)
 - **Mobile**: [Mobile Display](#mobile-display)
-- [Feedback](#feedback)
 - [License and Acknowledgements](#license-and-acknowledgements)
 
 ## Installation
