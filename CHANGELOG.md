@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.1.0] - 2023-09-10
+### Improvements
+- New themes (replaced teal with translucent dark theme - translucent window on).
+- New sidebar folder colors to improve visibility (dark and translucent dark themes).
+
 ## [5.0.1] - 2023-09-02
 ### Fixed
 - Properties gap (hover border and input).
