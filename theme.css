@@ -1,8 +1,9 @@
 /* =====================================================
 MagicUser Theme by Bernardo Pires (@drbap)
 
-MagicUser is a custom theme for Obsidian.md to create a pleasant environment for note-taking activities with greater focus and concentration. It has light theme and dark theme for day/night use.
-I hope this theme helps you to be more productive and inspired.
+MagicUser is a custom theme for Obsidian.md aiming to create a pleasant environment for note-taking activities with greater focus and concentration.
+
+I hope this theme helps to increase your productivity and inspiration.
 
 GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
@@ -699,13 +700,13 @@ body.is-translucent.theme-light {
 }
 
 body.is-translucent.theme-dark {
-	--mu-background-color-1: #002828;
-	--mu-background-color-2: #001818;
+	--mu-background-color-1: #1f1f1f;
+	--mu-background-color-2: #000;
 	--mu-setting-color: #cfcfcf20;
-	--mu-translucent-background: #001818;
-	--titlebar-background: #001818;
-	--titlebar-background-focused: #001818;
-	--mu-titlebar-background: #001818;
+	--mu-translucent-background: #000;
+	--titlebar-background: #000;
+	--titlebar-background-focused: #000;
+	--mu-titlebar-background: #000;
 }
 
 body.is-translucent.theme-light input[type="search"],
@@ -715,7 +716,7 @@ body.is-translucent.theme-light input[type="text"] {
 
 body.is-translucent.theme-dark input[type="search"],
 body.is-translucent.theme-dark input[type="text"] {
-	background-color: #002828 !important;
+	background-color: #1f1f1f !important;
 }
 
 .cm-s-obsidian span.cm-formatting-link,
@@ -858,7 +859,7 @@ body.is-translucent.theme-dark input[type="text"] {
 	--mu-icon-focused: #007fff;
 	--mu-titlebar-text: #f1f1f1;
 	--mu-vault-title: var(--mu-purple-2);
-	--mu-sidebar-folder: #0072d3;
+	--mu-sidebar-folder: #72a3ff;
 	--mu-table-background: #001133;
 	--mu-link: #c348ff;
 	--mu-link-hover: #d372ff;
