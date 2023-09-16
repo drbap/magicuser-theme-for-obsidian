@@ -178,22 +178,7 @@ Colors: green, blue, orange, yellow, red, pink, purple
 | Text 10   | Text 11  | Text 12   |
 
 ```
-**Left-align** a column: 
-- Add a colon to the **left** of the hyphens `:---`
 
-**Right-align** a column: 
-- Add a colon to the **right** of the hyphens `---:` 
-
-**Center-align** a column:
-- Surround the hyphens with **colons** `:---:`
-
-```Markdown
-| Column 1  | Column 2 |  Column 3 |
-| :---      | :---:    |  ---:     |
-| Text 1    | Text 2   | Text 3    |
-| Text 4    | Text 5   | Text 6    |
-
-```
 ## Code Theme (Light and Dark)
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
