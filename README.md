@@ -6,18 +6,6 @@
 
 I hope this theme helps to increase your productivity and inspiration.
 
-**Navigation**
-
-- [Installation and Themes](#installation)
-- [Custom Checkbox Icons](#custom-checkbox-icons)
-- [Additional Callouts](#additional-callouts)
-- [Folders and Notes Icons](#folders-and-notes-icons)
-- [Caret Colors and Caret Width](#caret-colors-for-improved-visibility)
-- [Properties Layout](#properties-layout)
-- [Tables Layout](#tables-layout)
-- [Mobile Display](#mobile-display)
-- [License and Acknowledgements](#license-and-acknowledgements)
-
 ## Installation
 
 1. Open Obsidian **Settings** -> select **Appearance**
