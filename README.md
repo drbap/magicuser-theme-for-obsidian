@@ -20,7 +20,7 @@ I hope this theme helps to increase your productivity and inspiration.
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**" (no extra plug-in required).
 
-- Obsidian **Settings** -> **Appearance** -> **Advanced** -> **Translucent window**
+> Obsidian **Settings** -> **Appearance** -> **Advanced** -> **Translucent window**
 
 ## Custom Checkbox Icons
 
