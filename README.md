@@ -26,11 +26,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
 
-#### Checkbox Icons (Extra 1)
+### Checkbox Icons (Extra 1)
 
 ![Custom Checkbox Icons - Extra 1](images/magicuser_checkboxes_icons_extra_1.png)
 
-#### Checkbox Icons (Extra 2 and 3)
+### Checkbox Icons (Extra 2 and 3)
 
 ![Custom Checkbox Icons - Extra 2](images/magicuser_checkboxes_icons_extra_2.png)
 
