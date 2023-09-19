@@ -2679,6 +2679,18 @@ li[data-task="G"]>p>input:checked::after {
 	margin-bottom: var(--size-4-3);
 }
 
+.callout[data-callout="m-white"] .callout-content img,
+.callout[data-callout="m-black"] .callout-content img,
+.callout[data-callout="m-gray"] .callout-content img,
+.callout[data-callout="i-white"] .callout-content img,
+.callout[data-callout="i-black"] .callout-content img,
+.callout[data-callout="i-gray"] .callout-content img {
+	width: fit-content;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
 .callout {
 	page-break-inside: avoid;
 }
