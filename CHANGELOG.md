@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.2.1] - 2023-09-19
+### Fixed
+- Media callouts responsive images.
+
 ## [5.2.0] - 2023-09-19
 ### Improvements
 - New media callouts (white, black and gray colors).
