@@ -42,7 +42,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![Media Callouts](images/magicuser_m_callouts.png)
 
-**Media callouts** are specially designed for images and videos. Available in three background colors.
+**Media callouts** are specially designed for **images** and **videos**. Available in three background colors.
 
 `> [!m-` + `color] Callout Title`
 
