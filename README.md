@@ -38,19 +38,30 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ## Additional Callouts
 
-### Highlighter and Pen Callouts
+### Highlighter Callouts
 
-![Additional Callouts Pen and Highlighter](images/magicuser_callouts_01.png)
-
-#### Highlighter Callouts
+![Additional Callouts Pen and Highlighter](images/magicuser_hl_callouts.png)
 
 `> [!hl-` + `color] Your Callout Title`
 
-#### Pen Callouts
+**Colors**: green, blue, orange, yellow, red, pink, purple
+
+**Example**: *highlighter blue callout*
+
+```
+> [!hl-blue] Your callout title here
+> Callout text here
+
+```
+
+
+### Pen Callouts
+
+![Additional Callouts Pen and Highlighter](images/magicuser_p_callouts.png)
 
 `> [!p-` + `color] Your Callout Title`
 
-Colors: green, blue, orange, yellow, red, pink, purple
+**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *pen blue callout*
 
@@ -62,11 +73,11 @@ Colors: green, blue, orange, yellow, red, pink, purple
 
 ### Quote Callouts
 
-![Additional Callouts Quotes](images/magicuser_callouts_quotes.png)
+![Additional Callouts Pen and Highlighter](images/magicuser_q_callouts.png)
 
 `> [!q-` + `color] Quote`
 
-Colors: green, blue, orange, yellow, red, pink, purple
+**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *quote green callout*
 
@@ -78,11 +89,11 @@ Colors: green, blue, orange, yellow, red, pink, purple
 
 ### Box Callouts
 
-![Additional Callouts Boxes](images/magicuser_callouts_box.png)
+![Additional Callouts Pen and Highlighter](images/magicuser_b_callouts.png)
 
 `> [!b-` + `color] Your Callout Title`
 
-Colors: green, blue, orange, yellow, red, pink, purple
+**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *box green callout*
 
@@ -98,7 +109,7 @@ Colors: green, blue, orange, yellow, red, pink, purple
 
 `> [!h1 to h6-` + `color] Your Title`
 
-Colors: green, blue, orange, yellow, red, pink, purple
+**Colors**: green, blue, orange, yellow, red, pink, purple
 
 **Example**: *h1 green text callout*
 
