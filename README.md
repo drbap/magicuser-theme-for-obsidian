@@ -38,7 +38,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ## Additional Callouts
 
-### Media Callouts for Images and Videos
+### Media Callouts
 
 ![Media Callouts](images/magicuser_m_callouts.png)
 
