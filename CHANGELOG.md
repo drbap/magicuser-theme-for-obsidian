@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.2.0] - 2023-09-19
+### Improvements
+- New media callouts (white, black and gray colors).
+- Export PDF: improved callout export (all callouts).
+
 ## [5.1.0] - 2023-09-10
 ### Improvements
 - New themes (replaced teal with translucent dark theme - translucent window on).
