@@ -38,9 +38,28 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ## Additional Callouts
 
+### Media Callouts for Images and Videos
+
+![Media Callouts](images/magicuser_m_callouts.png)
+
+**Media callouts** are specially designed for images and videos. Available in three background colors.
+
+`> [!m-` + `color] Callout Title`
+
+**Colors**: white, black, gray
+
+**Example**: *media callout gray*
+
+```
+> [!m-gray] Image or video title
+> Add image or video here
+> Image or video caption
+
+```
+
 ### Highlighter Callouts
 
-![Additional Callouts Pen and Highlighter](images/magicuser_hl_callouts.png)
+![Additional Highlighter Callouts](images/magicuser_hl_callouts.png)
 
 `> [!hl-` + `color] Your Callout Title`
 
@@ -57,7 +76,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ### Pen Callouts
 
-![Additional Callouts Pen and Highlighter](images/magicuser_p_callouts.png)
+![Additional Pen Callouts](images/magicuser_p_callouts.png)
 
 `> [!p-` + `color] Your Callout Title`
 
