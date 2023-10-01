@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.3.0] - 2023-10-01
+### Improvements
+- Tables layout when adding html tables (light/dark themes).
+- Tables: tr new hover color.
+
 ## [5.2.1] - 2023-09-19
 ### Fixed
 - Media callouts responsive images.
