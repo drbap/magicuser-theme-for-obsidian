@@ -2700,11 +2700,13 @@ li[data-task="G"]>p>input:checked::after {
 .theme-light table {
 	width: 100%;
 	border: 2px solid #004882;
+	border-collapse: collapse;
 }
 
 .theme-light th {
 	background-color: #004882 !important;
 	color: #f1f1f1 !important;
+	text-align: left;
 }
 
 .theme-light td {
@@ -2716,17 +2718,19 @@ li[data-task="G"]>p>input:checked::after {
 }
 
 .theme-light tr:hover {
-	background-color: #ffff0048 !important;
+	background-color: #00000020 !important;
 }
 
 .theme-dark table {
 	width: 100%;
 	border: 2px solid #004882;
+	border-collapse: collapse;
 }
 
 .theme-dark th {
 	background-color: #004882 !important;
 	color: #f1f1f1 !important;
+	text-align: left;
 }
 
 .theme-dark td {
@@ -2734,16 +2738,17 @@ li[data-task="G"]>p>input:checked::after {
 }
 
 .theme-dark tr:nth-child(even) {
-	background-color: #007fff02 !important;
+	background-color: #007fff20 !important;
 }
 
 .theme-dark tr:hover {
-	background-color: #ffff0048 !important;
+	background-color: #ffffff20 !important;
 }
 
 th,
 td {
 	border: 0 !important;
+	padding: 4px;
 }
 
 /* Code Adjustments */
