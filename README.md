@@ -22,6 +22,40 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > Settings -> Appearance -> Advanced -> **Translucent window**
 
+### Multiple Color Themes and Custom Colors with Style Settings Plugin
+
+![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
+
+You can customize the following MagicUser theme items ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
+
+- **UI Settings**
+	- Frame Color
+	- Primary Background Color
+	- Secondary Background Color
+	- Icon Focused Color
+	- Caret / Text Cursor Color
+	- Vault Title Color
+	- Inline Title Color
+
+- **Headings H1-H6**
+	- H1 to H6 Font Size
+	- H1 to H6 Color
+
+- **Text**
+	- Bold Text Color
+	- Italic Text Color
+	- Highlighted Text Color
+- **Links**     
+	- Internal Link Decoration (underline, none)
+	- Internal Link Color
+	- Internal Link Hover Color
+	- External Link Decoration (underline, none)
+	- External Link Color
+	- External Link Hover Color
+- **CheckList**     
+	- Checklist Done Decoration (underline, line-through, none)
+	- Checklist Done Text Color
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
