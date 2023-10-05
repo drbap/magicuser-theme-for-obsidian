@@ -3,7 +3,7 @@
 ## [6.0.0] - 2023-10-04
 ### Improvements
 - Compatible with Style Settings Community Plugin.
-- Multiple options to customize theme appearance (Style Settings Plugin).
+- Multiple options to customize theme appearance (Style Settings Community Plugin required).
 
 ## [5.3.0] - 2023-10-01
 ### Improvements
