@@ -18,7 +18,7 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in 
+The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -298,7 +298,7 @@ body {
 	--input-border-width: 1px;
 
 	/* Italic */
-	--italic-color: inherit;
+	--italic-color: var(--mu-text-italic);
 	--italic-weight: inherit;
 
 	/* Z-index */
@@ -840,6 +840,7 @@ body.is-translucent.theme-dark input[type="text"] {
 	--mu-text-1: #f1f1f1;
 	--mu-text-title: hsl(278, 80%, 60%);
 	--mu-text-bold: inherit;
+	--mu-text-italic: inherit;
 	--mu-blockquote-foreground: #f1f1f1;
 	--mu-blockquote-background: #cfcfcf20;
 	--mu-divider-color: #b372ff10;
@@ -871,6 +872,7 @@ body.is-translucent.theme-dark input[type="text"] {
 	--mu-notes-icon-zoom: 72%;
 	--interactive-normal: #001122;
 	--interactive-hover: #007fff20;
+	--mu-caret-color: #00cfff;
 }
 
 
@@ -878,7 +880,7 @@ body.is-translucent.theme-dark input[type="text"] {
 /* ======================================================== */
 
 .theme-dark * {
-	caret-color: #00cfff !important;
+	caret-color: var(--mu-caret-color) !important;
 }
 
 .theme-dark .clickable-icon.view-action.mod-bookmark {
@@ -988,7 +990,7 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-dark .CodeMirror-cursor,
 .theme-dark .cm-cursor,
 .theme-dark .cm-dropCursor {
-	border-color: #00cfff !important;
+	border-color: var(--mu-caret-color) !important;
 }
 
 /* Light theme settings */
@@ -1007,6 +1009,7 @@ body.is-translucent.theme-dark input[type="text"] {
 	--mu-text-1: #000;
 	--mu-text-title: #a200ff;
 	--mu-text-bold: inherit;
+	--mu-text-italic: inherit;
 	--mu-blockquote-foreground: #000;
 	--mu-blockquote-background: #cfcfcf88;
 	--mu-divider-color: #b372ff10;
@@ -1033,6 +1036,7 @@ body.is-translucent.theme-dark input[type="text"] {
 	--mu-link-hover: #c300ff;
 	--mu-external-link: #0033ff;
 	--mu-external-link-hover: #00a3ff;
+	--mu-caret-color: #cf00ff;
 	/* Code */
 	--code-white-space: pre-wrap;
 	--code-size: var(--font-smaller);
@@ -1058,7 +1062,7 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .theme-light * {
-	caret-color: #cf00ff !important;
+	caret-color: var(--mu-caret-color) !important;
 }
 
 .theme-light .clickable-icon.view-action.mod-bookmark {
@@ -1168,7 +1172,7 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-light .CodeMirror-cursor,
 .theme-light .cm-cursor,
 .theme-light .cm-dropCursor {
-	border-color: #cf00ff !important;
+	border-color: var(--mu-caret-color) !important;
 }
 
 .cm-layer.cm-layer-above.cm-cursorLayer {
@@ -1839,7 +1843,7 @@ li[data-task="d"]>p>input:checked::after {
 	mask-image: none;
 }
 
-/* 
+/*
 Branch and Pull Request Icons
 Created by Bernardo Pires (drbap)
 License MIT
@@ -2810,3 +2814,303 @@ td {
 	border-top: 1px solid #007fff20;
 	border-bottom: 1px solid #007fff20;
 }
+
+/* Style Settings */
+/* @settings
+name: MagicUser Theme
+id: magicuser-theme-for-obsidian
+settings:
+    -
+        id: magicuser-theme-ui
+        title: UI Settings
+        type: heading
+        description: Background colors, caret and other settings
+        level: 2
+        collapsed: true
+    -
+        id: mu-titlebar-background
+        title: Frame Color
+        type: variable-themed-color
+        description: Theme frame color
+        format: hex
+        opacity: false
+        default-light: '#003388'
+        default-dark: '#003388'
+    -
+        id: mu-background-color-1
+        title: Primary Background Color
+        type: variable-themed-color
+        description: Main theme background color
+        format: hex
+        opacity: false
+        default-light: '#e8efff'
+        default-dark: '#002248'
+    -
+        id: mu-background-color-2
+        title: Secondary Background Color
+        type: variable-themed-color
+        description: Sidebar, menus and code background color
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'
+    -
+        id: mu-icon-focused
+        title: Icon Focused Color
+        type: variable-color
+        description: Current focused icon color
+        format: hex
+        opacity: false
+        default: '#007fff'
+    -
+        id: mu-caret-color
+        title: Caret Color
+        type: variable-themed-color
+        description: Caret / text cursor color
+        format: hex
+        opacity: false
+        default-light: '#cf00ff'
+        default-dark: '#00cfff'
+    -
+        id: mu-vault-title
+        title: Vault Title Color
+        type: variable-themed-color
+        description: Sidebar vault title color
+        format: hex
+        opacity: false
+        default-light: '#b10aff'
+        default-dark: '#a273d8'
+    -
+        id: mu-text-title
+        title: Inline Title Color
+        type: variable-themed-color
+        description: Filename inline title color
+        format: hex
+        opacity: false
+        default-light: '#a200ff'
+        default-dark: '#af47eb'
+    -
+        id: magicuser-theme-headings
+        title: Headings H1-H6
+        type: heading
+        description: H1-H6 font sizes and colors
+        level: 2
+        collapsed: true
+    -
+        id: h1-size
+        title: H1 Font Size
+        type: variable-text
+        description: Heading 1 font size
+        default: 2em
+    -
+        id: mu-h1
+        title: H1 Color
+        type: variable-themed-color
+        description: Heading 1 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: h2-size
+        title: H2 Font Size
+        type: variable-text
+        description: Heading 2 font size
+        default: 1.5em
+    -
+        id: mu-h2
+        title: H2 Color
+        type: variable-themed-color
+        description: Heading 2 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: h3-size
+        title: H3 Font Size
+        type: variable-text
+        description: Heading 3 font size
+        default: 1.17em
+    -
+        id: mu-h3
+        title: H3 Color
+        type: variable-themed-color
+        description: Heading 3 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: h4-size
+        title: H4 Font Size
+        type: variable-text
+        description: Heading 4 font size
+        default: 1em
+    -
+        id: mu-h4
+        title: H4 Color
+        type: variable-themed-color
+        description: Heading 4 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: h5-size
+        title: H5 Font Size
+        type: variable-text
+        description: Heading 5 font size
+        default: 0.83em
+    -
+        id: mu-h5
+        title: H5 Color
+        type: variable-themed-color
+        description: Heading 5 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: h6-size
+        title: H6 Font Size
+        type: variable-text
+        description: Heading 6 font size
+        default: 0.67em
+    -
+        id: mu-h6
+        title: H6 Color
+        type: variable-themed-color
+        description: Heading 6 color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#00a3ff'
+    -
+        id: magicuser-theme-text
+        title: Text
+        type: heading
+        description: Bold, italic and highlighted text
+        level: 2
+        collapsed: true
+    -
+        id: mu-text-bold
+        title: Bold Text Color
+        type: variable-themed-color
+        description: Bold text color
+        format: hex
+        opacity: false
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
+    -
+        id: mu-text-italic
+        title: Italic Text Color
+        type: variable-themed-color
+        description: Italic text color
+        format: hex
+        opacity: false
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
+    -
+        id: text-highlight-bg
+        title: Highlighted Text Color
+        type: variable-color
+        description: Color used to highlight text
+        format: hex
+        opacity: true
+        default: '#ffff0088'
+    - 
+        id: magicuser-theme-links
+        title: Links      
+        type: heading
+        description: Internal and external links
+        level: 2
+        collapsed: true
+    -
+        id: link-decoration
+        title: Internal Link Decoration
+        type: variable-select
+        description: Internal link decoration
+        default: 'underline'
+        options:
+            - 'underline'
+            - 'none'
+    -
+        id: mu-link
+        title: Internal Link Color
+        type: variable-themed-color
+        description: Internal link color
+        format: hex
+        opacity: false
+        default-light: '#a200ff'
+        default-dark: '#c348ff'
+    -
+        id: mu-link-hover
+        title: Internal Link Hover Color
+        type: variable-themed-color
+        description: Internal link hover color
+        format: hex
+        opacity: false
+        default-light: '#c300ff'
+        default-dark: '#d372ff'
+    -
+        id: link-external-decoration
+        title: External Link Decoration
+        type: variable-select
+        description: External link decoration
+        default: 'underline'
+        options:
+            - 'underline'
+            - 'none'
+    -
+        id: mu-external-link
+        title: External Link Color
+        type: variable-themed-color
+        description: External link color
+        format: hex
+        opacity: false
+        default-light: '#0033ff'
+        default-dark: '#00a9dd'
+    -
+        id: mu-external-link-hover
+        title: External Link Hover Color
+        type: variable-themed-color
+        description: External link hover color
+        format: hex
+        opacity: false
+        default-light: '#00a3ff'
+        default-dark: '#00c3ff'
+    - 
+        id: magicuser-theme-checkboxes
+        title: CheckList      
+        type: heading
+        description: Checklist settings
+        level: 2
+        collapsed: true
+    -
+        id: checklist-done-decoration
+        title: Checklist Done Decoration
+        type: variable-select
+        description: Text decoration of the completed task
+        default: 'underline'
+        options:
+            - 'underline'
+            - 'line-through'
+            - 'none'
+    -
+        id: checklist-done-color
+        title: Checklist Done Text Color
+        type: variable-color
+        description: Text color of the completed task
+        format: hex
+        opacity: false
+        default: '#00cf48'
+    - 
+        id: magicuser-theme-about
+        title: MagicUser Theme
+        type: heading
+        description: Made with ♥ by Bernardo Pires
+        level: 2
+        collapsed: true
+
+*/
