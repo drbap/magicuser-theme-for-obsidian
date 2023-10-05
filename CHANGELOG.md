@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.0.0] - 2023-10-04
+### Improvements
+- Compatible with Style Settings Community Plugin.
+- Multiple options to customize theme appearance (Style Settings Plugin).
+
 ## [5.3.0] - 2023-10-01
 ### Improvements
 - Tables layout when adding html tables (light/dark themes).
