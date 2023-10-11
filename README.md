@@ -43,10 +43,12 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 - Active **Line Highlight Background** Color (9 options)
 
 **Headings H1-H6**
+
 - H1 to H6 **Font Size**
 - H1 to H6 **Color**
 
 **Text**
+
 - **Bold Text** Color
 - **Italic Text** Color
 - **Highlighted Text** Color
@@ -60,8 +62,8 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 - External Link Color
 - External Link Hover Color
 
- **CheckList**
- 
+**CheckList**
+
 - Checklist Done Decoration (underline, line-through, none)
 - Checklist Done Text Color
 
@@ -262,7 +264,7 @@ The syntax highlighting is similar to the MagicUser themes for VS Code (MagicUse
 ![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
 
 ## Feedback
-  
+
 If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
 
 ## Star this repo
