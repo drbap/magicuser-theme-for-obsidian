@@ -29,22 +29,26 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 You can customize the following MagicUser theme items ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
 - **UI Settings**
-	- Frame Color
-	- Primary Background Color
-	- Secondary Background Color
-	- Icon Focused Color
-	- Caret / Text Cursor Color
-	- Vault Title Color
-	- Inline Title Color
+	- **Frame** Color
+	- **Primary Background** Color
+	- **Secondary Background** Color
+	- **Icon Focused** Color
+	- **Caret** / Text Cursor Color
+	- **Vault Title** Color
+	- **Inline Title** Color
+   	- **Folder Name** Colors (light and dark modes)
+	- Show/Hide **Folder Icons**
+	- Active **Line Highlight Border** Color (9 options)
+	- Active **Line Highlight Background** Color (9 options)
 
 - **Headings H1-H6**
-	- H1 to H6 Font Size
-	- H1 to H6 Color
+	- H1 to H6 **Font Size**
+	- H1 to H6 **Color**
 
 - **Text**
-	- Bold Text Color
-	- Italic Text Color
-	- Highlighted Text Color
+	- **Bold Text** Color
+	- **Italic Text** Color
+	- **Highlighted Text** Color
 - **Links**     
 	- Internal Link Decoration (underline, none)
 	- Internal Link Color
