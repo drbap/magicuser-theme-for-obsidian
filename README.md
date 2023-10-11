@@ -51,7 +51,8 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 - **Italic Text** Color
 - **Highlighted Text** Color
 
-**Links**     
+**Links**
+
 - Internal Link Decoration (underline, none)
 - Internal Link Color
 - Internal Link Hover Color
@@ -59,7 +60,8 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 - External Link Color
 - External Link Hover Color
 
- **CheckList**     
+ **CheckList**
+ 
 - Checklist Done Decoration (underline, line-through, none)
 - Checklist Done Text Color
 
@@ -113,7 +115,6 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 > Callout text here
 
 ```
-
 
 ### Pen Callouts
 
@@ -211,7 +212,7 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 > Callout text here
 
 ```
- 
+
 ## Folders and Notes Icons
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
