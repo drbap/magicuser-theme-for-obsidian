@@ -661,6 +661,10 @@ body {
 	--mu-callout-link: 48, 142, 255;
 	--mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
 	--mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
+	--mu-line-highlight-border: transparent;
+	--mu-line-highlight-background: transparent;
+	--mu-folder: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
+	--mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
 }
 
 body.is-translucent {
@@ -743,6 +747,21 @@ body.is-translucent.theme-dark input[type="text"] {
 	border-color: #007fff30;
 }
 
+.cm-active {
+	outline: .1em solid var(--mu-line-highlight-border);
+	background-color: var(--mu-line-highlight-background);
+}
+
+.show-folders {
+	--mu-folder: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
+	--mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
+}
+
+.hide-folders {
+	--mu-folder: none;
+	--mu-folder-open: none;
+}
+
 .search-result-file-matched-text {
 	color: var(--text-normal);
 	background-color: var(--text-highlight-bg);
@@ -789,14 +808,14 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
+	content: var(--mu-folder-open);
 	padding-right: 8px;
 	zoom: var(--mu-folder-icon-zoom);
 	vertical-align: middle;
 }
 
 .nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
-	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%230048a3; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
+	content: var(--mu-folder);
 	padding-right: 8px;
 	zoom: var(--mu-folder-icon-zoom);
 	vertical-align: middle;
@@ -951,7 +970,7 @@ body.is-translucent.theme-dark input[type="text"] {
 
 .theme-dark .nav-folder-title:hover {
 	font-weight: var(--font-semibold);
-	color: var(--mu-icon-hover) !important;
+	color: var(--mu-sidebar-folder) !important;
 }
 
 .theme-dark .nav-folder.mod-root>.nav-folder-title {
@@ -1128,7 +1147,7 @@ body.is-translucent.theme-dark input[type="text"] {
 
 .theme-light .nav-folder-title:hover {
 	font-weight: var(--font-semibold);
-	color: var(--mu-icon-hover) !important;
+	color: var(--mu-sidebar-folder) !important;
 }
 
 .theme-light .nav-folder.mod-root>.nav-folder-title {
@@ -2815,6 +2834,78 @@ td {
 	border-bottom: 1px solid #007fff20;
 }
 
+.line-highlight-border-default {
+	--mu-line-highlight-border: transparent;
+}
+
+.line-highlight-border-blue {
+	--mu-line-highlight-border: #007fff48;
+}
+
+.line-highlight-border-green {
+	--mu-line-highlight-border: #00cf0048;
+}
+
+.line-highlight-border-orange {
+	--mu-line-highlight-border: #ff7f0048;
+}
+
+.line-highlight-border-yellow {
+	--mu-line-highlight-border: #ffd70048;
+}
+
+.line-highlight-border-red {
+	--mu-line-highlight-border: #ff000048;
+}
+
+.line-highlight-border-purple {
+	--mu-line-highlight-border: #bf00ff48;
+}
+
+.line-highlight-border-pink {
+	--mu-line-highlight-border: #ff00a348;
+}
+
+.line-highlight-border-gray {
+	--mu-line-highlight-border: #a3a3a348;
+}
+
+.line-highlight-background-default {
+	--mu-line-highlight-background: transparent;
+}
+
+.line-highlight-background-blue {
+	--mu-line-highlight-background: #007fff20;
+}
+
+.line-highlight-background-green {
+	--mu-line-highlight-background: #00cf0020;
+}
+
+.line-highlight-background-orange {
+	--mu-line-highlight-background: #ff7f0020;
+}
+
+.line-highlight-background-yellow {
+	--mu-line-highlight-background: #ffd70020;
+}
+
+.line-highlight-background-red {
+	--mu-line-highlight-background: #ff000020;
+}
+
+.line-highlight-background-purple {
+	--mu-line-highlight-background: #bf00ff20;
+}
+
+.line-highlight-background-pink {
+	--mu-line-highlight-background: #ff00a320;
+}
+
+.line-highlight-background-gray {
+	--mu-line-highlight-background: #a3a3a320;
+}
+
 /* Style Settings */
 /* @settings
 name: MagicUser Theme
@@ -2871,6 +2962,99 @@ settings:
         opacity: false
         default-light: '#cf00ff'
         default-dark: '#00cfff'
+    -
+        id: mu-line-highlight-border
+        title: Line Highlight Border Color
+        type: class-select
+        description: Border color of the active line
+        allowEmpty: false
+        default: line-highlight-border-default
+        options:
+            - 
+                label: No border
+                value: line-highlight-border-default
+            - 
+                label: Blue border
+                value: line-highlight-border-blue
+            - 
+                label: Green border
+                value: line-highlight-border-green
+            - 
+                label: Orange border
+                value: line-highlight-border-orange
+            - 
+                label: Yellow border
+                value: line-highlight-border-yellow
+            - 
+                label: Red border
+                value: line-highlight-border-red
+            - 
+                label: Purple border
+                value: line-highlight-border-purple
+            - 
+                label: Pink border
+                value: line-highlight-border-pink
+            - 
+                label: Gray border
+                value: line-highlight-border-gray
+    -
+        id: mu-line-highlight-background
+        title: Line Highlight Background Color
+        type: class-select
+        description: Background color of the active line
+        allowEmpty: false
+        default: line-highlight-background-default
+        options:
+            - 
+                label: No background
+                value: line-highlight-background-default
+            - 
+                label: Blue background
+                value: line-highlight-background-blue
+            - 
+                label: Green background
+                value: line-highlight-background-green
+            - 
+                label: Orange background
+                value: line-highlight-background-orange
+            - 
+                label: Yellow background
+                value: line-highlight-background-yellow
+            - 
+                label: Red background
+                value: line-highlight-background-red
+            - 
+                label: Purple background
+                value: line-highlight-background-purple
+            - 
+                label: Pink background
+                value: line-highlight-background-pink
+            - 
+                label: Gray background
+                value: line-highlight-background-gray
+    - 
+        id: mu-folder-icons
+        title: Folder Icons
+        description: Show or hide folder icons
+        type: class-select
+        allowEmpty: false
+        default: show-folders
+        options:
+            - 
+                label: Show folder icons
+                value: show-folders
+            - 
+                label: Hide folder icons
+                value: hide-folders
+    -
+        id: mu-sidebar-folder
+        title: Folder Name Color
+        type: variable-themed-color
+        description: Folder name color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#72a3ff'
     -
         id: mu-vault-title
         title: Vault Title Color
