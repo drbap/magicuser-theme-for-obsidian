@@ -28,38 +28,40 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 You can customize the following MagicUser theme items ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
-- **UI Settings**
-	- **Frame** Color
-	- **Primary Background** Color
-	- **Secondary Background** Color
-	- **Icon Focused** Color
-	- **Caret** / Text Cursor Color
-	- **Vault Title** Color
-	- **Inline Title** Color
- - **New** UI Settings items:
-   	- **Folder Name** Colors (light and dark modes)
-	- Show/Hide **Folder Icons**
-	- Active **Line Highlight Border** Color (9 options)
-	- Active **Line Highlight Background** Color (9 options)
+**UI Settings**
 
-- **Headings H1-H6**
-	- H1 to H6 **Font Size**
-	- H1 to H6 **Color**
+- **Frame** Color
+- **Primary Background** Color
+- **Secondary Background** Color
+- **Icon Focused** Color
+- **Caret** / Text Cursor Color
+- **Vault Title** Color
+- **Inline Title** Color
+- **Folder Name** Colors (light and dark modes)
+- Show/Hide **Folder Icons**
+- Active **Line Highlight Border** Color (9 options)
+- Active **Line Highlight Background** Color (9 options)
 
-- **Text**
-	- **Bold Text** Color
-	- **Italic Text** Color
-	- **Highlighted Text** Color
-- **Links**     
-	- Internal Link Decoration (underline, none)
-	- Internal Link Color
-	- Internal Link Hover Color
-	- External Link Decoration (underline, none)
-	- External Link Color
-	- External Link Hover Color
-- **CheckList**     
-	- Checklist Done Decoration (underline, line-through, none)
-	- Checklist Done Text Color
+**Headings H1-H6**
+- H1 to H6 **Font Size**
+- H1 to H6 **Color**
+
+**Text**
+- **Bold Text** Color
+- **Italic Text** Color
+- **Highlighted Text** Color
+
+**Links**     
+- Internal Link Decoration (underline, none)
+- Internal Link Color
+- Internal Link Hover Color
+- External Link Decoration (underline, none)
+- External Link Color
+- External Link Hover Color
+
+ **CheckList**     
+- Checklist Done Decoration (underline, line-through, none)
+- Checklist Done Text Color
 
 ## Custom Checkbox Icons
 
