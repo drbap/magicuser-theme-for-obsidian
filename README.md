@@ -36,7 +36,7 @@ You can customize the following MagicUser theme items ([Style Settings](https://
 	- **Caret** / Text Cursor Color
 	- **Vault Title** Color
 	- **Inline Title** Color
- - New UI Settings items:
+ - **New** UI Settings items:
    	- **Folder Name** Colors (light and dark modes)
 	- Show/Hide **Folder Icons**
 	- Active **Line Highlight Border** Color (9 options)
