@@ -267,9 +267,9 @@ The syntax highlighting is similar to the MagicUser themes for VS Code (MagicUse
 
 If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
 
-## Star this repo
+## Star this repository
 
-If you find this theme useful, please consider 🌟 it on GitHub. It's free and shows appreciation for the work done and motivates future updates. This really means a lot to me. Thanks.
+If you find this project useful, please consider starring it on GitHub. Starring a repository is a free and easy way to show your support for the project and encourage the developer to continue working on it. Thank you very much.
 
 ## License and Acknowledgements
 
