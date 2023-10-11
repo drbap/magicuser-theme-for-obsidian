@@ -3,8 +3,8 @@
 ## [6.1.0] - 2023-10-11
 ### Improvements
 - Added Style Settings theme options (UI Settings):
-	- **Folder name** colors (select custom folder name color for light and dark modes)
-	- Show or hide **folder icons**
+	- **Folder Name** colors (select custom folder name color for light and dark modes)
+	- Show or hide **Folder Icons**
 	- Active **Line Highlight Border** Color (9 options: 8 preset colors and no border)
 	-	Active **Line Highlight Background** Color (9 options: 8 preset colors and no background)
 
