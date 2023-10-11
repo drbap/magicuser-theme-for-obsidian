@@ -8,7 +8,7 @@
 	- Active **line highlight border** color (9 options: 8 preset colors and no border)
 	- Active **line highlight background** color (9 options: 8 preset colors and no background)
 
-- Active line highlight **preset colors**: blue, green, orange, yellow, red, purple, pink and gray.
+Active line highlight **preset colors**: blue, green, orange, yellow, red, purple, pink and gray.
 
 ## [6.0.0] - 2023-10-04
 ### Improvements
