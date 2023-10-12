@@ -259,7 +259,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
 
-The syntax highlighting is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue for VS Code).
+The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
 ## Mobile Display
 
