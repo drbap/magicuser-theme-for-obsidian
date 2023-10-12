@@ -267,7 +267,7 @@ The syntax highlighting is similar to the MagicUser themes for VS Code (MagicUse
 
 ## Feedback
 
-If you have any issues and/or suggestions, please submit an issue. I will try to answer as soon as possible. Thanks.
+Please share any issues or suggestions you have for improving the theme. I will do my best to respond quickly. Thank you for your feedback.
 
 ## Star this repository
 
