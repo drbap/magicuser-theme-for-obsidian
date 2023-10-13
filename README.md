@@ -57,17 +57,17 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **Links**
 
-- **Internal Link** Decoration (underline, none)
+- **Internal Link Decoration** (underline, none)
 - Internal Link Color
 - Internal Link Hover Color
-- **External Link** Decoration (underline, none)
+- **External Link Decoration** (underline, none)
 - External Link Color
 - External Link Hover Color
 
 **CheckList**
 
-- Checklist Done Decoration (underline, line-through, none)
-- Checklist Done Text Color
+- Checklist Done **Decoration** (underline, line-through, none)
+- Checklist Done **Text Color**
 
 ## Custom Checkbox Icons
 
