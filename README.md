@@ -269,10 +269,6 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 Please share any issues or suggestions you have for improving the theme. I will do my best to respond quickly. Thank you for your feedback.
 
-## Star this repository
-
-If you find this project useful, please consider starring it on GitHub. Starring a repository is a free and easy way to show your support for the project and encourage the developer to continue working on it. Thank you very much.
-
 ## License and Acknowledgements
 
 MagicUser Theme for Obsidian
