@@ -30,7 +30,9 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 You can customize the following MagicUser theme elements ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
-**UI Settings**
+**UI Settings** (UI Basic and Advanced Settings)
+
+**UI Basic Settings**
 
 - **Frame** Color
 - **Primary Background** Color
@@ -43,6 +45,16 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Show/Hide **Folder Icons**
 - Active **Line Highlight Border** Color (9 options)
 - Active **Line Highlight Background** Color (9 options)
+
+**UI Advanced Settings** (Desktop Version)
+
+- Activate **distraction-free-mode**
+- Hide **sidebar buttons** (new note, new folder and others)
+- Show/hide **tab navigation back and forward buttons**
+- Auto hide **title bar top left buttons**
+- Auto hide **top side buttons**
+- Auto hide **bottom side buttons**
+- Auto hide **status bar**
 
 **Headings H1-H6**
 
@@ -68,6 +80,16 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 - Checklist Done **Decoration** (underline, line-through, none)
 - Checklist Done **Text Color**
+
+## UI Advanced Settings
+
+![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
+
+When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
+
+## Distraction-free Mode
+
+![Distraction-free Mode](images/magicuser_distraction_free_mode.png)
 
 ## Custom Checkbox Icons
 
