@@ -48,7 +48,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **UI Advanced Settings** (Desktop Version)
 
-- Activate **distraction-free-mode**
+- Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
 - Show/hide **tab navigation back and forward buttons**
 - Auto hide **title bar top left buttons**
