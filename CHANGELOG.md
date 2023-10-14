@@ -6,7 +6,7 @@
 	- **H1-H6 font** selection: Choose H1-H6 font-family.
 	- **UI Settings** with Basic and Advanced Settings
 	- **UI Advanced Settings** (Desktop Version):
-	  - Activate **distraction-free-mode**
+	  - Activate **distraction-free mode**
 	  - Hide **sidebar buttons** (new note, new folder and others)
 	  - Show/hide **tab navigation back and forward buttons**
 	  - Auto hide **title bar top left buttons**
