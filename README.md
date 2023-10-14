@@ -91,6 +91,8 @@ When **auto hide** is turned on, UI elements will gradually appear when you move
 
 ![Distraction-free Mode](images/magicuser_distraction_free_mode.png)
 
+To show the left ribbon, place your cursor on the left side of the screen, it will hide again when you move your cursor away from the left side of the screen.
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
