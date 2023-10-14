@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.2.0] - 2023-10-14
+### Improvements
+- Style Settings Plugin theme options (UI Settings):
+	- **H1-H6 font** selection: Choose H1-H6 font-family.
+	- **UI Settings** with Basic and Advanced Settings
+	- **UI Advanced Settings** (Desktop Version):
+	  - Activate **distraction-free-mode**
+	  - Hide **sidebar buttons** (new note, new folder and others)
+	  - Show/hide **tab navigation back and forward buttons**
+	  - Auto hide **title bar top left buttons**
+	  - Auto hide **top side buttons**
+	  - Auto hide **bottom side buttons**
+	  - Auto hide **status bar**
+
+**UI Basic Settings**: same UI settings of MagicUser theme version 6.1.0
+
 ## [6.1.0] - 2023-10-11
 ### Improvements
 - New Style Settings Community Plugin theme options (UI Settings):
