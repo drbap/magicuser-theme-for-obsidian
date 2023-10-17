@@ -58,6 +58,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **Headings H1-H6**
 
+- Headings **Font** (H1 - H6)
 - H1 to H6 **Font Size**
 - H1 to H6 **Color**
 
