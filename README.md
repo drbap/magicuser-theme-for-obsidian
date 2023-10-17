@@ -71,11 +71,11 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 **Links**
 
 - **Internal Link Decoration** (underline, none)
-- Internal Link Color
-- Internal Link Hover Color
+- Internal Link **Color**
+- Internal Link **Hover Color**
 - **External Link Decoration** (underline, none)
-- External Link Color
-- External Link Hover Color
+- External Link **Color**
+- External Link **Hover Color**
 
 **CheckList**
 
