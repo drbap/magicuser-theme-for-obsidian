@@ -312,6 +312,12 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 
 - [Things Theme by Colin Eckert](https://github.com/colineckert/obsidian-things)
 
+
+**Style Settings Community Plugin**
+
+- Thanks to Matthew Meyers (@mgmeyers) for the amazing Style Settings Plugin. Excellent work.
+
+
 **Thanks for the Suggestions**
 - Thanks to @alitekdemir for the suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
 
