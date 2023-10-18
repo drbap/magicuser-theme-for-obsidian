@@ -2,7 +2,7 @@
 
 ## [6.3.0] - 2023-10-17
 ### Improvements
-- Improved **distraction-free mode** (check the screenshot on the readme).
+- Improved **distraction-free mode** (new screenshot on the readme about this mode).
 
 ## [6.2.0] - 2023-10-14
 ### Improvements
