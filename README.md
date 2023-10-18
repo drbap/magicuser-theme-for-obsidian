@@ -94,7 +94,7 @@ When **auto hide** is turned on, UI elements will gradually appear when you move
 
 To show the left ribbon, place your cursor on the left side of the screen, it will hide again when you move your cursor away from the left side of the screen.
 
-- You can also auto hide the **status bar** (Advanced UI Settings).
+- You can also auto hide the **status bar** (UI Advanced Settings).
 
 ## Custom Checkbox Icons
 
