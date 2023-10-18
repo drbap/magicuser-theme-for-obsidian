@@ -34,17 +34,17 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **UI Basic Settings**
 
-- **Frame** Color
-- **Primary Background** Color
-- **Secondary Background** Color
-- **Icon Focused** Color
-- **Caret** / Text Cursor Color
-- **Vault Title** Color
-- **Inline Title** Color
-- **Folder Name** Colors (light and dark modes)
-- Show/Hide **Folder Icons**
-- Active **Line Highlight Border** Color (9 options)
-- Active **Line Highlight Background** Color (9 options)
+- **Frame** color
+- **Primary background** color
+- **Secondary background** color
+- **Icon focused** color
+- **Caret** / **text cursor** color
+- **Vault title** color
+- **Inline title** color
+- **Folder name** color (light and dark modes)
+- Show/hide **folder icons**
+- Active **line highlight border** color (9 options)
+- Active **line highlight background** color (9 options)
 
 **UI Advanced Settings** (Desktop Version)
 
@@ -58,29 +58,29 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **Headings H1-H6**
 
-- Headings **Font** (H1 - H6)
-- H1 to H6 **Font Size**
-- H1 to H6 **Color**
+- Headings **font** (H1 - H6)
+- H1 to H6 **font size**
+- H1 to H6 **color**
 
 **Text**
 
-- **Bold Text** Color
-- **Italic Text** Color
-- **Highlighted Text** Color
+- **Bold text** color
+- **Italic text** color
+- **Highlighted text** color
 
 **Links**
 
-- **Internal Link Decoration** (underline, none)
-- Internal Link **Color**
-- Internal Link **Hover Color**
-- **External Link Decoration** (underline, none)
-- External Link **Color**
-- External Link **Hover Color**
+- **Internal link decoration** (underline, none)
+- Internal link **color**
+- Internal link **hover color**
+- **External link decoration** (underline, none)
+- External link **color**
+- External Link **hover color**
 
 **CheckList**
 
-- Checklist Done **Decoration** (underline, line-through, none)
-- Checklist Done **Text Color**
+- Checklist done **decoration** (underline, line-through, none)
+- Checklist done **text color**
 
 ## UI Advanced Settings
 
