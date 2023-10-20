@@ -94,6 +94,8 @@ When **auto hide** is turned on, UI elements will gradually appear when you move
 
 To show the left ribbon, place your cursor on the left side of the screen, it will hide again when you move your cursor away from the left side of the screen.
 
+https://github.com/drbap/magicuser-theme-for-obsidian/assets/70039037/b7106b6f-28f2-421b-b4c7-25f0c90322c8
+
 - You can also auto hide the **status bar** (UI Advanced Settings).
 
 ## Custom Checkbox Icons
