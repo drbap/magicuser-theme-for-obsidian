@@ -96,6 +96,8 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 - You can also auto hide the **status bar** (UI Advanced Settings).
 
+![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
