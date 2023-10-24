@@ -3,9 +3,10 @@
 ## [6.4.0] - 2023-10-23
 ### Improvements
 - Improved **reading mode** (new screenshot on the readme about this mode).
+- H1-H6 indicators.
 - Reading indicators (left and right side).
 - Highlight content by clicking on it (glow effect).
-- H1-H6 indicators.
+
 
 ## [6.3.0] - 2023-10-17
 ### Improvements
