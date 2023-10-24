@@ -3029,6 +3029,68 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --ui-side-dock-settings: 1;
 }
 
+/* Reading mode */
+
+.markdown-reading-view .markdown-preview-view.heading-collapse-indicator {
+  transform: translateX(-2rem);
+}
+
+div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
+  box-shadow: -0.2rem 0 0 0 #007fff88, 0.2rem 0 0 0 #007fff88;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):active {
+  box-shadow: 0 0 0 .2rem #00a3ff, 0 0 1.2rem .2rem #00a3ff;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  transition: box-shadow .5s;
+}
+
+.markdown-reading-view h1::before,
+.markdown-reading-view h2::before,
+.markdown-reading-view h3::before,
+.markdown-reading-view h4::before,
+.markdown-reading-view h5::before,
+.markdown-reading-view h6::before {
+  font-size: .8rem;
+  font-weight: 600;
+  font-family: var(--mu-font-mono);
+  color: #007fff88;
+  display: flex;
+  justify-content: flex-start;
+  align-content: baseline;
+}
+
+.markdown-reading-view h1::before {
+  content: "H1 ";
+}
+
+.markdown-reading-view h2::before {
+  content: "H2 ";
+}
+
+.markdown-reading-view h3::before {
+  content: "H3 ";
+}
+
+.markdown-reading-view h4::before {
+  content: "H4 ";
+}
+
+.markdown-reading-view h5::before {
+  content: "H5 ";
+}
+
+.markdown-reading-view h6::before {
+  content: "H6 ";
+}
+
 /* Style Settings */
 /* @settings
 name: MagicUser Theme
