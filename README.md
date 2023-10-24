@@ -98,6 +98,14 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
 
+## Reading Mode
+
+![Reading Mode Overview](images/magicuser_theme_reading_mode.gif)
+
+- Reading indicators (left and right side).
+- H1-H6 indicators.
+- Highlight content by clicking on it (glow effect).
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
