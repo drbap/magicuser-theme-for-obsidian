@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.5.0] - 2023-10-28
+### Improvements
+- **Canvas files** are displayed in the sidebar with the Canvas icon (desktop and mobile).
+- **Distraction-free mode** has been improved to allow you to easily drag the window across the screen, when the window frame style is set to "Hidden", which is the default option:
+    - When you enable distraction-free mode with the Style Settings plugin, you can drag the window by the **tab title header** (the top bar with the file name and breadcrumb) or by the **right part of the status bar** (the lower right corner).
+    - To maximize the window in distraction-free mode, double-click the **tab title header** or the **status bar corner**. To close, maximize, or minimize the window, right-click either area and select the desired option from the menu.
+
 ## [6.4.0] - 2023-10-23
 ### Improvements
 - Improved **reading mode** (new screenshot on the readme about this mode):
