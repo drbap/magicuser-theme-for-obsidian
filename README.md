@@ -98,6 +98,14 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
 
+![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
+
+**Distraction-free mode** has been improved to allow you to easily drag the window across the screen, when the window frame style is set to "Hidden", which is the default option:
+
+- When you enable distraction-free mode with the Style Settings plugin, you can drag the window by the **tab title header** (the top bar with the file name and breadcrumb) or by the **right part of the status bar** (the lower right corner).
+
+- To maximize the window in distraction-free mode, double-click the **tab title header** or the **status bar corner**. To close, maximize, or minimize the window, right-click either area and select the desired option from the menu.
+
 ## Reading Mode
 
 ![Reading Mode Overview](images/magicuser_theme_reading_mode.gif)
