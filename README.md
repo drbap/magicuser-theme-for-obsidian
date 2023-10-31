@@ -347,7 +347,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 
 **Style Settings Community Plugin**
 
-- Thanks to Matthew Meyers (@mgmeyers) for the amazing Style Settings Plugin. Excellent work.
+- Thanks to Matthew Meyers (@mgmeyers) for the amazing [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Plugin. Excellent work.
 
 
 **Thanks for the Suggestions**
