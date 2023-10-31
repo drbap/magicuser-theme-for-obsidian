@@ -77,10 +77,24 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - External link **color**
 - External Link **hover color**
 
-**CheckList**
+**Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
+
+**Code**
+
+- code background color
+- keyword
+- string
+- number
+- comment
+- function
+- property
+- tag
+- attribute
+- operator
+- punctuation
 
 ## UI Advanced Settings
 
