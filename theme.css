@@ -403,7 +403,7 @@ body {
   /* Modals */
   --modal-background: var(--background-primary);
   --modal-width: 90vw;
-  --modal-height: 85vh;
+  --modal-height: 92vh;
   --modal-max-width: 1100px;
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
@@ -746,7 +746,7 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .modal-bg {
-  opacity: 0.2 !important;
+  opacity: 0.3 !important;
   background-color: #000;
 }
 
@@ -911,6 +911,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-notes-icon-zoom: 72%;
   --interactive-normal: #001122;
   --interactive-hover: #007fff20;
+  --mu-code-attribute: #ffa3a3;
   --mu-caret-color: #00cfff;
 }
 
@@ -940,12 +941,12 @@ body.is-translucent.theme-dark input[type="text"] {
   background-color: #00a3ff20
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning) {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable) {
   color: #f1f1f1;
   background-color: #00a3ff30;
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning):hover {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable):hover {
   color: #f1f1f1;
   background-color: #00a3ff40;
 }
@@ -1014,8 +1015,9 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-dark .setting-item {
   display: flex;
   align-items: center;
-  padding: 0.75em 0;
-  border-top: 1px solid var(--mu-setting-color);
+  padding: var(--size-4-2) 0;
+  border: 0;
+  border-bottom: 1px solid var(--mu-setting-color);
 }
 
 .theme-dark .vertical-tab-header-group-title {
@@ -1073,6 +1075,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-link-hover: #c300ff;
   --mu-external-link: #0033ff;
   --mu-external-link-hover: #00a3ff;
+  --mu-code-attribute: #e50000;
   --mu-caret-color: #cf00ff;
   /* Code */
   --code-white-space: pre-wrap;
@@ -1120,12 +1123,12 @@ body.is-translucent.theme-dark input[type="text"] {
   background-color: #00a3ff20
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning) {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable) {
   color: #000;
   background-color: #00a3ff30;
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning):hover {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable):hover {
   color: #000;
   background-color: #00a3ff40
 }
@@ -1194,8 +1197,9 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-light .setting-item {
   display: flex;
   align-items: center;
-  padding: 0.75em 0;
-  border-top: 1px solid var(--mu-setting-color);
+  padding: var(--size-4-2) 0;
+  border: 0;
+  border-bottom: 1px solid var(--mu-setting-color);
 }
 
 .theme-light .vertical-tab-header-group-title {
@@ -2794,11 +2798,11 @@ td {
 
 /* Code Adjustments */
 .theme-dark .cm-attribute {
-  color: #ffa3a3;
+  color: var(--mu-code-attribute);
 }
 
 .theme-light .cm-attribute {
-  color: #e50000;
+  color: var(--mu-code-attribute);
 }
 
 /* Extra Mobile Adjustments */
@@ -2810,6 +2814,10 @@ td {
 
 .is-mobile .mobile-toolbar {
   background-color: var(--mu-background-color-2);
+}
+
+.is-mobile .workspace-tab-header-container {
+  background-color: var(--mu-titlebar-background);
 }
 
 .is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left,
@@ -2932,7 +2940,7 @@ body:not(.is-mobile).mu-distraction-free-mode {
   --mu-header-title-drag: drag;
 }
 
-body:not(.is-mobile) .view-header-title-container.mod-at-start, 
+body:not(.is-mobile) .view-header-title-container.mod-at-start,
 body:not(.is-mobile) .status-bar-item:not(.mod-clickable) {
   -webkit-app-region: var(--mu-header-title-drag);
 }
@@ -3111,6 +3119,11 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   content: "H6 ";
 }
 
+/* Settings */
+.vertical-tab-header-group {
+  padding-top: 0;
+}
+
 /* Style Settings */
 /* @settings
 name: MagicUser Theme
@@ -3131,7 +3144,7 @@ settings:
         collapsed: true
     -
         id: mu-titlebar-background
-        title: Frame Color
+        title: Frame color
         type: variable-themed-color
         description: Theme frame color
         format: hex
@@ -3140,25 +3153,25 @@ settings:
         default-dark: '#003388'
     -
         id: mu-background-color-1
-        title: Primary Background Color
+        title: Primary background color
         type: variable-themed-color
-        description: Main theme background color
+        description: Main editor theme background color
         format: hex
         opacity: false
         default-light: '#e8efff'
         default-dark: '#002248'
     -
         id: mu-background-color-2
-        title: Secondary Background Color
+        title: Secondary background color
         type: variable-themed-color
-        description: Sidebar, menus and code background color
+        description: Secondary theme background color
         format: hex
         opacity: false
         default-light: '#d1dfff'
         default-dark: '#001122'
     -
         id: mu-icon-focused
-        title: Icon Focused Color
+        title: Icon focused color
         type: variable-color
         description: Current focused icon color
         format: hex
@@ -3166,7 +3179,7 @@ settings:
         default: '#007fff'
     -
         id: mu-caret-color
-        title: Caret Color
+        title: Caret color
         type: variable-themed-color
         description: Caret / text cursor color
         format: hex
@@ -3175,7 +3188,7 @@ settings:
         default-dark: '#00cfff'
     -
         id: mu-line-highlight-border
-        title: Line Highlight Border Color
+        title: Line highlight border color
         type: class-select
         description: Border color of the active line
         allowEmpty: false
@@ -3210,7 +3223,7 @@ settings:
                 value: line-highlight-border-gray
     -
         id: mu-line-highlight-background
-        title: Line Highlight Background Color
+        title: Line highlight background color
         type: class-select
         description: Background color of the active line
         allowEmpty: false
@@ -3245,7 +3258,7 @@ settings:
                 value: line-highlight-background-gray
     - 
         id: mu-folder-icons
-        title: Folder Icons
+        title: Folder icons
         description: Show or hide folder icons
         type: class-select
         allowEmpty: false
@@ -3259,7 +3272,7 @@ settings:
                 value: hide-folders
     -
         id: mu-sidebar-folder
-        title: Folder Name Color
+        title: Folder name color
         type: variable-themed-color
         description: Folder name color
         format: hex
@@ -3268,7 +3281,7 @@ settings:
         default-dark: '#72a3ff'
     -
         id: mu-vault-title
-        title: Vault Title Color
+        title: Vault title color
         type: variable-themed-color
         description: Sidebar vault title color
         format: hex
@@ -3277,7 +3290,7 @@ settings:
         default-dark: '#a273d8'
     -
         id: mu-text-title
-        title: Inline Title Color
+        title: Inline title color
         type: variable-themed-color
         description: Filename inline title color
         format: hex
@@ -3297,32 +3310,32 @@ settings:
         type: class-toggle
     -
         id: mu-hide-nav-buttons-container
-        title: Sidebar Buttons
+        title: Sidebar buttons
         description:  Hide sidebar buttons (new note, new folder and others)
         type: class-toggle
     -  
         id: mu-hide-view-header-nav-buttons
-        title: Tab Navigation Buttons
+        title: Tab navigation buttons
         description:  Hide tab navigation back and forward buttons
         type: class-toggle
     -  
         id: mu-hide-titlebar-top-left-buttons
-        title: Title Bar Top Left Buttons
+        title: Title bar top left buttons
         description: Auto hide title bar top left buttons
         type: class-toggle
     -  
         id: mu-hide-side-dock-actions
-        title: Top Side Buttons
+        title: Top side buttons
         description: Auto hide top side buttons
         type: class-toggle
     -  
         id: mu-hide-side-dock-settings
-        title: Bottom Side Buttons
+        title: Bottom side buttons
         description: Auto hide bottom side buttons
         type: class-toggle
     -  
         id: mu-hide-status-bar
-        title: Status Bar
+        title: Status bar
         description: Auto hide status bar
         type: class-toggle
     -
@@ -3334,19 +3347,19 @@ settings:
         collapsed: true
     -
         id: mu-font-headings
-        title: Headings Font (H1-H6)
+        title: Headings font (H1-H6)
         type: variable-text
         description: Font used for the headings (H1-H6)
         default: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
     -
         id: h1-size
-        title: H1 Font Size
+        title: H1 font size
         type: variable-text
         description: Heading 1 font size
         default: 2em
     -
         id: mu-h1
-        title: H1 Color
+        title: H1 color
         type: variable-themed-color
         description: Heading 1 color
         format: hex
@@ -3355,13 +3368,13 @@ settings:
         default-dark: '#00a3ff'
     -
         id: h2-size
-        title: H2 Font Size
+        title: H2 font size
         type: variable-text
         description: Heading 2 font size
         default: 1.5em
     -
         id: mu-h2
-        title: H2 Color
+        title: H2 color
         type: variable-themed-color
         description: Heading 2 color
         format: hex
@@ -3370,13 +3383,13 @@ settings:
         default-dark: '#00a3ff'
     -
         id: h3-size
-        title: H3 Font Size
+        title: H3 font size
         type: variable-text
         description: Heading 3 font size
         default: 1.17em
     -
         id: mu-h3
-        title: H3 Color
+        title: H3 color
         type: variable-themed-color
         description: Heading 3 color
         format: hex
@@ -3385,13 +3398,13 @@ settings:
         default-dark: '#00a3ff'
     -
         id: h4-size
-        title: H4 Font Size
+        title: H4 font size
         type: variable-text
         description: Heading 4 font size
         default: 1em
     -
         id: mu-h4
-        title: H4 Color
+        title: H4 color
         type: variable-themed-color
         description: Heading 4 color
         format: hex
@@ -3400,13 +3413,13 @@ settings:
         default-dark: '#00a3ff'
     -
         id: h5-size
-        title: H5 Font Size
+        title: H5 font size
         type: variable-text
         description: Heading 5 font size
         default: 0.83em
     -
         id: mu-h5
-        title: H5 Color
+        title: H5 color
         type: variable-themed-color
         description: Heading 5 color
         format: hex
@@ -3415,13 +3428,13 @@ settings:
         default-dark: '#00a3ff'
     -
         id: h6-size
-        title: H6 Font Size
+        title: H6 font size
         type: variable-text
         description: Heading 6 font size
         default: 0.67em
     -
         id: mu-h6
-        title: H6 Color
+        title: H6 color
         type: variable-themed-color
         description: Heading 6 color
         format: hex
@@ -3437,7 +3450,7 @@ settings:
         collapsed: true
     -
         id: mu-text-bold
-        title: Bold Text Color
+        title: Bold text color
         type: variable-themed-color
         description: Bold text color
         format: hex
@@ -3446,7 +3459,7 @@ settings:
         default-dark: '#f1f1f1'
     -
         id: mu-text-italic
-        title: Italic Text Color
+        title: Italic text color
         type: variable-themed-color
         description: Italic text color
         format: hex
@@ -3455,7 +3468,7 @@ settings:
         default-dark: '#f1f1f1'
     -
         id: text-highlight-bg
-        title: Highlighted Text Color
+        title: Highlighted text color
         type: variable-color
         description: Color used to highlight text
         format: hex
@@ -3470,7 +3483,7 @@ settings:
         collapsed: true
     -
         id: link-decoration
-        title: Internal Link Decoration
+        title: Internal link decoration
         type: variable-select
         description: Internal link decoration
         default: 'underline'
@@ -3479,7 +3492,7 @@ settings:
             - 'none'
     -
         id: mu-link
-        title: Internal Link Color
+        title: Internal link color
         type: variable-themed-color
         description: Internal link color
         format: hex
@@ -3488,7 +3501,7 @@ settings:
         default-dark: '#c348ff'
     -
         id: mu-link-hover
-        title: Internal Link Hover Color
+        title: Internal link hover color
         type: variable-themed-color
         description: Internal link hover color
         format: hex
@@ -3497,7 +3510,7 @@ settings:
         default-dark: '#d372ff'
     -
         id: link-external-decoration
-        title: External Link Decoration
+        title: External link decoration
         type: variable-select
         description: External link decoration
         default: 'underline'
@@ -3506,7 +3519,7 @@ settings:
             - 'none'
     -
         id: mu-external-link
-        title: External Link Color
+        title: External link color
         type: variable-themed-color
         description: External link color
         format: hex
@@ -3515,7 +3528,7 @@ settings:
         default-dark: '#00a9dd'
     -
         id: mu-external-link-hover
-        title: External Link Hover Color
+        title: External link hover color
         type: variable-themed-color
         description: External link hover color
         format: hex
@@ -3524,14 +3537,14 @@ settings:
         default-dark: '#00c3ff'
     - 
         id: magicuser-theme-checkboxes
-        title: CheckList      
+        title: Checklist      
         type: heading
         description: Checklist settings
         level: 2
         collapsed: true
     -
         id: checklist-done-decoration
-        title: Checklist Done Decoration
+        title: Checklist done decoration
         type: variable-select
         description: Text decoration of the completed task
         default: 'underline'
@@ -3541,12 +3554,107 @@ settings:
             - 'none'
     -
         id: checklist-done-color
-        title: Checklist Done Text Color
+        title: Checklist done text color
         type: variable-color
         description: Text color of the completed task
         format: hex
         opacity: false
         default: '#00cf48'
+    - 
+        id: magicuser-theme-code
+        title: Code
+        type: heading
+        description: Code background and syntax highlighting
+        level: 2
+        collapsed: true
+    -
+        id: code-background
+        title: Code background color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f1f1f1'
+        default-dark: '#001122'
+    -
+        id: code-keyword
+        title: Keyword color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c300f1'
+        default-dark: '#d372ff'
+    -
+        id: code-string
+        title: String color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0000f1'
+        default-dark: '#00d8ff'
+    -
+        id: code-value
+        title: Number / Value color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f18f00'
+        default-dark: '#ffa300'
+    -
+        id: code-comment
+        title: Comment color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#a3a3a3'
+        default-dark: '#a3a3a3'
+    -
+        id: code-function
+        title: Function color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#00a300'
+        default-dark: '#48f148'
+    -
+        id: code-property
+        title: Property color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0048a3'
+        default-dark: '#0088f1'
+    -
+        id: code-tag
+        title: Tag color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c300f1'
+        default-dark: '#d372ff'
+    -
+        id: mu-code-attribute
+        title: Attribute color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#e50000'
+        default-dark: '#ffa3a3'
+    -
+        id: code-operator
+        title: Operator color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c300f1'
+        default-dark: '#d372ff'
+    -
+        id: code-punctuation
+        title: Punctuation color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c300f1'
+        default-dark: '#d372ff'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
