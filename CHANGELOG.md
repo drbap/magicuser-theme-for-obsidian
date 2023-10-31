@@ -1,5 +1,25 @@
 # Changelog
 
+## [7.0.0] - 2023-10-31
+### Improvements
+- Improved **mobile display** (tablets and phones).
+- Modals background overlay with adjusted opacity.
+- **Settings** window adjustments:
+  - Side options adjustments to fit more options.
+  - New modal size (height).
+- **Style Settings**: adjust code syntax highlighting according to your preferences.
+  - code background color
+  - keyword
+  - string
+  - number
+  - comment
+  - function
+  - property
+  - tag
+  - attribute
+  - operator
+  - punctuation
+
 ## [6.5.0] - 2023-10-28
 ### Improvements
 - **Canvas files** are displayed in the sidebar with the Canvas icon (desktop and mobile).
