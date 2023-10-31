@@ -84,17 +84,17 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 **Code**
 
-- code background color
-- keyword
-- string
-- number
-- comment
-- function
-- property
-- tag
-- attribute
-- operator
-- punctuation
+- Code background color
+- Keyword
+- String
+- Number
+- Comment
+- Function
+- Property
+- Tag
+- Attribute
+- Operator
+- Punctuation
 
 ## UI Advanced Settings
 
