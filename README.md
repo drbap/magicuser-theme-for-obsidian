@@ -30,6 +30,14 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 You can customize the following MagicUser theme elements ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
+**Preset Themes**
+- **MagicUser** (Default)
+- MagicUser **Room Lamp**
+- MagicUser **Purple**
+- MagicUser **Teal**
+- MagicUser **Gray**
+- MagicUser **Camouflage**
+
 **UI Settings** (UI Basic and Advanced Settings)
 
 **UI Basic Settings**
@@ -127,6 +135,32 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Reading indicators (left and right side).
 - H1-H6 indicators.
 - Highlight content by clicking on it (glow effect).
+
+## Preset Themes
+
+Switch between themes to find the perfect one for your mood and productivity needs (light and dark modes).
+> Style Settings Plugin required
+
+
+### MagicUser Room Lamp
+
+![MagicUser Room Lamp](images/magicuser_preset_01.png)
+
+### MagicUser Purple
+
+![MagicUser Room Purple](images/magicuser_preset_02.png)
+
+### MagicUser Teal
+
+![MagicUser Room Purple](images/magicuser_preset_03.png)
+
+### MagicUser Camouflage
+
+![MagicUser Room Purple](images/magicuser_preset_04.png)
+
+### MagicUser Gray
+
+![MagicUser Room Purple](images/magicuser_preset_05.png)
 
 ## Custom Checkbox Icons
 
