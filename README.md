@@ -148,19 +148,19 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ### MagicUser Purple
 
-![MagicUser Room Purple](images/magicuser_preset_02.png)
+![MagicUser Purple](images/magicuser_preset_02.png)
 
 ### MagicUser Teal
 
-![MagicUser Room Purple](images/magicuser_preset_03.png)
+![MagicUser Teal](images/magicuser_preset_03.png)
 
 ### MagicUser Camouflage
 
-![MagicUser Room Purple](images/magicuser_preset_04.png)
+![MagicUser Camouflage](images/magicuser_preset_04.png)
 
 ### MagicUser Gray
 
-![MagicUser Room Purple](images/magicuser_preset_05.png)
+![MagicUser Gray](images/magicuser_preset_05.png)
 
 ## Custom Checkbox Icons
 
