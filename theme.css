@@ -118,7 +118,7 @@ body {
   --code-keyword: var(--mu-purple-1);
   --code-operator: var(--mu-purple-1);
   --code-property: #0088f1;
-  --code-punctuation: var(--mu-purple-1);
+  --code-punctuation: #bf00ff;
   --code-string: #00d8ff;
   --code-tag: var(--mu-purple-1);
   --code-value: #ffa300;
@@ -741,7 +741,7 @@ body.is-translucent.theme-dark input[type="text"] {
 .cm-s-obsidian span.cm-formatting-link,
 .cm-formatting-header,
 .cm-s-obsidian span.cm-formatting-quote {
-  color: #bf00ff;
+  color: var(--code-punctuation);
   font-weight: var(--font-semibold);
 }
 
@@ -912,6 +912,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --interactive-normal: #001122;
   --interactive-hover: #007fff20;
   --mu-code-attribute: #ffa3a3;
+  --mu-input-bg-color: #001836;
   --mu-caret-color: #00cfff;
 }
 
@@ -953,7 +954,7 @@ body.is-translucent.theme-dark input[type="text"] {
 
 .theme-dark input[type="text"],
 .theme-dark input[type="search"] {
-  background-color: #001836;
+  background-color: var(--mu-input-bg-color);
 }
 
 .theme-dark span.obsidian-search-match-highlight {
@@ -1076,6 +1077,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-external-link: #0033ff;
   --mu-external-link-hover: #00a3ff;
   --mu-code-attribute: #e50000;
+  --mu-input-bg-color: #fff;
   --mu-caret-color: #cf00ff;
   /* Code */
   --code-white-space: pre-wrap;
@@ -1191,7 +1193,7 @@ body.is-translucent.theme-dark input[type="text"] {
 
 .theme-light input[type="text"],
 .theme-light input[type="search"] {
-  background-color: #fff;
+  background-color: var(--mu-input-bg-color);
 }
 
 .theme-light .setting-item {
@@ -3124,12 +3126,219 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   padding-top: 0;
 }
 
+/* Themes */
+/* Purple */
+.theme-light.magicuser-purple-theme {
+  --mu-background-color-1: #dbd0ff;
+  --mu-background-color-2: #cdbeff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a300a320;
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #250035;
+  --mu-vault-title: #a300cf;
+  --code-background: #e8e8e8;
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+}
+
+.theme-dark.magicuser-purple-theme {
+  --mu-background-color-1: #330048;
+  --mu-background-color-2: #250035;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #160020;
+  --mu-setting-color: #f100f110;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #210030;
+  --mu-vault-title: #bf48ff;
+  --code-background: #1f1f1f;
+}
+
+/* Teal */
+.theme-light.magicuser-teal-theme {
+  --mu-background-color-1: #E1F0F0;
+  --mu-background-color-2: #cde8e8;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #00a3a310;
+  --mu-titlebar-background: #004040;
+  --code-background: #e8e8e8;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+}
+
+.theme-dark.magicuser-teal-theme {
+  --mu-background-color-1: #002828;
+  --mu-background-color-2: #002121;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #003838;
+  --mu-setting-color: #00a3a310;
+  --mu-titlebar-background: #004040;
+  --code-background: #1f1f1f;
+}
+
+/* Camouflage */
+.theme-light.magicuser-camouflage-theme {
+  --mu-background-color-1: #e1e8d3;
+  --mu-background-color-2: #d1d8c0;
+  --mu-caret-color: #ff5f00;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a348;
+  --mu-sidebar-folder: #4f573c;
+  --mu-text-title: #727d57;
+  --mu-titlebar-background: #3a3f2c;
+  --mu-vault-title: #727d57;
+  --code-background: #e8e8e8;
+  --code-punctuation: #727d57;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+}
+
+.theme-dark.magicuser-camouflage-theme {
+  --mu-background-color-1: #24281c;
+  --mu-background-color-2: #1e2117;
+  --mu-caret-color: #ff5f00;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #000;
+  --mu-setting-color: #a3a3a318;
+  --mu-sidebar-folder: #a0ac82;
+  --mu-text-title: #727d57;
+  --mu-titlebar-background: #3a3f2c;
+  --mu-vault-title: #727d57;
+  --code-background: #000;
+  --code-punctuation: #727d57;
+}
+
+/* Gray */
+.theme-light.magicuser-gray-theme {
+  --mu-background-color-1: #e8e8e8;
+  --mu-background-color-2: #e1e1e1;
+  --mu-caret-color: #ff00a3;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a348;
+  --mu-text-title: #828282;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #828282;
+  --code-background: #f1f1f1;
+  --code-punctuation: #979797;
+  --mu-h1: #0072d3;
+  --mu-h2: #0072d3;
+  --mu-h3: #0072d3;
+  --mu-h4: #0072d3;
+  --mu-h5: #0072d3;
+  --mu-h6: #0072d3;
+}
+
+.theme-dark.magicuser-gray-theme {
+  --mu-background-color-1: #1f1f1f;
+  --mu-background-color-2: #181818;
+  --mu-caret-color: #ff00a3;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #000;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #828282;
+  --mu-titlebar-background: #080808;
+  --mu-vault-title: #828282;
+  --code-background: #000;
+  --code-punctuation: #7f7f7f;
+}
+
+/* Room lamp */
+.theme-light.magicuser-room-lamp-theme {
+  --mu-background-color-1: #f9edc6;
+  --mu-background-color-2: #f7e8b3;
+  --mu-caret-color: #d3148d;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a348;
+  --mu-sidebar-folder: #0048a3;
+  --mu-text-title: #ac3f5d;
+  --mu-titlebar-background: #461828;
+  --mu-vault-title: #ac3f5d;
+  --code-background: #e8e8e8;
+  --code-punctuation: #ac3f5d;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+}
+
+.theme-dark.magicuser-room-lamp-theme {
+  --mu-background-color-1: #2f0f18;
+  --mu-background-color-2: #3f1423;
+  --mu-caret-color: #d3148d;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #000;
+  --mu-setting-color: #a3a3a318;
+  --mu-sidebar-folder: #97bff1;
+  --mu-text-title: #ac3f5d;
+  --mu-titlebar-background: #461828;
+  --mu-vault-title: #ac3f5d;
+  --code-background: #000;
+  --code-punctuation: #ac3f5d;
+  --mu-h1: #97bff1;
+  --mu-h2: #97bff1;
+  --mu-h3: #97bff1;
+  --mu-h4: #97bff1;
+  --mu-h5: #97bff1;
+  --mu-h6: #97bff1;
+}
+
 /* Style Settings */
 
 /* @settings
 name: MagicUser Theme
 id: magicuser-theme-for-obsidian
 settings:
+    -
+        id: magicuser-theme-presets
+        title: Preset Themes
+        type: heading
+        description: MagicUser preset themes
+        level: 2
+        collapsed: true
+    -
+        id: mu-presets-themes
+        title: Preset themes
+        type: class-select
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: MagicUser
+                value: none
+            - 
+                label: MagicUser Room Lamp
+                value: magicuser-room-lamp-theme
+            - 
+                label: MagicUser Purple
+                value: magicuser-purple-theme
+            - 
+                label: MagicUser Teal
+                value: magicuser-teal-theme
+            - 
+                label: MagicUser Camouflage
+                value: magicuser-camouflage-theme
+            - 
+                label: MagicUser Gray
+                value: magicuser-gray-theme
     -
         id: magicuser-theme-ui
         title: UI Settings
@@ -3655,7 +3864,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#c300f1'
-        default-dark: '#d372ff'
+        default-dark: '#bf00ff'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
