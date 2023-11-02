@@ -1,5 +1,20 @@
 # Changelog
 
+## [7.1.0] - 2023-11-02
+### Improvements
+**Style Settings** plugin:
+- New menu option with **MagicUser preset themes** (5 preset themes with dark and light modes):
+  - MagicUser (Default)
+  - MagicUser Room Lamp
+  - MagicUser Purple
+  - MagicUser Teal
+  - MagicUser Gray
+  - MagicUser Camouflage
+
+> Switch between themes to find the perfect one for your mood and productivity needs.
+
+- Now you can change the color of Markdown symbols by selecting the "Code punctuation" color (Style Settings plugin).
+
 ## [7.0.0] - 2023-10-31
 ### Improvements
 - Improved **mobile display** (tablets and phones).
