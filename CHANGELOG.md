@@ -1,5 +1,11 @@
 # Changelog
 
+## [7.1.2 - 2023-11-02
+### Improvements
+**Style Settings** plugin:
+- Hide file icons and hide folder icons labels.
+- UI Advanced Settings labels.
+
 ## [7.1.1] - 2023-11-02
 ### Improvements
 **Style Settings** plugin:
