@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.1.1] - 2023-11-02
+### Improvements
+**Style Settings** plugin:
+- Hide file icons toggle switch (Style Settings plugin -> UI Basic Settings).
+- There are 2 options (hide folders and hide file icons).
+- Hide folder icons converted to a toggle switch.
+
 ## [7.1.0] - 2023-11-02
 ### Improvements
 **Style Settings** plugin:
