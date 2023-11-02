@@ -51,6 +51,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Inline title** color
 - **Folder name** color (light and dark modes)
 - Show/hide **folder icons**
+- Show/hide **file icons**
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
@@ -386,5 +387,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 
 **Thanks for the Suggestions**
 - Thanks to @alitekdemir for the suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
+- Thanks to @YannMiro for the suggestion to show/hide file icons.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
