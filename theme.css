@@ -3470,13 +3470,13 @@ settings:
                 value: line-highlight-background-gray
     -
         id: mu-hide-folders
-        title: Folder icons
-        description:  Hide folder icons
+        title: Hide folder icons
+        description:  Toggle folder icons
         type: class-toggle
     -
         id: mu-hide-file-icons
-        title: File icons
-        description:  Hide file icons
+        title: Hide file icons
+        description:  Toggle file icons
         type: class-toggle
     -
         id: mu-sidebar-folder
@@ -3513,37 +3513,37 @@ settings:
         collapsed: true
     -
         id: mu-distraction-free-mode
-        title: Distraction-free mode 
-        description: Activate distraction-free mode
+        title: Activate distraction-free mode 
+        description: Enable distraction-free mode
         type: class-toggle
     -
         id: mu-hide-nav-buttons-container
-        title: Sidebar buttons
+        title: Hide sidebar buttons
         description:  Hide sidebar buttons (new note, new folder and others)
         type: class-toggle
     -  
         id: mu-hide-view-header-nav-buttons
-        title: Tab navigation buttons
+        title: Hide tab navigation buttons
         description:  Hide tab navigation back and forward buttons
         type: class-toggle
     -  
         id: mu-hide-titlebar-top-left-buttons
-        title: Title bar top left buttons
+        title: Auto hide title bar top left buttons
         description: Auto hide title bar top left buttons
         type: class-toggle
     -  
         id: mu-hide-side-dock-actions
-        title: Top side buttons
-        description: Auto hide top side buttons
+        title: Auto hide top side buttons
+        description: Auto hide top side buttons (left ribbon)
         type: class-toggle
     -  
         id: mu-hide-side-dock-settings
-        title: Bottom side buttons
-        description: Auto hide bottom side buttons
+        title: Auto hide bottom side buttons
+        description: Auto hide bottom side buttons (left ribbon)
         type: class-toggle
     -  
         id: mu-hide-status-bar
-        title: Status bar
+        title: Auto hide status bar
         description: Auto hide status bar
         type: class-toggle
     -
