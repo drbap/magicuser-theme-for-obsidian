@@ -331,6 +331,10 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
+## Metadata highlighting
+
+![Metadata highlighting](images/magicuser_metadata_highlighting.png)
+
 ## Properties Layout
 
 ![Properties](images/magicuser_properties.png)
