@@ -1,5 +1,10 @@
 # Changelog
 
+## [7.2.0 - 2023-11-03
+### Improvements
+- Frontmatter metadata syntax highlighting.
+- You can customize the frontmatter highlighting with the code highlighting options (Style Settings)
+ 
 ## [7.1.2 - 2023-11-02
 ### Improvements
 **Style Settings** plugin:
