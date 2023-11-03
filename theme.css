@@ -3303,6 +3303,40 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-h6: #97bff1;
 }
 
+/* Frontmatter md */
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+  color: var(--code-comment);
+}
+
+.cm-atom.cm-hmd-frontmatter {
+  font-weight: var(--font-semibold);
+  color: var(--code-property);
+}
+
+.cm-hmd-frontmatter.cm-meta {
+  font-weight: var(--font-bold);
+  color: var(--code-punctuation);
+}
+
+.cm-hmd-frontmatter.cm-number {
+  font-weight: var(--font-semibold);
+  color: var(--code-value)
+}
+
+.cm-hmd-frontmatter.cm-string {
+  font-weight: var(--font-semibold);
+  color: var(--code-string)
+}
+
+.cm-hmd-frontmatter {
+  color: var(--mu-text-1);
+}
+
+.cm-comment.cm-hmd-frontmatter {
+  font-style: italic;
+  color: var(--code-comment);
+}
+
 /* Style Settings */
 
 /* @settings
