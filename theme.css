@@ -681,6 +681,8 @@ body {
   --mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
   --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
+  --mu-reading-indicator: #007fff88;
+  --mu-reading-glow: #00a3ff;
   --mu-header-title-drag: no-drag;
 }
 
@@ -3068,7 +3070,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
-  box-shadow: -0.2rem 0 0 0 #007fff88, 0.2rem 0 0 0 #007fff88;
+  box-shadow: -0.2rem 0 0 0 var(--mu-reading-indicator), 0.2rem 0 0 0 var(--mu-reading-indicator);
   margin-left: -0.2rem;
   margin-right: -0.2rem;
   padding-left: 0.2rem;
@@ -3076,7 +3078,7 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):active {
-  box-shadow: 0 0 0 .2rem #00a3ff, 0 0 1.2rem .2rem #00a3ff;
+  box-shadow: 0 0 0 .2rem var(--mu-reading-glow), 0 0 1.2rem .2rem var(--mu-reading-glow);
   margin-left: -0.2rem;
   margin-right: -0.2rem;
   padding-left: 0.2rem;
@@ -3091,36 +3093,52 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .markdown-reading-view h5::before,
 .markdown-reading-view h6::before {
   font-size: .8rem;
-  font-weight: 600;
-  font-family: var(--mu-font-mono);
+  font-family: var(--mu-font-ui);
   color: #007fff88;
   display: flex;
   justify-content: flex-start;
   align-content: baseline;
+  visibility: hidden;
+  letter-spacing: 1px;
 }
 
 .markdown-reading-view h1::before {
   content: "H1 ";
+  color: var(--mu-h1);
 }
 
 .markdown-reading-view h2::before {
   content: "H2 ";
+  color: var(--mu-h2);
 }
 
 .markdown-reading-view h3::before {
   content: "H3 ";
+  color: var(--mu-h3);
 }
 
 .markdown-reading-view h4::before {
   content: "H4 ";
+  color: var(--mu-h4);
 }
 
 .markdown-reading-view h5::before {
   content: "H5 ";
+  color: var(--mu-h5);
 }
 
 .markdown-reading-view h6::before {
   content: "H6 ";
+  color: var(--mu-h6);
+}
+
+.markdown-reading-view h1:hover::before,
+.markdown-reading-view h2:hover::before,
+.markdown-reading-view h3:hover::before,
+.markdown-reading-view h4:hover::before,
+.markdown-reading-view h5:hover::before,
+.markdown-reading-view h6:hover::before {
+  visibility: visible;
 }
 
 /* Settings */
@@ -3337,6 +3355,35 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   color: var(--code-comment);
 }
 
+/* Reading glow */
+.reading-glow-blue {
+  --mu-reading-glow: #00a3ff;
+}
+
+.reading-glow-green {
+  --mu-reading-glow: #00ff88;
+}
+
+.reading-glow-orange {
+  --mu-reading-glow: #ff7f00;
+}
+
+.reading-glow-red {
+  --mu-reading-glow: #f10000;
+}
+
+.reading-glow-yellow {
+  --mu-reading-glow: #ffd700;
+}
+
+.reading-glow-pink {
+  --mu-reading-glow: #ff88cf;
+}
+
+.reading-glow-purple {
+  --mu-reading-glow: #bf48ff;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -3540,6 +3587,43 @@ settings:
         default-light: '#a200ff'
         default-dark: '#af47eb'
     -
+        id: mu-reading-indicator
+        title: Reading mode - reading indicators color
+        type: variable-color
+        description: Color of the left and right reading indicators
+        format: hex
+        opacity: true
+        default: '#007fff88'
+    -
+        id: mu-reading-glow
+        title: Reading mode - reading glow highlight
+        type: class-select
+        description: Glow effect color
+        allowEmpty: false
+        default: reading-glow-blue
+        options:
+            - 
+                label: Blue glow
+                value: reading-glow-blue
+            - 
+                label: Green glow
+                value: reading-glow-green
+            - 
+                label: Orange glow
+                value: reading-glow-orange
+            - 
+                label: Yellow glow
+                value: reading-glow-yellow
+            - 
+                label: Red glow
+                value: reading-glow-red
+            - 
+                label: Pink glow
+                value: reading-glow-pink
+            - 
+                label: Purple glow
+                value: reading-glow-purple
+    -
         id: magicuser-theme-ui-elements
         title: UI Advanced Settings
         type: heading
@@ -3547,8 +3631,9 @@ settings:
         collapsed: true
     -
         id: mu-distraction-free-mode
-        title: Activate distraction-free mode 
-        description: Enable distraction-free mode
+        title: Distraction-free mode 
+        description: Activate distraction-free mode
+        addCommand: true
         type: class-toggle
     -
         id: mu-hide-nav-buttons-container
