@@ -1,5 +1,9 @@
 # Changelog
 
+## [7.4.1 - 2023-11-04
+### Improvements
+- *Style Settings*: grouping reading indicators options and glow effects (color and corners).
+
 ## [7.4.0 - 2023-11-04
 ### Improvements
 
