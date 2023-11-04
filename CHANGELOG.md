@@ -1,5 +1,9 @@
 # Changelog
 
+## [7.4.2 - 2023-11-04
+### Improvements
+- *Style Settings* adjustments of new reading mode recently added features and description to make it easier to use.
+
 ## [7.4.1 - 2023-11-04
 ### Improvements
 - *Style Settings*: grouping reading indicators options and glow effects (color and corners).
