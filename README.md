@@ -49,7 +49,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Vault title** color
 - **Inline title** color
 
-*Folders and files*
+*Folders and icons*
 - **Icon focused** color
 - **Folder name** color (light and dark modes)
 - Show/hide **folder icons**
