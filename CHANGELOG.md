@@ -13,11 +13,11 @@
 
 **Reading mode**
 
-- **Reading indicators**: Right reading indicator is turned off by default. The default option will show the left reading indicator only. You can enable it using the *Style Settings* plugin. You can also hide all reading indicators (3 options: left only, left and right and no indicators.
+- **Reading indicators**: Right reading indicator is turned off by default. The default option will show the **left reading indicator** only. You can enable it using the *Style Settings* plugin. You can also hide all reading indicators. There are 3 options available: **left** only, **left and right** and **no indicators**.
 
 - **H1-H6 label colors**: You can select label colors h1-h6 for light and dark modes (6 independent colors). So you can give a very colorful look to these labels. You can select the ones you like the most, as it is a matter of personal taste.
 
-- **Highlight glow effect** - rounded corners (default) or square corners (*Style Settings*).
+- **Reading glow highlight corners** - rounded corners (default) or square corners (*Style Settings*).
 
 ## [7.3.0 - 2023-11-04
 ### Improvements
