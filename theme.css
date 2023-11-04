@@ -3645,9 +3645,9 @@ settings:
         default: '#007fff88'
     -
         id: mu-reading-glow
-        title: Reading mode - reading glow highlight
+        title: Reading mode - reading glow highlight color
         type: class-select
-        description: Glow effect color
+        description: Reading glow color
         allowEmpty: false
         default: reading-glow-blue
         options:
@@ -3674,7 +3674,8 @@ settings:
                 value: reading-glow-purple
     -
         id: mu-reading-glow-radius-corners
-        title: Reading mode - highlight glow corners
+        title: Reading mode - reading glow highlight corners
+        description: Reading glow corners (rounded or square)
         type: class-select
         allowEmpty: false
         default:  none
