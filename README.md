@@ -60,11 +60,11 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Active **line highlight background** color (9 options)
 
 *Reading Mode*
-- Reading mode: **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
-- Reading mode: **Reading indicators color**
-- Reading mode: **Reading glow color** (7 options)
-- Reading mode: **Reading glow corners** (rounded or square corners)
-- Reading mode: **H1-H6 label colors** (6 independent colors for light and dark modes)
+- **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
+- **Reading indicators color**
+- **Reading glow color** (7 options)
+- **Reading glow corners** (rounded or square corners)
+- **H1-H6 label colors** (6 independent colors for light and dark modes)
 
 **UI Advanced Settings** (Desktop Version)
 
