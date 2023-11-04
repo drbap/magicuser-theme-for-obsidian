@@ -30,7 +30,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 You can customize the following MagicUser theme elements ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
-**Preset Themes**
+#### **Preset Themes**
 - **MagicUser** (Default)
 - MagicUser **Room Lamp**
 - MagicUser **Purple**
@@ -38,27 +38,33 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - MagicUser **Gray**
 - MagicUser **Camouflage**
 
-**UI Settings** (UI Basic and Advanced Settings)
+#### **UI Settings** (UI Basic and Advanced Settings)
 
 **UI Basic Settings**
 
 - **Frame** color
 - **Primary background** color
 - **Secondary background** color
-- **Icon focused** color
 - **Caret** / **text cursor** color
 - **Vault title** color
 - **Inline title** color
+
+*Folders and files*
+- **Icon focused** color
 - **Folder name** color (light and dark modes)
 - Show/hide **folder icons**
 - Show/hide **file icons**
+
+*Line highlight*
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
-- Reading mode: Reading indicators color
-- Reading mode: Reading glow effect color (7 options)
-- Reading mode: Glow effect with rounded or square corners.
-- Reading mode: Reading indicators (3 options: **left**, **left and right** and **no indicators**)
-- Reading mode: H1-H6 label colors (6 independent colors for light and dark modes).
+
+*Reading Mode*
+- Reading mode: **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
+- Reading mode: **Reading indicators color**
+- Reading mode: **Reading glow color** (7 options)
+- Reading mode: **Reading glow corners** (rounded or square corners)
+- Reading mode: **H1-H6 label colors** (6 independent colors for light and dark modes)
 
 **UI Advanced Settings** (Desktop Version)
 
@@ -70,19 +76,19 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
 
-**Headings H1-H6**
+#### **Headings H1-H6**
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-**Text**
+#### **Text**
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-**Links**
+#### **Links**
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -91,12 +97,12 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - External link **color**
 - External Link **hover color**
 
-**Checklist**
+#### **Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-**Code**
+#### **Code**
 
 - Code background color
 - Keyword
@@ -145,9 +151,9 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Select **reading indicators color**.
 - **H1-H6 indicators**.
 - **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (6 independent colors).
-- Highlight content by clicking on it (glow effect).
-- **Glow effect** (rounded or square corners).
-- Select **reading glow effect color** - 7 colors available: green, blue, orange, red, yellow, pink, purple.
+- Highlight content by clicking on it (reading glow effect).
+- **Reading glow highlight** (rounded or square corners).
+- Select **reading glow highlight color** - **7 colors**: green, blue, orange, red, yellow, pink, purple.
 
 ## Preset Themes
 
