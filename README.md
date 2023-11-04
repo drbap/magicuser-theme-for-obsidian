@@ -134,16 +134,20 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 - To maximize the window in distraction-free mode, double-click the **tab title header** or the **status bar corner**. To close, maximize, or minimize the window, right-click either area and select the desired option from the menu.
 
+- *Style Settings*: You can add a **shortcut** to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the **command palette**.
+
 ## Reading Mode
 
 ![Reading Mode Overview](images/magicuser_theme_reading_mode.gif)
 
 
 - **Reading indicators**: The default option will show the left reading indicator only. The right indicator can be visible using Style Settings option (3 available options: **left** only, **left and right** and **no indicators**).
+- Select **reading indicators color**.
 - **H1-H6 indicators**.
 - **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (6 independent colors).
 - Highlight content by clicking on it (glow effect).
-- **Glow effect** (rounded or square corners)
+- **Glow effect** (rounded or square corners).
+- Select **reading glow effect color** - 7 colors available: green, blue, orange, red, yellow, pink, purple.
 
 ## Preset Themes
 
