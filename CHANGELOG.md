@@ -1,5 +1,18 @@
 # Changelog
 
+## [7.3.0 - 2023-11-04
+### Improvements
+**Reading mode**:
+- H1-H6 labels display when you hover the corresponding heading.
+
+- H1-H6 label colors will have the same color of the text heading H1-H6 (Reading mode).
+
+- *Style Settings*: Select reading indicators color (any color you want - color picker)
+
+- *Style Settings*: Select reading glow effect color - 7 colors available: green, blue, orange, red, yellow, pink, purple.
+
+- *Style Settings*: You can add a shortcut to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the command palette.
+
 ## [7.2.0 - 2023-11-03
 ### Improvements
 - Frontmatter metadata syntax highlighting.
