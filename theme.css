@@ -681,8 +681,10 @@ body {
   --mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
   --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
-  --mu-reading-indicator: #007fff88;
+  --mu-reading-indicator-color: #007fff88;
+  --mu-reading-indicator-right: transparent;
   --mu-reading-glow: #00a3ff;
+  --mu-reading-glow-radius: 0.2rem;
   --mu-header-title-drag: no-drag;
 }
 
@@ -917,6 +919,12 @@ body.is-translucent.theme-dark input[type="text"] {
   --interactive-hover: #007fff20;
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
+  --mu-label-h1: #a35fbf;
+  --mu-label-h2: #a35fbf;
+  --mu-label-h3: #a35fbf;
+  --mu-label-h4: #a35fbf;
+  --mu-label-h5: #a35fbf;
+  --mu-label-h6: #a35fbf;
   --mu-caret-color: #00cfff;
 }
 
@@ -1082,6 +1090,12 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-external-link-hover: #00a3ff;
   --mu-code-attribute: #e50000;
   --mu-input-bg-color: #fff;
+  --mu-label-h1: #bf72d8;
+  --mu-label-h2: #bf72d8;
+  --mu-label-h3: #bf72d8;
+  --mu-label-h4: #bf72d8;
+  --mu-label-h5: #bf72d8;
+  --mu-label-h6: #bf72d8;
   --mu-caret-color: #cf00ff;
   /* Code */
   --code-white-space: pre-wrap;
@@ -3070,7 +3084,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
-  box-shadow: -0.2rem 0 0 0 var(--mu-reading-indicator), 0.2rem 0 0 0 var(--mu-reading-indicator);
+  box-shadow: -0.2rem 0 0 0 var(--mu-reading-indicator-color), 0.2rem 0 0 0 var(--mu-reading-indicator-right);
   margin-left: -0.2rem;
   margin-right: -0.2rem;
   padding-left: 0.2rem;
@@ -3084,6 +3098,7 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   transition: box-shadow .5s;
+  border-radius: var(--mu-reading-glow-radius);
 }
 
 .markdown-reading-view h1::before,
@@ -3094,7 +3109,6 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .markdown-reading-view h6::before {
   font-size: .8rem;
   font-family: var(--mu-font-ui);
-  color: #007fff88;
   display: flex;
   justify-content: flex-start;
   align-content: baseline;
@@ -3104,32 +3118,32 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 
 .markdown-reading-view h1::before {
   content: "H1 ";
-  color: var(--mu-h1);
+  color: var(--mu-label-h1);
 }
 
 .markdown-reading-view h2::before {
   content: "H2 ";
-  color: var(--mu-h2);
+  color: var(--mu-label-h2);
 }
 
 .markdown-reading-view h3::before {
   content: "H3 ";
-  color: var(--mu-h3);
+  color: var(--mu-label-h3);
 }
 
 .markdown-reading-view h4::before {
   content: "H4 ";
-  color: var(--mu-h4);
+  color: var(--mu-label-h4);
 }
 
 .markdown-reading-view h5::before {
   content: "H5 ";
-  color: var(--mu-h5);
+  color: var(--mu-label-h5);
 }
 
 .markdown-reading-view h6::before {
   content: "H6 ";
-  color: var(--mu-h6);
+  color: var(--mu-label-h6);
 }
 
 .markdown-reading-view h1:hover::before,
@@ -3384,6 +3398,25 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-reading-glow: #bf48ff;
 }
 
+/* Reading indicators */
+.mu-reading-ind-left {
+  --mu-reading-indicator-right: transparent;
+}
+
+.mu-reading-ind-right {
+  --mu-reading-indicator-right: var(--mu-reading-indicator-color);
+}
+
+.mu-reading-ind-hide {
+  --mu-reading-indicator-color: transparent !important;
+  --mu-reading-indicator-right: transparent !important;
+}
+
+/* Glow square corners */
+.mu-glow-radius-square {
+  --mu-reading-glow-radius: 0;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -3587,7 +3620,7 @@ settings:
         default-light: '#a200ff'
         default-dark: '#af47eb'
     -
-        id: mu-reading-indicator
+        id: mu-reading-indicator-color
         title: Reading mode - reading indicators color
         type: variable-color
         description: Color of the left and right reading indicators
@@ -3623,6 +3656,89 @@ settings:
             - 
                 label: Purple glow
                 value: reading-glow-purple
+    -
+        id: mu-reading-indicators
+        title: Reading mode - reading indicators
+        type: class-select
+        allowEmpty: false
+        default:  mu-reading-ind-left
+        options:
+            - 
+                label: Left indicator
+                value: mu-reading-ind-left
+            - 
+                label: Left and right
+                value: mu-reading-ind-right
+            - 
+                label: No indicators
+                value: mu-reading-ind-hide
+    -
+        id: mu-reading-glow-radius-corners
+        title: Reading mode - highlight glow corners
+        type: class-select
+        allowEmpty: false
+        default:  none
+        options:
+            - 
+                label: Rounded corners
+                value: none
+            - 
+                label: Square corners
+                value: mu-glow-radius-square
+    -
+        id: mu-label-h1
+        title: Reading mode - H1 label color
+        type: variable-themed-color
+        description: H1 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
+    -
+        id: mu-label-h2
+        title: Reading mode - H2 label color
+        type: variable-themed-color
+        description: H2 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
+    -
+        id: mu-label-h3
+        title: Reading mode - H3 label color
+        type: variable-themed-color
+        description: H3 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
+    -
+        id: mu-label-h4
+        title: Reading mode - H4 label color
+        type: variable-themed-color
+        description: H4 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
+    -
+        id: mu-label-h5
+        title: Reading mode - H5 label color
+        type: variable-themed-color
+        description: H5 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
+    -
+        id: mu-label-h6
+        title: Reading mode - H6 label color
+        type: variable-themed-color
+        description: H6 label color
+        format: hex
+        opacity: false
+        default-light: '#bf72d8'
+        default-dark: '#a35fbf'
     -
         id: magicuser-theme-ui-elements
         title: UI Advanced Settings
