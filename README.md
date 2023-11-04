@@ -404,6 +404,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 **Thanks for the Suggestions**
 - @alitekdemir - suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
 - @YannMiro - suggestion to show/hide file icons.
-- @zhouxinghong - suggestion to display H1-H6 labels on hover (reading mode).
+- @zhouxinghong - suggestion to display H1-H6 labels on hover (and some reading mode suggestions).
 
 Special congratulations to the Obsidian.md team for creating a great software application.
