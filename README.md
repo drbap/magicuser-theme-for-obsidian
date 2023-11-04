@@ -138,9 +138,12 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Reading Mode Overview](images/magicuser_theme_reading_mode.gif)
 
-- Reading indicators (left and right side).
-- H1-H6 indicators.
+
+- **Reading indicators**: The default option will show the left reading indicator only. The right indicator can be visible using Style Settings option (3 available options: **left** only, **left and right** and **no indicators**).
+- **H1-H6 indicators**.
+- **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (6 independent colors).
 - Highlight content by clicking on it (glow effect).
+- **Glow effect** (rounded or square corners)
 
 ## Preset Themes
 
