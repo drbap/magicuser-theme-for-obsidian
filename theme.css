@@ -3620,6 +3620,22 @@ settings:
         default-light: '#a200ff'
         default-dark: '#af47eb'
     -
+        id: mu-reading-indicators
+        title: Reading mode - reading indicators
+        type: class-select
+        allowEmpty: false
+        default:  mu-reading-ind-left
+        options:
+            - 
+                label: Left indicator
+                value: mu-reading-ind-left
+            - 
+                label: Left and right
+                value: mu-reading-ind-right
+            - 
+                label: No indicators
+                value: mu-reading-ind-hide
+    -
         id: mu-reading-indicator-color
         title: Reading mode - reading indicators color
         type: variable-color
@@ -3656,22 +3672,6 @@ settings:
             - 
                 label: Purple glow
                 value: reading-glow-purple
-    -
-        id: mu-reading-indicators
-        title: Reading mode - reading indicators
-        type: class-select
-        allowEmpty: false
-        default:  mu-reading-ind-left
-        options:
-            - 
-                label: Left indicator
-                value: mu-reading-ind-left
-            - 
-                label: Left and right
-                value: mu-reading-ind-right
-            - 
-                label: No indicators
-                value: mu-reading-ind-hide
     -
         id: mu-reading-glow-radius-corners
         title: Reading mode - highlight glow corners
