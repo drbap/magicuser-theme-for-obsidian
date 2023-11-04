@@ -54,6 +54,8 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Show/hide **file icons**
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
+- Reading mode: Reading indicators color
+- Reading mode: Reading glow effect color (7 options)
 
 **UI Advanced Settings** (Desktop Version)
 
