@@ -61,7 +61,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 *Reading Mode*
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
-- **Reading indicators width** - 4 preset sizes: **Thin**, **Normal** (default), **Medium** and **Large**
+- **Reading indicators width** - 4 option: **Thin**, **Normal** (default), **Medium** and **Large**
 - **Reading indicators color**
 - **Reading glow color** (7 options)
 - **Reading glow corners** (rounded or square corners)
@@ -150,6 +150,7 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 - **Reading indicators**: The default option will show the left reading indicator only. The right indicator can be visible using Style Settings option (3 available options: **left** only, **left and right** and **no indicators**).
 - Select **reading indicators color**.
+- Select **reading indicators width** - 4 preset sizes: **thin**, **normal** (default), **medium** and **large**.
 - **H1-H6 indicators**.
 - **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (6 independent colors).
 - Highlight content by clicking on it (reading glow effect).
