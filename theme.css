@@ -685,8 +685,9 @@ body {
   --mu-reading-indicator-right: transparent;
   --mu-reading-glow-color: #00a3ff;
   --mu-reading-glow-radius: 0.2rem;
-  --mu-reading-indicator-left-width: -0.2rem;
-  --mu-reading-indicator-right-width: 0.2rem;
+  --mu-reading-indicator-width-value: 3;
+  --mu-reading-indicator-left-width: calc(var(--mu-reading-indicator-width-value) * -1px);
+  --mu-reading-indicator-right-width: calc(var(--mu-reading-indicator-width-value) * 1px);
   --mu-header-title-drag: no-drag;
 }
 
@@ -3099,7 +3100,7 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   margin-right: -0.2rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
-  transition: box-shadow .5s;
+  transition: box-shadow .2s;
   border-radius: var(--mu-reading-glow-radius);
 }
 
@@ -3414,22 +3415,6 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-reading-indicator-right: transparent !important;
 }
 
-/* R Ind width */
-.mu-reading-ind-width-0-1 {
-  --mu-reading-indicator-left-width: -1px;
-  --mu-reading-indicator-right-width: 1px;
-}
-
-.mu-reading-ind-width-0-3 {
-  --mu-reading-indicator-left-width: -0.3rem;
-  --mu-reading-indicator-right-width: 0.3rem;
-}
-
-.mu-reading-ind-width-1 {
-  --mu-reading-indicator-left-width: -1rem;
-  --mu-reading-indicator-right-width: 1rem;
-}
-
 /* Glow square corners */
 .mu-glow-radius-square {
   --mu-reading-glow-radius: 0;
@@ -3653,25 +3638,15 @@ settings:
             - 
                 label: No indicators
                 value: mu-reading-ind-hide
-    -
-        id: mu-reading-indicators-width
+    - 
+        id: mu-reading-indicator-width-value
         title: Reading mode - reading indicators width
-        type: class-select
-        allowEmpty: false
-        default:  none
-        options:
-            - 
-                label: Thin
-                value: mu-reading-ind-width-0-1
-            - 
-                label: Normal
-                value: none
-            - 
-                label: Medium
-                value: mu-reading-ind-width-0-3
-            - 
-                label: Large
-                value: mu-reading-ind-width-1
+        description: Select reading indicators width in px units
+        type: variable-number-slider
+        default: 3
+        min: 1
+        max: 36
+        step: 1
     -
         id: mu-reading-indicator-color
         title: Reading mode - reading indicators color
