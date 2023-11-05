@@ -683,8 +683,10 @@ body {
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
   --mu-reading-indicator-color: #007fff88;
   --mu-reading-indicator-right: transparent;
-  --mu-reading-glow: #00a3ff;
+  --mu-reading-glow-color: #00a3ff;
   --mu-reading-glow-radius: 0.2rem;
+  --mu-reading-indicator-left-width: -0.2rem;
+  --mu-reading-indicator-right-width: 0.2rem;
   --mu-header-title-drag: no-drag;
 }
 
@@ -3084,7 +3086,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
-  box-shadow: -0.2rem 0 0 0 var(--mu-reading-indicator-color), 0.2rem 0 0 0 var(--mu-reading-indicator-right);
+  box-shadow: var(--mu-reading-indicator-left-width) 0 0 0 var(--mu-reading-indicator-color), var(--mu-reading-indicator-right-width) 0 0 0 var(--mu-reading-indicator-right);
   margin-left: -0.2rem;
   margin-right: -0.2rem;
   padding-left: 0.2rem;
@@ -3092,7 +3094,7 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):active {
-  box-shadow: 0 0 0 .2rem var(--mu-reading-glow), 0 0 1.2rem .2rem var(--mu-reading-glow);
+  box-shadow: 0 0 0 .2rem var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
   margin-left: -0.2rem;
   margin-right: -0.2rem;
   padding-left: 0.2rem;
@@ -3371,34 +3373,34 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 
 /* Reading glow */
 .reading-glow-blue {
-  --mu-reading-glow: #00a3ff;
+  --mu-reading-glow-color: #00a3ff;
 }
 
 .reading-glow-green {
-  --mu-reading-glow: #00ff88;
+  --mu-reading-glow-color: #00ff88;
 }
 
 .reading-glow-orange {
-  --mu-reading-glow: #ff7f00;
+  --mu-reading-glow-color: #ff7f00;
 }
 
 .reading-glow-red {
-  --mu-reading-glow: #f10000;
+  --mu-reading-glow-color: #f10000;
 }
 
 .reading-glow-yellow {
-  --mu-reading-glow: #ffd700;
+  --mu-reading-glow-color: #ffd700;
 }
 
 .reading-glow-pink {
-  --mu-reading-glow: #ff88cf;
+  --mu-reading-glow-color: #ff88cf;
 }
 
 .reading-glow-purple {
-  --mu-reading-glow: #bf48ff;
+  --mu-reading-glow-color: #bf48ff;
 }
 
-/* Reading indicators */
+/* Reading Ind position */
 .mu-reading-ind-left {
   --mu-reading-indicator-right: transparent;
 }
@@ -3410,6 +3412,22 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .mu-reading-ind-hide {
   --mu-reading-indicator-color: transparent !important;
   --mu-reading-indicator-right: transparent !important;
+}
+
+/* R Ind width */
+.mu-reading-ind-width-0-1 {
+  --mu-reading-indicator-left-width: -1px;
+  --mu-reading-indicator-right-width: 1px;
+}
+
+.mu-reading-ind-width-0-3 {
+  --mu-reading-indicator-left-width: -0.3rem;
+  --mu-reading-indicator-right-width: 0.3rem;
+}
+
+.mu-reading-ind-width-1 {
+  --mu-reading-indicator-left-width: -1rem;
+  --mu-reading-indicator-right-width: 1rem;
 }
 
 /* Glow square corners */
@@ -3635,6 +3653,25 @@ settings:
             - 
                 label: No indicators
                 value: mu-reading-ind-hide
+    -
+        id: mu-reading-indicators-width
+        title: Reading mode - reading indicators width
+        type: class-select
+        allowEmpty: false
+        default:  none
+        options:
+            - 
+                label: Thin
+                value: mu-reading-ind-width-0-1
+            - 
+                label: Normal
+                value: none
+            - 
+                label: Medium
+                value: mu-reading-ind-width-0-3
+            - 
+                label: Large
+                value: mu-reading-ind-width-1
     -
         id: mu-reading-indicator-color
         title: Reading mode - reading indicators color
