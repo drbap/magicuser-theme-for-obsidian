@@ -1,5 +1,10 @@
 # Changelog
 
+## [7.5.1 - 2023-11-05
+### Improvements
+**Reading mode**
+- **Reading indicators width** - now you can select the width using a slider.
+
 ## [7.5.0 - 2023-11-05
 ### Improvements
 **Reading mode**
