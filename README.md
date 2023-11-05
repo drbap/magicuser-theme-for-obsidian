@@ -61,7 +61,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 *Reading Mode*
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
-- **Reading indicators width** - 4 option: **Thin**, **Normal** (default), **Medium** and **Large**
+- **Reading indicators width** - 4 options: **Thin**, **Normal** (default), **Medium** and **Large**
 - **Reading indicators color**
 - **Reading glow color** (7 options)
 - **Reading glow corners** (rounded or square corners)
