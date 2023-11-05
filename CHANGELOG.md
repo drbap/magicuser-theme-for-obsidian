@@ -1,5 +1,10 @@
 # Changelog
 
+## [7.5.0 - 2023-11-05
+### Improvements
+**Reading mode**
+- **Reading indicators width** - 4 preset sizes: **Thin**, **Normal** (default), **Medium** and **Large** (*Style Settings*).
+
 ## [7.4.2 - 2023-11-04
 ### Improvements
 - *Style Settings* adjustments of recently added features to reading mode, improved descriptions to make it easier to use.
