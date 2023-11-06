@@ -3420,6 +3420,24 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-reading-glow-radius: 0;
 }
 
+.style-settings-heading[data-level="0"]+.style-settings-container {
+  padding-left: 18px;
+}
+
+.style-settings-heading[data-level="2"]+.style-settings-container {
+  padding-left: 18px;
+  border-left: 1px solid #007fff88;
+}
+
+.style-settings-heading[data-level="3"]+.style-settings-container {
+  padding-left: 18px;
+  border-left: 1px solid #d372ff88;
+}
+
+.style-settings-container {
+  padding-left: 18px;
+}
+
 /* Style Settings */
 
 /* @settings
