@@ -278,7 +278,7 @@ body {
 
   /* Indentation guide */
   --indentation-guide-width: 1px;
-  --indentation-guide-color: #00a3ff48;
+  --indentation-guide-color: var(--mu-indent-color-level-1);
   --indentation-guide-color-active: #bf00ff;
 
   /* Inline title */
@@ -688,6 +688,12 @@ body {
   --mu-reading-indicator-width-value: 3;
   --mu-reading-indicator-left-width: calc(var(--mu-reading-indicator-width-value) * -1px);
   --mu-reading-indicator-right-width: calc(var(--mu-reading-indicator-width-value) * 1px);
+  --mu-indent-color-level-1: #007fff7f;
+  --mu-indent-color-level-2: #d372ff7f;
+  --mu-indent-color-level-3: #ff7f007f;
+  --mu-indent-color-level-4: #00a3487f;
+  --mu-indent-color-level-5: #e500007f;
+  --mu-indent-color-level-6: #8282007f;
   --mu-header-title-drag: no-drag;
 }
 
@@ -3420,18 +3426,44 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-reading-glow-radius: 0;
 }
 
+/* Folders indent */
+div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-2);
+}
+
+div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-3);
+}
+
+div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-4);
+}
+
+div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-5);
+}
+
+div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children>div.tree-item.nav-folder>div.tree-item-children.nav-folder-children {
+  border-left: var(--nav-indentation-guide-width) solid var(--mu-indent-color-level-6);
+}
+
 .style-settings-heading[data-level="0"]+.style-settings-container {
   padding-left: 34px;
 }
 
 .style-settings-heading[data-level="2"]+.style-settings-container {
   padding-left: 18px;
-  border-left: 1px solid #007fff7f;
+  border-left: 1px solid var(--mu-indent-color-level-1);
 }
 
 .style-settings-heading[data-level="3"]+.style-settings-container {
   padding-left: 18px;
-  border-left: 1px solid #d372ff7f;
+  border-left: 1px solid var(--mu-indent-color-level-2);
+}
+
+.style-settings-heading[data-level="4"]+.style-settings-container {
+  padding-left: 18px;
+  border-left: 1px solid var(--mu-indent-color-level-3);
 }
 
 .style-settings-container {
@@ -3490,6 +3522,12 @@ settings:
         level: 3
         collapsed: true
     -
+        id: magicuser-theme-main-colors
+        title: Main Theme Colors
+        type: heading
+        level: 4
+        collapsed: true
+    -
         id: mu-titlebar-background
         title: Frame color
         type: variable-themed-color
@@ -3517,14 +3555,6 @@ settings:
         default-light: '#d1dfff'
         default-dark: '#001122'
     -
-        id: mu-icon-focused
-        title: Icon focused color
-        type: variable-color
-        description: Current focused icon color
-        format: hex
-        opacity: false
-        default: '#007fff'
-    -
         id: mu-caret-color
         title: Caret color
         type: variable-themed-color
@@ -3533,6 +3563,123 @@ settings:
         opacity: false
         default-light: '#cf00ff'
         default-dark: '#00cfff'
+    -
+        id: mu-vault-title
+        title: Vault title color
+        type: variable-themed-color
+        description: Sidebar vault title color
+        format: hex
+        opacity: false
+        default-light: '#b10aff'
+        default-dark: '#a273d8'
+    -
+        id: mu-text-title
+        title: Inline title color
+        type: variable-themed-color
+        description: Filename inline title color
+        format: hex
+        opacity: false
+        default-light: '#a200ff'
+        default-dark: '#af47eb'
+    -
+        id: magicuser-theme-folders-icons
+        title: Icons and Folders
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-icon-focused
+        title: Icon focused color
+        type: variable-color
+        description: Current focused icon color
+        format: hex
+        opacity: false
+        default: '#007fff'
+    -
+        id: mu-sidebar-folder
+        title: Folder name color
+        type: variable-themed-color
+        description: Folder name color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#72a3ff'
+    -
+        id: mu-hide-folders
+        title: Hide folder icons
+        description:  Toggle folder icons
+        type: class-toggle
+    -
+        id: mu-hide-file-icons
+        title: Hide file icons
+        description:  Toggle file icons
+        type: class-toggle
+    -
+        id: magicuser-theme-indent-guides-color
+        title: Indent Guides
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-indent-color-level-1
+        title: Indent guide - color 1
+        type: variable-themed-color
+        description: Indent guide color 1
+        format: hex
+        opacity: true
+        default-light: '#007fff7f'
+        default-dark: '#007fff7f'
+    -
+        id: mu-indent-color-level-2
+        title: Indent guide - color 2
+        type: variable-themed-color
+        description: Indent guide color 2
+        format: hex
+        opacity: true
+        default-light: '#d372ff7f'
+        default-dark: '#d372ff7f'
+    -
+        id: mu-indent-color-level-3
+        title: Indent guide - color 3
+        type: variable-themed-color
+        description: Indent guide color 3
+        format: hex
+        opacity: true
+        default-light: '#ff7f007f'
+        default-dark: '#ff7f007f'
+    -
+        id: mu-indent-color-level-4
+        title: Indent guide - color 4
+        type: variable-themed-color
+        description: Indent guide color 4
+        format: hex
+        opacity: true
+        default-light: '#00a3487f'
+        default-dark: '#00a3487f'
+    -
+        id: mu-indent-color-level-5
+        title: Indent guide - color 5
+        type: variable-themed-color
+        description: Indent guide color 5
+        format: hex
+        opacity: true
+        default-light: '#e500007f'
+        default-dark: '#e500007f'
+    -
+        id: mu-indent-color-level-6
+        title: Indent guide - color 6
+        type: variable-themed-color
+        description: Indent guide color 6
+        format: hex
+        opacity: true
+        default-light: '#9797007f'
+        default-dark: '#9797007f'
+    -
+        id: magicuser-theme-reading-mode-options
+        title: Line Highlight
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-line-highlight-border
         title: Line highlight border color
@@ -3604,42 +3751,11 @@ settings:
                 label: Gray background
                 value: line-highlight-background-gray
     -
-        id: mu-hide-folders
-        title: Hide folder icons
-        description:  Toggle folder icons
-        type: class-toggle
-    -
-        id: mu-hide-file-icons
-        title: Hide file icons
-        description:  Toggle file icons
-        type: class-toggle
-    -
-        id: mu-sidebar-folder
-        title: Folder name color
-        type: variable-themed-color
-        description: Folder name color
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#72a3ff'
-    -
-        id: mu-vault-title
-        title: Vault title color
-        type: variable-themed-color
-        description: Sidebar vault title color
-        format: hex
-        opacity: false
-        default-light: '#b10aff'
-        default-dark: '#a273d8'
-    -
-        id: mu-text-title
-        title: Inline title color
-        type: variable-themed-color
-        description: Filename inline title color
-        format: hex
-        opacity: false
-        default-light: '#a200ff'
-        default-dark: '#af47eb'
+        id: magicuser-theme-reading-mode-options
+        title: Reading Mode
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-reading-indicators
         title: Reading mode - reading indicators
@@ -4136,5 +4252,11 @@ settings:
         description: Made with ♥ by Bernardo Pires
         level: 2
         collapsed: true
+    - 
+        id: my-info-text
+        title: MagicUser Theme for Obsidian
+        description: Made with ♥ by Bernardo Pires (@drbap). I hope you enjoy. Thanks for using it.
+        type: info-text
+        markdown: false
 
 */
