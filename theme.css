@@ -118,7 +118,7 @@ body {
   --code-keyword: var(--mu-purple-1);
   --code-operator: var(--mu-purple-1);
   --code-property: #0088f1;
-  --code-punctuation: #bf00ff;
+  --code-punctuation: #d372ff;
   --code-string: #00d8ff;
   --code-tag: var(--mu-purple-1);
   --code-value: #ffa300;
@@ -910,8 +910,8 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-vault-title: var(--mu-purple-2);
   --mu-sidebar-folder: #72a3ff;
   --mu-table-background: #001133;
-  --mu-link: #c348ff;
-  --mu-link-hover: #d372ff;
+  --mu-link: #d372ff;
+  --mu-link-hover: #db8fff;
   --mu-external-link: #00a9dd;
   --mu-external-link-hover: #00c3ff;
   --tab-divider-color: #003364;
@@ -3954,7 +3954,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#a200ff'
-        default-dark: '#c348ff'
+        default-dark: '#d372ff'
     -
         id: mu-link-hover
         title: Internal link hover color
@@ -3963,7 +3963,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#c300ff'
-        default-dark: '#d372ff'
+        default-dark: '#db8fff'
     -
         id: link-external-decoration
         title: External link decoration
@@ -4110,7 +4110,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#c300f1'
-        default-dark: '#bf00ff'
+        default-dark: '#d372ff'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
