@@ -40,8 +40,11 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 #### **UI Settings** (UI Basic and Advanced Settings)
 
+![UI Basic Settings](images/magicuser_ui_basic_settings.png)
+
 **UI Basic Settings**
 
+*Main Theme Colors*
 - **Frame** color
 - **Primary background** color
 - **Secondary background** color
@@ -49,11 +52,14 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Vault title** color
 - **Inline title** color
 
-*Folders and icons*
+*Icons and Folders*
 - **Icon focused** color
 - **Folder name** color (light and dark modes)
 - Show/hide **folder icons**
 - Show/hide **file icons**
+
+*Indent Guides*
+- Select 6 indent guides colors (indenpendent colors for light and dark modes)
 
 *Line highlight*
 - Active **line highlight border** color (9 options)
