@@ -183,6 +183,18 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
+## Folders and Notes Icons
+
+![Folder and Notes Icons](images/folder_note_icons.png)
+
+You can show/hide folder icons and file icons using the *Style Settings* plugin.
+
+## Colored Indent Guides
+
+![Indent Guides](images/magicuser_indent_guides.png)
+
+You can customize the **indent guides colors** using the *Style Settings* plugin (6 independent colors for light and dark modes).
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
@@ -330,11 +342,6 @@ Switch between themes to find the perfect one for your mood and productivity nee
 > Callout text here
 
 ```
-
-## Folders and Notes Icons
-
-![Folder and Notes Icons](images/folder_note_icons.png)
-
 ## Caret Colors for Improved Visibility
 
 ![Dark mode caret color](images/magicuser_caret_colors.png)
