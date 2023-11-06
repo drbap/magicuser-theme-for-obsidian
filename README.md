@@ -59,7 +59,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Show/hide **file icons**
 
 *Indent Guides*
-- Select 6 indent guides colors (indenpendent colors for light and dark modes)
+- Select 6 **indent guides colors** (indenpendent colors for light and dark modes)
 
 *Line highlight*
 - Active **line highlight border** color (9 options)
