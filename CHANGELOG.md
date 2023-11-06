@@ -1,37 +1,42 @@
 # Changelog
 
-## [7.5.3 - 2023-11-05
+## [7.5.4] - 2023-11-05
+### Improvements
+**Style Settings menu options**
+- Adjustments to indentation and indent guides colors
+
+## [7.5.3] - 2023-11-05
 ### Improvements
 **Style Settings options**
 - Indentation.
 - Indent guides (blue and purple).
 
-## [7.5.2 - 2023-11-05
+## [7.5.2] - 2023-11-05
 ### Improvements
 **Dark mode:**
 - link and link hover color.
 - code punctuation.
 - Style Settings adjustments for link and code colors
 
-## [7.5.1 - 2023-11-05
+## [7.5.1] - 2023-11-05
 ### Improvements
 **Reading mode**
 - **Reading indicators width** - now you can select the width using a slider.
 
-## [7.5.0 - 2023-11-05
+## [7.5.0] - 2023-11-05
 ### Improvements
 **Reading mode**
 - **Reading indicators width** - 4 preset sizes: **Thin**, **Normal** (default), **Medium** and **Large** (*Style Settings*).
 
-## [7.4.2 - 2023-11-04
+## [7.4.2] - 2023-11-04
 ### Improvements
 - *Style Settings* adjustments of recently added features to reading mode, improved descriptions to make it easier to use.
 
-## [7.4.1 - 2023-11-04
+## [7.4.1] - 2023-11-04
 ### Improvements
 - *Style Settings*: grouping reading indicators options and glow effects (color and corners).
 
-## [7.4.0 - 2023-11-04
+## [7.4.0] - 2023-11-04
 ### Improvements
 
 **Reading mode**
@@ -42,7 +47,7 @@
 
 - **Reading glow highlight corners** - rounded corners (default) or square corners (*Style Settings*).
 
-## [7.3.0 - 2023-11-04
+## [7.3.0] - 2023-11-04
 ### Improvements
 **Reading mode**:
 - H1-H6 labels display when you hover the corresponding heading.
@@ -55,12 +60,12 @@
 
 - *Style Settings*: You can add a shortcut to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the command palette.
 
-## [7.2.0 - 2023-11-03
+## [7.2.0] - 2023-11-03
 ### Improvements
 - Frontmatter metadata syntax highlighting.
 - You can customize the frontmatter highlighting with the code highlighting options (Style Settings)
  
-## [7.1.2 - 2023-11-02
+## [7.1.2] - 2023-11-02
 ### Improvements
 **Style Settings** plugin:
 - Hide file icons and hide folder icons labels.
