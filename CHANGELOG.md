@@ -3,7 +3,7 @@
 ## [8.0.0] - 2023-11-06
 ### Improvements
 - Added the **indent guides colors** (6 levels).
-- *Style Settings* color customization of the indent guides (6 indenpendent colors for light and dark modes).
+- *Style Settings* color customization of the indent guides (6 independent colors for light and dark modes).
 - *Style Settings* with **improved UI Basic Settings** menu - easier to use and more organized.
 - Small adjustments.
 
