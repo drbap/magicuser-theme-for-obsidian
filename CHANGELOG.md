@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.0.0] - 2023-11-06
+### Improvements
+- Added the **indent guide line colors** (6 levels)
+- Style Settings customization of these 6 level indent guide colors (indenpendent colors for light and dark modes).
+- Style Settings with **improved UI Basic Settings** menu - easier to use and more organized.
+- Small adjustments.
+
 ## [7.5.4] - 2023-11-05
 ### Improvements
 **Style Settings menu options**
