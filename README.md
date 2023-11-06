@@ -59,7 +59,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Show/hide **file icons**
 
 *Indent Guides*
-- Select 6 **indent guides colors** (indenpendent colors for light and dark modes)
+- Select 6 **indent guides colors** (independent colors for light and dark modes)
 
 *Line Highlight*
 - Active **line highlight border** color (9 options)
@@ -71,7 +71,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Reading indicators color**
 - **Reading glow color** (7 options)
 - **Reading glow corners** (rounded or square corners)
-- **H1-H6 label colors** (6 independent colors for light and dark modes)
+- **H1-H6 label colors** (independent colors for light and dark modes)
 
 **UI Advanced Settings** (Desktop Version)
 
@@ -158,7 +158,7 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Select **reading indicators color**.
 - Select **reading indicators width** - use the slider to find the most comfortable reading width for you.
 - **H1-H6 indicators**.
-- **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (6 independent colors).
+- **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (independent colors).
 - Highlight content by clicking on it (reading glow effect).
 - **Reading glow highlight** (rounded or square corners).
 - Select **reading glow highlight color** - **7 colors**: green, blue, orange, red, yellow, pink, purple.
@@ -199,7 +199,7 @@ You can show/hide **folder icons** and **file icons** using the *Style Settings*
 
 ![Indent Guides](images/magicuser_indent_guides.png)
 
-You can customize the **indent guides colors** using the *Style Settings* plugin (6 independent colors for light and dark modes).
+You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes).
 
 ## Custom Checkbox Icons
 
