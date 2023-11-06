@@ -3421,17 +3421,17 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 }
 
 .style-settings-heading[data-level="0"]+.style-settings-container {
-  padding-left: 18px;
+  padding-left: 34px;
 }
 
 .style-settings-heading[data-level="2"]+.style-settings-container {
   padding-left: 18px;
-  border-left: 1px solid #007fff88;
+  border-left: 1px solid #007fff7f;
 }
 
 .style-settings-heading[data-level="3"]+.style-settings-container {
   padding-left: 18px;
-  border-left: 1px solid #d372ff88;
+  border-left: 1px solid #d372ff7f;
 }
 
 .style-settings-container {
