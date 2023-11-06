@@ -1,5 +1,11 @@
 # Changelog
 
+## [7.5.3 - 2023-11-05
+### Improvements
+**Style Settings options**
+- Indentation.
+- Indent guides (blue and purple).
+
 ## [7.5.2 - 2023-11-05
 ### Improvements
 **Dark mode:**
