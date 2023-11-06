@@ -193,7 +193,7 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![Folder and Notes Icons](images/folder_note_icons.png)
 
-You can show/hide folder icons and file icons using the *Style Settings* plugin.
+You can show/hide **folder icons** and **file icons** using the *Style Settings* plugin.
 
 ## Colored Indent Guides
 
