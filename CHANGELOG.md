@@ -3,7 +3,7 @@
 ## [7.5.4] - 2023-11-05
 ### Improvements
 **Style Settings menu options**
-- Adjustments to indentation and indent guides colors
+- Adjustments to indentation and indent guides colors.
 
 ## [7.5.3] - 2023-11-05
 ### Improvements
