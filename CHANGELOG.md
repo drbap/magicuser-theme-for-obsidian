@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.5.2 - 2023-11-05
+### Improvements
+**Dark mode:**
+- link and link hover color.
+- code punctuation.
+- Style Settings adjustments for link and code colors
+
 ## [7.5.1 - 2023-11-05
 ### Improvements
 **Reading mode**
