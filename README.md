@@ -24,7 +24,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > Settings -> Appearance -> Advanced -> **Translucent window**
 
-### Multiple Color Themes and Custom Colors with Style Settings Plugin
+### Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
