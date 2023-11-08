@@ -2,7 +2,7 @@
 
 ## [8.1.0] - 2023-11-07
 ### Improvements
-- Style Settings Menu with Colored Icons.
+- Style Settings theme options with colored icons.
 - Small fixes and adjustments.
 
 ## [8.0.0] - 2023-11-06
