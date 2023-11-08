@@ -1,5 +1,10 @@
 # Changelog
 
+## [8.1.0] - 2023-11-07
+### Improvements
+- Style Settings Menu with Colored Icons.
+- Small fixes and adjustments.
+
 ## [8.0.0] - 2023-11-06
 ### Improvements
 - Added the **indent guides colors** (6 levels).
