@@ -1,5 +1,10 @@
 # Changelog
 
+## [8.3.0] - 2023-11-09
+### Improvements
+- Style Settings - select **folder icons color**
+- Style Settings - select **file icons color**
+
 ## [8.2.0] - 2023-11-09
 ### Improvements
 - Source mode with monospaced font.
