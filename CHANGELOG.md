@@ -2,7 +2,7 @@
 
 ## [8.2.0] - 2023-11-09
 ### Improvements
-- Source mode with monospace font.
+- Source mode with monospaced font.
 - Style Settings - customize code font.
 
 ## [8.1.1] - 2023-11-09
