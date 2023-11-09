@@ -3525,8 +3525,15 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui-elements"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg version='1.1' width='24' height='24' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --%3E%3Cpath d='m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z' fill='%23bf72ff' fill-rule='evenodd'/%3E%3C/svg%3E");
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui-basic"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf72ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8'/%3E%3Cpath d='M10 19v-3.96 3.15'/%3E%3Cpath d='M7 19h5'/%3E%3Crect width='6' height='10' x='16' y='12' rx='2'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui-advanced"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf72ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 7h-9'/%3E%3Cpath d='M14 17H5'/%3E%3Ccircle cx='17' cy='17' r='3'/%3E%3Ccircle cx='7' cy='7' r='3'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -3614,7 +3621,7 @@ settings:
         level: 2
         collapsed: true
     -
-        id: magicuser-theme-ui-elements
+        id: magicuser-theme-ui-basic
         title: UI Basic Settings
         type: heading
         level: 3
@@ -3985,7 +3992,7 @@ settings:
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
-        id: magicuser-theme-ui-elements
+        id: magicuser-theme-ui-advanced
         title: UI Advanced Settings
         type: heading
         level: 3
