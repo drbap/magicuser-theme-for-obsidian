@@ -644,7 +644,7 @@ body {
   /* Font Settings */
   --mu-font-headings: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
-  --mu-font-mono: "JetBrains Mono", "Consolas", "Roboto Mono", monospace;
+  --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
 
   /* UI Settings */
   --ui-status-bar: 1;
@@ -3086,6 +3086,12 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --ui-side-dock-settings: 1;
 }
 
+/* Source mode */
+.markdown-source-view:not(.is-live-preview) * {
+  --font-text: var(--mu-font-mono);
+  font-family: var(--mu-font-mono);
+}
+
 /* Reading mode */
 
 .markdown-reading-view .markdown-preview-view.heading-collapse-indicator {
@@ -4262,6 +4268,12 @@ settings:
         description: Code background and syntax highlighting
         level: 2
         collapsed: true
+    -
+        id: mu-font-mono
+        title: Code font
+        type: variable-text
+        description: Font used for source mode
+        default: JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace
     -
         id: code-background
         title: Code background color
