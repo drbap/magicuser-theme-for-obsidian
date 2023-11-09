@@ -111,6 +111,7 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 
 #### **Code**
 
+- Code font
 - Code background color
 - Keyword
 - String
