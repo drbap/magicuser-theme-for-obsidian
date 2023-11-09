@@ -192,11 +192,11 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
-## Folders and File Icons
+## Folder and File Icons
 
 ![Folder and File Icons](images/folder_note_icons.png)
 
-## Folders and File Icons Colors
+## Folder and File Icons Colors
 
 ![Folder and File Icons Colors](images/magicuser_folders_icons_colors.png)
 
