@@ -1,5 +1,10 @@
 # Changelog
 
+## [8.2.0] - 2023-11-09
+### Improvements
+- Source mode with monospace font.
+- Style Settings - customize code font.
+
 ## [8.1.1] - 2023-11-09
 ### Improvements
 - Style Settings theme options (ui basic and ui advanced settings icons).
