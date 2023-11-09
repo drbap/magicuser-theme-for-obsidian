@@ -53,8 +53,10 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Inline title** color
 
 *Icons and Folders*
-- **Icon focused** color
 - **Folder name** color (light and dark modes)
+- **Folder icon** color
+- **File icon** color
+- **Icon focused** color
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
@@ -190,11 +192,13 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
-## Folders and Notes Icons
+## Folders and File Icons
 
-![Folder and Notes Icons](images/folder_note_icons.png)
+![Folder and File Icons](images/folder_note_icons.png)
 
-You can show/hide **folder icons** and **file icons** using the *Style Settings* plugin.
+## Folders and File Icons Colors
+
+![Folder and File Icons Colors](images/magicuser_folders_icons_colors.png)
 
 ## Colored Indent Guides
 
