@@ -1,5 +1,9 @@
 # Changelog
 
+## [8.1.1] - 2023-11-09
+### Improvements
+- Style Settings theme options (ui basic and ui advanced settings icons).
+
 ## [8.1.0] - 2023-11-07
 ### Improvements
 - Style Settings theme options with colored icons.
