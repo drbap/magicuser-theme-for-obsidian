@@ -694,6 +694,10 @@ body {
   --mu-indent-color-level-4: #00a3487f;
   --mu-indent-color-level-5: #e500007f;
   --mu-indent-color-level-6: #8282007f;
+  --mu-folder-color-hue-value: 0;
+  --mu-folder-color-hue: calc(var(--mu-folder-color-hue-value) * 1deg);
+  --mu-file-color-hue-value: 0;
+  --mu-file-color-hue: calc(var(--mu-file-color-hue-value) * 1deg);
   --mu-header-title-drag: no-drag;
 }
 
@@ -842,6 +846,7 @@ body.is-translucent.theme-dark input[type="text"] {
   padding-right: 8px;
   zoom: var(--mu-folder-icon-zoom);
   vertical-align: middle;
+  filter: hue-rotate(var(--mu-folder-color-hue));
 }
 
 .nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
@@ -849,6 +854,7 @@ body.is-translucent.theme-dark input[type="text"] {
   padding-right: 8px;
   zoom: var(--mu-folder-icon-zoom);
   vertical-align: middle;
+  filter: hue-rotate(var(--mu-folder-color-hue));
 }
 
 .nav-file-title-content::before {
@@ -856,6 +862,7 @@ body.is-translucent.theme-dark input[type="text"] {
   padding-right: 8px;
   zoom: var(--mu-notes-icon-zoom);
   vertical-align: middle;
+  filter: hue-rotate(var(--mu-file-color-hue));
 }
 
 .tree-item-self[data-path*=".canvas"] .nav-file-title-content::before {
@@ -3699,14 +3706,6 @@ settings:
         level: 4
         collapsed: true
     -
-        id: mu-icon-focused
-        title: Icon focused color
-        type: variable-color
-        description: Current focused icon color
-        format: hex
-        opacity: false
-        default: '#007fff'
-    -
         id: mu-sidebar-folder
         title: Folder name color
         type: variable-themed-color
@@ -3715,6 +3714,32 @@ settings:
         opacity: false
         default-light: '#0072d3'
         default-dark: '#72a3ff'
+    - 
+        id: mu-folder-color-hue-value
+        title: Folder icons color
+        description: Select folder icons color
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 360
+        step: 1
+    - 
+        id: mu-file-color-hue-value
+        title: File icons color
+        description: Select file icons color
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 360
+        step: 1
+    -
+        id: mu-icon-focused
+        title: Icon focused color
+        type: variable-color
+        description: Current focused icon color
+        format: hex
+        opacity: false
+        default: '#007fff'
     -
         id: mu-hide-folders
         title: Hide folder icons
