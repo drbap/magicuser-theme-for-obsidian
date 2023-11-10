@@ -1,5 +1,9 @@
 # Changelog
 
+## [8.3.1] - 2023-11-10
+### Improvements
+- Style Settings - reading mode menu adjustments
+  
 ## [8.3.0] - 2023-11-09
 ### Improvements
 - Style Settings - select **folder icons color**
