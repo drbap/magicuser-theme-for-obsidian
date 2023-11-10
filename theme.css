@@ -3894,9 +3894,10 @@ settings:
         collapsed: true
     -
         id: mu-reading-indicators
-        title: Reading mode - reading indicators
+        title: Reading indicators
         type: class-select
         allowEmpty: false
+        description: Select reading indicators
         default:  mu-reading-ind-left
         options:
             - 
@@ -3910,7 +3911,7 @@ settings:
                 value: mu-reading-ind-hide
     - 
         id: mu-reading-indicator-width-value
-        title: Reading mode - reading indicators width
+        title: Reading indicators width
         description: Select reading indicators width in px units
         type: variable-number-slider
         default: 3
@@ -3919,15 +3920,15 @@ settings:
         step: 1
     -
         id: mu-reading-indicator-color
-        title: Reading mode - reading indicators color
+        title: Reading indicators color
         type: variable-color
-        description: Color of the left and right reading indicators
+        description: Color of the reading indicators
         format: hex
         opacity: true
         default: '#007fff88'
     -
         id: mu-reading-glow
-        title: Reading mode - reading glow highlight color
+        title: Reading glow highlight color
         type: class-select
         description: Reading glow color
         allowEmpty: false
@@ -3956,7 +3957,7 @@ settings:
                 value: reading-glow-purple
     -
         id: mu-reading-glow-radius-corners
-        title: Reading mode - reading glow highlight corners
+        title: Reading glow highlight corners
         description: Reading glow corners (rounded or square)
         type: class-select
         allowEmpty: false
@@ -3970,54 +3971,54 @@ settings:
                 value: mu-glow-radius-square
     -
         id: mu-label-h1
-        title: Reading mode - H1 label color
+        title: H1 label color
         type: variable-themed-color
-        description: H1 label color
+        description: Reading mode - H1 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
         id: mu-label-h2
-        title: Reading mode - H2 label color
+        title: H2 label color
         type: variable-themed-color
-        description: H2 label color
+        description: Reading mode - H2 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
         id: mu-label-h3
-        title: Reading mode - H3 label color
+        title: H3 label color
         type: variable-themed-color
-        description: H3 label color
+        description: Reading mode - H3 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
         id: mu-label-h4
-        title: Reading mode - H4 label color
+        title: H4 label color
         type: variable-themed-color
-        description: H4 label color
+        description: Reading mode - H4 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
         id: mu-label-h5
-        title: Reading mode - H5 label color
+        title: H5 label color
         type: variable-themed-color
-        description: H5 label color
+        description: Reading mode - H5 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
         id: mu-label-h6
-        title: Reading mode - H6 label color
+        title: H6 label color
         type: variable-themed-color
-        description: H6 label color
+        description: Reading mode - H6 label color
         format: hex
         opacity: false
         default-light: '#bf72d8'
