@@ -7,6 +7,7 @@
 - *Style Settings* - **removed UI basic settings** (easier to use and less clicks to navigate)
 - *Style Settings* - collapse indicator color
 - *Style Settings* - accent color to display the default values
+- Other theme adjustments
 
 ## [8.3.1] - 2023-11-10
 ### Improvements
