@@ -37,14 +37,14 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - MagicUser **Teal**
 - MagicUser **Gray**
 - MagicUser **Camouflage**
+- MagicUser **Moon**
 
-#### **UI Settings** (UI Basic and Advanced Settings)
+#### **UI Settings**
 
-![UI Basic Settings](images/magicuser_ui_basic_settings.png)
+![UI Settings](images/magicuser_ui_settings.png)
 
-**UI Basic Settings**
+**Main Theme Colors**
 
-*Main Theme Colors*
 - **Frame** color
 - **Primary background** color
 - **Secondary background** color
@@ -52,7 +52,8 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - **Vault title** color
 - **Inline title** color
 
-*Icons and Folders*
+**Icons and Folders**
+
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
 - **File icon** color
@@ -60,14 +61,17 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-*Indent Guides*
+**Indent Guides**
+
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-*Line Highlight*
+**Line Highlight**
+
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-*Reading Mode*
+**Reading Mode**
+
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
 - **Reading indicators color**
