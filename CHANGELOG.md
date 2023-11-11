@@ -1,5 +1,13 @@
 # Changelog
 
+## [8.4.0] - 2023-11-11
+### Improvements
+- *Style Settings* - new preset theme: **MagicUser Moon**
+- *Style Settings* - icons for light and dark modes (**sun** for the light mode and **moon** for the dark mode)
+- *Style Settings* - **removed UI basic settings** (easier to use and less clicks to navigate)
+- *Style Settings* - collapse indicator color
+- *Style Settings* - accent color to display the default values
+
 ## [8.3.1] - 2023-11-10
 ### Improvements
 - Style Settings - reading mode menu adjustments
