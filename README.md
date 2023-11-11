@@ -200,6 +200,10 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![MagicUser Gray](images/magicuser_preset_06.png)
 
+## Customize Colors for Light and Dark Modes
+
+![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
+
 ## Folder and File Icons
 
 ![Folder and File Icons](images/folder_note_icons.png)
