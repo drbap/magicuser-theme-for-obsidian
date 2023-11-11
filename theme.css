@@ -941,9 +941,10 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-label-h4: #a35fbf;
   --mu-label-h5: #a35fbf;
   --mu-label-h6: #a35fbf;
+  --mu-text-selection: #0051f1a3;
+  --mu-suggestion-color: #00d3ff;
   --mu-caret-color: #00cfff;
 }
-
 
 /* Dark theme settings */
 /* ======================================================== */
@@ -1006,11 +1007,11 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .theme-dark .suggestion-highlight {
-  color: #00d3ff;
+  color: var(--mu-suggestion-color);
 }
 
 .theme-dark ::selection {
-  background-color: #0051f1a3 !important;
+  background-color: var(--mu-text-selection) !important;
 }
 
 .theme-dark .nav-folder-title {
@@ -1133,6 +1134,8 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-notes-icon-zoom: 72%;
   --text-normal: #000;
   --text-muted: #353535;
+  --mu-text-selection: #0051f136;
+  --mu-suggestion-color: #0072d3;
   --interactive-normal: var(--mu-background-color-2);
   --interactive-hover: #007fff48;
 }
@@ -1190,11 +1193,11 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .theme-light .suggestion-highlight {
-  color: #0072d3;
+  color: var(--mu-suggestion-color);
 }
 
 .theme-light ::selection {
-  background-color: #0051f136 !important;
+  background-color: var(--mu-text-selection) !important;
 }
 
 .theme-light .nav-folder-title {
@@ -3357,6 +3360,54 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-h6: #97bff1;
 }
 
+/* Moon */
+.theme-light.magicuser-moon-theme {
+  --mu-background-color-1: #d2e1f1;
+  --mu-background-color-2: #c3d6ea;
+  --mu-caret-color: #d300ff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a348;
+  --mu-sidebar-folder: #0048a3;
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #001a33;
+  --mu-vault-title: #a300cf;
+  --code-background: #e1e1e1;
+  --code-punctuation: #a300a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-text-selection: #bf48ff33;
+  --mu-suggestion-color: #0072d3;
+}
+
+.theme-dark.magicuser-moon-theme {
+  --mu-background-color-1: #001122;
+  --mu-background-color-2: #000b15;
+  --mu-caret-color: #d300ff;
+  --mu-divider-color: #dfc1c100;
+  --mu-input-bg-color: #001836;
+  --mu-setting-color: #a3a3a318;
+  --mu-sidebar-folder: #729fd8;
+  --mu-text-title: #a300cf;
+  --mu-titlebar-background: #001a33;
+  --mu-vault-title: #a300cf;
+  --code-background: #000;
+  --code-punctuation: #a300a3;
+  --mu-h1: #729fd8;
+  --mu-h2: #729fd8;
+  --mu-h3: #729fd8;
+  --mu-h4: #729fd8;
+  --mu-h5: #729fd8;
+  --mu-h6: #729fd8;
+  --mu-text-selection: #bf48ff55;
+  --text-normal: #c1c1c1;
+  --mu-suggestion-color: #00a3ff;
+}
+
 /* Frontmatter md */
 .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
   color: var(--code-comment);
@@ -3538,55 +3589,74 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui-basic"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf72ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8'/%3E%3Cpath d='M10 19v-3.96 3.15'/%3E%3Cpath d='M7 19h5'/%3E%3Crect width='6' height='10' x='16' y='12' rx='2'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui-advanced"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf72ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 7h-9'/%3E%3Cpath d='M14 17H5'/%3E%3Ccircle cx='17' cy='17' r='3'/%3E%3Ccircle cx='7' cy='7' r='3'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 7h-9'/%3E%3Cpath d='M14 17H5'/%3E%3Ccircle cx='17' cy='17' r='3'/%3E%3Ccircle cx='7' cy='7' r='3'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-main-colors"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'/%3E%3Ccircle cx='17.5' cy='10.5' r='.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='.5'/%3E%3Ccircle cx='6.5' cy='12.5' r='.5'/%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'/%3E%3Ccircle cx='17.5' cy='10.5' r='.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='.5'/%3E%3Ccircle cx='6.5' cy='12.5' r='.5'/%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-folders-icons"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-indent-guides-color"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12h-8'/%3E%3Cpath d='M21 6H8'/%3E%3Cpath d='M21 18h-8'/%3E%3Cpath d='M3 6v4c0 1.1.9 2 2 2h3'/%3E%3Cpath d='M3 10v6c0 1.1.9 2 2 2h3'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12h-8'/%3E%3Cpath d='M21 6H8'/%3E%3Cpath d='M21 18h-8'/%3E%3Cpath d='M3 6v4c0 1.1.9 2 2 2h3'/%3E%3Cpath d='M3 10v6c0 1.1.9 2 2 2h3'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-line-highlight"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='12' x='2' y='6' rx='2'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='12' x='2' y='6' rx='2'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
+.style-settings-collapse-indicator {
+  padding-left: 8px;
+  color: #828282;
+}
+
+.setting-item-control .themed-color-wrapper .theme-light::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23007fff7f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2'/%3E%3Cpath d='M12 20v2'/%3E%3Cpath d='m4.93 4.93 1.41 1.41'/%3E%3Cpath d='m17.66 17.66 1.41 1.41'/%3E%3Cpath d='M2 12h2'/%3E%3Cpath d='M20 12h2'/%3E%3Cpath d='m6.34 17.66-1.41 1.41'/%3E%3Cpath d='m19.07 4.93-1.41 1.41'/%3E%3C/svg%3E");
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.setting-item-control .themed-color-wrapper .theme-dark::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23007fff7f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z'/%3E%3C/svg%3E");
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.setting-item-description>div>small {
+  font-weight: var(--font-semibold);
+  color: var(--text-accent);
+}
+
+.setting-item-description>div>small>strong {
+  font-weight: var(--font-semibold);
+  color: var(--text-normal);
+}
 
 /* Style Settings */
 
@@ -3626,6 +3696,9 @@ settings:
             - 
                 label: MagicUser Gray
                 value: magicuser-gray-theme
+            - 
+                label: MagicUser Moon
+                value: magicuser-moon-theme
     -
         id: magicuser-theme-ui
         title: UI Settings
@@ -3634,16 +3707,10 @@ settings:
         level: 2
         collapsed: true
     -
-        id: magicuser-theme-ui-basic
-        title: UI Basic Settings
-        type: heading
-        level: 3
-        collapsed: true
-    -
         id: magicuser-theme-main-colors
         title: Main Theme Colors
         type: heading
-        level: 4
+        level: 3
         collapsed: true
     -
         id: mu-titlebar-background
@@ -3703,7 +3770,7 @@ settings:
         id: magicuser-theme-folders-icons
         title: Icons and Folders
         type: heading
-        level: 4
+        level: 3
         collapsed: true
     -
         id: mu-sidebar-folder
@@ -3754,7 +3821,7 @@ settings:
         id: magicuser-theme-indent-guides-color
         title: Indent Guides
         type: heading
-        level: 4
+        level: 3
         collapsed: true
     -
         id: mu-indent-color-level-1
@@ -3814,7 +3881,7 @@ settings:
         id: magicuser-theme-line-highlight
         title: Line Highlight
         type: heading
-        level: 4
+        level: 3
         collapsed: true
     -
         id: mu-line-highlight-border
@@ -3890,7 +3957,7 @@ settings:
         id: magicuser-theme-reading-mode-options
         title: Reading Mode
         type: heading
-        level: 4
+        level: 3
         collapsed: true
     -
         id: mu-reading-indicators
