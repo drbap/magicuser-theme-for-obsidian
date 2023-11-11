@@ -196,6 +196,10 @@ Switch between themes to find the perfect one for your mood and productivity nee
 
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
+### MagicUser Moon
+
+![MagicUser Gray](images/magicuser_preset_06.png)
+
 ## Folder and File Icons
 
 ![Folder and File Icons](images/folder_note_icons.png)
