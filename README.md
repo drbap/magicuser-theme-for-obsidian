@@ -32,29 +32,29 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 
 #### ✨ **Preset Themes**
 
-- **MagicUser** (Default)
+■ **MagicUser** (Default)
 
-- **MagicUser Room Lamp**
+■ **MagicUser Room Lamp**
 
 ![MagicUser Room Lamp](images/magicuser_preset_01.png)
 
-- **MagicUser Purple**
+■ **MagicUser Purple**
 
 ![MagicUser Purple](images/magicuser_preset_02.png)
 
-- **MagicUser Teal**
+■ **MagicUser Teal**
 
 ![MagicUser Teal](images/magicuser_preset_03.png)
 
-- **MagicUser Gray**
+■ **MagicUser Gray**
   
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
-- **MagicUser Camouflage**
+■ **MagicUser Camouflage**
 
 ![MagicUser Camouflage](images/magicuser_preset_04.png)
 
-- **MagicUser Moon**
+■ **MagicUser Moon**
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
@@ -62,7 +62,7 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
-**Main Theme Colors**
+▶ **Main Theme Colors**
 
 - **Frame** color
 - **Primary background** color
@@ -71,7 +71,7 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 - **Vault title** color
 - **Inline title** color
 
-**Icons and Folders**
+▶ **Icons and Folders**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
@@ -80,16 +80,16 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-**Indent Guides**
+▶ **Indent Guides**
 
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-**Line Highlight**
+▶ **Line Highlight**
 
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-**Reading Mode**
+▶ **Reading Mode**
 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
@@ -98,7 +98,7 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 - **Reading glow corners** (rounded or square corners)
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
-**UI Advanced Settings** (Desktop Version)
+▶ **UI Advanced Settings** (Desktop Version)
 
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
