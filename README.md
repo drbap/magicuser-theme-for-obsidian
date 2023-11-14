@@ -32,8 +32,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 #### ✨ **Preset Themes**
 
----
-
 ◾ **MagicUser** (Default)
 
 ◾ **MagicUser Room Lamp**
@@ -61,7 +59,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
 #### ✨ **UI Settings**
----
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
@@ -113,23 +110,17 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 #### ✨ **Headings H1-H6**
 
----
-
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
 #### ✨ **Text**
 
----
-
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
 #### ✨ **Links**
-
----
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -140,14 +131,10 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 #### ✨ **Checklist**
 
----
-
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
 #### ✨ **Code**
-
----
 
 - Code font
 - Code background color
