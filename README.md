@@ -30,16 +30,35 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 You can customize the following MagicUser theme elements ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required):
 
-#### **Preset Themes**
-- **MagicUser** (Default)
-- MagicUser **Room Lamp**
-- MagicUser **Purple**
-- MagicUser **Teal**
-- MagicUser **Gray**
-- MagicUser **Camouflage**
-- MagicUser **Moon**
+#### ✨ **Preset Themes**
 
-#### **UI Settings**
+- **MagicUser** (Default)
+
+- **MagicUser Room Lamp**
+
+![MagicUser Gray](images/magicuser_preset_01.png)
+
+- **MagicUser Purple**
+
+![MagicUser Gray](images/magicuser_preset_02.png)
+
+- **MagicUser Teal**
+
+![MagicUser Gray](images/magicuser_preset_03.png)
+
+- **MagicUser Gray**
+  
+![MagicUser Gray](images/magicuser_preset_04.png)
+
+- **MagicUser Camouflage**
+
+![MagicUser Gray](images/magicuser_preset_05.png)
+
+- **MagicUser Moon**
+
+![MagicUser Gray](images/magicuser_preset_06.png)
+
+#### ✨ **UI Settings**
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
@@ -89,19 +108,19 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
 
-#### **Headings H1-H6**
+#### ✨ **Headings H1-H6**
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-#### **Text**
+#### ✨ **Text**
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-#### **Links**
+#### ✨ **Links**
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -110,12 +129,12 @@ You can customize the following MagicUser theme elements ([Style Settings](https
 - External link **color**
 - External Link **hover color**
 
-#### **Checklist**
+#### ✨ **Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-#### **Code**
+#### ✨ **Code**
 
 - Code font
 - Code background color
@@ -169,36 +188,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Highlight content by clicking on it (reading glow effect).
 - **Reading glow highlight** (rounded or square corners).
 - Select **reading glow highlight color** - **7 colors**: green, blue, orange, red, yellow, pink, purple.
-
-## Preset Themes
-
-Switch between themes to find the perfect one for your mood and productivity needs (light and dark modes).
-> Style Settings Plugin required
-
-
-### MagicUser Room Lamp
-
-![MagicUser Room Lamp](images/magicuser_preset_01.png)
-
-### MagicUser Purple
-
-![MagicUser Purple](images/magicuser_preset_02.png)
-
-### MagicUser Teal
-
-![MagicUser Teal](images/magicuser_preset_03.png)
-
-### MagicUser Camouflage
-
-![MagicUser Camouflage](images/magicuser_preset_04.png)
-
-### MagicUser Gray
-
-![MagicUser Gray](images/magicuser_preset_05.png)
-
-### MagicUser Moon
-
-![MagicUser Gray](images/magicuser_preset_06.png)
 
 ## Customize Colors for Light and Dark Modes
 
