@@ -36,27 +36,27 @@ MagicUser theme Style Settings options ([Style Settings](https://github.com/mgme
 
 - **MagicUser Room Lamp**
 
-![MagicUser Gray](images/magicuser_preset_01.png)
+![MagicUser Room Lamp](images/magicuser_preset_01.png)
 
 - **MagicUser Purple**
 
-![MagicUser Gray](images/magicuser_preset_02.png)
+![MagicUser Purple](images/magicuser_preset_02.png)
 
 - **MagicUser Teal**
 
-![MagicUser Gray](images/magicuser_preset_03.png)
+![MagicUser Teal](images/magicuser_preset_03.png)
 
 - **MagicUser Gray**
   
-![MagicUser Gray](images/magicuser_preset_04.png)
+![MagicUser Gray](images/magicuser_preset_05.png)
 
 - **MagicUser Camouflage**
 
-![MagicUser Gray](images/magicuser_preset_05.png)
+![MagicUser Camouflage](images/magicuser_preset_04.png)
 
 - **MagicUser Moon**
 
-![MagicUser Gray](images/magicuser_preset_06.png)
+![MagicUser Moon](images/magicuser_preset_06.png)
 
 #### ✨ **UI Settings**
 
