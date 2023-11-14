@@ -24,11 +24,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > Settings -> Appearance -> Advanced -> **Translucent window**
 
-### Style Settings - Theme Options
+## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
-MagicUser theme Style Settings options ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required).
+**MagicUser** theme - Style Settings options ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required).
 
 #### ✨ **Preset Themes**
 
