@@ -65,7 +65,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
-▶ **Main Theme Colors**
+▷ **Main Theme Colors**
 
 - **Frame** color
 - **Primary background** color
@@ -74,7 +74,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Vault title** color
 - **Inline title** color
 
-▶ **Icons and Folders**
+▷ **Icons and Folders**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
@@ -83,16 +83,16 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-▶ **Indent Guides**
+▷ **Indent Guides**
 
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-▶ **Line Highlight**
+▷ **Line Highlight**
 
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-▶ **Reading Mode**
+▷ **Reading Mode**
 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
@@ -101,7 +101,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Reading glow corners** (rounded or square corners)
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
-▶ **UI Advanced Settings** (Desktop Version)
+▷ **UI Advanced Settings** (Desktop Version)
 
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
