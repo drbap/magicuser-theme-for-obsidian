@@ -26,9 +26,9 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
-**MagicUser Theme** - Style Settings options:
+> [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plug-in **required**
 
-> [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin **required**
+**MagicUser Theme** - Style Settings options:
 
 #### ▶ **Preset Themes**
 
