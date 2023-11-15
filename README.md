@@ -16,7 +16,7 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 3. Select the theme -> click **Install and use**
 
-## Built-in Themes (No Extra Plug-in Required)
+## Built-in Themes - No Extra Plug-in Required
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
