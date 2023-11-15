@@ -20,7 +20,7 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
-> **No extra plug-in required**.
+> No extra plugin required.
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**".
 
@@ -28,7 +28,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
-> [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plug-in **required**.
+> [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
 ### ▶ **Preset Themes**
 
