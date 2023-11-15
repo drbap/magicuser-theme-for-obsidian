@@ -22,47 +22,47 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**" (**no extra plug-in required**).
 
-> Settings -> Appearance -> Advanced -> **Translucent window**
-
 ## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
-> **MagicUser Theme** - Style Settings options ([Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin **required**)
+**MagicUser Theme** - Style Settings options:
 
-#### ■ **Preset Themes**
+> [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin **required**
 
-▸ **MagicUser** (Default)
+#### ▶ **Preset Themes**
 
-▸ **MagicUser Room Lamp**
+▪ **MagicUser** (Default)
+
+▪ **MagicUser Room Lamp**
 
 ![MagicUser Room Lamp](images/magicuser_preset_01.png)
 
-▸ **MagicUser Purple**
+▪ **MagicUser Purple**
 
 ![MagicUser Purple](images/magicuser_preset_02.png)
 
-▸ **MagicUser Teal**
+▪ **MagicUser Teal**
 
 ![MagicUser Teal](images/magicuser_preset_03.png)
 
-▸ **MagicUser Gray**
+▪ **MagicUser Gray**
   
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
-▸ **MagicUser Camouflage**
+▪ **MagicUser Camouflage**
 
 ![MagicUser Camouflage](images/magicuser_preset_04.png)
 
-▸ **MagicUser Moon**
+▪ **MagicUser Moon**
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
-#### ■ **UI Settings**
+#### ▶ **UI Settings**
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
-□ **Main Theme Colors**
+▷ **Main Theme Colors**
 
 - **Frame** color
 - **Primary background** color
@@ -71,7 +71,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Vault title** color
 - **Inline title** color
 
-□ **Icons and Folders**
+▷ **Icons and Folders**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
@@ -80,16 +80,16 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-□ **Indent Guides**
+▷ **Indent Guides**
 
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-□ **Line Highlight**
+▷ **Line Highlight**
 
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-□ **Reading Mode**
+▷ **Reading Mode**
 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
@@ -98,7 +98,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Reading glow corners** (rounded or square corners)
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
-□ **UI Advanced Settings** (Desktop Version)
+▷ **UI Advanced Settings** (Desktop Version)
 
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
@@ -108,19 +108,19 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
 
-#### ■ **Headings H1-H6**
+#### ▶ **Headings H1-H6**
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-#### ■ **Text**
+#### ▶ **Text**
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-#### ■ **Links**
+#### ▶ **Links**
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -129,12 +129,12 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - External link **color**
 - External Link **hover color**
 
-#### ■ **Checklist**
+#### ▶ **Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-#### ■ **Code**
+#### ▶ **Code**
 
 - Code font
 - Code background color
