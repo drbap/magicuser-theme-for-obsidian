@@ -16,11 +16,13 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 3. Select the theme -> click **Install and use**
 
-## Built-in Themes - No Extra Plug-in Required
+## Built-in Themes 
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
-In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**" (**no extra plug-in required**).
+> **No extra plug-in required**.
+
+In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**".
 
 ## Style Settings - Theme Options
 
@@ -28,7 +30,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plug-in **required**.
 
-### ▶**Preset Themes**
+### ▶ **Preset Themes**
 
 ▪ **MagicUser** (Default)
 
