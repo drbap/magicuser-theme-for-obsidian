@@ -1,5 +1,21 @@
 # Changelog
 
+## [8.6.0] - 2023-11-23
+### Improvements
+- Rounded borders: the rounded arc values are more refined (1, 1.5, 2, 2.5, 3, 3.5...5). You can control the rounded arc style more accurately.
+
+- *Style Settings*: "Turn off reading glow highlight" - new position on the Reading mode submenu.
+
+- *Style Settings*: "Reading indicator color" - new position on the Reading mode submenu.
+
+- *Style Settings*: "Reading indicator color" - you can select indicator independent colors for light and dark mode.
+
+- *Style Settings*: Reset color buttons colors - light and dark modes.
+
+- *Style Settings*: Reading glow border size - slider (set to 0 = borderless, glow effect without border).
+
+- Fixed: collapse button on reading mode. 
+
 ## [8.5.0] - 2023-11-22
 ### Improvements
 Reading mode:
