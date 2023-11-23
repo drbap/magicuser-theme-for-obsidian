@@ -2,7 +2,7 @@
 
 ## [8.6.1] - 2023-11-23
 ### Improvements
-- *Style Settings*: Reset color buttons hover color adjustment.
+- *Style Settings*: Reset color buttons - hover color adjustment.
 
 ## [8.6.0] - 2023-11-23
 ### Improvements
