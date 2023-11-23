@@ -1,5 +1,9 @@
 # Changelog
 
+## [8.6.1] - 2023-11-23
+### Improvements
+- *Style Settings*: Reset color buttons hover color adjustment.
+
 ## [8.6.0] - 2023-11-23
 ### Improvements
 - Rounded borders: the rounded arc values are more refined (1, 1.5, 2, 2.5, 3, 3.5...5). You can control the rounded arc style more accurately.
