@@ -681,11 +681,16 @@ body {
   --mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
   --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
-  --mu-reading-indicator-color: #007fff88;
+  --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-right: transparent;
+
   --mu-reading-glow-color: #00a3ff;
-  --mu-reading-glow-radius: 0.2rem;
-  --mu-reading-indicator-width-value: 3;
+  --mu-reading-glow-radius-value: 1;
+  --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
+  --mu-reading-glow-trans-property: box-shadow;
+  --mu-reading-glow-trans-time: .2s;
+
+  --mu-reading-indicator-width-value: 4;
   --mu-reading-indicator-left-width: calc(var(--mu-reading-indicator-width-value) * -1px);
   --mu-reading-indicator-right-width: calc(var(--mu-reading-indicator-width-value) * 1px);
   --mu-indent-color-level-1: #007fff7f;
@@ -3110,20 +3115,24 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
   box-shadow: var(--mu-reading-indicator-left-width) 0 0 0 var(--mu-reading-indicator-color), var(--mu-reading-indicator-right-width) 0 0 0 var(--mu-reading-indicator-right);
-  margin-left: -0.2rem;
-  margin-right: -0.2rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  position:relative;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):active {
   box-shadow: 0 0 0 .2rem var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  margin-left: -0.2rem;
-  margin-right: -0.2rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  transition: box-shadow .2s;
+  transition: var(--mu-reading-glow-trans-property) var(--mu-reading-glow-trans-time);
   border-radius: var(--mu-reading-glow-radius);
+  --mu-label-h1: transparent;
+  --mu-label-h2: transparent;
+  --mu-label-h3: transparent;
+  --mu-label-h4: transparent;
+  --mu-label-h5: transparent;
+  --mu-label-h6: transparent;
+  overflow: clip;
 }
 
 .markdown-reading-view h1::before,
@@ -3134,9 +3143,9 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .markdown-reading-view h6::before {
   font-size: .8rem;
   font-family: var(--mu-font-ui);
-  display: flex;
-  justify-content: flex-start;
-  align-content: baseline;
+  position: absolute;
+  top:-.88rem;
+  left:0;
   visibility: hidden;
   letter-spacing: 1px;
 }
@@ -3471,6 +3480,13 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   --mu-reading-glow-color: #bf48ff;
 }
 
+/* Reading glow status */
+
+.mu-reading-glow-status-off {
+  --mu-reading-glow-color: transparent;
+  --mu-reading-glow-trans-property: none;
+}
+
 /* Reading Ind position */
 .mu-reading-ind-left {
   --mu-reading-indicator-right: transparent;
@@ -3483,11 +3499,6 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .mu-reading-ind-hide {
   --mu-reading-indicator-color: transparent !important;
   --mu-reading-indicator-right: transparent !important;
-}
-
-/* Glow square corners */
-.mu-glow-radius-square {
-  --mu-reading-glow-radius: 0;
 }
 
 /* Folders indent */
@@ -3981,18 +3992,23 @@ settings:
         title: Reading indicators width
         description: Select reading indicators width in px units
         type: variable-number-slider
-        default: 3
+        default: 4
         min: 1
         max: 36
         step: 1
-    -
+    - 
         id: mu-reading-indicator-color
         title: Reading indicators color
         type: variable-color
         description: Color of the reading indicators
         format: hex
         opacity: true
-        default: '#007fff88'
+        default: '#007fffa3'
+    -
+        id: mu-reading-glow-status-off
+        title: Turn off reading glow 
+        description: Turn off the reading glow effect
+        type: class-toggle
     -
         id: mu-reading-glow
         title: Reading glow highlight color
@@ -4023,19 +4039,15 @@ settings:
                 label: Purple glow
                 value: reading-glow-purple
     -
-        id: mu-reading-glow-radius-corners
+        id: mu-reading-glow-radius-value
         title: Reading glow highlight corners
-        description: Reading glow corners (rounded or square)
-        type: class-select
-        allowEmpty: false
-        default:  none
-        options:
-            - 
-                label: Rounded corners
-                value: none
-            - 
-                label: Square corners
-                value: mu-glow-radius-square
+        description: Reading glow corners (0 = square corner, increase value to round corners)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
+
     -
         id: mu-label-h1
         title: H1 label color
