@@ -95,7 +95,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Reading indicators width** - slider controller
 - **Reading indicators color**
 - **Reading glow color** (7 options)
-- **Reading glow corners** (rounded or square corners)
+- Turn on/off **reading glow**
+- **Reading glow corners** (using a slider)
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
 #### ▷ **UI Advanced Settings** (Desktop Version)
