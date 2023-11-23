@@ -1,5 +1,12 @@
 # Changelog
 
+## [8.5.0] - 2023-11-22
+### Improvements
+Reading mode:
+- Heading label and reading indicator redesign (reading indicator will cover just the text element). When you click over the element the label will disappear.
+- *Style Settings*: **turn on/off reading glow effect** (toggle button). The default options is reading glow effect **on**.
+- *Style Settings*: customize the rounded corners of reading glow effect (slider). Set the slider to 0 for square corners and increase the value to round the corners of the reading glow effect. This effect will adjust to fit/clip the content of the element.
+
 ## [8.4.0] - 2023-11-11
 ### Improvements
 - *Style Settings* - new preset theme: **MagicUser Moon**
