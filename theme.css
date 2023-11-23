@@ -703,6 +703,9 @@ body {
   --mu-folder-color-hue: calc(var(--mu-folder-color-hue-value) * 1deg);
   --mu-file-color-hue-value: 0;
   --mu-file-color-hue: calc(var(--mu-file-color-hue-value) * 1deg);
+  --mu-collapse-display: none;
+  --mu-reading-glow-border-size-value: 3;
+  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
   --mu-header-title-drag: no-drag;
 }
 
@@ -3109,21 +3112,21 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 /* Reading mode */
 
-.markdown-reading-view .markdown-preview-view.heading-collapse-indicator {
-  transform: translateX(-2rem);
-}
-
-div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
-  box-shadow: var(--mu-reading-indicator-left-width) 0 0 0 var(--mu-reading-indicator-color), var(--mu-reading-indicator-right-width) 0 0 0 var(--mu-reading-indicator-right);
-  position:relative;
+div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header) {
+  position: relative;
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
 }
 
+div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):hover {
+  box-shadow: var(--mu-reading-indicator-left-width) 0 0 0 var(--mu-reading-indicator-color), var(--mu-reading-indicator-right-width) 0 0 0 var(--mu-reading-indicator-right);
+  --mu-collapse-display: block;
+}
+
 div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>div>div>div:not(.mod-header):active {
-  box-shadow: 0 0 0 .2rem var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
+  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
   transition: var(--mu-reading-glow-trans-property) var(--mu-reading-glow-trans-time);
   border-radius: var(--mu-reading-glow-radius);
   --mu-label-h1: transparent;
@@ -3144,9 +3147,9 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
   font-size: .8rem;
   font-family: var(--mu-font-ui);
   position: absolute;
-  top:-.88rem;
-  left:0;
-  visibility: hidden;
+  top: -1rem;
+  left: -1rem;
+  opacity: 0;
   letter-spacing: 1px;
 }
 
@@ -3186,12 +3189,23 @@ div.workspace-tab-container>div>div>div.view-content>div.markdown-reading-view>d
 .markdown-reading-view h4:hover::before,
 .markdown-reading-view h5:hover::before,
 .markdown-reading-view h6:hover::before {
-  visibility: visible;
+  opacity: 1;
+}
+
+.markdown-preview-view .list-collapse-indicator {
+  margin-inline-start: -2em;
 }
 
 /* Settings */
 .vertical-tab-header-group {
   padding-top: 0;
+}
+
+.heading-collapse-indicator.collapse-indicator.collapse-icon {
+  display: var(--mu-collapse-display);
+  transform: translateX(14px);
+  margin-left: -18px;
+  margin-right: 8px;
 }
 
 /* Themes */
@@ -3659,14 +3673,28 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+/* Style Settings - further color adjustments */
 .setting-item-description>div>small {
-  font-weight: var(--font-semibold);
-  color: var(--text-accent);
+  font-weight: var(--font-semibold) !important;
+  color: var(--text-accent) !important;
 }
 
-.setting-item-description>div>small>strong {
-  font-weight: var(--font-semibold);
-  color: var(--text-normal);
+.theme-light .setting-item-description>div>small>strong {
+  font-weight: var(--font-semibold) !important;
+  color: #000 !important;
+}
+
+.theme-dark .setting-item-description>div>small>strong {
+  font-weight: var(--font-semibold) !important;
+  color: #e1e1e1 !important;
+}
+
+.theme-light .setting-item-control .pickr-reset>button {
+  color: #000;
+}
+
+.theme-dark .setting-item-control .pickr-reset>button {
+  color: #e1e1e1;
 }
 
 /* Style Settings */
@@ -3970,6 +3998,15 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    - 
+        id: mu-reading-indicator-color
+        title: Reading indicators color
+        type: variable-themed-color
+        description: Color of the reading indicators
+        format: hex
+        opacity: true
+        default-light: '#007fffa3'
+        default-dark: '#007fffa3'
     -
         id: mu-reading-indicators
         title: Reading indicators
@@ -3996,19 +4033,6 @@ settings:
         min: 1
         max: 36
         step: 1
-    - 
-        id: mu-reading-indicator-color
-        title: Reading indicators color
-        type: variable-color
-        description: Color of the reading indicators
-        format: hex
-        opacity: true
-        default: '#007fffa3'
-    -
-        id: mu-reading-glow-status-off
-        title: Turn off reading glow 
-        description: Turn off the reading glow effect
-        type: class-toggle
     -
         id: mu-reading-glow
         title: Reading glow highlight color
@@ -4039,6 +4063,15 @@ settings:
                 label: Purple glow
                 value: reading-glow-purple
     -
+        id: mu-reading-glow-border-size-value
+        title: Reading glow highlight border size
+        description: Reading glow border size (0 = glow only)
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 8
+        step: 1
+    -
         id: mu-reading-glow-radius-value
         title: Reading glow highlight corners
         description: Reading glow corners (0 = square corner, increase value to round corners)
@@ -4046,8 +4079,12 @@ settings:
         default: 1
         min: 0
         max: 5
-        step: 1
-
+        step: 0.5
+    -
+        id: mu-reading-glow-status-off
+        title: Turn off reading glow highlight
+        description: Turn off the reading glow effect
+        type: class-toggle
     -
         id: mu-label-h1
         title: H1 label color
