@@ -2,7 +2,7 @@
 
 ## [8.7.0] - 2023-11-24
 ### Improvements
-- Fixed reading model heading display
+- Fixed reading mode headings display on hover.
 - Removed reading glow effect.
   
 ## [8.6.1] - 2023-11-23
