@@ -1,5 +1,10 @@
 # Changelog
 
+## [8.7.0] - 2023-11-24
+### Improvements
+- Fixed reading model heading display
+- Removed reading glow effect.
+  
 ## [8.6.1] - 2023-11-23
 ### Improvements
 - *Style Settings*: Reset color buttons - hover color adjustment.
