@@ -94,10 +94,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
 - **Reading indicators color**
-- **Reading glow color** (7 options)
-- **Reading glow border size** (using a slider)
-- **Reading glow corners** (using a slider)
-- Turn on/off **reading glow**
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
 #### ▷ **UI Advanced Settings** (Desktop Version)
@@ -179,17 +175,11 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ## Reading Mode
 
-![Reading Mode Overview](images/magicuser_theme_reading_mode.gif)
-
-
 - **Reading indicators**: The default option will show the left reading indicator only. The right indicator can be visible using Style Settings option (3 available options: **left** only, **left and right** and **no indicators**).
 - Select **reading indicators color**.
 - Select **reading indicators width** - use the slider to find the most comfortable reading width for you.
 - **H1-H6 indicators**.
 - **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (independent colors).
-- Highlight content by clicking on it (reading glow effect).
-- **Reading glow highlight** (rounded or square corners).
-- Select **reading glow highlight color** - **7 colors**: green, blue, orange, red, yellow, pink, purple.
 
 ## Customize Colors for Light and Dark Modes
 
