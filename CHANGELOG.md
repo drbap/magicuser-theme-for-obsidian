@@ -2,7 +2,7 @@
 
 ## [8.7.0] - 2023-11-24
 ### Improvements
-- Fixed reading mode headings display on hover.
+- Reading mode - headings display on hover fix.
 - Removed reading glow effect.
   
 ## [8.6.1] - 2023-11-23
