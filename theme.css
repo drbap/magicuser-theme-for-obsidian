@@ -3169,14 +3169,6 @@ body:not(.is-mobile) .side-dock-settings:hover {
   visibility: visible;
 }
 
-/* .heading-collapse-indicator.collapse-indicator.collapse-icon {
-  display: var(--mu-collapse-display);
-  transform: translateX(14px);
-  margin-left: -18px;
-  margin-right: 8px;
-} */
-
-
 /* Settings */
 .vertical-tab-header-group {
   padding-top: 0;
