@@ -98,6 +98,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 #### ◽ **UI Advanced Settings** (Desktop Version)
 
+![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
+
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
 - Show/hide **tab navigation back and forward buttons**
@@ -105,6 +107,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Auto hide **top side buttons**
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
+
+> When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
 
 ### ◾ **Headings H1-H6**
 
@@ -146,12 +150,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Attribute
 - Operator
 - Punctuation
-
-## UI Advanced Settings
-
-![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
-
-When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
 
 ## Distraction-free Mode
 
