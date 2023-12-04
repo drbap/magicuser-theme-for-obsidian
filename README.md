@@ -64,6 +64,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 <details>
 <summary><b>UI Settings</b> - <i>click to expand</i></summary>
 
+*Submenus*
+
 **Main Theme Colors**
 
 - **Frame** color
