@@ -6,7 +6,7 @@
 
 With the **Style Settings** community plugin, customize a wide range of theme elements to suit your preferences and create a truly engaging and productive workspace.
 
-I hope you'll find the **MagicUser theme** to be a valuable tool in enhancing your productivity and creativity. I hope you'll enjoy its features and appreciate the positive impact it has on your Obsidian experience.
+I hope you'll find the **MagicUser theme** to be a valuable tool in enhancing your productivity and creativity. The theme's carefully considered features are designed to foster a more enjoyable work and study environment within Obsidian.
 
 ## Installation
 
