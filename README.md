@@ -24,7 +24,7 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**".
 
-## Style Settings - MagicUser Theme Options
+## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
@@ -63,8 +63,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 <details>
 <summary><b>UI Settings</b> - <i>click to expand</i></summary>
-<br>
-  
 ![UI Settings](images/magicuser_ui_settings.png)
 
 #### ◽ **Main Theme Colors**
