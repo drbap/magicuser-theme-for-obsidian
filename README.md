@@ -30,7 +30,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
-### ▶ **Preset Themes**
+### ■ **Preset Themes**
 
 ▪ **MagicUser** (Default)
 
@@ -58,11 +58,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
-### ▶ **UI Settings**
+### ■ **UI Settings**
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
-#### ▷ **Main Theme Colors**
+#### □ **Main Theme Colors**
 
 - **Frame** color
 - **Primary background** color
@@ -71,7 +71,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Vault title** color
 - **Inline title** color
 
-#### ▷ **Icons and Folders**
+#### □ **Icons and Folders**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
@@ -80,23 +80,23 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-#### ▷ **Indent Guides**
+#### □ **Indent Guides**
 
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-#### ▷ **Line Highlight**
+#### □ **Line Highlight**
 
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-#### ▷ **Reading Mode**
+#### □ **Reading Mode**
 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
 - **Reading indicators color**
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
-#### ▷ **UI Advanced Settings** (Desktop Version)
+#### □ **UI Advanced Settings** (Desktop Version)
 
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
@@ -106,19 +106,19 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
 
-### ▶ **Headings H1-H6**
+### ■ **Headings H1-H6**
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-### ▶ **Text**
+### ■ **Text**
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-### ▶ **Links**
+### ■ **Links**
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -127,12 +127,12 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - External link **color**
 - External Link **hover color**
 
-### ▶ **Checklist**
+### ■ **Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-### ▶ **Code**
+### ■ **Code**
 
 - Code font
 - Code background color
@@ -155,17 +155,13 @@ When **auto hide** is turned on, UI elements will gradually appear when you move
 
 ## Distraction-free Mode
 
-![Distraction-free Mode](images/magicuser_distraction_free_mode.png)
+![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
 
 To show the left ribbon, place your cursor on the left side of the screen, it will hide again when you move your cursor away from the left side of the screen.
 
 - You can also auto hide the **status bar** (UI Advanced Settings).
 
-![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
-
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
-
-**Distraction-free mode** has been improved to allow you to easily drag the window across the screen, when the window frame style is set to "Hidden", which is the default option:
 
 - When you enable distraction-free mode with the Style Settings plugin, you can drag the window by the **tab title header** (the top bar with the file name and breadcrumb) or by the **right part of the status bar** (the lower right corner).
 
@@ -181,7 +177,7 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - **H1-H6 indicators**.
 - **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (independent colors).
 
-## Customize Colors for Light and Dark Modes
+## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
 
