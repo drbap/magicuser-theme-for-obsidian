@@ -63,8 +63,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 <details>
 <summary><b>UI Settings</b> - <i>click to expand</i></summary>
-  
-![UI Settings](images/magicuser_ui_settings.png)
+<br>
 
 **Main Theme Colors**
 
