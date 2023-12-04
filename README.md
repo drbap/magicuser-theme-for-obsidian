@@ -30,7 +30,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
-### ■ **Preset Themes**
+### ◾ **Preset Themes**
 
 ▪ **MagicUser** (Default)
 
@@ -58,11 +58,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
-### ■ **UI Settings**
+### ◾ **UI Settings**
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
-#### □ **Main Theme Colors**
+#### ◽ **Main Theme Colors**
 
 - **Frame** color
 - **Primary background** color
@@ -71,7 +71,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - **Vault title** color
 - **Inline title** color
 
-#### □ **Icons and Folders**
+#### ◽ **Icons and Folders**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
@@ -80,23 +80,23 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
-#### □ **Indent Guides**
+#### ◽ **Indent Guides**
 
 - Select 6 **indent guides colors** (independent colors for light and dark modes)
 
-#### □ **Line Highlight**
+#### ◽ **Line Highlight**
 
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
-#### □ **Reading Mode**
+#### ◽ **Reading Mode**
 
 - **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
 - **Reading indicators width** - slider controller
 - **Reading indicators color**
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
-#### □ **UI Advanced Settings** (Desktop Version)
+#### ◽ **UI Advanced Settings** (Desktop Version)
 
 - Activate **distraction-free mode**
 - Hide **sidebar buttons** (new note, new folder and others)
@@ -106,19 +106,19 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Auto hide **bottom side buttons**
 - Auto hide **status bar**
 
-### ■ **Headings H1-H6**
+### ◾ **Headings H1-H6**
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-### ■ **Text**
+### ◾ **Text**
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-### ■ **Links**
+### ◾ **Links**
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -127,12 +127,12 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - External link **color**
 - External Link **hover color**
 
-### ■ **Checklist**
+### ◾ **Checklist**
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-### ■ **Code**
+### ◾ **Code**
 
 - Code font
 - Code background color
@@ -164,8 +164,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
 
 - When you enable distraction-free mode with the Style Settings plugin, you can drag the window by the **tab title header** (the top bar with the file name and breadcrumb) or by the **right part of the status bar** (the lower right corner).
-
-- To maximize the window in distraction-free mode, double-click the **tab title header** or the **status bar corner**. To close, maximize, or minimize the window, right-click either area and select the desired option from the menu.
 
 - *Style Settings*: You can add a **shortcut** to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the **command palette**.
 
