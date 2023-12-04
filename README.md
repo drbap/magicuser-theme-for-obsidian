@@ -24,41 +24,45 @@ I hope you enjoy using MagicUser theme and find that it helps you to be more pro
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**".
 
-## Style Settings - Theme Options
+## Style Settings - MagicUser Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
-### ◾ **Preset Themes**
+<details>
+<summary><b>Preset Themes</b> - <i>click to expand</i></summary>
 
-▪ **MagicUser** (Default)
+1. **MagicUser** (Default)
 
-▪ **MagicUser Room Lamp**
+2. **MagicUser Room Lamp**
 
 ![MagicUser Room Lamp](images/magicuser_preset_01.png)
 
-▪ **MagicUser Purple**
+3. **MagicUser Purple**
 
 ![MagicUser Purple](images/magicuser_preset_02.png)
 
-▪ **MagicUser Teal**
+4. **MagicUser Teal**
 
 ![MagicUser Teal](images/magicuser_preset_03.png)
 
-▪ **MagicUser Gray**
+5. **MagicUser Gray**
   
 ![MagicUser Gray](images/magicuser_preset_05.png)
 
-▪ **MagicUser Camouflage**
+6. **MagicUser Camouflage**
 
 ![MagicUser Camouflage](images/magicuser_preset_04.png)
 
-▪ **MagicUser Moon**
+7. **MagicUser Moon**
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
-### ◾ **UI Settings**
+</details>
+
+<details>
+<summary><b>UI Settings</b> - <i>click to expand</i></summary>
 
 ![UI Settings](images/magicuser_ui_settings.png)
 
@@ -110,19 +114,28 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
 
-### ◾ **Headings H1-H6**
+</details>
+
+<details>
+<summary><b>Headings H1-H6</b> - <i>click to expand</i></summary>
 
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
 
-### ◾ **Text**
+</details>
+
+<details>
+<summary><b>Text</b> - <i>click to expand</i></summary>
 
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
 
-### ◾ **Links**
+</details>
+
+<details>
+<summary><b>Links</b> - <i>click to expand</i></summary>
 
 - **Internal link decoration** (underline, none)
 - Internal link **color**
@@ -131,12 +144,18 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - External link **color**
 - External Link **hover color**
 
-### ◾ **Checklist**
+</details>
+
+<details>
+<summary><b>Checklist</b> - <i>click to expand</i></summary>
 
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
-### ◾ **Code**
+</details>
+
+<details>
+<summary><b>Code</b> - <i>click to expand</i></summary>
 
 - Code font
 - Code background color
@@ -150,6 +169,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 - Attribute
 - Operator
 - Punctuation
+
+</details>
 
 ## Distraction-free Mode
 
