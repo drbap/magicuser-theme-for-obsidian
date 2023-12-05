@@ -202,15 +202,15 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Folder and File Icons](images/folder_note_icons.png)
 
-## Folder and File Icons Colors
-
-![Folder and File Icons Colors](images/magicuser_folders_icons_colors.png)
-
 ## Colored Indent Guides
 
 ![Indent Guides](images/magicuser_indent_guides.png)
 
 You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes).
+
+## Folder and File Icons Colors
+
+![Folder and File Icons Colors](images/magicuser_folders_icons_colors.png)
 
 ## Custom Checkbox Icons
 
