@@ -198,15 +198,11 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
 
-## Folder and File Icons
-
-![Folder and File Icons](images/folder_note_icons.png)
-
-## Colored Indent Guides
+## Folder Icons, File Icons and Colored Indent Guides
 
 ![Indent Guides](images/magicuser_indent_guides.png)
 
-You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes).
+You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes). You can also show/hide folder and file icons.
 
 ## Folder and File Icons Colors
 
