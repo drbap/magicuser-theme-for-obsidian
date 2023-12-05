@@ -387,16 +387,6 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 
 ![Table Layout](images/magicuser_theme_tables.png)
 
-```Markdown
-| Column 1  | Column 2 |  Column 3 |
-| :---:     | :---:    |  :---:    |
-| Text 1    | Text 2   | Text 3    |
-| Text 4    | Text 5   | Text 6    |
-| Text 7    | Text 8   | Text 9    |
-| Text 10   | Text 11  | Text 12   |
-
-```
-
 ## Code Theme (Light and Dark)
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
