@@ -184,14 +184,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 - *Style Settings*: You can add a **shortcut** to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the **command palette**.
 
-## Reading Mode
-
-- **Reading indicators**: The default option will show the left reading indicator only. The right indicator can be visible using Style Settings option (3 available options: **left** only, **left and right** and **no indicators**).
-- Select **reading indicators color**.
-- Select **reading indicators width** - use the slider to find the most comfortable reading width for you.
-- **H1-H6 indicators**.
-- **H1-H6 indicators custom colors**: You can select H1-H6 label colors for light and dark modes (independent colors).
-
 ## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
