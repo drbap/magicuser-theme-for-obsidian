@@ -28,8 +28,8 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
-<details>
-<summary><b>Preset Themes</b> - <i>click to expand</i></summary>
+<details open>
+<summary><b>Preset Themes</b> - <i>click to expand/collapse</i></summary>
 
 1. **MagicUser** (Default)
 
