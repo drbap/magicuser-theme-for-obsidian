@@ -180,8 +180,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
 
-- When you enable distraction-free mode with the Style Settings plugin, you can drag the window by the **tab title header** (the top bar with the file name and breadcrumb) or by the **right part of the status bar** (the lower right corner).
-
 - *Style Settings*: You can add a **shortcut** to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the **command palette**.
 
 ## Style Settings - Customize Colors for Light and Dark Modes
