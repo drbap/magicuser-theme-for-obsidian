@@ -214,99 +214,51 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 
 ![Media Callouts](images/magicuser_m_callouts.png)
 
-**Media callouts** are specially designed for **images** and **videos**. Available in three background colors.
+> **Colors**: white, black, gray
 
 `> [!m-` + `color] Callout Title`
 
-**Colors**: white, black, gray
-
-**Example**: *media callout gray*
-
-```
-> [!m-gray] Image or video title
-> Add image or video here
-> Image or video caption
-
-```
 
 ### Highlighter Callouts
 
 ![Additional Highlighter Callouts](images/magicuser_hl_callouts.png)
 
+> **Colors**: green, blue, orange, yellow, red, pink, purple
+
 `> [!hl-` + `color] Your Callout Title`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *highlighter blue callout*
-
-```
-> [!hl-blue] Your callout title here
-> Callout text here
-
-```
 
 ### Pen Callouts
 
 ![Additional Pen Callouts](images/magicuser_p_callouts.png)
 
+> **Colors**: green, blue, orange, yellow, red, pink, purple
+
 `> [!p-` + `color] Your Callout Title`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *pen blue callout*
-
-```
-> [!p-blue] Your callout title here
-> Callout text here
-
-```
 
 ### Quote Callouts
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_q_callouts.png)
 
+> **Colors**: green, blue, orange, yellow, red, pink, purple
+
 `> [!q-` + `color] Quote`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *quote green callout*
-
-```
-> [!q-green] Quote
-> Quote author or comment
-
-```
 
 ### Box Callouts
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_b_callouts.png)
 
+> **Colors**: green, blue, orange, yellow, red, pink, purple
+
 `> [!b-` + `color] Your Callout Title`
-
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *box green callout*
-
-```
-> [!b-green] Your callout title here
-> Callout text here
-
-```
 
 ### Callout Headings (H1 - H6)
 
 ![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
 
+> **Colors**: green, blue, orange, yellow, red, pink, purple
+
 `> [!h1 to h6-` + `color] Your Title`
 
-**Colors**: green, blue, orange, yellow, red, pink, purple
-
-**Example**: *h1 green text callout*
-
-```
-> [!h1-green] Your h1 title here
-
-```
 
 ### Specific Callouts
 
@@ -334,13 +286,6 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 
 `> [!magic]`
 
-**Example**: *magic callout*
-
-```
-> [!magic] Special Tip
-> Callout text here
-
-```
 ## Caret Colors for Improved Visibility
 
 ![Dark mode caret color](images/magicuser_caret_colors.png)
