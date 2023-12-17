@@ -212,53 +212,56 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 
 ### Media Callouts
 
-![Media Callouts](images/magicuser_m_callouts.png)
-
-> **Colors**: white, black, gray
-
 `> [!m-` + `color] Callout Title`
 
+*Colors*: white, black, gray
+
+![Media Callouts](images/magicuser_m_callouts.png)
 
 ### Highlighter Callouts
 
-![Additional Highlighter Callouts](images/magicuser_hl_callouts.png)
-
-> **Colors**: green, blue, orange, yellow, red, pink, purple
-
 `> [!hl-` + `color] Your Callout Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
+![Additional Highlighter Callouts](images/magicuser_hl_callouts.png)
 
 ### Pen Callouts
 
+`> [!p-` + `color] Your Callout Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
 ![Additional Pen Callouts](images/magicuser_p_callouts.png)
 
-> **Colors**: green, blue, orange, yellow, red, pink, purple
 
-`> [!p-` + `color] Your Callout Title`
 
 ### Quote Callouts
 
+`> [!q-` + `color] Quote`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
 ![Additional Callouts Pen and Highlighter](images/magicuser_q_callouts.png)
 
-> **Colors**: green, blue, orange, yellow, red, pink, purple
 
-`> [!q-` + `color] Quote`
 
 ### Box Callouts
 
+`> [!b-` + `color] Your Callout Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
 ![Additional Callouts Pen and Highlighter](images/magicuser_b_callouts.png)
 
-> **Colors**: green, blue, orange, yellow, red, pink, purple
-
-`> [!b-` + `color] Your Callout Title`
 
 ### Callout Headings (H1 - H6)
 
-![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
-
-> **Colors**: green, blue, orange, yellow, red, pink, purple
-
 `> [!h1 to h6-` + `color] Your Title`
 
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
+![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
 
 ### Specific Callouts
 
