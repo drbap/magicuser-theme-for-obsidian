@@ -355,5 +355,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @alitekdemir - suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
 - @YannMiro - suggestion to show/hide file icons.
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer.
+- @ll14m4n (Obsidian Forum) - dataview tables and stacked mode suggestions.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
