@@ -1,5 +1,11 @@
 # Changelog
 
+
+## [8.8.0] - 2023-12-19
+### Improvements
+- Dataview tables and calendars adjustments.
+- Stacked mode: you can see which tab is selected (background-highlight and left border).
+
 ## [8.7.0] - 2023-11-24
 ### Improvements
 - Reading mode - headings display on hover fix.
