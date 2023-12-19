@@ -2778,6 +2778,14 @@ li[data-task="G"]>p>input:checked::after {
   page-break-inside: avoid;
 }
 
+/* Stacked mode */
+.workspace-tabs.mod-stacked  .workspace-tab-header.mod-active {
+  border-left: 1px solid var(--mu-vault-title);
+}
+
+.workspace-tabs.mod-stacked  .workspace-tab-header:not(.mod-active) {
+  background-color: var(--mu-background-color-2) !important;
+}
 /* Tables Styles Light and Dark Theme */
 
 .theme-light table {
@@ -2832,6 +2840,42 @@ th,
 td {
   border: 0 !important;
   padding: 4px;
+}
+
+/* Dataview */
+table.dataview.table-view-table {
+  border:0 !important;
+}
+
+table.dataview.table-view-table th,
+table.dataview.table-view-table tr,
+table.dataview.table-view-table td {
+  background-color: transparent !important;
+}
+
+table.dataview.table-view-table th.table-view-th {
+  color: var(--mu-text-1) !important;
+  border-bottom: 2px solid var(--mu-blue-hr) !important;
+}
+
+table.calendar.svelte-pcimu8 {
+  border:0 !important;
+}
+
+table.calendar.svelte-pcimu8 th,
+table.calendar.svelte-pcimu8 tr,
+table.calendar.svelte-pcimu8 td {
+  background-color: transparent !important;
+}
+
+table.calendar.svelte-pcimu8,
+table.calendar.svelte-pcimu8 th,
+table.calendar.svelte-pcimu8 td {
+  border: 1px solid #82828272 !important
+}
+
+table.calendar.svelte-pcimu8 th {
+  color: var(--mu-text-1) !important;
 }
 
 /* Code Adjustments */
