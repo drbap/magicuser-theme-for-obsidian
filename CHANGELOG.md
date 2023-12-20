@@ -6,7 +6,7 @@
 - Markdown tables adjustments.
 - Input date background color.
 
-*Style Settings - New Options*
+**Style Settings** - New Options
 - *UI Settings* -> *Main Theme Options* - stacked mode tabs: **border width of active tab** (0 = no border).
 - *UI Settings* -> *Main Theme Options* - stacked mode tabs: **border color of active tab** (independent colors for light and dark modes).
 
