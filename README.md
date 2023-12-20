@@ -203,7 +203,7 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Indent Guides](images/magicuser_indent_guides.png)
 
-You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes). You can also show/hide folder and file icons.
+You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
 
 ## Custom Checkbox Icons
 
