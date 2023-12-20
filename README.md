@@ -83,6 +83,8 @@ Submenus:
 - **Caret** / **text cursor** color
 - **Vault title** color
 - **Inline title** color
+- Stacked mode tabs: active tab **border width**
+- Stacked mode tabs: active tab **border color**
 
 ◼ **Icons and Folders**
 
