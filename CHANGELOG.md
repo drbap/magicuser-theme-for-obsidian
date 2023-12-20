@@ -1,5 +1,24 @@
 # Changelog
 
+## [9.0.0] - 2023-12-20
+### Improvements
+- Plugins compatibility adjustments: **Full Calendar** and **Kanban**.
+- Markdown tables adjustments.
+- Input date background color.
+
+*Style Settings - New Options*
+- *UI Settings* -> *Main Theme Options* - stacked mode tabs: **border width of active tab** (0 = no border).
+- *UI Settings* -> *Main Theme Options* - stacked mode tabs: **border color of active tab** (independent colors for light and dark modes).
+
+**Community Plugins Compatibility**
+- Style Settings
+- Dataview
+- Kanban
+- Calendar
+- Full Calendar
+- Tasks
+
+> If you find any issue with any plugin, please let me know.
 
 ## [8.8.0] - 2023-12-19
 ### Improvements
