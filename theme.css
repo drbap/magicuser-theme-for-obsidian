@@ -683,7 +683,7 @@ body {
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
 
   --mu-reading-indicator-color: #007fffa3;
-  --mu-reading-indicator-width-value-rem: .4;
+  --mu-reading-indicator-width-value-rem: 0.3;
   --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * 1rem);
   --mu-reading-indicator-offset: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
 
@@ -3184,7 +3184,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: -1rem;
+  left: 0;
   height: 100%;
   width: var(--mu-reading-indicator-width);
   transform: translateX(var(--mu-reading-indicator-offset));
@@ -4025,7 +4025,7 @@ settings:
         title: Reading indicator width
         description: Select reading indicator width (0 = no indicator)
         type: variable-number-slider
-        default: 0.4
+        default: 0.3
         min: 0
         max: 1
         step: 0.1
