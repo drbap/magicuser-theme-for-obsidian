@@ -681,12 +681,12 @@ body {
   --mu-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath style='fill:%2300a3ff; stroke:none' d='M1 4.018 C1 4.018 1.104 2.905 2.569 3.006 C4.348 3.006 7.069 3.006 7.069 3.006 C7.069 3.006 8.639 4.828 8.639 4.828 C8.639 4.828 17.744 4.825 17.744 4.825 C17.744 4.825 18.999 4.524 18.999 6.043 C18.999 7.46 18.999 15.457 18.999 15.457 C18.999 15.457 18.999 16.773 17.116 16.874 C15.023 16.874 2.883 16.977 2.883 16.977 C2.984 16.968 1.313 17.276 1 15.86 C1 5.737 1 4.018 1 4.018 z'/%3E%3C/svg%3E");
   --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
-  --mu-reading-indicator-color: #007fffa3;
-  --mu-reading-indicator-right: transparent;
 
-  --mu-reading-indicator-width-value: 4;
-  --mu-reading-indicator-left-width: calc(var(--mu-reading-indicator-width-value) * -1px);
-  --mu-reading-indicator-right-width: calc(var(--mu-reading-indicator-width-value) * 1px);
+  --mu-reading-indicator-color: #007fffa3;
+  --mu-reading-indicator-width-value-rem: .4;
+  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * 1rem);
+  --mu-reading-indicator-offset: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
+
   --mu-indent-color-level-1: #007fff7f;
   --mu-indent-color-level-2: #d372ff7f;
   --mu-indent-color-level-3: #ff7f007f;
@@ -2791,54 +2791,66 @@ li[data-task="G"]>p>input:checked::after {
 }
 
 /* Tables Styles Light and Dark Theme */
+.theme-light .markdown-reading-view table,
 .theme-light .cm-embed-block.cm-table-widget table {
   width: 100%;
   border: 2px solid #004882;
   border-collapse: collapse;
 }
 
+.theme-light .markdown-reading-view th,
 .theme-light .cm-embed-block.cm-table-widget th {
   background-color: #004882 !important;
   color: #f1f1f1 !important;
-  text-align: left;
 }
 
+.theme-light .markdown-reading-view td,
 .theme-light .cm-embed-block.cm-table-widget td {
   background-color: #007fff10 !important;
 }
 
+.theme-light .markdown-reading-view tr:nth-child(even),
 .theme-light .cm-embed-block.cm-table-widget tr:nth-child(even) {
   background-color: #007fff20 !important;
 }
 
+.theme-light .markdown-reading-view tr:hover,
 .theme-light .cm-embed-block.cm-table-widget tr:hover {
   background-color: #00000020 !important;
 }
 
+.theme-dark .markdown-reading-view table,
 .theme-dark .cm-embed-block.cm-table-widget table {
   width: 100%;
   border: 2px solid #004882;
   border-collapse: collapse;
 }
 
+.theme-dark .markdown-reading-view th,
 .theme-dark .cm-embed-block.cm-table-widget th {
   background-color: #004882 !important;
   color: #f1f1f1 !important;
-  text-align: left;
 }
 
+.theme-dark .markdown-reading-view td,
 .theme-dark .cm-embed-block.cm-table-widget td {
   background-color: #007fff10 !important;
 }
 
+.theme-dark .markdown-reading-view tr:nth-child(even),
 .theme-dark .cm-embed-block.cm-table-widget tr:nth-child(even) {
   background-color: #007fff20 !important;
 }
 
+.theme-dark .markdown-reading-view tr:hover,
 .theme-dark .cm-embed-block.cm-table-widget tr:hover {
   background-color: #ffffff20 !important;
 }
 
+.theme-light .markdown-reading-view th,
+.theme-light .markdown-reading-view td,
+.theme-dark .markdown-reading-view th,
+.theme-dark .markdown-reading-view td,
 .cm-embed-block.cm-table-widget th,
 .cm-embed-block.cm-table-widget td {
   border: 0 !important;
@@ -3168,8 +3180,16 @@ body:not(.is-mobile) .side-dock-settings:hover {
   padding-right: 0;
 }
 
-.markdown-reading-view>div>div>div:not(.mod-header):hover {
-  box-shadow: var(--mu-reading-indicator-left-width) 0 0 0 var(--mu-reading-indicator-color), var(--mu-reading-indicator-right-width) 0 0 0 var(--mu-reading-indicator-right);
+.markdown-reading-view>div>div>div:not(.mod-header):hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  height: 100%;
+  width: var(--mu-reading-indicator-width);
+  transform: translateX(var(--mu-reading-indicator-offset));
+  border-radius: 100vmax;
+  background-color: var(--mu-reading-indicator-color);
 }
 
 .markdown-reading-view h1::before,
@@ -3486,20 +3506,6 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .cm-comment.cm-hmd-frontmatter {
   font-style: italic;
   color: var(--code-comment);
-}
-
-/* Reading Ind position */
-.mu-reading-ind-left {
-  --mu-reading-indicator-right: transparent;
-}
-
-.mu-reading-ind-right {
-  --mu-reading-indicator-right: var(--mu-reading-indicator-color);
-}
-
-.mu-reading-ind-hide {
-  --mu-reading-indicator-color: transparent !important;
-  --mu-reading-indicator-right: transparent !important;
 }
 
 /* Folders indent */
@@ -4007,39 +4013,22 @@ settings:
         collapsed: true
     - 
         id: mu-reading-indicator-color
-        title: Reading indicators color
+        title: Reading indicator color
         type: variable-themed-color
-        description: Color of the reading indicators
+        description: Color of the reading indicator
         format: hex
         opacity: true
         default-light: '#007fffa3'
         default-dark: '#007fffa3'
-    -
-        id: mu-reading-indicators
-        title: Reading indicators
-        type: class-select
-        allowEmpty: false
-        description: Select reading indicators
-        default:  mu-reading-ind-left
-        options:
-            - 
-                label: Left indicator
-                value: mu-reading-ind-left
-            - 
-                label: Left and right
-                value: mu-reading-ind-right
-            - 
-                label: No indicators
-                value: mu-reading-ind-hide
     - 
-        id: mu-reading-indicator-width-value
-        title: Reading indicators width
-        description: Select reading indicators width in px units
+        id: mu-reading-indicator-width-value-rem
+        title: Reading indicator width
+        description: Select reading indicator width (0 = no indicator)
         type: variable-number-slider
-        default: 4
-        min: 1
-        max: 36
-        step: 1
+        default: 0.4
+        min: 0
+        max: 1
+        step: 0.1
     -
         id: mu-label-h1
         title: H1 label color
