@@ -1,5 +1,10 @@
 # Changelog
 
+## [10.0.2] - 2023-12-31
+### Improvements
+- Tables adjustments in reading mode.
+- Reading indicator rounded corners and slider adjustments (Style Settings).
+
 ## [9.0.0] - 2023-12-20
 ### Improvements
 - Plugins compatibility adjustments: **Full Calendar** and **Kanban**.
