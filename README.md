@@ -106,9 +106,8 @@ Submenus:
 
 ◼ **Reading Mode**
 
-- **Reading indicators** (3 options: **left**, **left and right** and **no indicators**)
-- **Reading indicators width** - slider controller
-- **Reading indicators color**
+- **Reading indicator width** - slider controller
+- **Reading indicator color**
 - **H1-H6 label colors** (independent colors for light and dark modes)
 
 ◼ **UI Advanced Settings** (Desktop Version)
