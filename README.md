@@ -182,6 +182,16 @@ Submenus:
 
 </details>
 
+## Dark Sidebar (Light Mode)
+
+![Dark sidebar - light mode](images/magicuser_obsidian_themes_sidebar.png)
+
+- *Style Settings*: Enable dark sidebar in light mode (compatible with preset themes)
+
+> **Style Settings** -> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
+ 
+![Dark sidebar - light mode](images/settings_dark_sidebar.png)
+
 ## Distraction-free Mode
 
 ![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
