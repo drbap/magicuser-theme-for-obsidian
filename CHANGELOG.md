@@ -1,5 +1,10 @@
 # Changelog
 
+## [10.1.0] - 2024-01-05
+### Improvements
+- Dark sidebar (light mode) - 7 themes (main theme = preset themes, Style Settings).
+- Adjustments to improve Kanban plugin layout.
+ 
 ## [10.0.2] - 2023-12-31
 ### Improvements
 - Tables adjustments in reading mode.
