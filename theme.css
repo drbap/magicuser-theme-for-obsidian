@@ -348,7 +348,7 @@ body {
 
   /* File navigator */
   --nav-item-background-active: #007fff28;
-  --nav-item-background-hover: #007fff10;
+  --nav-item-background-hover: #007fff18;
   --nav-item-size: var(--font-ui-small);
   --nav-item-color: var(--text-muted);
   --nav-item-color-hover: var(--text-normal);
@@ -698,6 +698,8 @@ body {
   --mu-file-color-hue-value: 0;
   --mu-file-color-hue: calc(var(--mu-file-color-hue-value) * 1deg);
   --mu-header-title-drag: no-drag;
+  --mu-dark-sidebar-color: #001122;
+  --mu-bg-search-results: #001836;
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
   --mu-stacked-mode-border-color: #d372ff;
@@ -2902,6 +2904,10 @@ input[type=date] {
   background-color: var(--mu-background-color-2);
 }
 
+.kanban-plugin__lane-input-actions button {
+  background-color: var(--text-accent);
+  color: var(--text-on-accent);
+}
 
 /* Code Adjustments */
 .theme-dark .cm-attribute {
@@ -3270,6 +3276,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h4: #0048a3;
   --mu-h5: #0048a3;
   --mu-h6: #0048a3;
+  --mu-dark-sidebar-color: #250035;
 }
 
 .theme-dark.magicuser-purple-theme {
@@ -3299,6 +3306,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h4: #0048a3;
   --mu-h5: #0048a3;
   --mu-h6: #0048a3;
+  --mu-dark-sidebar-color: #002121;
 }
 
 .theme-dark.magicuser-teal-theme {
@@ -3331,6 +3339,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h4: #0048a3;
   --mu-h5: #0048a3;
   --mu-h6: #0048a3;
+  --mu-dark-sidebar-color: #1e2117;
 }
 
 .theme-dark.magicuser-camouflage-theme {
@@ -3367,6 +3376,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h4: #0072d3;
   --mu-h5: #0072d3;
   --mu-h6: #0072d3;
+  --mu-dark-sidebar-color: #181818;
 }
 
 .theme-dark.magicuser-gray-theme {
@@ -3403,6 +3413,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h4: #0048a3;
   --mu-h5: #0048a3;
   --mu-h6: #0048a3;
+  --mu-dark-sidebar-color: #3f1423;
 }
 
 .theme-dark.magicuser-room-lamp-theme {
@@ -3448,6 +3459,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-h6: #0048a3;
   --mu-text-selection: #bf48ff33;
   --mu-suggestion-color: #0072d3;
+  --mu-dark-sidebar-color: #000b15;
 }
 
 .theme-dark.magicuser-moon-theme {
@@ -3472,6 +3484,37 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-text-selection: #bf48ff55;
   --text-normal: #c1c1c1;
   --mu-suggestion-color: #00a3ff;
+}
+
+/* Sidebar adjustment - light mode */
+.theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
+  --mu-sidebar-folder: #97bff1 !important;
+  --mu-bg-search-results: #2f0f18;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-moon-theme {
+  --mu-sidebar-folder: #729fd8 !important;
+  --mu-bg-search-results: #001122;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
+  --mu-sidebar-folder: #a0ac82 !important;
+  --mu-bg-search-results: #24281c;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-gray-theme {
+  --mu-sidebar-folder: #72a3ff;
+  --mu-bg-search-results: #1f1f1f;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-teal-theme {
+  --mu-sidebar-folder: #72a3ff;
+  --mu-bg-search-results: #002828;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-purple-theme {
+  --mu-sidebar-folder: #72a3ff;
+  --mu-bg-search-results: #330048;
 }
 
 /* Frontmatter md */
@@ -3692,6 +3735,85 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   color: #e1e1e1;
 }
 
+
+/* Custom sidebar - light mode */
+.theme-light.mu-sidebar-dark {
+  --mu-sidebar-folder: #72a3ff;
+  --nav-item-color: #a3a3a3;
+  --nav-item-color-hover: #a3a3a3;
+  --nav-item-color-active: #a3a3a3;
+  --nav-item-color-selected: #cfcfcf;
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content {
+  background-color: var(--mu-dark-sidebar-color);
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
+  color: #a3a3a3 !important;
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] table {
+  --color-dot: #cfcfcf;
+  --color-arrow: #cfcfcf;
+  --color-button: #cfcfcf;
+  --color-text-title: #cfcfcf;
+  --color-text-heading: #cfcfcf;
+  --color-text-day: #cfcfcf;
+  --color-text-today: var(--text-accent);
+  --color-text-weeknum: #cfcfcf;
+}
+
+.theme-light.mu-sidebar-dark table.calendar.svelte-pcimu8 th {
+  color: #727272 !important;
+}
+
+.theme-light.mu-sidebar-dark .arrow svg,
+.theme-light.mu-sidebar-dark .reset-button {
+  color: #727272 !important;
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown {
+  color: #a3a3a3;
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown:hover {
+  color: #0072d3;
+}
+
+.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-inner.nav-file-title-content,
+.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
+.theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
+.theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
+.outgoing-link-pane>.tree-item-self {
+  color: #a3a3a3 !important;
+}
+
+.theme-light.mu-sidebar-dark .search-result-file-match {
+  background-color: var(--mu-bg-search-results);
+  color: #a3a3a3;
+}
+
+.theme-light.mu-sidebar-dark .embedded-backlinks .tree-item-inner {
+  color: #000 !important;
+}
+
+.theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match {
+  background-color: var(--background-secondary);
+  color: #000 !important;
+}
+
+.theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match:hover {
+  background-color: hsla(var(--color-accent-hsl), 0.8) !important;
+  color: var(--text-on-accent);
+}
+
+.theme-light.mu-sidebar-dark .search-result-file-match:hover {
+  background-color: hsla(var(--color-accent-hsl), 0.8) !important;
+  color: var(--text-on-accent);
+}
+
+
 /* Style Settings */
 
 /* @settings
@@ -3774,6 +3896,11 @@ settings:
         default-light: '#d1dfff'
         default-dark: '#001122'
     -
+        id: mu-sidebar-dark
+        title: Dark sidebar (light mode)
+        description:  Turn on dark sidebar (light mode)
+        type: class-toggle
+    -
         id: mu-caret-color
         title: Caret color
         type: variable-themed-color
@@ -3817,7 +3944,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#d372ff'
-        default-dark: '#d372ff'  
+        default-dark: '#d372ff'
     -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
