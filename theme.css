@@ -837,12 +837,12 @@ body.is-translucent.theme-dark input[type="text"] {
 }
 
 .tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged {
-  color: #f1f1f1 !important;
+  color: var(--text-on-accent) !important;
 }
 
 .tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-being-dragged svg {
-  color: #f1f1f1 !important;
-  stroke: #f1f1f1 !important;
+  color: var(--text-on-accent) !important;
+  stroke: var(--text-on-accent) !important;
 }
 
 .nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
@@ -3781,7 +3781,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   color: #0072d3;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-inner.nav-file-title-content,
+.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
 .theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
 .theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
 .theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
@@ -3899,6 +3899,7 @@ settings:
         id: mu-sidebar-dark
         title: Dark sidebar (light mode)
         description:  Turn on dark sidebar (light mode)
+        addCommand: true
         type: class-toggle
     -
         id: mu-caret-color
@@ -3990,11 +3991,13 @@ settings:
         id: mu-hide-folders
         title: Hide folder icons
         description:  Toggle folder icons
+        addCommand: true
         type: class-toggle
     -
         id: mu-hide-file-icons
         title: Hide file icons
         description:  Toggle file icons
+        addCommand: true
         type: class-toggle
     -
         id: magicuser-theme-indent-guides-color
