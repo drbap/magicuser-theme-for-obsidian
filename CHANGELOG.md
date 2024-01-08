@@ -2,7 +2,7 @@
 
 ## [10.2.0] - 2024-01-08
 ### Improvements
-- File/folder dragging: File and folder selected color adjusted based on accent color.
+- File/folder dragging: File and folder name color adjusted based on accent color (while dragging).
 - Dark sidebar can be triggered using the command palette and you can also add a custom shortcut.
 - Toggle hide folder icons (command palette and shortcut).
 - Toggle hide file icons (command palette and shortcut).
