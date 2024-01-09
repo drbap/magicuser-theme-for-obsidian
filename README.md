@@ -204,7 +204,7 @@ Activate this mode using the Style Settings plugin:
 
 ![Dark sidebar - light mode](images/magicuser_obsidian_themes_sidebar.png)
 
-- *Style Settings*: Enable dark sidebar in light mode (compatible with preset themes)
+- Style Settings: Enable dark sidebar in light mode (compatible with preset themes)
 
 > **Style Settings** -> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
  
@@ -228,12 +228,15 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Indent Guides](images/magicuser_indent_guides.png)
 
-You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
+You can customize the **indent guides colors** using the Style Settings plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
 
 ## Sidebar Open Folder Area
 
 ![Sidebar Open Folder Area](images/magicuser_folder_area.png)
 
+- Style Settings: select sidebar open folder area **border color**.
+- Style Settings: select sidebar open folder area **background color**.
+- Style Settings: **hide** sidebar open folder area.
 
 ## Custom Checkbox Icons
 
