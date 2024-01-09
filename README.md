@@ -182,7 +182,7 @@ Submenus:
 
 </details>
 
-## Rainbow Colored Background Folders
+## Rainbow Folders
 
 ![Rainbow Colored Special Folders](images/magicuser_special_folders.png)
 
