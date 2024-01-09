@@ -182,6 +182,24 @@ Submenus:
 
 </details>
 
+## Rainbow Colored Background Folders
+
+![Rainbow Colored Special Folders](images/magicuser_special_folders.png)
+
+- When activated, this mode will highlight the background of folders starting with the numbers "01-" and/or "001-" to "08-" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
+- All **subfolders** will have the same color of the top folder.
+
+**Folder name**:
+
+`Number` + ` ` (space) and/or 
+`Number` + "-" (hyphen or minus)
+
+**Example**:
+`01-Folder name` or `01 Folder name`
+
+Activate this mode using the Style Settings plugin:
+> UI Settings -> Icons and Folders -> Rainbow colored background folders 
+
 ## Dark Sidebar (Light Mode)
 
 ![Dark sidebar - light mode](images/magicuser_obsidian_themes_sidebar.png)
@@ -202,8 +220,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
 
-- *Style Settings*: You can add a **shortcut** to toggle distraction-free mode. You can also activate/deactivate distraction-free mode using the **command palette**.
-
 ## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
@@ -213,6 +229,11 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 ![Indent Guides](images/magicuser_indent_guides.png)
 
 You can customize the **indent guides colors** using the *Style Settings* plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
+
+## Sidebar Open Folder Area
+
+![Sidebar Open Folder Area](images/magicuser_folder_area.png)
+
 
 ## Custom Checkbox Icons
 
