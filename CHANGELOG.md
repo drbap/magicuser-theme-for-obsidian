@@ -6,7 +6,6 @@
 - Style Settings: select sidebar open folder area border color.
 - Style Settings: select sidebar open folder area background color.
 - Style Settings: hide sidebar open folder area.
-
 - Style Settings: Removed addCommand / shortcuts
 
 ## [10.2.0] - 2024-01-08
