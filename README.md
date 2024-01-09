@@ -22,7 +22,7 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 In order to activate the Translucent Dark and Translucent Light themes, turn on "**Translucent window**".
 
-### Plugins Compatibility
+## Plugins Compatibility
 
 ![MagicUser Theme - Community Plugins Compatibility](images/magicuser_theme_plugins_compatibility.png)
 
