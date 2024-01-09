@@ -700,6 +700,8 @@ body {
   --mu-header-title-drag: no-drag;
   --mu-dark-sidebar-color: #001122;
   --mu-bg-search-results: #001836;
+  --mu-folder-area-border: #007fff30;
+  --mu-folder-area-background: #007fff10;
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
   --mu-stacked-mode-border-color: #d372ff;
@@ -946,6 +948,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-label-h5: #a35fbf;
   --mu-label-h6: #a35fbf;
   --mu-text-selection: #0051f1a3;
+  --mu-special-folder-color: #f1f1f1a3;
   --mu-suggestion-color: #00d3ff;
   --mu-caret-color: #00cfff;
 }
@@ -1140,6 +1143,7 @@ body.is-translucent.theme-dark input[type="text"] {
   --text-muted: #353535;
   --mu-text-selection: #0051f136;
   --mu-suggestion-color: #0072d3;
+  --mu-special-folder-color: #000;
   --interactive-normal: var(--mu-background-color-2);
   --interactive-hover: #007fff48;
 }
@@ -3743,6 +3747,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   --nav-item-color-hover: #a3a3a3;
   --nav-item-color-active: #a3a3a3;
   --nav-item-color-selected: #cfcfcf;
+  --mu-special-folder-color: #f1f1f1a3;
 }
 
 .theme-light.mu-sidebar-dark .workspace-leaf-content {
@@ -3813,6 +3818,149 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   color: var(--text-on-accent);
 }
 
+/* Special Folders */
+div.workspace-tab-container>div:nth-child(n)>div>div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div:nth-child(n+2) {
+  border: 1px solid transparent;
+}
+
+div.workspace-tab-container>div:nth-child(n)>div>div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-children>div:nth-child(n+2):not(.is-collapsed, .nav-file) {
+  border: 1px solid var(--mu-folder-area-border);
+  background-color: var(--mu-folder-area-background);
+  border-radius: .2rem;
+}
+
+.mu-hide-folder-open-area {
+  --mu-folder-area-border: transparent !important;
+  --mu-folder-area-background: transparent !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="001 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="001-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="01-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="01 "] {
+  background-color: #f1000057 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="001 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="001-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="01-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="01 "]:hover {
+  background-color: #f1000088 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="002 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="002-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="02-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="02 "] {
+  background-color: #f18f0057 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="002 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="002-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="02-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="02 "]:hover {
+  background-color: #f18f0088 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="003 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="003-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="03-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="03 "] {
+  background-color: #f1f10057 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="003 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="003-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="03-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="03 "]:hover {
+  background-color: #f1f10088 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="004 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="004-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="04-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="04 "] {
+  background-color: #00f10057 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="004 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="004-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="04-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="04 "]:hover {
+  background-color: #00f10088 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="005 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="005-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="05-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="05 "] {
+  background-color: #0000f157 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="005 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="005-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="05-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="05 "]:hover {
+  background-color: #0000f188 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="006 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="006-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="06-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="06 "] {
+  background-color: #83008357 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="006 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="006-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="06-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="06 "]:hover {
+  background-color: #83008388 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="007 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="007-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="07-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="07 "] {
+  background-color: #f100f157 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="007 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="007-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="07-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="07 "]:hover {
+  background-color: #f100f188 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="008 "],
+.mu-rainbow-folders .nav-folder-title[data-path^="008-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="08-"],
+.mu-rainbow-folders .nav-folder-title[data-path^="08 "] {
+  background-color: #82828257 !important;
+  color: var(--mu-special-folder-color) !important;
+}
+
+.mu-rainbow-folders .nav-folder-title[data-path^="008 "]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="008-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="08-"]:hover,
+.mu-rainbow-folders .nav-folder-title[data-path^="08 "]:hover {
+  background-color: #82828288 !important;
+  color: var(--mu-special-folder-color) !important;
+}
 
 /* Style Settings */
 
@@ -3898,8 +4046,7 @@ settings:
     -
         id: mu-sidebar-dark
         title: Dark sidebar (light mode)
-        description:  Turn on dark sidebar (light mode)
-        addCommand: true
+        description: Turn on dark sidebar (light mode)
         type: class-toggle
     -
         id: mu-caret-color
@@ -3953,6 +4100,34 @@ settings:
         level: 3
         collapsed: true
     -
+        id: mu-rainbow-folders
+        title: Rainbow colored background folders
+        description: Special rainbow colored folders (001-,01- to 008-,08-) 
+        type: class-toggle
+    -
+        id: mu-folder-area-border
+        title: Sidebar open folder area border
+        type: variable-themed-color
+        description: Open folder area border color
+        format: hex
+        opacity: true
+        default-light: '#007fff30'
+        default-dark: '#007fff30'
+    -
+        id: mu-folder-area-background
+        title: Sidebar open folder area background
+        type: variable-themed-color
+        description: Open folder area background color
+        format: hex
+        opacity: true
+        default-light: '#007fff10'
+        default-dark: '#007fff10'
+    -
+        id: mu-hide-folder-open-area
+        title: Hide sidebar open folder area
+        description: Hide sidebar open folder area
+        type: class-toggle
+    -
         id: mu-sidebar-folder
         title: Folder name color
         type: variable-themed-color
@@ -3991,13 +4166,11 @@ settings:
         id: mu-hide-folders
         title: Hide folder icons
         description:  Toggle folder icons
-        addCommand: true
         type: class-toggle
     -
         id: mu-hide-file-icons
         title: Hide file icons
         description:  Toggle file icons
-        addCommand: true
         type: class-toggle
     -
         id: magicuser-theme-indent-guides-color
@@ -4223,7 +4396,6 @@ settings:
         id: mu-distraction-free-mode
         title: Distraction-free mode 
         description: Activate distraction-free mode
-        addCommand: true
         type: class-toggle
     -
         id: mu-hide-nav-buttons-container
