@@ -1,5 +1,14 @@
 # Changelog
 
+## [11.0.0] - 2024-01-09
+- Style Settings: Rainbow colored special folders (001-,01- to 08-,008-)
+- Sidebar open folder area.
+- Style Settings: select sidebar open folder area border color.
+- Style Settings: select sidebar open folder area background color.
+- Style Settings: hide sidebar open folder area.
+
+- Style Settings: Removed addCommand / shortcuts
+
 ## [10.2.0] - 2024-01-08
 ### Improvements
 - File/folder dragging: File and folder name color adjusted based on accent color (while dragging).
