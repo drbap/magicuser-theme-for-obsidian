@@ -195,10 +195,10 @@ Submenus:
 `Number` + "-" (hyphen or minus)
 
 **Example**:
-`01-Folder name` or `01 Folder name`
+`01 Folder name` or `01-Folder name`
 
 Activate this mode using the Style Settings plugin:
-> UI Settings -> Icons and Folders -> Rainbow colored background folders 
+> **UI Settings** -> **Icons and Folders** -> Rainbow colored background folders 
 
 ## Dark Sidebar (Light Mode)
 
@@ -275,8 +275,6 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 
 ![Additional Pen Callouts](images/magicuser_p_callouts.png)
 
-
-
 ### Quote Callouts
 
 `> [!q-` + `color] Quote`
@@ -284,8 +282,6 @@ You can customize the **indent guides colors** using the *Style Settings* plugin
 *Colors*: green, blue, orange, yellow, red, pink, purple
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_q_callouts.png)
-
-
 
 ### Box Callouts
 
