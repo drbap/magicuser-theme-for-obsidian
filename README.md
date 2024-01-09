@@ -192,7 +192,7 @@ Submenus:
 **Folder name**:
 
 `Number` + ` ` (space) and/or 
-`Number` + "-" (hyphen or minus)
+`Number` + `-` (hyphen or minus)
 
 **Example**:
 `01 Folder name` or `01-Folder name`
