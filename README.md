@@ -369,7 +369,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 ## Feedback and Support
 
-Fellow MagicUser! Support this theme by giving it a star on its GitHub repo. The more stars, the brighter the project shines; you'll be illuminating the path for new features and future updates. Share your ideas and feedback! Whether it's a feature wish, a usability tweak, or a design suggestion, you can help guide this theme's evolution.
+✨ Fellow MagicUser! Support this theme by giving it a star on its GitHub repo. The more stars, the brighter the project shines; you'll be illuminating the path for new features and future updates. Share your ideas and feedback! Whether it's a feature wish, a usability tweak, or a design suggestion, you can help guide this theme's evolution.
 
 ## License and Acknowledgements
 
