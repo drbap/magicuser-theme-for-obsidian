@@ -210,6 +210,12 @@ Activate this mode using the Style Settings plugin:
  
 ![Dark sidebar - light mode](images/settings_dark_sidebar.png)
 
+## Neon Mode
+
+![Neon mode](images/magicuser_theme_neon_mode.gif)
+
+> **Style Settings** -> **Headings H1-H6** -> Neon mode
+
 ## Distraction-free Mode
 
 ![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
