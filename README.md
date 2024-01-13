@@ -212,9 +212,11 @@ Activate this mode using the Style Settings plugin:
 
 ## Neon Mode
 
-![Neon mode](images/magicuser_theme_neon_mode.gif)
+![Neon mode - gif](images/magicuser_theme_neon_mode.gif)
 
 > **Style Settings** -> **Headings H1-H6** -> Neon mode
+
+![Neon mode](images/magicuser_neon_mode.png)
 
 ## Distraction-free Mode
 
