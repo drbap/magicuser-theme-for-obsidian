@@ -3962,6 +3962,94 @@ div.workspace-tab-container>div:nth-child(n)>div>div.nav-files-container.node-in
   color: var(--mu-special-folder-color) !important;
 }
 
+/* Neon Mode */
+.theme-dark.mu-neon-mode {
+  --mu-neon-h1: #00e1ff;
+  --mu-neon-h1-glow: #00e1ffa3;
+  --mu-neon-h2: #d372ff;
+  --mu-neon-h2-glow: #d372ffa3;
+  --mu-neon-h3: #ffbf48;
+  --mu-neon-h3-glow: #ffbf48a3;
+  --mu-neon-h4: #72ff72;
+  --mu-neon-h4-glow: #72ff72a3;
+  --mu-neon-h5: #ff7272;
+  --mu-neon-h5-glow: #ff7272a3;
+  --mu-neon-h6: #f1f138;
+  --mu-neon-h6-glow: #f1f138a3;
+}
+
+.theme-light.mu-neon-mode {
+  --mu-neon-h1: #007fff;
+  --mu-neon-h1-glow: #007fffa3;
+  --mu-neon-h2: #c547ff;
+  --mu-neon-h2-glow: #c547ffa3;
+  --mu-neon-h3: #eb9800;
+  --mu-neon-h3-glow: #eb9800a3;
+  --mu-neon-h4: #00c000;
+  --mu-neon-h4-glow: #00c000a3;
+  --mu-neon-h5: #b10000;
+  --mu-neon-h5-glow: #b10000a3;
+  --mu-neon-h6: #828200;
+  --mu-neon-h6-glow: #828200a3;
+}
+
+.mu-neon-mode .markdown-reading-view h1,
+.mu-neon-mode .cm-header.cm-header-1 {
+  text-shadow: 0 0 .5em var(--mu-neon-h1-glow) !important;
+  color: var(--mu-neon-h1) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h2,
+.mu-neon-mode .cm-header.cm-header-2 {
+  text-shadow: 0 0 .5em var(--mu-neon-h2-glow) !important;
+  color: var(--mu-neon-h2) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h3,
+.mu-neon-mode .cm-header.cm-header-3 {
+  text-shadow: 0 0 .5em var(--mu-neon-h3-glow) !important;
+  color: var(--mu-neon-h3) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h4,
+.mu-neon-mode .cm-header.cm-header-4 {
+  text-shadow: 0 0 .5em var(--mu-neon-h4-glow) !important;
+  color: var(--mu-neon-h4) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h5,
+.mu-neon-mode .cm-header.cm-header-5 {
+  text-shadow: 0 0 .5em var(--mu-neon-h5-glow) !important;
+  color: var(--mu-neon-h5) !important;
+}
+
+.mu-neon-mode .markdown-reading-view h6,
+.mu-neon-mode .cm-header.cm-header-6 {
+  text-shadow: 0 0 .5em var(--mu-neon-h6-glow) !important;
+  color: var(--mu-neon-h6) !important;
+}
+
+/* Outline  Indent Colors*/
+div.view-content.node-insert-event .tree-item-children {
+  border-left: 1px solid var(--mu-indent-color-level-1);
+}
+
+div.view-content.node-insert-event .tree-item-children .tree-item-children {
+  border-left: 1px solid var(--mu-indent-color-level-2);
+}
+
+div.view-content.node-insert-event .tree-item-children .tree-item-children .tree-item-children {
+  border-left: 1px solid var(--mu-indent-color-level-3);
+}
+
+div.view-content.node-insert-event .tree-item-children .tree-item-children .tree-item-children .tree-item-children {
+  border-left: 1px solid var(--mu-indent-color-level-4);
+}
+
+div.view-content.node-insert-event .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children {
+  border-left: 1px solid var(--mu-indent-color-level-5);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -4434,6 +4522,11 @@ settings:
         description: H1-H6 font, font sizes and colors
         level: 2
         collapsed: true
+    -
+        id: mu-neon-mode
+        title: Neon mode
+        description: Activate headings neon mode (live preview, source and reading modes)
+        type: class-toggle
     -
         id: mu-font-headings
         title: Headings font (H1-H6)
