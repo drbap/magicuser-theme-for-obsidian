@@ -1,5 +1,9 @@
 # Changelog
 
+## [11.1.0] - 2024-01-13
+- Style Settings: Neon mode (headings)
+- Outline: indent guides color (same colors as file explorer).
+
 ## [11.0.0] - 2024-01-09
 - Style Settings: Rainbow colored special folders (001-,01- to 08-,008-)
 - Sidebar open folder area.
