@@ -228,6 +228,15 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
 
+## Reading Mode: Reading Glow Effect and Reading Indicator
+
+![Distraction-free Mode Draggable](images/magicuser_theme_reading_mode.gif)
+
+- Reading Mode: **Reading glow** effect.
+- Style Settings: Reading glow **color** (7 colors).
+- Style Settings: Reading glow border size.
+- Style Settings: Reading glow corners size (0 = square corners).
+
 ## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
