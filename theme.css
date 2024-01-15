@@ -682,6 +682,12 @@ body {
   --mu-file-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3C/svg%3E");
   --mu-canvas-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230048cf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='7' height='9' x='3' y='3' rx='1'/%3E%3Crect width='7' height='5' x='14' y='3' rx='1'/%3E%3Crect width='7' height='9' x='14' y='12' rx='1'/%3E%3Crect width='7' height='5' x='3' y='16' rx='1'/%3E%3C/svg%3E");
 
+  --mu-reading-glow-color: #00a3ff;
+  --mu-reading-glow-radius-value: 1;
+  --mu-reading-glow-radius: calc(var(--mu-reading-glow-radius-value) * 4px);
+  --mu-reading-glow-border-size-value: 3;
+  --mu-reading-glow-border-size: calc(var(--mu-reading-glow-border-size-value) * 1px);
+
   --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-width-value-rem: 0.3;
   --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * 1rem);
@@ -3182,7 +3188,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 /* Reading mode */
 
-.markdown-reading-view>div>div>div:not(.mod-header) {
+.markdown-reading-view>div>div>div:not(.mod-header, *:active) {
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -3190,7 +3196,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   padding-right: 0;
 }
 
-.markdown-reading-view>div>div>div:not(.mod-header):hover::before {
+.markdown-reading-view>div>div>div:not(.mod-header, .mod-header, *:active):hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -4050,6 +4056,60 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
   border-left: 1px solid var(--mu-indent-color-level-5);
 }
 
+/* Reading Glow */
+.markdown-reading-view h1:active,
+.markdown-reading-view h2:active,
+.markdown-reading-view h3:active,
+.markdown-reading-view h4:active,
+.markdown-reading-view h5:active,
+.markdown-reading-view h6:active,
+.markdown-reading-view div>ol:active,
+.markdown-reading-view div>ul:active,
+.markdown-reading-view pre:active,
+.markdown-reading-view blockquote:active,
+.markdown-reading-view .callout:active,
+.markdown-reading-view div:not(.callout-content)>p:active {
+  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
+  transition: box-shadow .5s;
+  border-radius: var(--mu-reading-glow-radius);
+}
+
+/* Reading glow */
+.reading-glow-blue {
+  --mu-reading-glow-color: #00a3ff;
+}
+
+.reading-glow-green {
+  --mu-reading-glow-color: #00ff88;
+}
+
+.reading-glow-orange {
+  --mu-reading-glow-color: #ff7f00;
+}
+
+.reading-glow-red {
+  --mu-reading-glow-color: #f10000;
+}
+
+.reading-glow-yellow {
+  --mu-reading-glow-color: #ffd700;
+}
+
+.reading-glow-pink {
+  --mu-reading-glow-color: #ff88cf;
+}
+
+.reading-glow-purple {
+  --mu-reading-glow-color: #bf48ff;
+}
+
+/* Reading glow status */
+
+.mu-reading-glow-status-off {
+  --mu-reading-glow-color: transparent;
+  --mu-reading-glow-trans-property: none;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -4420,6 +4480,58 @@ settings:
         min: 0
         max: 1
         step: 0.05
+    -
+        id: mu-reading-glow
+        title: Reading glow color
+        type: class-select
+        description: Reading glow color
+        allowEmpty: false
+        default: reading-glow-blue
+        options:
+            - 
+                label: Blue glow
+                value: reading-glow-blue
+            - 
+                label: Green glow
+                value: reading-glow-green
+            - 
+                label: Orange glow
+                value: reading-glow-orange
+            - 
+                label: Yellow glow
+                value: reading-glow-yellow
+            - 
+                label: Red glow
+                value: reading-glow-red
+            - 
+                label: Pink glow
+                value: reading-glow-pink
+            - 
+                label: Purple glow
+                value: reading-glow-purple
+    -
+        id: mu-reading-glow-border-size-value
+        title: Reading glow border size
+        description: Reading glow border size (0 = glow only)
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 8
+        step: 1
+    -
+        id: mu-reading-glow-radius-value
+        title: Reading glow corners
+        description: Reading glow corners (0 = square corners)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 0.5
+    -
+        id: mu-reading-glow-status-off
+        title: Turn off reading glow
+        description: Turn off the reading glow effect
+        type: class-toggle
     -
         id: mu-label-h1
         title: H1 label color
