@@ -1,5 +1,11 @@
 # Changelog
 
+## [11.2.0] - 2024-01-15
+- Reading Mode: **Reading glow** effect to highlight important areas (click on the content).
+- Style Settings: Reading glow **color** (7 colors).
+- Style Settings: Reading glow border size.
+- Style Settings: Reading glow corners size (0 = square corners).
+
 ## [11.1.0] - 2024-01-13
 - Style Settings: Neon mode (headings).
 - Outline indent guides colors (same colors as file explorer). You can customize the colors (Style Settings).
