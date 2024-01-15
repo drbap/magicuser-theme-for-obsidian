@@ -4107,7 +4107,6 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 
 .mu-reading-glow-status-off {
   --mu-reading-glow-color: transparent;
-  --mu-reading-glow-trans-property: none;
 }
 
 /* Style Settings */
