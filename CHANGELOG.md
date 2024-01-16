@@ -2,7 +2,7 @@
 
 
 ## [11.3.0] - 2024-01-16
-- **Dataview tables can be converted to cards**. Add cssclasses property (with `cards` class) on the note you want to transform the dataview tables to cards. This cards class was inpired by @kepano excellent Minimal theme, but it is a different code and look. I hope you also find it useful.
+- **Dataview tables can be converted to cards**. Add cssclasses property (with `cards` class) on the note you want to transform the dataview tables to cards. This cards class was inspired by @kepano excellent Minimal theme, but it is a different code and look. I hope you also find it useful.
 - Dataview: Comments in italic (live preview).
 
 ## [11.2.0] - 2024-01-15
