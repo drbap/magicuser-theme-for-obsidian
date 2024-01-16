@@ -711,6 +711,8 @@ body {
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
   --mu-stacked-mode-border-color: #d372ff;
+  /* Th Cards Layout */
+  --cards-th-display: none;
 }
 
 body.is-translucent {
@@ -2828,7 +2830,7 @@ li[data-task="G"]>p>input:checked::after {
 
 .theme-light .markdown-reading-view tr:hover,
 .theme-light .cm-embed-block.cm-table-widget tr:hover {
-  background-color: #00000020 !important;
+  background-color: #ffff0030 !important;
 }
 
 .theme-dark .markdown-reading-view table,
@@ -2856,7 +2858,7 @@ li[data-task="G"]>p>input:checked::after {
 
 .theme-dark .markdown-reading-view tr:hover,
 .theme-dark .cm-embed-block.cm-table-widget tr:hover {
-  background-color: #ffffff20 !important;
+  background-color: #ffff0030 !important;
 }
 
 .theme-light .markdown-reading-view th,
@@ -3556,6 +3558,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   color: var(--mu-text-1);
 }
 
+.cm-comment,
 .cm-comment.cm-hmd-frontmatter {
   font-style: italic;
   color: var(--code-comment);
@@ -4107,6 +4110,134 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 
 .mu-reading-glow-status-off {
   --mu-reading-glow-color: transparent;
+}
+
+/* Dataview Table to Cards */
+
+.cards table.dataview.table-view-table {
+  display: contents;
+}
+
+.cards table.dataview.table-view-table thead.table-view-thead {
+  width: 100%;
+}
+
+.cards table.dataview.table-view-table thead {
+  display: contents;
+  width: 100%;
+  margin-top: 0;
+}
+
+.cards table.dataview.table-view-table thead tr {
+  width: 100%;
+  display: grid;
+  padding: 0;
+  margin-top: 0;
+}
+
+.cards table.dataview.table-view-table thead tr th {
+  display: var(--cards-th-display);
+}
+
+.cards table.dataview.table-view-table thead tr:hover {
+  --cards-th-display: block !important;
+  display: var(--cards-th-display);
+}
+
+.cards table.dataview.table-view-table thead tr th {
+  font-size: var(--font-smaller);
+  color: var(--mu-text-1) !important;
+}
+
+.cards table.dataview.table-view-table thead tr th:first-child {
+  display: block;
+}
+
+.cards table.dataview.table-view-table thead tr th:nth-child(n+2) {
+  border-bottom: 0 !important;
+}
+
+.cards table.dataview.table-view-table tbody,
+.cards.cards3 table.dataview.table-view-table tbody {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 8px;
+  padding: 0;
+}
+
+.cards.cards1 table.dataview.table-view-table tbody {
+  grid-template-columns: auto;
+}
+
+.cards.cards2 table.dataview.table-view-table tbody {
+  grid-template-columns: auto auto;
+}
+
+.cards.cards4 table.dataview.table-view-table tbody {
+  grid-template-columns: auto auto auto auto;
+}
+
+.cards.cards5 table.dataview.table-view-table tbody {
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.cards table.dataview.table-view-table tbody tr,
+.cards table.dataview.table-view-table tbody td {
+  display: block;
+}
+
+.cards table.dataview.table-view-table tbody td {
+  padding: 8px;
+}
+
+.cards table.dataview.table-view-table tbody td img {
+  width: 100%;
+  height: auto;
+}
+
+.cards table.dataview.table-view-table tbody tr {
+  border: 1px solid #0072d348;
+  border-radius: var(--radius-s);
+  padding: 0;
+  margin: 0;
+}
+
+.cards table.dataview.table-view-table tbody td:nth-child(n) {
+  border: 1px solid transparent;
+}
+
+.cards table.dataview.table-view-table tbody td:hover:nth-child(n) {
+  border: 1px solid #0072d348;
+  background-color: #0072d320 !important;
+}
+
+.cards table.dataview.table-view-table tbody tr:hover {
+  border: 1px solid #0072d3;
+}
+
+.cards table.dataview.table-view-table tbody td a {
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+}
+
+.cards table.dataview.table-view-table tbody td a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+  .cards table.dataview.table-view-table tbody,
+  .cards.cards1 table.dataview.table-view-table tbody,
+  .cards.cards2 table.dataview.table-view-table tbody,
+  .cards.cards3 table.dataview.table-view-table tbody,
+  .cards.cards4 table.dataview.table-view-table tbody,
+  .cards.cards5 table.dataview.table-view-table tbody {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 8px;
+    padding: 0;
+  }
+
 }
 
 /* Style Settings */
