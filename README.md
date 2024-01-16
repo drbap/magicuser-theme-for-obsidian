@@ -237,6 +237,34 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
 
+## Dataview Tables to Cards
+
+![Dataview tables to cards](images/magicuser_theme_dataviewtables_to_cards.gif)
+
+- **Dataview tables can be converted to cards**. Add cssclasses property (with `cards` class) on the note you want to transform the dataview tables to cards. This cards class was inspired by @kepano excellent Minimal theme, but it is a different code and look. I hope you also find it useful.
+
+- The default `cards` class will add **3 columns** maximum. If you want just 2 columns add `cards cards2` (cssclasses property).
+
+```frontmatter
+---
+# Display table to cards (2 columns)
+cssclasses:
+  - cards
+  - cards2
+---
+```
+
+- You can add **5 additional classes**: `cards1`, `cards2`, `cards3`, `cards4` and `cards5` (corresponding to the number of columns - 1 to 5 columns). I think this is easy to remember and implement.
+
+```frontmatter
+---
+# Display table to cards (5 columns)
+cssclasses:
+  - cards
+  - cards5
+---
+```
+
 ## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
