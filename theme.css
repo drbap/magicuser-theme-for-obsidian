@@ -783,6 +783,21 @@ body.is-translucent.theme-dark input[type="text"] {
   background-color: #000;
 }
 
+span.is-flashing {
+  color: #000;
+  -webkit-text-fill-color: #000;
+  border-radius: 0;
+  border-bottom: 3px solid var(--mu-caret-color);
+  --code-background: var(--text-highlight-bg);
+}
+
+.markdown-reading-view .is-flashing {
+  color: #000;
+  -webkit-text-fill-color: #000;
+  border-radius: 0;
+  --code-background: var(--text-highlight-bg);
+}
+
 .tree-item-self.is-clickable.mod-collapsible.nav-folder-title.is-flashing {
   background-color: #bf00ff48 !important;
 }
@@ -904,6 +919,14 @@ body.is-translucent.theme-dark input[type="text"] {
   color: #0072d3;
 }
 
+span.obsidian-search-match-highlight .cm-inline-code,
+span.obsidian-search-match-highlight {
+  background-color: var(--text-highlight-bg) !important;
+  box-shadow: 0 0 0px 3px var(--mu-caret-color) !important;
+  color: #000;
+  -webkit-text-fill-color: #000;
+}
+
 .theme-dark {
   --mu-background-color-1: #002248;
   --mu-background-color-2: #001122;
@@ -959,6 +982,10 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-special-folder-color: #f1f1f1a3;
   --mu-suggestion-color: #00d3ff;
   --mu-caret-color: #00cfff;
+  /* highlight blend mode */
+  --highlight-mix-blend-mode: normal;
+  --background-primary-alt: #82828248;
+  --background-secondary-alt: #00000048;
 }
 
 /* Dark theme settings */
@@ -999,11 +1026,6 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-dark input[type="text"],
 .theme-dark input[type="search"] {
   background-color: var(--mu-input-bg-color);
-}
-
-.theme-dark span.obsidian-search-match-highlight {
-  background-color: #00cfff88 !important;
-  box-shadow: 0 0 0px 3px #00cfff !important;
 }
 
 .theme-dark .inline-title {
@@ -1154,6 +1176,10 @@ body.is-translucent.theme-dark input[type="text"] {
   --mu-special-folder-color: #000;
   --interactive-normal: var(--mu-background-color-2);
   --interactive-hover: #007fff48;
+  /* highlight blend mode */
+  --highlight-mix-blend-mode: normal;
+  --background-primary-alt: #0000001f;
+  --background-secondary-alt: #ffffff7f;
 }
 
 .theme-light * {
@@ -1186,11 +1212,6 @@ body.is-translucent.theme-dark input[type="text"] {
 .theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add):hover {
   color: #000;
   background-color: #00a3ff40
-}
-
-.theme-light span.obsidian-search-match-highlight {
-  background-color: #cf00ff48 !important;
-  box-shadow: 0 0 0px 3px #cf00ff !important;
 }
 
 .theme-light .inline-title {
@@ -3431,7 +3452,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .theme-dark.magicuser-room-lamp-theme {
   --mu-background-color-1: #2f0f18;
   --mu-background-color-2: #3f1423;
-  --mu-caret-color: #d3148d;
+  --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
   --mu-setting-color: #a3a3a318;
