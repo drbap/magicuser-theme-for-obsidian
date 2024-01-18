@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [11.4.0] - 2024-01-18
+- **Global search highlight**, **same note search**, **linked mentions** and **outline text highlight** improvements. 
+  - The search result text in **live preview**, **source** and **reading** modes will appear in black text color with highlighted background (default is **yellow**, but you can select any highlight color using the Style Settings). In **live preview** and **source** modes, the text will also appear **underlined** to be easier to find. It works for all types of text (normal text, bold, italic, links, tags, code and headings).
+  - Note: The underline will be the same color of your text cursor/caret color.
+  - In **reading mode**, no underlined text during a search, just the highlighted text.
+
+- **Outline highlight**: When you click on the item (using the outline) it will highlight the text the same way (search). I think it will be easier to read, especially when using different colors for H1-H6 titles (normal mode and neon mode).
+
+- **Dataview**: primary and secondary alt-backgrounds improvements.
+
+
+### Fixes: 
+
+- Media callout black color display (reading mode).
+- MagicUser Room Lamp preset theme (dark mode): improved caret color. Easier to see.
+
 ## [11.3.0] - 2024-01-16
 - **Dataview tables can be converted to cards**. Add cssclasses property (with `cards` class) on the note you want to transform the dataview tables to cards. This cards class was inspired by @kepano excellent Minimal theme, but it is a different code and look. I hope you also find it useful.
 - Dataview: Comments in italic (live preview).
