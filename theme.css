@@ -713,6 +713,7 @@ body {
   --mu-stacked-mode-border-color: #d372ff;
   /* Th Cards Layout */
   --cards-th-display: none;
+  --mu-transparency-menus-level: 0.8;
 }
 
 body.is-translucent {
@@ -3519,6 +3520,130 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-suggestion-color: #00a3ff;
 }
 
+/* Special Background themes - BG Themes */
+/* BG Series - Light Theme */
+.theme-light.magicuser-bg-classic-theme,
+.theme-light.magicuser-bg-night-theme,
+.theme-light.magicuser-bg-dreams-theme,
+.theme-light.magicuser-bg-slide-theme,
+.theme-light.magicuser-bg-synth-theme {
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #fff;
+  --mu-caret-color: #f100f1;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #f1f1f1;
+  --mu-setting-color: #a300a320;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --code-background: #f1f1f1;
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-dark-sidebar-color: #000;
+  --tab-text-color-focused-active-current: #0072d3;
+  --mu-suggestion-color: #9700cf;
+  --mu-icon-focused: #9700f1;
+}
+
+/* Synth, Dreams and Classic */
+.theme-dark.magicuser-bg-classic-theme,
+.theme-dark.magicuser-bg-dreams-theme,
+.theme-dark.magicuser-bg-synth-theme {
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1f1f1f;
+  --mu-setting-color: #f100f110;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --code-background: #181818;
+  --tab-text-color-focused-active-current: #00a3ff;
+  --mu-icon-focused: #bf48ff;
+}
+
+/* Night */
+.theme-dark.magicuser-bg-night-theme {
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1f1f1f;
+  --mu-setting-color: #f100f110;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --code-background: #181818;
+  --tab-text-color-focused-active-current: #00a3ff;
+  --mu-suggestion-color: #00f188;
+  --mu-caret-color: #00f188;
+  --mu-icon-focused: #bf48ff;
+}
+
+/* Slide */
+.theme-dark.magicuser-bg-slide-theme {
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1f1f1f;
+  --mu-setting-color: #f100f110;
+  --mu-text-title: #bf48ff;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #bf48ff;
+  --code-background: #181818;
+  --mu-h1: #f1f100;
+  --mu-h2: #f1f100;
+  --mu-h3: #f1f100;
+  --mu-h4: #f1f100;
+  --mu-h5: #f1f100;
+  --mu-h6: #f1f100;
+  --tab-text-color-focused-active-current: #00a3ff;
+  --mu-suggestion-color: #f1f100;
+  --mu-icon-focused: #bf48ff;
+}
+
+.theme-dark.magicuser-bg-dreams-theme .view-content,
+.theme-dark.magicuser-bg-dreams-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(to bottom, #ff00ff48 0%, #000 100%),
+    linear-gradient(to top, #0000ff88, #000);
+}
+
+.theme-dark.magicuser-bg-slide-theme .view-content,
+.theme-dark.magicuser-bg-slide-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(to top, #0000a3, #000);
+}
+
+.theme-dark.magicuser-bg-synth-theme .view-content,
+.theme-dark.magicuser-bg-synth-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(to top, #f100f121, #30518ba3 40%, #000000), radial-gradient(at top left, #00004888 50%, #a300ff7f);
+  background-blend-mode: multiply;
+}
+
+.theme-dark.magicuser-bg-night-theme .view-content,
+.theme-dark.magicuser-bg-night-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(to top, #124872, #021828);
+}
+
+.theme-dark.magicuser-bg-classic-theme .view-content,
+.theme-dark.magicuser-bg-classic-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, #3a3a3a, #080808);
+}
+
+.theme-dark.magicuser-bg-classic-theme .document-search-container,
+.theme-dark.magicuser-bg-night-theme .document-search-container,
+.theme-dark.magicuser-bg-dreams-theme .document-search-container,
+.theme-dark.magicuser-bg-slide-theme .document-search-container,
+.theme-dark.magicuser-bg-synth-theme .document-search-container {
+  background: transparent;
+}
+
 /* Sidebar adjustment - light mode */
 .theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
   --mu-sidebar-folder: #97bff1 !important;
@@ -3548,6 +3673,15 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .theme-light.mu-sidebar-dark.magicuser-purple-theme {
   --mu-sidebar-folder: #72a3ff;
   --mu-bg-search-results: #330048;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
+  --mu-sidebar-folder: #72a3ff;
+  --mu-bg-search-results: #000;
 }
 
 /* Frontmatter md */
@@ -3691,6 +3825,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hide-ui-elements"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z'/%3E%3Cpath d='M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/%3E%3Cpath d='M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2'/%3E%3Cpath d='M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-main-colors"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'/%3E%3Ccircle cx='17.5' cy='10.5' r='.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='.5'/%3E%3Ccircle cx='6.5' cy='12.5' r='.5'/%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -3768,7 +3909,6 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 .theme-dark .setting-item-control .pickr-reset>button:hover {
   color: #e1e1e1;
 }
-
 
 /* Custom sidebar - light mode */
 .theme-light.mu-sidebar-dark {
@@ -4261,6 +4401,25 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 
 }
 
+/* MagicUser Compact Prompt */
+body:not(.is-mobile).mu-compact-prompt .prompt {
+  position: fixed;
+  top: unset;
+  bottom: 10px;
+  min-width: 400px;
+  width: 40%;
+  min-height: 200px;
+  height: 30%;
+}
+
+/* MagicUser Transparent Prompt and Menus - Palette */
+body:not(.is-mobile).mu-transparent-prompts-menus .graph-controls,
+body:not(.is-mobile).mu-transparent-prompts-menus .modal,
+body:not(.is-mobile).mu-transparent-prompts-menus .menu,
+body:not(.is-mobile).mu-transparent-prompts-menus .prompt {
+  opacity: var(--mu-transparency-menus-level);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -4302,6 +4461,21 @@ settings:
             - 
                 label: MagicUser Moon
                 value: magicuser-moon-theme
+            - 
+                label: MagicUser BG Night
+                value: magicuser-bg-night-theme
+            - 
+                label: MagicUser BG Synth
+                value: magicuser-bg-synth-theme
+            - 
+                label: MagicUser BG Dreams
+                value: magicuser-bg-dreams-theme
+            - 
+                label: MagicUser BG Slide
+                value: magicuser-bg-slide-theme
+            - 
+                label: MagicUser BG Classic
+                value: magicuser-bg-classic-theme
     -
         id: magicuser-theme-ui
         title: UI Settings
@@ -4748,6 +4922,31 @@ settings:
         title: Distraction-free mode 
         description: Activate distraction-free mode
         type: class-toggle
+    -  
+        id: mu-compact-prompt
+        title: Compact prompts
+        description: Activate compact version of command palette and prompts
+        type: class-toggle
+    -  
+        id: mu-transparent-prompts-menus
+        title: Transparent menus, modals and prompts
+        description: Activate transparency (menus, modals and prompts)
+        type: class-toggle
+    - 
+        id: mu-transparency-menus-level
+        title: Transparency level
+        description: Adjust the transparency level (menus, modals and prompts)
+        type: variable-number-slider
+        default: 0.8
+        min: 0.6
+        max: 1
+        step: 0.05
+    -
+        id: magicuser-theme-hide-ui-elements
+        title: Hide UI Elements
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-hide-nav-buttons-container
         title: Hide sidebar buttons
