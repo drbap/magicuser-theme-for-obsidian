@@ -69,9 +69,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
 **MagicUser BG Series**
+
 ![MagicUser BG Series](images/magicuser_preset_bg_themes.png)
 
 **MagicUser BG Series (Light Themes)**
+
 ![MagicUser BG Series](images/magicuser_preset_bg_themes_light.png)
 
 </details>
