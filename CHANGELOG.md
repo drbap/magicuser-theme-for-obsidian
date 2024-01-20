@@ -1,6 +1,34 @@
 # Changelog
 
 
+## [12.0.0] - 2024-01-19
+### Improvements
+
+**Style Settings**:
+- **Advanced UI Settings** Improvements
+  - New submenu: **Hide UI Elements** (the hide and auto-hide features are more organized in this submenu).
+    - Hide sidebar buttons (new note, new folder and others)
+    - Show/hide tab navigation back and forward buttons
+    - Auto hide title bar top left buttons
+    - Auto hide top side buttons
+    - Auto hide bottom side buttons
+    - Auto hide status bar
+
+  - New: **Compact command palette and prompts** (toggle). When activated, the prompts will have a compact size at the bottom part of the screen (e.g. command palette).
+
+  - New: **Transparent menus** and **prompts** (toggle).
+
+  - New: **Transparency level adjustment** (slider). You can control the transparency level of the menus, modals and prompts.
+
+- **New Preset Themes**: **MagicUser BG Series** (BG = backgrounds)
+  - BG **Night**
+  - BG **Synth** (80s style)
+  - BG **Dreams** (80s style)
+  - BG **Slide**
+  - BG **Classic**
+
+> The **light mode** version of the MagicUser BG themes is the same. The **dark mode** version is the one with custom background.
+
 ## [11.4.0] - 2024-01-18
 - **Global search highlight**, **same note search**, **linked mentions** and **outline text highlight** improvements. 
   - The search result text in **live preview**, **source** and **reading** modes will appear in black text color with highlighted background (default is **yellow**, but you can select any highlight color using the Style Settings). In **live preview** and **source** modes, the text will also appear **underlined** to be easier to find. It works for all types of text (normal text, bold, italic, links, tags, code and headings).
