@@ -68,6 +68,12 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
+**MagicUser BG Series (5 Themes)**
+![MagicUser BG Series](images/magicuser_preset_bg_themes.png)
+
+**MagicUser BG Series (Light Themes)**
+![MagicUser BG Series](images/magicuser_preset_bg_themes_light.png)
+
 </details>
 
 <details>
@@ -115,6 +121,11 @@ Submenus:
 ![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
 
 - Activate **distraction-free mode**
+- **Compact command palette and prompts** (toggle)
+- **Transparent menus** and **prompts** (toggle)
+- **Transparency level adjustment** (slider).
+
+**Hide UI Elements** Submenu:
 - Hide **sidebar buttons** (new note, new folder and others)
 - Show/hide **tab navigation back and forward buttons**
 - Auto hide **title bar top left buttons**
@@ -264,6 +275,13 @@ cssclasses:
   - cards5
 ---
 ```
+
+## Transparent Menus, Modals and Prompts
+
+![MagicUser Transparency](images/magicuser_theme_transparent_menus.gif)
+
+## Compact Prompts
+![MagicUser Compact Prompts](images/magicuser_compact_prompts.png)
 
 ## Style Settings - Customize Colors for Light and Dark Modes
 
