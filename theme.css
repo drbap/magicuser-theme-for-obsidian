@@ -714,6 +714,15 @@ body {
   /* Th Cards Layout */
   --cards-th-display: none;
   --mu-transparency-menus-level: 0.8;
+  --mu-bg-image: 'url("")';
+  --mu-bg-texture: 'url("")';
+  --mu-bg-image-overlay: 0.0;
+  --mu-bg-image-scale: calc(var(--mu-bg-image-scale-value) * 1%);
+  ;
+  --mu-bg-image-scale-value: 100;
+  --mu-bg-image-save-1: '';
+  --mu-bg-image-save-2: '';
+  --mu-bg-image-save-3: '';
 }
 
 body.is-translucent {
@@ -3522,6 +3531,8 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 /* Special Background themes - BG Themes */
 /* BG Series - Light Theme */
+.theme-light.magicuser-bg-texture-theme,
+.theme-light.magicuser-bg-image-theme,
 .theme-light.magicuser-bg-classic-theme,
 .theme-light.magicuser-bg-night-theme,
 .theme-light.magicuser-bg-dreams-theme,
@@ -3551,6 +3562,8 @@ body:not(.is-mobile) .side-dock-settings:hover {
 }
 
 /* Synth, Dreams and Classic */
+.theme-dark.magicuser-bg-texture-theme,
+.theme-dark.magicuser-bg-image-theme,
 .theme-dark.magicuser-bg-classic-theme,
 .theme-dark.magicuser-bg-dreams-theme,
 .theme-dark.magicuser-bg-synth-theme {
@@ -3609,33 +3622,48 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-icon-focused: #bf48ff;
 }
 
-.theme-dark.magicuser-bg-dreams-theme .view-content,
+.theme-dark.magicuser-bg-dreams-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
 .theme-dark.magicuser-bg-dreams-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(to bottom, #ff00ff48 0%, #000 100%),
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(to bottom, #ff00ff48 0%, #000 100%),
     linear-gradient(to top, #0000ff88, #000);
 }
 
-.theme-dark.magicuser-bg-slide-theme .view-content,
+.theme-dark.magicuser-bg-slide-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
 .theme-dark.magicuser-bg-slide-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(to top, #0000a3, #000);
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(to top, #0000a3, #000);
 }
 
-.theme-dark.magicuser-bg-synth-theme .view-content,
+.theme-dark.magicuser-bg-synth-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
 .theme-dark.magicuser-bg-synth-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(to top, #f100f121, #30518ba3 40%, #000000), radial-gradient(at top left, #00004888 50%, #a300ff7f);
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(to top, #f100f121, #30518ba3 40%, #000000), radial-gradient(at top left, #00004888 50%, #a300ff7f);
   background-blend-mode: multiply;
 }
 
-.theme-dark.magicuser-bg-night-theme .view-content,
+.theme-dark.magicuser-bg-night-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
 .theme-dark.magicuser-bg-night-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(to top, #124872, #021828);
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(to top, #124872, #021828);
 }
 
-.theme-dark.magicuser-bg-classic-theme .view-content,
+.theme-dark.magicuser-bg-classic-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
 .theme-dark.magicuser-bg-classic-theme .view-content>.canvas-wrapper {
-  background: linear-gradient(0deg, #3a3a3a, #080808);
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(0deg, #3a3a3a, #080808);
 }
 
+.theme-dark.magicuser-bg-image-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
+.theme-dark.magicuser-bg-image-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))),
+    var(--mu-bg-image) center / cover fixed no-repeat;
+}
+
+.theme-dark.magicuser-bg-texture-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
+.theme-dark.magicuser-bg-texture-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))),
+    var(--mu-bg-texture) top left / var(--mu-bg-image-scale) fixed repeat;
+}
+
+
+.theme-dark.magicuser-bg-texture-theme .document-search-container,
+.theme-dark.magicuser-bg-image-theme .document-search-container,
 .theme-dark.magicuser-bg-classic-theme .document-search-container,
 .theme-dark.magicuser-bg-night-theme .document-search-container,
 .theme-dark.magicuser-bg-dreams-theme .document-search-container,
@@ -3675,6 +3703,8 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-bg-search-results: #330048;
 }
 
+.theme-light.mu-sidebar-dark.magicuser-bg-texture-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-image-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
@@ -3867,6 +3897,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-preset-bg-themes"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 3H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-3'/%3E%3Cpath d='M8 21h8'/%3E%3Cpath d='M12 17v4'/%3E%3Cpath d='m17 8 5-5'/%3E%3Cpath d='M17 3h5v5'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .style-settings-collapse-indicator {
   padding-left: 8px;
   color: #828282;
@@ -3882,6 +3919,79 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23007fff7f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z'/%3E%3C/svg%3E");
   margin-right: 4px;
   vertical-align: middle;
+}
+
+/* Background images */
+.setting-item[data-id="mu-bg-image"] .setting-item-control::before {
+  display: inline-block;
+  background-image: var(--mu-bg-image);
+  background-position: center;
+  background-size: cover;
+  width: 64px;
+  height: 36px;
+  outline: 4px solid var(--text-accent);
+  border-radius: var(--radius-s);
+  content: "";
+}
+
+.setting-item[data-id="mu-bg-texture"] .setting-item-control::before {
+  display: inline-block;
+  background-image: var(--mu-bg-texture);
+  background-position: center;
+  background-size: cover;
+  width: 64px;
+  height: 36px;
+  outline: 4px solid var(--text-accent);
+  border-radius: var(--radius-s);
+  content: "";
+}
+
+.setting-item[data-id="mu-bg-image-save-1"] .setting-item-control::before {
+  display: inline-block;
+  background-color: #001122;
+  background-image: var(--mu-bg-image-save-1);
+  background-position: center;
+  background-size: cover;
+  width: 48px;
+  height: 27px;
+  outline: 2px solid #0072d388;
+  border-radius: var(--radius-s);
+  content: "1";
+  text-shadow: 0 0 4px #00000088;
+  color: #f1f1f1;
+}
+
+.setting-item[data-id="mu-bg-image-save-2"] .setting-item-control::before {
+  display: inline-block;
+  background-color: #001122;
+  background-image: var(--mu-bg-image-save-2);
+  background-position: center;
+  background-size: cover;
+  width: 48px;
+  height: 27px;
+  outline: 2px solid #0072d388;
+  border-radius: var(--radius-s);
+  content: "2";
+  text-shadow: 0 0 4px #00000088;
+  color: #f1f1f1;
+}
+
+.setting-item[data-id="mu-bg-image-save-3"] .setting-item-control::before {
+  display: inline-block;
+  background-color: #001122;
+  background-image: var(--mu-bg-image-save-3);
+  background-size: cover;
+  width: 48px;
+  height: 27px;
+  outline: 2px solid #0072d388;
+  border-radius: var(--radius-s);
+  content: "3";
+  text-shadow: 0 0 4px #00000088;
+  color: #f1f1f1;
+}
+
+.themed-color-wrapper>div {
+  background-color: transparent;
 }
 
 /* Style Settings - further color adjustments */
@@ -4476,6 +4586,66 @@ settings:
             - 
                 label: MagicUser BG Classic
                 value: magicuser-bg-classic-theme
+            - 
+                label: MagicUser BG Image
+                value: magicuser-bg-image-theme
+            - 
+                label: MagicUser BG Texture
+                value: magicuser-bg-texture-theme
+    -
+        id: magicuser-theme-preset-bg-themes
+        title: BG Themes Settings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: mu-bg-image-overlay
+        title: Darken background
+        description: Darken background (preset BG themes - dark mode)
+        type: variable-number-slider
+        default: 0.0
+        min: 0.0
+        max: 0.90
+        step: .05
+    -
+        id: mu-bg-image
+        title:  MagicUser BG Image - background image
+        type: variable-text
+        description: Paste image URL - url("image URL")
+        default: url("")
+    -
+        id: mu-bg-texture
+        title: MagicUser BG Texture - background image
+        type: variable-text
+        description: Paste image URL - url("image URL")
+        default: url("")
+    - 
+        id: mu-bg-image-scale-value
+        title: MagicUser BG Texture - background image size 
+        description: Scale image background
+        type: variable-number-slider
+        default: 100
+        min: 1
+        max: 150
+        step: 1
+    -
+        id: mu-bg-image-save-1
+        title: Memory Slot 1
+        type: variable-text
+        description: Paste - url("image URL")
+        default: 'url("")'
+    -
+        id: mu-bg-image-save-2
+        title: Memory Slot 2
+        type: variable-text
+        description: Paste - url("image URL")
+        default: 'url("")'
+    -
+        id: mu-bg-image-save-3
+        title: Memory Slot 3
+        type: variable-text
+        description: Paste - url("image URL")
+        default: 'url("")'
     -
         id: magicuser-theme-ui
         title: UI Settings
