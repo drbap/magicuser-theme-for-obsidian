@@ -241,6 +241,16 @@ Activate this mode using the Style Settings plugin:
 
 ![Neon mode](images/magicuser_neon_mode.png)
 
+## Neon Mode Glow Controller
+
+![Neon mode glow controller - gif](images/magicuser_theme_neon_glow_controller.gif)
+
+## Outline Neon Mode
+
+![Outline Neon mode - gif](images/magicuser_theme_outline_neon_mode.gif)
+
+**Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
+
 ## Distraction-free Mode
 
 ![Distraction-free Mode Overview](images/magicuser_theme_distraction_free_mode_01.gif)
