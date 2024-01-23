@@ -714,6 +714,9 @@ body {
   /* Th Cards Layout */
   --cards-th-display: none;
   --mu-transparency-menus-level: 0.8;
+  --mu-stacked-mode-border-value: ;
+  --mu-neon-mode-glow-value: 0.5;
+  --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
   --mu-bg-image: 'url("")';
   --mu-bg-texture: 'url("")';
   --mu-bg-image-overlay: 0.0;
@@ -3254,6 +3257,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   left: 0;
   visibility: hidden;
   letter-spacing: 1px;
+  -webkit-text-stroke: 0;
 }
 
 .markdown-reading-view h1::before {
@@ -4260,53 +4264,150 @@ div.workspace-tab-container>div:nth-child(n)>div>div.nav-files-container.node-in
 
 .theme-light.mu-neon-mode {
   --mu-neon-h1: #007fff;
-  --mu-neon-h1-glow: #007fffa3;
+  --mu-neon-h1-glow: #007fff88;
   --mu-neon-h2: #c547ff;
-  --mu-neon-h2-glow: #c547ffa3;
+  --mu-neon-h2-glow: #c547ff88;
   --mu-neon-h3: #eb9800;
-  --mu-neon-h3-glow: #eb9800a3;
+  --mu-neon-h3-glow: #eb980088;
   --mu-neon-h4: #00c000;
-  --mu-neon-h4-glow: #00c000a3;
+  --mu-neon-h4-glow: #00c00088;
   --mu-neon-h5: #b10000;
-  --mu-neon-h5-glow: #b10000a3;
+  --mu-neon-h5-glow: #b1000088;
   --mu-neon-h6: #828200;
-  --mu-neon-h6-glow: #828200a3;
+  --mu-neon-h6-glow: #82820088;
 }
 
 .mu-neon-mode .markdown-reading-view h1,
 .mu-neon-mode .cm-header.cm-header-1 {
-  text-shadow: 0 0 .5em var(--mu-neon-h1-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h1-glow) !important;
   color: var(--mu-neon-h1) !important;
 }
 
 .mu-neon-mode .markdown-reading-view h2,
 .mu-neon-mode .cm-header.cm-header-2 {
-  text-shadow: 0 0 .5em var(--mu-neon-h2-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h2-glow) !important;
   color: var(--mu-neon-h2) !important;
 }
 
 .mu-neon-mode .markdown-reading-view h3,
 .mu-neon-mode .cm-header.cm-header-3 {
-  text-shadow: 0 0 .5em var(--mu-neon-h3-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h3-glow) !important;
   color: var(--mu-neon-h3) !important;
 }
 
 .mu-neon-mode .markdown-reading-view h4,
 .mu-neon-mode .cm-header.cm-header-4 {
-  text-shadow: 0 0 .5em var(--mu-neon-h4-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h4-glow) !important;
   color: var(--mu-neon-h4) !important;
 }
 
 .mu-neon-mode .markdown-reading-view h5,
 .mu-neon-mode .cm-header.cm-header-5 {
-  text-shadow: 0 0 .5em var(--mu-neon-h5-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h5-glow) !important;
   color: var(--mu-neon-h5) !important;
 }
 
 .mu-neon-mode .markdown-reading-view h6,
 .mu-neon-mode .cm-header.cm-header-6 {
-  text-shadow: 0 0 .5em var(--mu-neon-h6-glow) !important;
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h6-glow) !important;
   color: var(--mu-neon-h6) !important;
+}
+
+/* Outline Neon Mode */
+.theme-dark.mu-outline-neon-mode {
+  --mu-neon-h1: #00e1ff;
+  --mu-neon-h1-inner: #0000005f;
+  --mu-neon-h1-glow: #00e1ffa3;
+  --mu-neon-h2: #db8fff;
+  --mu-neon-h2-inner: #0000005f;
+  --mu-neon-h2-glow: #cd60ffa3;
+  --mu-neon-h3: #ffbf48;
+  --mu-neon-h3-inner: #0000005f;
+  --mu-neon-h3-glow: #ffbf48a3;
+  --mu-neon-h4: #72ff72;
+  --mu-neon-h4-inner: #0000005f;
+  --mu-neon-h4-glow: #72ff72a3;
+  --mu-neon-h5: #ff7272;
+  --mu-neon-h5-inner: #0000005f;
+  --mu-neon-h5-glow: #ff7272a3;
+  --mu-neon-h6: #f1f138;
+  --mu-neon-h6-inner: #0000005f;
+  --mu-neon-h6-glow: #f1f138a3;
+}
+
+.theme-light.mu-outline-neon-mode {
+  --mu-neon-h1: #007fff;
+  --mu-neon-h1-inner: #ffffff7f;
+  --mu-neon-h1-glow: #007fff88;
+  --mu-neon-h2: #c547ff;
+  --mu-neon-h2-inner: #ffffff7f;
+  --mu-neon-h2-glow: #c547ff88;
+  --mu-neon-h3: #eb9800;
+  --mu-neon-h3-inner: #ffffff7f;
+  --mu-neon-h3-glow: #eb980088;
+  --mu-neon-h4: #00c000;
+  --mu-neon-h4-inner: #ffffff7f;
+  --mu-neon-h4-glow: #00c00088;
+  --mu-neon-h5: #b10000;
+  --mu-neon-h5-inner: #ffffff7f;
+  --mu-neon-h5-glow: #b1000088;
+  --mu-neon-h6: #828200;
+  --mu-neon-h6-inner: #ffffff7f;
+  --mu-neon-h6-glow: #82820088;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h1,
+.mu-outline-neon-mode .cm-header.cm-header-1 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h1-glow) !important;
+  color: var(--mu-neon-h1-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h1);
+  letter-spacing: 1px;
+  font-size: 2.5rem !important;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h2,
+.mu-outline-neon-mode .cm-header.cm-header-2 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h2-glow) !important;
+  color: var(--mu-neon-h2-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h2);
+  letter-spacing: 1px;
+  font-size: 2.3rem !important;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h3,
+.mu-outline-neon-mode .cm-header.cm-header-3 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h3-glow) !important;
+  color: var(--mu-neon-h3-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h3);
+  letter-spacing: 1px;
+  font-size: 2.2rem !important;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h4,
+.mu-outline-neon-mode .cm-header.cm-header-4 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h4-glow) !important;
+  color: var(--mu-neon-h4-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h4);
+  letter-spacing: 1px;
+  font-size: 2rem !important;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h5,
+.mu-outline-neon-mode .cm-header.cm-header-5 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h5-glow) !important;
+  color: var(--mu-neon-h5-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h5);
+  letter-spacing: 1px;
+  font-size: 1.9rem !important;
+}
+
+.mu-outline-neon-mode .markdown-reading-view h6,
+.mu-outline-neon-mode .cm-header.cm-header-6 {
+  text-shadow: 0 0 var(--mu-neon-mode-glow-intensity) var(--mu-neon-h6-glow) !important;
+  color: var(--mu-neon-h6-inner) !important;
+  -webkit-text-stroke: 1px var(--mu-neon-h6);
+  letter-spacing: 1px;
+  font-size: 1.8rem !important;
 }
 
 /* Outline  Indent Colors*/
@@ -5159,6 +5260,20 @@ settings:
         title: Neon mode
         description: Activate headings neon mode (live preview, source and reading modes)
         type: class-toggle
+    -
+        id: mu-outline-neon-mode
+        title: Outline neon mode
+        description: Activate headings outline neon mode (live preview, source and reading modes)
+        type: class-toggle
+    - 
+        id: mu-neon-mode-glow-value
+        title: Neon modes - glow controller
+        description: Adjust the glow intensity of Neon and Outline Neon modes
+        type: variable-number-slider
+        default: 0.5
+        min: 0.1
+        max: 1
+        step: 0.05
     -
         id: mu-font-headings
         title: Headings font (H1-H6)
