@@ -4,7 +4,7 @@
 ### Improvements
 
 New: **Outline Neon Mode**
-- **Outline Neon** mode enlarges h4-h6 headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
+- **Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
 
 New: **Neon mode glow controller** (slider)
 - Adjust the **neon glow intensity** to match your style. Boost the glow in certain fonts for improved readability. This glow controller also works with **Outline Neon** mode.
