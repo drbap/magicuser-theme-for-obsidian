@@ -1,5 +1,9 @@
 # Changelog
 
+## [12.2.1] - 2024-01-25
+### Fixes
+- Stacked mode (tab border).
+
 ## [12.2.0] - 2024-01-23
 ### Improvements
 
