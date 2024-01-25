@@ -708,20 +708,21 @@ body {
   --mu-bg-search-results: #001836;
   --mu-folder-area-border: #007fff30;
   --mu-folder-area-background: #007fff10;
+
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
   --mu-stacked-mode-border-color: #d372ff;
+
   /* Th Cards Layout */
   --cards-th-display: none;
   --mu-transparency-menus-level: 0.8;
-  --mu-stacked-mode-border-value: ;
+
   --mu-neon-mode-glow-value: 0.5;
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
   --mu-bg-image: 'url("")';
   --mu-bg-texture: 'url("")';
   --mu-bg-image-overlay: 0.0;
   --mu-bg-image-scale: calc(var(--mu-bg-image-scale-value) * 1%);
-  ;
   --mu-bg-image-scale-value: 100;
   --mu-bg-image-save-1: '';
   --mu-bg-image-save-2: '';
