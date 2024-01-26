@@ -459,6 +459,18 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
+## Footnotes
+![MagicUser theme footnotes](images/magicuser_theme_footnotes.png)
+
+- You can customize the color of the footnotes (Style Settings). The default color is orange (light/dark modes).
+
+## Mermaid
+
+![MagicUser theme mermaid](images/magicuser_theme_mermaid.png)
+
+## Math
+![MagicUser theme math background](images/magicuser_theme_math.png)
+
 ## Mobile Display
 
 ![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
