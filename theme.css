@@ -610,12 +610,11 @@ body {
 
   /* Backgrounds */
   --background-primary: var(--mu-background-color-1);
-  --background-primary-alt: var(--color-base-10);
   --background-secondary: var(--mu-background-color-2);
   /* Background Modifiers*/
   --background-modifier-hover: #007fff28;
   --background-modifier-active-hover: #0048cf;
-  --background-modifier-border: #007fff28;
+  --background-modifier-border: #007fff38;
   --background-modifier-border-hover: #007fff48;
   --background-modifier-border-focus: var(--mu-icon-active);
   --background-modifier-error-rgb: var(--color-red-rgb);
@@ -712,6 +711,7 @@ body {
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
   --mu-stacked-mode-border-color: #d372ff;
+  --mu-footnote-color: #f07f48;
 
   /* Th Cards Layout */
   --cards-th-display: none;
@@ -998,8 +998,8 @@ span.obsidian-search-match-highlight {
   --mu-caret-color: #00cfff;
   /* highlight blend mode */
   --highlight-mix-blend-mode: normal;
-  --background-primary-alt: #82828248;
-  --background-secondary-alt: #00000048;
+  --background-primary-alt: #212121;
+  --background-secondary-alt: #383838;
 }
 
 /* Dark theme settings */
@@ -1192,8 +1192,8 @@ span.obsidian-search-match-highlight {
   --interactive-hover: #007fff48;
   /* highlight blend mode */
   --highlight-mix-blend-mode: normal;
-  --background-primary-alt: #0000001f;
-  --background-secondary-alt: #ffffff7f;
+  --background-primary-alt: #e1e1e1;
+  --background-secondary-alt: #ffffff;
 }
 
 .theme-light * {
@@ -4442,6 +4442,9 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 .markdown-reading-view div>ol:active,
 .markdown-reading-view div>ul:active,
 .markdown-reading-view pre:active,
+.markdown-reading-view .footnotes:active,
+.markdown-reading-view div.mermaid:active,
+.markdown-reading-view div.math:active,
 .markdown-reading-view blockquote:active,
 .markdown-reading-view .callout:active,
 .markdown-reading-view div:not(.callout-content)>p:active {
@@ -4630,6 +4633,105 @@ body:not(.is-mobile).mu-transparent-prompts-menus .modal,
 body:not(.is-mobile).mu-transparent-prompts-menus .menu,
 body:not(.is-mobile).mu-transparent-prompts-menus .prompt {
   opacity: var(--mu-transparency-menus-level);
+}
+
+/* Footnotes */
+.cm-footref.cm-footref.cm-formatting.cm-formatting.cm-formatting-link.cm-formatting-link.cm-formatting-link-start.cm-hmd-barelink.cm-link,
+.cm-hmd-footnote.cm-link .cm-underline {
+  color: var(--code-punctuation);
+  font-weight: var(--font-semibold);
+}
+
+.cm-s-obsidian .cm-line.HyperMD-footnote span.cm-hmd-footnote,
+.cm-footref.cm-footref.cm-hmd-barelink {
+  font-weight: var(--font-semibold);
+  color: var(--mu-footnote-color);
+}
+
+.cm-inline-footnote.cm-inline-footnote-start,
+.cm-inline-footnote-end,
+.cm-inline-footnote {
+  font-weight: var(--font-semibold);
+  color: var(--mu-footnote-color);
+  font-size: var(--font-smaller);
+}
+
+a.footnote-backref.footnote-link {
+  color: var(--text-faint);
+}
+
+a.footnote-backref.footnote-link:hover {
+  color: var(--mu-link-hover);
+}
+
+section.footnotes:has(.is-flashing) {
+  background-color: #cfcfcf33;
+}
+
+/* Mermaid layout */
+.mermaid {
+  background-color: transparent;
+}
+
+.mermaid svg {
+  width: 100%;
+  height: 100%;
+}
+
+.theme-light .mermaid .nodeLabel,
+.theme-light .mermaid svg tspan,
+.theme-light .mermaid svg text {
+  fill: #000 !important;
+}
+
+.theme-dark .mermaid .nodeLabel,
+.theme-dark .mermaid svg tspan,
+.theme-dark .mermaid svg text {
+  fill: white !important;
+  text-shadow: 0 2px 4px #000, 0 2px 4px #000;
+}
+
+.mermaid svg line {
+  stroke: #181818;
+}
+
+.mermaid line.loopLine {
+  stroke: #d300ff;
+}
+
+.mermaid line[id*=actor] {
+  stroke: #0072d348 !important;
+}
+
+.mermaid rect[class*=activation] {
+  stroke: #0072d3 !important;
+  fill: #cfcfcf88 !important;
+}
+
+.theme-light .mermaid {
+  --color-red: #ff8282;
+  --color-orange: #ffc7a7;
+  --color-yellow: #ffffa3;
+  --color-green: #bfffbf;
+  --color-cyan: #bff1ef;
+  --color-blue: #a3c3ff;
+  --color-purple: #d3bfff;
+  --color-pink: #ffcfcf;
+}
+
+.theme-dark .mermaid {
+  --color-red: #e12828;
+  --color-orange: #e17f00;
+  --color-yellow: #e1e100;
+  --color-green: #48e148;
+  --color-cyan: #00e1e1;
+  --color-blue: #0048e1;
+  --color-purple: #d300e1;
+  --color-pink: #e14fbf;
+}
+
+.MathJax {
+  background-color: var(--mu-background-color-2);
 }
 
 /* Style Settings */
@@ -5404,6 +5506,15 @@ settings:
         format: hex
         opacity: true
         default: '#ffff0088'
+    -
+        id: mu-footnote-color
+        title: Footnotes color
+        type: variable-themed-color
+        description: Select footnotes color (live preview and source modes)
+        format: hex
+        opacity: false
+        default-light: '#f07f48'
+        default-dark: '#f07f48'
     - 
         id: magicuser-theme-links
         title: Links      
