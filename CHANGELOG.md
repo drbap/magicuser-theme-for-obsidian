@@ -1,5 +1,18 @@
 # Changelog
 
+## [12.3.0] - 2024-01-26
+### Improvements
+
+- **Footnotes layout**.
+  - Style Settings: Select **footnotes color**.
+  - Reading glow: Footnotes (reading mode).
+
+- **Mermaid improvements**.
+
+- Dataview background alt improvements to work with all subthemes.
+
+- Reading glow (mermaid charts/graphs, footnotes and math).
+
 ## [12.2.1] - 2024-01-25
 ### Fixes
 - Stacked mode (tab border).
