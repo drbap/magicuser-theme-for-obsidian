@@ -475,7 +475,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 ![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
 
-## Feedback
+## Feedback and Support
 
 ✨ Spot a bug, have a suggestion? Share it on GitHub! Every voice shapes the future of this theme. Support the theme by starring its repository. It's free and simple, your star fuels growth and new features.
 
