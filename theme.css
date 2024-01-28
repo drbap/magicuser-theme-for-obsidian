@@ -817,7 +817,8 @@ span.is-flashing {
 }
 
 .community-item .suggestion-highlight {
-  background-color: #ffff0064 !important;
+  background-color: var(--text-highlight-bg) !important;
+  color: #000 !important;
 }
 
 .menu-separator {
