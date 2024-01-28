@@ -1,5 +1,10 @@
 # Changelog
 
+## [12.3.1] - 2024-01-28
+### Improvements
+
+- Search in modals improvement.  When there is a highlight background, this highlight will be the same color of the text search highlight in live editor). Highlighted foreground text will appear in black color (better readability).
+
 ## [12.3.0] - 2024-01-26
 ### Improvements
 
