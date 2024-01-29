@@ -1,6 +1,6 @@
 # Changelog
 
-## [12.4.0] - 2024-01-28
+## [12.4.1] - 2024-01-28
 ### Fixes
 - Removed Subthemes BG Image and BG Texture.
 - Darken background of BG Themes is right below the Presets dropdown menu (Presets Submenu). Easier to use.
