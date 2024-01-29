@@ -72,19 +72,11 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser BG Series](images/magicuser_preset_bg_themes.png)
 
-**MagicUser BG Image and BG Texture**
-
-![MagicUser BG Image and Texture](images/magicuser_preset_bg_themes_image_texture.png)
-
 **MagicUser BG Series (Light Themes)**
 
 ![MagicUser BG Series](images/magicuser_preset_bg_themes_light.png)
 
-**Presets** -> Submenu: **BG Themes Settings**.
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
-- **Load background images** and/or **textures** (image link).
-- **Scale** image texture slider. Useful to resize textures like grids, wood, or any other type of background texture.
-- 3 **Memory slots** to store your favorite image URLs so you can change the background image quickly. Remember to switch the preset theme to MagicUser BG Image or MagicUser BG Texture (tiled image) in order to load the background images.
 
 </details>
 
