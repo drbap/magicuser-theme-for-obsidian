@@ -1,14 +1,14 @@
 # Changelog
 
 ## [12.4.1] - 2024-01-28
-### Fixes
-- Removed Subthemes BG Image and BG Texture.
+### Improvements
 - Darken background of BG Themes is right below the Presets dropdown menu (Presets Submenu). Easier to use.
+- Removed Subthemes BG Image and BG Texture.
 
 ## [12.3.1] - 2024-01-28
 ### Improvements
 
-- Search in modals improvement.  When there is a highlight background, this highlight will be the same color of the text search highlight in live editor). Highlighted foreground text will appear in black color (better readability).
+- Search in modals improvement.  When there is a highlight background, this highlight will be the same color of the text search highlight in live preview. Highlighted foreground text will appear in black color (better readability).
 
 ## [12.3.0] - 2024-01-26
 ### Improvements
