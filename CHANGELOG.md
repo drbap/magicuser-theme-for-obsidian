@@ -41,14 +41,10 @@ New: **Neon mode glow controller** (slider)
 
 **Style Settings**:
 - **New Preset BG Themes**: **BG Image** and **BG Texture**.
-  
 
 - Presets -> New Submenu: **BG Themes Settings**.
 
   - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
-  - **Load background images** and/or **textures** (image link).
-  - **Scale** image texture slider. Useful to resize textures like grids, wood, or any other type of background texture.
-  - 3 **Memory slots** to store your favorite image URLs so you can change the background image quickly. Remember to switch the preset theme to MagicUser BG Image or MagicUser BG Texture (tiled image) in order to load the background images.
 
 ## [12.0.0] - 2024-01-19
 ### Improvements
