@@ -471,7 +471,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 ## Feedback and Support
 
-✨ Spot a bug, have a suggestion? Share it on GitHub! Every voice shapes the future of this theme. Support the theme by starring its repository. It's free and simple, your star fuels growth and new features.
+Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks!
 
 ## License and Acknowledgements
 
