@@ -3,31 +3,19 @@
 ## [12.5.0] - 2024-02-01
 ### Improvements
 
-### **6 New Themes**
-**Normal Themes**
-- MagicUser Teacher
-- MagicUser Concentration
-- MagicUser Creativity
+- **6 New Themes**
+  - MagicUser Teacher
+  - MagicUser Concentration
+  - MagicUser Creativity
+  - MagicUser BG North Pole
+  - MagicUser BG Sunset
+  - MagicUser BG Old School
 
-**BG Themes**
-- MagicUser BG North Pole
-- MagicUser BG Sunset
-- MagicUser BG Old School
-
-### **Headings callouts centered**
-- You can centralize the heading callout title using `|center]` and align it to the right using `|right]`:
-> `> [h1 to h6-` + `color|center] Your callout title`
-
-### **New Callouts**
-- **Line** callouts (7 colors)
-  - `> [l-`+ `color] Your callout title`
-
-> You can centralize the content using `|center]` and also right align (`|right]`):
-> `> [l-`+ `color|center] Your callout title`
-
-- **Line Box** callouts (7 colors)
-  - `> [lb-`+ `color] Your callout title`
-
+- **Headings callouts centered** (|center and |right)
+- **New Callouts**
+  - **Line** callouts (7 colors)
+  - **Line Box** callouts (7 colors)
+    
 ## [12.4.1] - 2024-01-28
 ### Improvements
 - Darken background of BG Themes is right below the Presets dropdown menu (Presets Submenu). Easier to use.
