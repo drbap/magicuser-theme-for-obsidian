@@ -68,9 +68,23 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Moon](images/magicuser_preset_06.png)
 
+8. **MagicUser Teacher**
+
+![MagicUser Moon](images/magicuser_preset_teacher.png)
+
+9. **MagicUser Creativity**
+
+![MagicUser Moon](images/magicuser_preset_creativity.png)
+
+10. **MagicUser Concentration**
+
+![MagicUser Moon](images/magicuser_preset_concentration.png)
+
 **MagicUser BG Themes**
 
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes.png)
+
+![MagicUser BG New Themes](images/magicuser_preset_bg_themes_new.png)
 
 **MagicUser BG Themes (Light Themes)**
 
@@ -373,6 +387,24 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ![Additional Callouts Pen and Highlighter](images/magicuser_b_callouts.png)
 
+### Line Callouts
+
+`> [!l-` + `color] Your Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
+![Additional Line Callouts](images/magicuser_l_callouts.png)
+
+> You can centralize the content using `|center]` and also right align (`|right]`):
+> `> [l-`+ `color|center] Your callout title`
+
+### Line Box Callouts
+
+`> [!lb-` + `color] Your Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
+![Additional Line Box Callouts](images/magicuser_lb_callouts.png)
 
 ### Callout Headings (H1 - H6)
 
@@ -381,6 +413,9 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 *Colors*: green, blue, orange, yellow, red, pink, purple
 
 ![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
+
+- You can centralize the heading callout title using `|center]` and align it to the right using `|right]`:
+> `> [h1 to h6-` + `color|center] Your callout title`
 
 ### Specific Callouts
 
