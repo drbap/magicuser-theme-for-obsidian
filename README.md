@@ -395,8 +395,11 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ![Additional Line Callouts](images/magicuser_l_callouts.png)
 
-> You can centralize the content using `|center]` and also right align (`|right]`):
-> `> [l-`+ `color|center] Your callout title`
+Center the content by adding `|center` as shown below:
+
+`> [l-`+ `color|center] Your callout title`
+
+To align right, use `|right`.
 
 ### Line Box Callouts
 
@@ -414,8 +417,11 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ![Additional Callout Headings](images/magicuser_obsidian_callout_headings.png)
 
-- You can centralize the heading callout title using `|center]` and align it to the right using `|right]`:
-> `> [h1 to h6-` + `color|center] Your callout title`
+Center the callout heading by adding `|center` as shown below:
+
+`> [h1 to h6-` + `color|center] Your callout title`
+
+To align right, use `|right`.
 
 ### Specific Callouts
 
