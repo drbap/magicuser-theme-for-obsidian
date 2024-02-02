@@ -2748,6 +2748,266 @@ li[data-task="G"]>p>input:checked::after {
   font-size: var(--h6-size);
 }
 
+.callout[data-callout^="h1-"][data-callout-metadata="center"],
+.callout[data-callout^="h2-"][data-callout-metadata="center"],
+.callout[data-callout^="h3-"][data-callout-metadata="center"],
+.callout[data-callout^="h4-"][data-callout-metadata="center"],
+.callout[data-callout^="h5-"][data-callout-metadata="center"],
+.callout[data-callout^="h6-"][data-callout-metadata="center"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callout[data-callout^="h1-"][data-callout-metadata="left"],
+.callout[data-callout^="h2-"][data-callout-metadata="left"],
+.callout[data-callout^="h3-"][data-callout-metadata="left"],
+.callout[data-callout^="h4-"][data-callout-metadata="left"],
+.callout[data-callout^="h5-"][data-callout-metadata="left"],
+.callout[data-callout^="h6-"][data-callout-metadata="left"] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.callout[data-callout^="h1-"][data-callout-metadata="right"],
+.callout[data-callout^="h2-"][data-callout-metadata="right"],
+.callout[data-callout^="h3-"][data-callout-metadata="right"],
+.callout[data-callout^="h4-"][data-callout-metadata="right"],
+.callout[data-callout^="h5-"][data-callout-metadata="right"],
+.callout[data-callout^="h6-"][data-callout-metadata="right"] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Line and Line Box Callouts */
+.callout[data-callout="l-green"][data-callout-metadata="center"],
+.callout[data-callout="l-blue"][data-callout-metadata="center"],
+.callout[data-callout="l-orange"][data-callout-metadata="center"],
+.callout[data-callout="l-yellow"][data-callout-metadata="center"],
+.callout[data-callout="l-red"][data-callout-metadata="center"],
+.callout[data-callout="l-pink"][data-callout-metadata="center"],
+.callout[data-callout="l-purple"][data-callout-metadata="center"] {
+  justify-content: center;
+  align-items: center;
+}
+
+.callout[data-callout="l-green"][data-callout-metadata="right"],
+.callout[data-callout="l-blue"][data-callout-metadata="right"],
+.callout[data-callout="l-orange"][data-callout-metadata="right"],
+.callout[data-callout="l-yellow"][data-callout-metadata="right"],
+.callout[data-callout="l-red"][data-callout-metadata="right"],
+.callout[data-callout="l-pink"][data-callout-metadata="right"],
+.callout[data-callout="l-purple"][data-callout-metadata="right"] {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.callout[data-callout="l-green"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-green));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-blue"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-blue));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-orange"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-orange));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-yellow"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-yellow));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-red"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-red));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-pink"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-pink));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.callout[data-callout="l-purple"] {
+  --callout-color: none;
+  --callout-icon: none;
+  border-bottom: 2px solid rgb(var(--mu-callout-purple));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Line Box */
+.callout[data-callout="lb-green"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-green));
+  border-right: 2px dotted rgb(var(--mu-callout-green));
+  border-top: 2px solid rgb(var(--mu-callout-green));
+  border-bottom: 2px solid rgb(var(--mu-callout-green));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-blue"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-blue));
+  border-right: 2px dotted rgb(var(--mu-callout-blue));
+  border-top: 2px solid rgb(var(--mu-callout-blue));
+  border-bottom: 2px solid rgb(var(--mu-callout-blue));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-orange"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-orange));
+  border-right: 2px dotted rgb(var(--mu-callout-orange));
+  border-top: 2px solid rgb(var(--mu-callout-orange));
+  border-bottom: 2px solid rgb(var(--mu-callout-orange));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-yellow"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-yellow));
+  border-right: 2px dotted rgb(var(--mu-callout-yellow));
+  border-top: 2px solid rgb(var(--mu-callout-yellow));
+  border-bottom: 2px solid rgb(var(--mu-callout-yellow));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-red"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-red));
+  border-right: 2px dotted rgb(var(--mu-callout-red));
+  border-top: 2px solid rgb(var(--mu-callout-red));
+  border-bottom: 2px solid rgb(var(--mu-callout-red));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-pink"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-pink));
+  border-right: 2px dotted rgb(var(--mu-callout-pink));
+  border-top: 2px solid rgb(var(--mu-callout-pink));
+  border-bottom: 2px solid rgb(var(--mu-callout-pink));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.callout[data-callout="lb-purple"] {
+  --callout-color: none;
+  --callout-icon: none;
+  align-items: center;
+  border-left: 2px dotted rgb(var(--mu-callout-purple));
+  border-right: 2px dotted rgb(var(--mu-callout-purple));
+  border-top: 2px solid rgb(var(--mu-callout-purple));
+  border-bottom: 2px solid rgb(var(--mu-callout-purple));
+  border-radius: 0;
+  padding-left: 0;
+  color: var(--mu-text-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Media Callouts */
 .callout[data-callout="m-white"],
 .callout[data-callout="i-white"] {
@@ -3528,8 +3788,157 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-suggestion-color: #00a3ff;
 }
 
+/* Concentration */
+.theme-light.magicuser-concentration-theme {
+  --mu-background-color-1: #dddde8;
+  --mu-background-color-2: #d7d7e1;
+  --mu-caret-color: #f500b4;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #f1f1f5;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #58586f;
+  --mu-titlebar-background: #0b0b0e;
+  --mu-vault-title: #58586f;
+  --code-background: #c0c0cf;
+  --code-punctuation: #797995;
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #bf48ff48;
+  --mu-dark-sidebar-color: #121216;
+  --mu-icon-focused: #00a3ff;
+}
+
+.theme-dark.magicuser-concentration-theme {
+  --mu-background-color-1: #1b1b21;
+  --mu-background-color-2: #121216;
+  --mu-caret-color: #ff48cf;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #0c0c0e;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #58586f;
+  --mu-titlebar-background: #0b0b0e;
+  --mu-vault-title: #58586f;
+  --code-background: #282833;
+  --code-punctuation: #797995;
+  --mu-suggestion-color: #00a3ff;
+  --mu-sidebar-folder: #72b1ff;
+  --mu-h1: #f1d743;
+  --mu-h2: #f1d743;
+  --mu-h3: #f1d743;
+  --mu-h4: #f1d743;
+  --mu-h5: #f1d743;
+  --mu-h6: #f1d743;
+  --mu-text-selection: #bf48ff55;
+  --mu-icon-focused: #00a3ff;
+}
+
+/* Creativity */
+.theme-light.magicuser-creativity-theme {
+  --mu-background-color-1: #f1dbe1;
+  --mu-background-color-2: #edd4da;
+  --mu-caret-color: #f500b4;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #a348a3;
+  --mu-titlebar-background: #3d1f33;
+  --mu-vault-title: #a348a3;
+  --code-background: #fff1f5;
+  --code-punctuation: #cf22cf;
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #0088ff53;
+  --mu-dark-sidebar-color: #25131f;
+  --mu-icon-focused: #cf22cf;
+}
+
+.theme-dark.magicuser-creativity-theme {
+  --mu-background-color-1: #291522;
+  --mu-background-color-2: #25131f;
+  --mu-caret-color: #ff48cf;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1b0e17;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #a348a3;
+  --mu-titlebar-background: #3d1f33;
+  --mu-vault-title: #a348a3;
+  --code-background: #4c283f;
+  --code-punctuation: #cf72cf;
+  --mu-suggestion-color: #00a3ff;
+  --mu-sidebar-folder: #72b1ff;
+  --mu-text-selection: #0088ff7f;
+  --mu-icon-focused: #cf22cf;
+}
+
+/* Teacher */
+.theme-light.magicuser-teacher-theme {
+  --mu-background-color-1: hsl(146, 28%, 90%);
+  --mu-background-color-2: hsl(146, 28%, 86%);
+  --mu-caret-color: #00a348;
+  --mu-divider-color: #0a090900;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #50886a;
+  --mu-titlebar-background: #484848;
+  --mu-vault-title: #50886a;
+  --code-background: hsl(146, 28%, 88%);
+  --code-punctuation: #50886a;
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #007fff;
+  --mu-h2: #cf22ff;
+  --mu-h3: #ff9300;
+  --mu-h4: #3cc347;
+  --mu-h5: #f63737;
+  --mu-h6: #a3a300;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #0ed8947f;
+  --mu-dark-sidebar-color: #24332a;
+  --tab-text-color-focused-active-current: #0072d3;
+  --mu-icon-focused: #00d87f;
+}
+
+.theme-dark.magicuser-teacher-theme {
+  --mu-background-color-1: #28392f;
+  --mu-background-color-2: #24332a;
+  --mu-caret-color: hsl(160, 89%, 51%);
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1b0e17;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #50886a;
+  --mu-titlebar-background: #484848;
+  --mu-vault-title: #50886a;
+  --code-background: #1f3528;
+  --code-punctuation: #2fb86f;
+  --mu-suggestion-color: #00a3ff;
+  --mu-sidebar-folder: #72b1ff;
+  --mu-text-selection: #0ed89455;
+  --mu-h1: #72b1ff;
+  --mu-h2: #e897ff;
+  --mu-h3: #ffc375;
+  --mu-h4: #B5E8B9;
+  --mu-h5: #fa9797;
+  --mu-h6: #fffd7f;
+  --tab-text-color-focused-active-current: #00a3ff;
+  --mu-icon-focused: #00d87f;
+}
+
 /* Special Background themes - BG Themes */
 /* BG Series - Light Theme */
+.theme-light.magicuser-bg-north-pole-theme,
+.theme-light.magicuser-bg-sunset-theme,
+.theme-light.magicuser-bg-old-school-theme,
 .theme-light.magicuser-bg-classic-theme,
 .theme-light.magicuser-bg-night-theme,
 .theme-light.magicuser-bg-dreams-theme,
@@ -3559,6 +3968,8 @@ body:not(.is-mobile) .side-dock-settings:hover {
 }
 
 /* Synth, Dreams and Classic */
+.theme-dark.magicuser-bg-north-pole-theme,
+.theme-dark.magicuser-bg-sunset-theme,
 .theme-dark.magicuser-bg-classic-theme,
 .theme-dark.magicuser-bg-dreams-theme,
 .theme-dark.magicuser-bg-synth-theme {
@@ -3576,11 +3987,43 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-icon-focused: #bf48ff;
 }
 
+/* Old School */
+.theme-dark.magicuser-bg-old-school-theme {
+  --mu-background-color-1: #000;
+  --mu-background-color-2: #000;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #1f1f1f;
+  --mu-setting-color: #00f0b010;
+  --mu-text-title: #00a378;
+  --mu-titlebar-background: #1f1f1f;
+  --mu-vault-title: #00a378;
+  --mu-sidebar-folder: #00cf95;
+  --code-background: #000;
+  --code-punctuation: hsl(164, 100%, 32%);
+  --tab-text-color-focused-active-current: #00f0b0;
+  --mu-suggestion-color: #00f0b0;
+  --mu-caret-color: #00f0b0;
+  --mu-h1: #00cf95;
+  --mu-h2: #00cf95;
+  --mu-h3: #00cf95;
+  --mu-h4: #00cf95;
+  --mu-h5: #00cf95;
+  --mu-h6: #00cf95;
+  --checkbox-color: #00e1a3;
+  --checkbox-color-hover: #32ffa6;
+  --checkbox-border-color: #00e1a3;
+  --checkbox-border-color-hover: #3dffac;
+  --mu-icon-focused: #00f0b0;
+  --hr-color: #00f0b0;
+  --list-marker-color: #00f0b0;
+  --mu-folder-color-hue: 300deg;
+  --mu-file-color-hue: 300deg;
+}
+
 /* Night */
 .theme-dark.magicuser-bg-night-theme {
   --mu-background-color-1: #000;
   --mu-background-color-2: #000;
-  --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
   --mu-setting-color: #f100f110;
@@ -3644,6 +4087,24 @@ body:not(.is-mobile) .side-dock-settings:hover {
   background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(0deg, #3a3a3a, #080808);
 }
 
+.theme-dark.magicuser-bg-north-pole-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
+.theme-dark.magicuser-bg-north-pole-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), conic-gradient(from 87deg at 100% 60%, rgba(1, 0, 29, 1) 50%, rgba(43, 8, 82, 0.67) 56%, rgba(0, 199, 199, 0.33) 74%, rgba(29, 28, 57, 1) 100%, rgba(46, 231, 225, 0.27) 100%) 72% 11%/120% 186%;
+}
+
+.theme-dark.magicuser-bg-sunset-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
+.theme-dark.magicuser-bg-sunset-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(0deg, rgba(214, 147, 112, 0.72) 0%, rgba(85, 88, 95, 1) 28%, rgba(9, 17, 37, 1) 100%) 50% 100%;
+}
+
+.theme-dark.magicuser-bg-old-school-theme .workspace-split:not(.mod-right-split, .mod-left-split) .view-content,
+.theme-dark.magicuser-bg-old-school-theme .view-content>.canvas-wrapper {
+  background: linear-gradient(0deg, rgba(0, 0, 0, var(--mu-bg-image-overlay)), rgba(0, 0, 0, var(--mu-bg-image-overlay))), linear-gradient(rgba(0, 0, 0, 0.71) 0%, #002417 100%) 100% 100%;
+}
+
+.theme-dark.magicuser-bg-north-pole-theme .document-search-container,
+.theme-dark.magicuser-bg-sunset-theme .document-search-container,
+.theme-dark.magicuser-bg-old-school-theme .document-search-container,
 .theme-dark.magicuser-bg-classic-theme .document-search-container,
 .theme-dark.magicuser-bg-night-theme .document-search-container,
 .theme-dark.magicuser-bg-dreams-theme .document-search-container,
@@ -3683,6 +4144,24 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --mu-bg-search-results: #330048;
 }
 
+.theme-light.mu-sidebar-dark.magicuser-concentration-theme {
+  --mu-sidebar-folder: #72b1ff;
+  --mu-bg-search-results: #1b1b21;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-creativity-theme {
+  --mu-sidebar-folder: #72b1ff;
+  --mu-bg-search-results: #291522;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-teacher-theme {
+  --mu-sidebar-folder: #72b1ff;
+  --mu-bg-search-results: #28392f;
+}
+
+.theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
+.theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
 .theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
@@ -4673,6 +5152,15 @@ settings:
                 label: MagicUser Moon
                 value: magicuser-moon-theme
             - 
+                label: MagicUser Teacher
+                value: magicuser-teacher-theme
+            - 
+                label: MagicUser Creativity
+                value: magicuser-creativity-theme
+            - 
+                label: MagicUser Concentration
+                value: magicuser-concentration-theme
+            - 
                 label: MagicUser BG Night
                 value: magicuser-bg-night-theme
             - 
@@ -4687,6 +5175,15 @@ settings:
             - 
                 label: MagicUser BG Classic
                 value: magicuser-bg-classic-theme
+            - 
+                label: MagicUser BG Sunset
+                value: magicuser-bg-sunset-theme
+            - 
+                label: MagicUser BG North Pole
+                value: magicuser-bg-north-pole-theme
+            - 
+                label: MagicUser BG Old School
+                value: magicuser-bg-old-school-theme
     - 
         id: mu-bg-image-overlay
         title: Darken background
