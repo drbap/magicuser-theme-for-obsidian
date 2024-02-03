@@ -501,7 +501,7 @@ Default theme table layout:
 
 ![Table Layout](images/magicuser_theme_tables.png)
 
-- Improved tables layout (**all preset themes** - light and dark modes). Tables colors will adapt to the different background colors of the preset themes.
+- Improved table layout (**all preset themes** - light and dark modes). The colors of the tables will adapt to the different background colors of the preset themes.
 
 ![Table Layout Style Settings](images/magicuser_tables_layout_preset_themes.png)
 
