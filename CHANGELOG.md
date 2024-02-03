@@ -1,5 +1,32 @@
 # Changelog
 
+## [14.0.0] - 2024-02-03
+### Improvements
+
+- Improved tables layout (all preset themes - light and dark modes). Tables colors will adapt to the different background colors of the preset themes.
+
+- New **Tables** Submenu (**Style Settings**):
+  - **Table headers background** color
+  - **Table headers foreground** color
+  - **Table rows (odd)** background color
+  - **Table rows (even)** background color
+  - **Table row hover** background color
+  - **Outer table border** width
+  - **Inner table borders** width (rows and columns borders)
+  - **Table rounded corners** (0 = square corners)
+
+> UI Settings -> Tables
+
+- Normal tables (non-dataview tables) will have rounded corners by default. You can customize using the **new tables submenu**.
+
+- Tables: Print/Export to PDF improvements. The colors will be the same as the light mode of the selected preset theme.
+
+- Headings colors adjustment (default light mode).
+
+- Folder color adjustment (default light mode).
+
+- Icon focused color adjustments (all non-bg themes).
+
 ## [12.5.0] - 2024-02-01
 ### Improvements
 
