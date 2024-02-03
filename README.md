@@ -130,6 +130,17 @@ Submenus:
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
+◼ **Tables**
+
+- **Table headers background** color
+- **Table headers foreground** color
+- **Table rows (odd)** background color
+- **Table rows (even)** background color
+- **Table row hover** background color
+- **Outer table border** width
+- **Inner table borders** width (rows and columns borders)
+- **Table rounded corners** (0 = square corners)
+
 ◼ **Reading Mode**
 
 - **Reading indicator width** - slider controller
