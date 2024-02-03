@@ -156,7 +156,7 @@ Submenus:
 - **Transparent menus** and **prompts** (toggle)
 - **Transparency level adjustment** (slider).
 
-**Hide UI Elements** Submenu:
+**Hide UI Elements** submenu:
 - Hide **sidebar buttons** (new note, new folder and others)
 - Show/hide **tab navigation back and forward buttons**
 - Auto hide **title bar top left buttons**
@@ -497,7 +497,33 @@ To align right, use `|right`.
 
 ## Tables Layout
 
+Default theme table layout:
+
 ![Table Layout](images/magicuser_theme_tables.png)
+
+- Improved tables layout (**all preset themes** - light and dark modes). Tables colors will adapt to the different background colors of the preset themes.
+
+![Table Layout Style Settings](images/magicuser_tables_layout_preset_themes.png)
+
+- Normal tables (non-dataview tables) will have **rounded corners** by default. You can customize non-dataview tables using the **Tables submenu**.
+
+![Table Layout Style Settings](images/magicuser_ui_settings_tables_submenu.png)
+
+- Independent table colors for light and dark modes, you can also select outer and inner border widths (sliders).
+
+![Table Layout Style Settings](images/magicuser_tables_inner_borders_01.png)
+
+![Table Layout Style Settings](images/magicuser_tables_inner_borders.png)
+
+**Tables** submenu (Style Settings):
+- **Table headers background** color
+- **Table headers foreground** color
+- **Table rows (odd)** background color
+- **Table rows (even)** background color
+- **Table row hover** background color
+- **Outer table border** width
+- **Inner table borders** width (rows and columns borders)
+- **Table rounded corners** (0 = **square corners**)
 
 ## Code Theme (Light and Dark)
 
