@@ -1,5 +1,10 @@
 # Changelog
 
+## [14.0.1] - 2024-02-04
+### Fixes
+
+- Style Settings table row (odd/even) description.
+
 ## [14.0.0] - 2024-02-03
 ### Improvements
 
