@@ -5566,7 +5566,7 @@ settings:
         id: mu-table-color-2
         title: Table row background color (odd)
         type: variable-themed-color
-        description: Background color of the table rows (even)
+        description: Background color of the table rows (odd)
         format: hex
         opacity: true
         default-light: '#a3a3a348'
@@ -5575,7 +5575,7 @@ settings:
         id: mu-table-color-1
         title: Table row background color (even)
         type: variable-themed-color
-        description: Background color of the table rows (odd)
+        description: Background color of the table rows (even)
         format: hex
         opacity: true
         default-light: '#a3a3a328'
