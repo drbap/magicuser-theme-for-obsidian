@@ -273,7 +273,7 @@ You can customize the neon mode headings colors using the **Neon Mode Headings**
 
 > Headings H1-H6 -> Neon Mode Headings
 
-![Neon mode headings- submenu](images/neon_mode_headings_submenu_01.png)
+![Neon mode headings- submenu](images/neon_mode_headings_submenu.png)
 
 ## Neon Mode Glow Controller
 
