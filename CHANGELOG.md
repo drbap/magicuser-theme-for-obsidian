@@ -6,7 +6,7 @@
 Style Settings: 
 
 **Headings H1-H6 menu** - new submenus
-- New **Headings Settings** submenu. The usual headings options are on this submenu: font, font size, normal h1-h6 colors.
+- New **Headings Settings** submenu. The normal headings options: font, font size, h1-h6 colors.
 - New **Neon Mode Headings** submenu. You can customize all neon mode headings colors (H1-H6).
 - Improved links in headings when using normal mode and neon mode. When neon mode is on, the links will appear in the same color of the neon headings.
 
