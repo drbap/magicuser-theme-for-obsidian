@@ -170,14 +170,19 @@ Submenus:
 
 <details>
 <summary><b>Headings H1-H6</b> - <i>click to expand</i></summary>
+
 - Neon Mode
 - Outline Neon Mode
 - Neon glow controller
+
 **Headings Settings** submenu
+
 - Headings **font** (H1 - H6)
 - H1 to H6 **font size**
 - H1 to H6 **color**
+
 **Neon Mode Headings** submenu
+
 - H1 to H6 neon mode colors
   
 </details>
