@@ -1,5 +1,17 @@
 # Changelog
 
+## [14.2.0] - 2024-02-07
+### Improvements
+
+- New: **Gallery Callouts**. Create **image galleries**. You can quickly organize your images in columns (1 to 5 columns). 
+
+- Gallery callouts in **reading mode** are interactive. **Clicking and holding** any image thumbnail within a gallery callout triggers a lightbox effect. This immerses you in the image by gently dimming the background, allowing you to appreciate its details without distractions.
+
+- **Number of columns**: The default callout option is 3 columns
+(if you don't add `|number` of columns). You can quickly change image gallery display by changing just this number (**1** - **5** columns).
+
+- Available in **3 colors** (**white**, **black** and **gray**).
+
 ## [14.1.0] - 2024-02-05
 ### Improvements
 
