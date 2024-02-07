@@ -378,6 +378,46 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ## Additional Callouts
 
+### Gallery Callouts
+
+![Gallery Callouts](images/magicuser_g_callouts.png)
+
+`> [!g-` + `color] Callout Title`
+
+`> [!g-` + `color|number of columns] Callout Title`
+
+*Number of columns*: 1 - 5
+
+*Colors*: white, black, gray
+
+![Gallery Callouts - gif](images/magicuser_theme_gallery_callouts_01.gif)
+
+- Create image galleries. You can quickly organize and display your images in columns (1 to 5 columns). 
+
+- Gallery callouts in **reading mode** are interactive. **Clicking and holding** any image thumbnail within a gallery callout triggers a lightbox effect. This immerses you in the image by gently dimming the background, allowing you to appreciate its details without distractions.
+
+- **Number of columns**: The default callout option is 3 columns, if you don't add `|number` of columns. You can quickly change image gallery display by changing this number (**1** - **5** columns).
+
+**Examples:**
+
+**White background color - default (3 columns)**
+```md
+> [!g-white] Your Callout Title
+> Place image 1 link (image 1)
+> Place image 2 link (image 2)
+> Place image n link (image n)
+
+```
+
+**Gray background color - 5 columns**
+```md
+> [!g-gray|5] Your Callout Title
+> Place image 1 link (image 1)
+> Place image 2 link (image 2)
+> Place image n link (image n)
+
+```
+
 ### Media Callouts
 
 `> [!m-` + `color] Callout Title`
