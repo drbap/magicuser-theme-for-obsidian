@@ -26,12 +26,13 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Theme - Community Plugins Compatibility](images/magicuser_theme_plugins_compatibility.png)
 
-- Style Settings
-- Dataview
-- Kanban
-- Calendar
-- Full Calendar
-- Tasks
+- **Style Settings**
+- **Excalidraw**
+- **Dataview**
+- **Kanban**
+- **Calendar**
+- **Full Calendar**
+- **Tasks**
 
 ## Style Settings - Theme Options
 
