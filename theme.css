@@ -1042,12 +1042,12 @@ span.obsidian-search-match-highlight {
   background-color: #00a3ff20
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add) {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add,.color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button) {
   color: #f1f1f1;
   background-color: #00a3ff30;
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add):hover {
+.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add,.color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button):hover {
   color: #f1f1f1;
   background-color: #00a3ff40;
 }
@@ -1224,22 +1224,22 @@ span.obsidian-search-match-highlight {
 
 .theme-light .dropdown {
   color: #000;
-  background-color: #00a3ff10
+  background-color: #00a3ff10;
 }
 
 .theme-light .dropdown:hover {
   color: #000;
-  background-color: #00a3ff20
+  background-color: #00a3ff20;
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add) {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add,.color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button) {
   color: #000;
   background-color: #00a3ff30;
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add):hover {
+.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add,.color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button):hover {
   color: #000;
-  background-color: #00a3ff40
+  background-color: #00a3ff40;
 }
 
 .theme-light .inline-title {
@@ -1987,16 +1987,6 @@ li[data-task="d"]>p>input:checked::after {
   -webkit-mask-image: none;
   mask-image: none;
 }
-
-/*
-Branch and Pull Request Icons
-Created by Bernardo Pires (drbap)
-License MIT
-- [D] draft pull request
-- [P] open pull request
-- [M] merged pull request
-- [B] branch
-*/
 
 /* Draft Pull Request */
 input[data-task="D"]:checked::after,
@@ -3370,6 +3360,17 @@ input[type=date] {
 
 .theme-light .cm-attribute {
   color: var(--mu-code-attribute);
+}
+
+/* Excalidraw adjustments */
+
+.excalidraw .HelpDialog__shortcut {
+  color: var(--text-primary);
+  font-weight: var(--font-semibold);
+}
+.excalidraw .HelpDialog__key {
+  color: var(--text-on-accent-inverted);
+  font-weight: var(--font-semibold);
 }
 
 /* Extra Mobile Adjustments */
