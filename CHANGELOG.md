@@ -1,5 +1,9 @@
 # Changelog
 
+## [14.2.1] - 2024-02-07
+### Improvements
+- Compatible with Excalidraw plugin.
+
 ## [14.2.0] - 2024-02-07
 ### Improvements
 
