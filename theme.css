@@ -715,6 +715,10 @@ body {
   --mu-stacked-mode-border-color: #d372ff;
   --mu-footnote-color: #f07f48;
 
+  /* Inline title font size slider */
+  --mu-inline-title-font-size-value: 0.88;
+  --mu-inline-title-font-size: calc(var(--mu-inline-title-font-size-value) * 1em);
+
   /* Th Cards Layout */
   --cards-th-display: none;
   --mu-transparency-menus-level: 0.8;
@@ -1059,7 +1063,7 @@ span.obsidian-search-match-highlight {
 
 .theme-dark .inline-title {
   font-family: var(--mu-font-mono);
-  font-size: var(--font-smaller);
+  font-size: var(--mu-inline-title-font-size);
   font-weight: bold;
   color: var(--mu-text-title);
 }
@@ -1244,7 +1248,7 @@ span.obsidian-search-match-highlight {
 
 .theme-light .inline-title {
   font-family: var(--mu-font-mono);
-  font-size: var(--font-smaller);
+  font-size: var(--mu-inline-title-font-size);
   font-weight: bold;
   color: var(--mu-text-title);
 }
@@ -5480,14 +5484,14 @@ settings:
         default-light: '#a200ff'
         default-dark: '#af47eb'
     - 
-        id: mu-stacked-mode-border-value
-        title: Stacked mode - active tab border width
-        description: Stacked mode - border width of active tab
+        id: mu-inline-title-font-size-value
+        title: Inline title font size
+        description: Filename inline title font size
         type: variable-number-slider
-        default: 1
-        min: 0
-        max: 5
-        step: 1   
+        default: 0.88
+        min: 0.6
+        max: 2
+        step: 0.01
     -
         id: mu-stacked-mode-border-color
         title: Stacked mode - active tab border width
@@ -5496,7 +5500,16 @@ settings:
         format: hex
         opacity: false
         default-light: '#d372ff'
-        default-dark: '#d372ff'
+        default-dark: '#d372ff'   
+    - 
+        id: mu-stacked-mode-border-value
+        title: Stacked mode - active tab border width
+        description: Stacked mode - border width of active tab
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1   
     -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
