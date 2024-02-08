@@ -640,5 +640,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @YannMiro - suggestion to show/hide file icons.
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
+- @golden234431 (Obsidian Forum) - inline title font size.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
