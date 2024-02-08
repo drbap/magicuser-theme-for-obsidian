@@ -1,5 +1,14 @@
 # Changelog
 
+## [14.2.2] - 2024-02-08
+### Improvements
+
+**Style Settings**:
+- Inline title font size (slider)
+> UI Settings -> Main Theme Colors -> Inline title font size (slider).
+
+You can increase or decrease the inline title using the slider.
+
 ## [14.2.1] - 2024-02-07
 ### Improvements
 - Compatible with Excalidraw plugin.
