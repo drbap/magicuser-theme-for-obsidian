@@ -554,6 +554,13 @@ To align right, use `|right`.
   
 - Additional carets/cursors have a different width and no blinking carets (solid appearance).
 
+## Active line background and border colors
+
+![MagicUser theme line highlight](images/mu_line_highlight_active_line_number.png)
+
+- It works inside code samples and normal editor areas.
+- Active line number will have the same color of the text cursor/caret.
+
 ## Search Highlight and Text Highlight
 
 ![Text Highlight](images/magicuser_search_highlights_improved.png)
