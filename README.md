@@ -153,6 +153,7 @@ Submenus:
 
 ![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
 
+- **Warm screen mode** (slider)
 - Activate **distraction-free mode**
 - **Compact command palette and prompts** (toggle)
 - **Transparent menus** and **prompts** (toggle)
@@ -291,6 +292,25 @@ You can customize the neon mode headings colors using the **Neon Mode Headings**
 ![Outline Neon mode - gif](images/magicuser_theme_outline_neon_mode.gif)
 
 **Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
+
+
+
+## Warm Screen Mode
+![Warm screen mode](images/magicuser_theme_warm_screen_mode.png)
+
+![Warm screen mode - gif](images/magicuser_theme_warm_screen_mode.gif)
+
+> UI Settings -> UI Advanced Settings -> **Warm screen mode**
+
+- Instead of just dimming the screen, the **warm scren mode** adjusts the light spectrum towards warmer tones (red, orange, yellow) and reduces cooler tones (e.g. blue). 
+- Warmer tones are considered less harsh on the eyes, especially in **low-light environments** or extended use.
+- The warm screen mode can create a more relaxing and soothing atmosphere for reading, working, or viewing media.
+- If you embed PDFs, you will be able to read them with warmer screen color.
+
+![Warm screen mode](images/magicuser_theme_warm_screen_mode_01.png)
+
+- You can adjust the **warm screen mode intensity** (using the slider).
+- To turn it off, set the slider to zero (default option).
 
 ## Distraction-free Mode
 
