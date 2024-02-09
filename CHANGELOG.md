@@ -1,5 +1,31 @@
 # Changelog
 
+## [14.3.0] - 2024-02-09
+### Improvements
+**Style Settings**
+
+- New: **Warm screen mode**. Instead of just dimming the screen, this mode adjusts the light spectrum towards warmer tones (red, orange, yellow) and reduces cooler tones (e.g. blue). 
+  - Warmer tones are considered less harsh on the eyes, especially in **low-light environments** or extended use.
+  - The warm screen mode can create a more relaxing and soothing atmosphere for reading, working, or viewing media.
+  - If you embed PDFs, you will be able to read them with warmer screen color.
+  - You can adjust the **warm screen mode intensity** (using the slider).
+  - To turn it off, set the slider to zero (default option).
+
+
+Theme Style Settings:
+> UI Settings -> UI Advanced Settings -> **Warm screen mode**
+
+- **Gallery callouts padding** adjustment.
+
+- **Line numbers improvement** (the active line number will have the same color of the caret/text cursor).
+
+- Line numbers font size adjustment.
+
+- **Active line highlight border** improvement (it works in codeblocks)
+
+
+- Fixed style settings icon color buttons (**reset buttons**).
+
 ## [14.2.2] - 2024-02-08
 ### Improvements
 
