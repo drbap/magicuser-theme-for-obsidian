@@ -196,6 +196,8 @@ Submenus:
 - **Bold text** color
 - **Italic text** color
 - **Highlighted text** color
+- **Underline text** color
+- **Footnotes** color
 
 </details>
 
