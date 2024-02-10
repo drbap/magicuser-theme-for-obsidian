@@ -576,6 +576,55 @@ To align right, use `|right`.
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
+
+
+## Underlined Text Colors
+
+![Underlined text](images/magicuser_theme_underlined_text.gif)
+
+The **default underline color** is **red**, but you can change it using the Style Settings plugin. You can also add 7 classes to make the text **underlined**. When you hover the underlined text it will become highlighted (underlined too). Please check the syntax below.
+
+```html
+Text <u>underlined text</u>.
+```
+The classes below can quickly change the color of the underline (just the color names): **blue**, **green**, **orange**, **yellow**, **red**, **purple** and **pink** (7 colors).
+
+```html
+Text <u>default underline</u>
+Text <u class="blue">blue underline</u>.
+Text <u class="green">green underline</u>.
+Text <u class="yellow">yellow underline</u>.
+Text <u class="orange">orange underline</u>.
+Text <u class="red">red underline</u>.
+Text <u class="purple">purple underline</u>.
+Text <u class="pink">pink underline</u>.
+
+```
+
+> **Note**: The color of the text will remain the same, to avoid confusion with links.
+
+## Highlighted Text Colors
+
+![Highlighted text](images/magicuser_highlighted_text.png)
+
+```html
+Text <mark>highlighted text</mark>
+```
+
+The default is **yellow**. But you can quickly change its color by adding the same 7 classes of the underlined text (just the color names). Please check it out below:
+
+```html
+Normal default mark <mark>default highlight</mark>.
+Text <mark class="blue">blue highlight</mark>.
+Text <mark class="green">green highlight</mark>.
+Text <mark class="yellow">yellow highlight</mark>.
+Text <mark class="orange">orange highlight</mark>.
+Text <mark class="red">red highlight</mark>.
+Text <mark class="purple">purple highlight</mark>.
+Text <mark class="pink">pink highlight</mark>.
+
+```
+
 ## Metadata highlighting
 
 ![Metadata highlighting](images/magicuser_metadata_highlighting.png)
