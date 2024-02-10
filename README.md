@@ -578,8 +578,6 @@ To align right, use `|right`.
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
-
-
 ## Underlined Text Colors
 
 ![Underlined text](images/magicuser_theme_underlined_text.gif)
@@ -719,5 +717,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
 - @golden234431 (Obsidian Forum) - inline title font size.
+- @fred.joe3697 (Obsidian Forum) - underlined text color.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
