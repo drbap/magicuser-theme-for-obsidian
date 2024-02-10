@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.3.1] - 2024-02-10
+### Improvements
+
+- **Underlined text layout - html `<u>` tags.** 
+- **Highlight text using the html `<mark>` tags**
+- Table row hover adjustment.
+
 ## [14.3.0] - 2024-02-09
 ### Improvements
 **Style Settings**
