@@ -744,6 +744,7 @@ body {
   --mu-table-color-1: var(--mu-background-color-2);
   --mu-table-color-2: var(--mu-background-color-1);
   --mu-table-row-hover: #0088ff48;
+  --mu-underline-text-color-rgb: 255, 40, 72;
   --mu-warm-screen-mode: 0;
 }
 
@@ -3305,6 +3306,11 @@ li[data-task="G"]>p>input:checked::after {
   border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
 }
 
+.markdown-reading-view tr:hover,
+.cm-embed-block.cm-table-widget tr:hover {
+  background-color: var(--mu-table-row-hover) !important;
+}
+
 @media print {
   table {
     width: 100%;
@@ -5345,6 +5351,114 @@ section.footnotes:has(.is-flashing) {
   background-color: var(--mu-background-color-2);
 }
 
+/* Underlined and highlighted text */
+.view-content u {
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--mu-underline-text-color-rgb));
+  color: var(--mu-text-1);
+}
+
+.view-content u:hover {
+  background-color: rgba(var(--mu-underline-text-color-rgb), .5);
+  transition: all .5s;
+}
+
+.view-content u.blue {
+  text-decoration-color: #00a3ff;
+}
+
+.view-content u.blue:hover {
+  background-color: #00a3ff64;
+  transition: all .5s;
+}
+.view-content u.green {
+  text-decoration-color: #48f148;
+}
+
+.view-content u.green:hover {
+  background-color: #48f14888;
+  transition: all .5s;
+}
+
+.view-content u.orange {
+  text-decoration-color: #ff7f00;
+}
+
+.view-content u.orange:hover {
+  background-color: #ff7f0088;
+  transition: all .5s;
+}
+
+.view-content u.red {
+  text-decoration-color: #ff2848;
+}
+
+.view-content u.red:hover {
+  background-color: #ff284864;
+  transition: all .5s;
+}
+
+.view-content u.yellow {
+  text-decoration-color: #ffd700;
+}
+
+.view-content u.yellow:hover {
+  background-color: #fff10088;
+  transition: all .5s;
+}
+
+.view-content u.purple {
+  text-decoration-color: #cf48ff;
+}
+
+.view-content u.purple:hover {
+  background-color: #cf48ff88;
+  transition: all .5s;
+}
+
+.view-content u.pink {
+  text-decoration-color: #ff48a3;
+}
+
+.view-content u.pink:hover {
+  background-color: #ff48a388;
+  transition: all .5s;
+}
+
+/* Marks */
+.view-content mark {
+  background-color: var(--text-highlight-bg);
+  color: var(--mu-text-1);
+}
+
+.view-content mark.blue {
+  background-color: #00a3ff64;
+}
+
+.view-content mark.green {
+  background-color: #48f14888;
+}
+
+.view-content mark.red {
+  background-color: #ff284888;
+}
+
+.view-content mark.orange {
+  background-color: #ff7f0088;
+}
+
+.view-content mark.yellow {
+  background-color: #fff10088;
+}
+
+.view-content mark.purple {
+  background-color: #cf48ff88;
+}
+
+.view-content mark.pink {
+  background-color: #ff48a388;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -6270,6 +6384,19 @@ settings:
         format: hex
         opacity: true
         default: '#ffff0088'
+    -
+        id: mu-underline-text-color-hex
+        title: Underline text color
+        type: variable-themed-color
+        description: Color used to underline text
+        format: hex
+        opacity: false
+        alt-format:
+            -
+                id: mu-underline-text-color-rgb
+                format: rgb-values
+        default-light: '#ff2848'
+        default-dark: '#ff2848'
     -
         id: mu-footnote-color
         title: Footnotes color
