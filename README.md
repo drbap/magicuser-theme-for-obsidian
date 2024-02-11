@@ -295,8 +295,6 @@ You can customize the neon mode headings colors using the **Neon Mode Headings**
 
 **Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
 
-
-
 ## Warm Screen Mode
 ![Warm screen mode](images/magicuser_theme_warm_screen_mode.png)
 
@@ -603,6 +601,32 @@ Text <u class="pink">pink underline</u>.
 
 > **Note**: The color of the text will remain the same, to avoid confusion with links.
 
+## Hidden Text Underline
+
+![Hidden text underline](images/magicuser_theme_hidden_text_underline.gif)
+
+**Show text on hover**
+
+It works using the classes `hidden` and/or `hide` to html `<u>` tags.
+
+```html
+Text is <u class="hidden">hidden</u>.
+
+You can also <u class="hide">hide</u> the text.
+```
+
+**Show text on click and hold**
+
+It works using the classes `hidden-c` and/or `hide-c` to html `<u>` tags. Just add `-c` to the class name (it will **reveal on click**)
+
+```html
+Text is <u class="hidden-c">hidden</u>.
+
+You can also <u class="hide-c">hide</u> the text.
+```
+
+The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the highlight color using the Style Settings option.
+
 ## Highlighted Text Colors
 
 ![Highlighted text](images/magicuser_highlighted_text.png)
@@ -717,6 +741,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
 - @golden234431 (Obsidian Forum) - inline title font size.
-- @fred.joe3697 (Obsidian Forum) - underlined text color.
+- @fred.joe3697 (Obsidian Forum) - underlined text color. Hidden text underline suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
