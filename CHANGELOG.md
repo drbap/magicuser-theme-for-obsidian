@@ -1,5 +1,10 @@
 # Changelog
 
+## [14.3.2] - 2024-02-11
+### Improvements
+
+- **Hidden text underline**.
+
 ## [14.3.1] - 2024-02-10
 ### Improvements
 
