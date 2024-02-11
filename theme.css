@@ -5425,6 +5425,45 @@ section.footnotes:has(.is-flashing) {
   transition: all .5s;
 }
 
+.view-content u.hidden,
+.view-content u.hide {
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: transparent;
+}
+
+.view-content u.hidden:hover,
+.view-content u.hide:hover {
+  background-color: var(--text-highlight-bg);
+  color: var(--mu-text-1);
+  transition: all .5s;
+  cursor: default;
+}
+
+.view-content u.hidden-c,
+.view-content u.hide-c {
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: transparent;
+}
+
+.view-content u.hidden-c:hover,
+.view-content u.hide-c:hover {
+  background-color: var(--text-highlight-bg);
+  transition: all .5s;
+  color: transparent;
+  cursor: help;
+}
+
+.view-content u.hidden-c:active,
+.view-content u.hide-c:active {
+  color: var(--mu-text-1);
+  transition: all .5s;
+  cursor: default;
+}
+
 /* Marks */
 .view-content mark {
   background-color: var(--text-highlight-bg);
