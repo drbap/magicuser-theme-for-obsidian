@@ -605,7 +605,7 @@ Text <u class="pink">pink underline</u>.
 
 ![Hidden text underline](images/magicuser_theme_hidden_text_underline.gif)
 
-**Show text on hover**
+A) **Show text on hover** (hide text on live preview and reading modes)
 
 It works using the classes `hidden` and/or `hide` to html `<u>` tags.
 
@@ -615,7 +615,7 @@ Text is <u class="hidden">hidden</u>.
 You can also <u class="hide">hide</u> the text.
 ```
 
-**Show text on click and hold**
+B) **Show text on click and hold** (hide text on live preview and reading modes)
 
 It works using the classes `hidden-c` and/or `hide-c` to html `<u>` tags. Just add `-c` to the class name (it will **reveal on click**)
 
@@ -625,7 +625,27 @@ Text is <u class="hidden-c">hidden</u>.
 You can also <u class="hide-c">hide</u> the text.
 ```
 
-The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the highlight color using the Style Settings option.
+C) **Hide text on reading mode only - show on hover**
+
+It works using the classes `hidden-r` and/or `hide-r` to html `<u>` tags. It will **reveal on hover** (reading mode).
+
+```html
+Text is <u class="hidden-r">hidden</u>.
+
+You can also <u class="hide-r">hide</u> the text.
+```
+
+D) **Hide text on reading mode only - show on click**
+
+It works using the classes `hidden-rc` and/or `hide-rc` to html `<u>` tags. It will **reveal on click** (reading mode).
+
+```html
+Text is <u class="hidden-rc">hidden</u>.
+
+You can also <u class="hide-rc">hide</u> the text.
+```
+
+- The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the highlight color using the Style Settings option.
 
 ## Highlighted Text Colors
 
