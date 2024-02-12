@@ -1,5 +1,17 @@
 # Changelog
 
+## [14.3.4] - 2024-02-12
+### Improvements
+
+- Hidden text underline (bold and italic color fix). Now you can change the bold/italic color and hide the text.
+- Hidden text underline: Removed the `hidden` classes. Please use **hide** classes with the underline `<u>` tags (available classes: `hide`, `hide-c`, `hide-r` and `hide-rc`). Easier to remember and use.
+
+**Style Settings**:
+
+- **Highlight background color** - independent color for light/dark modes.
+- **Hidden text underline background color** - independent color for light/dark modes
+- **Hidden text underline foreground color** - independent color for light/dark modes
+
 ## [14.3.3] - 2024-02-11
 ### Improvements
 
