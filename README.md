@@ -626,7 +626,7 @@ C) **Hide text on reading mode only - show on hover**
 Add the `hide-r` class to the `<u>` HTML tags. It will **reveal on hover** (reading mode).
 
 ```html
-You can also <u class="hide-r">hide</u> the text.
+You can <u class="hide-r">hide</u> the text.
 ```
 
 D) **Hide text on reading mode only - show on click**
@@ -634,10 +634,10 @@ D) **Hide text on reading mode only - show on click**
 Add the `hide-rc` class to the `<u>` HTML tags. It will **reveal on click** (reading mode).
 
 ```html
-You can also <u class="hide-rc">hide</u> the text.
+You can <u class="hide-rc">hide</u> the text.
 ```
 
-- The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the background (highlight) and foreground color using the Style Settings options (different colors for light and dark modes).
+- The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the **background (highlight)** and **foreground** color using the Style Settings options (different colors for light and dark modes).
 
 ## Highlighted Text Colors
 
