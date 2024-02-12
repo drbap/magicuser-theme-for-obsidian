@@ -745,6 +745,9 @@ body {
   --mu-table-color-2: var(--mu-background-color-1);
   --mu-table-row-hover: #0088ff48;
   --mu-underline-text-color-rgb: 255, 40, 72;
+
+  --hidden-text-underline-background-color: #ffff0088;
+  --hidden-text-underline-foreground-color: #000;
   --mu-warm-screen-mode: 0;
 }
 
@@ -5433,101 +5436,101 @@ section.footnotes:has(.is-flashing) {
   transition: all .5s;
 }
 
-.view-content u.hidden,
-.view-content u.hide {
-  padding: 0 4px;
-  text-decoration-color: var(--mu-text-1);
-  font-weight: var(--font-semibold);
-  color: transparent;
-}
-
-.view-content u.hidden:hover,
-.view-content u.hide:hover {
-  background-color: var(--text-highlight-bg);
-  text-decoration: none;
-  color: var(--mu-text-1);
-  transition: all .5s;
-  cursor: default;
-}
-
-.view-content u.hidden-c,
+/* Hidden text underline */
+.view-content u.hide,
 .view-content u.hide-c {
   padding: 0 4px;
   text-decoration-color: var(--mu-text-1);
   font-weight: var(--font-semibold);
   color: transparent;
+  transition: none;
 }
 
-.view-content u.hidden-c:hover,
+.view-content u.hide:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
+.view-content u.hide:hover {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.view-content u.hide-c:hover * {
+  color: transparent;
+}
+
 .view-content u.hide-c:hover {
-  background-color: var(--text-highlight-bg);
-  transition: all .5s;
+  background-color: var(--hidden-text-underline-background-color);
   color: transparent;
   cursor: help;
 }
 
-.view-content u.hidden-c:active,
+.view-content u.hide-c:active * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
 .view-content u.hide-c:active {
-  color: var(--mu-text-1);
+  color: var(--hidden-text-underline-foreground-color);
   text-decoration: none;
-  transition: all .5s;
   cursor: default;
 }
 
 /* Hide on reading mode only */
-.view-content u.hidden-rc,
-.view-content u.hide-rc,
-.view-content u.hidden-r,
-.view-content u.hide-r {
+
+.view-content u.hide-r,
+.view-content u.hide-rc {
   padding: 0 4px;
   text-decoration-color: var(--mu-text-1);
   font-weight: var(--font-semibold);
-  color: var(--mu-text-1);
+  color: var(--hidden-text-underline-foreground-color);
+  transition: none;
 }
 
-.view-content u.hidden-rc:hover,
-.view-content u.hide-rc:hover,
-.view-content u.hidden-r:hover,
-.view-content u.hide-r:hover {
-  padding: 0 4px;
-  background-color: var(--text-highlight-bg);
-  text-decoration-color: var(--mu-text-1);
-  font-weight: var(--font-semibold);
-  color: var(--mu-text-1);
+.view-content u.hide-r:hover,
+.view-content u.hide-rc:hover {
+  background-color: var(--hidden-text-underline-background-color);
 }
 
-.markdown-reading-view u.hidden-rc,
+.markdown-reading-view u.hide-rc *,
+.markdown-reading-view u.hide-r *,
 .markdown-reading-view u.hide-rc,
-.markdown-reading-view u.hidden-r,
 .markdown-reading-view u.hide-r {
   color: transparent;
   cursor: default;
 }
 
-.markdown-reading-view u.hidden-r:hover,
+.markdown-reading-view u.hide-r:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
 .markdown-reading-view u.hide-r:hover {
-  background-color: var(--text-highlight-bg);
   text-decoration: none;
-  transition: all .5s;
-  color: var(--mu-text-1);
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
   cursor: default;
 }
 
-.markdown-reading-view u.hidden-rc:hover,
+.markdown-reading-view u.hide-rc:hover * {
+  color: transparent;
+}
+
 .markdown-reading-view u.hide-rc:hover {
-  background-color: var(--text-highlight-bg);
-  transition: all .5s;
+  background-color: var(--hidden-text-underline-background-color);
   color: transparent;
   cursor: help;
 }
 
-.markdown-reading-view u.hidden-rc:active,
+.markdown-reading-view u.hide-rc:active * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
 .markdown-reading-view u.hide-rc:active {
-  background-color: var(--text-highlight-bg);
   text-decoration: none;
-  transition: all .5s;
-  color: var(--mu-text-1);
-  cursor: help;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
 }
 
 /* Marks */
@@ -6484,11 +6487,12 @@ settings:
     -
         id: text-highlight-bg
         title: Highlighted text color
-        type: variable-color
+        type: variable-themed-color
         description: Color used to highlight text
         format: hex
         opacity: true
-        default: '#ffff0088'
+        default-light: '#ffff0088'
+        default-dark: '#ffff0088'
     -
         id: mu-underline-text-color-hex
         title: Underline text color
@@ -6502,6 +6506,24 @@ settings:
                 format: rgb-values
         default-light: '#ff2848'
         default-dark: '#ff2848'
+    -
+        id: hidden-text-underline-background-color
+        title: Hidden text underline background color
+        type: variable-themed-color
+        description: Background color (highlight) of the hidden text underline
+        format: hex
+        opacity: true
+        default-light: '#ffff0088'
+        default-dark: '#ffff0088'
+    -
+        id: hidden-text-underline-foreground-color
+        title: Hidden text underline foreground color
+        type: variable-themed-color
+        description: Foreground color of the hidden text underline
+        format: hex
+        opacity: true
+        default-light: '#000'
+        default-dark: '#000'
     -
         id: mu-footnote-color
         title: Footnotes color
