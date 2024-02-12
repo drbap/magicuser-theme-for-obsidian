@@ -5503,6 +5503,7 @@ section.footnotes:has(.is-flashing) {
 
 .markdown-reading-view u.hide-r:hover * {
   color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
 }
 
 .markdown-reading-view u.hide-r:hover {
@@ -5514,6 +5515,7 @@ section.footnotes:has(.is-flashing) {
 
 .markdown-reading-view u.hide-rc:hover * {
   color: transparent;
+  cursor: help;
 }
 
 .markdown-reading-view u.hide-rc:hover {
@@ -5524,6 +5526,7 @@ section.footnotes:has(.is-flashing) {
 
 .markdown-reading-view u.hide-rc:active * {
   color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
 }
 
 .markdown-reading-view u.hide-rc:active {
