@@ -5530,13 +5530,6 @@ section.footnotes:has(.is-flashing) {
   cursor: help;
 }
 
-/* .view-content u.hidden-r:active,
-.view-content u.hide-r:active {
-  color: var(--mu-text-1);
-  transition: all .5s;
-  cursor: default;
-} */
-
 /* Marks */
 .view-content mark {
   background-color: var(--text-highlight-bg);
