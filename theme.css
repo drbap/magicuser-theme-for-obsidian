@@ -747,7 +747,7 @@ body {
   --mu-underline-text-color-rgb: 255, 40, 72;
 
   --hidden-text-underline-background-color: #ffff0088;
-  --hidden-text-underline-foreground-color: #000;
+  --hidden-text-underline-foreground-color: var(--text-normal);
   --mu-warm-screen-mode: 0;
 }
 
