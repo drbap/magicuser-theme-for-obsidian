@@ -607,45 +607,37 @@ Text <u class="pink">pink underline</u>.
 
 A) **Show text on hover** (hide text on live preview and reading modes)
 
-It works using the classes `hidden` and/or `hide` to html `<u>` tags.
+Add the `hide` class to the `<u>` HTML tags.
 
 ```html
-Text is <u class="hidden">hidden</u>.
-
-You can also <u class="hide">hide</u> the text.
+You can <u class="hide">hide</u> the text.
 ```
 
 B) **Show text on click and hold** (hide text on live preview and reading modes)
 
-It works using the classes `hidden-c` and/or `hide-c` to html `<u>` tags. Just add `-c` to the class name (it will **reveal on click**)
+Add the `hide-c` class to the `<u>` HTML tags (it will **reveal on click**).
 
 ```html
-Text is <u class="hidden-c">hidden</u>.
-
-You can also <u class="hide-c">hide</u> the text.
+You can <u class="hide-c">hide</u> the text.
 ```
 
 C) **Hide text on reading mode only - show on hover**
 
-It works using the classes `hidden-r` and/or `hide-r` to html `<u>` tags. It will **reveal on hover** (reading mode).
+Add the `hide-r` class to the `<u>` HTML tags. It will **reveal on hover** (reading mode).
 
 ```html
-Text is <u class="hidden-r">hidden</u>.
-
 You can also <u class="hide-r">hide</u> the text.
 ```
 
 D) **Hide text on reading mode only - show on click**
 
-It works using the classes `hidden-rc` and/or `hide-rc` to html `<u>` tags. It will **reveal on click** (reading mode).
+Add the `hide-rc` class to the `<u>` HTML tags. It will **reveal on click** (reading mode).
 
 ```html
-Text is <u class="hidden-rc">hidden</u>.
-
 You can also <u class="hide-rc">hide</u> the text.
 ```
 
-- The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the highlight color using the Style Settings option.
+- The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the background (highlight) and foreground color using the Style Settings options (different colors for light and dark modes).
 
 ## Highlighted Text Colors
 
