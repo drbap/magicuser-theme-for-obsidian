@@ -1,5 +1,12 @@
 # Changelog
 
+## [14.3.3] - 2024-02-11
+### Improvements
+
+- Hidden text underline adjustments.
+- Fixed underline text skip.
+- Added -rc class to hide underline text only on reading mode.
+
 ## [14.3.2] - 2024-02-11
 ### Improvements
 
