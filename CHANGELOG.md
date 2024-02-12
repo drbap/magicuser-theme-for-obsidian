@@ -1,5 +1,9 @@
 # Changelog
 
+## [14.3.7] - 2024-02-12
+### Fixes
+- Hidden underline text - hover cursor.
+
 ## [14.3.6] - 2024-02-12
 ### Fixes
 - Dark mode: hidden text underline color (foreground color).
