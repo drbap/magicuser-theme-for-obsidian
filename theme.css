@@ -6523,7 +6523,7 @@ settings:
         format: hex
         opacity: true
         default-light: '#000'
-        default-dark: '#000'
+        default-dark: '#f1f1f1'
     -
         id: mu-footnote-color
         title: Footnotes color
