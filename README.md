@@ -576,6 +576,40 @@ To align right, use `|right`.
 
 ![Search Highlight in Current Note](images/magicuser_search_highlights.png)
 
+## Inline Comments
+
+![MagicUser Inline Comments](images/magicuser_theme_inline_comments.gif)
+
+- **Inline interactive comments**. You can add inline comments to any part of your note, and when you hover over it, the content will be displayed in a box. The comment icon will be highlighted.
+
+- You can add HTML bold `<b>`, italic `<i>`, links `<a href>`, `<u>`, `<mark>` tags in order to format your comment to make it easier to you to review them. 
+
+- They were designed for quick comments 1 - 4 paragraphs.
+
+- The inline comments **will not be printed or exported to PDF**.
+
+**Syntax**:
+
+1. Add the `<i>` tag with the class `muc` (**MagicUser Comment**)
+2. Inside `<i class="muc">` just add a `<span>` tag with your comment. There is no need to add any class to the span tag.
+
+**Example**
+
+```html
+This is the text of your note <i class="muc">
+  <span>
+    This is your first inline comment.
+  </span>
+</i>
+
+```
+- If you're used to HTML, just make it one line:
+
+```html
+This is the text of your note <i class="muc"><span>This is your inline comment.</span></i>
+
+```
+
 ## Underlined Text Colors
 
 ![Underlined text](images/magicuser_theme_underlined_text.gif)
