@@ -582,7 +582,7 @@ To align right, use `|right`.
 
 - **Inline interactive comments**. You can add inline comments to any part of your note, and when you hover over it, the content will be displayed in a box. The comment icon will be highlighted.
 
-- You can add HTML bold `<b>`, italic `<i>`, links `<a href>`, `<u>`, `<mark>` tags in order to format your comment to make it easier to you to review them. 
+- You can add HTML bold `<b>`, italic `<i>`, links `<a href>`, `<u>`, `<mark>` tags in order to format your comments to make it easier to you to review them. 
 
 - They were designed for quick comments 1 - 4 paragraphs.
 
@@ -787,6 +787,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
 - @golden234431 (Obsidian Forum) - inline title font size.
-- @fred.joe3697 (Obsidian Forum) - underlined text color. Hidden text underline suggestion.
+- @fred.joe3697 (Obsidian Forum) - underlined text color. Hidden text underline and inline comments suggestions.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
