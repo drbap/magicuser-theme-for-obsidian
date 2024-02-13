@@ -1,5 +1,9 @@
 # Changelog
 
+## [14.4.0] - 2024-02-12
+### Improvements
+- MagicUser inline comments (muc).
+
 ## [14.3.7] - 2024-02-12
 ### Fixes
 - Hidden underline text - hover cursor.
