@@ -448,6 +448,59 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ![Media Callouts](images/magicuser_m_callouts.png)
 
+### Table Callouts
+
+![Table Callouts](images/magicuser_theme_table_callouts.gif)
+
+`> [!table]`
+
+You can add a table inside the table callout and adjust the table size/width according to the page.
+
+`> [!table` + `|50% - 100%]` (percentage of the page occupied by the table)
+
+- Values: **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
+- You can also **center** the table (just add `center` after the percentage).
+- Don't forget to leave an empty line before inserting the table.
+
+Check it out the examples below.
+
+**Default Table Callout**
+
+```md
+> [!table] Table 1
+> 
+> | Column 1  | Column 2 |  Column 3 |
+> | :---:     | :---:    |  :---:    |
+> | Text 1    | Text 2   | Text 3    |
+> | Text 4    | Text 5   | Text 6    |
+> | Text 7    | Text 8   | Text 9    |
+```
+
+**Table 70%**
+
+```md
+> [!table|70%] Table 1
+> 
+> | Column 1  | Column 2 |  Column 3 |
+> | :---:     | :---:    |  :---:    |
+> | Text 1    | Text 2   | Text 3    |
+> | Text 4    | Text 5   | Text 6    |
+> | Text 7    | Text 8   | Text 9    |
+```
+
+**Table 50% width and centered**
+- add `percentage center`
+  
+```md
+> [!table|50% center] Table 1
+> 
+> | Column 1  | Column 2 |  Column 3 |
+> | :---:     | :---:    |  :---:    |
+> | Text 1    | Text 2   | Text 3    |
+> | Text 4    | Text 5   | Text 6    |
+> | Text 7    | Text 8   | Text 9    |
+```
+
 ### Highlighter Callouts
 
 `> [!hl-` + `color] Your Callout Title`
@@ -541,6 +594,21 @@ To align right, use `|right`.
 `> [!link]` or `> [!links]`
 
 `> [!magic]`
+
+## Resize Callouts
+
+![Resize Callouts](images/magicuser_theme_width_center_callouts_adjustment.gif)
+
+- **All callouts** can be resized. You can use the same syntax as table callouts in other callouts to resize them on screen (also center them).
+
+`> [!callout-name|percentage]` Your callout title or
+
+`> [!callout-name|percentage center]`
+
+``` md
+> [!question|80% center] Your callout title
+> Your callout content
+```
 
 ## Caret Colors for Improved Visibility
 
