@@ -3,7 +3,7 @@
 ## [14.5.0] - 2024-02-13
 ### Improvements
 - Table callouts.
-- All callouts can be resized (|percentage and/or |percentage center)
+- All callouts can be resized. Same syntax as table callouts in other callouts to resize them on screen (also center them).
 
 ## [14.4.0] - 2024-02-12
 ### Improvements
