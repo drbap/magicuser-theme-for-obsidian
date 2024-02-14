@@ -601,7 +601,7 @@ To align right, use `|right`.
 
 - **All callouts** can be resized. You can use the same syntax as table callouts in other callouts to resize them on screen (also center them).
 
-`> [!callout-name|percentage]` Your callout title or
+`> [!callout-name|percentage]` or
 
 `> [!callout-name|percentage center]`
 
@@ -609,6 +609,8 @@ To align right, use `|right`.
 > [!question|80% center] Your callout title
 > Your callout content
 ```
+- Values: **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
+- You can also **center** the callout (just add `center` after the percentage)
 
 ## Caret Colors for Improved Visibility
 
