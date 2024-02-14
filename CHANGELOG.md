@@ -1,5 +1,10 @@
 # Changelog
 
+## [14.5.0] - 2024-02-13
+### Improvements
+- Table callouts.
+- All callouts can be resized (|percentage and/or |percentage center)
+
 ## [14.4.0] - 2024-02-12
 ### Improvements
 - MagicUser inline comments (muc).
