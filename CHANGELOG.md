@@ -3,7 +3,7 @@
 ## [14.5.1] - 2024-02-15
 ### Improvements
 - **Inline comments inside tables** fix. 
-- Resize table callouts and other callouts (|30%, |30% center,|40% and Z40% center).
+- Resize table callouts and other callouts (|30%, |30% center,|40% and 40% center).
 
 ## [14.5.0] - 2024-02-13
 ### Improvements
