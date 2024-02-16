@@ -3115,6 +3115,14 @@ li[data-task="G"]>p>input:checked::after {
   margin: 0 auto;
 }
 
+.callout[data-callout][data-callout-metadata^="30%"] {
+  width: 30%;
+}
+
+.callout[data-callout][data-callout-metadata^="40%"] {
+  width: 40%;
+}
+
 .callout[data-callout][data-callout-metadata^="50%"] {
   width: 50%;
 }
@@ -5299,6 +5307,8 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
     grid-template-columns: auto !important;
   }
 
+  .callout[data-callout][data-callout-metadata^="30%"],
+  .callout[data-callout][data-callout-metadata^="40%"],
   .callout[data-callout][data-callout-metadata^="50%"],
   .callout[data-callout][data-callout-metadata^="60%"],
   .callout[data-callout][data-callout-metadata^="70%"],
@@ -5671,6 +5681,40 @@ i.muc:hover>span {
   border: 2px solid #ffbf0088;
   border-radius: var(--radius-m);
   color: var(--mu-text-1);
+}
+
+/* MUC inside tables */
+.markdown-source-view.mod-cm6 .cm-content>[contenteditable=false]:has(i.muc) {
+  contain: none !important;
+}
+
+table tr>td>i.muc {
+  cursor: default;
+}
+
+table tr>td>i.muc:hover>span {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 20px;
+  min-width: 400px;
+  width: 70%;
+  height: auto;
+  padding: .5em 1em;
+  border-radius: var(--radius-m);
+  color: var(--mu-text-1);
+  text-align: left;
+  box-shadow: 0 2px 8px #00000088;
+  border: 2px solid #ffbf0088;
+  z-index: 100;
+}
+
+.theme-light table tr>td>i.muc:hover>span {
+  background-color: #fff8cf;
+}
+
+.theme-dark table tr>td>i.muc:hover>span {
+  background-color: #384a38;
 }
 
 /* Style Settings */
