@@ -456,9 +456,9 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 You can add a table inside the table callout and adjust the table size/width according to the page.
 
-`> [!table` + `|50% - 100%]` (percentage of the page occupied by the table)
+`> [!table` + `|30% - 100%]` (percentage of the page occupied by the table)
 
-- Values: **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
+- Values: **30%**, **40%**, **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
 - You can also **center** the table (just add `center` after the percentage).
 - Don't forget to leave an empty line before inserting the table.
 
@@ -609,7 +609,7 @@ To align right, use `|right`.
 > [!question|80% center] Your callout title
 > Your callout content
 ```
-- Values: **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
+- Values: **30%**, **40%**, **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
 - You can also **center** the callout (just add `center` after the percentage)
 
 ## Caret Colors for Improved Visibility
@@ -679,6 +679,11 @@ This is the text of your note <i class="muc">
 This is the text of your note <i class="muc"><span>This is your inline comment.</span></i>
 
 ```
+
+### Inline Comments Inside Tables
+
+![MagicUser Inline Comments - Tables](images/magicuser_theme_inline_comments_tables.gif)
+
 
 ## Underlined Text Colors
 
