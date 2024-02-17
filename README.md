@@ -384,6 +384,18 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 - Style Settings: select sidebar open folder area **background color**.
 - Style Settings: **hide** sidebar open folder area.
 
+## Breadcrumb
+
+![Breadcrumb](images/magicuser_theme_breadcrumbs.gif)
+
+- New **breadcrumb layout** (view header breadcrumb). The breadcrumb folders will have the same border and background colors of the **sidebar open folder area** (file explorer). 
+
+- You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
+
+**Style Settings - Theme Options**:
+
+> **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
+
 ## Custom Checkbox Icons
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
