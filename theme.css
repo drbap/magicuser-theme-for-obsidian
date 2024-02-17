@@ -5684,8 +5684,8 @@ i.muc:hover>span {
 }
 
 /* MUC inside tables */
-table:has(i.muc) {
-  contain: content !important;
+.markdown-source-view.mod-cm6 .cm-content>[contenteditable=false]:has(i.muc) {
+  contain: none !important;
 }
 
 table tr>td>i.muc {
@@ -5695,9 +5695,12 @@ table tr>td>i.muc {
 table tr>td>i.muc:hover>span {
   position: fixed;
   display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  min-width: 400px;
+  width: 80%;
+  max-width: 800px;
   height: auto;
   padding: .5em 1em;
   border-radius: var(--radius-m);
