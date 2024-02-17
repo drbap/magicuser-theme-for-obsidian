@@ -1,5 +1,15 @@
 # Changelog
 
+## [14.6.0] - 2024-02-17
+### Improvements
+
+- New **breadcrumb layout** (view header breacrumb). The breadcrumb folders will have the same border and background colors of the **sidebar open folder area** (file explorer). 
+  - You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
+- **Inline comments inside tables** adjustment.
+- **Blockquote adjustment** in live preview (editing callouts).
+- Caret color -> theme: MagicUser Camouflage (light/dark modes)
+
+
 ## [14.5.1] - 2024-02-15
 ### Improvements
 - **Inline comments inside tables** fix. 
