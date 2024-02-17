@@ -1,5 +1,10 @@
 # Changelog
 
+## [14.6.2] - 2024-02-17
+### Fixes
+
+- Breadcrumb padding (default and slanted breadcrumb).
+
 ## [14.6.1] - 2024-02-17
 ### Improvements
 
@@ -7,7 +12,7 @@
   - You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
 - **Inline comments inside tables** adjustment.
 - **Blockquote adjustment** in live preview (editing callouts).
-- Caret color -> theme: MagicUser Camouflage (light/dark modes)
+- Caret color -> theme: MagicUser Camouflage (light/dark modes).
 
 
 ## [14.5.1] - 2024-02-15
