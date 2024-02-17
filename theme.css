@@ -5720,10 +5720,6 @@ table tr>td>i.muc:hover>span {
 }
 
 /* Breadcrumbs */
-body:not(.is-mobile) .view-header-title-parent {
-  padding-left: 4px;
-}
-
 body:not(.is-mobile) .view-header-breadcrumb {
   background-color: var(--mu-folder-area-background);
   color: var(--mu-sidebar-folder);
@@ -5738,6 +5734,10 @@ body:not(.is-mobile) .view-header-breadcrumb:hover {
 body:not(.is-mobile) .view-header-breadcrumb-separator {
   margin: 0 2px;
   color: #a3a3a348 !important;
+}
+
+body:not(.is-mobile).mu-slanted-breadcrumb:has(.view-header-breadcrumb) .view-header-title-parent {
+  padding-left: 4px;
 }
 
 body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb {
