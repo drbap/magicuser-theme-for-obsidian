@@ -1,6 +1,6 @@
 # Changelog
 
-## [14.6.0] - 2024-02-17
+## [14.6.1] - 2024-02-17
 ### Improvements
 
 - New **breadcrumb layout** (view header breadcrumb). The breadcrumb folders will have the same border and background colors of the **sidebar open folder area** (file explorer). 
