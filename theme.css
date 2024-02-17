@@ -3886,7 +3886,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .theme-light.magicuser-camouflage-theme {
   --mu-background-color-1: #e1e8d3;
   --mu-background-color-2: #d1d8c0;
-  --mu-caret-color: #ff5f00;
+  --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
   --mu-setting-color: #a3a3a348;
@@ -3909,7 +3909,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .theme-dark.magicuser-camouflage-theme {
   --mu-background-color-1: #24281c;
   --mu-background-color-2: #1e2117;
-  --mu-caret-color: #ff5f00;
+  --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
   --mu-setting-color: #a3a3a318;
@@ -5684,8 +5684,8 @@ i.muc:hover>span {
 }
 
 /* MUC inside tables */
-.markdown-source-view.mod-cm6 .cm-content>[contenteditable=false]:has(i.muc) {
-  contain: none !important;
+table:has(i.muc) {
+  contain: content !important;
 }
 
 table tr>td>i.muc {
@@ -5695,10 +5695,9 @@ table tr>td>i.muc {
 table tr>td>i.muc:hover>span {
   position: fixed;
   display: block;
-  left: 20px;
-  bottom: 20px;
-  min-width: 400px;
-  width: 70%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   height: auto;
   padding: .5em 1em;
   border-radius: var(--radius-m);
@@ -5715,6 +5714,42 @@ table tr>td>i.muc:hover>span {
 
 .theme-dark table tr>td>i.muc:hover>span {
   background-color: #384a38;
+}
+
+/* Breadcrumbs */
+body:not(.is-mobile) .view-header-title-parent {
+  padding-left: 4px;
+}
+
+body:not(.is-mobile) .view-header-breadcrumb {
+  background-color: var(--mu-folder-area-background);
+  color: var(--mu-sidebar-folder);
+  font-weight: var(--font-semibold);
+  border: 1px solid var(--mu-folder-area-border);
+}
+
+body:not(.is-mobile) .view-header-breadcrumb:hover {
+  color: var(--mu-sidebar-folder) !important;
+}
+
+body:not(.is-mobile) .view-header-breadcrumb-separator {
+  margin: 0 2px;
+  color: #a3a3a348 !important;
+}
+
+body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb {
+  transform: skew(-12deg);
+}
+
+body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb-separator {
+  margin: 0;
+  visibility: hidden;
+}
+
+/* Blockquote adjustment */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  margin-left: -4px;
 }
 
 /* Style Settings */
@@ -5932,6 +5967,11 @@ settings:
         id: mu-hide-folder-open-area
         title: Hide sidebar open folder area
         description: Hide sidebar open folder area
+        type: class-toggle
+    -
+        id: mu-slanted-breadcrumb
+        title: Slanted breadcrumb layout
+        description: Slanted breadcrumb (view header breadcrumb)
         type: class-toggle
     -
         id: mu-sidebar-folder
