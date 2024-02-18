@@ -712,7 +712,7 @@ body {
 
   --mu-stacked-mode-border-value: 1;
   --mu-stacked-mode-border-width: calc(var(--mu-stacked-mode-border-value) * 1px);
-  --mu-stacked-mode-border-color: #d372ff;
+  --mu-stacked-mode-border-color: #0088ff;
   --mu-footnote-color: #f07f48;
 
   /* Inline title font size slider */
@@ -751,6 +751,9 @@ body {
 
   --muc-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffff4848' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
   --muc-icon-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px' viewBox='0 0 24 24' fill='%23ffbf00' stroke='%23ffbf00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+  --mu-default-mode-border-color: #0088ff;
+  --mu-default-mode-border-value: 1;
+  --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
   --mu-warm-screen-mode: 0;
 }
 
@@ -1241,6 +1244,7 @@ span.obsidian-search-match-highlight {
   --highlight-mix-blend-mode: normal;
   --background-primary-alt: #e1e1e1;
   --background-secondary-alt: #ffffff;
+  --graph-node-focused: #0048a3;
 }
 
 .theme-light * {
@@ -3339,6 +3343,10 @@ li[data-task="G"]>p>input:checked::after {
 }
 
 /* Stacked mode */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
+  background-color: var(--mu-background-color-2);
+}
+
 .workspace-tabs.mod-stacked .workspace-tab-header.mod-active {
   border-left: var(--mu-stacked-mode-border-width) solid var(--mu-stacked-mode-border-color);
 }
@@ -4656,6 +4664,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-tabs-options"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z'/%3E%3Cpath d='m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65'/%3E%3Cpath d='m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -5755,6 +5770,68 @@ body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb-separator {
   margin-left: -4px;
 }
 
+/* Tabs */
+body:not(.is-mobile) .workspace .mod-root .workspace-tab-header[data-type="markdown"] .workspace-tab-header-inner-icon,
+.workspace .mod-root .workspace-tab-header[data-type="empty"] .workspace-tab-header-inner-icon {
+  display: flex;
+}
+
+body:not(.is-mobile) .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+}
+
+body:not(.is-mobile) .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+  border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+}
+
+/* Tabs -> Square */
+body:not(.is-mobile).mu-tabs-square .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after,
+body:not(.is-mobile).mu-tabs-square .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before {
+  display: none;
+}
+
+body:not(.is-mobile).mu-tabs-square .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  --tab-radius-active: 0;
+  --tab-radius: 0;
+  border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+}
+
+body:not(.is-mobile).mu-tabs-square .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+  --tab-radius-active: 0;
+  --tab-radius: 0;
+  border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+}
+
+/* Tabs -> Pill */
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header::after,
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before {
+  display: none;
+}
+
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  border: 0;
+  background: transparent;
+}
+
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner {
+  border: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  background-color: var(--mu-background-color-1);
+}
+
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner {
+  border: var(--mu-default-mode-border-width) solid #82828248;
+  background-color: var(--mu-background-color-2);
+  border-radius: 8px;
+}
+
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header .workspace-tab-header-inner:hover {
+  border: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+}
+
+body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+  border: 0;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -5919,24 +5996,6 @@ settings:
         min: 0.6
         max: 2
         step: 0.01
-    -
-        id: mu-stacked-mode-border-color
-        title: Stacked mode - active tab border width
-        type: variable-themed-color
-        description: Stacked mode - border color of active tab
-        format: hex
-        opacity: false
-        default-light: '#d372ff'
-        default-dark: '#d372ff'   
-    - 
-        id: mu-stacked-mode-border-value
-        title: Stacked mode - active tab border width
-        description: Stacked mode - border width of active tab
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 5
-        step: 1   
     -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
@@ -6234,6 +6293,74 @@ settings:
         default: 8
         min: 0
         max: 18
+        step: 1
+    -
+        id: magicuser-theme-tabs-options
+        title: Tabs
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: tab-text-color-focused-active-current
+        title: Active tab foreground color
+        type: variable-themed-color
+        description: Foreground color of the active tab (default and stacked tabs modes)
+        format: hex
+        opacity: false
+        default-light: '#000000'
+        default-dark: '#f1f1f1'   
+    -
+        id: mu-tabs-style
+        title: Tabs style
+        type: class-select
+        description: Select the style of the tabs
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default tabs
+                value: none
+            - 
+                label: Square tabs
+                value: mu-tabs-square
+            - 
+                label: Pill tabs
+                value: mu-tabs-pill
+    -
+        id: mu-default-mode-border-color
+        title: Default tabs mode - active tab border color
+        type: variable-themed-color
+        description: Default tabs mode - border color of active tab
+        format: hex
+        opacity: false
+        default-light: '#0088ff'
+        default-dark: '#0088ff'   
+    - 
+        id: mu-default-mode-border-value
+        title: Default tabs mode - active tab border width
+        description: Default tabs mode - border width of active tab
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 2
+        step: 1
+    -
+        id: mu-stacked-mode-border-color
+        title: Stacked tabs mode - active tab border color
+        type: variable-themed-color
+        description: Stacked tabs mode - border color of active tab
+        format: hex
+        opacity: false
+        default-light: '#0088ff'
+        default-dark: '#0088ff'  
+    - 
+        id: mu-stacked-mode-border-value
+        title: Stacked tabs mode - active tab border width
+        description: Stacked tabs mode - border width of active tab
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
         step: 1
     -
         id: magicuser-theme-reading-mode-options
