@@ -1,5 +1,30 @@
 # Changelog
 
+## [14.7.0] - 2024-02-18
+### Improvements
+> **UI Settings** -> **Tabs**
+
+- **Improved tabs layout**
+  - Default tabs mode will **display the tabs icons** (left part of the tab).
+  - Select the **style of the tabs** (*3 options*): 
+    - **default tabs** (rounded), 
+    - **square tabs** and 
+    - **pill tabs**.
+  - Select active tab **foreground color** (text and icon color).
+  - *Default tabs* mode: Select active tab **border color**.
+  - *Default tabs* mode: Select active tab **border width** (0 = no border).
+  - *Stacked tabs* mode: Select active tab **border color**.
+  - *Stacked tabs* mode: Select active tab **border width** (0 = no border).
+  - > You can select **independent border colors** for active tab in default and stacked tabs modes. By default, they are the **same**.
+
+- **Stacked mode tabs**
+  - **bottom scrollbar** color adjustment (stacked tabs container).
+  - new default **border color**
+
+
+- **Graph**: active note node color adjustment (light themes). Easier to see.
+
+
 ## [14.6.2] - 2024-02-17
 ### Fixes
 
