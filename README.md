@@ -252,7 +252,7 @@ Submenus:
 
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
 
-**Style Settings** (**Tabs** submenu)
+**Style Settings** (**Tabs Submenu**)
 
 ![MagicUser tabs](images/magicuser_theme_tabs_submenu.png)
 
