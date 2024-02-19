@@ -279,20 +279,18 @@ Submenus:
 
 ![Rainbow Colored Special Folders](images/magicuser_special_folders.png)
 
-- When activated, this mode will highlight the background of folders starting with the numbers "01-" and/or "001-" to "08-" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
+- When activated, this mode will highlight the background of folders starting with the numbers "01" and/or "001" to "08" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
 - All **subfolders** will have the same color of the top folder.
-
-**Folder name**:
-
-`Number` + ` ` (space) and/or 
-`Number` + `-` (hyphen or minus)
-
-**Example**:
-`01 Folder name` or `01-Folder name`
 
 Activate this mode using the Style Settings plugin:
 > **UI Settings** -> **Icons and Folders** -> Rainbow colored background folders 
 
+### Rainbow Subfolders (Nested Rainbow Folders)
+
+![Nested Rainbow Folders](images/magicuser_rainbow_subfolders.png)
+
+- You can start your **folder structure numbering** in a subfolder.
+  
 ## Dark Sidebar (Light Mode)
 
 ![Dark sidebar - light mode](images/magicuser_obsidian_themes_sidebar.png)
