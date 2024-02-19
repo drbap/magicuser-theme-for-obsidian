@@ -1,5 +1,11 @@
 # Changelog
 
+## [14.7.1] - 2024-02-19
+### Improvements
+
+- **Improved rainbow folders**. You can start the numbering with 01 or 001 to 08-008. You could add hyphen or space, underline or just start typing the folder name, e.g. **001FolderName** or **01_FolderName** (01 FolderName).
+- **Nested rainbow folders**. You can start the folder numbering structure in a subfolder.
+
 ## [14.7.0] - 2024-02-18
 ### Improvements
 
