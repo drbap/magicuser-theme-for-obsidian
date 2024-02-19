@@ -146,7 +146,7 @@ Submenus:
 ◼ **Tabs**
 
 - Select active tab **foreground color** (text and icon color).
-- Select the **style of the tabs** (*3 options*):**default tabs**, **square tabs** and **pill tabs**.
+- Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**.
 - *Default tabs* mode: Select active tab **border color**.
 - *Default tabs* mode: Select active tab **border width** (0 = no border).
 - *Stacked tabs* mode: Select active tab **border color**.
@@ -247,6 +247,33 @@ Submenus:
 - Punctuation
 
 </details>
+
+## Tabs
+
+![MagicUser tabs](images/magicuser_theme_tabs.gif)
+
+**Style Settings** (**Tabs** submenu)
+
+![MagicUser tabs](images/magicuser_theme_tabs_submenu.png)
+
+- Select active tab **foreground color** (text and icon color).
+- Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**.
+- *Default tabs* mode: Select active tab **border color**.
+- *Default tabs* mode: Select active tab **border width** (0 = no border).
+- *Stacked tabs* mode: Select active tab **border color**.
+- *Stacked tabs* mode: Select active tab **border width** (0 = no border).
+
+## Breadcrumb
+
+![Breadcrumb](images/magicuser_theme_breadcrumbs.gif)
+
+- New **breadcrumb layout** (view header breadcrumb). The breadcrumb folders will have the same border and background colors of the **sidebar open folder area** (file explorer). 
+
+- You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
+
+**Style Settings - Theme Options**:
+
+> **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
 
 ## Rainbow Folders
 
@@ -392,18 +419,6 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 - Style Settings: select sidebar open folder area **border color**.
 - Style Settings: select sidebar open folder area **background color**.
 - Style Settings: **hide** sidebar open folder area.
-
-## Breadcrumb
-
-![Breadcrumb](images/magicuser_theme_breadcrumbs.gif)
-
-- New **breadcrumb layout** (view header breadcrumb). The breadcrumb folders will have the same border and background colors of the **sidebar open folder area** (file explorer). 
-
-- You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
-
-**Style Settings - Theme Options**:
-
-> **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
 
 ## Custom Checkbox Icons
 
