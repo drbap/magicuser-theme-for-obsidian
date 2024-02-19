@@ -143,6 +143,15 @@ Submenus:
 - **Inner table borders** width (rows and columns borders)
 - **Table rounded corners** (0 = square corners)
 
+◼ **Tabs**
+
+- Select active tab **foreground color** (text and icon color).
+- Select the **style of the tabs** (*3 options*):**default tabs**, **square tabs** and **pill tabs**.
+- *Default tabs* mode: Select active tab **border color**.
+- *Default tabs* mode: Select active tab **border width** (0 = no border).
+- *Stacked tabs* mode: Select active tab **border color**.
+- *Stacked tabs* mode: Select active tab **border width** (0 = no border).
+
 ◼ **Reading Mode**
 
 - **Reading indicator width** - slider controller
