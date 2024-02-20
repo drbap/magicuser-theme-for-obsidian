@@ -754,6 +754,13 @@ body {
   --mu-default-mode-border-color: #0088ff;
   --mu-default-mode-border-value: 1;
   --mu-default-mode-border-width: calc(var(--mu-default-mode-border-value) * 1px);
+
+  --mu-laser-top-value: 50;
+  --mu-laser-top: calc(var(--mu-laser-top-value) * 1%);
+  --mu-laser-color-bg: #80ffaa;
+  --mu-laser-color-glow: #00ff55;
+  --mu-laser-intensity: 1.5;
+
   --mu-warm-screen-mode: 0;
 }
 
@@ -3342,6 +3349,66 @@ li[data-task="G"]>p>input:checked::after {
   page-break-inside: avoid;
 }
 
+/* Untitled box callouts */
+/* ub blue */
+.callout[data-callout="ub-blue"] {
+  --callout-color: var(--mu-callout-blue);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-blue), 0.3);
+}
+
+/* ub green */
+.callout[data-callout="ub-green"] {
+  --callout-color: var(--mu-callout-green);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-green), 0.3);
+}
+
+/* ub orange */
+.callout[data-callout="ub-orange"] {
+  --callout-color: var(--mu-callout-orange);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-orange), 0.3);
+}
+
+/* ub yellow */
+.callout[data-callout="ub-yellow"] {
+  --callout-color: var(--mu-callout-yellow);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-yellow), 0.3);
+}
+
+/* ub red */
+.callout[data-callout="ub-red"] {
+  --callout-color: var(--mu-callout-red);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-red), 0.3);
+}
+
+/* ub pink */
+.callout[data-callout="ub-pink"] {
+  --callout-color: var(--mu-callout-pink);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-pink), 0.3);
+}
+
+/* ub purple */
+.callout[data-callout="ub-purple"] {
+  --callout-color: var(--mu-callout-purple);
+  --callout-icon: none;
+  background-color: rgba(var(--mu-callout-purple), 0.3);
+}
+
+.callout[data-callout="ub-green"] .callout-title,
+.callout[data-callout="ub-blue"] .callout-title,
+.callout[data-callout="ub-orange"] .callout-title,
+.callout[data-callout="ub-yellow"] .callout-title,
+.callout[data-callout="ub-red"] .callout-title,
+.callout[data-callout="ub-pink"] .callout-title,
+.callout[data-callout="ub-purple"] .callout-title {
+  display:none;
+}
+
 /* Stacked mode */
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
   background-color: var(--mu-background-color-2);
@@ -5832,6 +5899,120 @@ body:not(.is-mobile).mu-tabs-pill .workspace-split:not(.mod-right-split, .mod-le
   border: 0;
 }
 
+/* MagicUser Laser */
+body.mu-laser-active.mu-laser-type-line .markdown-reading-view::after {
+  content: '';
+  top: var(--mu-laser-top);
+  left: 10px;
+  right: 20px;
+  position: absolute;
+  z-index: 2000;
+  width: auto;
+  height: 2px;
+  box-shadow: 0 0 8px 2px var(--mu-laser-color-glow), 0 0 calc(var(--mu-laser-intensity) * 22px) 2px var(--mu-laser-color-glow);
+  background-color: var(--mu-laser-color-bg);
+  border-radius: 24px;
+  transform: scaleY(var(--mu-laser-intensity));
+  opacity: .8;
+  pointer-events: none;
+}
+
+body.mu-laser-active.mu-laser-type-area .markdown-reading-view::after {
+  content: '';
+  top: var(--mu-laser-top);
+  left: 10px;
+  right: 20px;
+  position: absolute;
+  z-index: 2000;
+  width: auto;
+  height: 82px;
+  box-shadow: inset 0 0 10px 1px var(--mu-laser-color-glow), 0 0 4px 1px var(--mu-laser-color-glow), 0 0 calc(var(--mu-laser-intensity) * 12px) 1px var(--mu-laser-color-glow);
+  border: 1px solid var(--mu-laser-color-bg);
+  background-color: transparent;
+  border-radius: 0;
+  transform: scaleY(var(--mu-laser-intensity));
+  opacity: .8;
+  pointer-events: none;
+}
+
+.theme-dark.mu-laser-green {
+  --mu-laser-color-bg: #80ffaa;
+  --mu-laser-color-glow: #00ff55;
+}
+
+.theme-light.mu-laser-green {
+  --mu-laser-color-bg: #00e84d;
+  --mu-laser-color-glow: #00ff5580;
+}
+
+.theme-dark.mu-laser-blue {
+  --mu-laser-color-bg: #00f1ff;
+  --mu-laser-color-glow: #00a3ff;
+}
+
+.theme-light.mu-laser-blue {
+  --mu-laser-color-bg: #00a3ff;
+  --mu-laser-color-glow: #00a3ff88;
+}
+
+.theme-dark.mu-laser-red {
+  --mu-laser-color-bg: #ff7f7f;
+  --mu-laser-color-glow: #ff0000;
+}
+
+.theme-light.mu-laser-red {
+  --mu-laser-color-bg: #ff0000;
+  --mu-laser-color-glow: #ff000088;
+}
+
+.theme-dark.mu-laser-orange {
+  --mu-laser-color-bg: #ffcf00;
+  --mu-laser-color-glow: #ff7f00;
+}
+
+.theme-light.mu-laser-orange {
+  --mu-laser-color-bg: #ff7f00;
+  --mu-laser-color-glow: #ff7f0088;
+}
+
+.theme-dark.mu-laser-yellow {
+  --mu-laser-color-bg: #ffff00;
+  --mu-laser-color-glow: #e1e100;
+}
+
+.theme-light.mu-laser-yellow {
+  --mu-laser-color-bg: #ffd700;
+  --mu-laser-color-glow: #ffd70088;
+}
+
+.theme-dark.mu-laser-purple {
+  --mu-laser-color-bg: #d88fff;
+  --mu-laser-color-glow: #bf48ff;
+}
+
+.theme-light.mu-laser-purple {
+  --mu-laser-color-bg: #bf48ff;
+  --mu-laser-color-glow: #a300ff88;
+}
+
+.theme-dark.mu-laser-pink {
+  --mu-laser-color-bg: #ff8ce1;
+  --mu-laser-color-glow: #ff48cf;
+}
+
+.theme-light.mu-laser-pink {
+  --mu-laser-color-bg: #ff00cf;
+  --mu-laser-color-glow: #ff48cf88;
+}
+
+/* Sidebar adjustment */
+.modal.mod-settings.mod-sidebar-layout {
+  resize: both;
+  min-width: 600px;
+  min-height: 100px;
+  max-height: 95vh;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -6004,9 +6185,10 @@ settings:
         collapsed: true
     -
         id: mu-rainbow-folders
-        title: Rainbow colored background folders
+        title: Rainbow colored folders
         description: Special rainbow colored folders (001-,01- to 008-,08-) 
         type: class-toggle
+        addCommand: true
     -
         id: mu-folder-area-border
         title: Sidebar open folder area border
@@ -6075,11 +6257,13 @@ settings:
         title: Hide folder icons
         description:  Toggle folder icons
         type: class-toggle
+        addCommand: true
     -
         id: mu-hide-file-icons
         title: Hide file icons
         description:  Toggle file icons
         type: class-toggle
+        addCommand: true
     -
         id: magicuser-theme-indent-guides-color
         title: Indent Guides
@@ -6368,6 +6552,73 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-laser-active
+        title: MagicUser laser
+        description: Turn on MagicUser laser (reading mode)
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-laser-type
+        title: Laser focus type
+        type: class-select
+        description: Select laser focus type
+        allowEmpty: false
+        default: mu-laser-type-line
+        options:
+            - 
+                label: Line
+                value: mu-laser-type-line
+            - 
+                label: Area
+                value: mu-laser-type-area
+    - 
+        id: mu-laser-intensity
+        title: Laser intensity
+        description: Adjust the laser intensity
+        type: variable-number-slider
+        default: 1.5
+        min: 0.5
+        max: 3.0
+        step: 0.1
+    -
+        id: mu-laser-color
+        title: Laser color
+        type: class-select
+        description: Border color of the active line
+        allowEmpty: false
+        default: mu-laser-blue
+        options:
+            - 
+                label: Blue laser
+                value: mu-laser-blue
+            - 
+                label: Green laser
+                value: mu-laser-green
+            - 
+                label: Orange laser
+                value: mu-laser-orange
+            - 
+                label: Yellow laser
+                value: mu-laser-yellow
+            - 
+                label: Red laser
+                value: mu-laser-red
+            - 
+                label: Purple laser
+                value: mu-laser-purple
+            - 
+                label: Pink laser
+                value: mu-laser-pink
+    - 
+        id: mu-laser-top-value
+        title: Laser position
+        description: Adjust the laser vertical position
+        type: variable-number-slider
+        default: 50
+        min: 10
+        max: 90
+        step: 1
     - 
         id: mu-reading-indicator-color
         title: Reading indicator color
@@ -6512,16 +6763,19 @@ settings:
         title: Distraction-free mode 
         description: Activate distraction-free mode
         type: class-toggle
+        addCommand: true
     -  
         id: mu-compact-prompt
         title: Compact prompts
         description: Activate compact version of command palette and prompts
         type: class-toggle
+        addCommand: true
     -  
         id: mu-transparent-prompts-menus
         title: Transparent menus, modals and prompts
         description: Activate transparency (menus, modals and prompts)
         type: class-toggle
+        addCommand: true
     - 
         id: mu-transparency-menus-level
         title: Transparency level
@@ -6579,11 +6833,13 @@ settings:
         title: Neon mode
         description: Activate headings neon mode (live preview, source and reading modes)
         type: class-toggle
+        addCommand: true
     -
         id: mu-outline-neon-mode
         title: Outline neon mode
         description: Activate headings outline neon mode (live preview, source and reading modes)
         type: class-toggle
+        addCommand: true
     - 
         id: mu-neon-mode-glow-value
         title: Neon modes - glow controller
