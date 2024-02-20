@@ -1,5 +1,31 @@
 # Changelog
 
+## [15.0.0] - 2024-02-20
+### Improvements
+
+- MagicUser Laser
+
+- **Laser - Style Settings Options**
+
+  - Select **laser focus type** (**Line** or **Area**)
+  - Select **laser color** (**7 colors** - blue, green, red, orange, yellow, pink and purple)
+  - Select **laser intensity** (it controls brightness, thickness and glow). When using the "**Area**" focus you can use this slider to increase the area of the laser.
+  - Select **laser position** (vertical position). Easily choose where you want the laser to highlight text on the screen. Whether you prefer to start at the top, center, or bottom, simply select your preferred reading position. The default position is the center of the screen.
+
+- New callouts (Untitled box callouts) - 7 colors
+- Resizable Settings Modal
+- Shortcuts
+  - You can add shortcuts to **toggle** (turn on/off) the following theme features (**9 features - shortcuts**):
+    - MagicUser laser.
+    - Distraction-free mode.
+    - Neon mode.
+    - Outline neon mode.
+    - Compact prompts.
+    - Transparent menus, modals and prompts.
+    - Rainbow colored folders.
+    - Toggle hide folder icons.
+    - Toggle hide file icons.
+
 ## [14.7.1] - 2024-02-19
 ### Improvements
 
