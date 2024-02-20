@@ -154,27 +154,32 @@ Submenus:
 
 ◼ **Reading Mode**
 
-- **Reading indicator width** - slider controller
-- **Reading indicator color**
-- **H1-H6 label colors** (independent colors for light and dark modes)
+- MagicUser laser.
+- Select **laser focus type** (**Line** or **Area**).
+- Select **laser color** (**7 colors**).
+- Select **laser intensity**.
+- Select **laser position**.
+- **Reading indicator width** - slider controller.
+- **Reading indicator color**.
+- **H1-H6 label colors** (independent colors for light and dark modes).
 
 ◼ **UI Advanced Settings** (Desktop Version)
 
 ![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
 
-- **Warm screen mode** (slider)
-- Activate **distraction-free mode**
-- **Compact command palette and prompts** (toggle)
-- **Transparent menus** and **prompts** (toggle)
+- **Warm screen mode** (slider).
+- Activate **distraction-free mode**.
+- **Compact command palette and prompts** (toggle).
+- **Transparent menus** and **prompts** (toggle).
 - **Transparency level adjustment** (slider).
 
 **Hide UI Elements** submenu:
-- Hide **sidebar buttons** (new note, new folder and others)
-- Show/hide **tab navigation back and forward buttons**
-- Auto hide **title bar top left buttons**
-- Auto hide **top side buttons**
-- Auto hide **bottom side buttons**
-- Auto hide **status bar**
+- Hide **sidebar buttons** (new note, new folder and others).
+- Show/hide **tab navigation back and forward buttons**.
+- Auto hide **title bar top left buttons**.
+- Auto hide **top side buttons**.
+- Auto hide **bottom side buttons**.
+- Auto hide **status bar**.
 
 > When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
 
@@ -183,8 +188,8 @@ Submenus:
 <details>
 <summary><b>Headings H1-H6</b> - <i>click to expand</i></summary>
 
-- Neon Mode
-- Outline Neon Mode
+- **Neon Mode**
+- **Outline Neon Mode**
 - Neon glow controller
 
 **Headings Settings** submenu
@@ -274,6 +279,35 @@ Submenus:
 **Style Settings - Theme Options**:
 
 > **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
+
+## MagicUser laser
+
+![MagicUser laser](images/magicuser_laser.png)
+
+![MagicUser laser - gif](images/magicuser_theme_laser.gif)
+
+Enhance your reading experience with personalized reading focus and comfort.
+
+Customize the laser intensity:
+
+- Adjust laser intensity (brightness and glow).
+
+Select **2 laser focus types**:
+- **Line** focus sharpens the text line by line for precise reading.
+- **Area** focus.
+
+> **UI Settings** -> **Reading Mode** -> MagicUser laser
+
+### **Laser - Style Settings Options**
+
+![MagicUser laser settings](images/magicuser_laser_settings.png)
+
+- Select **laser focus type** (**Line** or **Area**)
+- Select **laser color** (**7 colors** - blue, green, red, orange, yellow, pink and purple)
+- Select **laser intensity**. When using the "**Area**" focus you can use this slider to increase the area of the laser.
+- Select **laser position** (vertical position). Easily choose where you want the laser to highlight text on the screen. Whether you prefer to start at the top, center, or bottom, simply select your preferred reading position. The default position is in the center of the screen.
+
+
 
 ## Rainbow Folders
 
