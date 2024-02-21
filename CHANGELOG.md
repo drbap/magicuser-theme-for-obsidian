@@ -1,5 +1,10 @@
 # Changelog
 
+## [15.0.1] - 2024-02-20
+### Fixes
+
+- Style Settings - MagicUser laser color description.
+
 ## [15.0.0] - 2024-02-20
 ### Improvements
 
