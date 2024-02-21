@@ -591,7 +591,7 @@ Check it out the examples below.
 
 *Colors*: green, blue, orange, yellow, red, pink, purple
 
-![Additional Callouts Pen and Highlighter](images/magicuser_q_callouts.png)
+![Additional Callouts - quote](images/magicuser_q_callouts.png)
 
 ### Box Callouts
 
@@ -599,7 +599,15 @@ Check it out the examples below.
 
 *Colors*: green, blue, orange, yellow, red, pink, purple
 
-![Additional Callouts Pen and Highlighter](images/magicuser_b_callouts.png)
+![Additional Callouts - box callouts](images/magicuser_b_callouts.png)
+
+### Untitled Box Callouts
+
+`> [!ub-` + `color] Your Callout Title`
+
+*Colors*: green, blue, orange, yellow, red, pink, purple
+
+![Additional Callouts - Untitled box callouts](images/magicuser_ub_callouts.png)
 
 ### Line Callouts
 
