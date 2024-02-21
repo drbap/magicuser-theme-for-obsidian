@@ -6585,7 +6585,7 @@ settings:
         id: mu-laser-color
         title: Laser color
         type: class-select
-        description: Border color of the active line
+        description: Select laser color
         allowEmpty: false
         default: mu-laser-blue
         options:
