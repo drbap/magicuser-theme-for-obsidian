@@ -603,7 +603,7 @@ Check it out the examples below.
 
 ### Untitled Box Callouts
 
-`> [!ub-` + `color] Your Callout Title`
+`> [!ub-` + `color]`
 
 *Colors*: green, blue, orange, yellow, red, pink, purple
 
