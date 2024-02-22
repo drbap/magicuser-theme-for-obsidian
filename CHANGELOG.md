@@ -1,5 +1,10 @@
 # Changelog
 
+## [15.0.2] - 2024-02-22
+### Improvements
+
+- Hidden underline text: New `hide-w` class. It will hide the text on reading mode and keep the full width of the parent element or page.
+
 ## [15.0.1] - 2024-02-20
 ### Fixes
 
