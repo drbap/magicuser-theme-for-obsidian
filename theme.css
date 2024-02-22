@@ -3406,7 +3406,7 @@ li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="ub-red"] .callout-title,
 .callout[data-callout="ub-pink"] .callout-title,
 .callout[data-callout="ub-purple"] .callout-title {
-  display:none;
+  display: none;
 }
 
 /* Stacked mode */
@@ -5689,6 +5689,44 @@ section.footnotes:has(.is-flashing) {
 }
 
 .markdown-reading-view u.hide-rc:active {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+/* Underline hidden text full width - same line length */
+
+.view-content u.hide-w {
+  display: block;
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: var(--hidden-text-underline-foreground-color);
+  transition: none;
+  text-decoration: none;
+  border-bottom: 2px solid var(--mu-text-1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.view-content u.hide-w:hover {
+  background-color: var(--hidden-text-underline-background-color);
+}
+
+.markdown-reading-view u.hide-w *,
+.markdown-reading-view u.hide-w {
+  color: transparent;
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-w:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-w:hover {
   text-decoration: none;
   background-color: var(--hidden-text-underline-background-color);
   color: var(--hidden-text-underline-foreground-color);
