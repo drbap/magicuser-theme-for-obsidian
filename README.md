@@ -824,6 +824,16 @@ You can <u class="hide-rc">hide</u> the text.
 
 - The hidden text will appear on **hover** or on **click** (bolder and highlighted). You can change the **background (highlight)** and **foreground** color using the Style Settings options (different colors for light and dark modes).
 
+E) **Hide on reading mode only - show on hover - full width**
+
+![Hidden text underline - hide-w](images/magicuser_theme_underline_hidden_text_w.gif)
+
+- Add the `hide-w` class. It will hide the text on reading mode and occupy the full width of the parent element (table column) or page.
+
+```html
+Question: What is the name of this theme? <u class="hide-w">MagicUser</u>
+```
+
 ## Highlighted Text Colors
 
 ![Highlighted text](images/magicuser_highlighted_text.png)
