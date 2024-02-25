@@ -6044,7 +6044,7 @@ body.mu-laser-active.mu-laser-type-area .markdown-reading-view::after {
 }
 
 /* Sidebar adjustment */
-.modal.mod-settings.mod-sidebar-layout {
+body:not(.is-mobile) .modal.mod-settings.mod-sidebar-layout {
   resize: both;
   min-width: 600px;
   min-height: 100px;
