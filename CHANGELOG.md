@@ -1,5 +1,10 @@
 # Changelog
 
+## [15.0.3] - 2024-02-24
+### Fixes
+
+- Mobile Settings display.
+
 ## [15.0.2] - 2024-02-22
 ### Improvements
 
