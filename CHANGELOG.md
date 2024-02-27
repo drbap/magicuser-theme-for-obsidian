@@ -1,5 +1,13 @@
 # Changelog
 
+## [15.1.0] - 2024-02-27
+### Improvements
+
+- **Reading mode new submenus** (3 submenus)
+  - Laser
+  - Reading Glow
+  - Reading Indicator and Labels
+
 ## [15.0.3] - 2024-02-24
 ### Fixes
 
