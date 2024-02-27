@@ -361,8 +361,6 @@ Activate this mode using the Style Settings plugin:
 
 > **Style Settings** -> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
  
-![Dark sidebar - light mode](images/settings_dark_sidebar.png)
-
 ## Neon Mode
 
 ![Neon mode - gif](images/magicuser_theme_neon_mode.gif)
