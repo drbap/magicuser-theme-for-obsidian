@@ -323,6 +323,20 @@ Select **2 laser focus types**:
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
 
+## Folder Icons, File Icons and Colored Indent Guides
+
+![Indent Guides](images/magicuser_indent_guides.png)
+
+You can customize the **indent guides colors** using the Style Settings plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
+
+## Sidebar Open Folder Area
+
+![Sidebar Open Folder Area](images/magicuser_folder_area.png)
+
+- Style Settings: select sidebar open folder area **border color**.
+- Style Settings: select sidebar open folder area **background color**.
+- Style Settings: **hide** sidebar open folder area.
+
 ## Rainbow Folders
 
 ![Rainbow Colored Special Folders](images/magicuser_special_folders.png)
@@ -443,20 +457,6 @@ cssclasses:
 ## Style Settings - Customize Colors for Light and Dark Modes
 
 ![MagicUser Custom Colors for Light and Dark Modes](images/magicuser_style_settings_menu_improved.png)
-
-## Folder Icons, File Icons and Colored Indent Guides
-
-![Indent Guides](images/magicuser_indent_guides.png)
-
-You can customize the **indent guides colors** using the Style Settings plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
-
-## Sidebar Open Folder Area
-
-![Sidebar Open Folder Area](images/magicuser_folder_area.png)
-
-- Style Settings: select sidebar open folder area **border color**.
-- Style Settings: select sidebar open folder area **background color**.
-- Style Settings: **hide** sidebar open folder area.
 
 ## Custom Checkbox Icons
 
@@ -881,8 +881,6 @@ Default theme table layout:
 ![Table Layout Style Settings](images/magicuser_tables_layout_preset_themes.png)
 
 - Normal tables (non-dataview tables) will have **rounded corners** by default. You can customize non-dataview tables using the **Tables submenu**.
-
-![Table Layout Style Settings](images/magicuser_ui_settings_tables_submenu.png)
 
 - Independent table colors for light and dark modes, you can also select outer and inner border widths (sliders).
 
