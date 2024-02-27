@@ -293,7 +293,7 @@ Submenus:
 
 Enhance your reading experience with personalized reading focus and comfort.
 
-Customize the laser intensity:
+Customize the **laser intensity**:
 
 - Adjust laser intensity (brightness and glow).
 
