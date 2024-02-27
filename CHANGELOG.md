@@ -2,12 +2,13 @@
 
 ## [15.2.0] - 2024-02-27
 ### Improvements
+
 - Style Settings: **Underline headings**
   - Normal mode
   - Neon mode
   - Outline neon mode
-  - You can toggle **underline headings** using a shortcut or the Command Palette.
 
+You can toggle **underline headings** using a shortcut or the Command Palette.
 
 ## [15.1.0] - 2024-02-27
 ### Improvements
