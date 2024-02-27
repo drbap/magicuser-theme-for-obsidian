@@ -198,6 +198,7 @@ Submenus:
 - **Neon Mode**
 - **Outline Neon Mode**
 - Neon glow controller
+- **Underline headings**
 
 **Headings Settings** submenu
 
@@ -281,7 +282,7 @@ Submenus:
 
 - You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
 
-**Style Settings - Theme Options**:
+Style Settings:
 
 > **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
 
@@ -301,7 +302,8 @@ Select **2 laser focus types**:
 - **Line** focus sharpens the text line by line for precise reading.
 - **Area** focus.
 
-> **UI Settings** -> **Reading Mode** -> Laser -> MagicUser laser
+Style Settings:
+> **UI Settings** -> **Reading Mode** -> **Laser** -> MagicUser laser
 
 ### **Laser - Style Settings Options**
 
@@ -359,13 +361,17 @@ Activate this mode using the Style Settings plugin:
 
 - Style Settings: Enable dark sidebar in light mode (compatible with preset themes)
 
-> **Style Settings** -> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
+Style Settings:
+
+> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
  
 ## Neon Mode
 
 ![Neon mode - gif](images/magicuser_theme_neon_mode.gif)
 
-> **Style Settings** -> **Headings H1-H6** -> Neon mode
+Style Settings:
+
+> **Headings H1-H6** -> Neon mode
 
 ![Neon mode](images/magicuser_neon_mode.png)
 
@@ -375,9 +381,9 @@ Activate this mode using the Style Settings plugin:
 
 You can customize the neon mode headings colors using the **Neon Mode Headings** submenu.
 
-> Headings H1-H6 -> Neon Mode Headings
+Style Settings:
 
-![Neon mode headings- submenu](images/neon_mode_headings_submenu.png)
+> **Headings H1-H6** -> **Neon Mode Headings**
 
 ## Neon Mode Glow Controller
 
@@ -389,11 +395,27 @@ You can customize the neon mode headings colors using the **Neon Mode Headings**
 
 **Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
 
+## Underline Headings
+
+![Underline headings](images/magicuser_underline_headings.png)
+
+- Normal mode
+- Neon mode
+- Outline neon mode
+
+You can toggle **underline headings** using a shortcut or the Command Palette.
+
+Style Settings:
+
+> **Headings H1-H6** -> Underline headings
+
 ## Warm Screen Mode
 
 ![Warm screen mode](images/magicuser_theme_warm_screen_mode.png)
 
 ![Warm screen mode - gif](images/magicuser_theme_warm_screen_mode.gif)
+
+Style Settings:
 
 > UI Settings -> UI Advanced Settings -> **Warm screen mode**
 
@@ -912,6 +934,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 ![MagicUser theme mermaid](images/magicuser_theme_mermaid.png)
 
 ## Math
+
 ![MagicUser theme math background](images/magicuser_theme_math.png)
 
 ## Mobile Display
