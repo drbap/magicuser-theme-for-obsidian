@@ -165,8 +165,6 @@ Submenus:
 
 ◼ **UI Advanced Settings** (Desktop Version)
 
-![UI Advanced Settings](images/magicuser_ui_advanced_settings.png)
-
 - **Warm screen mode** (slider).
 - Activate **distraction-free mode**.
 - **Compact command palette and prompts** (toggle).
@@ -258,8 +256,6 @@ Submenus:
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
 
 **Style Settings** (**Tabs Submenu**)
-
-![MagicUser tabs](images/magicuser_theme_tabs_submenu.png)
 
 - Select active tab **foreground color** (text and icon color).
 - Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**.
