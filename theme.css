@@ -4696,6 +4696,27 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-laser"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4V2'/%3E%3Cpath d='M15 16v-2'/%3E%3Cpath d='M8 9h2'/%3E%3Cpath d='M20 9h2'/%3E%3Cpath d='M17.8 11.8 19 13'/%3E%3Cpath d='M15 9h0'/%3E%3Cpath d='M17.8 6.2 19 5'/%3E%3Cpath d='m3 21 9-9'/%3E%3Cpath d='M12.2 6.2 11 5'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-glow"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 3v1'/%3E%3Cpath d='M12 20v1'/%3E%3Cpath d='M3 12h1'/%3E%3Cpath d='M20 12h1'/%3E%3Cpath d='m18.364 5.636-.707.707'/%3E%3Cpath d='m6.343 17.657-.707.707'/%3E%3Cpath d='m5.636 5.636.707.707'/%3E%3Cpath d='m17.657 17.657.707.707'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-indicator"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6'/%3E%3Cpath d='m12 12 4 10 1.7-4.3L22 16Z'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-main-colors"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'/%3E%3Ccircle cx='17.5' cy='10.5' r='.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='.5'/%3E%3Ccircle cx='6.5' cy='12.5' r='.5'/%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -6289,7 +6310,7 @@ settings:
         description: Current focused icon color
         format: hex
         opacity: false
-        default: '#007fff'
+        default: '#00a3ff'
     -
         id: mu-hide-folders
         title: Hide folder icons
@@ -6591,6 +6612,12 @@ settings:
         level: 3
         collapsed: true
     -
+        id: magicuser-theme-laser
+        title: Laser
+        type: heading
+        level: 4
+        collapsed: true
+    -
         id: mu-laser-active
         title: MagicUser laser
         description: Turn on MagicUser laser (reading mode)
@@ -6657,24 +6684,12 @@ settings:
         min: 10
         max: 90
         step: 1
-    - 
-        id: mu-reading-indicator-color
-        title: Reading indicator color
-        type: variable-themed-color
-        description: Color of the reading indicator
-        format: hex
-        opacity: true
-        default-light: '#007fffa3'
-        default-dark: '#007fffa3'
-    - 
-        id: mu-reading-indicator-width-value-rem
-        title: Reading indicator width
-        description: Select reading indicator width (0 = no indicator)
-        type: variable-number-slider
-        default: 0.3
-        min: 0
-        max: 1
-        step: 0.05
+    -
+        id: magicuser-theme-reading-glow
+        title: Reading Glow
+        type: heading
+        level: 4
+        collapsed: true
     -
         id: mu-reading-glow
         title: Reading glow color
@@ -6726,7 +6741,31 @@ settings:
         id: mu-reading-glow-status-off
         title: Turn off reading glow
         description: Turn off the reading glow effect
-        type: class-toggle
+        type: class-toggle   
+    -
+        id: magicuser-theme-reading-indicator
+        title: Reading Indicator and Labels
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: mu-reading-indicator-color
+        title: Reading indicator color
+        type: variable-themed-color
+        description: Color of the reading indicator
+        format: hex
+        opacity: true
+        default-light: '#007fffa3'
+        default-dark: '#007fffa3'
+    - 
+        id: mu-reading-indicator-width-value-rem
+        title: Reading indicator width
+        description: Select reading indicator width (0 = no indicator)
+        type: variable-number-slider
+        default: 0.3
+        min: 0
+        max: 1
+        step: 0.05
     -
         id: mu-label-h1
         title: H1 label color
