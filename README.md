@@ -154,11 +154,20 @@ Submenus:
 
 ◼ **Reading Mode**
 
+**Laser** submenu
+
 - MagicUser laser.
 - Select **laser focus type** (**Line** or **Area**).
 - Select **laser color** (**7 colors**).
 - Select **laser intensity**.
 - Select **laser position**.
+
+**Reading Glow** submenu
+
+- Reading glow options.
+
+**Reading Indicator and Labels** submenu
+
 - **Reading indicator width** - slider controller.
 - **Reading indicator color**.
 - **H1-H6 label colors** (independent colors for light and dark modes).
@@ -292,7 +301,7 @@ Select **2 laser focus types**:
 - **Line** focus sharpens the text line by line for precise reading.
 - **Area** focus.
 
-> **UI Settings** -> **Reading Mode** -> MagicUser laser
+> **UI Settings** -> **Reading Mode** -> Laser -> MagicUser laser
 
 ### **Laser - Style Settings Options**
 
@@ -303,7 +312,16 @@ Select **2 laser focus types**:
 - Select **laser intensity**. When using the "**Area**" focus you can use this slider to increase the area of the laser.
 - Select **laser position** (vertical position). Easily choose where you want the laser to highlight text on the screen. Whether you prefer to start at the top, center, or bottom, simply select your preferred reading position. The default position is in the center of the screen.
 
+## Reading Mode: Reading Glow Effect and Reading Indicator
 
+![Distraction-free Mode Draggable](images/magicuser_theme_reading_mode.gif)
+
+![MagicUser laser settings](images/magicuser_reading_glow_settings.png)
+
+- Reading Mode: **Reading glow** effect.
+- Style Settings: Reading glow **color** (7 colors).
+- Style Settings: Reading glow border size.
+- Style Settings: Reading glow corners size (0 = square corners).
 
 ## Rainbow Folders
 
@@ -360,6 +378,7 @@ You can customize the neon mode headings colors using the **Neon Mode Headings**
 **Outline Neon** mode enlarges headings for effortless reading, all while keeping your text neon-highlighted. Choose your preferred style.
 
 ## Warm Screen Mode
+
 ![Warm screen mode](images/magicuser_theme_warm_screen_mode.png)
 
 ![Warm screen mode - gif](images/magicuser_theme_warm_screen_mode.gif)
@@ -385,15 +404,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - You can also auto hide the **status bar** (UI Advanced Settings).
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
-
-## Reading Mode: Reading Glow Effect and Reading Indicator
-
-![Distraction-free Mode Draggable](images/magicuser_theme_reading_mode.gif)
-
-- Reading Mode: **Reading glow** effect.
-- Style Settings: Reading glow **color** (7 colors).
-- Style Settings: Reading glow border size.
-- Style Settings: Reading glow corners size (0 = square corners).
 
 ## Dataview Tables to Cards
 
