@@ -1,5 +1,41 @@
 # Changelog
 
+## [16.0.0] - 2024-03-02
+### Improvements
+
+- **Improved mobile layout** (many adjustments -> smartphones and tablets).
+
+- **Mobile sidebar open folder area**. View open folders and their contents for a seamless file management experience (same feature as the desktop version of the theme).
+
+- Tablets: **Tabs layout** - *3 tabs styles*: default (rounded), square and pill tabs (same as the desktop version of the theme).
+
+- Improved **Style Settings Theme Options** layout
+  -**Active menus** and **submenus** will have different background colors according to the indent guides to make it easier to use and navigate (mobile and desktop version).
+  - New collapse icon color and size adjustment (bigger size and different color).
+
+- Style Settings: **Preset tables**
+  - `table1` (**column-striped table**)
+  - `table2`
+  - `table3`
+  - `table4` (with accent color)
+  - `table5` (with accent color)
+  - `table6` (with accent color)
+  - Default table layout
+
+Style Settings:
+> **UI Settings** -> **Tables** -> Preset tables
+
+> To achieve the desired table layout for specific notes, you can apply the above CSS classes (`table1` to `table6`).
+> **Properties** -> **cssclasses** -> `table1`
+
+- Style Settings: Select **table body text color** (normal tables and dataview tables).
+
+- Style Settings: **Disable table row hover** option.
+
+- **Tables inside callouts** adjustments.
+
+- **Properties input** adjustments (**Desktop** and **Mobile**).
+
 ## [15.2.0] - 2024-02-27
 ### Improvements
 
