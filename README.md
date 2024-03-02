@@ -909,6 +909,8 @@ Default theme table layout:
 ![Table Layout Style Settings](images/magicuser_tables_inner_borders.png)
 
 **Tables** submenu (Style Settings):
+- **Preset tables**
+- **Table body** text color
 - **Table headers background** color
 - **Table headers foreground** color
 - **Table rows (odd)** background color
@@ -917,6 +919,26 @@ Default theme table layout:
 - **Outer table border** width
 - **Inner table borders** width (rows and columns borders)
 - **Table rounded corners** (0 = **square corners**)
+- **Disable table row hover**
+
+### Preset Tables
+
+![Preset tables](images/magicuser_style_settings_preset_tables.png)
+
+Style Settings: **Preset tables**
+- `table1` (**column-striped table**)
+- `table2`
+- `table3`
+- `table4` (with accent color)
+- `table5` (with accent color)
+- `table6` (with accent color)
+- Default table (main theme table layout)
+
+Style Settings:
+> **UI Settings** -> **Tables** -> Preset tables
+
+To achieve the desired table layout for specific notes, you can apply the above CSS classes (`table1` to `table6`).
+> **Properties** -> **cssclasses** -> `table1`
 
 ## Code Theme (Light and Dark)
 
@@ -939,7 +961,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 ## Mobile Display
 
-![MagicUser theme adjustments for mobile devices](images/magicuser_obsidian_mobile.png)
+![MagicUser theme for mobile devices](images/magicuser_theme_mobile.gif)
 
 ## Feedback
 
@@ -973,6 +995,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
 - @golden234431 (Obsidian Forum) - inline title font size.
-- @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion.
+- @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
