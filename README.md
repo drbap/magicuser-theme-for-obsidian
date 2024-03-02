@@ -91,8 +91,6 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes_light.png)
 
-![MagicUser BG Themes](images/magicuser_theme_darken_background.png)
-
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
 
 </details>
@@ -134,14 +132,7 @@ Submenus:
 
 ◼ **Tables**
 
-- **Table headers background** color
-- **Table headers foreground** color
-- **Table rows (odd)** background color
-- **Table rows (even)** background color
-- **Table row hover** background color
-- **Outer table border** width
-- **Inner table borders** width (rows and columns borders)
-- **Table rounded corners** (0 = square corners)
+- Table options (presets and colors)
 
 ◼ **Tabs**
 
@@ -937,8 +928,10 @@ Style Settings: **Preset tables**
 Style Settings:
 > **UI Settings** -> **Tables** -> Preset tables
 
+![Preset tables - gif](images/magicuser_theme_table_presets.gif)
+
 To achieve the desired table layout for specific notes, you can apply the above CSS classes (`table1` to `table6`).
-> **Properties** -> **cssclasses** -> `table1`
+> **Properties** -> **cssclasses** -> `table1` to `table6`
 
 ## Code Theme (Light and Dark)
 
