@@ -5,7 +5,7 @@
 
 - **Improved mobile layout** (many adjustments -> smartphones and tablets).
 
-- **Mobile sidebar open folder area**. View open folders and their contents for a seamless file management experience (same feature as the desktop version of the theme).
+- **Mobile sidebar open folder area** (same feature as the desktop version of the theme).
 
 - Tablets: **Tabs layout** - *3 tabs styles*: default (rounded), square and pill tabs (same as the desktop version of the theme).
 
