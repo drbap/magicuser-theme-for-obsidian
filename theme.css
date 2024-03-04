@@ -6449,10 +6449,26 @@ body.is-mobile .workspace-drawer-header-name-text {
 }
 
 /* Extra Mobile Adjustments */
-
-.is-mobile {
+body.is-mobile {
   --mu-folder-icon-zoom: 100%;
   --mu-notes-icon-zoom: 100%;
+}
+
+body.is-mobile .mod-tappable.mod-pin,
+body.is-mobile .mod-tappable.mod-settings,
+body.is-mobile .mod-left-split-toggle.mod-tappable,
+body.is-mobile .view-actions .clickable-icon.view-action,
+body.is-mobile .workspace-drawer-active-tab-back-icon {
+  color: var(--mu-icon);
+}
+
+body.is-mobile .mobile-navbar-actions,
+body.is-mobile .clickable-icon.nav-action-button,
+body.is-mobile .sidebar-toggle-button {
+  --icon-color: var(--mu-icon);
+  --icon-color-hover: var(--mu-icon-hover);
+  --icon-color-active: var(--mu-icon-active);
+  --icon-color-focused: var(--mu-icon-focused);
 }
 
 .is-mobile .metadata-properties-heading .collapse-indicator {
@@ -6466,6 +6482,11 @@ body.is-mobile .workspace-drawer-header-name-text {
 
 .is-mobile .workspace-tab-header-container {
   background-color: var(--mu-titlebar-background);
+}
+
+/* PDF Viewer */
+input.pdf-page-input {
+  background-color: var(--mu-background-color-2);
 }
 
 /* Style Settings */
