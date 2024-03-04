@@ -1,5 +1,11 @@
 # Changelog
 
+## [16.1.0] - 2024-03-03
+### Improvements
+
+- Mobile adjustments.
+- **PDF Viewer**: **Page input** background color.
+
 ## [16.0.0] - 2024-03-02
 ### Improvements
 
