@@ -3833,6 +3833,8 @@ body:not(.is-mobile) .workspace-ribbon.mod-left {
   transition: none;
 }
 
+/* Distraction-free mode */
+
 body:not(.is-mobile).mu-distraction-free-mode .workspace-tab-header-container,
 body:not(.is-mobile).mu-distraction-free-mode .titlebar-button-container.mod-right {
   display: none;
@@ -3852,6 +3854,17 @@ body:not(.is-mobile).mu-distraction-free-mode .workspace-ribbon.side-dock-ribbon
   --ui-distraction-free-toggle-button: flex;
   padding: var(--ribbon-padding);
   --ribbon-background: var(--mu-titlebar-background);
+}
+
+/* Total concentration mode */
+
+body:not(.is-mobile).mu-total-concentration-mode .workspace-ribbon.side-dock-ribbon.mod-left,
+body:not(.is-mobile).mu-total-concentration-mode .sidebar-toggle-button.mod-left,
+body:not(.is-mobile).mu-total-concentration-mode .status-bar,
+body:not(.is-mobile).mu-total-concentration-mode .view-header,
+body:not(.is-mobile).mu-total-concentration-mode .workspace-tab-header-container,
+body:not(.is-mobile).mu-total-concentration-mode .titlebar-button-container.mod-right {
+  display: none;
 }
 
 /* view-header-nav-buttons */
@@ -7299,6 +7312,12 @@ settings:
         id: mu-distraction-free-mode
         title: Distraction-free mode 
         description: Activate distraction-free mode
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-total-concentration-mode
+        title: Total concentration mode 
+        description: Activate total concentration mode
         type: class-toggle
         addCommand: true
     -  
