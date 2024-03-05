@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.2.0] - 2024-03-04
+### Improvements
+
+- Total concentration mode.
+
 ## [16.1.0] - 2024-03-03
 ### Improvements
 
