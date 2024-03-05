@@ -167,6 +167,7 @@ Submenus:
 
 - **Warm screen mode** (slider).
 - Activate **distraction-free mode**.
+- Activate **total concentration mode**.
 - **Compact command palette and prompts** (toggle).
 - **Transparent menus** and **prompts** (toggle).
 - **Transparency level adjustment** (slider).
@@ -429,6 +430,17 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - You can also auto hide the **status bar** (UI Advanced Settings).
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
+
+## Total Concentration Mode
+
+![Total Concentration Mode](images/magicuser_total_concentration_mode.png)
+
+**Total concentration mode** goes beyond distraction-free mode. It creates a state of flow unhindered by any visual interruptions. Focus solely on your writing or reading.
+
+- Toggle total concentration mode quickly using a **shortcut** or **Command Palette**.
+
+Style Settings:
+> **UI Settings** -> **UI Advanced Settings** -> Total concentration mode
 
 ## Dataview Tables to Cards
 
