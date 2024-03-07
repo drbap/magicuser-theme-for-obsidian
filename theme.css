@@ -7339,7 +7339,7 @@ settings:
     -
         id: mu-file-line-width-value
         title: File line width
-        description: Adjust the file line width (note width)
+        description: Adjust file line width (note width)
         type: variable-number-slider
         default: 700
         min: 500
