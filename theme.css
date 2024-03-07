@@ -154,7 +154,8 @@ body {
   --embed-font-style: inherit;
 
   /* File layout */
-  --file-line-width: 700px;
+  --mu-file-line-width-value: 700;
+  --file-line-width: calc(var(--mu-file-line-width-value) * 1px);
   --file-folding-offset: 24px;
   --file-margins: var(--size-4-8);
   --file-header-font-size: var(--font-ui-medium);
@@ -3952,7 +3953,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 /* Reading mode */
 
-.markdown-reading-view>div>div>div:not(.mod-header, *:active) {
+.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper, *:active) {
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -3960,7 +3961,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
   padding-right: 0;
 }
 
-.markdown-reading-view>div>div>div:not(.mod-header, .mod-header, *:active):hover::before {
+.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper, *:active):hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -6502,6 +6503,21 @@ input.pdf-page-input {
   background-color: var(--mu-background-color-2);
 }
 
+/* Banners */
+.obsidian-banner-wrapper {
+    margin-top: calc(var(--banner-height) - 250px);
+    padding-top: 4px;
+}
+
+/* Dashboard++ */
+.dashboard .markdown-preview-section .title {
+    top: calc(var(--banner-height)/-2 - 50px) !important;
+}
+
+.is-mobile .obsidian-banner-wrapper:not(.has-banner-icon) {
+  margin-top: 0 !important;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -7320,6 +7336,15 @@ settings:
         description: Activate total concentration mode
         type: class-toggle
         addCommand: true
+    -
+        id: mu-file-line-width-value
+        title: File line width
+        description: Adjust the file line width (note width)
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 2560
+        step: 1
     -  
         id: mu-compact-prompt
         title: Compact prompts
