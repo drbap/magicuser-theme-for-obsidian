@@ -1,5 +1,11 @@
 # Changelog
 
+## [16.2.1] - 2024-03-06
+### Improvements
+
+- File line width (UI Advanced Settings)
+- Compatible with: Dashboard++ (CSS snippet) and Banners plugin.
+
 ## [16.2.0] - 2024-03-04
 ### Improvements
 
