@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.2.2] - 2024-03-07
+### Improvements
+
+- Reading indicator and position adjustments.
+
 ## [16.2.1] - 2024-03-06
 ### Improvements
 
