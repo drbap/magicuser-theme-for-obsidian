@@ -6505,13 +6505,13 @@ input.pdf-page-input {
 
 /* Banners */
 .obsidian-banner-wrapper {
-    margin-top: calc(var(--banner-height) - 250px);
-    padding-top: 4px;
+  margin-top: calc(var(--banner-height) - 250px);
+  padding-top: 4px;
 }
 
 /* Dashboard++ */
 .dashboard .markdown-preview-section .title {
-    top: calc(var(--banner-height)/-2 - 50px) !important;
+  top: calc(var(--banner-height)/-2 - 50px) !important;
 }
 
 .is-mobile .obsidian-banner-wrapper:not(.has-banner-icon) {
