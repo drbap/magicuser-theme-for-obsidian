@@ -692,8 +692,7 @@ body {
 
   --mu-reading-indicator-color: #007fffa3;
   --mu-reading-indicator-width-value-rem: 0.3;
-  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * 1rem);
-  --mu-reading-indicator-offset: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
+  --mu-reading-indicator-width: calc(var(--mu-reading-indicator-width-value-rem) * -1rem);
 
   --mu-indent-color-level-1: #007fff7f;
   --mu-indent-color-level-2: #d372ff7f;
@@ -3953,24 +3952,32 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 /* Reading mode */
 
-.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper, *:active) {
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
+.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):hover {
+  box-shadow: var(--mu-reading-indicator-width) 0 0 0 var(--mu-reading-indicator-color);
 }
 
-.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper, *:active):hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: var(--mu-reading-indicator-width);
-  transform: translateX(var(--mu-reading-indicator-offset));
-  border-radius: 100vmax;
-  background-color: var(--mu-reading-indicator-color);
+.markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
+  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
+  transition: box-shadow .5s;
+  border-radius: var(--mu-reading-glow-radius);
+}
+
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3,
+.markdown-reading-view h4,
+.markdown-reading-view h5,
+.markdown-reading-view h6 {
+  position: relative;
+}
+
+.markdown-reading-view h1:active,
+.markdown-reading-view h2:active,
+.markdown-reading-view h3:active,
+.markdown-reading-view h4:active,
+.markdown-reading-view h5:active,
+.markdown-reading-view h6:active {
+  --mu-label-visible: hidden;
 }
 
 .markdown-reading-view h1::before,
@@ -4025,7 +4032,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 .markdown-reading-view h4:hover::before,
 .markdown-reading-view h5:hover::before,
 .markdown-reading-view h6:hover::before {
-  visibility: visible;
+  visibility: var(--mu-label-visible);
 }
 
 /* Settings */
@@ -5551,27 +5558,6 @@ div.view-content.node-insert-event .tree-item-children .tree-item-children .tree
 }
 
 /* Reading Glow */
-.markdown-reading-view h1:active,
-.markdown-reading-view h2:active,
-.markdown-reading-view h3:active,
-.markdown-reading-view h4:active,
-.markdown-reading-view h5:active,
-.markdown-reading-view h6:active,
-.markdown-reading-view div>ol:active,
-.markdown-reading-view div>ul:active,
-.markdown-reading-view pre:active,
-.markdown-reading-view .footnotes:active,
-.markdown-reading-view div.mermaid:active,
-.markdown-reading-view div.math:active,
-.markdown-reading-view blockquote:active,
-.markdown-reading-view .callout:active,
-.markdown-reading-view div:not(.callout-content)>p:active {
-  box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  transition: box-shadow .5s;
-  border-radius: var(--mu-reading-glow-radius);
-}
-
-/* Reading glow */
 .reading-glow-blue {
   --mu-reading-glow-color: #00a3ff;
 }
@@ -6501,21 +6487,6 @@ body.is-mobile .sidebar-toggle-button {
 /* PDF Viewer */
 input.pdf-page-input {
   background-color: var(--mu-background-color-2);
-}
-
-/* Banners */
-.obsidian-banner-wrapper {
-  margin-top: calc(var(--banner-height) - 250px);
-  padding-top: 4px;
-}
-
-/* Dashboard++ */
-.dashboard .markdown-preview-section .title {
-  top: calc(var(--banner-height)/-2 - 50px) !important;
-}
-
-.is-mobile .obsidian-banner-wrapper:not(.has-banner-icon) {
-  margin-top: 0 !important;
 }
 
 /* Style Settings */
