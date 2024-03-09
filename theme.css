@@ -283,13 +283,6 @@ body {
   --indentation-guide-color-active: #bf00ff;
 
   /* Inline title */
-  --inline-title-color: var(--h1-color);
-  --inline-title-font: var(--h1-font);
-  --inline-title-line-height: var(--h1-line-height);
-  --inline-title-size: var(--h1-size);
-  --inline-title-style: var(--h1-style);
-  --inline-title-variant: var(--h1-variant);
-  --inline-title-weight: var(--h1-weight);
   --inline-title-margin-bottom: .5em;
 
   /* Inputs */
@@ -760,6 +753,13 @@ body {
   --mu-laser-color-bg: #80ffaa;
   --mu-laser-color-glow: #00ff55;
   --mu-laser-intensity: 1.5;
+
+  --mu-hover-underline-color: #ff0000cf;
+  --mu-hover-underline-style: solid;
+  --mu-hover-underline-thickness-value: 2;
+  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value)*1px);
+  --mu-hover-underline-offset-value: 2;
+  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
 
   --mu-warm-screen-mode: 0;
 }
@@ -3944,6 +3944,20 @@ body:not(.is-mobile) .side-dock-settings:hover {
   --ui-side-dock-settings: 1;
 }
 
+/* Auto hide inline title */
+body:not(.is-mobile).mu-hide-inline-title {
+  --ui-inline-title-settings: 0.01;
+}
+
+body:not(.is-mobile) .inline-title {
+  opacity: var(--ui-inline-title-settings);
+  transition: all 0.5s;
+}
+
+body:not(.is-mobile) .inline-title:hover {
+  --ui-inline-title-settings: 1;
+}
+
 /* Source mode */
 .markdown-source-view:not(.is-live-preview) * {
   --font-text: var(--mu-font-mono);
@@ -3958,7 +3972,7 @@ body:not(.is-mobile) .side-dock-settings:hover {
 
 .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
   box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  transition: box-shadow .5s;
+  transition: box-shadow .25s;
   border-radius: var(--mu-reading-glow-radius);
 }
 
@@ -4884,7 +4898,14 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-laser"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4V2'/%3E%3Cpath d='M15 16v-2'/%3E%3Cpath d='M8 9h2'/%3E%3Cpath d='M20 9h2'/%3E%3Cpath d='M17.8 11.8 19 13'/%3E%3Cpath d='M15 9h0'/%3E%3Cpath d='M17.8 6.2 19 5'/%3E%3Cpath d='m3 21 9-9'/%3E%3Cpath d='M12.2 6.2 11 5'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4V2'/%3E%3Cpath d='M15 16v-2'/%3E%3Cpath d='M8 9h2'/%3E%3Cpath d='M20 9h2'/%3E%3Cpath d='M17.8 11.8 19 13'/%3E%3Cpath d='M15 9h0'/%3E%3Cpath d='M17.8 6.2 19 5'/%3E%3Cpath d='m3 21 9-9'/%3E%3Cpath d='M12.2 6.2 11 5'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hover-underline"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M7 8h10'/%3E%3Cpath d='M7 12h10'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -6273,7 +6294,7 @@ body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb-separator {
 }
 
 /* MagicUser Laser */
-body.mu-laser-active.mu-laser-type-line .markdown-reading-view::after {
+body.mu-laser-active.mu-laser-type-line .view-content::after {
   content: '';
   top: var(--mu-laser-top);
   left: 10px;
@@ -6290,7 +6311,7 @@ body.mu-laser-active.mu-laser-type-line .markdown-reading-view::after {
   pointer-events: none;
 }
 
-body.mu-laser-active.mu-laser-type-area .markdown-reading-view::after {
+body.mu-laser-active.mu-laser-type-area .view-content::after {
   content: '';
   top: var(--mu-laser-top);
   left: 10px;
@@ -6487,6 +6508,29 @@ body.is-mobile .sidebar-toggle-button {
 /* PDF Viewer */
 input.pdf-page-input {
   background-color: var(--mu-background-color-2);
+}
+
+/* Reading hover underline */
+body.mu-hover-underline .markdown-reading-view .markdown-preview-sizer *:not(.mod-header, .inline-title):hover,
+body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--mu-hover-underline-color) !important;
+  text-decoration-skip-ink: none;
+  text-decoration-style: var(--mu-hover-underline-style) !important;
+  text-decoration-thickness: var(--mu-hover-underline-thickness) !important;
+  text-underline-offset: var(--mu-hover-underline-offset) !important;
+}
+
+.mu-hover-underline-style-dashed {
+  --mu-hover-underline-style: dashed;
+}
+
+.mu-hover-underline-style-dotted {
+  --mu-hover-underline-style: dotted;
+}
+
+.mu-hover-underline-style-double {
+  --mu-hover-underline-style: double;
 }
 
 /* Style Settings */
@@ -6877,6 +6921,138 @@ settings:
                 label: Gray background
                 value: line-highlight-background-gray
     -
+        id: magicuser-theme-hover-underline
+        title: Hover underline
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: mu-hover-underline
+        title: Hover underline
+        description: Turn on hover underline (live preview, source and reading modes)
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-hover-underline-style
+        title: Hover underline style
+        type: class-select
+        description: Select hover underline style
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default
+                value: none
+            - 
+                label: Dashed
+                value: mu-hover-underline-style-dashed
+            - 
+                label: Dotted
+                value: mu-hover-underline-style-dotted
+            - 
+                label: Double
+                value: mu-hover-underline-style-double
+    - 
+        id: mu-hover-underline-color
+        title: Hover underline color
+        type: variable-themed-color
+        description: Select hover underline color
+        format: hex
+        opacity: true
+        default-light: '#ff0000cf'
+        default-dark: '#ff0000cf'
+    - 
+        id: mu-hover-underline-thickness-value
+        title: Hover underline thickness
+        description: Select hover underline thickness
+        type: variable-number-slider
+        default: 2
+        min: 1
+        max: 5
+        step: 1
+    -
+        id: mu-hover-underline-offset-value
+        title: Gap between text and hover underline
+        description: Select the gap between text and hover underline
+        type: variable-number-slider
+        default: 2
+        min: 0
+        max: 5
+        step: 1
+    -
+        id: magicuser-theme-laser
+        title: Laser
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-laser-active
+        title: MagicUser laser
+        description: Turn on MagicUser laser
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-laser-type
+        title: Laser focus type
+        type: class-select
+        description: Select laser focus type
+        allowEmpty: false
+        default: mu-laser-type-line
+        options:
+            - 
+                label: Line
+                value: mu-laser-type-line
+            - 
+                label: Area
+                value: mu-laser-type-area
+    - 
+        id: mu-laser-intensity
+        title: Laser intensity
+        description: Adjust the laser intensity
+        type: variable-number-slider
+        default: 1.5
+        min: 0.5
+        max: 3.0
+        step: 0.1
+    -
+        id: mu-laser-color
+        title: Laser color
+        type: class-select
+        description: Select laser color
+        allowEmpty: false
+        default: mu-laser-blue
+        options:
+            - 
+                label: Blue laser
+                value: mu-laser-blue
+            - 
+                label: Green laser
+                value: mu-laser-green
+            - 
+                label: Orange laser
+                value: mu-laser-orange
+            - 
+                label: Yellow laser
+                value: mu-laser-yellow
+            - 
+                label: Red laser
+                value: mu-laser-red
+            - 
+                label: Purple laser
+                value: mu-laser-purple
+            - 
+                label: Pink laser
+                value: mu-laser-pink
+    - 
+        id: mu-laser-top-value
+        title: Laser position
+        description: Adjust the laser vertical position
+        type: variable-number-slider
+        default: 50
+        min: 10
+        max: 90
+        step: 1
+    -
         id: magicuser-theme-tables-options
         title: Tables
         type: heading
@@ -7072,79 +7248,6 @@ settings:
         level: 3
         collapsed: true
     -
-        id: magicuser-theme-laser
-        title: Laser
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: mu-laser-active
-        title: MagicUser laser
-        description: Turn on MagicUser laser (reading mode)
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-laser-type
-        title: Laser focus type
-        type: class-select
-        description: Select laser focus type
-        allowEmpty: false
-        default: mu-laser-type-line
-        options:
-            - 
-                label: Line
-                value: mu-laser-type-line
-            - 
-                label: Area
-                value: mu-laser-type-area
-    - 
-        id: mu-laser-intensity
-        title: Laser intensity
-        description: Adjust the laser intensity
-        type: variable-number-slider
-        default: 1.5
-        min: 0.5
-        max: 3.0
-        step: 0.1
-    -
-        id: mu-laser-color
-        title: Laser color
-        type: class-select
-        description: Select laser color
-        allowEmpty: false
-        default: mu-laser-blue
-        options:
-            - 
-                label: Blue laser
-                value: mu-laser-blue
-            - 
-                label: Green laser
-                value: mu-laser-green
-            - 
-                label: Orange laser
-                value: mu-laser-orange
-            - 
-                label: Yellow laser
-                value: mu-laser-yellow
-            - 
-                label: Red laser
-                value: mu-laser-red
-            - 
-                label: Purple laser
-                value: mu-laser-purple
-            - 
-                label: Pink laser
-                value: mu-laser-pink
-    - 
-        id: mu-laser-top-value
-        title: Laser position
-        description: Adjust the laser vertical position
-        type: variable-number-slider
-        default: 50
-        min: 10
-        max: 90
-        step: 1
-    -
         id: magicuser-theme-reading-glow
         title: Reading Glow
         type: heading
@@ -7286,7 +7389,7 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: mu-warm-screen-mode
         title: Warm screen mode
         description: Adjust the intensity of the warm screen mode (0 = off)
@@ -7322,13 +7425,13 @@ settings:
         description: Activate compact version of command palette and prompts
         type: class-toggle
         addCommand: true
-    -  
+    -
         id: mu-transparent-prompts-menus
         title: Transparent menus, modals and prompts
         description: Activate transparency (menus, modals and prompts)
         type: class-toggle
         addCommand: true
-    - 
+    -
         id: mu-transparency-menus-level
         title: Transparency level
         description: Adjust the transparency level (menus, modals and prompts)
@@ -7348,27 +7451,32 @@ settings:
         title: Hide sidebar buttons
         description:  Hide sidebar buttons (new note, new folder and others)
         type: class-toggle
-    -  
+    -
         id: mu-hide-view-header-nav-buttons
         title: Hide tab navigation buttons
         description:  Hide tab navigation back and forward buttons
         type: class-toggle
-    -  
+    -
         id: mu-hide-titlebar-top-left-buttons
         title: Auto hide title bar top left buttons
         description: Auto hide title bar top left buttons
         type: class-toggle
-    -  
+    -
         id: mu-hide-side-dock-actions
         title: Auto hide top side buttons
         description: Auto hide top side buttons (left ribbon)
         type: class-toggle
-    -  
+    -
         id: mu-hide-side-dock-settings
         title: Auto hide bottom side buttons
         description: Auto hide bottom side buttons (left ribbon)
         type: class-toggle
-    -  
+    -
+        id: mu-hide-inline-title
+        title: Auto hide inline title
+        description: Auto hide inline title
+        type: class-toggle
+    -
         id: mu-hide-status-bar
         title: Auto hide status bar
         description: Auto hide status bar
