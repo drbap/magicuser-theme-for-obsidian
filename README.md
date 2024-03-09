@@ -130,6 +130,14 @@ Submenus:
 - Active **line highlight border** color (9 options)
 - Active **line highlight background** color (9 options)
 
+◼ **Laser**
+
+- MagicUser **laser**.
+- Select **laser focus type** (**Line** or **Area**).
+- Select **laser color** (**7 colors**).
+- Select **laser intensity**.
+- Select **laser position**.
+
 ◼ **Tables**
 
 - Table options (presets and colors)
@@ -144,14 +152,6 @@ Submenus:
 - *Stacked tabs* mode: Select active tab **border width** (0 = no border).
 
 ◼ **Reading Mode**
-
-**Laser** submenu
-
-- MagicUser laser.
-- Select **laser focus type** (**Line** or **Area**).
-- Select **laser color** (**7 colors**).
-- Select **laser intensity**.
-- Select **laser position**.
 
 **Reading Glow** submenu
 
@@ -300,8 +300,6 @@ Style Settings:
 
 ### **Laser - Style Settings Options**
 
-![MagicUser laser settings](images/magicuser_laser_settings.png)
-
 - Select **laser focus type** (**Line** or **Area**)
 - Select **laser color** (**7 colors** - blue, green, red, orange, yellow, pink and purple)
 - Select **laser intensity**. When using the "**Area**" focus you can use this slider to increase the area of the laser.
@@ -310,8 +308,6 @@ Style Settings:
 ## Reading Mode: Reading Glow Effect and Reading Indicator
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_reading_mode.gif)
-
-![MagicUser laser settings](images/magicuser_reading_glow_settings.png)
 
 - Reading Mode: **Reading glow** effect.
 - Style Settings: Reading glow **color** (7 colors).
