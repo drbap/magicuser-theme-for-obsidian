@@ -179,6 +179,7 @@ Submenus:
 - Auto hide **title bar top left buttons**.
 - Auto hide **top side buttons**.
 - Auto hide **bottom side buttons**.
+- Auto hide **inline title**.
 - Auto hide **status bar**.
 
 > When **auto hide** is turned on, UI elements will gradually appear when you move your mouse over the area where they would normally be, and then gradually disappear when you move your mouse away.
@@ -286,6 +287,7 @@ Style Settings:
 ![MagicUser laser - gif](images/magicuser_theme_laser.gif)
 
 Enhance your reading experience with personalized reading focus and comfort.
+- MagicUser laser will be displayed in live preview, source and reading modes.
 
 Customize the **laser intensity**:
 
@@ -296,7 +298,7 @@ Select **2 laser focus types**:
 - **Area** focus.
 
 Style Settings:
-> **UI Settings** -> **Reading Mode** -> **Laser** -> MagicUser laser
+> **UI Settings** -> **Laser** -> MagicUser laser
 
 ### **Laser - Style Settings Options**
 
