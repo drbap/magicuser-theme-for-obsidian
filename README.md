@@ -1008,7 +1008,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Style Settings Theme Options (collapse indicator color). Rounded tables suggestion.
 - @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
 - @golden234431 (Obsidian Forum) - inline title font size.
-- @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color.
+- @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
 - @New (Obsidian Forum) - note width suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
