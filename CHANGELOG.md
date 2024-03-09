@@ -1,5 +1,25 @@
 # Changelog
 
+## [16.3.0] - 2024-03-09
+### Improvements
+- *New feature*: **Hover underline** (live preview, source and reading modes).
+
+  > **UI Settings** -> **Line Highlight** -> **Hover underline** submenu
+
+- **Hover underline submenu**.
+  - Select hover underline **style** (*default*, *dashed*, *dotted*,*double*).
+  - Select hover underline **color** (independent color for light/dark mode).
+  - Select hover underline **thickness** (slider).
+  - Select the **gap between text and hover underline** (slider).
+  - **Toggle hover underline** (shortcut and/or Command Palette).
+
+- **MagicUser laser** new submenu.
+
+- **MagicUser laser** will be displayed in live preview, source and reading modes.
+
+- Auto hide **inline title**.
+
+
 ## [16.2.2] - 2024-03-07
 ### Improvements
 
