@@ -289,14 +289,6 @@ Style Settings:
 Enhance your reading experience with personalized reading focus and comfort.
 - MagicUser laser will be displayed in live preview, source and reading modes.
 
-Customize the **laser intensity**:
-
-- Adjust laser intensity (brightness and glow).
-
-Select **2 laser focus types**:
-- **Line** focus sharpens the text line by line for precise reading.
-- **Area** focus.
-
 Style Settings:
 > **UI Settings** -> **Laser** -> MagicUser laser
 
@@ -315,6 +307,23 @@ Style Settings:
 - Style Settings: Reading glow **color** (7 colors).
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
+
+## Hover Underline
+
+![Hover Underline](images/magicuser_theme_hover_underline.gif)
+
+**Hover underline** (live preview, source and reading modes).
+- **Toggle hover underline** (shortcut and/or Command Palette).
+
+Style Settings:
+> **UI Settings** -> **Line Highlight** -> **Hover underline** submenu
+
+**Hover underline submenu**.
+- Select hover underline **style** (*default*, *dashed*, *dotted*,*double*).
+- Select hover underline **color** (independent color for light/dark mode).
+- Select hover underline **thickness** (slider).
+- Select the **gap between text and hover underline** (slider).
+  
 
 ## Folder Icons, File Icons and Colored Indent Guides
 
