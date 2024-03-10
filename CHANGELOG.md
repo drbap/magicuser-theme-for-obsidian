@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.3.1] - 2024-03-10
+### Fixes
+
+- MagicUser laser adjustments (sidebars).
+  
 ## [16.3.0] - 2024-03-09
 ### Improvements
 - *New feature*: **Hover underline** (live preview, source and reading modes).
