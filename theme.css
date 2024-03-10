@@ -6294,7 +6294,7 @@ body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb-separator {
 }
 
 /* MagicUser Laser */
-body.mu-laser-active.mu-laser-type-line .view-content::after {
+body.mu-laser-active.mu-laser-type-line div.workspace-split:not(.mod-right-split, .mod-left-split) .view-content::after {
   content: '';
   top: var(--mu-laser-top);
   left: 10px;
@@ -6311,7 +6311,7 @@ body.mu-laser-active.mu-laser-type-line .view-content::after {
   pointer-events: none;
 }
 
-body.mu-laser-active.mu-laser-type-area .view-content::after {
+body.mu-laser-active.mu-laser-type-area div.workspace-split:not(.mod-right-split, .mod-left-split) .view-content::after {
   content: '';
   top: var(--mu-laser-top);
   left: 10px;
