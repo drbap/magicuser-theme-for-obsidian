@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.4.0] - 2024-03-12
+### Improvements
+
+- Select theme icons color (icon color, icon hover, icon active, search icon, status bar icon, menu icons).
+
 ## [16.3.1] - 2024-03-10
 ### Fixes
 
