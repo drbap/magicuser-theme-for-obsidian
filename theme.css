@@ -6537,6 +6537,11 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   --mu-hover-underline-style: double;
 }
 
+.nw100,
+.note-width100 {
+  --file-line-width: 100%;
+}
+
 /* Style Settings */
 
 /* @settings
