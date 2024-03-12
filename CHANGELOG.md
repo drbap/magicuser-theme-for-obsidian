@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.4.1] - 2024-03-10
+### Fixes
+
+- Style Settings icon description.
+
 ## [16.4.0] - 2024-03-12
 ### Improvements
 
