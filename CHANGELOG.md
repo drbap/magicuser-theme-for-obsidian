@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.4.2] - 2024-03-12
+### Improvements
+
+- `nw100` and `note-width100` classes (**note will occupy 100% width**). Add one of these classes as a `cssclasses` property on the desired note.
+
 ## [16.4.1] - 2024-03-12
 ### Fixes
 
