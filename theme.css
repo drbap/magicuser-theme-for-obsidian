@@ -6718,7 +6718,7 @@ settings:
         default-dark: '#5382d3'
     -
         id: mu-icon-hover
-        title: Icon color hover
+        title: Icon hover color
         type: variable-themed-color
         description: Select icon hover color
         format: hex
@@ -6727,7 +6727,7 @@ settings:
         default-dark: '#007fff'
     -
         id: mu-icon-active
-        title: Icon color active
+        title: Icon active color
         type: variable-themed-color
         description: Select icon active color
         format: hex
