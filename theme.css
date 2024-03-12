@@ -610,7 +610,9 @@ body {
   --background-modifier-active-hover: #0048cf;
   --background-modifier-border: #007fff38;
   --background-modifier-border-hover: #007fff48;
-  --background-modifier-border-focus: var(--mu-icon-active);
+
+  --background-modifier-border-focus: #007fff;
+
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--color-red);
   --background-modifier-error-hover: var(--color-red);
@@ -908,7 +910,7 @@ span.is-flashing {
 .suggestion-flair.svg-icon,
 .menu-item-icon .svg-icon,
 .status-bar-item .svg-icon {
-  color: #0072d3;
+  color: var(--mu-icon-statusbar-menu);
 }
 
 .is-warning .nav-file-icon.svg-icon,
@@ -1029,6 +1031,7 @@ span.obsidian-search-match-highlight {
   --mu-icon-hover: #007fff;
   --mu-icon-active: #007fff;
   --mu-icon-focused: #00a3ff;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: var(--mu-purple-2);
   --mu-sidebar-folder: #72a3ff;
@@ -1205,6 +1208,7 @@ span.obsidian-search-match-highlight {
   --mu-icon-hover: #007fff;
   --mu-icon-active: #007fff;
   --mu-icon-focused: #00a3ff;
+  --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: #a300cf;
   --mu-sidebar-folder: #0048a3;
@@ -6704,6 +6708,60 @@ settings:
         level: 3
         collapsed: true
     -
+        id: mu-icon
+        title: Icon color
+        type: variable-themed-color
+        description: Select icon color
+        format: hex
+        opacity: false
+        default-light: '#5382d3'
+        default-dark: '#5382d3'
+    -
+        id: mu-icon-hover
+        title: Icon color hover
+        type: variable-themed-color
+        description: Select icon hover color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: mu-icon-active
+        title: Icon color active
+        type: variable-themed-color
+        description: Select icon active color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: mu-icon-focused
+        title: Icon focused color
+        type: variable-themed-color
+        description: Current focused icon color
+        format: hex
+        opacity: false
+        default-light: '#00a3ff'
+        default-dark: '#00a3ff'
+    -
+        id: mu-icon-statusbar-menu
+        title: Icon color - status bar and menus
+        type: variable-themed-color
+        description: Select icon color (status bar and menus)
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: search-icon-color
+        title: Search icon color
+        type: variable-themed-color
+        description: Select search icon color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
         id: mu-rainbow-folders
         title: Rainbow colored folders
         description: Special rainbow colored folders (001-,01- to 008-,08-) 
@@ -6764,14 +6822,6 @@ settings:
         min: 0
         max: 360
         step: 1
-    -
-        id: mu-icon-focused
-        title: Icon focused color
-        type: variable-color
-        description: Current focused icon color
-        format: hex
-        opacity: false
-        default: '#00a3ff'
     -
         id: mu-hide-folders
         title: Hide folder icons
