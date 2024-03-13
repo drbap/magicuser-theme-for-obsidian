@@ -4,7 +4,7 @@
 ### Fixes
 
 - Reading glow - turn off effect adjustment (reading mode).
-- 
+
 ## [16.4.3] - 2024-03-13
 ### Improvements
 
