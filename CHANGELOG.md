@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.4.3] - 2024-03-13
+### Improvements
+
+- Reading glow - effect adjustment (reading mode).
+
 ## [16.4.2] - 2024-03-12
 ### Improvements
 
