@@ -6609,6 +6609,13 @@ body:not(.is-mobile).mu-cards-interface .titlebar-button {
   color: var(--mu-text-1);
 }
 
+/* Commander plugin */
+.side-dock-actions,
+.view-actions,
+.nav-buttons-container {
+  color: var(--mu-icon);
+}
+
 /* Style Settings */
 
 /* @settings
