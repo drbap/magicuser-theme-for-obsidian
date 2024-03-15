@@ -1,5 +1,15 @@
 # Changelog
 
+## [16.5.0] - 2024-03-14
+### Improvements
+
+- New feature: **Cards User Interface** (**Cards UI** -> Desktop version)
+- **Breadcrumb styles** compatible with mobile devices (smartphones and tablets).
+- **Shortcuts**:
+  - Toggle Cards UI - **shortcut/Command Palette**.
+  - Turn off reading glow effect (reading mode) - **shortcut/Command Palette**.
+- Select theme text color (main theme foreground color).
+
 ## [16.4.4] - 2024-03-13
 ### Fixes
 
