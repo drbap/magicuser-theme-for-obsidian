@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.5.1] - 2024-03-15
+### Improvements
+
+- Compatible with Commander plugin (icons).
+
 ## [16.5.0] - 2024-03-14
 ### Improvements
 
