@@ -92,6 +92,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes_light.png)
 
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
+- **Cards UI**.
 
 </details>
 
@@ -255,6 +256,17 @@ Submenus:
 
 </details>
 
+## Cards UI
+
+![MagicUser Cards UI](images/magicuser_theme_cards_ui_01.png)
+
+![MagicUser Cards UI](images/magicuser_theme_cards_ui.gif)
+
+![MagicUser Cards UI](images/magicuser_theme_cards_ui_02.png)
+
+Style Settings:
+> **Preset Themes** -> Cards UI
+ 
 ## Tabs
 
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
