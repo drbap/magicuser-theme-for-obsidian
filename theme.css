@@ -763,6 +763,7 @@ body {
   --mu-hover-underline-offset-value: 2;
   --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
 
+  --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
 }
 
@@ -3976,7 +3977,7 @@ body:not(.is-mobile) .inline-title:hover {
 
 body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
   box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  transition: box-shadow 1s ease-in-out;
+  transition: box-shadow .5s ease-in-out;
   border-radius: var(--mu-reading-glow-radius);
 }
 
@@ -4464,6 +4465,8 @@ body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mo
   --mu-table-color-1: #a3a3a328;
   --mu-table-color-2: #a3a3a348;
   --mu-table-th-background: #1f1f1f;
+  --mu-cards-border: #0072d330;
+  --status-bar-border-color: #0072d330;
 }
 
 .theme-light.magicuser-bg-north-pole-theme,
@@ -5046,7 +5049,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 }
 
 /* Custom sidebar - light mode */
-.theme-light.mu-sidebar-dark {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
   --mu-sidebar-folder: #72a3ff;
   --nav-item-color: #a3a3a3;
   --nav-item-color-hover: #a3a3a3;
@@ -5055,15 +5058,15 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   --mu-special-folder-color: #f1f1f1a3;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content {
   background-color: var(--mu-dark-sidebar-color);
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
   color: #a3a3a3 !important;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] table {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] table {
   --color-dot: #cfcfcf;
   --color-arrow: #cfcfcf;
   --color-button: #cfcfcf;
@@ -5074,51 +5077,51 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   --color-text-weeknum: #cfcfcf;
 }
 
-.theme-light.mu-sidebar-dark table.calendar.svelte-pcimu8 th {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark table.calendar.svelte-pcimu8 th {
   color: #727272 !important;
 }
 
-.theme-light.mu-sidebar-dark .arrow svg,
-.theme-light.mu-sidebar-dark .reset-button {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .arrow svg,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .reset-button {
   color: #727272 !important;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown {
   color: #a3a3a3;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown:hover {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .dropdown:hover {
   color: #0072d3;
 }
 
-.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
-.theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
-.theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
-.theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
-.outgoing-link-pane>.tree-item-self {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
+body:not(.mu-cards-interface).outgoing-link-pane>.tree-item-self {
   color: #a3a3a3 !important;
 }
 
-.theme-light.mu-sidebar-dark .search-result-file-match {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .search-result-file-match {
   background-color: var(--mu-bg-search-results);
   color: #a3a3a3;
 }
 
-.theme-light.mu-sidebar-dark .embedded-backlinks .tree-item-inner {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .embedded-backlinks .tree-item-inner {
   color: #000 !important;
 }
 
-.theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match {
   background-color: var(--background-secondary);
   color: #000 !important;
 }
 
-.theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match:hover {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .embedded-backlinks .search-result-file-match:hover {
   background-color: hsla(var(--color-accent-hsl), 0.8) !important;
   color: var(--text-on-accent);
 }
 
-.theme-light.mu-sidebar-dark .search-result-file-match:hover {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .search-result-file-match:hover {
   background-color: hsla(var(--color-accent-hsl), 0.8) !important;
   color: var(--text-on-accent);
 }
@@ -6200,31 +6203,31 @@ table tr>td>i.muc:hover>span {
 }
 
 /* Breadcrumbs */
-body:not(.is-mobile) .view-header-breadcrumb {
+.view-header-breadcrumb {
   background-color: var(--mu-folder-area-background);
   color: var(--mu-sidebar-folder);
   font-weight: var(--font-semibold);
   border: 1px solid var(--mu-folder-area-border);
 }
 
-body:not(.is-mobile) .view-header-breadcrumb:hover {
+.view-header-breadcrumb:hover {
   color: var(--mu-sidebar-folder) !important;
 }
 
-body:not(.is-mobile) .view-header-breadcrumb-separator {
+.view-header-breadcrumb-separator {
   margin: 0 2px;
   color: #a3a3a348 !important;
 }
 
-body:not(.is-mobile).mu-slanted-breadcrumb:has(.view-header-breadcrumb) .view-header-title-parent {
+.mu-slanted-breadcrumb:has(.view-header-breadcrumb) .view-header-title-parent {
   padding-left: 4px;
 }
 
-body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb {
+.mu-slanted-breadcrumb .view-header-breadcrumb {
   transform: skew(-12deg);
 }
 
-body:not(.is-mobile).mu-slanted-breadcrumb .view-header-breadcrumb-separator {
+.mu-slanted-breadcrumb .view-header-breadcrumb-separator {
   margin: 0;
   visibility: hidden;
 }
@@ -6542,6 +6545,70 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   --file-line-width: 100%;
 }
 
+/* Cards UI Interface */
+
+body:not(.is-mobile).mu-cards-interface {
+  --mu-titlebar-background: var(--mu-background-color-2) !important;
+  --divider-color: transparent !important;
+  --ribbon-background: var(--mu-background-color-2) !important;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header::before,
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header::after {
+  display: none;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-split,
+body:not(.is-mobile).mu-cards-interface .workspace-tab-header-container {
+  background-color: var(--mu-background-color-2) !important;
+}
+
+body:not(.is-mobile).mu-cards-interface .mod-fade:not(.mod-at-end):after {
+  background: none;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tab-container {
+  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 16px;
+  margin-top: 0;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(.is-mobile, .mu-distraction-free-mode, .mu-total-concentration-mode).mu-cards-interface .workspace-tab-container {
+  margin-bottom: 16px;
+}
+
+body:not(.is-mobile).mu-cards-interface.mu-distraction-free-mode .workspace-tab-container {
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(.is-mobile).mu-cards-interface.mu-total-concentration-mode .workspace-tab-container {
+  border-radius: 8px;
+  margin: 8px;
+  border: 1px solid var(--mu-cards-border);
+}
+
+body:not(.is-mobile).mu-cards-interface .titlebar-button-container,
+body:not(.is-mobile).mu-cards-interface .workspace {
+  background-color: var(--mu-background-color-2) !important;
+}
+
+body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf,
+body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-header,
+body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-content {
+  background-color: var(--mu-background-color-1);
+}
+
+body:not(.is-mobile).mu-cards-interface .titlebar-button {
+  color: var(--mu-text-1);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -6625,6 +6692,12 @@ settings:
         min: 0.0
         max: 0.90
         step: .05
+    -
+        id: mu-cards-interface
+        title: Cards UI
+        description: Activate cards user interface
+        type: class-toggle
+        addCommand: true
     -
         id: magicuser-theme-ui
         title: UI Settings
@@ -6977,7 +7050,7 @@ settings:
                 value: line-highlight-background-gray
     -
         id: magicuser-theme-hover-underline
-        title: Hover underline
+        title: Hover Underline
         type: heading
         level: 4
         collapsed: true
@@ -7359,7 +7432,8 @@ settings:
         id: mu-reading-glow-status-off
         title: Turn off reading glow
         description: Turn off the reading glow effect
-        type: class-toggle   
+        type: class-toggle
+        addCommand: true
     -
         id: magicuser-theme-reading-indicator
         title: Reading Indicator and Labels
@@ -7763,6 +7837,15 @@ settings:
         description: Bold, italic and highlighted text
         level: 2
         collapsed: true
+    -
+        id: text-normal
+        title: Theme text color
+        type: variable-themed-color
+        description: Select theme text color
+        format: hex
+        opacity: false
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
     -
         id: mu-text-bold
         title: Bold text color
