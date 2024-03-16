@@ -232,7 +232,8 @@ Submenus:
 
 <details>
 <summary><b>Checklist</b> - <i>click to expand</i></summary>
-
+  
+- Checkbox shape: **default** (rounded corners), **square** and **circle**
 - Checklist done **decoration** (underline, line-through, none)
 - Checklist done **text color**
 
@@ -514,6 +515,17 @@ cssclasses:
 ![Custom Checkbox Icons - Extra 2](images/magicuser_checkboxes_icons_extra_2.png)
 
 ![Custom Checkbox Icons - Extra 3](images/magicuser_checkboxes_icons_extra_3.png)
+
+## Checkbox Shape
+
+![Checkbox shape](images/magicuser_checkbox_shape.png)
+
+![Checkbox shape - theme options](images/magicuser_checkbox_shape_menu.png)
+
+- **Checkbox shape**: **default** (rounded corners), **square** and **circle**.
+
+Style Settings:
+> Checklist -> Checkbox shape
 
 ## Additional Callouts
 
