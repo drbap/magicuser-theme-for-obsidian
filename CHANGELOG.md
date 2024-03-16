@@ -1,5 +1,10 @@
 # Changelog
 
+## [16.6.0] - 2024-03-15
+### Improvements
+- Checkbox shape: default (rounded corners), square and circle.
+- Checkbox inside callout margin adjustment.
+  
 ## [16.5.1] - 2024-03-15
 ### Improvements
 
