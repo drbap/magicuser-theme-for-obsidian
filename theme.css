@@ -1573,12 +1573,10 @@ li[data-task="-"]>p>input:checked::after {
   background-color: #f13535;
   vertical-align: middle;
   text-align: center;
-  width: var(--checkbox-size);
-  height: var(--checkbox-size);
+  border-radius: inherit;
   top: -1px;
   left: -1px;
   zoom: 100%;
-  border-radius: var(--radius-s);
   -webkit-mask-image: none;
   mask-image: none;
   color: white;
@@ -3977,8 +3975,8 @@ body:not(.is-mobile) .inline-title:hover {
 
 body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
   box-shadow: 0 0 0 var(--mu-reading-glow-border-size) var(--mu-reading-glow-color), 0 0 1.2rem .2rem var(--mu-reading-glow-color);
-  transition: box-shadow .5s ease-in-out;
   border-radius: var(--mu-reading-glow-radius);
+  transition: box-shadow .5s ease-in-out;
 }
 
 .markdown-reading-view h1,
@@ -6616,6 +6614,22 @@ body:not(.is-mobile).mu-cards-interface .titlebar-button {
   color: var(--mu-icon);
 }
 
+/* Checkbox inside callouts */
+.markdown-source-view .callout input[type=checkbox] {
+  margin-inline-end: 11px;
+}
+
+/* Circle checkbox */
+.mu-checkbox-circle .markdown-reading-view input[type=checkbox],
+.mu-checkbox-circle .markdown-source-view input[type=checkbox] {
+  border-radius: 50%;
+}
+/* Square checkbox */
+.mu-checkbox-square .markdown-reading-view input[type=checkbox],
+.mu-checkbox-square .markdown-source-view input[type=checkbox] {
+  border-radius: 0;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -7988,6 +8002,23 @@ settings:
         description: Checklist settings
         level: 2
         collapsed: true
+    -
+        id: mu-checkbox-type
+        title: Checkbox shape
+        type: class-select
+        description: Select checkbox shape
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default
+                value: none
+            - 
+                label: Square
+                value: mu-checkbox-square
+            - 
+                label: Circle
+                value: mu-checkbox-circle
     -
         id: checklist-done-decoration
         title: Checklist done decoration
