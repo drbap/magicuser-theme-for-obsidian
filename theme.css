@@ -763,6 +763,12 @@ body {
   --mu-hover-underline-offset-value: 2;
   --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
 
+  --mu-amulet-hue: 224;
+  --mu-amulet-sat-value: 50;
+  --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
+
+  --mu-titlebar-button-fg: var(--mu-icon);
+
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
 }
@@ -4450,6 +4456,72 @@ body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mo
   --mu-table-th-background: #18281f;
 }
 
+/* Chroma Amulet */
+.theme-light.magicuser-chroma-amulet-theme {
+  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
+  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
+  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 90%);
+  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 82%);
+  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 80%);
+  --mu-caret-color: #0072d3;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: var(--amulet-title-color);
+  --mu-vault-title: var(--amulet-title-color);
+  --code-background: #f1f1f1;
+  --code-punctuation: var(--amulet-title-color);
+  --mu-sidebar-folder: #0048a3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #0088ff53;
+  --mu-dark-sidebar-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
+  --mu-icon: var(--amulet-icon-color);
+  --mu-icon-hover: var(--amulet-icon-color);
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --search-icon-color: var(--amulet-icon-color);
+  --mu-icon-statusbar-menu: var(--amulet-icon-color);
+  --mu-table-th-background: var(--amulet-icon-color);
+}
+
+.theme-dark.magicuser-chroma-amulet-theme {
+  --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
+  --amulet-title-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 42%);
+  --mu-background-color-1: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
+  --mu-background-color-2: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
+  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
+  --mu-caret-color: #00cfff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 4%);
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: var(--amulet-title-color);
+  --mu-vault-title: var(--amulet-title-color);
+  --code-background: #000;
+  --code-punctuation: var(--amulet-title-color);
+  --mu-sidebar-folder: #72b1ff;
+  --mu-h1: #00a3ff;
+  --mu-h2: #00a3ff;
+  --mu-h3: #00a3ff;
+  --mu-h4: #00a3ff;
+  --mu-h5: #00a3ff;
+  --mu-h6: #00a3ff;
+  --mu-suggestion-color: #00cfff;
+  --mu-text-selection: #0088ff53;
+  --mu-icon: var(--amulet-icon-color);
+  --mu-icon-hover: var(--amulet-icon-color);
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --search-icon-color: var(--amulet-icon-color);
+  --mu-icon-statusbar-menu: var(--amulet-icon-color);
+  --mu-table-th-background: var(--amulet-icon-color);
+}
+
 /* Special Background themes - BG Themes */
 /* BG Series - Light Theme */
 .magicuser-bg-north-pole-theme,
@@ -4645,59 +4717,65 @@ body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mo
 }
 
 /* Sidebar adjustment - light mode */
-.theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-room-lamp-theme {
   --mu-sidebar-folder: #97bff1 !important;
   --mu-bg-search-results: #2f0f18;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-moon-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-moon-theme {
   --mu-sidebar-folder: #729fd8 !important;
   --mu-bg-search-results: #001122;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-camouflage-theme {
   --mu-sidebar-folder: #a0ac82 !important;
   --mu-bg-search-results: #24281c;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-gray-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-gray-theme {
   --mu-sidebar-folder: #72a3ff;
   --mu-bg-search-results: #1f1f1f;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-teal-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teal-theme {
   --mu-sidebar-folder: #72a3ff;
   --mu-bg-search-results: #002828;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-purple-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-purple-theme {
   --mu-sidebar-folder: #72a3ff;
   --mu-bg-search-results: #330048;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-concentration-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-concentration-theme {
   --mu-sidebar-folder: #72b1ff;
   --mu-bg-search-results: #1b1b21;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-creativity-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-creativity-theme {
   --mu-sidebar-folder: #72b1ff;
   --mu-bg-search-results: #291522;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-teacher-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
   --mu-sidebar-folder: #72b1ff;
   --mu-bg-search-results: #28392f;
 }
 
-.theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
-.theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
+  --mu-sidebar-folder: #72b1ff;
+  --mu-bg-search-results: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 10%);
+  --mu-titlebar-background: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 6%);
+}
+
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-north-pole-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-sunset-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-old-school-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-classic-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-night-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-dreams-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-slide-theme,
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-bg-synth-theme {
   --mu-sidebar-folder: #72a3ff;
   --mu-bg-search-results: #000;
 }
@@ -6603,8 +6681,8 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
   background-color: var(--mu-background-color-1);
 }
 
-body:not(.is-mobile).mu-cards-interface .titlebar-button {
-  color: var(--mu-text-1);
+.titlebar-button {
+  color: var(--mu-titlebar-button-fg);
 }
 
 /* Commander plugin */
@@ -6624,6 +6702,7 @@ body:not(.is-mobile).mu-cards-interface .titlebar-button {
 .mu-checkbox-circle .markdown-source-view input[type=checkbox] {
   border-radius: 50%;
 }
+
 /* Square checkbox */
 .mu-checkbox-square .markdown-reading-view input[type=checkbox],
 .mu-checkbox-square .markdown-source-view input[type=checkbox] {
@@ -6681,6 +6760,9 @@ settings:
                 label: MagicUser Concentration
                 value: magicuser-concentration-theme
             - 
+                label: MagicUser Chroma Amulet
+                value: magicuser-chroma-amulet-theme
+            - 
                 label: MagicUser BG Night
                 value: magicuser-bg-night-theme
             - 
@@ -6705,14 +6787,37 @@ settings:
                 label: MagicUser BG Old School
                 value: magicuser-bg-old-school-theme
     - 
+        id: mu-amulet-hue
+        title: Chroma Amulet - color
+        description: MagicUser Chroma Amulet theme - select color
+        type: variable-number-slider
+        default: 224
+        min: 0
+        max: 360
+        step: 1
+    - 
+        id: mu-amulet-sat-value
+        title: Chroma Amulet - saturation
+        description: MagicUser Chroma Amulet theme - select saturation
+        type: variable-number-slider
+        default: 50
+        min: 0
+        max: 100
+        step: 1
+    - 
         id: mu-bg-image-overlay
-        title: Darken background
-        description: Darken background (preset BG themes - dark mode)
+        title: BG themes (dark mode) - darken background
+        description: MagicUser BG themes (dark mode) - darken background 
         type: variable-number-slider
         default: 0.0
         min: 0.0
         max: 0.90
         step: .05
+    -
+        id: mu-sidebar-dark
+        title: Dark sidebar (light mode)
+        description: Turn on dark sidebar (light mode - normal UI)
+        type: class-toggle
     -
         id: mu-cards-interface
         title: Cards UI
@@ -6759,11 +6864,6 @@ settings:
         opacity: false
         default-light: '#d1dfff'
         default-dark: '#001122'
-    -
-        id: mu-sidebar-dark
-        title: Dark sidebar (light mode)
-        description: Turn on dark sidebar (light mode)
-        type: class-toggle
     -
         id: mu-caret-color
         title: Caret color
