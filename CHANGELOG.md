@@ -1,5 +1,12 @@
 # Changelog
 
+## [17.0.0] - 2024-03-17
+### Improvements
+
+- New preset theme: **MagicUser Chroma Amulet**
+- Dark sidebar (light mode) moved to `Presets` menu.
+- Small theme adjustments.
+
 ## [16.6.0] - 2024-03-15
 ### Improvements
 - Checkbox shape: default (rounded corners), square and circle.
