@@ -81,7 +81,7 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 ![MagicUser Moon](images/magicuser_preset_concentration.png)
 
-**MagicUser BG Themes**
+### **MagicUser BG Themes**
 
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes.png)
 
@@ -93,6 +93,31 @@ In order to activate the Translucent Dark and Translucent Light themes, turn on 
 
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
 - **Cards UI**.
+
+### MagicUser Chroma Amulet Theme
+
+![MagicUser Chroma Amulet](images/magicuser_theme_chroma_amulet.png)
+
+![MagicUser Chroma Amulet -gif](images/magicuser_theme_chroma_amulet.gif)
+
+The **Chroma Amulet** preset is a special preset that you can use to create multiple color themes.
+
+How it Works:
+
+1. Select "**MagicUser Chroma Amulet**" preset.
+2. Select theme color using the first slider: **color**.
+3. Adjust the level of **saturation** using the second slider (turn this one closer to zero to greyish tones).
+
+Quick and User-Friendly: The Chroma Amulet preset theme streamlines the theme personalization process, allowing you to create your favorite theme workspace colors effortlessly (using 1 or 2 sliders).
+
+- **Automatic adjustment**: The Chroma Amulet preset automatically changes the color of various interface elements. This includes:
+  - Icons,
+  - Vault name,
+  - Inline title,
+  - Code punctuation,
+  - Sidebars and other UI elements.
+
+> Important: MagicUser Chroma Amulet theme **does not affect your accent color**. So you can still use your favorite accent color with your chosen theme colors.
 
 </details>
 
@@ -376,7 +401,7 @@ Activate this mode using the Style Settings plugin:
 
 Style Settings:
 
-> **UI Settings** -> **Main Theme Colors** -> Dark sidebar (light mode)
+> **Preset Themes** -> Dark sidebar (light mode)
  
 ## Neon Mode
 
