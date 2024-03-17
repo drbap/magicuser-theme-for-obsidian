@@ -288,8 +288,6 @@ Submenus:
 
 ![MagicUser Cards UI](images/magicuser_theme_cards_ui.gif)
 
-![MagicUser Cards UI](images/magicuser_theme_cards_ui_02.png)
-
 Style Settings:
 > **Preset Themes** -> Cards UI
  
