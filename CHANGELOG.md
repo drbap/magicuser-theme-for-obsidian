@@ -4,7 +4,7 @@
 ### Improvements
 
 - New preset theme: **MagicUser Chroma Amulet**
-- Dark sidebar (light mode) moved to `Presets` menu.
+- Dark sidebar (light mode) moved to `Preset Themes` menu.
 - Small theme adjustments.
 
 ## [16.6.0] - 2024-03-15
