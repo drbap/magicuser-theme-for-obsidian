@@ -786,63 +786,6 @@ body::before {
   pointer-events: none;
 }
 
-
-body.is-translucent {
-  background-color: var(--mu-translucent-background);
-}
-
-body.is-translucent .titlebar {
-  background-color: transparent !important;
-}
-
-body.is-translucent:not(.is-fullscreen) {
-  --nav-collapse-icon-color: #0072d3;
-  --nav-collapse-icon-color-collapsed: #0072d3;
-  --divider-color: rgba(0, 0, 0, 0);
-}
-
-body.is-translucent .titlebar-button-container.mod-right {
-  background-color: transparent;
-}
-
-body.is-translucent.theme-light .titlebar-button-container.mod-right {
-  color: #000;
-}
-
-body.is-translucent.theme-dark .titlebar-button-container.mod-right {
-  color: #f1f1f1;
-}
-
-body.is-translucent.theme-light {
-  --mu-background-color-1: #fff;
-  --mu-background-color-2: #f1f1f1;
-  --mu-setting-color: #cfcfcf20;
-  --mu-translucent-background: #a3a3a3;
-  --titlebar-background: #f1f1f1;
-  --titlebar-background-focused: #f1f1f1;
-  --mu-titlebar-background: #f1f1f1;
-}
-
-body.is-translucent.theme-dark {
-  --mu-background-color-1: #1f1f1f;
-  --mu-background-color-2: #000;
-  --mu-setting-color: #cfcfcf20;
-  --mu-translucent-background: #000;
-  --titlebar-background: #000;
-  --titlebar-background-focused: #000;
-  --mu-titlebar-background: #000;
-}
-
-body.is-translucent.theme-light input[type="search"],
-body.is-translucent.theme-light input[type="text"] {
-  background-color: #fff !important;
-}
-
-body.is-translucent.theme-dark input[type="search"],
-body.is-translucent.theme-dark input[type="text"] {
-  background-color: #1f1f1f !important;
-}
-
 .cm-s-obsidian span.cm-formatting-link,
 .cm-formatting-header,
 .cm-s-obsidian span.cm-formatting-quote {
@@ -3687,18 +3630,6 @@ input[type=date] {
 .excalidraw .HelpDialog__key {
   color: var(--text-on-accent-inverted);
   font-weight: var(--font-semibold);
-}
-
-.is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left,
-.is-translucent:not(.is-fullscreen) .workspace-tabs,
-.is-translucent:not(.is-fullscreen) .workspace-split.mod-root,
-.is-translucent:not(.is-fullscreen) .sidebar-toggle-button,
-.is-translucent:not(.is-fullscreen) .mod-left-split .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .mod-right-split .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .mod-top .workspace-tab-header-container,
-.is-translucent:not(.is-fullscreen) .workspace-tabs .workspace-leaf,
-.is-translucent:not(.is-fullscreen) .workspace-ribbon.mod-left:before {
-  background-color: var(--mu-titlebar-background) !important;
 }
 
 /* Properties */
