@@ -1,5 +1,10 @@
 # Changelog
 
+## [17.1.0] - 2024-03-19
+### Improvements
+
+- **Removed Translucent Window support** (It is no longer possible to enable the "Translucent window" setting on Windows - Obsidian 1.5.11 Desktop). 
+
 ## [17.0.0] - 2024-03-17
 ### Improvements
 
