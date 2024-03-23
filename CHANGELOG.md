@@ -1,5 +1,10 @@
 # Changelog
 
+## [17.2.0] - 2024-03-23
+### Improvements
+
+- Hide headings labels (reading mode).
+
 ## [17.1.0] - 2024-03-19
 ### Improvements
 
