@@ -186,6 +186,7 @@ Submenus:
 - **Reading indicator width** - slider controller.
 - **Reading indicator color**.
 - **H1-H6 label colors** (independent colors for light and dark modes).
+- **Hide headings labels**.
 
 ◼ **UI Advanced Settings** (Desktop Version)
 
@@ -1055,5 +1056,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @golden234431 (Obsidian Forum) - inline title font size.
 - @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
 - @New (Obsidian Forum) - note width suggestion.
+- @YonKuma (Obsidian Forum) - hide headings labels.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
