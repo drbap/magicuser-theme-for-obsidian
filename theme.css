@@ -3916,30 +3916,30 @@ body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mo
   transition: box-shadow .5s ease-in-out;
 }
 
-.markdown-reading-view h1,
-.markdown-reading-view h2,
-.markdown-reading-view h3,
-.markdown-reading-view h4,
-.markdown-reading-view h5,
-.markdown-reading-view h6 {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h1,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h2,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h3,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h4,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h5,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h6 {
   position: relative;
 }
 
-.markdown-reading-view h1:active,
-.markdown-reading-view h2:active,
-.markdown-reading-view h3:active,
-.markdown-reading-view h4:active,
-.markdown-reading-view h5:active,
-.markdown-reading-view h6:active {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h1:active,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h2:active,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h3:active,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h4:active,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h5:active,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h6:active {
   --mu-label-visible: hidden;
 }
 
-.markdown-reading-view h1::before,
-.markdown-reading-view h2::before,
-.markdown-reading-view h3::before,
-.markdown-reading-view h4::before,
-.markdown-reading-view h5::before,
-.markdown-reading-view h6::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
   font-size: .8rem;
   font-family: var(--mu-font-ui);
   position: absolute;
@@ -3950,42 +3950,42 @@ body:not(.mu-reading-glow-status-off) .markdown-reading-view>div>div>div:not(.mo
   -webkit-text-stroke: 0;
 }
 
-.markdown-reading-view h1::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h1::before {
   content: "H1 ";
   color: var(--mu-label-h1);
 }
 
-.markdown-reading-view h2::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h2::before {
   content: "H2 ";
   color: var(--mu-label-h2);
 }
 
-.markdown-reading-view h3::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h3::before {
   content: "H3 ";
   color: var(--mu-label-h3);
 }
 
-.markdown-reading-view h4::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h4::before {
   content: "H4 ";
   color: var(--mu-label-h4);
 }
 
-.markdown-reading-view h5::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h5::before {
   content: "H5 ";
   color: var(--mu-label-h5);
 }
 
-.markdown-reading-view h6::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h6::before {
   content: "H6 ";
   color: var(--mu-label-h6);
 }
 
-.markdown-reading-view h1:hover::before,
-.markdown-reading-view h2:hover::before,
-.markdown-reading-view h3:hover::before,
-.markdown-reading-view h4:hover::before,
-.markdown-reading-view h5:hover::before,
-.markdown-reading-view h6:hover::before {
+body:not(.mu-hide-heading-labels) .markdown-reading-view h1:hover::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h2:hover::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h3:hover::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h4:hover::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h5:hover::before,
+body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   visibility: var(--mu-label-visible);
 }
 
@@ -7510,6 +7510,11 @@ settings:
         min: 0
         max: 1
         step: 0.05
+    -
+        id: mu-hide-heading-labels
+        title: Hide headings labels 
+        description: Hide headings labels
+        type: class-toggle
     -
         id: mu-label-h1
         title: H1 label color
