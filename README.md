@@ -20,18 +20,6 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 > No extra plugin required.
 
-## Plugins Compatibility
-
-![MagicUser Theme - Community Plugins Compatibility](images/magicuser_theme_plugins_compatibility.png)
-
-- **Style Settings**
-- **Excalidraw**
-- **Dataview**
-- **Kanban**
-- **Calendar**
-- **Full Calendar**
-- **Tasks**
-
 ## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
@@ -1021,6 +1009,19 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 ## Mobile Display
 
 ![MagicUser theme for mobile devices](images/magicuser_theme_mobile.gif)
+
+## Plugins Compatibility
+
+![MagicUser Theme - Community Plugins Compatibility](images/magicuser_theme_plugins_compatibility.png)
+
+- **Style Settings**
+- **Excalidraw**
+- **Dataview**
+- **Kanban**
+- **Calendar**
+- **Full Calendar**
+- **Tasks**
+- **Commander**
 
 ## Feedback
 
