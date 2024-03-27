@@ -1,5 +1,10 @@
 # Changelog
 
+## [17.2.1] - 2024-03-27
+### Fixes
+
+- Adjustments to distraction-free mode (Commander plugin compatibility).
+
 ## [17.2.0] - 2024-03-23
 ### Improvements
 
