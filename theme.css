@@ -3755,7 +3755,7 @@ body:not(.is-mobile).mu-distraction-free-mode {
 }
 
 body:not(.is-mobile) .view-header-title-container.mod-at-start,
-body:not(.is-mobile) .status-bar-item:not(.mod-clickable) {
+body:not(.is-mobile) .status-bar-item.plugin-word-count {
   -webkit-app-region: var(--mu-header-title-drag);
 }
 
