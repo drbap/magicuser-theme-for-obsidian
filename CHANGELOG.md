@@ -1,9 +1,12 @@
 # Changelog
 
-## [17.2.1] - 2024-03-27
-### Fixes
+## [17.3.0] - 2024-03-29
+### Improvements
 
-- Adjustments to distraction-free mode (Commander plugin compatibility).
+- **Input foreground color** (search, modals search, command palette and others) -> same color of the caret/text cursor.
+- **Style Settings color picker** adjustments -> input font weight, selection and font color adjustment (light and dark modes).
+- **Outline** -> headings font weight adjustment.
+- **Close button** -> foreground hover color (Windows, Linux).
 
 ## [17.2.0] - 2024-03-23
 ### Improvements
