@@ -1051,6 +1051,7 @@ span.obsidian-search-match-highlight {
 .theme-dark input[type="text"],
 .theme-dark input[type="search"] {
   background-color: var(--mu-input-bg-color);
+  color: var(--mu-caret-color);
 }
 
 .theme-dark .inline-title {
@@ -1294,6 +1295,7 @@ span.obsidian-search-match-highlight {
 .theme-light input[type="text"],
 .theme-light input[type="search"] {
   background-color: var(--mu-input-bg-color);
+  color: var(--mu-caret-color);
 }
 
 .theme-light .setting-item {
@@ -4104,7 +4106,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-light.magicuser-gray-theme {
   --mu-background-color-1: #e8e8e8;
   --mu-background-color-2: #e1e1e1;
-  --mu-caret-color: #ff00a3;
+  --mu-caret-color: #f500b4;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
   --mu-setting-color: #a3a3a348;
@@ -4126,7 +4128,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-dark.magicuser-gray-theme {
   --mu-background-color-1: #1f1f1f;
   --mu-background-color-2: #181818;
-  --mu-caret-color: #ff00a3;
+  --mu-caret-color: #ff48cf;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
   --mu-setting-color: #a3a3a318;
@@ -6638,6 +6640,34 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
 .mu-checkbox-square .markdown-reading-view input[type=checkbox],
 .mu-checkbox-square .markdown-source-view input[type=checkbox] {
   border-radius: 0;
+}
+
+/* Style Settings input */
+.theme-dark .pcr-app .pcr-interaction .pcr-result {
+  background-color: var(--mu-background-color-2);
+  font-weight: var(--font-semibold);
+  color: #f1f1f1;
+}
+
+.theme-light .pcr-app .pcr-interaction .pcr-result {
+  background-color: #fff;
+  font-weight: var(--font-semibold);
+  color: #000;
+}
+
+.theme-light .pcr-app .pcr-interaction .pcr-result::selection {
+  color: #000;
+}
+
+.workspace-leaf-content[data-type="outline"] .tree-item-self:hover,
+.workspace-leaf-content[data-type="outline"] .tree-item-self {
+  font-weight: var(--font-semibold) !important;
+}
+
+/* Close button */
+.mod-linux .titlebar-button.mod-close:hover,
+.mod-windows .titlebar-button.mod-close:hover {
+  color: #f1f1f1 !important;
 }
 
 /* Style Settings */
