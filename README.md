@@ -57,15 +57,21 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 8. **MagicUser Teacher**
 
-![MagicUser Moon](images/magicuser_preset_teacher.png)
+![MagicUser Teacher](images/magicuser_preset_teacher.png)
 
 9. **MagicUser Creativity**
 
-![MagicUser Moon](images/magicuser_preset_creativity.png)
+![MagicUser Creativity](images/magicuser_preset_creativity.png)
 
 10. **MagicUser Concentration**
 
-![MagicUser Moon](images/magicuser_preset_concentration.png)
+![MagicUser Concentration](images/magicuser_preset_concentration.png)
+
+11. **MagicUser Stealth**
+
+![MagicUser Stealth](images/magicuser_preset_stealth.png)
+
+![MagicUser Stealth - Cards UI](images/magicuser_preset_stealth_cards_ui.png)
 
 ### **MagicUser BG Themes**
 
@@ -123,6 +129,11 @@ Submenus:
 - **Inline title** font size
 - Stacked mode tabs: active tab **border color**
 - Stacked mode tabs: active tab **border width**
+- **Blockquote background** color
+- **Blockquote border** color
+- **Horizontal rule** color
+- **List marker** color
+- **List marker collapsed** color
 
 ◼ **Icons and Folders**
 
@@ -130,6 +141,9 @@ Submenus:
 - **Folder icon** color
 - **File icon** color
 - **Icon focused** color
+- **Folder icons** color **saturation** slider (0 = gray).
+- **File icons** color **saturation** slider (0 = gray).
+- Sidebars **collapse icon** color (folder collapse, outline collapse and others).
 - Show/hide **folder icons**
 - Show/hide **file icons**
 
@@ -187,6 +201,7 @@ Submenus:
 - **Transparency level adjustment** (slider).
 
 **Hide UI Elements** submenu:
+- Hide **vault name**.
 - Hide **sidebar buttons** (new note, new folder and others).
 - Show/hide **tab navigation back and forward buttons**.
 - Auto hide **title bar top left buttons**.
