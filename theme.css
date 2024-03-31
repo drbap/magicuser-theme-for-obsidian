@@ -77,9 +77,9 @@ https://github.com/colineckert/obsidian-things
 body {
   /* Blockquotes */
   --blockquote-border-thickness: 4px;
-  --blockquote-border-color: var(--mu-color-lig);
+  --blockquote-border-color: var(--mu-blockquote-border);
   --blockquote-font-style: normal;
-  --blockquote-color: var(--mu-blockquote-foreground);
+  --blockquote-color: var(--text-normal);
   --blockquote-background-color: var(--mu-blockquote-background);
 
   /* Bold */
@@ -146,7 +146,7 @@ body {
   --embed-max-height: 4000px;
   --embed-canvas-max-height: 400px;
   --embed-background: inherit;
-  --embed-border-left: 2px solid var(--mu-purple-1);
+  --embed-border-left: 2px solid #0072d348;
   --embed-border-right: none;
   --embed-border-top: none;
   --embed-border-bottom: none;
@@ -252,7 +252,7 @@ body {
   --header-height: 40px;
 
   /* Horizontal rules */
-  --hr-color: var(--mu-blue-hr);
+  --hr-color: var(--mu-hr-color);
   --hr-thickness: 2px;
 
   /* Icons */
@@ -331,9 +331,9 @@ body {
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.075em;
-  --list-marker-color: var(--mu-color-lig);
-  --list-marker-color-hover: var(--mu-color-lig);
-  --list-marker-color-collapsed: var(--mu-magenta-1);
+  --list-marker-color: #007fff;
+  --list-marker-color-hover: var(--list-marker-color);
+  --list-marker-color-collapsed: #f100f1;
   --list-bullet-border: none;
   --list-bullet-radius: 50%;
   --list-bullet-size: 0.3em;
@@ -344,7 +344,7 @@ body {
   --nav-item-background-active: #007fff28;
   --nav-item-background-hover: #007fff18;
   --nav-item-size: var(--font-ui-small);
-  --nav-item-color: var(--text-muted);
+  --nav-item-color: var(--text-normal);
   --nav-item-color-hover: var(--text-normal);
   --nav-item-color-active: var(--text-normal);
   --nav-item-color-selected: var(--text-normal);
@@ -649,6 +649,7 @@ body {
   --ui-view-header-nav-buttons: flex;
   --ui-nav-buttons-container: flex;
   --ui-distraction-free-toggle-button: flex;
+  --ui-display-vault-title: flex;
 
   /* MagicUser Callouts */
   --mu-callout-magic: 207, 88, 255;
@@ -695,10 +696,16 @@ body {
   --mu-indent-color-level-4: #00a3487f;
   --mu-indent-color-level-5: #e500007f;
   --mu-indent-color-level-6: #8282007f;
+
   --mu-folder-color-hue-value: 0;
   --mu-folder-color-hue: calc(var(--mu-folder-color-hue-value) * 1deg);
+
   --mu-file-color-hue-value: 0;
   --mu-file-color-hue: calc(var(--mu-file-color-hue-value) * 1deg);
+
+  --mu-folder-color-saturation: 1;
+  --mu-file-color-saturation: 1;
+
   --mu-header-title-drag: no-drag;
   --mu-dark-sidebar-color: #001122;
   --mu-bg-search-results: #001836;
@@ -895,12 +902,19 @@ span.is-flashing {
   stroke: var(--text-on-accent) !important;
 }
 
+.nav-folder.mod-root>.nav-folder-title:hover,
+.nav-folder.mod-root>.nav-folder-title {
+  font-weight: var(--font-semibold);
+  color: var(--mu-vault-title) !important;
+  display: var(--ui-display-vault-title);
+}
+
 .nav-folder .nav-folder-title-content:not(:nth-child(1))::before {
   content: var(--mu-folder-open);
   padding-right: 8px;
   zoom: var(--mu-folder-icon-zoom);
   vertical-align: middle;
-  filter: hue-rotate(var(--mu-folder-color-hue));
+  filter: hue-rotate(var(--mu-folder-color-hue)) saturate(var(--mu-folder-color-saturation));
 }
 
 .nav-folder.is-collapsed .nav-folder-title-content:not(:nth-child(1))::before {
@@ -908,7 +922,7 @@ span.is-flashing {
   padding-right: 8px;
   zoom: var(--mu-folder-icon-zoom);
   vertical-align: middle;
-  filter: hue-rotate(var(--mu-folder-color-hue));
+  filter: hue-rotate(var(--mu-folder-color-hue)) saturate(var(--mu-folder-color-saturation));
 }
 
 .nav-file-title-content::before {
@@ -916,7 +930,7 @@ span.is-flashing {
   padding-right: 8px;
   zoom: var(--mu-notes-icon-zoom);
   vertical-align: middle;
-  filter: hue-rotate(var(--mu-file-color-hue));
+  filter: hue-rotate(var(--mu-file-color-hue)) saturate(var(--mu-file-color-saturation));
 }
 
 .tree-item-self[data-path*=".canvas"] .nav-file-title-content::before {
@@ -961,13 +975,13 @@ span.obsidian-search-match-highlight {
   --mu-purple-1: #d372ff;
   --mu-purple-2: #a273d8;
   --mu-magenta-1: #f100f1;
-  --mu-blue-hr: #0072d3;
+  --mu-hr-color: #0072d3;
   --mu-text-1: #f1f1f1;
   --mu-text-title: hsl(278, 80%, 60%);
   --mu-text-bold: inherit;
   --mu-text-italic: inherit;
-  --mu-blockquote-foreground: #f1f1f1;
   --mu-blockquote-background: #cfcfcf20;
+  --mu-blockquote-border: #007fff;
   --mu-divider-color: #b372ff10;
   --mu-h1: #00a3ff;
   --mu-h2: #00a3ff;
@@ -1087,11 +1101,6 @@ span.obsidian-search-match-highlight {
   color: var(--mu-sidebar-folder) !important;
 }
 
-.theme-dark .nav-folder.mod-root>.nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-vault-title) !important;
-}
-
 .theme-dark .tree-item-self.is-clickable.mod-collapsible.nav-folder-title {
   font-weight: var(--font-semibold);
   color: var(--mu-sidebar-folder);
@@ -1139,13 +1148,13 @@ span.obsidian-search-match-highlight {
   --mu-purple-1: #d372ff;
   --mu-purple-2: #b10aff;
   --mu-magenta-1: #f100f1;
-  --mu-blue-hr: #0072d3;
+  --mu-hr-color: #0072d3;
   --mu-text-1: #000;
   --mu-text-title: #a300cf;
   --mu-text-bold: inherit;
   --mu-text-italic: inherit;
-  --mu-blockquote-foreground: #000;
   --mu-blockquote-background: #cfcfcf88;
+  --mu-blockquote-border: #007fff;
   --mu-divider-color: #b372ff10;
   --mu-h1: #0072d3;
   --mu-h2: #0072d3;
@@ -1272,11 +1281,6 @@ span.obsidian-search-match-highlight {
 .theme-light .nav-folder-title:hover {
   font-weight: var(--font-semibold);
   color: var(--mu-sidebar-folder) !important;
-}
-
-.theme-light .nav-folder.mod-root>.nav-folder-title {
-  font-weight: var(--font-semibold);
-  color: var(--mu-vault-title) !important;
 }
 
 .theme-light .tree-item-self.is-clickable.mod-collapsible.nav-folder-title {
@@ -3503,7 +3507,7 @@ table.dataview.table-view-table td {
 
 table.dataview.table-view-table th.table-view-th {
   color: var(--mu-text-1) !important;
-  border-bottom: 2px solid var(--mu-blue-hr) !important;
+  border-bottom: 2px solid var(--mu-hr-color) !important;
 }
 
 table.calendar.svelte-pcimu8 {
@@ -3809,7 +3813,11 @@ body:not(.is-mobile).mu-total-concentration-mode .titlebar-button-container.mod-
   display: none;
 }
 
-/* view-header-nav-buttons */
+/* vault title and view-header-nav-buttons */
+body:not(.is-mobile).mu-hide-vault-title {
+  --ui-display-vault-title: none;
+}
+
 body:not(.is-mobile).mu-hide-view-header-nav-buttons {
   --ui-view-header-nav-buttons: none;
 }
@@ -4389,6 +4397,94 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-table-th-background: #18281f;
 }
 
+/* Stealth */
+.theme-light.magicuser-stealth-theme {
+  --mu-background-color-1: #fff;
+  --mu-background-color-2: #d8d8d8;
+  --mu-titlebar-background: #000;
+  --mu-caret-color: #0072d3;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #fff;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #727272;
+  --mu-vault-title: #727272;
+  --code-background: #f1f1f1;
+  --code-punctuation: #727272;
+  --mu-sidebar-folder: #000;
+  --mu-folder-color-saturation: 0;
+  --mu-file-color-saturation: 0;
+  --nav-collapse-icon-color: #727272;
+  --mu-h1: #000;
+  --mu-h2: #000;
+  --mu-h3: #000;
+  --mu-h4: #000;
+  --mu-h5: #000;
+  --mu-h6: #000;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #0088ff53;
+  --mu-dark-sidebar-color: #111111;
+  --mu-icon: #575757;
+  --mu-icon-hover: #0072d3;
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --search-icon-color: #0072d3;
+  --mu-icon-statusbar-menu: #0072d3;
+  --mu-table-th-background: #484848;
+  --mu-folder-area-background: #bfbfbf48;
+  --mu-folder-area-border: #bfbfbf88;
+  --checkbox-border-color: #828282;
+  --checkbox-border-color-hover: #a3a3a3;
+  --text-normal: #000;
+  --mu-default-mode-border-color: #0072d3;
+  --mu-stacked-mode-border-color: #0072d3;
+  --mu-blockquote-border: #828282;
+  --mu-hr-color: #cfcfcf;
+  --list-marker-color: #727272;
+}
+
+.theme-dark.magicuser-stealth-theme {
+  --mu-background-color-1: #181818;
+  --mu-background-color-2: #111111;
+  --mu-titlebar-background: #080808;
+  --mu-caret-color: #00a3ff;
+  --mu-divider-color: #00000000;
+  --mu-input-bg-color: #000;
+  --mu-setting-color: #a3a3a318;
+  --mu-text-title: #575757;
+  --mu-vault-title: #575757;
+  --code-background: #000;
+  --code-punctuation: #727272;
+  --mu-sidebar-folder: #727272;
+  --mu-folder-color-saturation: 0;
+  --mu-file-color-saturation: 0;
+  --nav-collapse-icon-color: #727272;
+  --mu-h1: #979797;
+  --mu-h2: #979797;
+  --mu-h3: #979797;
+  --mu-h4: #979797;
+  --mu-h5: #979797;
+  --mu-h6: #979797;
+  --mu-suggestion-color: #0072d3;
+  --mu-text-selection: #0088ff53;
+  --mu-icon: #575757;
+  --mu-icon-hover: #0072d3;
+  --mu-icon-active: #0072d3;
+  --mu-icon-focused: #0072d3;
+  --search-icon-color: #0072d3;
+  --mu-icon-statusbar-menu: #0072d3;
+  --mu-table-th-background: #080808;
+  --mu-folder-area-background: #bfbfbf11;
+  --mu-folder-area-border: #bfbfbf28;
+  --checkbox-border-color: #828282;
+  --checkbox-border-color-hover: #a3a3a3;
+  --text-normal: #aaa;
+  --mu-default-mode-border-color: #0072d3;
+  --mu-stacked-mode-border-color: #0072d3;
+  --mu-blockquote-border: #828282;
+  --mu-hr-color: #484848;
+  --list-marker-color: #727272;
+}
+
 /* Chroma Amulet */
 .theme-light.magicuser-chroma-amulet-theme {
   --amulet-icon-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 33%);
@@ -4693,6 +4789,13 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-creativity-t
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-teacher-theme {
   --mu-sidebar-folder: #72b1ff;
   --mu-bg-search-results: #28392f;
+}
+
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-stealth-theme {
+  --mu-sidebar-folder: #727272;
+  --mu-bg-search-results: #181818;
+  --mu-folder-area-background: #bfbfbf11;
+  --mu-folder-area-border: #bfbfbf28;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark.magicuser-chroma-amulet-theme {
@@ -6642,7 +6745,7 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
   border-radius: 0;
 }
 
-/* Style Settings input */
+/* Style Settings color picker input */
 .theme-dark .pcr-app .pcr-interaction .pcr-result {
   background-color: var(--mu-background-color-2);
   font-weight: var(--font-semibold);
@@ -6720,6 +6823,9 @@ settings:
             - 
                 label: MagicUser Concentration
                 value: magicuser-concentration-theme
+            - 
+                label: MagicUser Stealth
+                value: magicuser-stealth-theme
             - 
                 label: MagicUser Chroma Amulet
                 value: magicuser-chroma-amulet-theme
@@ -6862,6 +6968,51 @@ settings:
         max: 2
         step: 0.01
     -
+        id: mu-hr-color
+        title: Horizontal rule color
+        type: variable-themed-color
+        description: Select horizontal rule color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-blockquote-background
+        title: Blockquote background color
+        type: variable-themed-color
+        description: Select blockquote background color
+        format: hex
+        opacity: true
+        default-light: '#cfcfcf88'
+        default-dark: '#cfcfcf20'
+    -
+        id: mu-blockquote-border
+        title: Blockquote border color
+        type: variable-themed-color
+        description: Select blockquote left border color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: list-marker-color
+        title: Lists color
+        type: variable-themed-color
+        description: Ordered and unordered lists color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: list-marker-color-collapsed
+        title: Lists collapsed color
+        type: variable-themed-color
+        description: Ordered and unordered lists collapsed color
+        format: hex
+        opacity: false
+        default-light: '#f100f1'
+        default-dark: '#f100f1'
+    -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
         type: heading
@@ -6964,6 +7115,15 @@ settings:
         opacity: false
         default-light: '#0048a3'
         default-dark: '#72a3ff'
+    -
+        id: nav-collapse-icon-color
+        title: Sidebars collapse icon color
+        type: variable-themed-color
+        description: Sidebars collapse icon color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
     - 
         id: mu-folder-color-hue-value
         title: Folder icons color
@@ -6973,6 +7133,15 @@ settings:
         min: 0
         max: 360
         step: 1
+    -
+        id: mu-folder-color-saturation
+        title: Folder icons color saturation
+        description: Folder icons color saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
     - 
         id: mu-file-color-hue-value
         title: File icons color
@@ -6982,6 +7151,15 @@ settings:
         min: 0
         max: 360
         step: 1
+    -
+        id: mu-file-color-saturation
+        title: File icons color saturation
+        description: File icons color saturation
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
     -
         id: mu-hide-folders
         title: Hide folder icons
@@ -7662,6 +7840,11 @@ settings:
         type: heading
         level: 4
         collapsed: true
+    -
+        id: mu-hide-vault-title
+        title: Hide vault name
+        description:  Hide sidebar vault name
+        type: class-toggle
     -
         id: mu-hide-nav-buttons-container
         title: Hide sidebar buttons
