@@ -1,5 +1,28 @@
 # Changelog
 
+## [18.0.0] - 2024-03-31
+### Improvements
+
+- *New preset theme*: **Magicuser Stealth**
+
+- *Style Settings* - **UI Settings** -> **Main Theme Colors**:
+  - **Blockquote background** color
+  - **Blockquote border** color
+  - **Horizontal rule** color
+  - **List marker** color
+  - **List marker collapsed** color
+
+- *Style Settings* - **UI Settings** -> **Icons and Folders**:
+  - **Folder icons** color **saturation** slider (0 = gray).
+  - **File icons** color **saturation** slider (0 = gray).
+  - Sidebars **collapse icon** color (folder collapse, outline collapse and others).
+
+- *Style Settings* - **UI Advanced Settings** -> **Hide UI Elements**: 
+  - Hide vault name.
+
+- Sidebar navigation item color adjustment (light and dark modes).
+
+
 ## [17.3.0] - 2024-03-29
 ### Improvements
 
