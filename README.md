@@ -1042,9 +1042,6 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks!
 
-Happy to announce a dedicated **Discussions** area on this GitHub repository. Share presets, suggest features, and chat all things related to the MagicUser theme for Obsidian.
-- [MagicUser Theme Repo - Discussions](https://github.com/drbap/magicuser-theme-for-obsidian/discussions)
-
 ## License and Acknowledgements
 
 MagicUser Theme for Obsidian
