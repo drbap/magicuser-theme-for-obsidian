@@ -71,8 +71,6 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 ![MagicUser Stealth](images/magicuser_preset_stealth.png)
 
-![MagicUser Stealth - Cards UI](images/magicuser_preset_stealth_cards_ui.png)
-
 ### **MagicUser BG Themes**
 
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes.png)
@@ -110,6 +108,21 @@ Quick and User-Friendly: The Chroma Amulet preset theme streamlines the theme pe
   - Sidebars and other UI elements.
 
 > Important: MagicUser Chroma Amulet theme **does not affect your accent color**. So you can still use your favorite accent color with your chosen theme colors.
+
+### MagicUser Accent Theme
+
+![MagicUser Accent -light modes](images/magicuser_theme_accent_dark_modes.png)
+
+![MagicUser Accent - dark modes](images/magicuser_theme_accent_light_mode.png)
+
+The **MagicUser Accent** preset is also a special preset that you can use to create multiple color themes.
+
+How it Works:
+
+1. Select "**MagicUser Accent**" preset.
+2. Select **accent color**  (Obsidian -> accent color picker).
+
+> The theme will adjust according to the selected accent color (headings, icons, borders, blockquote border, lists and other UI elements).
 
 </details>
 
