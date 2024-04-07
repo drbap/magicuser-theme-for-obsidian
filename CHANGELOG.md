@@ -1,5 +1,28 @@
 # Changelog
 
+## [19.0.0] - 2024-04-07
+### Improvements
+
+- New preset theme: **MagicUser Accent**
+
+- **Style Settings -> UI Settings** (new options)
+  1. File header border width (0 = no border).
+  2. File header border color.
+  3. Background color of hover icons and focused icons.
+  4. Sidebar active item background color.
+  5. Sidebar item hover background color.
+
+- **Style Settings -> Icons and Folders** (new options):
+  1. Bookmarked note icon background color.
+  2. Focused icon background color.
+
+- Setting hotkey background color (all preset themes).
+- Buttons background color (all preset themes).
+- Navigation icons background color (light/dark modes).
+- New **bookmarked note icon background color** (light/dark modes).
+- Titlebar hover icons (Windows and Linux).
+- Many small adjustments (canvas buttons, canvas buttons hover) for overall theme and preset themes (subthemes) consistency.
+
 ## [18.0.0] - 2024-03-31
 ### Improvements
 
