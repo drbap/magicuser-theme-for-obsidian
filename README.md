@@ -1011,12 +1011,6 @@ Style Settings:
 To achieve the desired table layout for specific notes, you can apply the above CSS classes (`table1` to `table6`).
 > **Properties** -> **cssclasses** -> `table1` to `table6`
 
-## Code Theme (Light and Dark)
-
-![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
-
-The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
-
 ## Footnotes
 ![MagicUser theme footnotes](images/magicuser_theme_footnotes.png)
 
@@ -1029,6 +1023,12 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 ## Math
 
 ![MagicUser theme math background](images/magicuser_theme_math.png)
+
+## Code Theme (Light and Dark)
+
+![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
+
+The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
 ## Mobile Display
 
