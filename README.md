@@ -115,7 +115,7 @@ Quick and User-Friendly: The Chroma Amulet preset theme streamlines the theme pe
 
 ![MagicUser Accent - dark modes](images/magicuser_theme_accent_light_mode.png)
 
-The **MagicUser Accent** preset is also a special preset that you can use to create multiple color themes.
+The **MagicUser Accent** theme is also a special preset that you can use to create multiple color themes.
 
 How it Works:
 
@@ -959,10 +959,6 @@ Text <mark class="pink">pink highlight</mark>.
 
 ![Metadata highlighting](images/magicuser_metadata_highlighting.png)
 
-## Properties Layout
-
-![Properties](images/magicuser_properties.png)
-
 ## Tables Layout
 
 Default theme table layout:
@@ -1050,6 +1046,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - **Full Calendar**
 - **Tasks**
 - **Commander**
+- **Banners**
 
 ## Feedback
 
