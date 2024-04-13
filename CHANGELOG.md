@@ -1,5 +1,11 @@
 # Changelog
 
+## [19.1.0] - 2024-04-12
+### Improvements
+
+- Active line zoom
+- MagicUser laser area controller.
+
 ## [19.0.0] - 2024-04-07
 ### Improvements
 
