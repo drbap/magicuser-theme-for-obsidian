@@ -347,7 +347,8 @@ Style Settings:
 
 - Select **laser focus type** (**Line** or **Area**)
 - Select **laser color** (**7 colors** - blue, green, red, orange, yellow, pink and purple)
-- Select **laser intensity**. When using the "**Area**" focus you can use this slider to increase the area of the laser.
+- Select **laser intensity**.
+- Select **laser area size** (slider).
 - Select **laser position** (vertical position). Easily choose where you want the laser to highlight text on the screen. Whether you prefer to start at the top, center, or bottom, simply select your preferred reading position. The default position is in the center of the screen.
 
 ## Reading Mode: Reading Glow Effect and Reading Indicator
@@ -358,6 +359,18 @@ Style Settings:
 - Style Settings: Reading glow **color** (7 colors).
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
+
+## Active Line Zoom
+
+![Active Line Zoom](images/magicuser_theme_active_line_zoom.gif)
+
+This feature dynamically **adjusts the font size** of the current line for enhanced focus while typing or reading.
+- **Live preview and source modes**: The font size of the line containing the cursor is temporarily magnified.
+- **Reading mode**: Clicking on a line in reading mode activates a temporary zoom effect.
+- **Active line zoom** can be toggled on or off via a shortcut key or the Command Palette.
+
+Style Settings:
+> **UI Settings** -> **Line Highlight** -> active line zoom
 
 ## Hover Underline
 
