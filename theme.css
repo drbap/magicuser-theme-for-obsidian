@@ -765,6 +765,8 @@ body {
   --mu-laser-color-bg: #80ffaa;
   --mu-laser-color-glow: #00ff55;
   --mu-laser-intensity: 1.5;
+  --mu-laser-area-value: 82;
+  --mu-laser-area: calc(var(--mu-laser-area-value) * 1px);
 
   --mu-hover-underline-color: #ff0000cf;
   --mu-hover-underline-style: solid;
@@ -6609,12 +6611,12 @@ body.mu-laser-active.mu-laser-type-area div.workspace-split:not(.mod-right-split
   position: absolute;
   z-index: 2000;
   width: auto;
-  height: 82px;
+  height: var(--mu-laser-area);
   box-shadow: inset 0 0 10px 1px var(--mu-laser-color-glow), 0 0 4px 1px var(--mu-laser-color-glow), 0 0 calc(var(--mu-laser-intensity) * 12px) 1px var(--mu-laser-color-glow);
-  border: 1px solid var(--mu-laser-color-bg);
+  border: calc(var(--mu-laser-intensity) * 1px) solid var(--mu-laser-color-bg);
   background-color: transparent;
   border-radius: 0;
-  transform: scaleY(var(--mu-laser-intensity));
+  transform: none;
   opacity: .8;
   pointer-events: none;
 }
@@ -6947,6 +6949,25 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
 .mod-linux .titlebar-button.mod-close:hover,
 .mod-windows .titlebar-button.mod-close:hover {
   color: #f1f1f1 !important;
+}
+
+body.mu-active-line-zoom .view-content .cm-line.cm-active {
+  border: 1px dotted var(--text-faint);
+  font-size: 1.5em;
+  padding: 0;
+  margin-inline-start: 0;
+}
+
+body.mu-active-line-zoom .view-content .cm-line.cm-active .cm-header {
+  font-size: 1.5em !important;
+}
+
+body.mu-active-line-zoom .view-content .cm-line.cm-active input[type=checkbox] {
+  margin-inline-start: 8px;
+}
+
+body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
+  font-size: 1.5em !important;
 }
 
 /* Style Settings */
@@ -7542,6 +7563,12 @@ settings:
                 label: Gray background
                 value: line-highlight-background-gray
     -
+        id: mu-active-line-zoom
+        title: MagicUser active line zoom
+        description: Turn on active line zoom (live preview, source and reading modes)
+        type: class-toggle
+        addCommand: true
+    -
         id: magicuser-theme-hover-underline
         title: Hover Underline
         type: heading
@@ -7664,6 +7691,15 @@ settings:
             - 
                 label: Pink laser
                 value: mu-laser-pink
+    - 
+        id: mu-laser-area-value
+        title: Laser area size
+        description: Adjust the laser area size
+        type: variable-number-slider
+        default: 82
+        min: 1
+        max: 300
+        step: 1
     - 
         id: mu-laser-top-value
         title: Laser position
