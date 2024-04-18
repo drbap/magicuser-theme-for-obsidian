@@ -4,11 +4,8 @@
 ### Improvements
 
 - **Tables editor improvement**. You can drag and drop table rows and columns.
-
-- **Improved inline title auto hide**. When the feature is on, the inline title will not be hidden while you type (when the text cursor or selection is visible). Just click anywhere on the app and the embedded title will be hidden automatically.
-
+- **Improved inline title auto hide**.
 - Fix: property color.
-
 - Removed: table rounded borders.
 
 ## [19.1.0] - 2024-04-12
