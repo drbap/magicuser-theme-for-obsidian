@@ -527,8 +527,8 @@ body {
   --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
 
   /* Tables */
-  --table-border-width: 0;
-  --table-border-color: var(--mu-table-th-background);
+  --table-border-width: 1px;
+  --table-border-color: inherit;
   --table-white-space: normal;
   --table-header-border-width: 0;
   --table-header-border-color: var(--table-border-color);
@@ -3403,7 +3403,6 @@ li[data-task="G"]>p>input:checked::after {
 .markdown-reading-view td:not(:last-child),
 .cm-embed-block.cm-table-widget th:not(:last-child),
 .cm-embed-block.cm-table-widget td:not(:last-child) {
-  padding: 4px 8px;
   border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
 }
 
@@ -3421,6 +3420,11 @@ body:not(.mu-disable-tr-hover) .cm-embed-block.cm-table-widget tr:hover {
 .mu-disable-tr-hover .markdown-reading-view tr:nth-child(even):hover,
 .mu-disable-tr-hover .cm-embed-block.cm-table-widget tr:nth-child(even):hover {
   background-color: var(--mu-table-color-1) !important;
+}
+
+.markdown-source-view .cm-table-widget.has-selection {
+  --text-selection: transparent;
+  --mu-text-selection: transparent;
 }
 
 /* Tables inside callouts */
@@ -4607,8 +4611,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --nav-item-background-active: var(--mu-accent-details);
   --mu-bookmarked-note-icon-bg: var(--mu-accent-details);
   --background-modifier-border-hover: var(--mu-accent-details);
-  --mu-table-th-background: var(--mu-accent-color);
-  --mu-table-th-foreground-main: var(--text-on-accent);
+  --mu-table-th-background: #080808;
+  --mu-table-th-foreground-main: var(--text-accent);
   --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
   --mu-menu-separator-color: var(--mu-accent-details);
   --mu-file-header-border-width: 2px;
@@ -4661,7 +4665,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-icon-focused: var(--mu-accent-color);
   --search-icon-color: var(--mu-accent-color);
   --mu-icon-statusbar-menu: var(--mu-accent-color);
-  --mu-table-th-background: var(--mu-accent-color);
   --mu-folder-area-background: hsla(var(--color-accent-hsl), 0.1);
   --mu-folder-area-border: hsla(var(--color-accent-hsl), 0.3);
   --checkbox-border-color: #828282;
@@ -4679,7 +4682,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --nav-item-background-active: var(--mu-accent-details);
   --mu-bookmarked-note-icon-bg: var(--mu-accent-details);
   --background-modifier-border-hover: var(--mu-accent-details);
-  --mu-table-th-foreground-main: var(--text-on-accent);
+  --mu-table-th-background: #080808;
+  --mu-table-th-foreground-main: var(--text-accent);
   --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
   --mu-file-header-border-width: 2px;
   --mu-menu-separator-color: var(--mu-accent-details);
