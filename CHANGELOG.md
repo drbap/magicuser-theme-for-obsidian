@@ -1,5 +1,11 @@
 # Changelog
 
+## [19.3.0] - 2024-04-18
+### Improvements
+
+- **MagicUser Accent**: table colors adjustments (th -> light/dark modes).
+- **Table editor selection** and other adjustments.
+
 ## [19.2.0] - 2024-04-17
 ### Improvements
 
