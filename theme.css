@@ -739,9 +739,6 @@ body {
   --mu-table-inner-border-width-value: 0;
   --mu-table-inner-border-width: calc(var(--mu-table-inner-border-width-value) * 1px);
 
-  --mu-table-border-radius-value: 8;
-  --mu-table-border-radius: calc(var(--mu-table-border-radius-value) * 1px);
-
   --mu-table-th-background: #004882;
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-th-foreground-main: #e1e1e1;
@@ -3132,9 +3129,7 @@ li[data-task="G"]>p>input:checked::after {
   width: 100%;
   border: var(--mu-table-outer-border-width) solid var(--mu-table-th-background);
   border-spacing: 0;
-  border-collapse: separate;
-  border-radius: var(--mu-table-border-radius);
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 
@@ -3388,9 +3383,7 @@ li[data-task="G"]>p>input:checked::after {
   width: 100%;
   border: var(--mu-table-outer-border-width) solid var(--mu-table-th-background);
   border-spacing: 0;
-  border-collapse: separate;
-  border-radius: var(--mu-table-border-radius);
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 .markdown-reading-view th,
@@ -3468,9 +3461,7 @@ body:not(.mu-disable-tr-hover) .cm-callout.cm-embed-block table th {
   width: 100%;
   border: var(--mu-table-outer-border-width) solid var(--mu-table-th-background);
   border-spacing: 0;
-  border-collapse: separate;
-  border-radius: var(--mu-table-border-radius);
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 @media print {
@@ -3670,6 +3661,7 @@ input[type=date] {
 
 .metadata-property-key-input {
   background-color: transparent !important;
+  color: var(--mu-h1) !important;
 }
 
 .metadata-add-button {
@@ -3901,7 +3893,7 @@ body:not(.is-mobile).mu-hide-inline-title {
   --ui-inline-title-settings: 0.01;
 }
 
-body:not(.is-mobile) .inline-title {
+body:not(.is-mobile) .inline-title:not(:focus) {
   opacity: var(--ui-inline-title-settings);
   transition: all 0.5s;
 }
@@ -7815,15 +7807,6 @@ settings:
         default: 0
         min: 0
         max: 5
-        step: 1
-    - 
-        id: mu-table-border-radius-value
-        title: Rounded table corners (rounded or square corners)
-        description: Table border corners (0 = square corners)
-        type: variable-number-slider
-        default: 8
-        min: 0
-        max: 18
         step: 1
     -
         id: mu-disable-tr-hover
