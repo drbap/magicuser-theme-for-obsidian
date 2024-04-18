@@ -982,7 +982,7 @@ Default theme table layout:
 
 ![Table Layout Style Settings](images/magicuser_tables_layout_preset_themes.png)
 
-- Normal tables (non-dataview tables) will have **rounded corners** by default. You can customize non-dataview tables using the **Tables submenu**.
+- You can customize non-dataview tables using the **Tables submenu**.
 
 - Independent table colors for light and dark modes, you can also select outer and inner border widths (sliders).
 
@@ -1000,8 +1000,9 @@ Default theme table layout:
 - **Table row hover** background color
 - **Outer table border** width
 - **Inner table borders** width (rows and columns borders)
-- **Table rounded corners** (0 = **square corners**)
 - **Disable table row hover**
+
+> Table rounded corners (removed in theme version 19.2.0)
 
 ### Preset Tables
 
