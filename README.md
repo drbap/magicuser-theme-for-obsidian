@@ -1046,8 +1046,7 @@ To achieve the desired table layout for specific notes, you can apply the above 
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
 
-> [!TIP]
-> The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
+The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
 ## Mobile Display
 
