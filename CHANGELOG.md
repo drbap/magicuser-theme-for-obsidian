@@ -1,5 +1,11 @@
 # Changelog
 
+## [19.4.0] - 2024-04-21
+### Improvements
+
+- Mobile: distraction-free mode.
+- Mobile: total concentration mode.
+
 ## [19.3.0] - 2024-04-18
 ### Improvements
 
