@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.4.1] - 2024-04-21
+### Fixes
+
+- Mobile: total concentration mode. Small fix.
+
 ## [19.4.0] - 2024-04-21
 ### Improvements
 
