@@ -18,12 +18,14 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
+> [!NOTE]
 > No extra plugin required.
 
 ## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
+> [!NOTE]
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Community Plugin required.
 
 <details open="open">
@@ -107,7 +109,7 @@ Quick and User-Friendly: The Chroma Amulet preset theme streamlines the theme pe
   - Code punctuation,
   - Sidebars and other UI elements.
 
-> Important: MagicUser Chroma Amulet theme **does not affect your accent color**. So you can still use your favorite accent color with your chosen theme colors.
+> MagicUser Chroma Amulet theme **does not affect your accent color**. So you can still use your favorite accent color with your chosen theme colors.
 
 ### MagicUser Accent Theme
 
@@ -826,7 +828,8 @@ To align right, use `|right`.
 - **Global search highlight**, **linked mentions** and **outline text highlight**. 
 - The search result text in **live preview**, **source** and **reading** modes will appear in black text color with highlighted background (default is **yellow**, but you can select any highlight color using the Style Settings). In **live preview** and **source** modes, the text will also appear **underlined** to be easier to find. It works for all types of text (normal text, bold, italic, links, tags, code and headings).
 
-> Note: The underline will be the same color of your text cursor/caret color.
+> [!NOTE]
+> The underline will be the same color of your **text cursor/caret** color.
 
 - **Outline highlight**: When you click on the item (using the outline) it will highlight the text the same way (search). I think it will be easier to read, especially when using different colors for H1-H6 titles (normal mode and neon mode).
 
@@ -895,8 +898,8 @@ Text <u class="purple">purple underline</u>.
 Text <u class="pink">pink underline</u>.
 
 ```
-
-> **Note**: The color of the text will remain the same, to avoid confusion with links.
+> [!NOTE]
+> The color of the text will remain the same, to avoid confusion with links.
 
 ## Hidden Text Underline
 
@@ -1026,6 +1029,7 @@ To achieve the desired table layout for specific notes, you can apply the above 
 > **Properties** -> **cssclasses** -> `table1` to `table6`
 
 ## Footnotes
+
 ![MagicUser theme footnotes](images/magicuser_theme_footnotes.png)
 
 - You can customize the color of the footnotes (Style Settings). The default color is orange (light/dark modes).
@@ -1042,7 +1046,8 @@ To achieve the desired table layout for specific notes, you can apply the above 
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
 
-The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
+> [!TIP]
+> The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
 ## Mobile Display
 
