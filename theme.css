@@ -3810,7 +3810,7 @@ body.is-mobile.mu-distraction-free-mode .mobile-navbar {
 }
 
 body.is-mobile.mu-total-concentration-mode .view-header,
-body.is-mobile.mu-distraction-free-mode .workspace-tab-header-container,
+body.is-mobile.mu-total-concentration-mode .workspace-tab-header-container,
 body.is-mobile.mu-total-concentration-mode .mobile-navbar {
   display: none;
 }
