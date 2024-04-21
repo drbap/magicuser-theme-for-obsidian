@@ -1070,10 +1070,10 @@ To achieve the desired table layout for specific notes, you can apply the above 
 
 ## Feedback and Support
 
-Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme!
+Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme.
 
 > [!IMPORTANT]
-> ⭐️ Your star on this repository shows your support and motivates further development! Thanks!
+> ⭐️ Your star on this repository shows your support and motivates further development. Thanks!
 
 ## License and Acknowledgements
 
