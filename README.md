@@ -826,10 +826,11 @@ To align right, use `|right`.
 ![Text Highlight](images/magicuser_search_highlights_improved.png)
 
 - **Global search highlight**, **linked mentions** and **outline text highlight**. 
-- The search result text in **live preview**, **source** and **reading** modes will appear in black text color with highlighted background (default is **yellow**, but you can select any highlight color using the Style Settings). In **live preview** and **source** modes, the text will also appear **underlined** to be easier to find. It works for all types of text (normal text, bold, italic, links, tags, code and headings).
+- The search result text in **live preview**, **source** and **reading** modes will appear in black text color with highlighted background (default is **yellow**, but you can select any highlight color using the Style Settings).
+- In **live preview** and **source** modes, the text will also appear **underlined** to be easier to find. It works for all types of text (normal text, bold, italic, links, tags, code and headings).
 
 > [!NOTE]
-> The underline will be the same color of your **text cursor/caret** color.
+> The underline will be the same color of your text cursor/caret color.
 
 - **Outline highlight**: When you click on the item (using the outline) it will highlight the text the same way (search). I think it will be easier to read, especially when using different colors for H1-H6 titles (normal mode and neon mode).
 
