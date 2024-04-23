@@ -469,7 +469,7 @@ body {
   --sidebar-tab-text-display: none;
 
   /* Sliders */
-  --slider-thumb-border-width: 1px;
+  --slider-thumb-border-width: 2px;
   --slider-thumb-border-color: var(--background-modifier-border-hover);
   --slider-thumb-height: 18px;
   --slider-thumb-width: 18px;
@@ -478,7 +478,7 @@ body {
   --slider-s-thumb-size: 15px;
   --slider-s-thumb-position: -5px;
   --slider-track-background: var(--background-modifier-border);
-  --slider-track-height: 3px;
+  --slider-track-height: 5px;
 
   /* Status bar */
   --status-bar-background: var(--background-secondary);
@@ -614,7 +614,7 @@ body {
   --background-modifier-border: #007fff38;
   --background-modifier-border-hover: #007fff48;
 
-  --background-modifier-border-focus: #007fff;
+  --background-modifier-border-focus: var(--mu-icon-active);
 
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--color-red);
@@ -1060,6 +1060,7 @@ span.obsidian-search-match-highlight {
 .theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button) {
   color: #f1f1f1;
   background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-hover);
 }
 
 .theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button):hover {
@@ -1242,6 +1243,7 @@ span.obsidian-search-match-highlight {
 .theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button) {
   color: #000;
   background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-hover);
 }
 
 .theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button):hover {
@@ -1291,8 +1293,9 @@ span.obsidian-search-match-highlight {
   background-color: var(--mu-background-color-2);
 }
 
-.theme-light input.slider {
-  background-color: #ccc;
+input.slider {
+  background-color: var(--background-modifier-hover);
+  border: 1px solid var(--background-modifier-hover);
 }
 
 .theme-light input[type="text"],
