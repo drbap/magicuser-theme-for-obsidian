@@ -1068,12 +1068,9 @@ To achieve the desired table layout for specific notes, you can apply the above 
 - **Commander**
 - **Banners**
 
-## Feedback and Support
+## Feedback
 
-Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme.
-
-> [!IMPORTANT]
-> ⭐️ Your star on MagicUser means a lot! Thanks! ⭐
+Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks!
 
 ## License and Acknowledgements
 
