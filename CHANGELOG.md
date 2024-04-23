@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.4.0] - 2024-04-23
+### Improvements
+
+- Buttons and sliders improvements (border, slider track size and other adjustments).
+
 ## [19.4.1] - 2024-04-21
 ### Fixes
 
