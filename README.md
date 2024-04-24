@@ -1073,7 +1073,7 @@ To achieve the desired table layout for specific notes, you can apply the above 
 Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme.
 
 > [!IMPORTANT]
-> ⭐ Star the MagicUser theme repository to show your support and motivate future improvements. Thanks.
+> ⭐ If you enjoy MagicUser theme, please don't forget to star this repository. It's fast, free and really motivates me to keep working on it. Thanks for your support.
 
 ## License and Acknowledgements
 
