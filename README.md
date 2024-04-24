@@ -1067,7 +1067,9 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - **Commander**
 - **Banners**
 
-## Feedback
+## Feedback and Support
+
+❤️ the MagicUser theme? 🌟 this repository! Join the discussions and participate to improve it!
 
 Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks.
 
