@@ -1069,6 +1069,8 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 
 ## Community Presets
 
+![MagicUser theme - Style Settings - Community Presets](images/magicuser_community_presets.png)
+
 Share your MagicUser theme Style Settings customizations and inspire others. Plus, discover carefully created user settings to personalize your workspace quickly and easily.
 
 For more details on MagicUser theme customizations, visit the link below on this repository.
