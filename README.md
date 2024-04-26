@@ -1067,6 +1067,16 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - **Commander**
 - **Banners**
 
+## Community Presets
+
+Share your MagicUser theme Style Settings customizations and inspire others. Plus, discover carefully created user settings to personalize your workspace quickly and easily.
+
+For more details on MagicUser theme customizations, visit the link below on this repository.
+
+- [Community Presets](https://github.com/drbap/magicuser-theme-for-obsidian/discussions/19)
+
+
+
 ## Feedback
 
 Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks.
