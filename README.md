@@ -18,14 +18,12 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
 
-> [!NOTE]
 > No extra plugin required.
 
 ## Style Settings - Theme Options
 
 ![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
 
-> [!NOTE]
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
 <details open="open">
