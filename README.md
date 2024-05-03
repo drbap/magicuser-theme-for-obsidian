@@ -1037,10 +1037,6 @@ To achieve the desired table layout for specific notes, you can apply the above 
 
 ![MagicUser theme mermaid](images/magicuser_theme_mermaid.png)
 
-## Math
-
-![MagicUser theme math background](images/magicuser_theme_math.png)
-
 ## Code Theme (Light and Dark)
 
 ![MagicUser theme for programming](images/magicuser_obsidian_code_theme.png)
