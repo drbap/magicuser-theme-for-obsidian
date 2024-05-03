@@ -6182,7 +6182,7 @@ section.footnotes:has(.is-flashing) {
 }
 
 .MathJax {
-  background-color: var(--mu-background-color-2);
+  background-color: transparent;
 }
 
 /* Underlined and highlighted text */
