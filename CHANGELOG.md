@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.5.1] - 2024-05-03
+### Fixes
+
+- LateX inside callouts.
+
 ## [19.5.0] - 2024-04-23
 ### Improvements
 
