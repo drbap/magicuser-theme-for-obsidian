@@ -1,5 +1,15 @@
 # Changelog
 
+## [19.6.0] - 2024-05-11
+### Improvements
+
+- New **Graph submenu**: You can customize the graph node colors, lines, text and other graph options (light and dark modes).
+- New **suggestion note** and **flair color** (for example during internal links creation). You will see the **folder path** the same color as the sidebar folder.
+- Outline font-weight (*removed semi-bold font*).
+- New **graph node tag** color (light mode).
+- Style Settings: **Color picker reset button** adjustments.
+- Images inside inline comments (background color).
+
 ## [19.5.1] - 2024-05-03
 ### Fixes
 
