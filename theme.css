@@ -1168,7 +1168,7 @@ span.obsidian-search-match-highlight {
   --mu-h4: #0072d3;
   --mu-h5: #0072d3;
   --mu-h6: #0072d3;
-  --mu-green-1: #20f120;
+  --mu-green-1: #20cf20;
   --mu-green-2: #20a320;
   --mu-icon: #5382d3;
   --mu-icon-hover: #007fff;
@@ -5269,6 +5269,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-graph"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='18' r='3'/%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Ccircle cx='18' cy='6' r='3'/%3E%3Cpath d='M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9'/%3E%3Cpath d='M12 12v3'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -6469,6 +6476,11 @@ i.muc:hover>span {
   color: var(--mu-text-1);
 }
 
+i.muc:hover>span>img {
+  background-color: #fff;
+  border: 2px solid #ffbf0088;
+}
+
 /* MUC inside tables */
 .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false]:has(i.muc) {
   contain: none !important;
@@ -6953,9 +6965,10 @@ body:not(.is-mobile).mu-cards-interface .workspace-tabs .workspace-leaf .view-co
   color: #000;
 }
 
-.workspace-leaf-content[data-type="outline"] .tree-item-self:hover,
-.workspace-leaf-content[data-type="outline"] .tree-item-self {
-  font-weight: var(--font-semibold) !important;
+.style-settings-container .themed-color-wrapper .pickr-reset>button {
+  padding: var(--size-4-1);
+  box-shadow: none;
+  border: 0 !important;
 }
 
 /* Close button */
@@ -6986,6 +6999,12 @@ body.mu-active-line-zoom .view-content .cm-line.cm-active input[type=checkbox] {
 
 body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .obsidian-banner-wrapper):active {
   font-size: 1.5em !important;
+}
+
+/* Suggestion note */
+.suggestion-item.mod-complex .suggestion-flair,
+.suggestion-item.mod-complex .suggestion-note {
+  color: var(--mu-sidebar-folder);
 }
 
 /* Style Settings */
@@ -7727,6 +7746,75 @@ settings:
         min: 10
         max: 90
         step: 1
+    -
+        id: magicuser-theme-graph
+        title: Graph
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: graph-node
+        title: Graph node color
+        type: variable-themed-color
+        description: Graph node color
+        format: hex
+        opacity: false
+        default-light: '#d372ff'
+        default-dark: '#d372ff'
+    -
+        id: graph-node-focused
+        title: Graph node focused color
+        type: variable-themed-color
+        description: Graph node focused color
+        format: hex
+        opacity: false
+        default-light: '#0048a3'
+        default-dark: '#00cfff'
+    -
+        id: graph-node-unresolved
+        title: Graph node unresolved color
+        type: variable-themed-color
+        description: Graph node unresolved color
+        format: hex
+        opacity: false
+        default-light: '#a3a3a3'
+        default-dark: '#a3a3a3'
+    -
+        id: graph-text
+        title: Graph text color
+        type: variable-themed-color
+        description: Graph text color
+        format: hex
+        opacity: false
+        default-light: '#000'
+        default-dark: '#f1f1f1'
+    -
+        id: graph-line
+        title: Graph line color
+        type: variable-themed-color
+        description: Graph line color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: graph-node-attachment
+        title: Graph node attachment color
+        type: variable-themed-color
+        description: Graph node attachment color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: graph-node-tag
+        title: Graph node tag color
+        type: variable-themed-color
+        description: Graph node tag color
+        format: hex
+        opacity: false
+        default-light: '#20cf20'
+        default-dark: '#20f120'
     -
         id: magicuser-theme-tables-options
         title: Tables
