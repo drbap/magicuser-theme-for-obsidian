@@ -177,6 +177,10 @@ Submenus:
 - Select **laser intensity**.
 - Select **laser position**.
 
+◼ **Graph**
+
+- Graph colors (node, node focused, line, graph text and other graph color options).
+
 ◼ **Tables**
 
 - Table options (presets and colors)
