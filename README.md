@@ -1100,5 +1100,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
 - @New (Obsidian Forum) - note width suggestion.
 - @YonKuma (Obsidian Forum) - hide headings labels.
+- @merlinuwe - scrollbars customization suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
