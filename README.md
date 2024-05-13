@@ -209,6 +209,13 @@ Submenus:
 
 ◼ **Scrollbars**
 
+- Scrollbar **width**.
+- Scrollbar **track** color.
+- Scrollbar **track hover** color.
+- Scrollbar **thumb size**.
+- Scrollbar **thumb** color.
+- Scrollbar **thumb hover** color.
+
 ◼ **UI Advanced Settings** (Desktop Version)
 
 - **Warm screen mode** (slider).
