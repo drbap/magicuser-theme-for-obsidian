@@ -5,10 +5,10 @@
 
 - New **Scrollbars submenu**: You can customize the scrollbars appearance:
   - Scrollbar **width**.
-  - Scrollbar **track color**.
-  - Scrollbar** track hover** color.
+  - Scrollbar **track** color.
+  - Scrollbar **track hover** color.
   - Scrollbar **thumb size**.
-  - Scrollbar **thumb color**.
+  - Scrollbar **thumb** color.
   - Scrollbar **thumb hover** color.
 
 ## [19.6.0] - 2024-05-11
