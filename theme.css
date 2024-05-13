@@ -779,6 +779,16 @@ body {
   --mu-titlebar-button-fg: var(--mu-icon);
   --mu-menu-separator-color: #007fff30;
 
+  --mu-scrollbar-width-value: 16;
+  --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value)*1px);
+
+  --mu-scrollbar-thumb-size-value: 10;
+  --mu-scrollbar-thumb-size-adjusted-value: calc(12 - var(--mu-scrollbar-thumb-size-value));
+  --mu-scrollbar-thumb-size: calc(var(--mu-scrollbar-thumb-size-adjusted-value)*1px);
+
+  --mu-scrollbar-track-bg: transparent;
+  --mu-scrollbar-track-bg-hover: transparent;
+
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
 }
@@ -1037,6 +1047,10 @@ span.obsidian-search-match-highlight {
   --background-primary-alt: #212121;
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
+
+  --mu-scrollbar-thumb-bg: #84848422;
+  --mu-scrollbar-thumb-bg-hover: #84848422;
+  --mu-scrollbar-track-bg-hover: #00000021;
 }
 
 /* Dark theme settings */
@@ -1223,6 +1237,10 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #ffffff;
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
+
+  --mu-scrollbar-thumb-bg: #48484822;
+  --mu-scrollbar-thumb-bg-hover: #48484822;
+  --mu-scrollbar-track-bg-hover: #82828221;
 }
 
 .theme-light * {
@@ -5276,6 +5294,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-scrollbars"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M15 3v18'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -7007,6 +7032,35 @@ body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .ob
   color: var(--mu-sidebar-folder);
 }
 
+/* Scrollbars */
+
+body:not(.native-scrollbars) ::-webkit-scrollbar {
+  width: var(--mu-scrollbar-width);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-track {
+  background-color: var(--mu-scrollbar-track-bg);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-track:hover {
+  background-color: var(--mu-scrollbar-track-bg-hover);
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  background-color: var(--mu-scrollbar-thumb-bg);
+  border: var(--mu-scrollbar-thumb-size) solid transparent;
+}
+
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover,
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+  background-color: var(--mu-scrollbar-thumb-bg-hover);
+  border: var(--mu-scrollbar-thumb-size) solid var(--mu-scrollbar-thumb-bg-hover);
+}
+
+.modal.mod-settings.mod-sidebar-layout .modal-close-button {
+  margin-right: 24px;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -8143,6 +8197,66 @@ settings:
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
+    -
+        id: magicuser-theme-scrollbars
+        title: Scrollbars
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-scrollbar-width-value
+        title: Scrollbar width
+        description: Adjust the scrollbar width
+        type: variable-number-slider
+        default: 16
+        min: 8
+        max: 32
+        step: 2
+    -
+        id: mu-scrollbar-track-bg
+        title: Scrollbar track color
+        type: variable-themed-color
+        description: Scrollbar track color
+        format: hex
+        opacity: true
+        default-light: '#ffffff00'
+        default-dark: '#00000000'
+    -
+        id: mu-scrollbar-track-bg-hover
+        title: Scrollbar track hover color
+        type: variable-themed-color
+        description: Scrollbar track hover color
+        format: hex
+        opacity: true
+        default-light: '#82828221'
+        default-dark: '#00000021'
+    -
+        id: mu-scrollbar-thumb-size-value
+        title: Scrollbar thumb size
+        description: Adjust the scrollbar thumb size
+        type: variable-number-slider
+        default: 10
+        min: 0
+        max: 12
+        step: 2
+    -
+        id: mu-scrollbar-thumb-bg
+        title: Scrollbar thumb color
+        type: variable-themed-color
+        description: Scrollbar thumb color
+        format: hex
+        opacity: true
+        default-light: '#48484822'
+        default-dark: '#84848422'
+    -
+        id: mu-scrollbar-thumb-bg-hover
+        title: Scrollbar thumb hover color
+        type: variable-themed-color
+        description: Scrollbar thumb hover color
+        format: hex
+        opacity: true
+        default-light: '#48484822'
+        default-dark: '#84848422'
     -
         id: magicuser-theme-ui-advanced
         title: UI Advanced Settings
