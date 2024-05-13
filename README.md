@@ -207,6 +207,8 @@ Submenus:
 - **H1-H6 label colors** (independent colors for light and dark modes).
 - **Hide headings labels**.
 
+◼ **Scrollbars**
+
 ◼ **UI Advanced Settings** (Desktop Version)
 
 - **Warm screen mode** (slider).
