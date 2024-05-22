@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.8.1] - 2024-05-22
+### Fixes
+
+- Outline blockquote (border-bottom) fix.
+
 ## [19.8.0] - 2024-05-22
 ### Improvements
 
