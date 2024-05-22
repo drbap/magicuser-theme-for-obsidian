@@ -1,5 +1,12 @@
 # Changelog
 
+## [19.7.1] - 2024-05-21
+### Improvements
+
+- Dataview tables adjustments (select foreground th color and background color -> Style Settings).
+- Dataview table small text adjustment (color).
+- Minor adjustments to add new table features -> next updates.
+
 ## [19.7.0] - 2024-05-12
 ### Improvements
 
