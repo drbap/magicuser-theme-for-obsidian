@@ -1056,6 +1056,17 @@ To achieve the desired table layout for specific notes, you can apply the above 
 
 The syntax highlighting in this theme is similar to the MagicUser themes for VS Code (MagicUser and MagicUser Light Blue).
 
+## Outline Code
+![MagicUser theme outline code](images/magicuser_outline_code.png)
+
+- **Outline code**: Add inline code and code block border color (outline code). Independent colors for inline and code block elements (light and dark modes).
+- You can toggle the outline code using the command palette (or shortcut key).
+- Select inline code border color.
+- Select code block border color.
+
+Style Settings
+> **Code** -> Outline code
+
 ## Mobile Display
 
 ![MagicUser theme for mobile devices](images/magicuser_theme_mobile.gif)
@@ -1110,5 +1121,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @New (Obsidian Forum) - note width suggestion.
 - @YonKuma (Obsidian Forum) - hide headings labels.
 - @merlinuwe - scrollbars customization suggestion.
+- @indigofairyx - outline code and outline blockquote suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
