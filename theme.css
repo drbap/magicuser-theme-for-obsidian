@@ -1049,7 +1049,7 @@ span.obsidian-search-match-highlight {
   --mu-bookmarked-note-icon-bg: #007fff40;
 
   --mu-scrollbar-thumb-bg: #84848422;
-  --mu-scrollbar-thumb-bg-hover: #84848422;
+  --mu-scrollbar-thumb-bg-hover: #84848448;
   --mu-scrollbar-track-bg-hover: #00000021;
 }
 
@@ -1239,7 +1239,7 @@ span.obsidian-search-match-highlight {
   --mu-bookmarked-note-icon-bg: #007fff30;
 
   --mu-scrollbar-thumb-bg: #48484822;
-  --mu-scrollbar-thumb-bg-hover: #48484822;
+  --mu-scrollbar-thumb-bg-hover: #48484848;
   --mu-scrollbar-track-bg-hover: #82828221;
 }
 
