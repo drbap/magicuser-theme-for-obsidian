@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.7.2] - 2024-05-21
+### Improvements
+
+- Scrollbar thumb hover adjustment (light/dark modes).
+
 ## [19.7.1] - 2024-05-21
 ### Improvements
 
