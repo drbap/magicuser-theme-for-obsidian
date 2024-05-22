@@ -789,6 +789,9 @@ body {
   --mu-scrollbar-track-bg: transparent;
   --mu-scrollbar-track-bg-hover: transparent;
 
+  --mu-inline-code-border: #0072d3;
+  --mu-code-block-border: #0072d3;
+
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
 }
@@ -3617,7 +3620,7 @@ table.calendar.svelte-pcimu8 th {
 
 .table6 {
   --mu-table-th-background: var(--text-accent) !important;
-  --mu-table-th-foreground-main: var(--text-on-accent-inverted)!important;
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted) !important;
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-color-1: var(--mu-background-color-1);
   --mu-table-color-2: var(--mu-background-color-1);
@@ -7068,6 +7071,58 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
   margin-right: 24px;
 }
 
+/* Blockquote and code outline border */
+/* inline code */
+body.mu-outline-code .markdown-reading-view code,
+body.mu-outline-code span.cm-inline-code {
+  border: 1px solid var(--mu-inline-code-border);
+}
+
+body.mu-outline-code .markdown-reading-view div>pre code {
+  border: 0;
+}
+
+body.mu-outline-code span.cm-inline-code.cm-formatting {
+  border: 1px dotted var(--mu-inline-code-border);
+}
+
+/* code block */
+body.mu-outline-code .markdown-reading-view div>pre {
+  border: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view .HyperMD-codeblock {
+  border-left: 1px solid var(--mu-code-block-border);
+  border-right: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view div.HyperMD-codeblock-begin-bg {
+  border-top: 1px solid var(--mu-code-block-border);
+}
+
+body.mu-outline-code .markdown-source-view div.HyperMD-codeblock-end-bg {
+  border-top: 0;
+  border-bottom: 1px solid var(--mu-code-block-border);
+}
+
+/* blockquote */
+body.mu-outline-blockquote .markdown-reading-view div>blockquote {
+  outline: 1px solid var(--mu-blockquote-border);
+}
+
+body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote {
+  border: 1px dotted var(--mu-blockquote-border);
+}
+
+body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote {
+  border-top: 1px dotted var(--mu-blockquote-border);
+  border-bottom: 0;
+}
+
+body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote:last-child {
+  border-bottom: 1px dotted var(--mu-blockquote-border);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -7337,6 +7392,11 @@ settings:
         opacity: false
         default-light: '#007fff'
         default-dark: '#007fff'
+    -
+        id: mu-outline-blockquote
+        title: Outline blockquote border
+        description: Turn on outline blockquote border 
+        type: class-toggle
     -
         id: list-marker-color
         title: Lists color
@@ -8623,9 +8683,9 @@ settings:
         default-dark: '#f1f1f1'
     -
         id: text-highlight-bg
-        title: Highlighted text color
+        title: Highlighted text background color
         type: variable-themed-color
-        description: Color used to highlight text
+        description: Background color used to highlight text
         format: hex
         opacity: true
         default-light: '#ffff0088'
@@ -8874,6 +8934,30 @@ settings:
         opacity: false
         default-light: '#c300f1'
         default-dark: '#d372ff'
+    -
+        id: mu-outline-code
+        title: Outline code (inline code and code block)
+        description: Turn on outline code
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-inline-code-border
+        title: Inline code border color
+        type: variable-themed-color
+        description: Inline code border color (outline code on)
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-code-block-border
+        title: Code block border color
+        description: Code block border color (outline code on)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
