@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.7.3] - 2024-05-21
+### Fixes
+
+- Style Settings default values: Scrollbar thumb hover (light/dark modes).
+  
 ## [19.7.2] - 2024-05-21
 ### Improvements
 
