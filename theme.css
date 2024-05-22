@@ -3524,7 +3524,8 @@ table.dataview.table-view-table td {
 }
 
 table.dataview.table-view-table th.table-view-th {
-  color: var(--mu-text-1) !important;
+  color: var(--mu-table-th-foreground-main) !important;
+  background-color: var(--mu-table-th-background) !important;
   border-bottom: 2px solid var(--mu-hr-color) !important;
 }
 
@@ -3546,6 +3547,12 @@ table.calendar.svelte-pcimu8 td {
 
 table.calendar.svelte-pcimu8 th {
   color: var(--mu-text-1) !important;
+}
+
+.dataview.small-text {
+  color: var(--mu-table-th-foreground-main);
+  opacity: .8;
+  font-weight: normal;
 }
 
 /* Table presets */
@@ -3585,8 +3592,8 @@ table.calendar.svelte-pcimu8 th {
 }
 
 .table4 {
-  --mu-table-th-background: var(--text-accent);
-  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
+  --mu-table-th-background: var(--text-accent) !important;
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted) !important;
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-color-1: var(--mu-background-color-1);
   --mu-table-color-2: var(--mu-background-color-1);
@@ -3597,8 +3604,8 @@ table.calendar.svelte-pcimu8 th {
 }
 
 .table5 {
-  --mu-table-th-background: var(--text-accent);
-  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
+  --mu-table-th-background: var(--text-accent) !important;
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted) !important;
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-color-1: var(--mu-background-color-1);
   --mu-table-color-2: var(--mu-background-color-1);
@@ -3609,8 +3616,8 @@ table.calendar.svelte-pcimu8 th {
 }
 
 .table6 {
-  --mu-table-th-background: var(--text-accent);
-  --mu-table-th-foreground-main: var(--text-on-accent-inverted);
+  --mu-table-th-background: var(--text-accent) !important;
+  --mu-table-th-foreground-main: var(--text-on-accent-inverted)!important;
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-color-1: var(--mu-background-color-1);
   --mu-table-color-2: var(--mu-background-color-1);
