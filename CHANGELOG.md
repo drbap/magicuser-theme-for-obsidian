@@ -1,5 +1,14 @@
 # Changelog
 
+## [19.8.0] - 2024-05-22
+### Improvements
+
+- Option to **add inline and code block border color** (outline code). You can toggle this option using the command palette (or shortcut key).
+- Option to add **blockquote outline border** (outline blockquote). It will have the same color as the blockquote left border.
+- **Inline code border color**.
+- **Code block border color**.
+- Updated description of highlighted text background color.
+
 ## [19.7.3] - 2024-05-21
 ### Fixes
 
