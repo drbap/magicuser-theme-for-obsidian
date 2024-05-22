@@ -1064,7 +1064,7 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - Select inline code border color.
 - Select code block border color.
 
-Style Settings
+Style Settings:
 > **Code** -> Outline code
 
 ## Mobile Display
