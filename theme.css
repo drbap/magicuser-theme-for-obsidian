@@ -7114,11 +7114,6 @@ body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote {
   border: 1px dotted var(--mu-blockquote-border);
 }
 
-body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote {
-  border-top: 1px dotted var(--mu-blockquote-border);
-  border-bottom: 1px dotted var(--mu-blockquote-border);
-}
-
 /* Style Settings */
 
 /* @settings
