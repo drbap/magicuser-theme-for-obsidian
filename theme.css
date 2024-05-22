@@ -8262,8 +8262,8 @@ settings:
         description: Scrollbar thumb hover color
         format: hex
         opacity: true
-        default-light: '#48484822'
-        default-dark: '#84848422'
+        default-light: '#48484848'
+        default-dark: '#84848448'
     -
         id: magicuser-theme-ui-advanced
         title: UI Advanced Settings
