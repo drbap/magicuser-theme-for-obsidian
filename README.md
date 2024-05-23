@@ -1031,6 +1031,8 @@ Style Settings: **Preset tables**
 - `table5` (with accent color)
 - `table6` (with accent color)
 - Default table (main theme table layout)
+- New: Numbered table (rows and columns have numbers). You can customize the numbers background color.
+- New: Plain data (simple layout for dataview tables)
 
 Style Settings:
 > **UI Settings** -> **Tables** -> Preset tables
@@ -1120,7 +1122,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
 - @New (Obsidian Forum) - note width suggestion.
 - @YonKuma (Obsidian Forum) - hide headings labels.
-- @merlinuwe - scrollbars customization suggestion.
+- @merlinuwe - scrollbars customization suggestion. Numbered tables suggestion.
 - @indigofairyx - outline code and outline blockquote suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
