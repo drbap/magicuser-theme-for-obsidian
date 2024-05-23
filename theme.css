@@ -3626,28 +3626,28 @@ table.calendar.svelte-pcimu8 th {
 }
 
 /* Numbered tables */
-.num-table table {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) {
   counter-reset: numRow +1 numCol 0;
 }
 
-.num-table table tr:not(:first-child) {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr:not(:first-child) {
   counter-increment: numRow;
 }
 
-.num-table table tr th::before,
-.num-table table td::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr th::before,
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) td::before {
   float: left;
   padding: 2px;
   padding-top: 4px;
 }
 
-.num-table table tr th::after,
-.num-table table td::after {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr th::after,
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) td::after {
   clear: left;
 }
 
-.num-table table tr th::before,
-.num-table table td::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr th::before,
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) td::before {
   display: block;
   width: 1.5em;
   height: auto;
@@ -3659,27 +3659,27 @@ table.calendar.svelte-pcimu8 th {
   border-radius: var(--radius-s);
 }
 
-.num-table table tr:hover td::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr:hover td::before {
   --mu-num-table-bg-row: #0072d38f;
 }
 
-.num-table table tr td:first-child::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr td:first-child::before {
   content: counter(numRow);
 }
 
-.num-table table td::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) :not(.calendar.svelte-pcimu8) td::before {
   background-color: var(--mu-num-table-bg-row);
 }
 
-.num-table table tr th::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.calendar.svelte-pcimu8) tr th::before {
   counter-increment: numCol;
   content: counter(numCol, decimal);
   background-color: var(--mu-num-table-bg-col);
   color: var(--mu-table-th-foreground-main);
 }
 
-.num-table .cards td::before,
-.num-table .cards th::before {
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) .cards td::before,
+.num-table .workspace-leaf-content:not([data-type="full-calendar-view"]) .cards th::before {
   display: none;
 }
 
