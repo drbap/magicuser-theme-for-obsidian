@@ -1,5 +1,10 @@
 # Changelog
 
+## [19.9.1] - 2024-05-23
+### Fixes
+
+- Calendars when using numbered table (new preset table). Dataview calendars, Calendar and Full Calendar plugins.
+
 ## [19.9.0] - 2024-05-23
 ### Improvements
 - 2 new table presets (numbered table and plain data).
