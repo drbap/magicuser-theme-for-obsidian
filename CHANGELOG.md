@@ -1,5 +1,12 @@
 # Changelog
 
+## [19.9.0] - 2024-05-23
+### Improvements
+- 2 new table presets (numbered table and plain data).
+- Tables layout redesigned (consistent look markdown tables and dataview tables).
+- Select numbered table row and column number color (Style Settings).
+- Many adjustments to tables (font size, table row colors, hover, new variables).
+
 ## [19.8.1] - 2024-05-22
 ### Fixes
 
