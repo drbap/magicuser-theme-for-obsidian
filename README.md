@@ -1031,8 +1031,8 @@ Style Settings: **Preset tables**
 - `table5` (with accent color)
 - `table6` (with accent color)
 - Default table (main theme table layout)
-- New: Numbered table (rows and columns have numbers). You can customize the numbers background color.
-- New: Plain data (simple layout for dataview tables)
+- **New**: **Numbered table** (rows and columns have numbers). You can customize the numbers background color.
+- **New**: **Plain data** (simple layout for dataview tables)
 
 Style Settings:
 > **UI Settings** -> **Tables** -> Preset tables
