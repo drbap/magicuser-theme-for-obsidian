@@ -640,8 +640,8 @@ body {
   --text-accent-hover: var(--color-accent-2);
 
   /* Font Settings */
-  --mu-font-headings: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --mu-font-ui: "Inter", Helvetica, Arial, sans-serif;
+  --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
   --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
 
   /* UI Settings */
@@ -794,6 +794,8 @@ body {
 
   --mu-num-table-bg-row: #00000022;
   --mu-num-table-bg-col: #00000082;
+
+  --mu-column-stripped-background: #00000082;
 
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
@@ -1054,6 +1056,7 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
 
+  --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
   --mu-scrollbar-thumb-bg-hover: #84848448;
   --mu-scrollbar-track-bg-hover: #00000021;
@@ -1244,6 +1247,7 @@ span.obsidian-search-match-highlight {
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
 
+  --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484848;
   --mu-scrollbar-track-bg-hover: #82828221;
@@ -3587,7 +3591,7 @@ table.calendar.svelte-pcimu8 th {
 .table1 {
   --mu-table-inner-border-width: 0;
   --mu-table-outer-border-width: 2px;
-  --table-column-alt-background: var(--mu-background-color-2);
+  --table-column-alt-background: var(--mu-column-stripped-background);
 }
 
 .table2 {
@@ -3622,7 +3626,7 @@ table.calendar.svelte-pcimu8 th {
   --mu-table-th-foreground-edit: var(--mu-text-1);
   --mu-table-inner-border-width: 0;
   --mu-table-outer-border-width: 2px;
-  --table-column-alt-background: var(--mu-background-color-2);
+  --table-column-alt-background: var(--mu-column-stripped-background);
 }
 
 /* Numbered tables */
@@ -6940,9 +6944,51 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   --mu-hover-underline-style: double;
 }
 
+/* cssclasses: readable line width enabled
+nw100: Notes width 100%
+tw100: Tables width 100%
+tcw100: Tables and callouts width 100%
+cw100: Callouts width 100%
+*/
+
 .nw100,
 .note-width100 {
   --file-line-width: 100%;
+}
+
+.cw100+.markdown-reading-view .markdown-preview-sizer,
+.tcw100+.markdown-reading-view .markdown-preview-sizer,
+.tw100+.markdown-reading-view .markdown-preview-sizer {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.tw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(table) {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.tcw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(table, .callout) {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.cw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(.callout) {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.tcw100+.markdown-preview-sizer>div>table,
+.tw100+.markdown-preview-sizer>div>table {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /* Cards UI Interface */
@@ -7161,8 +7207,86 @@ body.mu-outline-blockquote .markdown-reading-view div>blockquote {
   outline: 1px solid var(--mu-blockquote-border);
 }
 
-body.mu-outline-blockquote .markdown-source-view div>.HyperMD-quote {
-  border: 1px dotted var(--mu-blockquote-border);
+body.mu-outline-blockquote .cm-line:not(.HyperMD-quote)+.HyperMD-quote {
+  border-top: 1px solid var(--mu-blockquote-border);
+  border-right: 1px solid var(--mu-blockquote-border);
+  border-left: 1px solid var(--mu-blockquote-border);
+}
+
+body.mu-outline-blockquote .HyperMD-quote+.HyperMD-quote {
+  border-right: 1px solid var(--mu-blockquote-border);
+  border-left: 1px solid var(--mu-blockquote-border);
+  border-top: 0;
+  border-bottom: 0;
+}
+
+body.mu-outline-blockquote .HyperMD-quote + .cm-line:not(.HyperMD-quote)  {
+  border-top: 1px solid var(--mu-blockquote-border) !important;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-1,
+.HyperMD-quote-1::before {
+  width: 1em;
+  background: #0072d348;
+}
+
+.markdown-reading-view blockquote > blockquote {
+  box-shadow: -1em 0 0 0 #d300ff48;
+}
+
+.markdown-reading-view blockquote > blockquote > blockquote {
+  box-shadow: -1em 0 0 0 #ffa30048;
+}
+
+.markdown-reading-view blockquote > blockquote > blockquote> blockquote {
+  box-shadow: -1em 0 0 0 #00ff0048;
+}
+
+.markdown-reading-view blockquote >blockquote > blockquote > blockquote> blockquote {
+  box-shadow: -1em 0 0 0 #ff000048;
+}
+
+.markdown-reading-view blockquote >blockquote >blockquote > blockquote > blockquote> blockquote {
+  box-shadow: -1em 0 0 0 #ffff0048;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-2,
+.HyperMD-quote-2::before {
+  min-width: 1em;
+  background: #d300ff48;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-3,
+.HyperMD-quote-3::before {
+  width: 5px;
+  min-width: 2em;
+  background: #ffa30048;
+}
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-4,
+.HyperMD-quote-4::before {
+  width: 5px;
+  min-width: 2.8em;
+  background: #00ff0048;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-5,
+.HyperMD-quote-5::before {
+  width: 5px;
+  min-width: 3.8em;
+  background: #ff000048;
+}
+
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote.cm-formatting-quote-6,
+.HyperMD-quote-6::before {
+  width: 5px;
+  min-width: 4.6em;
+  background: #ffff0048;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  white-space: break-spaces;
 }
 
 /* Style Settings */
@@ -8046,7 +8170,7 @@ settings:
         opacity: true
         default-light: '#004882'
         default-dark: '#004882'
-    - 
+    -
         id: mu-table-color-2
         title: Table row background color (odd)
         type: variable-themed-color
@@ -8055,7 +8179,7 @@ settings:
         opacity: true
         default-light: '#a3a3a348'
         default-dark: '#a3a3a348'
-    - 
+    -
         id: mu-table-color-1
         title: Table row background color (even)
         type: variable-themed-color
@@ -8064,7 +8188,7 @@ settings:
         opacity: true
         default-light: '#a3a3a328'
         default-dark: '#a3a3a328'
-    - 
+    -
         id: mu-table-row-hover
         title: Table row hover background color
         type: variable-themed-color
@@ -8073,7 +8197,7 @@ settings:
         opacity: true
         default-light: '#0088ff33'
         default-dark: '#0088ff33'
-    - 
+    -
         id: mu-table-outer-border-width-value
         title: Outer table border width
         description: Outer table border width (0 = no outer border)
@@ -8082,7 +8206,7 @@ settings:
         min: 0
         max: 5
         step: 1
-    - 
+    -
         id: mu-table-inner-border-width-value
         title: Inner table borders width
         description: Inner table borders width (0 = no inner borders)
@@ -8096,7 +8220,16 @@ settings:
         title: Disable table row hover
         description: Disable table row hover background change
         type: class-toggle
-    - 
+    -
+        id: mu-column-stripped-background
+        title: Column stripped tables - column background color (even)
+        type: variable-themed-color
+        description: Background color of the even columns (table1 and table6 presets)
+        format: hex
+        opacity: true
+        default-light: '#00000011'
+        default-dark: '#00000082'
+    -
         id: mu-num-table-bg-col
         title: Preset numbered table - column number
         type: variable-themed-color
@@ -8535,16 +8668,31 @@ settings:
         collapsed: true
     -
         id: mu-font-headings
-        title: Headings font (H1-H6)
+        title: Global headings font (H1-H6)
         type: variable-text
-        description: Font used for the headings (H1-H6)
-        default: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
+        description: Font used in headings (H1-H6)
+        default: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
+    -
+        id: h1-font
+        title: H1 font
+        type: variable-text
+        description: Font used in H1 headings
+        default: Inter, sans-serif
     -
         id: h1-size
         title: H1 font size
         type: variable-text
         description: Heading 1 font size
         default: 2em
+    -
+        id: h1-weight
+        title: H1 font weight
+        description: Heading 1 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h1
         title: H1 color
@@ -8555,11 +8703,26 @@ settings:
         default-light: '#0072d3'
         default-dark: '#00a3ff'
     -
+        id: h2-font
+        title: H2 font
+        type: variable-text
+        description: Font used in H2 headings
+        default: Inter, sans-serif
+    -
         id: h2-size
         title: H2 font size
         type: variable-text
         description: Heading 2 font size
         default: 1.5em
+    -
+        id: h2-weight
+        title: H2 font weight
+        description: Heading 2 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h2
         title: H2 color
@@ -8570,11 +8733,26 @@ settings:
         default-light: '#0072d3'
         default-dark: '#00a3ff'
     -
+        id: h3-font
+        title: H3 font
+        type: variable-text
+        description: Font used in H3 headings
+        default: Inter, sans-serif
+    -
         id: h3-size
         title: H3 font size
         type: variable-text
         description: Heading 3 font size
         default: 1.17em
+    -
+        id: h3-weight
+        title: H3 font weight
+        description: Heading 3 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h3
         title: H3 color
@@ -8585,11 +8763,26 @@ settings:
         default-light: '#0072d3'
         default-dark: '#00a3ff'
     -
+        id: h4-font
+        title: H4 font
+        type: variable-text
+        description: Font used in H4 headings
+        default: Inter, sans-serif
+    -
         id: h4-size
         title: H4 font size
         type: variable-text
         description: Heading 4 font size
         default: 1em
+    -
+        id: h4-weight
+        title: H4 font weight
+        description: Heading 4 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h4
         title: H4 color
@@ -8600,11 +8793,26 @@ settings:
         default-light: '#0072d3'
         default-dark: '#00a3ff'
     -
+        id: h5-font
+        title: H5 font
+        type: variable-text
+        description: Font used in H5 headings
+        default: Inter, sans-serif
+    -
         id: h5-size
         title: H5 font size
         type: variable-text
         description: Heading 5 font size
         default: 0.83em
+    -
+        id: h5-weight
+        title: H5 font weight
+        description: Heading 5 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h5
         title: H5 color
@@ -8615,11 +8823,26 @@ settings:
         default-light: '#0072d3'
         default-dark: '#00a3ff'
     -
+        id: h6-font
+        title: H6 font
+        type: variable-text
+        description: Font used in H6 headings
+        default: Inter, sans-serif
+    -
         id: h6-size
         title: H6 font size
         type: variable-text
         description: Heading 6 font size
         default: 0.67em
+    -
+        id: h6-weight
+        title: H6 font weight
+        description: Heading 6 font weight (bold controller)
+        type: variable-number-slider
+        default: 800
+        min: 100
+        max: 800
+        step: 100
     -
         id: mu-h6
         title: H6 color
