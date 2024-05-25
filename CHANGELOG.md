@@ -1,5 +1,18 @@
 # Changelog
 
+## [20.0.0] - 2024-05-25
+### Improvements
+
+- Typography: **Individual headings font** control. Assign unique fonts to each heading level (H1-H6).
+- Typography: Control the **boldness** of individual headings (H1, H2, ..., H6) with individual sliders. This will depend on the chosen **font having variable weights**.
+- New class to add to **cssclasses** property: `tw100` - **tables** width 100% and other elements with readable line length limit.
+- New class to add to **cssclasses** property: `tcw100` - **tables and callouts** width 100% and other elements with readable line length limit.
+- New class to add to **cssclasses** property: `cw100` - **callouts** width 100% and other elements with readable line length limit.
+- **Column stripped tables**: select even columns background color (preset *table1* and preset *table6*).
+- **Blockquote** indent indicator.
+- **Blockquote** layout adjustments (reading mode).
+- **Blockquote** live preview and source mode outline border adjustments.
+
 ## [19.9.1] - 2024-05-23
 ### Fixes
 
