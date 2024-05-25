@@ -251,7 +251,10 @@ Submenus:
 **Headings Settings** submenu
 
 - Headings **font** (H1 - H6)
+- H1 to H6 **font family**
+- H1 to H6 **font family**
 - H1 to H6 **font size**
+- H1 to H6 **font weight** (slider)
 - H1 to H6 **color**
 
 **Neon Mode Headings** submenu
@@ -485,6 +488,11 @@ You can toggle **underline headings** using a shortcut or the Command Palette.
 Style Settings:
 
 > **Headings H1-H6** -> Underline headings
+
+## Blockquote Indent Indicator
+
+![Blockquote Indent Indicator](images/magicuser_blockquote_indent_indicator.gif)
+
 
 ## Warm Screen Mode
 
