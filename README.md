@@ -376,6 +376,17 @@ Style Settings:
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
 
+## Outline UI - Sidebars and Active Icons
+
+![Outline UI](images/magicuser_outline_ui.png)
+
+- Outline UI - sidebars
+- Outline UI - active icons and elements
+- Outline UI - select border color (light/dark modes)
+
+Style Settings:
+> **Preset Themes** -> Outline UI
+
 ## Active Line Zoom
 
 ![Active Line Zoom](images/magicuser_theme_active_line_zoom.gif)
