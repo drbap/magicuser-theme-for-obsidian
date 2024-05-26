@@ -1,5 +1,12 @@
 # Changelog
 
+## [20.1.0] - 2024-05-26
+### Improvements
+
+- Outline UI - sidebars
+- Outline UI - active icons
+- Outline UI - border color
+
 ## [20.0.0] - 2024-05-25
 ### Improvements
 
