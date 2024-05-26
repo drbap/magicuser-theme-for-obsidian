@@ -321,7 +321,18 @@ Submenus:
 
 Style Settings:
 > **Preset Themes** -> Cards UI
- 
+
+## Outline UI - Sidebars and Active Icons
+
+![Outline UI](images/magicuser_outline_ui.png)
+
+- Outline UI - sidebars
+- Outline UI - active icons and elements
+- Outline UI - select border color (light/dark modes)
+
+Style Settings:
+> **Preset Themes** -> Outline UI
+
 ## Tabs
 
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
@@ -375,17 +386,6 @@ Style Settings:
 - Style Settings: Reading glow **color** (7 colors).
 - Style Settings: Reading glow border size.
 - Style Settings: Reading glow corners size (0 = square corners).
-
-## Outline UI - Sidebars and Active Icons
-
-![Outline UI](images/magicuser_outline_ui.png)
-
-- Outline UI - sidebars
-- Outline UI - active icons and elements
-- Outline UI - select border color (light/dark modes)
-
-Style Settings:
-> **Preset Themes** -> Outline UI
 
 ## Active Line Zoom
 
