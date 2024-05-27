@@ -1,5 +1,11 @@
 # Changelog
 
+## [20.2.0] - 2024-05-27
+### Improvements
+- Transparent menus, prompts and modals blur effect (improved).
+- Slider to control the blur effect of the transparent ui elements (set to zero = no blur)
+- Outline code inside tables fix.
+
 ## [20.1.0] - 2024-05-26
 ### Improvements
 
