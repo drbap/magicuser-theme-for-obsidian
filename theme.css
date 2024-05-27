@@ -726,7 +726,9 @@ body {
 
   /* Th Cards Layout */
   --cards-th-display: none;
-  --mu-transparency-menus-level: 0.8;
+  --mu-transparency-menus-level: 0.5;
+  --mu-transparency-blur-level-value: 8;
+  --mu-transparency-blur-level: calc(var(--mu-transparency-blur-level-value) * 1px);
 
   --mu-neon-mode-glow-value: 0.5;
   --mu-neon-mode-glow-intensity: calc(var(--mu-neon-mode-glow-value) * 1em);
@@ -798,6 +800,8 @@ body {
   --mu-column-stripped-background: #00000082;
   --mu-o-ui-border: #0072d3;
 
+  --mu-modal-background: #000;
+
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
 }
@@ -824,7 +828,7 @@ body::before {
 
 .modal-bg {
   opacity: 0.3 !important;
-  background-color: #000;
+  background-color: var(--mu-modal-background);
 }
 
 span.is-flashing {
@@ -1057,6 +1061,7 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
 
+  --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
   --mu-scrollbar-thumb-bg-hover: #84848448;
@@ -1248,6 +1253,7 @@ span.obsidian-search-match-highlight {
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
 
+  --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484848;
@@ -6177,11 +6183,18 @@ body:not(.is-mobile).mu-compact-prompt .prompt {
 }
 
 /* MagicUser Transparent Prompt and Menus - Palette */
-body:not(.is-mobile).mu-transparent-prompts-menus .graph-controls,
-body:not(.is-mobile).mu-transparent-prompts-menus .modal,
-body:not(.is-mobile).mu-transparent-prompts-menus .menu,
-body:not(.is-mobile).mu-transparent-prompts-menus .prompt {
-  opacity: var(--mu-transparency-menus-level);
+body:not(.is-mobile).theme-light.mu-transparent-prompts-menus div:is(.graph-controls,.modal,.prompt,.menu) {
+  background-color: rgba(255,255,255, var(--mu-transparency-menus-level));
+  backdrop-filter: blur(var(--mu-transparency-blur-level));
+}
+
+body:not(.is-mobile).theme-dark.mu-transparent-prompts-menus div:is(.graph-controls,.modal,.prompt,.menu) {
+  background-color: rgba(0,0,0,var(--mu-transparency-menus-level));
+  backdrop-filter: blur(var(--mu-transparency-blur-level));
+}
+
+body:not(.is-mobile).mu-transparent-prompts-menus div:is(.modal .vertical-tab-header, .modal .vertical-tab-content) {
+  background: transparent;
 }
 
 /* Footnotes */
@@ -7171,9 +7184,11 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 
 /* Blockquote and code outline border */
 /* inline code */
+body.mu-outline-code code,
 body.mu-outline-code .markdown-reading-view code,
 body.mu-outline-code span.cm-inline-code {
   border: 1px solid var(--mu-inline-code-border);
+  white-space: nowrap;
 }
 
 body.mu-outline-code .markdown-reading-view div>pre code {
@@ -8625,12 +8640,21 @@ settings:
     -
         id: mu-transparency-menus-level
         title: Transparency level
-        description: Adjust the transparency level (menus, modals and prompts)
+        description: Adjust the opacity (transparent menus, modals and prompts)
         type: variable-number-slider
-        default: 0.8
-        min: 0.6
+        default: 0.5
+        min: 0.1
         max: 1
         step: 0.05
+    -
+        id: mu-transparency-blur-level-value
+        title: Transparent elements - blur level
+        description: Adjust the blur level of transparent menus, modals and prompts
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 20
+        step: 1
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI Elements
@@ -8696,7 +8720,7 @@ settings:
         description: Activate headings outline neon mode (live preview, source and reading modes)
         type: class-toggle
         addCommand: true
-    - 
+    -
         id: mu-neon-mode-glow-value
         title: Neon modes - glow controller
         description: Adjust the glow intensity of neon and outline neon modes
