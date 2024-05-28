@@ -700,6 +700,10 @@ body {
   --mu-indent-color-level-5: #e500007f;
   --mu-indent-color-level-6: #8282007f;
 
+  --mu-style-settings-indent-color-1: #007fff7f;
+  --mu-style-settings-indent-color-2: #d372ff7f;
+  --mu-style-settings-indent-color-3: #ff7f007f;
+
   --mu-folder-color-hue-value: 0;
   --mu-folder-color-hue: calc(var(--mu-folder-color-hue-value) * 1deg);
 
@@ -779,7 +783,7 @@ body {
   --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
 
   --mu-titlebar-button-fg: var(--mu-icon);
-  --mu-menu-separator-color: #007fff30;
+  --mu-menu-separator-color: #a3a3a322;
 
   --mu-scrollbar-width-value: 16;
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value)*1px);
@@ -1000,6 +1004,23 @@ span.obsidian-search-match-highlight {
   background-color: var(--nav-item-background-active);
 }
 
+.setting-item {
+  display: flex;
+  align-items: center;
+  padding: var(--size-4-2) 0;
+  border: 0;
+  border-bottom: 1px solid var(--mu-menu-separator-color);
+}
+
+.setting-item.setting-item-heading {
+  margin-top: var(--size-4-2);
+  border-bottom: 1px solid var(--mu-menu-separator-color);
+}
+
+.installed-plugins-container {
+  border-top: 0;
+}
+
 .theme-dark {
   --mu-background-color-1: #002248;
   --mu-background-color-2: #001122;
@@ -1038,7 +1059,6 @@ span.obsidian-search-match-highlight {
   --mu-external-link: #00a9dd;
   --mu-external-link-hover: #00c3ff;
   --tab-divider-color: #003364;
-  --mu-setting-color: #00367278;
   --mu-folder-icon-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
   --interactive-normal: var(--mu-background-color-2);
@@ -1061,6 +1081,7 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
 
+  --mu-menu-separator-color: #a3a3a322;
   --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
@@ -1149,14 +1170,6 @@ span.obsidian-search-match-highlight {
   color: #000;
 }
 
-.theme-dark .setting-item {
-  display: flex;
-  align-items: center;
-  padding: var(--size-4-2) 0;
-  border: 0;
-  border-bottom: 1px solid var(--mu-setting-color);
-}
-
 .theme-dark .vertical-tab-header-group-title {
   color: #00a3ff;
 }
@@ -1207,7 +1220,6 @@ span.obsidian-search-match-highlight {
   --mu-titlebar-text: #f1f1f1;
   --mu-vault-title: #a300cf;
   --mu-sidebar-folder: #0048a3;
-  --mu-setting-color: #82828220;
   --mu-link: #a200ff;
   --mu-link-hover: #c300ff;
   --mu-external-link: #0033ff;
@@ -1253,6 +1265,7 @@ span.obsidian-search-match-highlight {
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
 
+  --mu-menu-separator-color: #a3a3a338;
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
@@ -1337,14 +1350,6 @@ input.slider {
 .theme-light input[type="search"] {
   background-color: var(--mu-input-bg-color);
   color: var(--mu-caret-color);
-}
-
-.theme-light .setting-item {
-  display: flex;
-  align-items: center;
-  padding: var(--size-4-2) 0;
-  border: 0;
-  border-bottom: 1px solid var(--mu-setting-color);
 }
 
 .theme-light .vertical-tab-header-group-title {
@@ -4265,7 +4270,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #cdbeff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a300a320;
   --mu-text-title: #a300cf;
   --mu-titlebar-background: #250035;
   --mu-vault-title: #a300cf;
@@ -4286,7 +4290,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #250035;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #160020;
-  --mu-setting-color: #f100f110;
   --mu-text-title: #bf48ff;
   --mu-titlebar-background: #210030;
   --mu-vault-title: #bf48ff;
@@ -4300,7 +4303,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #cde8e8;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #00a3a310;
   --mu-titlebar-background: #004040;
   --code-background: #e8e8e8;
   --mu-h1: #0048a3;
@@ -4318,7 +4320,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #002121;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #003838;
-  --mu-setting-color: #00a3a310;
   --mu-titlebar-background: #004040;
   --code-background: #1f1f1f;
   --mu-table-th-background: #004040;
@@ -4331,7 +4332,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a348;
   --mu-sidebar-folder: #4f573c;
   --mu-text-title: #727d57;
   --mu-titlebar-background: #3a3f2c;
@@ -4354,7 +4354,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff7f00;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-setting-color: #a3a3a318;
   --mu-sidebar-folder: #a0ac82;
   --mu-text-title: #727d57;
   --mu-titlebar-background: #3a3f2c;
@@ -4371,7 +4370,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #f500b4;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a348;
   --mu-text-title: #828282;
   --mu-titlebar-background: #080808;
   --mu-vault-title: #828282;
@@ -4393,7 +4391,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff48cf;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #828282;
   --mu-titlebar-background: #080808;
   --mu-vault-title: #828282;
@@ -4409,7 +4406,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d3148d;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a348;
   --mu-sidebar-folder: #0048a3;
   --mu-text-title: #ac3f5d;
   --mu-titlebar-background: #461828;
@@ -4432,7 +4428,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-setting-color: #a3a3a318;
   --mu-sidebar-folder: #97bff1;
   --mu-text-title: #ac3f5d;
   --mu-titlebar-background: #461828;
@@ -4455,7 +4450,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d300ff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a348;
   --mu-sidebar-folder: #0048a3;
   --mu-text-title: #a300cf;
   --mu-titlebar-background: #001a33;
@@ -4480,7 +4474,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #d300ff;
   --mu-divider-color: #dfc1c100;
   --mu-input-bg-color: #001836;
-  --mu-setting-color: #a3a3a318;
   --mu-sidebar-folder: #729fd8;
   --mu-text-title: #a300cf;
   --mu-titlebar-background: #001a33;
@@ -4506,7 +4499,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #f500b4;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #f1f1f5;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #58586f;
   --mu-titlebar-background: #0b0b0e;
   --mu-vault-title: #58586f;
@@ -4532,7 +4524,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff48cf;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #0c0c0e;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #58586f;
   --mu-titlebar-background: #0b0b0e;
   --mu-vault-title: #58586f;
@@ -4558,7 +4549,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #f500b4;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #a348a3;
   --mu-titlebar-background: #3d1f33;
   --mu-vault-title: #a348a3;
@@ -4584,7 +4574,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #ff48cf;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1b0e17;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #a348a3;
   --mu-titlebar-background: #3d1f33;
   --mu-vault-title: #a348a3;
@@ -4604,7 +4593,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00a348;
   --mu-divider-color: #0a090900;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #50886a;
   --mu-titlebar-background: #484848;
   --mu-vault-title: #50886a;
@@ -4631,7 +4619,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: hsl(160, 89%, 51%);
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1b0e17;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #50886a;
   --mu-titlebar-background: #484848;
   --mu-vault-title: #50886a;
@@ -4659,7 +4646,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #0072d3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #727272;
   --mu-vault-title: #727272;
   --code-background: #f1f1f1;
@@ -4699,7 +4685,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --background-modifier-border: #cfcfcf;
   --modal-border-color: #cfcfcf;
   --prompt-border-color: #cfcfcf;
-  --mu-menu-separator-color: #cfcfcf;
 }
 
 .theme-dark.magicuser-stealth-theme {
@@ -4709,7 +4694,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00a3ff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #575757;
   --mu-vault-title: #575757;
   --code-background: #000;
@@ -4748,7 +4732,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --background-modifier-border: #282828;
   --modal-border-color: #282828;
   --prompt-border-color: #282828;
-  --mu-menu-separator-color: #282828;
 }
 
 /* Chroma Amulet */
@@ -4761,7 +4744,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #0072d3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: var(--amulet-title-color);
   --mu-vault-title: var(--amulet-title-color);
   --code-background: #f1f1f1;
@@ -4794,7 +4776,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 4%);
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: var(--amulet-title-color);
   --mu-vault-title: var(--amulet-title-color);
   --code-background: #000;
@@ -4829,7 +4810,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: hsl(var(--accent-h), 82%, 52%);
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #0072d3;
   --mu-vault-title: #0072d3;
   --code-background: #f1f1f1;
@@ -4870,7 +4850,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-table-th-background: #080808;
   --mu-table-th-foreground-main: var(--text-accent);
   --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
-  --mu-menu-separator-color: var(--mu-accent-details);
   --mu-file-header-border-width: 2px;
   --background-modifier-border: var(--mu-accent-details);
   --modal-border-color: var(--mu-accent-details);
@@ -4899,7 +4878,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: hsla(var(--color-accent-hsl), 1);
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #000;
-  --mu-setting-color: #a3a3a318;
   --mu-text-title: #0072d3;
   --mu-vault-title: #0072d3;
   --code-background: #000;
@@ -4942,7 +4920,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-table-th-foreground-main: var(--text-accent);
   --mu-file-header-border-color: hsla(var(--color-accent-hsl), 0.5);
   --mu-file-header-border-width: 2px;
-  --mu-menu-separator-color: var(--mu-accent-details);
   --background-modifier-border: var(--mu-accent-details);
   --modal-border-color: var(--mu-accent-details);
   --prompt-border-color: var(--mu-accent-details);
@@ -4991,7 +4968,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #f100f1;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #f1f1f1;
-  --mu-setting-color: #a300a320;
   --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #bf48ff;
@@ -5020,7 +4996,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-setting-color: #f100f110;
   --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #bf48ff;
@@ -5035,7 +5010,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #000;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-setting-color: #00f0b010;
   --mu-text-title: #00a378;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #00a378;
@@ -5068,7 +5042,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #000;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-setting-color: #f100f110;
   --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #bf48ff;
@@ -5086,7 +5059,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-setting-color: #f100f110;
   --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
   --mu-vault-title: #bf48ff;
@@ -5291,15 +5263,15 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 
 .style-settings-heading[data-level="2"]+.style-settings-container {
-  border-left: 1px solid var(--mu-indent-color-level-1);
+  border-left: 1px solid var(--mu-style-settings-indent-color-1);
 }
 
 .style-settings-heading[data-level="3"]+.style-settings-container {
-  border-left: 1px solid var(--mu-indent-color-level-2);
+  border-left: 1px solid var(--mu-style-settings-indent-color-2);
 }
 
 .style-settings-heading[data-level="4"]+.style-settings-container {
-  border-left: 1px solid var(--mu-indent-color-level-3);
+  border-left: 1px solid var(--mu-style-settings-indent-color-3);
 }
 
 .style-settings-heading[data-level="0"] {
@@ -5315,13 +5287,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .style-settings-heading[data-level="0"]:not(.is-collapsed) {
   background-color: #007fff10;
-  border: 1px solid var(--mu-indent-color-level-1);
+  border: 1px solid var(--mu-style-settings-indent-color-1);
   border-radius: 4px;
 }
 
 .style-settings-heading[data-level="2"]:not(.is-collapsed) {
   background-color: #007fff10;
-  border: 1px solid var(--mu-indent-color-level-1);
+  border: 1px solid var(--mu-style-settings-indent-color-1);
   border-radius: 4px;
   margin: 0;
   padding: 8px 20px;
@@ -5329,7 +5301,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .style-settings-heading[data-level="3"]:not(.is-collapsed) {
   background-color: #bf48ff10;
-  border: 1px solid var(--mu-indent-color-level-2);
+  border: 1px solid var(--mu-style-settings-indent-color-2);
   border-radius: 4px;
   margin: 0;
   padding: 8px 20px;
@@ -5337,7 +5309,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .style-settings-heading[data-level="4"]:not(.is-collapsed) {
   background-color: #ff7f0010;
-  border: 1px solid var(--mu-indent-color-level-3);
+  border: 1px solid var(--mu-style-settings-indent-color-3);
   border-radius: 4px;
   margin: 0;
   padding: 8px 20px;
@@ -6183,13 +6155,13 @@ body:not(.is-mobile).mu-compact-prompt .prompt {
 }
 
 /* MagicUser Transparent Prompt and Menus - Palette */
-body:not(.is-mobile).theme-light.mu-transparent-prompts-menus div:is(.graph-controls,.modal,.prompt,.menu) {
-  background-color: rgba(255,255,255, var(--mu-transparency-menus-level));
+body:not(.is-mobile).theme-light.mu-transparent-prompts-menus div:is(.graph-controls, .modal, .prompt, .menu) {
+  background-color: rgba(255, 255, 255, var(--mu-transparency-menus-level));
   backdrop-filter: blur(var(--mu-transparency-blur-level));
 }
 
-body:not(.is-mobile).theme-dark.mu-transparent-prompts-menus div:is(.graph-controls,.modal,.prompt,.menu) {
-  background-color: rgba(0,0,0,var(--mu-transparency-menus-level));
+body:not(.is-mobile).theme-dark.mu-transparent-prompts-menus div:is(.graph-controls, .modal, .prompt, .menu) {
+  background-color: rgba(0, 0, 0, var(--mu-transparency-menus-level));
   backdrop-filter: blur(var(--mu-transparency-blur-level));
 }
 
