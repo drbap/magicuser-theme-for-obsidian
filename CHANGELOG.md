@@ -1,5 +1,11 @@
 # Changelog
 
+## [20.2.1] - 2024-05-28
+### Improvements
+
+- Menu and settings consistent separators (dividers) adjustments (all preset themes).
+- Fix: MagicUser Accent indent guides colors.
+
 ## [20.2.0] - 2024-05-27
 ### Improvements
 - Transparent menus, prompts and modals blur effect (improved).
