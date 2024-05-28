@@ -5289,6 +5289,7 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   background-color: #007fff10;
   border: 1px solid var(--mu-style-settings-indent-color-1);
   border-radius: 4px;
+  margin-top: 0;
 }
 
 .style-settings-heading[data-level="2"]:not(.is-collapsed) {
