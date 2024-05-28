@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.2.2] - 2024-05-28
+### Fixes
+
+- MagicUser Style Settings top menu - margin.
+  
 ## [20.2.1] - 2024-05-28
 ### Improvements
 
