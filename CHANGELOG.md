@@ -1,5 +1,20 @@
 # Changelog
 
+## [20.3.0] - 2024-06-01
+### Improvements
+
+- **Tags customization** (new tags submenu)
+  - Turn on **colored tags** (44 preset tags)
+  - **Tags shape** (0 = square tags)
+  - Spacing between the text and the hashtag (#) - slider controller
+  - **Hide hashtags** (#)
+  - Tags **text foreground** color
+  - Tags **text foreground hover** color
+  - Tags **background** color
+  - Tags **background hover** color
+  - Tags **border** color
+  - Tags **border hover** color
+
 ## [20.2.2] - 2024-05-28
 ### Fixes
 
