@@ -504,6 +504,87 @@ Style Settings:
 
 ![Blockquote Indent Indicator](images/magicuser_blockquote_indent_indicator.gif)
 
+## Tags Customization - Colored Tags
+
+![Colored tags](images/magicuser_theme_colored_tags.gif)
+
+**Tags submenu** (Style Settings)
+- Turn on **colored tags** (44 preset tags)
+- **Tags shape** (0 = square tags)
+- **Spacing** between the text and the hashtag (#) - slider controller
+- **Hide hashtags** (#)
+- Tags **text foreground** color
+- Tags **text foreground hover** color
+- Tags **background** color
+- Tags **background hover** color
+- Tags **border** color
+- Tags **border hover** color
+
+Style Settings:
+>** UI Settings** -> Tags
+
+### 44 preset tags layout with icons
+```md
+- **General todo and task status**:
+  - #todo
+  - #inprogress
+  - #ready
+  - #completed
+  - #implemented
+
+- **Alerts**
+  - #attention
+  - #warning
+  - #caution  
+
+- **Academic**:
+  - #article
+  - #reference
+  - #citation 
+  - #cheatsheet
+  - #review
+  - #research
+  - #watch
+  - #test
+
+- **Solo/Team tags**:
+  - #solo
+  - #team
+
+- **Schedule**:
+  - #date
+  - #appointment
+  - #meeting
+  
+- **General purpose**:
+  - #study
+  - #work
+  - #family
+  - #finances
+  - #video
+  - #bookmark
+  - #important
+  - #favorite
+  - #wishlist
+  - #reminder
+  - #art
+  - #idea
+  - #magic
+
+- **Stars rating tags**:
+  - #s1
+  - #s2
+  - #s3
+  - #s4
+  - #s5
+
+- **School grading system**:
+  - #gA
+  - #gB
+  - #gC
+  - #gD
+  - #gF
+```
 
 ## Warm Screen Mode
 
