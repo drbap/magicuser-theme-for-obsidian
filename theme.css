@@ -548,19 +548,19 @@ body {
   --table-row-background-hover: var(--mu-table-row-hover);
 
   /* Tags */
-  --tag-size: var(--font-smaller);
+  --tag-size: var(--font-small);
   --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-color-hover: var(--text-accent-hover);
   --tag-decoration: none;
   --tag-decoration-hover: none;
   --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
   --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-  --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
-  --tag-border-width: 0px;
-  --tag-padding-x: 0.65em;
-  --tag-padding-y: 0.25em;
-  --tag-radius: 2em;
+  --tag-border-color: #0072d3;
+  --tag-border-color-hover: #00bfff;
+  --tag-border-width: 1px;
+  --tag-padding-x: 8px;
+  --tag-padding-y: 4px;
+  --tag-radius: 1em;
 
   /* Window frame */
   --titlebar-background: var(--mu-titlebar-background);
@@ -803,8 +803,14 @@ body {
 
   --mu-column-stripped-background: #00000082;
   --mu-o-ui-border: #0072d3;
+  --mu-tag-border-color: #0072d3;
 
   --mu-modal-background: #000;
+
+  --mu-tags-hashtag-padding-value: 2;
+  --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value)*1px);
+  --tag-radius-value: 1;
+  --tag-radius: calc(var(--tag-radius-value)*1em);
 
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
@@ -972,10 +978,6 @@ span.is-flashing {
 
 .canvas-card-menu {
   background-color: var(--background-modifier-hover);
-}
-
-.cm-hashtag {
-  font-family: var(--mu-font-mono) !important;
 }
 
 ::placeholder {
@@ -5490,6 +5492,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-tags-options"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z'/%3E%3Ccircle cx='7.5' cy='7.5' r='.5' fill='none'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
   margin-left: 4px;
@@ -6931,12 +6940,7 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   --mu-hover-underline-style: double;
 }
 
-/* cssclasses: readable line width enabled
-nw100: Notes width 100%
-tw100: Tables width 100%
-tcw100: Tables and callouts width 100%
-cw100: Callouts width 100%
-*/
+/* cssclasses: readable line width enabled */
 
 .nw100,
 .note-width100 {
@@ -7307,6 +7311,441 @@ body.mu-o-ui-sidebars .status-bar {
 
 body.mu-o-ui-icons .workspace-split:is(.mod-left-split, .mod-right-split) .is-active {
   border: 1px solid var(--mu-o-ui-border);
+}
+
+/* Tags */
+a.tag,
+.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta,
+.cm-hashtag.cm-hashtag-end {
+  display: inline-block;
+  margin: var(--size-2-1) 0;
+  font-family: var(--mu-font-mono) !important;
+}
+
+.cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta {
+  border-right: 0;
+  padding-right: var(--mu-tags-hashtag-padding);
+}
+
+.cm-hashtag.cm-hashtag-end {
+  border-left: 0;
+}
+
+body.mu-tags-hide-hashtag .cm-formatting-hashtag.cm-hashtag.cm-hashtag-begin.cm-meta {
+  border-right: 0;
+  padding-right: var(--mu-tags-hashtag-padding);
+  padding-left: var(--mu-tags-hashtag-padding);
+  color: transparent !important;
+}
+
+body.mu-tags-hide-hashtag .cm-hashtag.cm-hashtag-end {
+  border-left: 0;
+  padding-right: .7em;
+}
+
+.mu-tags-colored a.tag[href="#todo"],
+.mu-tags-colored .cm-tag-todo {
+  background-color: #ff7f00;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href="#inprogress"],
+.mu-tags-colored .cm-tag-inprogress {
+  background-color: #0082d3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#inprogress"]::after,
+.cm-tag-inprogress:not(.cm-hashtag-begin)::after {
+  content: ' ⚙';
+}
+
+.mu-tags-colored a.tag[href="#idea"],
+.mu-tags-colored .cm-tag-idea {
+  background-color: #00004f;
+  color: #f1f1f1;
+}
+
+a.tag[href="#idea"]::after,
+.cm-tag-idea:not(.cm-hashtag-begin)::after {
+  content: ' 💡';
+}
+
+.mu-tags-colored a.tag[href="#completed"],
+.mu-tags-colored .cm-tag-completed,
+.mu-tags-colored a.tag[href="#ready"],
+.mu-tags-colored .cm-tag-ready {
+  background-color: #009700cf;
+  color: #f1f1f1;
+}
+
+a.tag[href="#implemented"]::after,
+.cm-tag-implemented:not(.cm-hashtag-begin)::after,
+a.tag[href="#completed"]::after,
+.cm-tag-completed:not(.cm-hashtag-begin)::after {
+  content: ' ✓';
+}
+
+.mu-tags-colored a.tag[href="#implemented"],
+.mu-tags-colored .cm-tag-implemented {
+  background-color: #a300ff;
+  color: #f1f1f1;
+}
+
+.mu-tags-colored a.tag[href="#family"],
+.mu-tags-colored .cm-tag-family {
+  background-color: #cfcfcf;
+  color: #000;
+}
+
+a.tag[href="#family"]::after,
+.cm-tag-family:not(.cm-hashtag-begin)::after {
+  content: ' 💕';
+}
+
+.mu-tags-colored a.tag[href="#attention"],
+.mu-tags-colored .cm-tag-attention {
+  background-color: #f1f100;
+  color: #000;
+}
+
+.mu-tags-colored a.tag[href="#warning"],
+.mu-tags-colored .cm-tag-warning {
+  background-color: #ffbf00;
+  color: #000;
+}
+
+a.tag[href="#warning"]::after,
+.cm-tag-warning:not(.cm-hashtag-begin)::after {
+  content: ' ⚠️';
+}
+
+.mu-tags-colored a.tag[href="#caution"],
+.mu-tags-colored .cm-tag-caution {
+  background-color: #d30000;
+  color: #f1f1f1;
+}
+
+a.tag[href="#caution"]::after,
+.cm-tag-caution:not(.cm-hashtag-begin)::after {
+  content: ' ⚫';
+}
+
+.mu-tags-colored a.tag[href="#test"],
+.mu-tags-colored .cm-tag-test,
+.mu-tags-colored a.tag[href="#watch"],
+.mu-tags-colored .cm-tag-watch,
+.mu-tags-colored a.tag[href="#review"],
+.mu-tags-colored .cm-tag-review,
+.mu-tags-colored a.tag[href="#research"],
+.mu-tags-colored .cm-tag-research,
+.mu-tags-colored a.tag[href="#reference"],
+.mu-tags-colored .cm-tag-reference,
+.mu-tags-colored a.tag[href="#cheatsheet"],
+.mu-tags-colored .cm-tag-cheatsheet,
+.mu-tags-colored a.tag[href="#article"],
+.mu-tags-colored .cm-tag-article,
+.mu-tags-colored a.tag[href="#citation"],
+.mu-tags-colored .cm-tag-citation {
+  background-color: #282828;
+  color: #f1f1f1;
+}
+
+a.tag[href="#test"]::after,
+.cm-tag-test:not(.cm-hashtag-begin)::after {
+  content: ' 📝';
+}
+
+a.tag[href="#article"]::after,
+.cm-tag-article:not(.cm-hashtag-begin)::after {
+  content: ' 📰';
+}
+
+a.tag[href="#citation"]::after,
+.cm-tag-citation:not(.cm-hashtag-begin)::after {
+  content: ' ❜❜';
+  letter-spacing: 1px;
+}
+
+a.tag[href="#cheatsheet"]::after,
+.cm-tag-cheatsheet:not(.cm-hashtag-begin)::after {
+  content: ' 📜';
+}
+
+a.tag[href="#reference"]::after,
+.cm-tag-reference:not(.cm-hashtag-begin)::after {
+  content: ' 📌';
+}
+
+a.tag[href="#research"]::after,
+.cm-tag-research:not(.cm-hashtag-begin)::after {
+  content: ' 🔬';
+}
+
+a.tag[href="#review"]::after,
+.cm-tag-review:not(.cm-hashtag-begin)::after {
+  content: ' 🔎';
+}
+
+a.tag[href="#watch"]::after,
+.cm-tag-watch:not(.cm-hashtag-begin)::after {
+  content: ' 🎥';
+}
+
+.mu-tags-colored a.tag[href="#team"],
+.mu-tags-colored .cm-tag-team,
+.mu-tags-colored a.tag[href="#solo"],
+.mu-tags-colored .cm-tag-solo {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+a.tag[href="#solo"]::after,
+.cm-tag-solo:not(.cm-hashtag-begin)::after {
+  content: ' 👤';
+}
+
+a.tag[href="#team"]::after,
+.cm-tag-team:not(.cm-hashtag-begin)::after {
+  content: ' 👥';
+}
+
+.mu-tags-colored a.tag[href="#bookmark"],
+.mu-tags-colored .cm-tag-bookmark {
+  background-color: #0048a3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#bookmark"]::after,
+.cm-tag-bookmark:not(.cm-hashtag-begin)::after {
+  content: ' 🔖';
+}
+
+.mu-tags-colored a.tag[href="#meeting"],
+.mu-tags-colored .cm-tag-meeting,
+.mu-tags-colored a.tag[href="#appointment"],
+.mu-tags-colored .cm-tag-appointment,
+.mu-tags-colored a.tag[href="#date"],
+.mu-tags-colored .cm-tag-date {
+  background-color: #e8e882;
+  color: #000;
+}
+
+a.tag[href="#date"]::after,
+.cm-tag-date:not(.cm-hashtag-begin)::after {
+  content: ' 📅';
+}
+
+a.tag[href="#meeting"]::after,
+.cm-tag-meeting:not(.cm-hashtag-begin)::after,
+a.tag[href="#appointment"]::after,
+.cm-tag-appointment:not(.cm-hashtag-begin)::after {
+  content: ' 📆';
+}
+
+.mu-tags-colored a.tag[href="#important"],
+.mu-tags-colored .cm-tag-important {
+  background-color: #d34848;
+  color: #f1f1f1;
+}
+
+a.tag[href="#important"]::after,
+.cm-tag-important:not(.cm-hashtag-begin)::after {
+  content: ' ➼';
+}
+
+.mu-tags-colored a.tag[href="#favorite"],
+.mu-tags-colored .cm-tag-favorite {
+  background-color: #0072d3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#favorite"]::after,
+.cm-tag-favorite:not(.cm-hashtag-begin)::after {
+  content: ' 🌟';
+}
+
+.mu-tags-colored a.tag[href="#wishlist"],
+.mu-tags-colored .cm-tag-wishlist {
+  background-color: #ffd700;
+  color: #000;
+}
+
+a.tag[href="#wishlist"]::after,
+.cm-tag-wishlist:not(.cm-hashtag-begin)::after {
+  content: ' ❤️';
+}
+
+.mu-tags-colored a.tag[href="#reminder"],
+.mu-tags-colored .cm-tag-reminder {
+  background-color: #33cfa3;
+  color: #000;
+}
+
+a.tag[href="#reminder"]::after,
+.cm-tag-reminder:not(.cm-hashtag-begin)::after {
+  content: ' 🔔';
+}
+
+.mu-tags-colored a.tag[href="#work"],
+.mu-tags-colored .cm-tag-work {
+  background-color: #0000a3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#work"]::after,
+.cm-tag-work:not(.cm-hashtag-begin)::after {
+  content: ' 💼';
+}
+
+.mu-tags-colored a.tag[href="#study"],
+.mu-tags-colored .cm-tag-study {
+  background-color: #007fd3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#study"]::after,
+.cm-tag-study:not(.cm-hashtag-begin)::after {
+  content: ' 📖';
+}
+
+.mu-tags-colored a.tag[href="#s5"],
+.mu-tags-colored a.tag[href="#s4"],
+.mu-tags-colored a.tag[href="#s3"],
+.mu-tags-colored a.tag[href="#s2"],
+.mu-tags-colored a.tag[href="#s1"],
+.mu-tags-colored .cm-tag-s5,
+.mu-tags-colored .cm-tag-s4,
+.mu-tags-colored .cm-tag-s3,
+.mu-tags-colored .cm-tag-s2,
+.mu-tags-colored .cm-tag-s1 {
+  background-color: #181818cf;
+  color: #82828282;
+}
+
+a.tag[href="#s1"]::after,
+.cm-tag-s1:not(.cm-hashtag-begin)::after {
+  content: ' ★✩✩✩✩';
+  letter-spacing: var(--size-4-1);
+  color: #ffd700f1;
+}
+
+a.tag[href="#s2"]::after,
+.cm-tag-s2:not(.cm-hashtag-begin)::after {
+  content: ' ★★✩✩✩';
+  letter-spacing: var(--size-4-1);
+  color: #ffd700f1;
+}
+
+a.tag[href="#s3"]::after,
+.cm-tag-s3:not(.cm-hashtag-begin)::after {
+  content: ' ★★★✩✩';
+  letter-spacing: var(--size-4-1);
+  color: #ffd700f1;
+}
+
+a.tag[href="#s4"]::after,
+.cm-tag-s4:not(.cm-hashtag-begin)::after {
+  content: ' ★★★★✩';
+  color: #ffd700f1;
+  letter-spacing: var(--size-4-1);
+}
+
+a.tag[href="#s5"]::after,
+.cm-tag-s5:not(.cm-hashtag-begin)::after {
+  content: ' ★★★★★';
+  letter-spacing: var(--size-4-1);
+  color: #ffd700f1;
+}
+
+.mu-tags-colored a.tag[href="#gA"],
+.mu-tags-colored a.tag[href="#gB"],
+.mu-tags-colored a.tag[href="#gC"],
+.mu-tags-colored a.tag[href="#gD"],
+.mu-tags-colored a.tag[href="#gF"],
+.mu-tags-colored .cm-tag-gA,
+.mu-tags-colored .cm-tag-gB,
+.mu-tags-colored .cm-tag-gC,
+.mu-tags-colored .cm-tag-gD,
+.mu-tags-colored .cm-tag-gF {
+  background-color: #181818cf;
+  color: #82828282;
+  font-weight: bold;
+  padding-right: .5em;
+}
+
+a.tag[href="#gA"]::after,
+.cm-tag-gA:not(.cm-hashtag-begin)::after {
+  content: ' A ';
+  color: #ffd700f1;
+}
+
+a.tag[href="#gB"]::after,
+.cm-tag-gB:not(.cm-hashtag-begin)::after {
+  content: ' B ';
+  color: #ffd700f1;
+}
+
+a.tag[href="#gC"]::after,
+.cm-tag-gC:not(.cm-hashtag-begin)::after {
+  content: ' C ';
+  color: #ffd700f1;
+}
+
+a.tag[href="#gD"]::after,
+.cm-tag-gD:not(.cm-hashtag-begin)::after {
+  content: ' D ';
+  color: #ffd700f1;
+}
+
+a.tag[href="#gF"]::after,
+.cm-tag-gF:not(.cm-hashtag-begin)::after {
+  content: ' F ';
+  color: #ffd700f1;
+}
+
+.mu-tags-colored a.tag[href="#art"],
+.mu-tags-colored .cm-tag-art {
+  background-color: #0048a3;
+  color: #f1f1f1;
+}
+
+a.tag[href="#art"]::after,
+.cm-tag-art:not(.cm-hashtag-begin)::after {
+  content: ' 🎨';
+}
+
+.mu-tags-colored a.tag[href="#video"],
+.mu-tags-colored .cm-tag-video {
+  background-color: #d32828;
+  color: #f1f1f1;
+}
+
+a.tag[href="#video"]::after,
+.cm-tag-video:not(.cm-hashtag-begin)::after {
+  content: ' ▶';
+}
+
+.mu-tags-colored a.tag[href="#finances"],
+.mu-tags-colored .cm-tag-finances {
+  background-color: #7fd356f1;
+  color: #000;
+}
+
+a.tag[href="#finances"]::after,
+.cm-tag-finances:not(.cm-hashtag-begin)::after {
+  content: ' $';
+}
+
+.mu-tags-colored a.tag[href="#magic"],
+.mu-tags-colored .cm-tag-magic {
+  background-color: #820082;
+  color: #f1f1f1;
+}
+
+a.tag[href="#magic"]::after,
+.cm-tag-magic:not(.cm-hashtag-begin)::after {
+  content: ' ✨';
 }
 
 /* Style Settings */
@@ -8354,6 +8793,95 @@ settings:
         min: 0
         max: 5
         step: 1
+    -
+        id: magicuser-theme-tags-options
+        title: Tags
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-tags-colored
+        title: Colored tags
+        description: Toggle colored tags
+        type: class-toggle
+        addCommand: true
+    -
+        id: tag-radius-value
+        title: Tags shape
+        description: Set tags shape (0 = square tags)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.1
+    -
+        id: mu-tags-hashtag-padding-value
+        title: Spacing between the text and the hashtag
+        description: Set the spacing between hashtag(#) and tag text - live preview and source modes
+        type: variable-number-slider
+        default: 2
+        min: 0
+        max: 12
+        step: 0.5
+    -
+        id: mu-tags-hide-hashtag
+        title: Hide hashtags (#)
+        description: Hide hashtags - live preview and source modes
+        type: class-toggle
+    -
+        id: tag-color
+        title: Tag text foreground color
+        type: variable-themed-color
+        description: Select tag text foreground color
+        format: hex
+        opacity: false
+        default-light: '#8b6cef'
+        default-dark: '#8b6cef'  
+    -
+        id: tag-color-hover
+        title: Tag text foreground hover color
+        type: variable-themed-color
+        description: Select tag text foreground hover color
+        format: hex
+        opacity: false
+        default-light: '#a994f3'
+        default-dark: '#a994f3'  
+    -
+        id: tag-background
+        title: Tag background color
+        type: variable-themed-color
+        description: Select tag background color
+        format: hex
+        opacity: true
+        default-light: '#8b6cef82'
+        default-dark: '#8b6cef82'  
+    -
+        id: tag-background-hover
+        title: Tag background hover color
+        type: variable-themed-color
+        description: Select tag background hover color
+        format: hex
+        opacity: true
+        default-light: '#a994f382'
+        default-dark: '#a994f382'
+    -
+        id: tag-border-color
+        title: Tag border color
+        type: variable-themed-color
+        description: Select tag border color
+        format: hex
+        opacity: true
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: tag-border-color-hover
+        title: Tag border hover color
+        type: variable-themed-color
+        description: Select tag border hover color
+        format: hex
+        opacity: true
+        default-light: '#00bfff'
+        default-dark: '#00bfff'
     -
         id: magicuser-theme-reading-mode-options
         title: Reading Mode
