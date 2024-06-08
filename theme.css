@@ -1109,13 +1109,13 @@ span.obsidian-search-match-highlight {
   outline: 2px solid var(--mu-icon-active);
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
+.theme-dark button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
   color: #f1f1f1;
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-hover);
 }
 
-.theme-dark button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
+.theme-dark button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
   color: #f1f1f1;
   background-color: var(--background-modifier-hover);
 }
@@ -1290,13 +1290,13 @@ span.obsidian-search-match-highlight {
   outline: 2px solid var(--mu-icon-active);
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
+.theme-light button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
   color: #000;
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-hover);
 }
 
-.theme-light button:not(.mod-cta, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
+.theme-light button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
   color: #000;
   background-color: var(--background-modifier-hover);
 }
@@ -7748,6 +7748,40 @@ a.tag[href="#magic"]::after,
   content: ' ✨';
 }
 
+/* 1.6.2 adjustments */
+.workspace-drawer-vault-name {
+  --vault-profile-font-weight: var(--font-semibold);
+  color: var(--vault-name-color);
+}
+
+.menu-item.tappable.mod-checked {
+  font-weight: var(--font-semibold);
+}
+
+.workspace-drawer-vault-switcher svg {
+  color: var(--mu-icon);
+}
+
+.tree-item.nav-folder:not(.is-collapsed, .mod-root) {
+  background-color: var(--mu-folder-area-background);
+  border: 1px solid var(--mu-folder-area-border);
+}
+
+/* 1.6.2 mobile */
+
+body.is-mobile .clickable-icon.workspace-drawer-header-icon {
+  color: var(--mu-icon);
+}
+
+body.is-mobile .modal-title,
+body.is-mobile .workspace-drawer-active-tab-header select {
+  background-color: var(--mu-background-color-2);
+}
+
+body.is-mobile .clickable-icon.workspace-drawer-active-tab-chevron {
+  color: var(--mu-icon);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -9165,7 +9199,7 @@ settings:
     -
         id: mu-hide-vault-title
         title: Hide vault name
-        description:  Hide sidebar vault name
+        description:  Hide sidebar vault name (Obsidian < v1.6)
         type: class-toggle
     -
         id: mu-hide-nav-buttons-container
@@ -9184,13 +9218,13 @@ settings:
         type: class-toggle
     -
         id: mu-hide-side-dock-actions
-        title: Auto hide top side buttons
-        description: Auto hide top side buttons (left ribbon)
+        title: Auto hide top ribbon buttons
+        description: Auto hide top ribbon buttons
         type: class-toggle
     -
         id: mu-hide-side-dock-settings
-        title: Auto hide bottom side buttons
-        description: Auto hide bottom side buttons (left ribbon)
+        title: Auto hide bottom ribbon buttons
+        description: Auto hide bottom ribbon buttons (Obsidian < v1.6)
         type: class-toggle
     -
         id: mu-hide-inline-title
