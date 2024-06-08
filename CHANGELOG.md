@@ -1,5 +1,13 @@
 # Changelog
 
+## [20.4.0] - 2024-06-08
+### Improvements
+
+- **Overall theme adjustments** (update: Obsidian 1.6.2):
+  - **Desktop**
+  - **Mobile** 
+- Improved **sidebar open folder area**.
+
 ## [20.3.0] - 2024-06-01
 ### Improvements
 
