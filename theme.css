@@ -133,7 +133,7 @@ body {
 
   /* Dividers */
   --divider-color: var(--mu-divider-color);
-  --divider-color-hover: var(--mu-purple-1);
+  --divider-color-hover: var(--mu-divider-color-hover);
   --divider-width: 1px;
   --divider-width-hover: 3px;
   --divider-vertical-height: calc(100% - var(--header-height));
@@ -805,6 +805,7 @@ body {
   --mu-o-ui-border: #0072d3;
   --mu-tag-border-color: #0072d3;
 
+  --mu-divider-color-hover: #007fff;
   --mu-modal-background: #000;
 
   --mu-tags-hashtag-padding-value: 2;
@@ -1039,7 +1040,7 @@ span.obsidian-search-match-highlight {
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf20;
   --mu-blockquote-border: #007fff;
-  --mu-divider-color: #b372ff10;
+  --mu-divider-color: #007fff10;
   --mu-h1: #00a3ff;
   --mu-h2: #00a3ff;
   --mu-h3: #00a3ff;
@@ -1205,7 +1206,7 @@ span.obsidian-search-match-highlight {
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf88;
   --mu-blockquote-border: #007fff;
-  --mu-divider-color: #b372ff10;
+  --mu-divider-color: #007fff10;
   --mu-h1: #0072d3;
   --mu-h2: #0072d3;
   --mu-h3: #0072d3;
@@ -8093,6 +8094,15 @@ settings:
         opacity: false
         default-light: '#f100f1'
         default-dark: '#f100f1'
+    -
+        id: mu-divider-color-hover
+        title: Divider hover color
+        type: variable-themed-color
+        description: Panel divider hover color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
     -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
