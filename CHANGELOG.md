@@ -1,5 +1,11 @@
 # Changelog
 
+## [20.5.0] - 2024-06-13
+### Improvements
+
+- New panel divider hover color.
+- Style Settings: you can select the panel divider hover color (light/dark modes).
+
 ## [20.4.0] - 2024-06-08
 ### Improvements
 
