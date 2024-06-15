@@ -1161,8 +1161,8 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 ## Outline Code
 ![MagicUser theme outline code](images/magicuser_outline_code.png)
 
-- **Outline code**: Add inline code and code block border color (outline code). Independent colors for inline and code block elements (light and dark modes).
-- You can toggle the outline code using the command palette (or shortcut key).
+- **Outline inline code** and **outline code block**: Add inline code and code block border color (independent outline). You can select independent colors for inline and code block elements (light and dark modes).
+- You can toggle the outline inline code and outline code block using the command palette (or shortcut key).
 - Select inline code border color.
 - Select code block border color.
 
