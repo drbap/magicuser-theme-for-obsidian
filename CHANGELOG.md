@@ -1,5 +1,11 @@
 # Changelog
 
+## [20.6.0] - 2024-06-14
+### Improvements
+
+- Independent outline code (inline and code block).
+- Inline code adjustments.
+
 ## [20.5.0] - 2024-06-13
 ### Improvements
 
