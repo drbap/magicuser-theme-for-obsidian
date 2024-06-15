@@ -7162,18 +7162,23 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 
 /* Blockquote and code outline border */
 /* inline code */
-body.mu-outline-code code,
-body.mu-outline-code .markdown-reading-view code,
-body.mu-outline-code span.cm-inline-code {
+body.mu-outline-inline-code code,
+body.mu-outline-inline-code .markdown-reading-view code,
+body.mu-outline-inline-code span.cm-inline-code {
   border: 1px solid var(--mu-inline-code-border);
+}
+
+body.mu-outline-inline-code table code,
+body.mu-outline-inline-code .markdown-reading-view table code,
+body.mu-outline-inline-code table span.cm-inline-code {
   white-space: nowrap;
 }
 
-body.mu-outline-code .markdown-reading-view div>pre code {
+body.mu-outline-inline-code .markdown-reading-view div>pre code {
   border: 0;
 }
 
-body.mu-outline-code span.cm-inline-code.cm-formatting {
+body.mu-outline-inline-code span.cm-inline-code.cm-formatting {
   border: 1px dotted var(--mu-inline-code-border);
 }
 
@@ -9844,9 +9849,15 @@ settings:
         default-light: '#c300f1'
         default-dark: '#d372ff'
     -
+        id: mu-outline-inline-code
+        title: Outline inline code
+        description: Turn on outline inline code
+        type: class-toggle
+        addCommand: true
+    -
         id: mu-outline-code
-        title: Outline code (inline code and code block)
-        description: Turn on outline code
+        title: Outline code block
+        description: Turn on outline code blocks
         type: class-toggle
         addCommand: true
     -
