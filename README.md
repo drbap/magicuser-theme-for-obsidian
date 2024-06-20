@@ -1201,7 +1201,7 @@ Most of the icons for the checkboxes and the quote icon were created by me (MIT 
 
 The icons used by the file icon, other callouts and some checkboxes icons are from [Lucide](https://lucide.dev/) Icons used by Obsidian. The Lucide icon library is licensed under the ISC License.
 
-Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango (**@kepano**) and the Things Theme by Colin Eckert (**@colineckert**). You can find more information about @kepano and @colineckert below, please check their themes and support their work:
+Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango (@kepano) and the Things Theme by Colin Eckert (@colineckert). You can find more information about @kepano and @colineckert below, please check their themes and support their work:
 
 - [Minimal Theme by Stephan Ango](https://github.com/kepano/obsidian-minimal)
 
@@ -1210,24 +1210,24 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 
 **Style Settings Community Plugin**
 
-- Thanks to Matthew Meyers (**@mgmeyers**) for the amazing [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Plugin. Excellent work.
+- Thanks to Matthew Meyers (@mgmeyers) for the amazing [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Plugin. Excellent work.
 
 
 **Thanks for the Suggestions**
 
  I would like to express my gratitude to everyone who offered suggestions, tested each new feature, and provided invaluable feedback. Thanks to your attention to detail and constructive criticism, the theme has evolved into what it is today.
 
-- **@alitekdemir** - suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
-- **@YannMiro** - suggestion to show/hide file icons.
-- **@zhouxinghong** - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Style Settings Theme Options (collapse indicator color). Rounded tables suggestion.
-- **@ll14m4n** - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
-- **@golden234431** (Obsidian Forum) - inline title font size.
-- **@fred.joe3697** (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
-- **@New** (Obsidian Forum) - note width suggestion.
-- **@YonKuma** (Obsidian Forum) - hide headings labels.
-- **@merlinuwe** - scrollbars customization suggestion. Numbered tables suggestion.
-- **@indigofairyx** - outline code and outline blockquote suggestion. Outline sidebards. Transparent menus blur effect. Tags suggestions.
-- **@Medullitus** - panel divider hover color suggestion (Style Settings option).
-- **@tr_mstein** (Obsidian Forum) - independent outline code for inline code and code block.
+- @alitekdemir - suggestion to add the extra checkboxes (extra 1 - screenshot), based on Minimal and Things Themes. I hope you also find them useful.
+- @YannMiro - suggestion to show/hide file icons.
+- @zhouxinghong - reading mode suggestions (display H1-H6 labels on hover, colored H1-H6 labels) and colored indent guides in file explorer. Style Settings Theme Options (collapse indicator color). Rounded tables suggestion.
+- @ll14m4n - dataview tables and stacked mode suggestions. Suggestion to change neon heading colors and links in headings (when neon mode is on).
+- @golden234431 (Obsidian Forum) - inline title font size.
+- @fred.joe3697 (Obsidian Forum) - underlined text color, hidden text underline and inline comments suggestions. Callouts without title suggestion. Preset tables suggestions, disable table row background change and table text color. Hover underline suggestion.
+- @New (Obsidian Forum) - note width suggestion.
+- @YonKuma (Obsidian Forum) - hide headings labels.
+- @merlinuwe - scrollbars customization suggestion. Numbered tables suggestion.
+- @indigofairyx** - outline code and outline blockquote suggestion. Outline sidebards. Transparent menus blur effect. Tags suggestions.
+- @Medullitus - panel divider hover color suggestion (Style Settings option).
+- @tr_mstein (Obsidian Forum) - independent outline code for inline code and code block.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
