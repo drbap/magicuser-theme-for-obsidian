@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.7.0] - 2024-06-29
+### Improvements
+
+- Sidebar numbers color. Style Settings: UI Settings -> Main Theme Colors. You can select color for light and dark modes.
+
 ## [20.6.0] - 2024-06-14
 ### Improvements
 
