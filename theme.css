@@ -812,6 +812,7 @@ body {
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value)*1px);
   --tag-radius-value: 1;
   --tag-radius: calc(var(--tag-radius-value)*1em);
+  --mu-sidebar-pane-numbers: #007fff;
 
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
@@ -7773,6 +7774,11 @@ a.tag[href="#magic"]::after,
   border: 1px solid var(--mu-folder-area-border);
 }
 
+/* Sidebars - links count, tags pane */
+.tree-item-flair {
+  color: var(--mu-sidebar-pane-numbers) !important;
+}
+
 /* 1.6.2 mobile */
 
 body.is-mobile .clickable-icon.workspace-drawer-header-icon {
@@ -8104,6 +8110,15 @@ settings:
         title: Divider hover color
         type: variable-themed-color
         description: Panel divider hover color
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: mu-sidebar-pane-numbers
+        title: Sidebar numbers color
+        type: variable-themed-color
+        description: Tags count, search results and other sidebar numbers color
         format: hex
         opacity: false
         default-light: '#007fff'
