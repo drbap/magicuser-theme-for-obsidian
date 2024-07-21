@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.8.0] - 2024-07-21
+### Improvements
+
+- Indent guides - lists.
+
 ## [20.7.0] - 2024-06-29
 ### Improvements
 
