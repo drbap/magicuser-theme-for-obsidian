@@ -1226,7 +1226,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @New (Obsidian Forum) - note width suggestion.
 - @YonKuma (Obsidian Forum) - hide headings labels.
 - @merlinuwe - scrollbars customization suggestion. Numbered tables suggestion.
-- @indigofairyx - outline code and outline blockquote suggestion. Outline sidebards. Transparent menus blur effect. Tags suggestions.
+- @indigofairyx - outline code and outline blockquote suggestion. Outline sidebars. Transparent menus blur effect. Tags suggestions.
 - @Medullitus - panel divider hover color suggestion (Style Settings option). Suggestion to select the color of sidebar tags count number.
 - @tr_mstein (Obsidian Forum) - independent outline code for inline code and code block.
 
