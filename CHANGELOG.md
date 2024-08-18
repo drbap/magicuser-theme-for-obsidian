@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.8.1] - 2024-08-18
+### Improvements
+
+- Modal close button position adjusted according to scrollbar width.
+
 ## [20.8.0] - 2024-07-21
 ### Improvements
 
