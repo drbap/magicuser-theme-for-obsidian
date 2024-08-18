@@ -7158,7 +7158,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
 }
 
 .modal.mod-settings.mod-sidebar-layout .modal-close-button {
-  margin-right: 24px;
+  margin-right: calc(var(--mu-scrollbar-width) - 8px);
 }
 
 /* Blockquote and code outline border */
