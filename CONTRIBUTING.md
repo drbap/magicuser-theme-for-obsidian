@@ -2,7 +2,7 @@
 
 I'm happy you're interested in contributing to this project!
 
-This repository works a bit differently than some others. I value your ideas and suggestions for improvement, but  currently don't accept pull requests (PRs).
+This repository works a bit differently than some others. I value your ideas and suggestions for improvement, but  currently **don't accept pull requests** (PRs).
 
 Here's how you can contribute in the most helpful way:
 
