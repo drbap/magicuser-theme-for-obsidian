@@ -6984,6 +6984,12 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   margin-bottom: 1em;
 }
 
+.tcw100 .block-language-dataview.node-insert-event,
+.tw100 .block-language-dataview.node-insert-event {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* Cards UI Interface */
 
 body:not(.is-mobile).mu-cards-interface {
@@ -7799,58 +7805,54 @@ body.is-mobile .clickable-icon.workspace-drawer-active-tab-chevron {
 .markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(1)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
 }
-.markdown-source-view  .cm-hmd-list-indent .cm-indent:nth-child(2)::before
-{
+
+.markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(2)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-2);
 }
 
-.markdown-source-view  .cm-hmd-list-indent .cm-indent:nth-child(3)::before
-{
+.markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(3)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-3);
 }
 
-.markdown-source-view  .cm-hmd-list-indent .cm-indent:nth-child(4)::before
-{
+.markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(4)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-4);
 }
 
-.markdown-source-view  .cm-hmd-list-indent .cm-indent:nth-child(5)::before
-{
+.markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(5)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-5);
 }
 
-.markdown-source-view  .cm-hmd-list-indent .cm-indent:nth-child(6)::before
-{
+.markdown-source-view .cm-hmd-list-indent .cm-indent:nth-child(6)::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-6);
 }
 
 /* reading mode */
-.markdown-rendered.show-indentation-guide li > ul::before,
-.markdown-rendered.show-indentation-guide li > ol::before {
+.markdown-rendered.show-indentation-guide li>ul::before,
+.markdown-rendered.show-indentation-guide li>ol::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
 }
 
-.markdown-rendered.show-indentation-guide li > ul > li > ul::before {
-    border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-2);
+.markdown-rendered.show-indentation-guide li>ul>li>ul::before {
+  border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-2);
 }
 
-.markdown-rendered.show-indentation-guide li > ul > li > ul > li > ul::before {
+.markdown-rendered.show-indentation-guide li>ul>li>ul>li>ul::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-3);
 }
 
-.markdown-rendered.show-indentation-guide li > ul> li > ul > li > ul > li > ul::before {
+.markdown-rendered.show-indentation-guide li>ul>li>ul>li>ul>li>ul::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-4);
 }
 
-.markdown-rendered.show-indentation-guide li > ul> li > ul> li > ul > li > ul > li > ul::before {
+.markdown-rendered.show-indentation-guide li>ul>li>ul>li>ul>li>ul>li>ul::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-5);
 }
 
-.markdown-rendered.show-indentation-guide li > ul> li > ul> li > ul> li > ul > li > ul > li > ul::before {
+.markdown-rendered.show-indentation-guide li>ul>li>ul>li>ul>li>ul>li>ul>li>ul::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-6);
 }
 
-.markdown-rendered.show-indentation-guide li > ul>li > ul> li > ul> li > ul> li > ul > li > ul > li > ul::before {
+.markdown-rendered.show-indentation-guide li>ul>li>ul>li>ul>li>ul>li>ul>li>ul>li>ul::before {
   border-right: var(--indentation-guide-width) solid var(--mu-indent-color-level-1);
 }
 
