@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.8.2] - 2024-09-23
+### Improvements
+
+- `tw100` and `tcw100` adjustments for dataview tables (reading mode with 100% width).
+
 ## [20.8.1] - 2024-08-18
 ### Improvements
 
