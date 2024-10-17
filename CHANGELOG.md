@@ -1,5 +1,12 @@
 # Changelog
 
+## [20.9.0] - 2024-10-17
+### Improvements
+
+- Global font mode (toggle). You can select global font for text and UI elements.
+- Disable alternative checkboxes (checklist menu option)
+- Adjustments preset themes menu.
+
 ## [20.8.2] - 2024-09-23
 ### Improvements
 
