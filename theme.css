@@ -784,7 +784,7 @@ body {
   --mu-amulet-sat: calc(var(--mu-amulet-sat-value) * 1%);
 
   --mu-titlebar-button-fg: var(--mu-icon);
-  --mu-menu-separator-color: #a3a3a322;
+  --mu-menu-separator-color: #0072d322;
 
   --mu-scrollbar-width-value: 16;
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value)*1px);
@@ -1086,7 +1086,6 @@ span.obsidian-search-match-highlight {
   --background-secondary-alt: #383838;
   --mu-bookmarked-note-icon-bg: #007fff40;
 
-  --mu-menu-separator-color: #a3a3a322;
   --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
@@ -1270,7 +1269,6 @@ span.obsidian-search-match-highlight {
   --graph-node-focused: #0048a3;
   --mu-bookmarked-note-icon-bg: #007fff30;
 
-  --mu-menu-separator-color: #a3a3a338;
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
@@ -8199,6 +8197,15 @@ settings:
         opacity: false
         default-light: '#007fff'
         default-dark: '#007fff'
+    -
+        id: mu-menu-separator-color
+        title: Menu and settings separators color
+        type: variable-themed-color
+        description: Color of menu and settings separators
+        format: hex
+        opacity: true
+        default-light: '#0072d322'
+        default-dark: '#0072d322'
     -
         id: magicuser-theme-folders-icons
         title: Icons and Folders
