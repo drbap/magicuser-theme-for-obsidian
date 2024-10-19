@@ -1,5 +1,11 @@
 # Changelog
 
+## [20.10.0] - 2024-10-19
+### Improvements
+
+-  Menu and settings separators color
+    - UI Settings -> Main Theme Colors ->  Menu and settings separators color  
+
 ## [20.9.0] - 2024-10-17
 ### Improvements
 
