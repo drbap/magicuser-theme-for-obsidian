@@ -1,5 +1,13 @@
 # Changelog
 
+## [20.11.0] - 2024-10-20
+### Improvements
+- Icons and Folder menu (Style Settings organization and new features)
+- New editor collapse icon color.
+- Editor collapse icon size (live preview, source and reading modes)
+- Editor collapse icon color
+- Editor collapse icon color collapsed
+
 ## [20.10.0] - 2024-10-19
 ### Improvements
 
