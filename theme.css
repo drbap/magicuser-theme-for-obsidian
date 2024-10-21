@@ -7875,6 +7875,10 @@ body.mu-global-font-mode {
   transform: scale(var(--mu-collapse-icon-size));
 }
 
+.mu-hide-reading-indicator {
+  --mu-reading-indicator-width: 0;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -9152,6 +9156,11 @@ settings:
         min: 0
         max: 1
         step: 0.05
+    -
+        id: mu-hide-reading-indicator
+        title: Hide reading indicator 
+        description: Hide reading indicator
+        type: class-toggle
     -
         id: mu-hide-heading-labels
         title: Hide headings labels 
