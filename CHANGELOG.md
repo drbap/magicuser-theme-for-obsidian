@@ -1,5 +1,10 @@
 # Changelog
 
+## [20.12.0] - 2024-10-20
+### Improvements
+
+- Hide reading indicator toggle (Reading mode submenu -> Reading indicators and labels)
+
 ## [20.11.0] - 2024-10-20
 ### Improvements
 - Icons and Folders menu (Style Settings organization and new features)
