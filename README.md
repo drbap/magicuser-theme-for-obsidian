@@ -1187,6 +1187,22 @@ Style Settings:
 - **Commander**
 - **Banners**
 
+## Why is it called MagicUser?
+
+The name “**MagicUser**” for the themes I create has a deep meaning for me:
+
+1. **Like a Magic User Class:** It references the concept of a “MagicUser” class in object-oriented programming languages. Similar to how a programmer uses a class to define objects. MagicUser class would be used to create magic users. Notably, “MagicUser” follows the common convention in many programming languages of writing class names in PascalCase, where the first letter of each word is capitalized.
+
+2. **Personal Connection:** But there’s a deeper meaning! This resonates strongly with me because in the late 80s and 90s, I played a game series that had a huge impact on my life, called _Quest for Glory_ (originally known as _Hero’s Quest: So You Want to Be a Hero_). You could play as a fighter, a thief, or as a magic user/wizard. As you can guess, I played as the **magic user**.
+
+    - In the second game, there was a quest where the player could strive to become a **Paladin**. The core values of the Paladin class resonated deeply with me. Still remember that board of quests, one of them was **“The Way of the Paladin: To seek. To learn. To do.”** Even though it was a game, the values became a guiding light for me, emphasizing seeking knowledge, continuous learning, and using that knowledge and your abilities to help others.
+
+    - If you played the game and were good enough to become a Paladin, this only happened at the end of the second game (or during the third game).
+
+While themes may come and go, hopefully, the underlying message will remain a constant.
+
+Now you know the reasons why it’s called **MagicUser**.
+
 ## Feedback
 
 Have suggestions for new features, usability improvements, or found a bug? Your feedback is appreciated! Submit an issue on GitHub and I'll do my best to respond as soon as possible. Every voice matters and helps shape the future of this theme. Thanks.
