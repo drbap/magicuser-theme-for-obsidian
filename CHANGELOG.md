@@ -1,5 +1,39 @@
 # Changelog
 
+## [21.0.0] - 2024-12-06
+### Improvements
+
+- **New:** **Automatic Rainbow Colored Folders.** You can activate/deactivate this feature using the Command Palette.
+- **New:** **Automatic Rainbow-Colored Folder Names and Icons.** Folder and subfolder names and icons will be colored (no background color change). When you open a folder, it will display the "open folder" area feature. You can also toggle this feature (activate/deactivate) using the Command Palette.
+- **New:** **Initial Color for Automatic Rainbow Folders** (slider). This feature allows you to set the starting color for the automatic rainbow color scheme applied to your folders and subfolders. This means you can determine the color assigned to the first folder in a hierarchy, and subsequent folders will follow the rainbow spectrum from that point.
+
+- Redesigned **numbered rainbow folders and subfolders** (Folders starting with 01 or 001 to 08 or 008).
+
+- **New Folder and File Colors:**
+    - You can select colors more intuitively using color pickers.
+    - You can select specific colors for **closed folders**, **open folders**, and **files** (for both light and dark modes).
+
+- **New Folder Icon Styles:** You can select from 3 different folder styles for open and closed states (in Style Settings).
+
+- **UI Settings** menu was renamed to **User Interface** menu.
+- **Icons and Folders** submenu was renamed to **Icons, Folders, and Sidebars**.
+- **New Vault title and inline title submenu** (under the User Interface menu).
+- **New Lists submenu** (under the User Interface menu).
+- **New Blockquote submenu** (under the User Interface menu).
+- **New Horizontal Rule and Dividers submenu** (under the User Interface menu).
+- **New Frontmatter Properties submenu** (under User Interface -> Frontmatter Properties):
+    - **Frontmatter container background color** (for live preview and reading mode). You can change this color in Style Settings: User Interface -> Frontmatter Properties submenu.
+    - **New Frontmatter properties title color.** You can select the desired color for light and dark modes in Style Settings.
+    - **New Frontmatter property color.** You can select the desired color in Style Settings.
+
+- Improved files and folders dragging with adjustments to highlight icons (based on the chosen accent color).
+
+- **New:** **Disable sidebar files and folders styles.** Activate this option to use plugins for coloring files and folders.
+
+- Numerous small adjustments for overall theme consistency (nav collapse icon color, subthemes, etc.).
+
+**Removed:** File icon saturation and Folder icon saturation (sliders).
+
 ## [20.12.0] - 2024-10-20
 ### Improvements
 
