@@ -127,7 +127,7 @@ How it Works:
 </details>
 
 <details>
-<summary><b>UI Settings</b> - <i>click to expand</i></summary>
+<summary><b>User Interface</b> - <i>click to expand</i></summary>
 
 Submenus:
 
@@ -148,14 +148,15 @@ Submenus:
 - **List marker** color
 - **List marker collapsed** color
 
-◼ **Icons and Folders**
+◼ **Icons, Folders and Sidebars**
 
 - **Folder name** color (light and dark modes)
 - **Folder icon** color
 - **File icon** color
 - **Icon focused** color
-- **Folder icons** color **saturation** slider (0 = gray).
-- **File icons** color **saturation** slider (0 = gray).
+- **Folder icons** color.
+- Select **closed and opened folder icons**.
+- **File icons** color.
 - Sidebars **collapse icon** color (folder collapse, outline collapse and others).
 - Show/hide **folder icons**
 - Show/hide **file icons**
@@ -216,7 +217,7 @@ Submenus:
 - Scrollbar **thumb** color.
 - Scrollbar **thumb hover** color.
 
-◼ **UI Advanced Settings** (Desktop Version)
+◼ **UI Advanced** (Desktop Version)
 
 - **Warm screen mode** (slider).
 - Activate **distraction-free mode**.
@@ -313,6 +314,53 @@ Submenus:
 
 </details>
 
+## Automatic Rainbow Folders
+
+![Automatic rainbow folders - gif](images/magicuser_automatic_rainbow_colored_folders.gif)
+
+![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders.png)
+
+
+- **Automatic Rainbow Colored Folders.** You can activate/deactivate this feature using the Command Palette.
+
+## Automatic Rainbow-Colored Folder Names and Icons
+
+![Automatic rainbow folders - gif](images/magicuser_automatic_rainbow_colored_folders_names_icons.gif)
+
+![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders_name_icons.png)
+
+- **Automatic Rainbow-Colored Folder Names and Icons.** Folder and subfolder names and icons will be colored (no background color change). You can also toggle this feature (activate/deactivate) using the Command Palette.
+
+### Initial Color for Automatic Rainbow Folders (Slider)
+
+- This feature allows you to set the starting color for the automatic rainbow color scheme applied to your folders and subfolders. This means you can determine the color assigned to the first folder in a hierarchy, and subsequent folders will follow the rainbow spectrum from that point.
+
+## Numbered Rainbow Folders
+
+![Numbered rainbow colored Special Folders](images/magicuser_theme_numbered_rainbow_folders.png)
+
+- When activated, this mode will highlight the background of folders starting with the numbers "01" and/or "001" to "08" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
+- All **subfolders** will have the same color of the top folder.
+
+Activate this mode using the Style Settings plugin:
+> **User Interface** -> **Icons, Folders and Sidebars** -> Numbered rainbow colored folders
+
+## Select Folder Icons (3 Styles)
+
+![Select folder icons 1 - gif](images/magicuser_select_folder_icons.gif)
+
+![Select folder icons 1 - gif](images/magicuser_select_folder_icons_02.gif)
+
+![Select folder icons overview](images/magicuser_theme_folder_icons.png)
+
+- **Folder Icon Styles:** You can select from 3 different folder styles for open and closed states (in Style Settings).
+
+- **Folder and File Colors:**
+    - You can select colors more intuitively using color pickers.
+    - You can select specific colors for **closed folders**, **open folders**, and **files** (for both light and dark modes).
+
+- You can also show/hide **folder icons** and **file icons**.
+
 ## Cards UI
 
 ![MagicUser Cards UI](images/magicuser_theme_cards_ui_01.png)
@@ -356,7 +404,7 @@ Style Settings:
 
 Style Settings:
 
-> **UI Settings** -> **Icons and Folders** -> *Slanted breadcrumb layout*
+> **User Interface** -> **Icons, Folders and Sidebars** -> *Slanted breadcrumb layout*
 
 ## MagicUser laser
 
@@ -368,7 +416,7 @@ Enhance your reading experience with personalized reading focus and comfort.
 - MagicUser laser will be displayed in live preview, source and reading modes.
 
 Style Settings:
-> **UI Settings** -> **Laser** -> MagicUser laser
+> **User Interface** -> **Laser** -> MagicUser laser
 
 ### **Laser - Style Settings Options**
 
@@ -397,7 +445,7 @@ This feature dynamically **adjusts the font size** of the current line for enhan
 - **Active line zoom** can be toggled on or off via a shortcut key or the Command Palette.
 
 Style Settings:
-> **UI Settings** -> **Line Highlight** -> active line zoom
+> **User Interface** -> **Line Highlight** -> active line zoom
 
 ## Hover Underline
 
@@ -407,7 +455,7 @@ Style Settings:
 - **Toggle hover underline** (shortcut and/or Command Palette).
 
 Style Settings:
-> **UI Settings** -> **Line Highlight** -> **Hover underline** submenu
+> **User Interface** -> **Line Highlight** -> **Hover underline** submenu
 
 **Hover underline submenu**.
 - Select hover underline **style** (*default*, *dashed*, *dotted*,*double*).
@@ -416,11 +464,9 @@ Style Settings:
 - Select the **gap between text and hover underline** (slider).
   
 
-## Folder Icons, File Icons and Colored Indent Guides
+## Colored Indent Guides
 
-![Indent Guides](images/magicuser_indent_guides.png)
-
-You can customize the **indent guides colors** using the Style Settings plugin (independent colors for light and dark modes). You can also show/hide **folder icons** and **file icons**.
+You can customize the **indent guides colors** using the Style Settings plugin (independent colors for light and dark modes).
 
 ## Sidebar Open Folder Area
 
@@ -429,22 +475,6 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 - Style Settings: select sidebar open folder area **border color**.
 - Style Settings: select sidebar open folder area **background color**.
 - Style Settings: **hide** sidebar open folder area.
-
-## Rainbow Folders
-
-![Rainbow Colored Special Folders](images/magicuser_special_folders.png)
-
-- When activated, this mode will highlight the background of folders starting with the numbers "01" and/or "001" to "08" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
-- All **subfolders** will have the same color of the top folder.
-
-Activate this mode using the Style Settings plugin:
-> **UI Settings** -> **Icons and Folders** -> Rainbow colored background folders 
-
-### Rainbow Subfolders (Nested Rainbow Folders)
-
-![Nested Rainbow Folders](images/magicuser_rainbow_subfolders.png)
-
-- You can start your **folder structure numbering** in a subfolder.
   
 ## Dark Sidebar (Light Mode)
 
@@ -521,7 +551,7 @@ Style Settings:
 - Tags **border hover** color
 
 Style Settings:
->** UI Settings** -> Tags
+>** User Interface** -> Tags
 
 ### 44 preset tags layout with icons
 ```md
@@ -594,7 +624,7 @@ Style Settings:
 
 Style Settings:
 
-> UI Settings -> UI Advanced Settings -> **Warm screen mode**
+> User Interface -> UI Advanced -> **Warm screen mode**
 
 - Instead of just dimming the screen, the **warm scren mode** adjusts the light spectrum towards warmer tones (red, orange, yellow) and reduces cooler tones (e.g. blue). 
 - Warmer tones are considered less harsh on the eyes, especially in **low-light environments** or extended use.
@@ -612,7 +642,7 @@ Style Settings:
 
 To show the left ribbon, place your cursor on the left side of the screen, it will hide again when you move your cursor away from the left side of the screen.
 
-- You can also auto hide the **status bar** (UI Advanced Settings).
+- You can also auto hide the **status bar** (UI Advanced).
 
 ![Distraction-free Mode Draggable](images/magicuser_theme_distraction_free_draggable.gif)
 
@@ -625,7 +655,7 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 - Toggle total concentration mode quickly using a **shortcut** or **Command Palette**.
 
 Style Settings:
-> **UI Settings** -> **UI Advanced Settings** -> Total concentration mode
+> **User Interface** -> **UI Advanced** -> Total concentration mode
 
 ## Dataview Tables to Cards
 
@@ -1135,7 +1165,7 @@ Style Settings: **Preset tables**
 - **New**: **Plain data** (simple layout for dataview tables)
 
 Style Settings:
-> **UI Settings** -> **Tables** -> Preset tables
+> **User Interface** -> **Tables** -> Preset tables
 
 ![Preset tables - gif](images/magicuser_theme_table_presets.gif)
 
