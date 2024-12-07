@@ -22,8 +22,6 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 ## Style Settings - Theme Options
 
-![MagicUser Theme - Compatible with Style Settings](images/magicuser_style_settings_01.png)
-
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
 <details open="open">
