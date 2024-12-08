@@ -80,7 +80,6 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 ![MagicUser BG Themes](images/magicuser_preset_bg_themes_light.png)
 
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
-- **Cards UI**.
 
 ### MagicUser Chroma Amulet Theme
 
