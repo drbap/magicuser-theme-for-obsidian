@@ -1,5 +1,20 @@
 # Changelog
 
+## [21.1.0] - 2024-12-08
+### Improvements`
+
+- *New* Style Settings option: **Global font stylistic set** (when supported by the selected font).
+  - Advanced typographic features in OpenType fonts. For example, if you are using JetBrains Mono as the global font you can type `'ss01', 'cv10', 'zero'`to enable these stylistic sets (including slashed zero).
+- *New* Style Settings option: **Sidebar search panel background color**.
+- *New* Style Settings option: **Sidebar top buttons container background color**.
+- *New* Style Settings option: **Divider color**.
+- *New* Style Settings option: **Divider width** (slider 0 to 8px).
+- *New* Style Settings option: **Divider hover width** (slider 0 to 8px).
+- *New* **Modals submenu** (in User Interface).
+  - Select modals border color.
+  - Select modals border width.
+- **Fixed**: Automatic rainbow folders - breadcrumb foreground color (and hover).
+
 ## [21.0.0] - 2024-12-06
 ### Improvements
 
