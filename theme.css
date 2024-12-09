@@ -134,8 +134,10 @@ body {
   /* Dividers */
   --divider-color: var(--mu-divider-color);
   --divider-color-hover: var(--mu-divider-color-hover);
-  --divider-width: 1px;
-  --divider-width-hover: 3px;
+  --mu-divider-width-value: 1;
+  --mu-divider-hover-width-value: 3;
+  --divider-width: calc(var(--mu-divider-width-value) * 1px);
+  --divider-width-hover: calc(var(--mu-divider-hover-width-value) * 1px);
   --divider-vertical-height: calc(100% - var(--header-height));
 
   /* Dragging */
@@ -404,7 +406,9 @@ body {
   --modal-max-width: 1100px;
   --modal-max-height: 1000px;
   --modal-max-width-narrow: 800px;
-  --modal-border-width: var(--border-width);
+  --mu-border-width-value: 1;
+  --mu-border-width: calc(var(--mu-border-width-value) * 1px);
+  --modal-border-width: var(--mu-border-width);
   --modal-border-color: #007fff30;
   --modal-radius: var(--radius-l);
   --modal-community-sidebar-width: 280px;
@@ -503,7 +507,7 @@ body {
   --tab-container-background: var(--background-secondary);
   --tab-divider-color: #007fff20;
   --tab-outline-color: var(--divider-color);
-  --tab-outline-width: 1px;
+  --tab-outline-width: 0;
   --tab-curve: 6px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
@@ -644,6 +648,7 @@ body {
   --mu-font-ui: Inter, Helvetica, Arial, sans-serif;
   --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
+  --mu-global-font-stylistic-set: normal;
 
   /* UI Settings - User Interface */
   --ui-status-bar: 1;
@@ -831,6 +836,11 @@ body {
   --mu-tags-hashtag-padding: calc(var(--mu-tags-hashtag-padding-value)*1px);
   --tag-radius-value: 1;
   --tag-radius: calc(var(--tag-radius-value)*1em);
+
+  /* Sidebar */
+  --mu-sidebar-top-buttons-container-bg-color: var(--background-secondary);
+  --mu-sidebar-bottom-vault-profile-bg-color: var(--background-secondary);
+  --mu-suggestion-search-panel-bg-color: var(--background-secondary);
   --mu-sidebar-pane-numbers: #007fff;
 
   --mu-cards-border: var(--mu-background-color-1);
@@ -3837,7 +3847,7 @@ input[type=date] {
   color: var(--mu-code-attribute);
 }
 
-/* Excalidraw adjustments */
+/* Excalidraw */
 
 .excalidraw .HelpDialog__shortcut {
   color: var(--text-primary);
@@ -3993,6 +4003,7 @@ body:not(.is-mobile) .workspace-ribbon.mod-left:before {
 
 body:not(.is-mobile) .workspace-ribbon.mod-left {
   transition: none;
+  border-right: 0;
 }
 
 /* Distraction-free mode */
@@ -4068,6 +4079,16 @@ body:not(.is-mobile).mu-hide-nav-buttons-container {
 
 body:not(.is-mobile) .nav-buttons-container {
   display: var(--ui-nav-buttons-container);
+}
+
+/* Sidebar top bar - new adjustments */
+
+body:not(.is-mobile) .nav-header {
+  background-color: var(--mu-sidebar-top-buttons-container-bg-color);
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--mu-sidebar-bottom-vault-profile-bg-color);
 }
 
 /* Top left titlebar buttons */
@@ -6860,6 +6881,14 @@ table tr>td>i.muc:hover>span {
   color: var(--mu-folder-text-color) !important;
 }
 
+body.mu-automatic-rainbow-folders .view-header-breadcrumb {
+  color: var(--text-muted);
+}
+
+body.mu-automatic-rainbow-folders .view-header-breadcrumb:hover {
+  color: var(--text-accent) !important;
+}
+
 .view-header-breadcrumb-separator {
   margin: 0 2px;
   color: #a3a3a348 !important;
@@ -7121,7 +7150,7 @@ body.is-mobile .workspace-drawer-header-name-text {
   color: var(--mu-icon);
 }
 
-/* Extra Mobile Adjustments */
+/* Mobile */
 body.is-mobile {
   --mu-folder-zoom: 100%;
   --mu-notes-icon-zoom: 100%;
@@ -8004,7 +8033,7 @@ a.tag[href="#magic"]::after,
   content: ' ✨';
 }
 
-/* 1.6.2 adjustments */
+/* 1.6.2 */
 .workspace-drawer-vault-name {
   --vault-profile-font-weight: var(--font-semibold);
   color: var(--vault-name-color);
@@ -8110,6 +8139,7 @@ body.mu-global-font-mode {
   --h4-font: var(--mu-global-font);
   --h5-font: var(--mu-global-font);
   --h6-font: var(--mu-global-font);
+  font-feature-settings: var(--mu-global-font-stylistic-set);
 }
 
 /* Indicator size */
@@ -8120,6 +8150,11 @@ body.mu-global-font-mode {
 
 .mu-hide-reading-indicator {
   --mu-reading-indicator-width: 0;
+}
+
+/* Suggestion - search panel */
+body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
+  background-color: var(--mu-suggestion-search-panel-bg-color);
 }
 
 /* Style Settings */
@@ -8453,6 +8488,24 @@ settings:
         max: 5
         step: 1
     -
+        id: mu-divider-color
+        title: Divider color
+        type: variable-themed-color
+        description: Select panel divider color
+        format: hex
+        opacity: false
+        default-light: '#007fff10'
+        default-dark: '#007fff10'
+    -
+        id: mu-divider-width-value
+        title: Divider width
+        description: Set the divider width (0 =  no divider)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 8
+        step: 1 
+    -
         id: mu-divider-color-hover
         title: Divider hover color
         type: variable-themed-color
@@ -8462,6 +8515,15 @@ settings:
         default-light: '#007fff'
         default-dark: '#007fff'
     -
+        id: mu-divider-hover-width-value
+        title: Divider hover width
+        description: Set the divider hover width (0 =  no divider)
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 8
+        step: 1 
+    -
         id: mu-menu-separator-color
         title: Menu and settings separators color
         type: variable-themed-color
@@ -8470,6 +8532,30 @@ settings:
         opacity: true
         default-light: '#0072d322'
         default-dark: '#0072d322'
+    -
+        id: magicuser-theme-modals
+        title: Modals
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: modal-border-color
+        title: Modals border color
+        type: variable-themed-color
+        description: Select modals border color
+        format: hex
+        opacity: true
+        default-light: '#007fff30'
+        default-dark: '#007fff30'
+    -
+        id: mu-border-width-value
+        title: Modals border width
+        description: Set modals border width (0 =  no divider)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 8
+        step: 1 
     -
         id: magicuser-theme-frontmatter
         title: Frontmatter Properties
@@ -8703,6 +8789,33 @@ settings:
         title: Dark sidebar (light mode)
         description: Turn on dark sidebar (light mode - normal UI)
         type: class-toggle
+    -
+        id: mu-sidebar-top-buttons-container-bg-color
+        title: Sidebar top buttons container background color
+        type: variable-themed-color
+        description: Select sidebar top buttons container background color
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'    
+    -
+        id: mu-sidebar-bottom-vault-profile-bg-color
+        title: Sidebar vault profile background color
+        type: variable-themed-color
+        description: Select sidebar vault profile background color (bottom container)
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'    
+    -
+        id: mu-suggestion-search-panel-bg-color
+        title: Sidebar search panel background color
+        type: variable-themed-color
+        description: Select sidebar search/suggestions panel background color
+        format: hex
+        opacity: false
+        default-light: '#d1dfff'
+        default-dark: '#001122'
     -
         id: mu-folder-area-border
         title: Sidebar open folder area border
@@ -10096,6 +10209,12 @@ settings:
         type: variable-text
         description: Select global font (global font mode)
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
+    -
+        id: mu-global-font-stylistic-set
+        title: Global font stylistic set
+        type: variable-text
+        description: Select global font stylistic set (when supported by the selected font). Advanced typographic features in OpenType fonts.
+        default: normal
     -
         id: text-normal
         title: Theme text color
