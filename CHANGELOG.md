@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.2.1] - 2024-12-09
+### Fixed
+- Hide indent guides description (Style Settings).
+
 ## [21.2.0] - 2024-12-09
 ### Improvements
 
