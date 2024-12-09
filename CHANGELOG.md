@@ -1,7 +1,17 @@
 # Changelog
 
+## [21.2.0] - 2024-12-09
+### Improvements
+
+- New Style Settings option: **Hide indent guides** (sidebars and editor).
+- Style Settings: **Removed orange submenu icons**.
+- Modals submenu renamed to **Modals and Prompts**.
+- Modals and Prompts moved one menu level up (new icon).
+- Transparent prompts and compact prompts moved to Modals and Prompts submenu.
+- Fixed: Automatic rainbow folders -> dark sidebar in light mode.
+
 ## [21.1.0] - 2024-12-08
-### Improvements`
+### Improvements
 
 - *New* Style Settings option: **Global font stylistic set** (when supported by the selected font).
   - Advanced typographic features in OpenType fonts. For example, if you are using JetBrains Mono as the global font you can type `'ss01', 'cv10', 'zero'` to enable these stylistic sets (including slashed zero).
