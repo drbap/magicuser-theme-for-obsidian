@@ -425,8 +425,8 @@ body {
   --prompt-width: 700px;
   --prompt-max-width: 80vw;
   --prompt-max-height: 70vh;
-  --prompt-border-width: var(--border-width);
-  --prompt-border-color: #007fff30;
+  --prompt-border-width: var(--modal-border-width);
+  --prompt-border-color: var(--modal-border-color);
 
   /* Radiuses */
   --radius-s: 4px;
@@ -5392,36 +5392,8 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hide-ui-elements"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12s2.545-5 7-5c4.454 0 7 5 7 5s-2.546 5-7 5c-4.455 0-7-5-7-5z'/%3E%3Cpath d='M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/%3E%3Cpath d='M21 17v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2'/%3E%3Cpath d='M21 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-laser"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 4V2'/%3E%3Cpath d='M15 16v-2'/%3E%3Cpath d='M8 9h2'/%3E%3Cpath d='M20 9h2'/%3E%3Cpath d='M17.8 11.8 19 13'/%3E%3Cpath d='M15 9h0'/%3E%3Cpath d='M17.8 6.2 19 5'/%3E%3Cpath d='m3 21 9-9'/%3E%3Cpath d='M12.2 6.2 11 5'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-hover-underline"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2'/%3E%3Cpath d='M7 8h10'/%3E%3Cpath d='M7 12h10'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-glow"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 3v1'/%3E%3Cpath d='M12 20v1'/%3E%3Cpath d='M3 12h1'/%3E%3Cpath d='M20 12h1'/%3E%3Cpath d='m18.364 5.636-.707.707'/%3E%3Cpath d='m6.343 17.657-.707.707'/%3E%3Cpath d='m5.636 5.636.707.707'/%3E%3Cpath d='m17.657 17.657.707.707'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-indicator"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 11V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6'/%3E%3Cpath d='m12 12 4 10 1.7-4.3L22 16Z'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -5492,6 +5464,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-reading-mode-options"] .style-settings-collapse-indicator::after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z'/%3E%3Cpath d='M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-modals"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 21h10'/%3E%3Crect width='20' height='14' x='2' y='3' rx='2'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -5579,6 +5558,7 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content {
   background-color: var(--mu-dark-sidebar-color);
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
@@ -5613,11 +5593,11 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-conten
   color: #0072d3;
 }
 
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
-body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
-body:not(.mu-cards-interface).outgoing-link-pane>.tree-item-self {
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-self.nav-file-title:not(.is-being-dragged),
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .tree-item-flair,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .search-params .setting-item-name,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).theme-light.mu-sidebar-dark .workspace-leaf-content .backlink-pane>.tree-item-self,
+body:not(.mu-cards-interface, .mu-automatic-rainbow-folders).outgoing-link-pane>.tree-item-self {
   color: #bfbfbf !important;
 }
 
@@ -5812,7 +5792,7 @@ body.mu-rainbow-folders .nav-folder-title[data-path^="08"]:hover {
 }
 
 /* Automatic rainbow folders */
-
+body:not(.mu-cards-interface).theme-light.mu-automatic-rainbow-folders.mu-sidebar-dark .workspace-leaf-content,
 body.mu-automatic-rainbow-folders {
   --mu-folder-icon-color: #000 !important;
   --mu-file-icon-color: #000 !important;
@@ -7268,6 +7248,7 @@ body:not(.is-mobile).mu-cards-interface {
   --mu-titlebar-background: var(--mu-background-color-2) !important;
   --divider-color: transparent !important;
   --ribbon-background: var(--mu-background-color-2) !important;
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
 }
 
 body:not(.is-mobile).mu-cards-interface .workspace-tab-header::before,
@@ -8152,6 +8133,18 @@ body.mu-global-font-mode {
   --mu-reading-indicator-width: 0;
 }
 
+body.mu-hide-indent-guides {
+  --indentation-guide-width: 0;
+  --indentation-guide-color: transparent;
+  --indentation-guide-color-active: transparent;
+  --mu-indent-color-level-1: transparent;
+  --mu-indent-color-level-2: transparent;
+  --mu-indent-color-level-3: transparent;
+  --mu-indent-color-level-4: transparent;
+  --mu-indent-color-level-5: transparent;
+  --mu-indent-color-level-6: transparent;
+}
+
 /* Suggestion - search panel */
 body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
   background-color: var(--mu-suggestion-search-panel-bg-color);
@@ -8533,30 +8526,6 @@ settings:
         default-light: '#0072d322'
         default-dark: '#0072d322'
     -
-        id: magicuser-theme-modals
-        title: Modals
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: modal-border-color
-        title: Modals border color
-        type: variable-themed-color
-        description: Select modals border color
-        format: hex
-        opacity: true
-        default-light: '#007fff30'
-        default-dark: '#007fff30'
-    -
-        id: mu-border-width-value
-        title: Modals border width
-        description: Set modals border width (0 =  no divider)
-        type: variable-number-slider
-        default: 1
-        min: 0
-        max: 8
-        step: 1 
-    -
         id: magicuser-theme-frontmatter
         title: Frontmatter Properties
         type: heading
@@ -8780,7 +8749,7 @@ settings:
         default-dark: '#007fff40'
     -
         id: magicuser-theme-sidebar
-        title: Sidebar
+        title: Sidebars
         type: heading
         level: 4
         collapsed: true
@@ -8907,6 +8876,11 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-hide-indent-guides
+        title: Hide indent-guides
+        description: Hide indent guides
+        type: class-toggle
     -
         id: mu-indent-color-level-1
         title: Indent guide - color 1
@@ -9709,6 +9683,60 @@ settings:
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
     -
+        id: magicuser-theme-modals
+        title: Modals and Prompts
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: modal-border-color
+        title: Modals and prompts border color
+        type: variable-themed-color
+        description: Select modals border color
+        format: hex
+        opacity: true
+        default-light: '#007fff30'
+        default-dark: '#007fff30'
+    -
+        id: mu-border-width-value
+        title: Modals and prompts border width
+        description: Set modals border width (0 =  no border)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 8
+        step: 1
+    -
+        id: mu-transparent-prompts-menus
+        title: Transparent menus, modals and prompts
+        description: Activate transparency (menus, modals and prompts)
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-transparency-menus-level
+        title: Transparency level
+        description: Adjust the opacity (transparent menus, modals and prompts)
+        type: variable-number-slider
+        default: 0.5
+        min: 0.1
+        max: 1
+        step: 0.05
+    -
+        id: mu-transparency-blur-level-value
+        title: Transparent elements - blur level
+        description: Adjust the blur level of transparent menus, modals and prompts
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 20
+        step: 1
+    -  
+        id: mu-compact-prompt
+        title: Compact prompts
+        description: Activate compact version of command palette and prompts
+        type: class-toggle
+        addCommand: true
+    -
         id: magicuser-theme-scrollbars
         title: Scrollbars
         type: heading
@@ -9803,36 +9831,6 @@ settings:
         default: 700
         min: 500
         max: 2560
-        step: 1
-    -  
-        id: mu-compact-prompt
-        title: Compact prompts
-        description: Activate compact version of command palette and prompts
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-transparent-prompts-menus
-        title: Transparent menus, modals and prompts
-        description: Activate transparency (menus, modals and prompts)
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-transparency-menus-level
-        title: Transparency level
-        description: Adjust the opacity (transparent menus, modals and prompts)
-        type: variable-number-slider
-        default: 0.5
-        min: 0.1
-        max: 1
-        step: 0.05
-    -
-        id: mu-transparency-blur-level-value
-        title: Transparent elements - blur level
-        description: Adjust the blur level of transparent menus, modals and prompts
-        type: variable-number-slider
-        default: 8
-        min: 0
-        max: 20
         step: 1
     -
         id: magicuser-theme-hide-ui-elements
