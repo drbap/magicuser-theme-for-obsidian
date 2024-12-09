@@ -220,9 +220,6 @@ Submenus:
 - Activate **distraction-free mode**.
 - Activate **total concentration mode**.
 - **File line width** (note width).
-- **Compact command palette and prompts** (toggle).
-- **Transparent menus** and **prompts** (toggle).
-- **Transparency level adjustment** (slider).
 
 **Hide UI Elements** submenu:
 - Hide **vault name**.
