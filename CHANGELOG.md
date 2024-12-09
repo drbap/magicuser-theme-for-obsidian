@@ -6,6 +6,8 @@
 - New Style Settings option: **Hide indent guides** (sidebars and editor).
 - Style Settings: **Removed orange submenu icons**.
 - Modals submenu renamed to **Modals and Prompts**.
+- Modals and Prompts border color.
+- Modals and Prompts border width.
 - Modals and Prompts moved one menu level up (new icon).
 - Transparent prompts and compact prompts moved to Modals and Prompts submenu.
 - Fixed: Automatic rainbow folders -> dark sidebar in light mode.
