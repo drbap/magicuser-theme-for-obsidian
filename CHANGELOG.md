@@ -4,7 +4,7 @@
 ### Improvements`
 
 - *New* Style Settings option: **Global font stylistic set** (when supported by the selected font).
-  - Advanced typographic features in OpenType fonts. For example, if you are using JetBrains Mono as the global font you can type `'ss01', 'cv10', 'zero'`to enable these stylistic sets (including slashed zero).
+  - Advanced typographic features in OpenType fonts. For example, if you are using JetBrains Mono as the global font you can type `'ss01', 'cv10', 'zero'` to enable these stylistic sets (including slashed zero).
 - *New* Style Settings option: **Sidebar search panel background color**.
 - *New* Style Settings option: **Sidebar top buttons container background color**.
 - *New* Style Settings option: **Divider color**.
