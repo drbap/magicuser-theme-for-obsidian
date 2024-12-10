@@ -10209,9 +10209,9 @@ settings:
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
     -
         id: mu-global-font-stylistic-set
-        title: Global font stylistic set
+        title: Global font stylistic sets
         type: variable-text
-        description: Select global font stylistic set (when supported by the selected font). Advanced typographic features in OpenType fonts.
+        description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
         default: normal
     -
         id: text-normal
