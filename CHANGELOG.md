@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.2.2] - 2024-12-09
+### Fixed
+- Global font stylistic sets description (Style Settings).
+
 ## [21.2.1] - 2024-12-09
 ### Fixed
 - Hide indent guides description (Style Settings).
