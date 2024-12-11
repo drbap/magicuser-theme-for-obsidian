@@ -649,6 +649,8 @@ body {
   --mu-font-mono: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, Monaco, "Courier New", monospace;
   --mu-global-font: "JetBrains Mono", Consolas, "Roboto Mono", Menlo, monospace;
   --mu-global-font-stylistic-set: normal;
+  --mu-global-font-letter-spacing: normal;
+  --mu-max-letter-spacing: 2px;
 
   /* UI Settings - User Interface */
   --ui-status-bar: 1;
@@ -870,6 +872,12 @@ body::before {
 .modal-bg {
   opacity: 0.3 !important;
   background-color: var(--mu-modal-background);
+}
+
+.prompt,
+.modal {
+  border: 0;
+  box-shadow: 0 0 0 var(--modal-border-width) var(--modal-border-color), 0 0 0 var(--modal-border-width) var(--modal-border-color), 0 0 0 var(--modal-border-width) var(--modal-border-color), var(--shadow-l) !important;
 }
 
 /* Files and folders */
@@ -7612,7 +7620,7 @@ body.mu-tags-hide-hashtag .cm-hashtag.cm-hashtag-end {
 .mu-tags-colored a.tag[href="#todo"],
 .mu-tags-colored .cm-tag-todo {
   background-color: #ff7f00;
-  color: #f1f1f1;
+  color: #000;
 }
 
 .mu-tags-colored a.tag[href="#inprogress"],
@@ -8121,6 +8129,7 @@ body.mu-global-font-mode {
   --h5-font: var(--mu-global-font);
   --h6-font: var(--mu-global-font);
   font-feature-settings: var(--mu-global-font-stylistic-set);
+  letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
 }
 
 /* Indicator size */
@@ -10212,6 +10221,12 @@ settings:
         title: Global font stylistic sets
         type: variable-text
         description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
+        default: normal
+    -
+        id: mu-global-font-letter-spacing
+        title: Global font letter spacing
+        type: variable-text
+        description: Set a value in pixels to customize spacing between characters (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
         default: normal
     -
         id: text-normal
