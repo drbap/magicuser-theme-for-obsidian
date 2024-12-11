@@ -5484,6 +5484,13 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   vertical-align: middle;
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-syntax-highlighting"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 7.5 8 10l2 2.5'/%3E%3Cpath d='m14 7.5 2 2.5-2 2.5'/%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .style-settings-collapse-indicator {
   padding-left: 8px;
   color: #828282;
@@ -9486,54 +9493,54 @@ settings:
         type: class-toggle
     -
         id: tag-color
-        title: Tag text foreground color
+        title: Tags text color
         type: variable-themed-color
-        description: Select tag text foreground color
+        description: Select tags text foreground color
         format: hex
         opacity: false
         default-light: '#8b6cef'
         default-dark: '#8b6cef'  
     -
         id: tag-color-hover
-        title: Tag text foreground hover color
+        title: Tags text hover color
         type: variable-themed-color
-        description: Select tag text foreground hover color
+        description: Select tags text foreground hover color
         format: hex
         opacity: false
         default-light: '#a994f3'
         default-dark: '#a994f3'  
     -
         id: tag-background
-        title: Tag background color
+        title: Tags background color
         type: variable-themed-color
-        description: Select tag background color
+        description: Select tags background color
         format: hex
         opacity: true
         default-light: '#8b6cef82'
         default-dark: '#8b6cef82'  
     -
         id: tag-background-hover
-        title: Tag background hover color
+        title: Tags background hover color
         type: variable-themed-color
-        description: Select tag background hover color
+        description: Select tags background hover color
         format: hex
         opacity: true
         default-light: '#a994f382'
         default-dark: '#a994f382'
     -
         id: tag-border-color
-        title: Tag border color
+        title: Tags border color
         type: variable-themed-color
-        description: Select tag border color
+        description: Select tags border color
         format: hex
         opacity: true
         default-light: '#0072d3'
         default-dark: '#0072d3'
     -
         id: tag-border-color-hover
-        title: Tag border hover color
+        title: Tags border hover color
         type: variable-themed-color
-        description: Select tag border hover color
+        description: Select tags border hover color
         format: hex
         opacity: true
         default-light: '#00bfff'
@@ -10426,6 +10433,42 @@ settings:
         description: Font used for source mode
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, Monaco, Courier New, monospace
     -
+        id: mu-outline-inline-code
+        title: Outline inline code
+        description: Turn on outline inline code
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-inline-code-border
+        title: Inline code border color
+        type: variable-themed-color
+        description: Inline code border color (outline code on)
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-outline-code
+        title: Outline code block
+        description: Turn on outline code blocks
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-code-block-border
+        title: Code block border color
+        description: Code block border color (outline code on)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: magicuser-theme-syntax-highlighting
+        title: Syntax Highlighting
+        type: heading
+        level: 3
+        collapsed: true
+    -
         id: code-background
         title: Code background color
         type: variable-themed-color
@@ -10483,7 +10526,7 @@ settings:
         default-dark: '#0088f1'
     -
         id: code-tag
-        title: Tag color
+        title: HTML tag color
         type: variable-themed-color
         format: hex
         opacity: false
@@ -10513,36 +10556,6 @@ settings:
         opacity: false
         default-light: '#c300f1'
         default-dark: '#d372ff'
-    -
-        id: mu-outline-inline-code
-        title: Outline inline code
-        description: Turn on outline inline code
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-outline-code
-        title: Outline code block
-        description: Turn on outline code blocks
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-inline-code-border
-        title: Inline code border color
-        type: variable-themed-color
-        description: Inline code border color (outline code on)
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
-    -
-        id: mu-code-block-border
-        title: Code block border color
-        description: Code block border color (outline code on)
-        type: variable-themed-color
-        format: hex
-        opacity: false
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
     - 
         id: magicuser-theme-about
         title: MagicUser Theme
