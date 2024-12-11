@@ -1,5 +1,15 @@
 # Changelog
 
+## [21.4.0] - 2024-12-11
+### Improvements
+- Style Settings: Tags submenu - Improved item clarity and descriptions..
+
+- Style Settings: Code menu - Improved item organization and grouping.
+
+- New **Syntax Highlighting** submenu (Code -> Syntax Highlighting).
+
+- Style Settings: Syntax Highlighting -> **HTML tag color** description.
+
 ## [21.3.0] - 2024-12-10
 ### Improvements
 
