@@ -1,5 +1,14 @@
 # Changelog
 
+## [21.3.0] - 2024-12-10
+### Improvements
+
+- New **global font letter spacing** (global font must be activated). Set a value in pixels to customize spacing between characters to improve readability (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
+
+- **Modals and prompts**: Border width adjustment (1px).
+
+- **Todo tag** adjustment (foreground color).
+
 ## [21.2.2] - 2024-12-09
 ### Fixed
 - Global font stylistic sets description (Style Settings).
