@@ -1,5 +1,10 @@
 # Changelog
 
+## [21.5.0] - 2025-01-05
+### Improvements
+
+- Open in new window border (accent color). When you open the note (new window) it will show a border. When maximized, the border on this type of window will disappear.
+
 ## [21.4.0] - 2024-12-11
 ### Improvements
 - Style Settings: Tags submenu - Improved item clarity and descriptions..
