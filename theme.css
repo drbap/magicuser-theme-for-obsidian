@@ -8166,6 +8166,17 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
   background-color: var(--mu-suggestion-search-panel-bg-color);
 }
 
+/* Window */
+body.is-popout-window.is-focused:not(.is-maximized) {
+  border: 2px solid var(--text-accent);
+}
+
+body.is-popout-window.is-focused:not(.is-maximized) .titlebar {
+  border-top: 2px solid var(--text-accent);
+  border-left: 2px solid var(--text-accent);
+  border-right: 2px solid var(--text-accent);
+}
+
 /* Style Settings */
 
 /* @settings
