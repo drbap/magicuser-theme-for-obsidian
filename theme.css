@@ -574,6 +574,9 @@ body {
   --titlebar-text-color: var(--mu-titlebar-text);
   --titlebar-text-color-focused: var(--mu-titlebar-text);
   --titlebar-text-weight: var(--font-semibold);
+  --mu-new-window-border-value: 1;
+  --mu-new-window-border-width: calc(var(--mu-new-window-border-value) * 1px);
+  --mu-new-window-border-color: #007fff;
 
   /* Toggles */
   --toggle-border-width: 2px;
@@ -8167,14 +8170,14 @@ body:not(.is-mobile) .suggestion-container.mod-search-suggestion .suggestion {
 }
 
 /* Window */
-body.is-popout-window.is-focused:not(.is-maximized) {
-  border: 2px solid var(--text-accent);
+body.is-popout-window {
+  border: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color);
 }
 
-body.is-popout-window.is-focused:not(.is-maximized) .titlebar {
-  border-top: 2px solid var(--text-accent);
-  border-left: 2px solid var(--text-accent);
-  border-right: 2px solid var(--text-accent);
+body.is-popout-window .titlebar {
+  border-top: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+  border-left: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+  border-right: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
 }
 
 /* Style Settings */
@@ -9715,6 +9718,24 @@ settings:
         type: heading
         level: 3
         collapsed: true
+    -
+        id: mu-new-window-border-color
+        title: New window border color
+        type: variable-themed-color
+        description: Select the border color for content opened in a new window
+        format: hex
+        opacity: false
+        default-light: '#007fff'
+        default-dark: '#007fff'
+    -
+        id: mu-new-window-border-value
+        title: New window border width
+        description: Select the border width for content opened in a new window (0 = no border)
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
     -
         id: modal-border-color
         title: Modals and prompts border color
