@@ -1,5 +1,15 @@
 # Changelog
 
+## [21.6.0] - 2025-01-06
+### Improvements
+
+Select border width of the "open in new window" content and also the border color. So you can select different border colors for light and dark modes.
+
+Theme options -> User Interface -> Modals and Prompts
+
+- New window border color. The default color is blue.
+- New window border width. The default width is 1px (0 = no border, maximum is 5px**).
+
 ## [21.5.0] - 2025-01-05
 ### Improvements
 
