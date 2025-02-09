@@ -1,5 +1,10 @@
 # Changelog
 
+## [21.7.0] - 2025-02-08
+### Improvements
+
+- Hide tabs icons (normal and stacked tabs modes) -> Icons, Folders and Sidebars Submenu.
+
 ## [21.6.0] - 2025-01-06
 ### Improvements
 
