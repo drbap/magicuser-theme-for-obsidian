@@ -6911,6 +6911,12 @@ body.mu-automatic-rainbow-folders .view-header-breadcrumb:hover {
   margin-left: -4px;
 }
 
+
+body.mu-hide-tabs-icons .workspace-tabs.mod-stacked .workspace-tab-header-inner-icon,
+body.mu-hide-tabs-icons .workspace-split.mod-vertical.mod-root .workspace-tab-header-container .workspace-tab-header-container-inner .workspace-tab-header-inner-icon {
+  display:none !important;
+}
+
 /* Tabs */
 .workspace .mod-root .workspace-tab-header[data-type="markdown"] .workspace-tab-header-inner-icon,
 .workspace .mod-root .workspace-tab-header[data-type="empty"] .workspace-tab-header-inner-icon {
@@ -8633,6 +8639,11 @@ settings:
         description:  Toggle file icons
         type: class-toggle
         addCommand: true    
+    -
+        id: mu-hide-tabs-icons
+        title: Hide tabs icons
+        description:  Toggle tab icons in normal and stacked tabs
+        type: class-toggle
     -
         id: mu-folder-text-color
         title: Folder name color
