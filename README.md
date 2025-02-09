@@ -1270,5 +1270,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @Medullitus - panel divider hover color suggestion (Style Settings option). Suggestion to select the color of sidebar tags count number.
 - @tr_mstein (Obsidian Forum) - independent outline code for inline code and code block.
 - @damiankorcz - disable alternative checkboxes suggestion.
+- @TineKolenik - hide tabs icons suggestion.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
