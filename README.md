@@ -398,7 +398,7 @@ Style Settings:
 
 Style Settings:
 
-> **User Interface** -> **Icons, Folders and Sidebars** -> Slanted breadcrumb layout
+> **User Interface** -> **Icons, Folders and Sidebars** -> **Breadcrumb** submenu -> Slanted breadcrumb layout
 
 ## MagicUser laser
 
