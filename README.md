@@ -398,7 +398,7 @@ Style Settings:
 
 Style Settings:
 
-> **User Interface** -> **Icons, Folders and Sidebars** -> *Slanted breadcrumb layout*
+> **User Interface** -> **Icons, Folders and Sidebars** -> Slanted breadcrumb layout
 
 ## MagicUser laser
 
@@ -439,7 +439,7 @@ This feature dynamically **adjusts the font size** of the current line for enhan
 - **Active line zoom** can be toggled on or off via a shortcut key or the Command Palette.
 
 Style Settings:
-> **User Interface** -> **Line Highlight** -> active line zoom
+> **User Interface** -> **Line Highlight** -> Active line zoom
 
 ## Hover Underline
 
@@ -478,7 +478,7 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 Style Settings:
 
-> **Preset Themes** -> Dark sidebar (light mode)
+> **User Interface** -> **Icons, Folders and Sidebars** -> **Sidebars** submenu -> Dark sidebar (light mode)
  
 ## Neon Mode
 
@@ -545,7 +545,7 @@ Style Settings:
 - Tags **border hover** color
 
 Style Settings:
->** User Interface** -> Tags
+> **User Interface** -> **Tags** submenu
 
 ### 44 preset tags layout with icons
 ```md
@@ -618,7 +618,7 @@ Style Settings:
 
 Style Settings:
 
-> User Interface -> UI Advanced -> **Warm screen mode**
+> **User Interface** -> **UI Advanced** -> Warm screen mode
 
 - Instead of just dimming the screen, the **warm scren mode** adjusts the light spectrum towards warmer tones (red, orange, yellow) and reduces cooler tones (e.g. blue). 
 - Warmer tones are considered less harsh on the eyes, especially in **low-light environments** or extended use.
