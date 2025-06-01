@@ -161,8 +161,6 @@ Activate this mode using the Style Settings plugin:
 
 ![Select folder icons 1 - gif](images/magicuser_select_folder_icons_02.gif)
 
-![Select folder icons overview](images/magicuser_theme_folder_icons.png)
-
 - **Folder Icon Styles:** You can select from 3 different folder styles for open and closed states (in Style Settings).
 
 - **Folder and File Colors:**
