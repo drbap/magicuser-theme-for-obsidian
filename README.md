@@ -100,15 +100,6 @@ How it Works:
 2. Select theme color using the first slider: **color**.
 3. Adjust the level of **saturation** using the second slider (turn this one closer to zero to greyish tones).
 
-Quick and User-Friendly: The Chroma Amulet preset theme streamlines the theme personalization process, allowing you to create your favorite theme workspace colors effortlessly (using 1 or 2 sliders).
-
-- **Automatic adjustment**: The Chroma Amulet preset automatically changes the color of various interface elements. This includes:
-  - Icons,
-  - Vault name,
-  - Inline title,
-  - Code punctuation,
-  - Sidebars and other UI elements.
-
 > MagicUser Chroma Amulet theme **does not affect your accent color**. So you can still use your favorite accent color with your chosen theme colors.
 
 ### MagicUser Accent Theme
@@ -192,14 +183,11 @@ Style Settings:
 
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
 
-**Style Settings** (**Tabs Submenu**)
+- Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**. You can also customize other tabs colors.
 
-- Select active tab **foreground color** (text and icon color).
-- Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**.
-- *Default tabs* mode: Select active tab **border color**.
-- *Default tabs* mode: Select active tab **border width** (0 = no border).
-- *Stacked tabs* mode: Select active tab **border color**.
-- *Stacked tabs* mode: Select active tab **border width** (0 = no border).
+Style Settings:
+
+> **User Interface** -> **Tabs** submenu
 
 ## Breadcrumb
 
@@ -211,7 +199,7 @@ Style Settings:
 
 Style Settings:
 
-> **User Interface** -> **Icons, Folders and Sidebars** -> **Breadcrumb** submenu -> Slanted breadcrumb layout
+> **User Interface** -> **Icons, Folders and Sidebars** -> **Breadcrumb** submenu
 
 ## MagicUser laser
 
@@ -224,14 +212,6 @@ Enhance your reading experience with personalized reading focus and comfort.
 
 Style Settings:
 > **User Interface** -> **Laser** -> MagicUser laser
-
-### **Laser - Style Settings Options**
-
-- Select **laser focus type** (**Line** or **Area**)
-- Select **laser color** (**7 colors** - blue, green, red, orange, yellow, pink and purple)
-- Select **laser intensity**.
-- Select **laser area size** (slider).
-- Select **laser position** (vertical position). Easily choose where you want the laser to highlight text on the screen. Whether you prefer to start at the top, center, or bottom, simply select your preferred reading position. The default position is in the center of the screen.
 
 ## Reading Mode: Reading Glow Effect and Reading Indicator
 
@@ -263,13 +243,6 @@ Style Settings:
 
 Style Settings:
 > **User Interface** -> **Line Highlight** -> **Hover underline** submenu
-
-**Hover underline submenu**.
-- Select hover underline **style** (*default*, *dashed*, *dotted*,*double*).
-- Select hover underline **color** (independent color for light/dark mode).
-- Select hover underline **thickness** (slider).
-- Select the **gap between text and hover underline** (slider).
-  
 
 ## Colored Indent Guides
 
@@ -344,18 +317,6 @@ Style Settings:
 ## Tags Customization - Colored Tags
 
 ![Colored tags](images/magicuser_theme_colored_tags.gif)
-
-**Tags submenu** (Style Settings)
-- Turn on **colored tags** (44 preset tags)
-- **Tags shape** (0 = square tags)
-- **Spacing** between the text and the hashtag (#) - slider controller
-- **Hide hashtags** (#)
-- Tags **text foreground** color
-- Tags **text foreground hover** color
-- Tags **background** color
-- Tags **background hover** color
-- Tags **border** color
-- Tags **border hover** color
 
 Style Settings:
 > **User Interface** -> **Tags** submenu
@@ -934,31 +895,11 @@ Default theme table layout:
 
 ![Table Layout Style Settings](images/magicuser_tables_layout_preset_themes.png)
 
-- You can customize non-dataview tables using the **Tables submenu**.
-
 - Independent table colors for light and dark modes, you can also select outer and inner border widths (sliders).
-
-![Table Layout Style Settings](images/magicuser_tables_inner_borders_01.png)
-
-![Table Layout Style Settings](images/magicuser_tables_inner_borders.png)
-
-**Tables** submenu (Style Settings):
-- **Preset tables**
-- **Table body** text color
-- **Table headers background** color
-- **Table headers foreground** color
-- **Table rows (odd)** background color
-- **Table rows (even)** background color
-- **Table row hover** background color
-- **Outer table border** width
-- **Inner table borders** width (rows and columns borders)
-- **Disable table row hover**
 
 > Table rounded corners (removed in theme version 19.2.0)
 
 ### Preset Tables
-
-![Preset tables](images/magicuser_style_settings_preset_tables.png)
 
 Style Settings: **Preset tables**
 - `table1` (**column-striped table**)
