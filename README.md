@@ -6,6 +6,10 @@
 
 With the **Style Settings** community plugin, customize a wide range of theme elements to suit your preferences and create a truly engaging and productive workspace.
 
+![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders.png)
+
+![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders_name_icons.png)
+
 ## Installation
 
 1. Open Obsidian **Settings** -> select **Appearance**
@@ -128,16 +132,11 @@ How it Works:
 
 ![Automatic rainbow folders - gif](images/magicuser_automatic_rainbow_colored_folders.gif)
 
-![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders.png)
-
-
 - **Automatic Rainbow Colored Folders.** You can activate/deactivate this feature using the Command Palette.
 
 ## Automatic Rainbow-Colored Folder Names and Icons
 
 ![Automatic rainbow folders - gif](images/magicuser_automatic_rainbow_colored_folders_names_icons.gif)
-
-![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders_name_icons.png)
 
 - **Automatic Rainbow-Colored Folder Names and Icons.** Folder and subfolder names and icons will be colored (no background color change). You can also toggle this feature (activate/deactivate) using the Command Palette.
 
