@@ -8,8 +8,8 @@
 
 ### Fixed
 - Distraction-free mode fix.
-- Inline-title size fix
-- Style Settings: Inline-title resize fix (slider)
+- Inline-title size fix.
+- Style Settings: Inline-title resize fix (slider).
   
 ## [21.7.0] - 2025-02-08
 ### Improvements
