@@ -1,5 +1,16 @@
 # Changelog
 
+## [21.9.0] - 2025-06-27
+### Improvements
+
+- Mobile (Phone and Tablet) adjustments.
+- Settings adjustments (padding, hover, updated text color etc):
+  - Community plugins section
+  - Themes section
+
+### Fixed
+- Backlinks in document
+
 ## [21.8.0] - 2025-06-14
 ### Improvements
 
