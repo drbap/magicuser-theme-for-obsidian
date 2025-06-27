@@ -843,7 +843,7 @@ body {
   --tag-radius: calc(var(--tag-radius-value)*1em);
 
   /* Sidebar */
-  --mu-sidebar-top-buttons-container-bg-color: var(--background-secondary);
+  --mu-sidebar-top-buttons-container-bg-color: transparent;
   --mu-sidebar-bottom-vault-profile-bg-color: var(--background-secondary);
   --mu-suggestion-search-panel-bg-color: var(--background-secondary);
   --mu-sidebar-pane-numbers: #007fff;
@@ -1148,13 +1148,13 @@ input[type="search"] {
   color: var(--mu-icon-focused) !important;
 }
 
-button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
+body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button) {
   color: var(--text-normal);
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-hover);
 }
 
-button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
+body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickable-icon[aria-disabled='true'], .mod-warning, .mod-tappable, .kanban-plugin__new-item-button, .kanban-plugin__lane-action-add, .color-picker__button, .excalidraw .dropdown-menu-item.dropdown-menu-item-base, .Dialog__action-button, .ToolIcon_type_button, .fc-button):hover {
   color: var(--text-normal);
   background-color: var(--background-modifier-hover);
 }
@@ -7118,8 +7118,8 @@ body.is-mobile .nav-folder-children>.tree-item.nav-folder .tree-item.nav-folder:
 }
 
 body.is-mobile .workspace-drawer-header {
-  background-color: var(--mu-background-color-2);
-  border-bottom: 2px solid #82828220;
+  background-color: transparent;
+  margin-bottom: 8px;
 }
 
 body.is-mobile .workspace-drawer-active-tab-header {
@@ -7131,7 +7131,7 @@ body.is-mobile .workspace-drawer-active-tab-header {
 
 body.is-mobile .workspace-drawer-ribbon,
 body.is-mobile .nav-header {
-  background-color: var(--mu-background-color-2);
+  background-color: transparent;
 }
 
 body.is-mobile .mobile-navbar {
@@ -7144,6 +7144,10 @@ body.is-mobile {
 
 body.is-mobile .workspace-drawer-header-name-text {
   color: var(--mu-vault-title);
+}
+
+body.is-mobile .view-header-left {
+  flex: initial;
 }
 
 .is-phone .setting-item-heading {
@@ -7173,6 +7177,8 @@ body.is-mobile .workspace-drawer-active-tab-back-icon {
   color: var(--mu-icon);
 }
 
+body.is-mobile .view-header-nav-buttons,
+body.is-mobile .view-header .view-action,
 body.is-mobile .mobile-navbar-actions,
 body.is-mobile .clickable-icon.nav-action-button,
 body.is-mobile .sidebar-toggle-button {
@@ -8073,7 +8079,6 @@ body.is-mobile .clickable-icon.workspace-drawer-header-icon {
   color: var(--mu-icon);
 }
 
-body.is-mobile .modal-title,
 body.is-mobile .workspace-drawer-active-tab-header select {
   background-color: var(--mu-background-color-2);
 }
@@ -8189,6 +8194,27 @@ body.is-popout-window .titlebar {
   border-top: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
   border-left: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
   border-right: var(--mu-new-window-border-width) solid var(--mu-new-window-border-color) !important;
+}
+
+.community-modal-info-name {
+  margin-bottom: var(--size-4-2);
+}
+
+.community-modal-info-version {
+  margin-top: var(--size-4-2);
+  margin-bottom: var(--size-4-3);
+}
+
+.community-item-updated {
+  color: var(--text-faint);
+}
+
+.community-item:hover {
+  border-color: var(--text-accent);
+}
+
+button.mod-destructive {
+  color: var(--color-red) !important;
 }
 
 /* Style Settings */
