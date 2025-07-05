@@ -258,7 +258,7 @@ body {
 
   /* Horizontal rules */
   --hr-color: var(--mu-hr-color);
-  --hr-thickness: 2px;
+  --hr-thickness: 1px;
 
   /* Icons */
   --icon-size: var(--icon-m);
@@ -357,7 +357,7 @@ body {
   --nav-item-background-selected: #0072d338;
   --nav-item-weight: inherit;
   --nav-item-weight-hover: inherit;
-  --nav-item-weight-active: inherit;
+  --nav-item-weight-active: var(--font-semibold);
   --nav-item-white-space: nowrap;
   --nav-indentation-guide-width: var(--indentation-guide-width);
   --nav-indentation-guide-color: var(--indentation-guide-color);
@@ -6448,6 +6448,17 @@ body:not(.is-mobile).mu-transparent-prompts-menus div:is(.modal .vertical-tab-he
   background: transparent;
 }
 
+.prompt-instruction-command {
+  padding: var(--size-4-1);
+  background: #82828238;
+  border: 1px solid #82828228;
+  border-radius: var(--radius-s);
+}
+
+.mu-no-prompt-instructions .prompt-instructions {
+  display: none;
+}
+
 /* Footnotes */
 .cm-footref.cm-footref.cm-formatting.cm-formatting.cm-formatting-link.cm-formatting-link.cm-formatting-link-start.cm-hmd-barelink.cm-link,
 .cm-hmd-footnote.cm-link .cm-underline {
@@ -7229,7 +7240,10 @@ body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm
   --mu-hover-underline-style: double;
 }
 
-/* cssclasses: readable line width enabled */
+/* 
+cssclasses:
+readable line width enabled 
+*/
 
 .nw100,
 .note-width100 {
@@ -7427,7 +7441,6 @@ body.mu-active-line-zoom .markdown-reading-view>div>div>div:not(.mod-header, .ob
 }
 
 /* Scrollbars */
-
 body:not(.native-scrollbars) ::-webkit-scrollbar {
   width: var(--mu-scrollbar-width);
 }
@@ -8200,9 +8213,17 @@ body.is-popout-window .titlebar {
   margin-bottom: var(--size-4-2);
 }
 
+.community-modal-info-author {
+  margin-bottom: var(--size-4-1);
+}
+
 .community-modal-info-version {
-  margin-top: var(--size-4-2);
+  padding: 8px 0;
+  color: var(--text-normal);
+  border-bottom: var(--hr-thickness) dashed var(--hr-color);
+  margin-top: var(--size-4-1);
   margin-bottom: var(--size-4-3);
+  font-size: var(--font-ui-medium);
 }
 
 .community-item-updated {
@@ -8213,8 +8234,24 @@ body.is-popout-window .titlebar {
   border-color: var(--text-accent);
 }
 
+.clickable-icon.extra-setting-button[aria-label="Uninstall"],
 button.mod-destructive {
   color: var(--color-red) !important;
+}
+
+.community-item-name,
+.suggestion-prefix {
+  font-weight: var(--font-semibold) !important;
+}
+
+.community-modal-info-downloads-text {
+  font-size: var(--font-ui-medium);
+  color: var(--text-normal);
+}
+
+.community-item-downloads-text {
+  font-size: var(--font-ui-small);
+
 }
 
 /* Style Settings */
@@ -9801,7 +9838,7 @@ settings:
         title: Transparent menus, modals and prompts
         description: Activate transparency (menus, modals and prompts)
         type: class-toggle
-        addCommand: true
+        addCommand: true    
     -
         id: mu-transparency-menus-level
         title: Transparency level
@@ -9824,6 +9861,12 @@ settings:
         id: mu-compact-prompt
         title: Compact prompts
         description: Activate compact version of command palette and prompts
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-no-prompt-instructions
+        title: Hide prompt instructions
+        description: Activate to hide prompt instructions
         type: class-toggle
         addCommand: true
     -
