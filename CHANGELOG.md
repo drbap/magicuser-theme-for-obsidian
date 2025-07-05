@@ -1,5 +1,15 @@
 # Changelog
 
+## [21.10.0] - 2025-07-05
+### Improvements
+
+- New Style Settings: **Hide prompt instructions** (toggle via Command Palette).
+- Prompt instructions commands highlighted.
+- File explorer **current file selected** will have a semibold font.
+- **Command palette plugins** will appear in **semibold** font.
+- Community plugins and themes modals adjustments (improved font size, margins, version font size etc).
+- Uninstall icon color -> installed plugins (settings).
+  
 ## [21.9.0] - 2025-06-27
 ### Improvements
 
