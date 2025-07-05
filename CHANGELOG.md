@@ -7,7 +7,7 @@
 - Prompt instructions commands highlighted.
 - File explorer **current file selected** will have a semibold font.
 - **Command palette plugins** will appear in **semibold** font (e.g. **Name of the plugin:** command).
-- **Community plugins and themes modals** adjustments (improved font size, margins, version font size etc).
+- **Community plugins and themes modals** adjustments (margins, version font size etc).
 - Uninstall icon color -> installed plugins (settings).
   
 ## [21.9.0] - 2025-06-27
