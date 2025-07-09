@@ -9,7 +9,7 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 > [!IMPORTANT]
 > The **MagicUser theme** is for those who love to **fine-tune their workspace**. It's incredibly easy to set up with the **Style Settings plugin**, boasting over **100 customization options**. While the theme includes many **preset themes (or subthemes)** to help you get started, it truly shines for **experienced and detail-oriented users**.
 >
-> Beyond extensive customization, this theme offers **unique features** designed to enhance your productivity and comfort. You can find more about these unique features below.
+> Beyond extensive customization, this theme offers **unique features** designed to enhance your productivity and comfort. You can find more about these unique features further down in this README.
 
 ![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders.png)
 
