@@ -1,5 +1,12 @@
 # Changelog
 
+## [21.11.0] - 2025-07-25
+### Improvements
+
+- Sidebars search, tag and properties numbering adjustments.
+- Plugins now appear in semibold (Settings): Core and Community Plugins sections.
+- Prompt shortcuts adjustments (margins when > 1 shortcut per command).
+
 ## [21.10.0] - 2025-07-05
 ### Improvements
 
