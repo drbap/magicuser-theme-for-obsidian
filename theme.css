@@ -8084,6 +8084,9 @@ a.tag[href="#magic"]::after,
 /* Sidebars - links count, tags pane */
 .tree-item-flair {
   color: var(--mu-sidebar-pane-numbers) !important;
+  padding: 4px 8px;
+  background: var(--background-primary);
+  border: 1px solid var(--modal-border-color);
 }
 
 /* 1.6.2 mobile */
@@ -8239,6 +8242,8 @@ button.mod-destructive {
   color: var(--color-red) !important;
 }
 
+.plugin-list-plugins .setting-item.mod-toggle .setting-item-name,
+.installed-plugins-container .setting-item-name,
 .community-item-name,
 .suggestion-prefix {
   font-weight: var(--font-semibold) !important;
@@ -8251,7 +8256,10 @@ button.mod-destructive {
 
 .community-item-downloads-text {
   font-size: var(--font-ui-small);
+}
 
+.suggestion-item.mod-complex .suggestion-hotkey:not(:last-child) {
+  margin-right: var(--size-4-1);
 }
 
 /* Style Settings */
