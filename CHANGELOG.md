@@ -1,5 +1,10 @@
 # Changelog
 
+## [21.11.1] - 2025-07-30
+### Fixes
+- Mermaid diagrams.
+- Footnotes color.
+
 ## [21.11.0] - 2025-07-25
 ### Improvements
 
