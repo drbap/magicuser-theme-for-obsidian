@@ -6,6 +6,11 @@
 
 With the **Style Settings** community plugin, customize a wide range of theme elements to suit your preferences and create a truly engaging and productive workspace.
 
+> [!IMPORTANT]
+> The **MagicUser theme** is for those who love to **fine-tune their workspace**. It's incredibly easy to set up with the **Style Settings plugin**, it offers over **100 customization options**. While the theme includes many **preset themes (or subthemes)** to help you get started, it truly shines for **experienced and detail-oriented users**.
+>
+> Beyond extensive customization, this theme offers **unique features** designed to enhance your productivity and comfort. You can find more about these unique features below.
+
 ![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders.png)
 
 ![Automatic rainbow folders](images/magicuser_theme_automatic_rainbow_folders_name_icons.png)
@@ -1029,3 +1034,4 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
