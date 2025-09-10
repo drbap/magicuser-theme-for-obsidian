@@ -3420,8 +3420,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Tables Styles  */
 
-.markdown-reading-view table,
-.workspace-leaf-content:not([data-type="full-calendar-view"]) table {
+.markdown-reading-view table:not(.ab-table-timeline),
+.workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.ab-table-timeline) {
   width: 100%;
   border: var(--mu-table-outer-border-width) solid var(--mu-table-th-background);
   border-spacing: 0;
@@ -3438,33 +3438,33 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   color: var(--mu-table-th-foreground-main);
 }
 
-.markdown-reading-view table tr:not(:last-child)>th,
-.markdown-reading-view table tr:not(:last-child)>td,
-table tr:not(:last-child)>th,
-table tr:not(:last-child)>td {
+.markdown-reading-view table:not(.ab-table-timeline) tr:not(:last-child)>th,
+.markdown-reading-view table:not(.ab-table-timeline) tr:not(:last-child)>td,
+table:not(.ab-table-timeline) tr:not(:last-child)>th,
+table:not(.ab-table-timeline) tr:not(:last-child)>td {
   border-bottom: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
 }
 
-.markdown-reading-view th:not(:last-child),
-.markdown-reading-view td:not(:last-child),
-th:not(:last-child),
-td:not(:last-child) {
+.markdown-reading-view table:not(.ab-table-timeline) th:not(:last-child),
+.markdown-reading-view table:not(.ab-table-timeline) td:not(:last-child),
+table:not(.ab-table-timeline) th:not(:last-child),
+table:not(.ab-table-timeline) td:not(:last-child) {
   border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background) !important;
 }
 
 /* Table row hover */
-body:not(.mu-disable-tr-hover) .markdown-reading-view tr:hover,
-body:not(.mu-disable-tr-hover) .workspace-leaf-content:not([data-type="full-calendar-view"]) tr:hover {
+body:not(.mu-disable-tr-hover) .markdown-reading-view table:not(.ab-table-timeline) tr:hover,
+body:not(.mu-disable-tr-hover) .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.ab-table-timeline) tr:hover {
   background-color: var(--mu-table-row-hover) !important;
 }
 
-.mu-disable-tr-hover .markdown-reading-view tr:nth-child(odd):hover,
-.mu-disable-tr-hover .workspace-leaf-content:not([data-type="full-calendar-view"]) tr:nth-child(odd):hover {
+.mu-disable-tr-hover .markdown-reading-view table:not(.ab-table-timeline) tr:nth-child(odd):hover,
+.mu-disable-tr-hover .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.ab-table-timeline) tr:nth-child(odd):hover {
   background-color: var(--mu-table-color-2) !important;
 }
 
-.mu-disable-tr-hover .markdown-reading-view tr:nth-child(even):hover,
-.mu-disable-tr-hover .workspace-leaf-content:not([data-type="full-calendar-view"]) tr:nth-child(even):hover {
+.mu-disable-tr-hover .markdown-reading-view table:not(.ab-table-timeline) tr:nth-child(even):hover,
+.mu-disable-tr-hover .workspace-leaf-content:not([data-type="full-calendar-view"]) table:not(.ab-table-timeline) tr:nth-child(even):hover {
   background-color: var(--mu-table-color-1) !important;
 }
 
@@ -3496,18 +3496,18 @@ body:not(.mu-disable-tr-hover) .cm-callout.cm-embed-block table th {
   color: var(--mu-table-th-foreground-main);
 }
 
-.cm-callout.cm-embed-block table tr:not(:last-child)>th,
-.cm-callout.cm-embed-block table tr:not(:last-child)>td {
+.cm-callout.cm-embed-block table:not(.ab-table-timeline) tr:not(:last-child)>th,
+.cm-callout.cm-embed-block table:not(.ab-table-timeline) tr:not(:last-child)>td {
   border-bottom: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
 }
 
-.cm-callout.cm-embed-block table th:not(:last-child),
-.cm-callout.cm-embed-block table td:not(:last-child) {
+.cm-callout.cm-embed-block table:not(.ab-table-timeline) th:not(:last-child),
+.cm-callout.cm-embed-block table:not(.ab-table-timeline) td:not(:last-child) {
   padding: 4px 8px;
   border-right: var(--mu-table-inner-border-width) solid var(--mu-table-th-background);
 }
 
-.cm-callout.cm-embed-block table {
+.cm-callout.cm-embed-block table:not(.ab-table-timeline) {
   width: 100%;
   border: var(--mu-table-outer-border-width) solid var(--mu-table-th-background);
   border-spacing: 0;
