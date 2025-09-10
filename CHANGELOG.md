@@ -4,6 +4,7 @@
 ### Fixes
 - Issue #74 related to AB plugin.
 
+## [21.11.1] - 2025-07-30
 ### Fixes
 - Mermaid diagrams.
 - Footnotes color.
