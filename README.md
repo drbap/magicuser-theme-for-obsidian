@@ -28,8 +28,6 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
-![MagicUser - Style Settings Theme Options](images/magicuser_style_settings_theme_options.png)
-
 ## Preset Themes
 
 1. **MagicUser** (Default)
@@ -140,9 +138,6 @@ How it Works:
 - When activated, this mode will highlight the background of folders starting with the numbers "01" and/or "001" to "08" and/or "008" (according to the order of rainbow colors plus the gray color, 8th color). It will work with folders starting with "01 Folder name" to "08 Folder name".
 - All **subfolders** will have the same color of the top folder.
 
-Activate this mode using the Style Settings plugin:
-> **User Interface** -> **Icons, Folders and Sidebars** -> Numbered rainbow colored folders
-
 ## Select Folder Icons (3 Styles)
 
 ![Select folder icons 1 - gif](images/magicuser_select_folder_icons.gif)
@@ -163,9 +158,6 @@ Activate this mode using the Style Settings plugin:
 
 ![MagicUser Cards UI](images/magicuser_theme_cards_ui.gif)
 
-Style Settings:
-> **Preset Themes** -> Cards UI
-
 ## Outline UI - Sidebars and Active Icons
 
 ![Outline UI](images/magicuser_outline_ui.png)
@@ -174,18 +166,11 @@ Style Settings:
 - Outline UI - active icons and elements
 - Outline UI - select border color (light/dark modes)
 
-Style Settings:
-> **Preset Themes** -> Outline UI
-
 ## Tabs
 
 ![MagicUser tabs](images/magicuser_theme_tabs.gif)
 
 - Select the **style of the tabs** (*3 options*): **default tabs**, **square tabs** and **pill tabs**. You can also customize other tabs colors.
-
-Style Settings:
-
-> **User Interface** -> **Tabs** submenu
 
 ## Breadcrumb
 
@@ -195,10 +180,6 @@ Style Settings:
 
 - You can also have an additional layout (**Slanted breadcrumb** - without the `/` separator and more compact. You can activate the **slanted breadcrumb** layout using Style Settings.
 
-Style Settings:
-
-> **User Interface** -> **Icons, Folders and Sidebars** -> **Breadcrumb** submenu
-
 ## MagicUser laser
 
 ![MagicUser laser](images/magicuser_laser.png)
@@ -207,9 +188,6 @@ Style Settings:
 
 Enhance your reading experience with personalized reading focus and comfort.
 - MagicUser laser will be displayed in live preview, source and reading modes.
-
-Style Settings:
-> **User Interface** -> **Laser** -> MagicUser laser
 
 ## Reading Mode: Reading Glow Effect and Reading Indicator
 
@@ -229,18 +207,12 @@ This feature dynamically **adjusts the font size** of the current line for enhan
 - **Reading mode**: Clicking on a line in reading mode activates a temporary zoom effect.
 - **Active line zoom** can be toggled on or off via a shortcut key or the Command Palette.
 
-Style Settings:
-> **User Interface** -> **Line Highlight** -> Active line zoom
-
 ## Hover Underline
 
 ![Hover Underline](images/magicuser_theme_hover_underline.gif)
 
 **Hover underline** (live preview, source and reading modes).
 - **Toggle hover underline** (shortcut and/or Command Palette).
-
-Style Settings:
-> **User Interface** -> **Line Highlight** -> **Hover underline** submenu
 
 ## Colored Indent Guides
 
@@ -260,17 +232,10 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 - Style Settings: Enable dark sidebar in light mode (compatible with preset themes)
 
-Style Settings:
 
-> **User Interface** -> **Icons, Folders and Sidebars** -> **Sidebars** submenu -> Dark sidebar (light mode)
- 
 ## Neon Mode
 
 ![Neon mode - gif](images/magicuser_theme_neon_mode.gif)
-
-Style Settings:
-
-> **Headings H1-H6** -> Neon mode
 
 ![Neon mode](images/magicuser_neon_mode.png)
 
@@ -279,10 +244,6 @@ Style Settings:
 ![Neon mode - h1-h6 custom colors](images/neon_mode_headings_submenu_custom_colors.png)
 
 You can customize the neon mode headings colors using the **Neon Mode Headings** submenu.
-
-Style Settings:
-
-> **Headings H1-H6** -> **Neon Mode Headings**
 
 ## Neon Mode Glow Controller
 
@@ -304,10 +265,6 @@ Style Settings:
 
 You can toggle **underline headings** using a shortcut or the Command Palette.
 
-Style Settings:
-
-> **Headings H1-H6** -> Underline headings
-
 ## Blockquote Indent Indicator
 
 ![Blockquote Indent Indicator](images/magicuser_blockquote_indent_indicator.gif)
@@ -315,9 +272,6 @@ Style Settings:
 ## Tags Customization - Colored Tags
 
 ![Colored tags](images/magicuser_theme_colored_tags.gif)
-
-Style Settings:
-> **User Interface** -> **Tags** submenu
 
 ### 44 preset tags layout with icons
 ```md
@@ -388,10 +342,6 @@ Style Settings:
 
 ![Warm screen mode - gif](images/magicuser_theme_warm_screen_mode.gif)
 
-Style Settings:
-
-> **User Interface** -> **UI Advanced** -> Warm screen mode
-
 - Instead of just dimming the screen, the **warm scren mode** adjusts the light spectrum towards warmer tones (red, orange, yellow) and reduces cooler tones (e.g. blue). 
 - Warmer tones are considered less harsh on the eyes, especially in **low-light environments** or extended use.
 - The warm screen mode can create a more relaxing and soothing atmosphere for reading, working, or viewing media.
@@ -419,9 +369,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 **Total concentration mode** goes beyond distraction-free mode. It creates a state of flow unhindered by any visual interruptions. Focus solely on your writing or reading.
 
 - Toggle total concentration mode quickly using a **shortcut** or **Command Palette**.
-
-Style Settings:
-> **User Interface** -> **UI Advanced** -> Total concentration mode
 
 ## Dataview Tables to Cards
 
@@ -483,9 +430,6 @@ cssclasses:
 ![Checkbox shape - theme options](images/magicuser_checkbox_shape_menu.png)
 
 - **Checkbox shape**: **default** (rounded corners), **square** and **circle**.
-
-Style Settings:
-> Checklist -> Checkbox shape
 
 ## Additional Callouts
 
@@ -910,9 +854,6 @@ Style Settings: **Preset tables**
 - **New**: **Numbered table** (rows and columns have numbers). You can customize the numbers background color.
 - **New**: **Plain data** (simple layout for dataview tables)
 
-Style Settings:
-> **User Interface** -> **Tables** -> Preset tables
-
 ![Preset tables - gif](images/magicuser_theme_table_presets.gif)
 
 To achieve the desired table layout for specific notes, you can apply the above CSS classes (`table1` to `table6`).
@@ -942,9 +883,6 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - Select inline code border color.
 - Select code block border color.
 
-Style Settings:
-> **Code** -> Outline code
-
 ## Mobile Display
 
 ![MagicUser theme for mobile devices](images/magicuser_theme_mobile.gif)
@@ -956,6 +894,7 @@ Style Settings:
 - **Style Settings**
 - **Excalidraw**
 - **Dataview**
+- **Dashboard Navigator**
 - **Kanban**
 - **Calendar**
 - **Full Calendar**
@@ -1027,6 +966,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
