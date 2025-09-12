@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.12.0] - 2025-09-12
+### Improvements
+- Major refactor of the **Style Settings** menu, making it more intuitive and easier to use. I’ve reorganized the **over 200 options** into a logical, hierarchical structure, ensuring you can find and customize the theme options with greater efficiency.
+
 ## [21.11.2] - 2025-09-10
 ### Fixes
 - Issue #74 related to AB plugin.
