@@ -28,6 +28,8 @@ With the **Style Settings** community plugin, customize a wide range of theme el
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
+The **MagicUser theme** offers **more than 200 options** for customization, including UI modes and many special effects. Whether you prefer a clean, minimalist look or a vibrant interface, you can adjust colors, fonts, and layouts to match your workflow and personal color palette aesthetic.
+
 ## Preset Themes
 
 1. **MagicUser** (Default)
@@ -966,6 +968,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
