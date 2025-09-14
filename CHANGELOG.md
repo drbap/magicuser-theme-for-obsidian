@@ -1,8 +1,8 @@
 # Changelog
 
 ## [21.12.1] - 2025-09-14
-- Scrollbars adjustments and new default value.
-- Scrollbars thumb color adjustment.
+- Scrollbars fix default value.
+- Fix scrollbars default thumb color hover.
 
 ## [21.12.0] - 2025-09-12
 ### Improvements
