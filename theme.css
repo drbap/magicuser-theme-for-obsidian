@@ -795,7 +795,7 @@ body {
   --mu-titlebar-button-fg: var(--mu-icon);
   --mu-menu-separator-color: #0072d322;
 
-  --mu-scrollbar-width-value: 16;
+  --mu-scrollbar-width-value: 12;
   --mu-scrollbar-width: calc(var(--mu-scrollbar-width-value)*1px);
 
   --mu-scrollbar-thumb-size-value: 10;
@@ -1243,7 +1243,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-modal-background: #000;
   --mu-column-stripped-background: #00000082;
   --mu-scrollbar-thumb-bg: #84848422;
-  --mu-scrollbar-thumb-bg-hover: #84848448;
+  --mu-scrollbar-thumb-bg-hover: #84848433;
   --mu-scrollbar-track-bg-hover: #00000021;
 }
 
@@ -1352,7 +1352,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-modal-background: #cfcfcf;
   --mu-column-stripped-background: #00000011;
   --mu-scrollbar-thumb-bg: #48484822;
-  --mu-scrollbar-thumb-bg-hover: #48484848;
+  --mu-scrollbar-thumb-bg-hover: #48484833;
   --mu-scrollbar-track-bg-hover: #82828221;
 }
 
@@ -8775,7 +8775,7 @@ settings:
         title: Scrollbar width
         description: Adjust the scrollbar width.
         type: variable-number-slider
-        default: 16
+        default: 12
         min: 8
         max: 32
         step: 2
@@ -8822,8 +8822,8 @@ settings:
         description: Scrollbar thumb hover color.
         format: hex
         opacity: true
-        default-light: '#48484848'
-        default-dark: '#84848448'
+        default-light: '#48484833'
+        default-dark: '#84848433'
     -
         id: magicuser-theme-sidebar
         title: Sidebars
