@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.12.1] - 2025-09-14
+- Scrollbars adjustments and new default value.
+- Scrollbars thumb color adjustment.
+
 ## [21.12.0] - 2025-09-12
 ### Improvements
 - Major refactor of the **Style Settings** menu, making it more intuitive and easier to use. I’ve reorganized the **over 200 options** into a logical, hierarchical structure, ensuring you can find and customize the theme options with greater efficiency.
