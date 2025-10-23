@@ -945,7 +945,6 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 
 - Thanks to Matthew Meyers (@mgmeyers) for the amazing [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) Plugin. Excellent work.
 
-
 **Thanks for the Suggestions**
 
  I would like to express my gratitude to everyone who offered suggestions, tested each new feature, and provided invaluable feedback. Thanks to your attention to detail and constructive criticism, the theme has evolved into what it is today.
@@ -969,6 +968,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
