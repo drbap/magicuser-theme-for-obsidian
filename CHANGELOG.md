@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.14.0] - 2025-10-22
+- Style Settings: Highlighted text foreground color (light and dark mode).
+- Style Settings mobile adjustments.
+
 ## [21.12.1] - 2025-09-14
 - Scrollbars fix default value.
 - Fix scrollbars default thumb color hover.
