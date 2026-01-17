@@ -1,5 +1,8 @@
 # Changelog
 
+## [21.15.0] - 2025-01-17
+- Theme adjustments - Obsidian version 1.11.*  (desktop and mobile).
+
 ## [21.14.0] - 2025-10-22
 - Style Settings: Highlighted text foreground color (light and dark mode).
 - Style Settings mobile adjustments.
