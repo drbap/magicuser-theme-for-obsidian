@@ -9,7 +9,7 @@ GitHub Repository:
 https://github.com/drbap/magicuser-theme-for-obsidian
 
 MIT License
-Copyright (c) 2023-2025 Bernardo Pires (@drbap)
+Copyright (c) 2023-2026 Bernardo Pires (@drbap)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -616,7 +616,7 @@ body {
   --background-primary: var(--mu-background-color-1);
   --background-secondary: var(--mu-background-color-2);
   /* Background Modifiers*/
-  --background-modifier-hover: #007fff28;
+  --background-modifier-hover: #007fff28 !important;
   --background-modifier-active-hover: var(--background-modifier-hover);
   --background-modifier-border: #007fff38;
   --background-modifier-border-hover: #007fff48;
@@ -851,6 +851,13 @@ body {
 
   --mu-cards-border: var(--mu-background-color-1);
   --mu-warm-screen-mode: 0;
+
+  --setting-group-heading-size: var(--font-ui-medium) !important;
+  --interactive-normal: #007fff18 !important;
+  --interactive-hover: #007fff38 !important;
+
+  --setting-items-background: var(--mu-background-color-2) !important;
+
 }
 
 body::before {
@@ -1042,10 +1049,6 @@ span.is-flashing {
   background-color: var(--nav-item-background-active);
 }
 
-.workspace-tab-header {
-  background-color: var(--background-secondary);
-}
-
 .workspace-tab-header-status-icon.mod-pinned:hover {
   background-color: #00a3ff48 !important;
 }
@@ -1085,14 +1088,12 @@ span.obsidian-search-match-highlight {
 .setting-item {
   display: flex;
   align-items: center;
-  padding: var(--size-4-2) 0;
   border: 0;
   border-bottom: 1px solid var(--mu-menu-separator-color);
 }
 
 .setting-item.setting-item-heading {
   margin-top: var(--size-4-2);
-  border-bottom: 1px solid var(--mu-menu-separator-color);
 }
 
 .installed-plugins-container {
@@ -1224,8 +1225,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --tab-divider-color: #003364;
   --mu-folder-zoom: 82%;
   --mu-notes-icon-zoom: 72%;
-  --interactive-normal: var(--mu-background-color-2);
-  --interactive-hover: var(--background-modifier-hover);
   --mu-code-attribute: #ffa3a3;
   --mu-input-bg-color: #001836;
   --mu-label-h1: #a35fbf;
@@ -1251,6 +1250,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #84848422;
   --mu-scrollbar-thumb-bg-hover: #84848433;
   --mu-scrollbar-track-bg-hover: #00000021;
+
+  --setting-group-heading-color: #00a3ff;
 }
 
 /* Dark theme settings */
@@ -1344,8 +1345,6 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-text-selection: #0051f136;
   --mu-suggestion-color: #0072d3;
   --mu-special-folder-color: #000;
-  --interactive-normal: var(--mu-background-color-2);
-  --interactive-hover: var(--background-modifier-hover);
   /* highlight blend mode */
   --highlight-mix-blend-mode: normal;
   --background-primary-alt: #e1e1e1;
@@ -1360,6 +1359,8 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-scrollbar-thumb-bg: #48484822;
   --mu-scrollbar-thumb-bg-hover: #48484833;
   --mu-scrollbar-track-bg-hover: #82828221;
+
+  --setting-group-heading-color: #0048f1;
 }
 
 .theme-light .workspace-tabs .workspace-leaf {
@@ -5333,9 +5334,9 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
 
 .style-settings-container {
   padding-left: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-top: var(--size-4-2);
+  padding-bottom: var(--size-4-2);
+  margin-bottom: var(--size-4-2);
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-presets"] .style-settings-collapse-indicator::after {
@@ -8134,6 +8135,43 @@ button.mod-destructive {
 .markdown-rendered mark,
 span.cm-highlight {
   color: var(--mu-text-highlight-fg) !important;
+}
+
+/* 1.11 specific updates */
+
+.is-mobile.theme-light {
+  --setting-items-background: var(--mu-background-color-1) !important;
+}
+
+.vertical-tab-nav-item-icon svg {
+  color: var(--mu-icon);
+}
+
+.is-mobile.theme-light .setting-group-search,
+.is-mobile.theme-light .setting-group.setting-items {
+  background-color: var(--mu-background-color-1);
+}
+
+.is-mobile.theme-dark .setting-group-search,
+.is-mobile.theme-dark .setting-group.setting-items {
+  background-color: var(--mu-background-color-2);
+}
+
+.style-settings-container .style-settings-container {
+  padding: var(--size-4-2);
+}
+
+.is-mobile .metadata-content {
+  background-color: transparent;
+}
+
+.workspace-tab-header-inner .workspace-tab-header-inner-icon {
+  color: var(--mu-icon);
+}
+
+.nav-file-tag {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
 }
 
 /* Style Settings */
