@@ -885,10 +885,6 @@ The syntax highlighting in this theme is similar to the MagicUser themes for VS 
 - Select inline code border color.
 - Select code block border color.
 
-## Mobile Display
-
-![MagicUser theme for mobile devices](images/magicuser_theme_mobile.gif)
-
 ## Plugins Compatibility
 
 ![MagicUser Theme - Community Plugins Compatibility](images/magicuser_theme_plugins_compatibility.png)
@@ -968,6 +964,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
