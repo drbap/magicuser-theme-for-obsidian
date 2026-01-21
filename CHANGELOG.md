@@ -1,5 +1,8 @@
 # Changelog
 
+## [21.16.0] - 2025-01-20
+- Bases adjustments - input type number background, borders, headers font weight and other details to improve theme consistency.
+
 ## [21.15.0] - 2025-01-17
 - Theme adjustments - Obsidian version 1.11.*  (desktop and mobile).
 
