@@ -856,6 +856,13 @@ body {
   --interactive-normal: #007fff18 !important;
   --interactive-hover: #007fff38 !important;
 
+  --bases-table-header-weight: var(--font-semibold);
+  --bases-table-header-color: var(--text-normal);
+  --bases-table-group-background: var(--mu-background-color-1);
+  --bases-table-header-background: var(--mu-background-color-1);
+  --bases-table-cell-background-disabled: transparent;
+  --bases-table-border-color: var(--background-modifier-border);
+
   --setting-items-background: var(--mu-background-color-2) !important;
 
 }
@@ -1104,12 +1111,14 @@ span.obsidian-search-match-highlight {
   caret-color: var(--mu-caret-color) !important;
 }
 
+input[type="number"],
 input[type="text"],
 input[type="search"] {
   background-color: var(--mu-input-bg-color);
   color: var(--mu-caret-color);
 }
 
+input[type="number"]:hover,
 input[type="text"]:hover,
 input[type="search"]:hover {
   background-color: var(--mu-input-bg-color);
