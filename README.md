@@ -676,7 +676,7 @@ Use the `[!fc-group]` prefix to containerize multiple `[!fc]` cards.
 ![MagicUser flashcards - grouped](images/magicuser_flashcards_grouped.png)
 
 ```markdown
-> [!fc-group] Flashcards group title
+> [!fc-group] Flashcard group title
 > > [!fc] Question 1
 > > Answer 1.
 >
@@ -687,7 +687,7 @@ Use the `[!fc-group]` prefix to containerize multiple `[!fc]` cards.
 
 **Syntax: Individual Flashcard (Ungrouped)**
 
-Use only the `[!fc]`
+Use only the `[!fc]` prefix.
 
 ![MagicUser flashcards - ungrouped](images/magicuser_flashcards_ungrouped.png)
 
@@ -1045,6 +1045,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
