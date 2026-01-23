@@ -657,6 +657,8 @@ To align right, use `|right`.
 
 ### Flashcard Callouts
 
+![MagicUser flashcards - gif](images/magicuser_flashcards_001.gif)
+
 - Use flashcards to practice **active recall** and track your study progress. You can create **individual flashcards** or organize them into **groups** for specific subjects.
 - The theme provides **color guides** to visually distinguish **groups** and **individual** flashcard callout headers, making it easier to categorize, edit, and create flashcards accurately.
 
@@ -665,11 +667,13 @@ To align right, use `|right`.
 **Answers**: Use Markdown to structure your learning. This includes:
 - **Highlights** for key concepts.
 - **Links** to related notes or external sources.
-- **Embeds** for video or audio references.
+- Add images, video or audio references.
 
 **Syntax: Group of Flashcards**
 
 Use the `[!fc-group]` prefix to containerize multiple `[!fc]` cards.
+
+![MagicUser flashcards - grouped](images/magicuser_flashcards_grouped.png)
 
 ```markdown
 > [!fc-group] Flashcards group title
@@ -684,6 +688,8 @@ Use the `[!fc-group]` prefix to containerize multiple `[!fc]` cards.
 **Syntax: Individual Flashcard (Ungrouped)**
 
 Use only the `[!fc]`
+
+![MagicUser flashcards - ungrouped](images/magicuser_flashcards_ungrouped.png)
 
 ```markdown
 > [!fc] Question 1
@@ -1039,6 +1045,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
