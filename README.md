@@ -655,6 +655,81 @@ To align right, use `|right`.
 - Values: **30%**, **40%**, **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
 - You can also **center** the callout (just add `center` after the percentage)
 
+### Flashcard Callouts
+
+- Use flashcards to practice **active recall** and track your study progress. You can create **individual flashcards** or organize them into **groups** for specific subjects.
+- The theme provides **color guides** to visually distinguish **groups** and **individual** flashcard callout headers, making it easier to categorize, edit, and create flashcards accurately.
+
+**Questions**: Add text or images to create visual cues.
+
+**Answers**: Use Markdown to structure your learning. This includes:
+- **Highlights** for key concepts.
+- **Links** to related notes or external sources.
+- **Embeds** for video or audio references.
+
+**Syntax: Group of Flashcards**
+
+Use the `[!fc-group]` prefix to containerize multiple `[!fc]` cards.
+
+```markdown
+> [!fc-group] Flashcards group title
+> > [!fc] Question 1
+> > Answer 1.
+>
+> > [!fc] Question 2
+> > Answer 2.
+
+```
+
+**Syntax: Individual Flashcard (Ungrouped)**
+
+Use only the `[!fc]`
+
+```markdown
+> [!fc] Question 1
+> Answer 1.
+
+```
+
+**Example of grouped flashcards (3 cards)**:
+
+```markdown
+> [!fc-group] MagicUser Flashcards - General Knowledge Deck 1
+> > [!fc] What is the largest planet in our solar system?
+> > **Jupiter** is the largest, with a mass more than two and a half times that of all the other planets in the Solar System combined.
+>
+> > [!fc] Which element has the chemical symbol 'O'?
+> > **Oxygen**. It is a highly reactive nonmetal and an oxidizing agent that readily forms oxides with most elements.
+>
+> > [!fc] How many continents are there on Earth?
+> > There are **seven**:
+> > 1. North America
+> > 2. South America
+> > 3. Africa
+> > 4. Europe
+> > 5. Asia
+> > 6. Oceania
+> > 7. Antarctica
+```
+
+**Disabling Animations**
+
+If you prefer a static view, add `|no-animation` to the flashcard group callout header:
+
+```markdown
+> [!fc-group|no-animation] Static Flashcard Group
+> > [!fc] This card will not flip.
+> > The answer is visible or appears without transition.
+```
+
+**Customization (via Style Settings)**
+
+Fine-tune your study experience via the *Style Settings* plugin. Settings can be configured independently for Light and Dark modes:
+
+- Dimensions: Adjust flashcard **width** and **height** using sliders.
+- Colors: Customize the **front background** and **front text** colors.
+- Borders: Select the **answer border color** to match your personal theme preferences.
+
 ## Caret Colors for Improved Visibility
 
 ![Dark mode caret color](images/magicuser_caret_colors.png)
@@ -964,6 +1039,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
