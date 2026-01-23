@@ -638,23 +638,6 @@ To align right, use `|right`.
 
 `> [!magic]`
 
-## Resize Callouts
-
-![Resize Callouts](images/magicuser_theme_width_center_callouts_adjustment.gif)
-
-- **All callouts** can be resized. You can use the same syntax as table callouts in other callouts to resize them on screen (also center them).
-
-`> [!callout-name|percentage]` or
-
-`> [!callout-name|percentage center]`
-
-``` md
-> [!question|80% center] Your callout title
-> Your callout content
-```
-- Values: **30%**, **40%**, **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
-- You can also **center** the callout (just add `center` after the percentage)
-
 ### Flashcard Callouts
 
 ![MagicUser flashcards - gif](images/magicuser_flashcards_001.gif)
@@ -735,6 +718,23 @@ Fine-tune your study experience via the *Style Settings* plugin. Settings can be
 - Dimensions: Adjust flashcard **width** and **height** using sliders.
 - Colors: Customize the **front background** and **front text** colors.
 - Borders: Select the **answer border color** to match your personal theme preferences.
+
+## Resize Callouts
+
+![Resize Callouts](images/magicuser_theme_width_center_callouts_adjustment.gif)
+
+- **All callouts** can be resized. You can use the same syntax as table callouts in other callouts to resize them on screen (also center them).
+
+`> [!callout-name|percentage]` or
+
+`> [!callout-name|percentage center]`
+
+``` md
+> [!question|80% center] Your callout title
+> Your callout content
+```
+- Values: **30%**, **40%**, **50%**, **60%**, **70%**, **80%**, **90%** and **100%**.
+- You can also **center** the callout (just add `center` after the percentage)
 
 ## Caret Colors for Improved Visibility
 
@@ -1045,6 +1045,7 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
