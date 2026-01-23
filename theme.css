@@ -6930,10 +6930,14 @@ body.mu-hide-tabs-icons .workspace-split.mod-vertical.mod-root .workspace-tab-he
 
 .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
   border-top: var(--mu-default-mode-border-width) solid var(--mu-titlebar-background);
+  background-color: var(--background-secondary);
+
 }
 
 .workspace-split:not(.mod-right-split, .mod-left-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
   border-top: var(--mu-default-mode-border-width) solid var(--mu-default-mode-border-color);
+  background-color: var(--background-primary);
+
 }
 
 /* Tabs -> Square */
@@ -8297,6 +8301,7 @@ span.cm-highlight {
 .is-mobile .metadata-content {
   background-color: transparent;
 }
+
 
 .workspace-tab-header-inner .workspace-tab-header-inner-icon {
   color: var(--mu-icon);
