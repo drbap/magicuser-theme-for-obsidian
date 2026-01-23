@@ -1,5 +1,8 @@
 # Changelog
 
+## [21.17.1] - 2026-01-23
+- Fix inactive tabs background color (normal tabs mode).
+
 ## [21.17.0] - 2026-01-23
 - New **Flashcard Callouts** and Style Settings options (Flashcard callouts menu). Please check README for more information and syntax.
 
