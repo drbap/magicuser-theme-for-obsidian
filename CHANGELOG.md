@@ -1,7 +1,7 @@
 # Changelog
 
 ## [21.17.0] - 2026-01-23
-- New Flashcard Callouts and Style Settings options (Flashcard callouts menu). Check readme.
+- New **Flashcard Callouts** and Style Settings options (Flashcard callouts menu). Please check README for more information and syntax.
 
 ## [21.16.0] - 2026-01-20
 - Bases adjustments - input type number background, borders, headers font weight and other details to improve theme consistency.
