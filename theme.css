@@ -686,6 +686,15 @@ body {
   --mu-callout-link: 48, 142, 255;
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
+
+  --mu-fc-bg-color: #007fff20;
+  --mu-fc-fg-color: var(--text-normal);
+  --mu-fc-answer-border-color: #bf00ff;
+  --mu-fc-width-value: 280;
+  --mu-fc-width: calc(var(--mu-fc-width-value)*1px);
+  --mu-fc-height-value: 400;
+  --mu-fc-height: calc(var(--mu-fc-height-value)*1px);
+
   --mu-line-highlight-border: transparent;
   --mu-line-highlight-background: transparent;
 
@@ -3418,6 +3427,121 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="ub-red"] .callout-title,
 .callout[data-callout="ub-pink"] .callout-title,
 .callout[data-callout="ub-purple"] .callout-title {
+  display: none;
+}
+
+/* MagicUser flashcards */
+
+.callout[data-callout="fc-group"] {
+  --callout-icon: library-big;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 32px;
+}
+
+.callout[data-callout="fc-group"]>.callout-title {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--text-normal);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--background-modifier-border);
+  margin-bottom: 24px;
+}
+
+.callout[data-callout="fc-group"]>.callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.callout[data-callout="fc-group"] .callout[data-callout="fc"] {
+  margin: 0 !important;
+  flex: 0 0 var(--mu-fc-width);
+}
+
+.callout[data-callout="fc"] {
+  width: 100%;
+  max-width: var(--mu-fc-width);
+  height: var(--mu-fc-height);
+  margin: 24px auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  perspective: 1000px;
+  position: relative;
+}
+
+.callout[data-callout="fc"] .callout-title,
+.callout[data-callout="fc"] .callout-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1em;
+  padding: 24px !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.callout[data-callout="fc"][data-callout-metadata="no-animation"] .callout-title,
+.callout[data-callout="fc"][data-callout-metadata="no-animation"] .callout-content,
+.callout[data-callout="fc-group"][data-callout-metadata="no-animation"] .callout[data-callout="fc"] .callout-title,
+.callout[data-callout="fc-group"][data-callout-metadata="no-animation"] .callout-content {
+  transition: none !important;
+}
+
+/* front */
+.callout[data-callout="fc"] .callout-title {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background: var(--mu-fc-bg-color);
+  border: 2px solid var(--mu-fc-bg-color);
+  border-bottom: 4px solid var(--mu-fc-bg-color);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
+  color: var(--mu-fc-fg-color);
+}
+
+/* back */
+.callout[data-callout="fc"] .callout-content {
+  z-index: 1;
+  transform: rotateY(180deg);
+  background-color: var(--background-primary);
+  border: 2px solid var(--mu-fc-answer-border-color);
+  display: block !important;
+  overflow-y: auto !important;
+}
+
+
+.callout[data-callout="fc"]:hover .callout-title {
+  transform: rotateY(180deg);
+}
+
+.callout[data-callout="fc"]:hover .callout-content {
+  transform: rotateY(360deg);
+}
+
+.callout[data-callout="fc"] .callout-content>* {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.callout[data-callout="fc"] .callout-content img,
+.callout[data-callout="fc"] .callout-content .internal-embed {
+  width: 100%;
+  height: auto;
+}
+
+.callout[data-callout="fc"] .callout-icon {
   display: none;
 }
 
@@ -10599,6 +10723,57 @@ settings:
         opacity: false
         default-light: '#bf72d8'
         default-dark: '#a35fbf'
+    -
+        id: magicuser-theme-flashcards
+        title: Flashcard callouts
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: mu-fc-width-value
+        title: Flashcard width
+        description: Adjust the flashcard width.
+        type: variable-number-slider
+        default: 280
+        min: 240
+        max: 500
+        step: 10
+    - 
+        id: mu-fc-height-value
+        title: Flashcard height
+        description: Adjust the flashcard height.
+        type: variable-number-slider
+        default: 400
+        min: 240
+        max: 500
+        step: 10
+    - 
+        id: mu-fc-bg-color
+        title: Front background color (question)
+        type: variable-themed-color
+        description: Select the background color for the front side of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#007fff20'
+        default-dark: '#007fff20'
+    - 
+        id: mu-fc-fg-color
+        title: Front text color (question)
+        type: variable-themed-color
+        description: Select the color for the front (question) text of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#000000'
+        default-dark: '#f1f1f1'
+    - 
+        id: mu-fc-answer-border-color
+        title: Back border color (answer)
+        type: variable-themed-color
+        description: Select the border color for the back (answer) of the flashcard.
+        format: hex
+        opacity: true
+        default-light: '#bf00ff'
+        default-dark: '#bf00ff'
     -
         id: magicuser-theme-hide-ui-elements
         title: Hide UI elements
