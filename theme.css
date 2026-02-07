@@ -874,6 +874,10 @@ body {
 
   --setting-items-background: var(--mu-background-color-2) !important;
 
+  /* Mobile side margins */
+  --mu-mobile-side-margins-value: 16;
+  --mu-mobile-side-margins: calc(var(--mu-mobile-side-margins-value)*1px);
+
 }
 
 body::before {
@@ -8312,6 +8316,21 @@ span.cm-highlight {
   color: var(--text-normal);
 }
 
+/* Mobile margins */
+.is-mobile .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller,
+.is-mobile .markdown-source-view.mod-cm6 .cm-content,
+.is-mobile .markdown-rendered {
+  max-width: 100% !important;
+  padding-left: var(--mu-mobile-side-margins) !important;
+  padding-right: var(--mu-mobile-side-margins) !important;
+
+}
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-content.cm-lineWrapping {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* Style Settings */
 
 /* @settings
@@ -9903,6 +9922,39 @@ settings:
         default-light: '#00bfff'
         default-dark: '#00bfff'
     -
+        id: magicuser-theme-file-line-width
+        title: Line preferences
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-file-line-width-value
+        title: File line width (desktop and tablet line width)
+        description: Adjust line width (desktop and tablet versions).
+        type: variable-number-slider
+        default: 700
+        min: 500
+        max: 2560
+        step: 1
+    -
+        id: mu-mobile-side-margins-value
+        title: Mobile side margins
+        description: Adjust horizontal margins for mobile phone screens.
+        type: variable-number-slider
+        default: 16
+        min: 8
+        max: 48
+        step: 1
+    -
+        id: line-height-normal
+        title: Line height 
+        description: Adjust line height (desktop, tablet and mobile phone versions).
+        type: variable-number-slider
+        default: 1.5
+        min: 1.0
+        max: 2.0
+        step: 0.1
+    -
         id: magicuser-theme-other-editor-elements
         title: Other editor elements
         type: heading
@@ -10113,21 +10165,6 @@ settings:
         opacity: false
         default-light: '#c300f1'
         default-dark: '#d372ff'
-    -
-        id: magicuser-theme-file-line-width
-        title: File line width
-        type: heading
-        level: 4
-        collapsed: true
-    -
-        id: mu-file-line-width-value
-        title: File line width (note width)
-        description: Adjust file line width (note width).
-        type: variable-number-slider
-        default: 700
-        min: 500
-        max: 2560
-        step: 1
     -
         id: magicuser-theme-hr
         title: Horizontal rules and dividers
