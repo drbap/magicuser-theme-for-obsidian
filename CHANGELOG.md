@@ -1,5 +1,14 @@
 # Changelog
 
+## [21.18.0] - 2026-02-06
+- Submenu File line width renamed to **Line preferences** (up -> one level). You can find it in **Editor** -> **Line preferences**.
+
+- File line width renamed to **File line width (desktop and tablet line width)**. Updated description: Adjust line width (desktop and tablet versions).
+
+- _New_ **Mobile side margins**. Adjust horizontal margins for mobile phone screens.
+
+- _New_ **Line height**. Adjust line height (desktop, tablet and mobile phone versions).
+
 ## [21.17.1] - 2026-01-23
 - Fix inactive tabs background color (normal tabs mode).
 
