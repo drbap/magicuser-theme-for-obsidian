@@ -1040,11 +1040,12 @@ Some checkbox icons were inspired by the excellent Minimal Theme by Stephan Ango
 - @tr_mstein (Obsidian Forum) - independent outline code for inline code and code block.
 - @damiankorcz - disable alternative checkboxes suggestion.
 - @TineKolenik - hide tabs icons suggestion.
-- @chrsdk - highlighted text foreground color suggestion.
+- @chrsdk - highlighted text foreground color suggestion. Line margins for mobile phone.
 
 I'm also grateful to everyone who took the time to star this repository. It really gives me extra motivation to keep improving this theme. I hope you find it useful in your daily work/study.
 
 Special congratulations to the Obsidian.md team for creating a great software application.
+
 
 
 
