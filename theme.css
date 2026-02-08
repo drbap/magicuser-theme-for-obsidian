@@ -878,6 +878,10 @@ body {
   --mu-mobile-side-margins-value: 16;
   --mu-mobile-side-margins: calc(var(--mu-mobile-side-margins-value)*1px);
 
+  /* Global font mode - font size */
+  --mu-global-font-size-value: 16;
+  --mu-global-font-size: calc(var(--mu-global-font-size-value)*1px);
+
 }
 
 body::before {
@@ -8182,6 +8186,7 @@ body.mu-global-font-mode {
   --h6-font: var(--mu-global-font);
   font-feature-settings: var(--mu-global-font-stylistic-set);
   letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
+  --font-text-size: var(--mu-global-font-size) !important;
 }
 
 /* Indicator size */
@@ -9521,15 +9526,24 @@ settings:
     -
         id: mu-global-font-mode
         title: Global font mode
-        description: Activate global font mode (text and other UI elements).
+        description: Activate the global font for text and other UI elements.
         type: class-toggle
         addCommand: true
     -
         id: mu-global-font
         title: Global font
         type: variable-text
-        description: Select global font (global font mode).
+        description: Choose the font to use when global font mode is active.
         default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
+    -
+        id: mu-global-font-size-value
+        title: Global font size
+        description: Adjust the font size only when global font mode is active.
+        type: variable-number-slider
+        default: 16
+        min: 10
+        max: 30
+        step: 1
     -
         id: mu-global-font-stylistic-set
         title: Global font stylistic sets
