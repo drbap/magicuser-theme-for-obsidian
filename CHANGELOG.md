@@ -1,7 +1,7 @@
 # Changelog
 
 ## [21.19.0] - 2026-02-08
--  _New_ **Global font size** (adjust global font size - slider).
+-  _New_ **Global font size** (adjust the font size of global font mode - slider).
 
 ## [21.18.0] - 2026-02-06
 - Submenu File line width renamed to **Line preferences** (up -> one level). You can find it in **Editor** -> **Line preferences**.
