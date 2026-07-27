@@ -26,11 +26,6 @@ In conjunction with the **Style Settings** community plugin, the **MagicUser the
 
 ## Preset Themes
 
-<details>
-  <summary>✨ <b>MagicUser Preset Themes</b> (Expand to see more details)</summary>
-
----
-
 ### **MagicUser** (Default)
 
 ![MagicUser Themes](images/magicuser_obsidian_themes.png)
@@ -119,8 +114,6 @@ How it Works:
 > The theme will adjust according to the selected accent color (headings, icons, borders, blockquote border, lists and other UI elements).
 
 ---
-
-</details>
 
 ## MagicUser Page Backgrounds (MUP)
 
