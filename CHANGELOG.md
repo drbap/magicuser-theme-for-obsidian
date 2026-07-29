@@ -1,5 +1,9 @@
 # Changelog
 
+## [21.21.0] 2026-07-29
+
+- Style Settings Theme Options: Colored icons for the main options.
+
 ## [21.20.0] 2026-02-22
 
 - _New_ **MagicUser Pages (mup) background colors** (*cssclasses*): You can select individual note background colors using `cssclasses`. These colors are theme-aware and will automatically adapt to light or dark modes. **Please check the README for more information.**
