@@ -1,5 +1,16 @@
 # Changelog
 
+## [21.22.0] 2026-08-01
+
+- New Style Settings menu: **Quick starter** (for rapid customization). You can quickly tweak theme options in minutes, skipping deep customization.
+- New Style Settings icons color. Removed the colored icons, same color for a more uniform look.
+- Fixed dark sidebar mode in light mode themes.
+- MagicUser Moon adjustments: caret color, input, title etc.
+- New submenu in Special modes and effects for **Global font mode**, making it easier to find.
+- New submenu in Special modes and effects for **Neon mode**, which includes a custom heading colors submenu.
+- **Live preview for Editor Headings (H1-H6)**. You can now preview font family, size, weight, and color directly in the settings.
+- **Live preview in global font mode**. You can now preview the global font, size, stylistic sets, and letter spacing.
+
 ## [21.21.0] 2026-07-29
 
 - Style Settings Theme Options: Colored icons for the main options.
