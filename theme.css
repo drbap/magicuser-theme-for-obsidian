@@ -667,23 +667,23 @@ body {
   --ui-display-vault-title: flex;
 
   /* MagicUser Callouts */
-  --mu-callout-magic: 207, 88, 255;
-  --mu-callout-green: 0, 180, 88;
-  --mu-callout-blue: 0, 136, 255;
-  --mu-callout-orange: 255, 97, 0;
-  --mu-callout-yellow: 237, 188, 0;
-  --mu-callout-red: 255, 48, 48;
-  --mu-callout-pink: 255, 18, 241;
-  --mu-callout-purple: 201, 0, 255;
-  --mu-callout-video: 237, 48, 48;
-  --mu-callout-mic: 0, 188, 82;
-  --mu-callout-paperclip: 255, 163, 33;
-  --mu-callout-book: 0, 163, 255;
-  --mu-callout-target: 255, 72, 72;
-  --mu-callout-comment: 0, 188, 188;
-  --mu-callout-pro: 0, 197, 88;
-  --mu-callout-con: 228, 48, 48;
-  --mu-callout-link: 48, 142, 255;
+  --mu-callout-magic: rgb(207, 88, 255);
+  --mu-callout-green: rgb(0, 180, 88);
+  --mu-callout-blue: rgb(0, 136, 255);
+  --mu-callout-orange: rgb(255, 97, 0);
+  --mu-callout-yellow: rgb(237, 188, 0);
+  --mu-callout-red: rgb(255, 48, 48);
+  --mu-callout-pink: rgb(255, 18, 241);
+  --mu-callout-purple: rgb(201, 0, 255);
+  --mu-callout-video: rgb(237, 48, 48);
+  --mu-callout-mic: rgb(0, 188, 82);
+  --mu-callout-paperclip: rgb(255, 163, 33);
+  --mu-callout-book: rgb(0, 163, 255);
+  --mu-callout-target: rgb(255, 72, 72);
+  --mu-callout-comment: rgb(0, 188, 188);
+  --mu-callout-pro: rgb(0, 197, 88);
+  --mu-callout-con: rgb(228, 48, 48);
+  --mu-callout-link: rgb(48, 142, 255);
   --mu-quote-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m185 89.2-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.26 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167zm206 0-124 177a84.4 91.3 0 0 0-15.6 22.2l-5.09 7.25 2.05-0.186a84.4 91.3 0 0 0-7.11 35.9 84.4 91.3 0 0 0 84.4 91.3 84.4 91.3 0 0 0 84.4-91.3 84.4 91.3 0 0 0-36.5-74.8l103-167z" fill="currentColor" stroke="currentColor"/></svg>';
   --mu-box-callout-icon: '<svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap) --><path d="m135 97.8h242c20.6 0 37.3 17.2 37.3 38.7v239c0 21.4-16.6 38.7-37.3 38.7h-242c-20.6 0-37.3-17.2-37.3-38.7v-239c0-21.4 16.6-38.7 37.3-38.7z" fill="currentColor" fill-rule="evenodd"/></svg>';
 
@@ -2412,7 +2412,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="magic"] {
   --callout-color: var(--mu-callout-magic);
   --callout-icon: wand-2;
-  border: .2rem double rgb(var(--mu-callout-magic));
+  border: .2rem double var(--mu-callout-magic);
 }
 
 /* Highlighters */
@@ -2455,43 +2455,43 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="p-green"] {
   --callout-color: var(--mu-callout-green);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-green));
+  border: .1rem solid var(--mu-callout-green);
 }
 
 .callout[data-callout="p-blue"] {
   --callout-color: var(--mu-callout-blue);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-blue));
+  border: .1rem solid var(--mu-callout-blue);
 }
 
 .callout[data-callout="p-orange"] {
   --callout-color: var(--mu-callout-orange);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-orange));
+  border: .1rem solid var(--mu-callout-orange);
 }
 
 .callout[data-callout="p-yellow"] {
   --callout-color: var(--mu-callout-yellow);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-yellow));
+  border: .1rem solid var(--mu-callout-yellow);
 }
 
 .callout[data-callout="p-red"] {
   --callout-color: var(--mu-callout-red);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-red));
+  border: .1rem solid var(--mu-callout-red);
 }
 
 .callout[data-callout="p-pink"] {
   --callout-color: var(--mu-callout-pink);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-pink));
+  border: .1rem solid var(--mu-callout-pink);
 }
 
 .callout[data-callout="p-purple"] {
   --callout-color: var(--mu-callout-purple);
   --callout-icon: pen-tool;
-  border: .1rem solid rgb(var(--mu-callout-purple));
+  border: .1rem solid var(--mu-callout-purple);
 }
 
 /* Video */
@@ -2530,7 +2530,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="pros"] {
   --callout-color: var(--mu-callout-pro);
   --callout-icon: thumbs-up;
-  border-left: .3rem solid rgb(var(--mu-callout-pro));
+  border-left: .3rem solid var(--mu-callout-pro);
   border-radius: 0;
 }
 
@@ -2539,7 +2539,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="cons"] {
   --callout-color: var(--mu-callout-con);
   --callout-icon: thumbs-down;
-  border-left: .3rem solid rgb(var(--mu-callout-con));
+  border-left: .3rem solid var(--mu-callout-con);
   border-radius: 0;
 }
 
@@ -2548,7 +2548,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="links"] {
   --callout-color: var(--mu-callout-link);
   --callout-icon: link;
-  border-left: .3rem solid rgb(var(--mu-callout-link));
+  border-left: .3rem solid var(--mu-callout-link);
   border-radius: 0;
   background: none;
 }
@@ -2563,8 +2563,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-blue"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-blue), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-blue));
+  background-color: color-mix(in srgb, var(--mu-callout-blue) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-blue);
   border-radius: 0;
 }
 
@@ -2572,8 +2572,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-green"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-green), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-green));
+  background-color: color-mix(in srgb, var(--mu-callout-green) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-green);
   border-radius: 0;
 }
 
@@ -2581,8 +2581,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-orange"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-orange), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-orange));
+  background-color: color-mix(in srgb, var(--mu-callout-orange) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-orange);
   border-radius: 0;
 }
 
@@ -2590,8 +2590,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-yellow"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-yellow), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-yellow));
+  background-color: color-mix(in srgb, var(--mu-callout-yellow) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-yellow);
   border-radius: 0;
 }
 
@@ -2599,8 +2599,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-red"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-red), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-red));
+  background-color: color-mix(in srgb, var(--mu-callout-red) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-red);
   border-radius: 0;
 }
 
@@ -2608,8 +2608,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-pink"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-pink), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-pink));
+  background-color: color-mix(in srgb, var(--mu-callout-pink) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-pink);
   border-radius: 0;
 }
 
@@ -2617,8 +2617,8 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="q-purple"] {
   --callout-color: var(--mu-text-1);
   --callout-icon: var(--mu-quote-icon);
-  background-color: rgba(var(--mu-callout-purple), 0.2);
-  border-left: .3rem solid rgb(var(--mu-callout-purple));
+  background-color: color-mix(in srgb, var(--mu-callout-purple) 20%, transparent);
+  border-left: .3rem solid var(--mu-callout-purple);
   border-radius: 0;
 }
 
@@ -2626,7 +2626,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-blue"] {
   --callout-color: var(--mu-callout-blue);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-blue), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-blue) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2634,7 +2634,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-green"] {
   --callout-color: var(--mu-callout-green);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-green), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-green) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2642,7 +2642,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-orange"] {
   --callout-color: var(--mu-callout-orange);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-orange), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-orange) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2650,7 +2650,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-yellow"] {
   --callout-color: var(--mu-callout-yellow);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-yellow), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-yellow) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2658,7 +2658,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-red"] {
   --callout-color: var(--mu-callout-red);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-red), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-red) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2666,7 +2666,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-pink"] {
   --callout-color: var(--mu-callout-pink);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-pink), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-pink) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2674,7 +2674,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="b-purple"] {
   --callout-color: var(--mu-callout-purple);
   --callout-icon: var(--mu-box-callout-icon);
-  background-color: rgba(var(--mu-callout-purple), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-purple) 30%, transparent);
   border-radius: 0;
 }
 
@@ -2697,7 +2697,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-blue"] {
   --callout-color: var(--mu-callout-blue);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-blue), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-blue) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2709,7 +2709,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-green"] {
   --callout-color: var(--mu-callout-green);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-green), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-green) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2721,7 +2721,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-orange"] {
   --callout-color: var(--mu-callout-orange);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-orange), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-orange) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2733,7 +2733,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-yellow"] {
   --callout-color: var(--mu-callout-yellow);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-yellow), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-yellow) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2745,7 +2745,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-red"] {
   --callout-color: var(--mu-callout-red);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-red), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-red) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2757,7 +2757,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-pink"] {
   --callout-color: var(--mu-callout-pink);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-pink), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-pink) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2769,7 +2769,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h6-purple"] {
   --callout-color: var(--mu-callout-purple);
   --callout-icon: "";
-  background-color: rgba(var(--mu-callout-purple), 0.2);
+  background-color: color-mix(in srgb, var(--mu-callout-purple) 20%, transparent);
   border-radius: 0;
 }
 
@@ -2892,7 +2892,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-green"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-green));
+  border-bottom: 2px solid var(--mu-callout-green);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2905,7 +2905,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-blue"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-blue));
+  border-bottom: 2px solid var(--mu-callout-blue);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2918,7 +2918,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-orange"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-orange));
+  border-bottom: 2px solid var(--mu-callout-orange);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2931,7 +2931,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-yellow"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-yellow));
+  border-bottom: 2px solid var(--mu-callout-yellow);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2944,7 +2944,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-red"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-red));
+  border-bottom: 2px solid var(--mu-callout-red);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2957,7 +2957,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-pink"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-pink));
+  border-bottom: 2px solid var(--mu-callout-pink);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2970,7 +2970,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="l-purple"] {
   --callout-color: none;
   --callout-icon: none;
-  border-bottom: 2px solid rgb(var(--mu-callout-purple));
+  border-bottom: 2px solid var(--mu-callout-purple);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -2985,10 +2985,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-green));
-  border-right: 2px dotted rgb(var(--mu-callout-green));
-  border-top: 2px solid rgb(var(--mu-callout-green));
-  border-bottom: 2px solid rgb(var(--mu-callout-green));
+  border-left: 2px dotted var(--mu-callout-green);
+  border-right: 2px dotted var(--mu-callout-green);
+  border-top: 2px solid var(--mu-callout-green);
+  border-bottom: 2px solid var(--mu-callout-green);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3001,10 +3001,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-blue));
-  border-right: 2px dotted rgb(var(--mu-callout-blue));
-  border-top: 2px solid rgb(var(--mu-callout-blue));
-  border-bottom: 2px solid rgb(var(--mu-callout-blue));
+  border-left: 2px dotted var(--mu-callout-blue);
+  border-right: 2px dotted var(--mu-callout-blue);
+  border-top: 2px solid var(--mu-callout-blue);
+  border-bottom: 2px solid var(--mu-callout-blue);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3017,10 +3017,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-orange));
-  border-right: 2px dotted rgb(var(--mu-callout-orange));
-  border-top: 2px solid rgb(var(--mu-callout-orange));
-  border-bottom: 2px solid rgb(var(--mu-callout-orange));
+  border-left: 2px dotted var(--mu-callout-orange);
+  border-right: 2px dotted var(--mu-callout-orange);
+  border-top: 2px solid var(--mu-callout-orange);
+  border-bottom: 2px solid var(--mu-callout-orange);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3033,10 +3033,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-yellow));
-  border-right: 2px dotted rgb(var(--mu-callout-yellow));
-  border-top: 2px solid rgb(var(--mu-callout-yellow));
-  border-bottom: 2px solid rgb(var(--mu-callout-yellow));
+  border-left: 2px dotted var(--mu-callout-yellow);
+  border-right: 2px dotted var(--mu-callout-yellow);
+  border-top: 2px solid var(--mu-callout-yellow);
+  border-bottom: 2px solid var(--mu-callout-yellow);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3049,10 +3049,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-red));
-  border-right: 2px dotted rgb(var(--mu-callout-red));
-  border-top: 2px solid rgb(var(--mu-callout-red));
-  border-bottom: 2px solid rgb(var(--mu-callout-red));
+  border-left: 2px dotted var(--mu-callout-red);
+  border-right: 2px dotted var(--mu-callout-red);
+  border-top: 2px solid var(--mu-callout-red);
+  border-bottom: 2px solid var(--mu-callout-red);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3065,10 +3065,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-pink));
-  border-right: 2px dotted rgb(var(--mu-callout-pink));
-  border-top: 2px solid rgb(var(--mu-callout-pink));
-  border-bottom: 2px solid rgb(var(--mu-callout-pink));
+  border-left: 2px dotted var(--mu-callout-pink);
+  border-right: 2px dotted var(--mu-callout-pink);
+  border-top: 2px solid var(--mu-callout-pink);
+  border-bottom: 2px solid var(--mu-callout-pink);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3081,10 +3081,10 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
   --callout-color: none;
   --callout-icon: none;
   align-items: center;
-  border-left: 2px dotted rgb(var(--mu-callout-purple));
-  border-right: 2px dotted rgb(var(--mu-callout-purple));
-  border-top: 2px solid rgb(var(--mu-callout-purple));
-  border-bottom: 2px solid rgb(var(--mu-callout-purple));
+  border-left: 2px dotted var(--mu-callout-purple);
+  border-right: 2px dotted var(--mu-callout-purple);
+  border-top: 2px solid var(--mu-callout-purple);
+  border-bottom: 2px solid var(--mu-callout-purple);
   border-radius: 0;
   padding-left: 0;
   color: var(--mu-text-1);
@@ -3095,21 +3095,21 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Media Callouts */
 .callout[data-callout="m-white"] {
-  --callout-color: 0, 0, 0;
+  --callout-color: rgb(0, 0, 0);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #fff;
   color: #000;
 }
 
 .callout[data-callout="m-black"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #000;
   color: #f1f1f1;
 }
 
 .callout[data-callout="m-gray"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #484848;
   color: #f1f1f1;
@@ -3227,7 +3227,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* MagicUser Image Gallery callouts */
 .callout[data-callout="g-black"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: black;
   color: #f1f1f1;
@@ -3235,7 +3235,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 }
 
 .callout[data-callout="g-gray"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: #484848;
   color: #f1f1f1;
@@ -3243,7 +3243,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 }
 
 .callout[data-callout="g-white"] {
-  --callout-color: 0, 0, 0;
+  --callout-color: rgb(0, 0, 0);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: white;
   color: #000;
@@ -3383,49 +3383,49 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="ub-blue"] {
   --callout-color: var(--mu-callout-blue);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-blue), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-blue) 30%, transparent);
 }
 
 /* ub green */
 .callout[data-callout="ub-green"] {
   --callout-color: var(--mu-callout-green);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-green), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-green) 30%, transparent);
 }
 
 /* ub orange */
 .callout[data-callout="ub-orange"] {
   --callout-color: var(--mu-callout-orange);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-orange), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-orange) 30%, transparent);
 }
 
 /* ub yellow */
 .callout[data-callout="ub-yellow"] {
   --callout-color: var(--mu-callout-yellow);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-yellow), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-yellow) 30%, transparent);
 }
 
 /* ub red */
 .callout[data-callout="ub-red"] {
   --callout-color: var(--mu-callout-red);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-red), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-red) 30%, transparent);
 }
 
 /* ub pink */
 .callout[data-callout="ub-pink"] {
   --callout-color: var(--mu-callout-pink);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-pink), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-pink) 30%, transparent);
 }
 
 /* ub purple */
 .callout[data-callout="ub-purple"] {
   --callout-color: var(--mu-callout-purple);
   --callout-icon: none;
-  background-color: rgba(var(--mu-callout-purple), 0.3);
+  background-color: color-mix(in srgb, var(--mu-callout-purple) 30%, transparent);
 }
 
 .callout[data-callout="ub-green"] .callout-title,
