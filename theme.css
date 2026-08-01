@@ -1582,7 +1582,7 @@ body:not(.disable-alt-checkboxes) li[data-task="!"]>p>input:checked::after {
 body:not(.disable-alt-checkboxes) input[data-task="?"]:checked::after,
 body:not(.disable-alt-checkboxes) li[data-task="?"]>input:checked::after,
 body:not(.disable-alt-checkboxes) li[data-task="?"]>p>input:checked::after {
-  content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m256 21a235 235 0 0 0-235 235 235 235 0 0 0 235 235 235 235 0 0 0 235-235 235 235 0 0 0-235-235zm0.273 69.1c23.3 0 44.7 4.25 64.2 12.7 19.5 8.18 34.9 19.8 46.3 34.9 11.3 14.8 17 31.3 17 49.6 0 12.3-2.36 23.3-7.08 33.1-4.72 9.44-10.4 17.5-17 24.1-6.3 6.3-15 14-26 23.1-11.3 9.13-19.8 16.7-25.5 22.7s-9.6 12.9-11.8 20.8c-2.2 8.5-6.45 12.7-12.7 12.7h-57.6c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97 0-11 2.36-20.9 7.08-29.7 5.04-8.81 10.9-16.4 17.5-22.7 6.61-6.61 15.4-14.3 26.4-23.1 11.6-9.13 20.3-16.7 26-22.7 5.67-6.3 8.5-13.1 8.5-20.3 0-9.13-3.62-16.2-10.9-21.2-6.92-5.35-17.5-8.03-31.6-8.03-10.7 0-19.2 1.42-25.5 4.25-5.98 2.52-10.4 5.51-13.2 8.97s-5.67 7.87-8.5 13.2c-1.89 4.72-3.93 8.34-6.14 10.9-2.2 2.2-5.51 3.3-9.92 3.3h-57.6c-2.83 0-5.35-0.943-7.55-2.83-1.89-1.89-2.83-4.41-2.83-7.55 0.315-15.4 5.82-31.2 16.5-47.2 11-16.1 26.3-29.4 45.8-40.1 19.8-10.7 42.8-16.1 68.9-16.1zm-31.2 262h59.5c3.46 0 6.45 1.26 8.97 3.78s3.78 5.51 3.78 8.97v47.7c0 3.46-1.26 6.45-3.78 8.97-2.52 2.52-5.51 3.78-8.97 3.78h-59.5c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97v-47.7c0-3.46 1.26-6.45 3.78-8.97s5.51-3.78 8.97-3.78z' fill='%23ffa300' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.98'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3C!-- MagicUser Theme for Obsidian (c) Bernardo Pires (drbap)--%3E%3Cpath d='m256 21a235 235 0 0 0-235 235 235 235 0 0 0 235 235 235 235 0 0 0 235-235 235 235 0 0 0-235-235zm0.273 69.1c23.3 0 44.7 4.25 64.2 12.7 19.5 8.18 34.9 19.8 46.3 34.9 11.3 14.8 17 31.3 17 49.6 0 12.3-2.36 23.3-7.08 33.1-4.72 9.44-10.4 17.5-17 24.1-6.3 6.3-15 14-26 23.1-11.3 9.13-19.8 16.7-25.5 22.7s-9.6 12.9-11.8 20.8c-2.2 8.5-6.45 12.7-12.7 12.7h-57.6c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97 0-11 2.36-20.9 7.08-29.7 5.04-8.81 10.9-16.4 17.5-22.7 6.61-6.61 15.4-14.3 26.4-23.1 11.6-9.13 20.3-16.7 26-22.7 5.67-6.3 8.5-13.1 8.5-20.3 0-9.13-3.62-16.2-10.9-21.2-6.92-5.35-17.5-8.03-31.6-8.03-10.7 0-19.2 1.42-25.5 4.25-5.98 2.52-10.4 5.51-13.2 8.97s-5.67 7.87-8.5 13.2c-1.89 4.72-3.93 8.34-6.14 10.9-2.2 2.2-5.51 3.3-9.92 3.3h-57.6c-2.83 0-5.35-0.943-7.55-2.83-1.89-1.89-2.83-4.41-2.83-7.55 0.315-15.4 5.82-31.2 16.5-47.2 11-16.1 26.3-29.4 45.8-40.1 19.8-10.7 42.8-16.1 68.9-16.1zm-31.2 262h59.5c3.46 0 6.45 1.26 8.97 3.78s3.78 5.51 3.78 8.97v47.7c0 3.46-1.26 6.45-3.78 8.97-2.52 2.52-5.51 3.78-8.97 3.78h-59.5c-3.46 0-6.45-1.26-8.97-3.78-2.52-2.52-3.78-5.51-3.78-8.97v-47.7c0-3.46 1.26-6.45 3.78-8.97s5.51-3.78 8.97-3.78z' fill='%23d4af37' stroke-dashoffset='211' stroke-linecap='round' stroke-linejoin='round' stroke-width='9.98'/%3E%3C/svg%3E");
   vertical-align: middle;
   background: transparent;
   position: absolute;
@@ -4632,13 +4632,13 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-dark.magicuser-moon-theme {
   --mu-background-color-1: #001122;
   --mu-background-color-2: #000b15;
-  --mu-caret-color: #d300ff;
+  --mu-caret-color: #bf48ff;
   --mu-divider-color: #dfc1c100;
   --mu-input-bg-color: #001836;
   --mu-folder-text-color: #729fd8;
-  --mu-text-title: #a300cf;
+  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #001a33;
-  --mu-vault-title: #a300cf;
+  --mu-vault-title: #bf48ff;
   --code-background: #000;
   --code-punctuation: #a300a3;
   --mu-h1: #729fd8;
@@ -5124,7 +5124,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-light.magicuser-bg-synth-theme {
   --mu-background-color-1: #fff;
   --mu-background-color-2: #fff;
-  --mu-caret-color: #f100f1;
+  --mu-caret-color: #a300a3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #f1f1f1;
   --mu-text-title: #bf48ff;
@@ -5480,44 +5480,43 @@ div.nav-files-container.node-insert-event>div>div.tree-item-children.nav-folder-
   margin-bottom: var(--size-4-2);
 }
 
+.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-quick-starter"] .style-settings-collapse-indicator::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72'/%3E%3Cpath d='m14 7 3 3'/%3E%3Cpath d='M5 6v4'/%3E%3Cpath d='M19 14v4'/%3E%3Cpath d='M10 2v2'/%3E%3Cpath d='M7 8H3'/%3E%3Cpath d='M21 16h-4'/%3E%3Cpath d='M11 3H9'/%3E%3C/svg%3E");
+  margin-left: 4px;
+  zoom: 82%;
+  vertical-align: middle;
+}
+
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-presets"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ffd700a3' stroke='%23ffd700' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z'/%3E%3Cpath d='M5 3v4'/%3E%3Cpath d='M19 17v4'/%3E%3Cpath d='M3 5h4'/%3E%3Cpath d='M17 19h4'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z'/%3E%3Cpath d='M5 3v4'/%3E%3Cpath d='M19 17v4'/%3E%3Cpath d='M3 5h4'/%3E%3Cpath d='M17 19h4'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-ui"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23bf48ff48' stroke='%23bf48ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='18' rx='2'/%3E%3Cpath d='M10 4v4'/%3E%3Cpath d='M2 8h20'/%3E%3Cpath d='M6 4v4'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='18' rx='2'/%3E%3Cpath d='M10 4v4'/%3E%3Cpath d='M2 8h20'/%3E%3Cpath d='M6 4v4'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-special-modes-and-effects"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ff5f00cf' stroke='%23ff5f00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-editor"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23007fff48' stroke='%23007fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' x2='8' y1='13' y2='13'/%3E%3Cline x1='16' x2='8' y1='17' y2='17'/%3E%3Cline x1='10' x2='8' y1='9' y2='9'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' x2='8' y1='13' y2='13'/%3E%3Cline x1='16' x2='8' y1='17' y2='17'/%3E%3Cline x1='10' x2='8' y1='9' y2='9'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
 }
 
 .setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-about"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23007fffcf' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
-  margin-left: 4px;
-  zoom: 82%;
-  vertical-align: middle;
-}
-
-
-.setting-item.setting-item-heading.style-settings-heading[data-id="magicuser-theme-main-colors"] .style-settings-collapse-indicator::after {
-  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%2300c30048' stroke='%2300c300' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'/%3E%3Ccircle cx='17.5' cy='10.5' r='.5'/%3E%3Ccircle cx='8.5' cy='7.5' r='.5'/%3E%3Ccircle cx='6.5' cy='12.5' r='.5'/%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'/%3E%3C/svg%3E");
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
   margin-left: 4px;
   zoom: 82%;
   vertical-align: middle;
@@ -5603,9 +5602,14 @@ body:not(.mu-cards-interface).theme-light.mu-sidebar-dark {
   --mu-special-folder-color: #000;
 }
 
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-sidedock-vault-profile,
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content {
   background-color: var(--mu-dark-sidebar-color);
   --mu-sidebar-top-buttons-container-bg-color: transparent;
+}
+
+body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .nav-file-tag {
+  color: var(--nav-item-color);
 }
 
 body:not(.mu-cards-interface).theme-light.mu-sidebar-dark .workspace-leaf-content[data-type="calendar"] .month {
@@ -8411,6 +8415,120 @@ span.cm-highlight {
   --background-primary-alt: var(--mup-custom) !important;
 }
 
+.setting-item[data-id="h1-font"] .setting-item-info::before {
+  content: "Heading 1";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  color: var(--h1-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="h2-font"] .setting-item-info::before {
+  content: "Heading 2";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  color: var(--h2-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="h3-font"] .setting-item-info::before {
+  content: "Heading 3";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h3-font);
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  color: var(--h3-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="h4-font"] .setting-item-info::before {
+  content: "Heading 4";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h4-font);
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  color: var(--h4-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="h5-font"] .setting-item-info::before {
+  content: "Heading 5";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h5-font);
+  font-size: var(--h5-size);
+  font-weight: var(--h5-weight);
+  color: var(--h5-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="h6-font"] .setting-item-info::before {
+  content: "Heading 6";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--h6-font);
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+  color: var(--h6-color);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+.setting-item[data-id="mu-font-headings"] .setting-item-info::before {
+  content: "MagicUser theme for Obsidian";
+  display: block;
+  background-color: var(--background-primary);
+  font-family: var(--mu-font-headings);
+  font-size: 1em;
+  font-weight: normal;
+  color: var(--text-normal);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
+
+.setting-item[data-id="mu-global-font"] .setting-item-info::before {
+  content: "MagicUser theme -> global font mode 1234567890";
+  display: block;
+  font-family: var(--mu-global-font);
+  font-size: var(--mu-global-font-size);
+  font-feature-settings: var(--mu-global-font-stylistic-set);
+  letter-spacing: calc(min(var(--mu-global-font-letter-spacing), var(--mu-max-letter-spacing)));
+  --font-text-size: var(--mu-global-font-size) !important;
+  color: var(--text-normal);
+  padding: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  border-radius: var(--radius-m);
+}
+
 /* Style Settings */
 
 /* @settings
@@ -8418,10 +8536,10 @@ name: MagicUser theme
 id: magicuser-theme-for-obsidian
 settings:
     -
-        id: magicuser-theme-presets
-        title: Preset themes
+        id: magicuser-theme-quick-starter
+        title: Quick starter
         type: heading
-        description: MagicUser preset themes.
+        description: Essential theme options for rapid customization.
         level: 2
         collapsed: true
     -
@@ -8494,45 +8612,53 @@ settings:
             - 
                 label: MagicUser BG Old School
                 value: magicuser-bg-old-school-theme
-    - 
-        id: mu-amulet-hue
-        title: Chroma Amulet - color
-        description: MagicUser Chroma Amulet preset theme - select color.
-        type: variable-number-slider
-        default: 224
-        min: 0
-        max: 360
-        step: 1
-    - 
-        id: mu-amulet-sat-value
-        title: Chroma Amulet - saturation
-        description: MagicUser Chroma Amulet preset theme - select saturation.
-        type: variable-number-slider
-        default: 50
-        min: 0
-        max: 100
-        step: 1
     -
-        id: mu-bg-image-overlay
-        title: BG themes (dark mode) - darken background
-        description: MagicUser BG preset themes (dark mode) - darken background.
-        type: variable-number-slider
-        default: 0.0
-        min: 0.0
-        max: 0.90
-        step: .05
+        id: mu-cards-interface
+        title: Cards UI
+        description: Activate cards user interface.
+        type: class-toggle
+        addCommand: true
     -
-        id: magicuser-theme-main-colors
-        title: Main theme colors
-        description: Background colors, caret and more core theme colors.
-        type: heading
-        level: 2
-        collapsed: true
+        id: mu-o-ui-sidebars
+        title: Outline UI - sidebars
+        description: Add borders to left and right sidebars.
+        type: class-toggle
+    -
+        id: mu-o-ui-icons
+        title: Outline UI - active icons
+        description: Add borders to active icons and elements.
+        type: class-toggle
+    -
+        id: mu-o-ui-border
+        title: Outline UI - border color
+        type: variable-themed-color
+        description: Select border color of outline UI elements.
+        format: hex
+        opacity: true
+        default-light: '#0072d3'
+        default-dark: '#0072d3'
+    -
+        id: mu-tabs-style
+        title: Tabs style
+        type: class-select
+        description: Select tabs style.
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default tabs
+                value: none
+            - 
+                label: Square tabs
+                value: mu-tabs-square
+            - 
+                label: Pill tabs
+                value: mu-tabs-pill
     -
         id: mu-titlebar-background
         title: Frame color
         type: variable-themed-color
-        description: Theme frame color.
+        description: Theme frame color (when Cards UI is off).
         format: hex
         opacity: false
         default-light: '#003388'
@@ -8565,36 +8691,55 @@ settings:
         default-light: '#cf00ff'
         default-dark: '#00cfff'
     -
-        id: background-modifier-hover
-        title: Hover menu items and hover icons background color
-        type: variable-themed-color
-        description: Select the background color of hover menu items and icons.
-        format: hex
-        opacity: true
-        default-light: '#007fff28'
-        default-dark: '#007fff28'
+        id: mu-hide-folders
+        title: Hide folder icons
+        description:  Toggle folder icons.
+        type: class-toggle
+        addCommand: true
     -
-        id: nav-item-background-active
-        title: Active item background color
-        type: variable-themed-color
-        description: Select active item background color.
-        format: hex
-        opacity: true
-        default-light: '#007fff28'
-        default-dark: '#007fff28'
+        id: mu-hide-file-icons
+        title: Hide file icons
+        description:  Toggle file icons.
+        type: class-toggle
+        addCommand: true
     -
-        id: nav-item-color-active
-        title: Active item foreground color
-        type: variable-themed-color
-        description: Select active item foreground color.
-        format: hex
-        opacity: true
-        default-light: '#007fff28'
-        default-dark: '#007fff28'
+        id: magicuser-theme-presets
+        title: Preset themes
+        type: heading
+        description: Fine-tune specific preset themes.
+        level: 2
+        collapsed: true
+    - 
+        id: mu-amulet-hue
+        title: Chroma Amulet - color
+        description: MagicUser Chroma Amulet preset theme - select color.
+        type: variable-number-slider
+        default: 224
+        min: 0
+        max: 360
+        step: 1
+    - 
+        id: mu-amulet-sat-value
+        title: Chroma Amulet - saturation
+        description: MagicUser Chroma Amulet preset theme - select saturation.
+        type: variable-number-slider
+        default: 50
+        min: 0
+        max: 100
+        step: 1
+    -
+        id: mu-bg-image-overlay
+        title: BG themes (dark mode) - darken background
+        description: MagicUser BG preset themes (dark mode) - darken background.
+        type: variable-number-slider
+        default: 0.0
+        min: 0.0
+        max: 0.90
+        step: .05
     -
         id: magicuser-theme-ui
         title: Application UI
-        description: Icons, sidebars and other UI elements.
+        description: Icons, sidebars, and other UI elements.
         type: heading
         level: 2
         collapsed: true
@@ -8737,18 +8882,6 @@ settings:
         type: heading
         level: 4
         collapsed: true
-    -
-        id: mu-hide-folders
-        title: Hide folder icons
-        description:  Toggle folder icons.
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-hide-file-icons
-        title: Hide file icons
-        description:  Toggle file icons.
-        type: class-toggle
-        addCommand: true
     -
         id: mu-closed-folders-design-style
         title: Closed folder icon
@@ -9133,8 +9266,35 @@ settings:
     -
         id: mu-sidebar-dark
         title: Dark sidebar (light mode)
-        description: Turn on dark sidebar (light mode - normal UI).
+        description: Turn on dark sidebar (light mode - Cards UI off).
         type: class-toggle
+    -
+        id: background-modifier-hover
+        title: Hover menu items and hover icons background color
+        type: variable-themed-color
+        description: Select the background color of hover menu items and icons.
+        format: hex
+        opacity: true
+        default-light: '#007fff28'
+        default-dark: '#007fff28'
+    -
+        id: nav-item-background-active
+        title: Active item background color
+        type: variable-themed-color
+        description: Select active item background color.
+        format: hex
+        opacity: true
+        default-light: '#007fff28'
+        default-dark: '#007fff28'
+    -
+        id: nav-item-color-active
+        title: Active item foreground color
+        type: variable-themed-color
+        description: Select active item foreground color.
+        format: hex
+        opacity: true
+        default-light: '#007fff28'
+        default-dark: '#007fff28'
     -
         id: mu-vault-title
         title: Vault title color
@@ -9224,23 +9384,6 @@ settings:
         default-light: '#000000'
         default-dark: '#f1f1f1'   
     -
-        id: mu-tabs-style
-        title: Tabs style
-        type: class-select
-        description: Select tabs style.
-        allowEmpty: false
-        default: none
-        options:
-            - 
-                label: Default tabs
-                value: none
-            - 
-                label: Square tabs
-                value: mu-tabs-square
-            - 
-                label: Pill tabs
-                value: mu-tabs-pill
-    -
         id: mu-default-mode-border-color
         title: Default tabs mode - active tab border color
         type: variable-themed-color
@@ -9280,7 +9423,7 @@ settings:
         id: magicuser-theme-editor
         title: Editor
         type: heading
-        description: Headings (H1-H6), text, tables, tags and more.
+        description: Headings (H1-H6), text, tables, tags, and more.
         level: 2
         collapsed: true
     -
@@ -9290,38 +9433,11 @@ settings:
         level: 3
         collapsed: true
     -
-        id: mu-neon-mode
-        title: Neon mode
-        description: Activate headings neon mode (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-outline-neon-mode
-        title: Outline neon mode
-        description: Activate headings outline neon mode (live preview, source and reading modes).
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-neon-mode-glow-value
-        title: Neon modes - glow controller
-        description: Adjust the glow intensity of neon and outline neon modes.
-        type: variable-number-slider
-        default: 0.5
-        min: 0.1
-        max: 1
-        step: 0.05
-    -
         id: mu-underline-headings
         title: Underline headings
         description: Activate underline headings H1-H6.
         type: class-toggle
         addCommand: true
-    -
-        id: magicuser-theme-normal-mode-headings
-        title: Headings fonts, sizes and colors
-        type: heading
-        level: 4
-        collapsed: true
     -
         id: mu-font-headings
         title: Global headings font (H1-H6)
@@ -9507,130 +9623,13 @@ settings:
         format: hex
         opacity: false
         default-light: '#0072d3'
-        default-dark: '#00a3ff'
-    -
-        id: magicuser-theme-neon-mode-headings
-        title: Neon mode headings
-        type: heading
-        level: 4
-        collapsed: true
-    - 
-        id: mu-neon-h1-color-hex
-        title: Neon H1 color
-        type: variable-themed-color
-        description: Neon heading 1 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h1-color
-                format: rgb-values
-        default-light: '#007fff'
-        default-dark: '#00e1ff'
-    - 
-        id: mu-neon-h2-color-hex
-        title: Neon H2 color
-        type: variable-themed-color
-        description: Neon heading 2 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h2-color
-                format: rgb-values
-        default-light: '#c547ff'
-        default-dark: '#d372ff'
-    - 
-        id: mu-neon-h3-color-hex
-        title: Neon H3 color
-        type: variable-themed-color
-        description: Neon heading 3 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h3-color
-                format: rgb-values
-        default-light: '#eb9800'
-        default-dark: '#ffbf48'
-    - 
-        id: mu-neon-h4-color-hex
-        title: Neon H4 color
-        type: variable-themed-color
-        description: Neon heading 4 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h4-color
-                format: rgb-values
-        default-light: '#00c000'
-        default-dark: '#72ff72'
-    - 
-        id: mu-neon-h5-color-hex
-        title: Neon H5 color
-        type: variable-themed-color
-        description: Neon heading 5 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h5-color
-                format: rgb-values
-        default-light: '#b10000'
-        default-dark: '#ff7272'
-    - 
-        id: mu-neon-h6-color-hex
-        title: Neon H6 color
-        type: variable-themed-color
-        description: Neon heading 6 color.
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: mu-neon-h6-color
-                format: rgb-values
-        default-light: '#828200'
-        default-dark: '#f1f138'   
+        default-dark: '#00a3ff'   
     -
         id: magicuser-theme-text
         title: Text
         type: heading
         level: 3
         collapsed: true
-    -
-        id: mu-global-font-mode
-        title: Global font mode
-        description: Activate the global font for text and other UI elements.
-        type: class-toggle
-        addCommand: true
-    -
-        id: mu-global-font
-        title: Global font
-        type: variable-text
-        description: Choose the font to use when global font mode is active.
-        default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
-    -
-        id: mu-global-font-size-value
-        title: Global font size
-        description: Adjust the font size only when global font mode is active.
-        type: variable-number-slider
-        default: 16
-        min: 10
-        max: 30
-        step: 1
-    -
-        id: mu-global-font-stylistic-set
-        title: Global font stylistic sets
-        type: variable-text
-        description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
-        default: normal
-    -
-        id: mu-global-font-letter-spacing
-        title: Global font letter spacing
-        type: variable-text
-        description: Set a value in pixels to customize spacing between characters (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
-        default: normal
     -
         id: text-normal
         title: Theme text color
@@ -10417,7 +10416,7 @@ settings:
         id: magicuser-theme-special-modes-and-effects
         title: Special modes and effects
         type: heading
-        description: UI modes, line highlight, laser and more.
+        description: UI modes, neon modes, line highlight, laser, and more.
         level: 2
         collapsed: true
     - 
@@ -10447,31 +10446,156 @@ settings:
         description: Activate total concentration mode.
         type: class-toggle
         addCommand: true
+    - 
+        id: magicuser-theme-neon-modes
+        title: Neon mode
+        type: heading
+        level: 3
+        collapsed: true
     -
-        id: mu-cards-interface
-        title: Cards UI
-        description: Activate cards user interface.
+        id: mu-neon-mode
+        title: Neon mode
+        description: Activate headings neon mode (live preview, source and reading modes).
         type: class-toggle
         addCommand: true
     -
-        id: mu-o-ui-sidebars
-        title: Outline UI - sidebars
-        description: Add borders to left and right sidebars.
+        id: mu-outline-neon-mode
+        title: Outline neon mode
+        description: Activate headings outline neon mode (live preview, source and reading modes).
         type: class-toggle
+        addCommand: true
     -
-        id: mu-o-ui-icons
-        title: Outline UI - active icons
-        description: Add borders to active icons and elements.
-        type: class-toggle
+        id: mu-neon-mode-glow-value
+        title: Neon modes - glow controller
+        description: Adjust the glow intensity of neon and outline neon modes.
+        type: variable-number-slider
+        default: 0.5
+        min: 0.1
+        max: 1
+        step: 0.05
     -
-        id: mu-o-ui-border
-        title: Outline UI - border color
+        id: magicuser-theme-neon-mode-headings
+        title: Neon mode headings
+        type: heading
+        level: 4
+        collapsed: true
+    - 
+        id: mu-neon-h1-color-hex
+        title: Neon H1 color
         type: variable-themed-color
-        description: Select border color of outline UI elements.
+        description: Neon heading 1 color.
+        opacity: false
         format: hex
-        opacity: true
-        default-light: '#0072d3'
-        default-dark: '#0072d3'
+        alt-format:
+            -
+                id: mu-neon-h1-color
+                format: rgb-values
+        default-light: '#007fff'
+        default-dark: '#00e1ff'
+    - 
+        id: mu-neon-h2-color-hex
+        title: Neon H2 color
+        type: variable-themed-color
+        description: Neon heading 2 color.
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: mu-neon-h2-color
+                format: rgb-values
+        default-light: '#c547ff'
+        default-dark: '#d372ff'
+    - 
+        id: mu-neon-h3-color-hex
+        title: Neon H3 color
+        type: variable-themed-color
+        description: Neon heading 3 color.
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: mu-neon-h3-color
+                format: rgb-values
+        default-light: '#eb9800'
+        default-dark: '#ffbf48'
+    - 
+        id: mu-neon-h4-color-hex
+        title: Neon H4 color
+        type: variable-themed-color
+        description: Neon heading 4 color.
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: mu-neon-h4-color
+                format: rgb-values
+        default-light: '#00c000'
+        default-dark: '#72ff72'
+    - 
+        id: mu-neon-h5-color-hex
+        title: Neon H5 color
+        type: variable-themed-color
+        description: Neon heading 5 color.
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: mu-neon-h5-color
+                format: rgb-values
+        default-light: '#b10000'
+        default-dark: '#ff7272'
+    - 
+        id: mu-neon-h6-color-hex
+        title: Neon H6 color
+        type: variable-themed-color
+        description: Neon heading 6 color.
+        opacity: false
+        format: hex
+        alt-format:
+            -
+                id: mu-neon-h6-color
+                format: rgb-values
+        default-light: '#828200'
+        default-dark: '#f1f138'
+    - 
+        id: magicuser-theme-active-line-zoom
+        title: Global font mode
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-global-font-mode
+        title: Global font mode
+        description: Activate the global font for text and other UI elements.
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-global-font
+        title: Global font
+        type: variable-text
+        description: Choose the font to use when global font mode is active.
+        default: JetBrains Mono, Consolas, Roboto Mono, Menlo, monospace
+    -
+        id: mu-global-font-size-value
+        title: Global font size (editor)
+        description: Adjust the font size only when global font mode is active.
+        type: variable-number-slider
+        default: 16
+        min: 10
+        max: 30
+        step: 1
+    -
+        id: mu-global-font-stylistic-set
+        title: Global font stylistic sets
+        type: variable-text
+        description: Select global font stylistic sets (when supported by the selected font). Advanced typographic features in OpenType fonts.
+        default: normal
+    -
+        id: mu-global-font-letter-spacing
+        title: Global font letter spacing
+        type: variable-text
+        description: Set a value in pixels to customize spacing between characters (e.g. 0.5px). Use normal to restore the font's default letter spacing. Maximum is 2px.
+        default: normal
     - 
         id: magicuser-theme-active-line-zoom
         title: Active line zoom
