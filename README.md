@@ -4,7 +4,9 @@
 
 ✨ **MagicUser** is a custom theme for Obsidian.md that provides a pleasant and focused note-taking experience, with light and dark themes for day and night use. 
 
-In conjunction with the **Style Settings** community plugin, the **MagicUser theme** offers **200+ options for customization**, including multiple preset themes, UI modes, and many special effects. Whether you prefer a clean, minimalist look or a vibrant interface, you can adjust colors, fonts, and layouts to match your workflow and personal color palette aesthetic.
+In conjunction with the **Style Settings** community plugin, **MagicUser** offers **200+ options for customization**, including multiple preset themes, UI modes, and many special effects. Whether you prefer a clean, minimalist look or a vibrant interface, you can adjust colors, fonts, and layouts to match your workflow and personal color palette aesthetic. 
+
+**Rapid customization**: Use the **Quick starter** Style Settings menu to skip the deep customization and achieve a polished, personalized workflow in minutes.
 
 ## Installation
 
