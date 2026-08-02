@@ -1,5 +1,10 @@
 # Changelog
 
+## [21.22.2] 2026-08-02
+
+- Fixed: Delete button foreground color.
+- Fixed: Input background for Bases (sort, input fields).
+
 ## [21.22.1] 2026-08-01
 
 - Fixed: Updated callout colors to use `rgb()` for compatibility with Obsidian 1.13+.
