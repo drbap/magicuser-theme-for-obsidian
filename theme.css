@@ -631,7 +631,7 @@ body {
   --background-modifier-message: rgba(0, 0, 0, 0.9);
 
   /* Inputs */
-  --background-modifier-form-field: #007fff21;
+  --background-modifier-form-field: var(--mu-input-bg-color) !important;
 
   /* Text */
   --text-normal: var(--color-base-100);
@@ -8257,7 +8257,7 @@ body.is-popout-window .titlebar {
 }
 
 .clickable-icon.extra-setting-button[aria-label="Uninstall"],
-button.mod-destructive {
+button.mod-destructive:not(.mod-cta) {
   color: var(--color-red) !important;
 }
 
