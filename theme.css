@@ -2410,125 +2410,125 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 /* Callouts */
 /* Magic Callout */
 .callout[data-callout="magic"] {
-  --callout-color: var(--mu-callout-magic);
+  --callout-color: rgb(var(--mu-callout-magic));
   --callout-icon: wand-2;
   border: .2rem double rgb(var(--mu-callout-magic));
 }
 
 /* Highlighters */
 .callout[data-callout="hl-green"] {
-  --callout-color: var(--mu-callout-green);
+  --callout-color: rgb(var(--mu-callout-green));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-blue"] {
-  --callout-color: var(--mu-callout-blue);
+  --callout-color: rgb(var(--mu-callout-blue));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-orange"] {
-  --callout-color: var(--mu-callout-orange);
+  --callout-color: rgb(var(--mu-callout-orange));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-yellow"] {
-  --callout-color: var(--mu-callout-yellow);
+  --callout-color: rgb(var(--mu-callout-yellow));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-red"] {
-  --callout-color: var(--mu-callout-red);
+  --callout-color: rgb(var(--mu-callout-red));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-pink"] {
-  --callout-color: var(--mu-callout-pink);
+  --callout-color: rgb(var(--mu-callout-pink));
   --callout-icon: highlighter;
 }
 
 .callout[data-callout="hl-purple"] {
-  --callout-color: var(--mu-callout-purple);
+  --callout-color: rgb(var(--mu-callout-purple));
   --callout-icon: highlighter;
 }
 
 /* Pens */
 .callout[data-callout="p-green"] {
-  --callout-color: var(--mu-callout-green);
+  --callout-color: rgb(var(--mu-callout-green));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-green));
 }
 
 .callout[data-callout="p-blue"] {
-  --callout-color: var(--mu-callout-blue);
+  --callout-color: rgb(var(--mu-callout-blue));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-blue));
 }
 
 .callout[data-callout="p-orange"] {
-  --callout-color: var(--mu-callout-orange);
+  --callout-color: rgb(var(--mu-callout-orange));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-orange));
 }
 
 .callout[data-callout="p-yellow"] {
-  --callout-color: var(--mu-callout-yellow);
+  --callout-color: rgb(var(--mu-callout-yellow));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-yellow));
 }
 
 .callout[data-callout="p-red"] {
-  --callout-color: var(--mu-callout-red);
+  --callout-color: rgb(var(--mu-callout-red));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-red));
 }
 
 .callout[data-callout="p-pink"] {
-  --callout-color: var(--mu-callout-pink);
+  --callout-color: rgb(var(--mu-callout-pink));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-pink));
 }
 
 .callout[data-callout="p-purple"] {
-  --callout-color: var(--mu-callout-purple);
+  --callout-color: rgb(var(--mu-callout-purple));
   --callout-icon: pen-tool;
   border: .1rem solid rgb(var(--mu-callout-purple));
 }
 
 /* Video */
 .callout[data-callout="video"] {
-  --callout-color: var(--mu-callout-video);
+  --callout-color: rgb(var(--mu-callout-video));
   --callout-icon: video;
 }
 
 /* Mic */
 .callout[data-callout="mic"] {
-  --callout-color: var(--mu-callout-mic);
+  --callout-color: rgb(var(--mu-callout-mic));
   --callout-icon: mic;
 }
 
 /* Clip */
 .callout[data-callout="clip"],
 .callout[data-callout="paperclip"] {
-  --callout-color: var(--mu-callout-paperclip);
+  --callout-color: rgb(var(--mu-callout-paperclip));
   --callout-icon: paperclip;
 }
 
 /* Book */
 .callout[data-callout="book"] {
-  --callout-color: var(--mu-callout-book);
+  --callout-color: rgb(var(--mu-callout-book));
   --callout-icon: book-open;
 }
 
 /* Target */
 .callout[data-callout="target"] {
-  --callout-color: var(--mu-callout-target);
+  --callout-color: rgb(var(--mu-callout-target));
   --callout-icon: target;
 }
 
 /* Pros */
 .callout[data-callout="pro"],
 .callout[data-callout="pros"] {
-  --callout-color: var(--mu-callout-pro);
+  --callout-color: rgb(var(--mu-callout-pro));
   --callout-icon: thumbs-up;
   border-left: .3rem solid rgb(var(--mu-callout-pro));
   border-radius: 0;
@@ -2537,7 +2537,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 /* Cons */
 .callout[data-callout="con"],
 .callout[data-callout="cons"] {
-  --callout-color: var(--mu-callout-con);
+  --callout-color: rgb(var(--mu-callout-con));
   --callout-icon: thumbs-down;
   border-left: .3rem solid rgb(var(--mu-callout-con));
   border-radius: 0;
@@ -2546,7 +2546,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 /* Link */
 .callout[data-callout="link"],
 .callout[data-callout="links"] {
-  --callout-color: var(--mu-callout-link);
+  --callout-color: rgb(var(--mu-callout-link));
   --callout-icon: link;
   border-left: .3rem solid rgb(var(--mu-callout-link));
   border-radius: 0;
@@ -2555,7 +2555,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Comment */
 .callout[data-callout="comment"] {
-  --callout-color: var(--mu-callout-comment);
+  --callout-color: rgb(var(--mu-callout-comment));
   --callout-icon: message-square;
 }
 
@@ -2624,7 +2624,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box blue */
 .callout[data-callout="b-blue"] {
-  --callout-color: var(--mu-callout-blue);
+  --callout-color: rgb(var(--mu-callout-blue));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-blue), 0.3);
   border-radius: 0;
@@ -2632,7 +2632,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box green */
 .callout[data-callout="b-green"] {
-  --callout-color: var(--mu-callout-green);
+  --callout-color: rgb(var(--mu-callout-green));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-green), 0.3);
   border-radius: 0;
@@ -2640,7 +2640,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box orange */
 .callout[data-callout="b-orange"] {
-  --callout-color: var(--mu-callout-orange);
+  --callout-color: rgb(var(--mu-callout-orange));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-orange), 0.3);
   border-radius: 0;
@@ -2648,7 +2648,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box yellow */
 .callout[data-callout="b-yellow"] {
-  --callout-color: var(--mu-callout-yellow);
+  --callout-color: rgb(var(--mu-callout-yellow));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-yellow), 0.3);
   border-radius: 0;
@@ -2656,7 +2656,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box red */
 .callout[data-callout="b-red"] {
-  --callout-color: var(--mu-callout-red);
+  --callout-color: rgb(var(--mu-callout-red));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-red), 0.3);
   border-radius: 0;
@@ -2664,7 +2664,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box pink */
 .callout[data-callout="b-pink"] {
-  --callout-color: var(--mu-callout-pink);
+  --callout-color: rgb(var(--mu-callout-pink));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-pink), 0.3);
   border-radius: 0;
@@ -2672,7 +2672,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Box purple */
 .callout[data-callout="b-purple"] {
-  --callout-color: var(--mu-callout-purple);
+  --callout-color: rgb(var(--mu-callout-purple));
   --callout-icon: var(--mu-box-callout-icon);
   background-color: rgba(var(--mu-callout-purple), 0.3);
   border-radius: 0;
@@ -2695,7 +2695,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-blue"],
 .callout[data-callout="h5-blue"],
 .callout[data-callout="h6-blue"] {
-  --callout-color: var(--mu-callout-blue);
+  --callout-color: rgb(var(--mu-callout-blue));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-blue), 0.2);
   border-radius: 0;
@@ -2707,7 +2707,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-green"],
 .callout[data-callout="h5-green"],
 .callout[data-callout="h6-green"] {
-  --callout-color: var(--mu-callout-green);
+  --callout-color: rgb(var(--mu-callout-green));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-green), 0.2);
   border-radius: 0;
@@ -2719,7 +2719,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-orange"],
 .callout[data-callout="h5-orange"],
 .callout[data-callout="h6-orange"] {
-  --callout-color: var(--mu-callout-orange);
+  --callout-color: rgb(var(--mu-callout-orange));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-orange), 0.2);
   border-radius: 0;
@@ -2731,7 +2731,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-yellow"],
 .callout[data-callout="h5-yellow"],
 .callout[data-callout="h6-yellow"] {
-  --callout-color: var(--mu-callout-yellow);
+  --callout-color: rgb(var(--mu-callout-yellow));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-yellow), 0.2);
   border-radius: 0;
@@ -2743,7 +2743,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-red"],
 .callout[data-callout="h5-red"],
 .callout[data-callout="h6-red"] {
-  --callout-color: var(--mu-callout-red);
+  --callout-color: rgb(var(--mu-callout-red));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-red), 0.2);
   border-radius: 0;
@@ -2755,7 +2755,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-pink"],
 .callout[data-callout="h5-pink"],
 .callout[data-callout="h6-pink"] {
-  --callout-color: var(--mu-callout-pink);
+  --callout-color: rgb(var(--mu-callout-pink));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-pink), 0.2);
   border-radius: 0;
@@ -2767,7 +2767,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 .callout[data-callout="h4-purple"],
 .callout[data-callout="h5-purple"],
 .callout[data-callout="h6-purple"] {
-  --callout-color: var(--mu-callout-purple);
+  --callout-color: rgb(var(--mu-callout-purple));
   --callout-icon: "";
   background-color: rgba(var(--mu-callout-purple), 0.2);
   border-radius: 0;
@@ -3095,21 +3095,21 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* Media Callouts */
 .callout[data-callout="m-white"] {
-  --callout-color: 0, 0, 0;
+  --callout-color: rgb(0, 0, 0);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #fff;
   color: #000;
 }
 
 .callout[data-callout="m-black"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #000;
   color: #f1f1f1;
 }
 
 .callout[data-callout="m-gray"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-box-callout-icon);
   background-color: #484848;
   color: #f1f1f1;
@@ -3227,7 +3227,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 
 /* MagicUser Image Gallery callouts */
 .callout[data-callout="g-black"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: black;
   color: #f1f1f1;
@@ -3235,7 +3235,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 }
 
 .callout[data-callout="g-gray"] {
-  --callout-color: 241, 241, 241;
+  --callout-color: rgb(241, 241, 241);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: #484848;
   color: #f1f1f1;
@@ -3243,7 +3243,7 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 }
 
 .callout[data-callout="g-white"] {
-  --callout-color: 0, 0, 0;
+  --callout-color: rgb(0, 0, 0);
   --callout-icon: var(--mu-gallery-callout-icon);
   background-color: white;
   color: #000;
@@ -3381,49 +3381,49 @@ body:not(.disable-alt-checkboxes) li[data-task="G"]>p>input:checked::after {
 /* Untitled box callouts */
 /* ub blue */
 .callout[data-callout="ub-blue"] {
-  --callout-color: var(--mu-callout-blue);
+  --callout-color: rgb(var(--mu-callout-blue));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-blue), 0.3);
 }
 
 /* ub green */
 .callout[data-callout="ub-green"] {
-  --callout-color: var(--mu-callout-green);
+  --callout-color: rgb(var(--mu-callout-green));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-green), 0.3);
 }
 
 /* ub orange */
 .callout[data-callout="ub-orange"] {
-  --callout-color: var(--mu-callout-orange);
+  --callout-color: rgb(var(--mu-callout-orange));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-orange), 0.3);
 }
 
 /* ub yellow */
 .callout[data-callout="ub-yellow"] {
-  --callout-color: var(--mu-callout-yellow);
+  --callout-color: rgb(var(--mu-callout-yellow));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-yellow), 0.3);
 }
 
 /* ub red */
 .callout[data-callout="ub-red"] {
-  --callout-color: var(--mu-callout-red);
+  --callout-color: rgb(var(--mu-callout-red));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-red), 0.3);
 }
 
 /* ub pink */
 .callout[data-callout="ub-pink"] {
-  --callout-color: var(--mu-callout-pink);
+  --callout-color: rgb(var(--mu-callout-pink));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-pink), 0.3);
 }
 
 /* ub purple */
 .callout[data-callout="ub-purple"] {
-  --callout-color: var(--mu-callout-purple);
+  --callout-color: rgb(var(--mu-callout-purple));
   --callout-icon: none;
   background-color: rgba(var(--mu-callout-purple), 0.3);
 }
