@@ -2,7 +2,7 @@
 
 ## [21.22.1] 2026-08-01
 
-- Fixed: Updated callout colors to use `rgb()` for compatibility with Obsidian 1.13+
+- Fixed: Updated callout colors to use `rgb()` for compatibility with Obsidian 1.13+.
 - Updated minAppVersion to 1.13.0.
 
 ## [21.22.0] 2026-08-01
