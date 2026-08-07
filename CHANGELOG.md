@@ -5,7 +5,7 @@
 - **MagicUser BG Light Themes**: Introduced 8 brand-new light gradient themes designed for a vibrant and clean aesthetic.
 - Added a new option (slider) tailored to lighten the background of the **MagicUser BG Light themes** for improved readability and customization. 
 - Improved color-coded icons in Style Settings for faster scanning and easier navigation.
-- Theme style settings options options have a left border according to the color of the main Style Settings menu icon (Gold/Yellow, Blue, Purple and Orange).
+- Theme Style Settings options have a left border according to the color of the main Style Settings menu icon (Gold/Yellow, Blue, Purple and Orange).
 - Link colors and inline-title color update.
 - Global color adjustments: Fine-tuned and balanced many existing colors for a more cohesive experience, adjusted BG Old School theme, and other BG themes.
 
