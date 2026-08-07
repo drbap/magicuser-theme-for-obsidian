@@ -80,9 +80,9 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 **MagicUser BG Themes (Light Themes)**
 
-![MagicUser BG Themes](images/magicuser_preset_bg_themes_light.png)
-
+**MagicUser BG Themes  options**:
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
+- **Lighten background** slider (**all preset BG themes** - **light mode**).
 
 ### MagicUser Chroma Amulet Theme
 
