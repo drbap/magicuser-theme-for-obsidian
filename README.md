@@ -80,6 +80,8 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 **MagicUser BG Themes (Light Themes)**
 
+![MagicUser BG Light Themes](images/magicuser_bg_light_themes.png)
+
 **MagicUser BG Themes  options**:
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
 - **Lighten background** slider (**all preset BG themes** - **light mode**).
