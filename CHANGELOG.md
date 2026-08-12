@@ -1,5 +1,25 @@
 # Changelog
 
+## [23.0.0] 2026-08-12
+
+- *New* **Advanced color and contrast controls** (Style Settings menu). Main theme colors now use the **OKLCH** color space format for uniform visual perception, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
+
+  - **Menu options** (easy-to-use sliders for granular control):
+    - Backgrounds -> Lightness.
+    - Backgrounds -> Saturation (0 results in grayscale colors - icons will still be colored).
+    - Backgrounds -> Hue (shifts the color of the preset theme).
+    - Headings -> Saturation (for normal and neon modes).
+    - Text Lightness for Light and Dark modes (independent controllers).
+  - *Note: Headings and main text also utilize the OKLCH format. These color settings are made color by color, not a global saturate() or contrast CSS filter.*
+
+  - **Why OKLCH?** Unlike more traditional color formats (like RGB or HSL, that I still use on this theme), OKLCH is designed to match **human visual perception**. For example, a 50% lightness value *actually looks* equally bright across completely different hues (like yellow and blue).
+
+- **Fixed top reading view margin** for heading labels in reading view. Reading view now has a much closer appearance to Live Preview mode.
+
+- **Obsidian compatibility fixes:** Resolved issues introduced in recent Obsidian updates, including inline code outlining (toggle).
+
+- **Preset theme adjustments:** Updated many preset themes to ensure full compatibility with the OKLCH format.
+
 ## [22.0.0] 2026-08-07
 
 - **MagicUser BG Light Themes**: Introduced 8 brand-new light gradient themes designed for a vibrant and clean aesthetic.
