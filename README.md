@@ -117,6 +117,18 @@ How it Works:
 
 > The theme will adjust according to the selected accent color (headings, icons, borders, blockquote border, lists and other UI elements).
 
+## Advanced Color and Contrast Controls
+
+Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
+
+Menu options (easy-to-use sliders for granular control):
+
+- Backgrounds -> Lightness.
+- Backgrounds -> Saturation (0 results in grayscale colors - icons will still be colored).
+- Backgrounds -> Hue (shifts the color of the preset theme).
+- Headings -> Saturation (for normal and neon modes).
+- Text Lightness for Light and Dark modes (independent controllers).
+
 ---
 
 ## MagicUser Page Backgrounds (MUP)
