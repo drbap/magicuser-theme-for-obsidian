@@ -121,7 +121,7 @@ How it Works:
 
 ![MagicUser - OKLCH Color Controls](images/magicuser_advanced_color_contrast_controls_01.png)
 
-Advanced Color and Contrast Controls (Style Settings menu): Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
+Advanced Color and Contrast Controls (Style Settings menu): Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to **achieve the best contrast and visualization possible** according to your preferences and setup (monitor, room lighting, etc).
 
 Menu options (easy-to-use sliders for granular control):
 
