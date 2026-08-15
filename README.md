@@ -119,7 +119,9 @@ How it Works:
 
 ## Advanced Color and Contrast Controls
 
-Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
+![MagicUser - OKLCH Color Controls](images/magicuser_advanced_color_contrast_controls_01.png)
+
+Advanced Color and Contrast Controls (Style Settings menu): Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
 
 Menu options (easy-to-use sliders for granular control):
 
@@ -128,8 +130,6 @@ Menu options (easy-to-use sliders for granular control):
 - Backgrounds -> Hue (shifts the color of the preset theme).
 - Headings -> Saturation (for normal and neon modes).
 - Text Lightness for Light and Dark modes (independent controllers).
-
----
 
 ## MagicUser Page Backgrounds (MUP)
 
