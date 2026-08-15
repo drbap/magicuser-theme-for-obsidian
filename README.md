@@ -26,6 +26,8 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
+![MagicUser Theme - Style Settings menu](images/magicuser_style_settings_menu_01.png)
+
 ## Preset Themes
 
 ### **MagicUser** (Default)
@@ -83,7 +85,9 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 ![MagicUser BG Light Themes](images/magicuser_bg_light_themes.png)
 
 **MagicUser BG Themes  options**:
+
 - **Darken background** slider (**all preset BG themes** - **dark mode**). You can darken the background of all preset BG themes to improve readability.
+
 - **Lighten background** slider (**all preset BG themes** - **light mode**).
 
 ### MagicUser Chroma Amulet Theme
@@ -123,7 +127,7 @@ How it Works:
 
 Advanced Color and Contrast Controls (Style Settings menu): Main theme colors now use the **OKLCH** color space format for **uniform visual perception**, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to **achieve the best contrast and visualization possible** according to your preferences and setup (monitor, room lighting, etc).
 
-Menu options (easy-to-use sliders for granular control):
+**Menu options** (easy-to-use sliders for granular control):
 
 - Backgrounds -> Lightness.
 - Backgrounds -> Saturation (0 results in grayscale colors - icons will still be colored).
