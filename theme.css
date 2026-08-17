@@ -8512,15 +8512,33 @@ body:not(.is-mobile) :is(.mod-left-split, .mod-right-split) .workspace-tab-heade
 
 body:not(.is-mobile) .side-dock-actions {
   background-color: #000000;
-  padding: var(--size-4-2) var(--size-4-1);
+  padding: var(--size-4-2) 0;
   border: 1px inset #cfcfcf28;
   border-radius: 8px;
+  margin: 4px 0;
+  width: 100%;
+}
+
+body:not(.is-mobile).mu-ui-buttons-bg :is(.mod-left-split, .mod-right-split) .workspace-tab-header-container-inner {
+  background-color: transparent;
+  padding: var(--size-4-1) var(--size-4-2);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-top: 4px;
   margin-bottom: 4px;
-  align-self: center;
+  margin-right: 4px;
+}
+
+body:not(.is-mobile).mu-ui-buttons-bg .side-dock-actions {
+  background-color: transparent;
+  padding: var(--size-4-2) 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  margin-bottom: 4px;
 }
 
 /* 
-Mobile theme
+Mobile layout
 ===========================================================
 */
 body.is-mobile {
@@ -8694,6 +8712,12 @@ settings:
         id: mu-cards-interface
         title: Cards UI
         description: Activate cards user interface.
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-ui-buttons-bg
+        title: Hide button toolbars background (desktop)
+        description: Hides the background of ribbon and sidebar button toolbars (desktop version).
         type: class-toggle
         addCommand: true
     - 
