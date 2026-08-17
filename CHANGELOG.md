@@ -1,5 +1,18 @@
 # Changelog
 
+## [24.0.0] 2026-08-17
+
+- New **UI button toolbars background** (ribbon and sidebars). You can disable the new feature (Style Settings -> Preset themes and quick start menu -> Hide button toolbars background). 
+  - You can toggle this feature using the Command Palette.
+
+- **Mobile/phone redesign and fixes**. Rounded corners consistency, search, icons, dropdowns.
+
+- Properties metadata container with rounded corners and no borders, to have a similar appearance in mobile and desktop versions.
+
+- Internal code refactor (checkboxes and removing features of Obsidian < 1.6).
+
+- Many theme adjustments for overall consistency (desktop, tablet and mobile phone).
+
 ## [23.0.0] 2026-08-12
 
 - *New* **Advanced color and contrast controls** (Style Settings menu). Main theme colors now use the **OKLCH** color space format for uniform visual perception, bringing this advanced color technology to the theme. You can fine-tune background tone, saturation, and lightness to achieve the best contrast and visualization possible according to your preferences and setup (monitor, room lighting, etc).
