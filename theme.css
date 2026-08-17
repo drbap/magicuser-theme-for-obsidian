@@ -5891,11 +5891,11 @@ body.mu-automatic-rainbow-folders {
   --mu-folder-icon-color: #000 !important;
   --mu-file-icon-color: #000 !important;
   --mu-folder-text-color: #000 !important;
-  --nav-item-color: #000 !important;
-  --nav-item-color-hover: #000;
-  --nav-item-color-active: #000;
-  --nav-item-color-selected: #000;
-  --nav-item-color-highlighted: #000;
+  --nav-item-color: var(--text-normal) !important;
+  --nav-item-color-hover: var(--text-normal);
+  --nav-item-color-active: var(--text-normal);
+  --nav-item-color-selected: var(--text-normal);
+  --nav-item-color-highlighted: var(--text-normal);
   --nav-item-background-selected: #000;
   --mu-indent-color-level-1: #000;
   --mu-indent-color-level-2: #000;
