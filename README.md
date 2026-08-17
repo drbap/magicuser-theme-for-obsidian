@@ -8,6 +8,8 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 **Rapid customization**: Use the `Preset themes & quick start` Style Settings menu to skip the deep customization and achieve a polished, personalized workflow in minutes.
 
+![MagicUser theme for Obsidian](images/magicuser_gradient_dark_01.png)
+
 ## Installation
 
 1. Open Obsidian **Settings** -> select **Appearance**
