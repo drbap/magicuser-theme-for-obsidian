@@ -6,7 +6,7 @@
 
 In conjunction with the **Style Settings** community plugin, **MagicUser** offers **200+ options for customization**, including multiple preset themes, UI modes, and many special effects. Whether you prefer a clean, minimalist look or a vibrant interface, you can adjust colors, fonts, and layouts to match your workflow and personal color palette aesthetic. 
 
-**Rapid customization**: Use the `Preset themes & quick start` Style Settings menu to skip the deep customization and achieve a polished, personalized workflow in minutes.
+**Rapid customization**: Use the `Preset themes and quick start` Style Settings menu to skip the deep customization and achieve a polished, personalized workflow in minutes.
 
 ![MagicUser theme for Obsidian](images/magicuser_gradient_dark_01.png)
 
