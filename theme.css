@@ -354,7 +354,7 @@ body {
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.075em;
-  --list-marker-color: #007fff;
+  --list-marker-color: #48a3ff;
   --list-marker-color-hover: var(--list-marker-color);
   --list-marker-color-collapsed: #f100f1;
   --list-bullet-border: none;
@@ -675,7 +675,7 @@ body {
   --text-highlight-bg: #ffff0088;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
-  --mu-text-highlight-fg: var(--text-normal);
+  --mu-text-highlight-fg: #000000;
 
   /* Font Settings */
   --mu-font-headings: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1244,7 +1244,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-magenta-1: #f100f1;
   --mu-hr-color: #0072d3;
   --mu-text-1: #f1f1f1;
-  --mu-text-title: hsl(278, 80%, 60%);
+  --mu-text-title: hsl(278, 80%, 70%);
   --mu-text-bold: inherit;
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf20;
@@ -1264,7 +1264,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-icon-focused: #00a3ff;
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
-  --mu-vault-title: var(--mu-purple-2);
+  --mu-vault-title: #c375f0;
   --mu-folder-text-color: #72a3ff;
   --mu-link: #d372ff;
   --mu-link-hover: #db8fff;
@@ -1342,18 +1342,19 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-magenta-1: #f100f1;
   --mu-hr-color: #0072d3;
   --mu-text-1: #000;
-  --mu-text-title: #a300cf;
+  --mu-text-title: #7f00a3;
   --mu-text-bold: inherit;
   --mu-text-italic: inherit;
   --mu-blockquote-background: #cfcfcf88;
   --mu-blockquote-border: #007fff;
   --mu-divider-color: #007fff10;
-  --mu-h1: #0072d3;
-  --mu-h2: #0072d3;
-  --mu-h3: #0072d3;
-  --mu-h4: #0072d3;
-  --mu-h5: #0072d3;
-  --mu-h6: #0072d3;
+  --mu-h1: #0048a3;
+  --mu-h2: #0048a3;
+  --mu-h3: #0048a3;
+  --mu-h4: #0048a3;
+  --mu-h5: #0048a3;
+  --mu-h6: #0048a3;
+  --list-marker-color: #0048a3;
   --mu-green-1: #20cf20;
   --mu-green-2: #20a320;
   --mu-icon: #5382d3;
@@ -1362,7 +1363,7 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-icon-focused: #00a3ff;
   --mu-icon-statusbar-menu: #0072d3;
   --mu-titlebar-text: #f1f1f1;
-  --mu-vault-title: #a300cf;
+  --mu-vault-title: #7f00a3;
   --mu-folder-text-color: #0048a3;
   --mu-link: #a200cf;
   --mu-link-hover: #c300cf;
@@ -1370,13 +1371,13 @@ body:not(.is-mobile) button:not(.mod-cta, .clickable-icon.view-action, .clickabl
   --mu-external-link-hover: #00a3ff;
   --mu-code-attribute: #e50000;
   --mu-input-bg-color: #fff;
-  --mu-label-h1: #bf72d8;
-  --mu-label-h2: #bf72d8;
-  --mu-label-h3: #bf72d8;
-  --mu-label-h4: #bf72d8;
-  --mu-label-h5: #bf72d8;
-  --mu-label-h6: #bf72d8;
-  --mu-caret-color: #a300cf;
+  --mu-label-h1: #a300cf;
+  --mu-label-h2: #a300cf;
+  --mu-label-h3: #a300cf;
+  --mu-label-h4: #a300cf;
+  --mu-label-h5: #a300cf;
+  --mu-label-h6: #a300cf;
+  --mu-caret-color: #0048a3;
   /* Code */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smaller);
@@ -4434,16 +4435,8 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #cdbeff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-text-title: #a300cf;
   --mu-titlebar-background: #250035;
-  --mu-vault-title: #a300cf;
   --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-dark-sidebar-color: #250035;
   --mu-table-th-background: #330048;
 }
@@ -4453,9 +4446,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #250035;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #160020;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #210030;
-  --mu-vault-title: #bf48ff;
   --mu-table-th-background: #110022;
 }
 
@@ -4466,12 +4457,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
   --mu-titlebar-background: #004040;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-dark-sidebar-color: #002121;
   --mu-table-th-background: #004040;
 }
@@ -4497,12 +4482,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-titlebar-background: #3a3f2c;
   --mu-vault-title: #727d57;
   --code-punctuation: #727d57;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-dark-sidebar-color: #1e2117;
   --mu-table-th-background: #3a3f2c;
 }
@@ -4533,12 +4512,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #828282;
   --code-background: #f1f1f1;
   --code-punctuation: #979797;
-  --mu-h1: #0072d3;
-  --mu-h2: #0072d3;
-  --mu-h3: #0072d3;
-  --mu-h4: #0072d3;
-  --mu-h5: #0072d3;
-  --mu-h6: #0072d3;
   --mu-dark-sidebar-color: #181818;
   --mu-table-th-background: #282828;
 }
@@ -4561,7 +4534,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-light.magicuser-room-lamp-theme {
   --mu-background-color-1: #f9edc6;
   --mu-background-color-2: #f7e8b3;
-  --mu-caret-color: #d3148d;
+  --mu-caret-color: #0048a3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
   --mu-folder-text-color: #0048a3;
@@ -4569,12 +4542,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-titlebar-background: #461828;
   --mu-vault-title: #ac3f5d;
   --code-punctuation: #ac3f5d;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-dark-sidebar-color: #3f1423;
   --mu-table-th-background: hsl(339, 52%, 8%);
 }
@@ -4603,20 +4570,12 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-light.magicuser-moon-theme {
   --mu-background-color-1: #d2e1f1;
   --mu-background-color-2: #c3d6ea;
-  --mu-caret-color: #d300ff;
+  --mu-caret-color: #0048a3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
   --mu-folder-text-color: #0048a3;
-  --mu-text-title: #a300cf;
   --mu-titlebar-background: #001a33;
-  --mu-vault-title: #a300cf;
   --code-punctuation: #a300a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-text-selection: #bf48ff33;
   --mu-suggestion-color: #0072d3;
   --mu-dark-sidebar-color: #000b15;
@@ -4630,9 +4589,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-divider-color: #dfc1c100;
   --mu-input-bg-color: #001836;
   --mu-folder-text-color: #729fd8;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #001a33;
-  --mu-vault-title: #bf48ff;
   --code-punctuation: #a300a3;
   --mu-h1: #729fd8;
   --mu-h2: #729fd8;
@@ -4657,12 +4614,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-vault-title: #58586f;
   --code-punctuation: #797995;
   --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-suggestion-color: #0072d3;
   --mu-text-selection: #bf48ff48;
   --mu-dark-sidebar-color: #121216;
@@ -4697,41 +4648,31 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
 .theme-light.magicuser-creativity-theme {
   --mu-background-color-1: #f1dbe1;
   --mu-background-color-2: #edd4da;
-  --mu-caret-color: #f500b4;
+  --mu-caret-color: #0048a3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #fff;
-  --mu-text-title: #a348a3;
   --mu-titlebar-background: #3d1f33;
-  --mu-vault-title: #a348a3;
   --code-punctuation: #cf22cf;
   --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-suggestion-color: #0072d3;
   --mu-text-selection: #0088ff53;
   --mu-dark-sidebar-color: #25131f;
-  --mu-icon-focused: #cf22cf;
+  --mu-icon-focused: #d4af37;
   --mu-table-th-background: #3d1f33;
 }
 
 .theme-dark.magicuser-creativity-theme {
   --mu-background-color-1: #291522;
   --mu-background-color-2: #25131f;
-  --mu-caret-color: #ff48cf;
+  --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1b0e17;
-  --mu-text-title: #a348a3;
   --mu-titlebar-background: #3d1f33;
-  --mu-vault-title: #a348a3;
   --code-punctuation: #cf72cf;
   --mu-suggestion-color: #00a3ff;
   --mu-folder-text-color: #72b1ff;
   --mu-text-selection: #0088ff7f;
-  --mu-icon-focused: #cf22cf;
+  --mu-icon-focused: #d4af37;
   --mu-table-th-background: #3d1f33;
 }
 
@@ -4890,12 +4831,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #f1f1f1;
   --code-punctuation: var(--amulet-title-color);
   --mu-folder-text-color: #0048a3;
-  --mu-h1: #0048a3;
-  --mu-h2: #0048a3;
-  --mu-h3: #0048a3;
-  --mu-h4: #0048a3;
-  --mu-h5: #0048a3;
-  --mu-h6: #0048a3;
   --mu-suggestion-color: #0072d3;
   --mu-text-selection: #0088ff53;
   --mu-dark-sidebar-color: hsl(var(--mu-amulet-hue), var(--mu-amulet-sat), 8%);
@@ -4922,12 +4857,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-background: #000;
   --code-punctuation: var(--amulet-title-color);
   --mu-folder-text-color: #72b1ff;
-  --mu-h1: #00a3ff;
-  --mu-h2: #00a3ff;
-  --mu-h3: #00a3ff;
-  --mu-h4: #00a3ff;
-  --mu-h5: #00a3ff;
-  --mu-h6: #00a3ff;
   --mu-suggestion-color: #00cfff;
   --mu-text-selection: #0088ff53;
   --mu-icon: var(--amulet-icon-color);
@@ -5110,7 +5039,6 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --code-punctuation: #a300a3;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #f1f1f1;
-  --mu-text-title: #a300a3;
   --mu-titlebar-background: #1f1f1f;
   --code-background: #f1f1f1;
   --mu-folder-text-color: #0048a3;
@@ -5138,9 +5066,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
-  --mu-vault-title: #bf48ff;
   --code-background: #181818;
   --tab-text-color-focused-active-current: #00a3ff;
   --mu-icon-focused: #bf48ff;
@@ -5155,9 +5081,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #000;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
-  --mu-vault-title: #bf48ff;
   --mu-folder-text-color: #00cf95;
   --code-background: #000;
   --code-punctuation: hsl(164, 100%, 32%);
@@ -5185,9 +5109,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-background-color-2: #000;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
-  --mu-vault-title: #bf48ff;
   --code-background: #181818;
   --tab-text-color-focused-active-current: #00a3ff;
   --mu-suggestion-color: #00f188;
@@ -5202,9 +5124,7 @@ body:not(.mu-hide-heading-labels) .markdown-reading-view h6:hover::before {
   --mu-caret-color: #00cfff;
   --mu-divider-color: #00000000;
   --mu-input-bg-color: #1f1f1f;
-  --mu-text-title: #bf48ff;
   --mu-titlebar-background: #1f1f1f;
-  --mu-vault-title: #bf48ff;
   --code-background: #181818;
   --mu-h1: #f1f100;
   --mu-h2: #f1f100;
@@ -8626,6 +8546,23 @@ body.is-mobile {
 
 }
 
+body:not(.is-mobile) .mod-left-split .workspace-leaf-content .nav-header .nav-buttons-container,
+body:not(.is-mobile) .mod-right-split .workspace-leaf-content .nav-header .nav-buttons-container {
+  justify-content: flex-start;
+}
+
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-left-split .workspace-tab-header.is-active,
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-right-split .workspace-tab-header.is-active,
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-left-split .workspace-tab-header.is-active:hover,
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-right-split .workspace-tab-header.is-active:hover {
+  background: var(--mu-icon-focused);
+}
+
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-left-split .workspace-tab-header.is-active svg,
+body:not(.is-mobile, .mu-disable-ws-highlight-active-icons) .mod-right-split .workspace-tab-header.is-active svg {
+  color: #000;
+}
+
 /* Style Settings */
 /* @settings
 name: MagicUser theme
@@ -8717,9 +8654,14 @@ settings:
     -
         id: mu-ui-buttons-bg
         title: Hide button toolbars background (desktop)
-        description: Hides the background of ribbon and sidebar button toolbars (desktop version).
+        description: Hide the background of ribbon and sidebar button toolbars (desktop version).
         type: class-toggle
         addCommand: true
+    -
+        id: mu-disable-ws-highlight-active-icons
+        title: Disable active workspace icon background highlight (desktop)
+        description: Remove the special background highlight effect from active workspace icons (desktop version).
+        type: class-toggle
     - 
         id: mu-amulet-hue
         title: Chroma Amulet - color
@@ -8826,7 +8768,7 @@ settings:
         description: Caret / text cursor color.
         format: hex
         opacity: false
-        default-light: '#a300cf'
+        default-light: '#0048a3'
         default-dark: '#00cfff'
     -
         id: mu-hide-folders
@@ -9857,8 +9799,8 @@ settings:
         description: Filename inline title color.
         format: hex
         opacity: false
-        default-light: '#a300cf'
-        default-dark: '#af47eb'
+        default-light: '#7f00a3'
+        default-dark: '#c375f0'
     - 
         id: mu-inline-title-font-size-value
         title: Inline title font size
@@ -10456,8 +10398,8 @@ settings:
         description: Sidebar vault title color.
         format: hex
         opacity: false
-        default-light: '#a300cf'
-        default-dark: '#a273d8'
+        default-light: '#7f00a3'
+        default-dark: '#c375f0'
     -
         id: mu-sidebar-top-buttons-container-bg-color
         title: Sidebar top buttons container background color
@@ -11103,7 +11045,7 @@ settings:
         description: Reading mode - H1 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: mu-label-h2
@@ -11112,7 +11054,7 @@ settings:
         description: Reading mode - H2 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: mu-label-h3
@@ -11121,7 +11063,7 @@ settings:
         description: Reading mode - H3 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: mu-label-h4
@@ -11130,7 +11072,7 @@ settings:
         description: Reading mode - H4 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: mu-label-h5
@@ -11139,7 +11081,7 @@ settings:
         description: Reading mode - H5 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: mu-label-h6
@@ -11148,7 +11090,7 @@ settings:
         description: Reading mode - H6 label color.
         format: hex
         opacity: false
-        default-light: '#bf72d8'
+        default-light: 'a300cf'
         default-dark: '#a35fbf'
     -
         id: magicuser-theme-flashcards
