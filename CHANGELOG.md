@@ -2,7 +2,7 @@
 
 ## [25.0.2] 2026-08-31
 
-- Fixed: Default values of default colors of headings H1-H6 (light theme) -> Style Settings.
+- Fixed: Default values of headings H1-H6 colors (light theme) -> Style Settings.
 
 ## [25.0.0] 2026-08-31
 
