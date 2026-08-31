@@ -24,12 +24,12 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 ## Built-in Themes 
 
 > No extra plugin required.
-> 
-**MagicUser (Default) - Light Theme**
+
+### MagicUser (Default) - Light Theme
 
 ![MagicUser Light Theme](images/magicuser_default_light_theme_01.png)
 
-**MagicUser (Default) - Dark Theme**
+### MagicUser (Default) - Dark Theme
 
 ![MagicUser Dark Theme](images/magicuser_default_dark_theme_01.png)
 
