@@ -1,5 +1,9 @@
 # Changelog
 
+## [25.0.2] 2026-08-31
+
+- Fixed: Default values of default colors of headings H1-H6 (light theme) -> Style Settings.
+
 ## [25.0.0] 2026-08-31
 
 - Added a new Workspace **active icons highlight background**. This can be disabled via Style Settings (found in Preset themes and the quick start menu to revert to the usual view).
