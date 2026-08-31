@@ -37,7 +37,6 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 > [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) community plugin required.
 
-
 ![MagicUser Theme - Style Settings menu](images/magicuser_style_settings_menu_01.png)
 
 ## Preset Themes
