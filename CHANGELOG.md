@@ -1,5 +1,11 @@
 # Changelog
 
+## [25.0.0] 2026-08-31
+
+- Added a new Workspace **active icons highlight background**. This can be disabled via Style Settings (found in Preset themes and the quick start menu to revert to the usual view).
+
+- **Multiple theme color adjustments across all preset themes** to significantly improve contrast and readability. Some colors are totally different than the usual ones of the preset.
+
 ## [24.0.0] 2026-08-17
 
 - New **UI button toolbars background** (ribbon and sidebars). You can disable the new feature (Style Settings -> Preset themes and quick start menu -> Hide button toolbars background). 
