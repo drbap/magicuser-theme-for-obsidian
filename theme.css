@@ -8896,7 +8896,7 @@ settings:
         description: Heading 1 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'
     -
         id: h2-font
@@ -8926,7 +8926,7 @@ settings:
         description: Heading 2 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'
     -
         id: h3-font
@@ -8956,7 +8956,7 @@ settings:
         description: Heading 3 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'
     -
         id: h4-font
@@ -8986,7 +8986,7 @@ settings:
         description: Heading 4 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'
     -
         id: h5-font
@@ -9016,7 +9016,7 @@ settings:
         description: Heading 5 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'
     -
         id: h6-font
@@ -9046,7 +9046,7 @@ settings:
         description: Heading 6 color.
         format: hex
         opacity: false
-        default-light: '#0072d3'
+        default-light: '#00a348'
         default-dark: '#00a3ff'   
     -
         id: magicuser-theme-text
