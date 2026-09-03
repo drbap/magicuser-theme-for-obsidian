@@ -146,6 +146,24 @@ Advanced Color and Contrast Controls (Style Settings menu): Main theme colors no
 - Headings -> Saturation (for normal and neon modes).
 - Text Lightness for Light and Dark modes (independent controllers).
 
+## Global Font Mode
+
+![MagicUser - Global Font Mode](images/magicuser_global_font_mode_01.png)
+
+In the **MagicUser theme**, the **Global Font Mode** is a specialized theme feature designed to override the default application-wide typography boundaries.
+
+![MagicUser - Global Font Mode](images/magicuser_global_font_mode_02.png)
+
+- **Application UI & Editor Overrides**: Instead of restricting font choices strictly to Obsidian's native handling (which often separates UI elements from text editors), Global Font Mode forces your chosen typeface across both the user interface and the editing environment simultaneously.
+
+- **Advanced Typography Support:** It is engineered to respect custom **stylistic sets** and fine-grained **letter spacing** adjustments configured within the theme's parameters (Style Settings).
+
+- **Independent Font Sizing:** It allows you to scale global font dimensions independently of Obsidian's core font selection.
+
+![MagicUser - Global Font Mode](images/magicuser_global_font_mode_03.png)
+
+- **Command Palette Integration:** You can dynamically toggle the global font mode on or off instantly via the **Command Palette** (using the _Toggle Global font mode_ command), letting you shift between your default layout and your custom style setup instantly without digging through menus.
+
 ## MagicUser Page Backgrounds (MUP)
 
 ![MagicUser theme page backgrounds](images/magicuser_mup_backgrounds.png)
