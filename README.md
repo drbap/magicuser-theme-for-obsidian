@@ -8,8 +8,6 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 **Rapid customization**: Use the `Preset themes and quick start` Style Settings menu to skip the deep customization and achieve a polished, personalized workflow in minutes.
 
-*If you enjoy the MagicUser theme, please consider giving it a 🌟 star on GitHub. It's free, helps others discover the theme, and supports ongoing development.*
-
 
 ![MagicUser theme for Obsidian - Creativity preset](images/magicuser_creativity_dark_theme_01.png)
 
