@@ -1,5 +1,21 @@
 # Changelog
 
+## [26.0.0] 2026-09-05
+
+- Style Settings: **Hidden default values** to increase readability and optimize screen display. To return to default values just click on the restore button.
+
+- Optimized selectors to reduce the `!important` count (some features require the !important to work consistently and will be preserved). More than 50 optimizations.
+
+- _Preserved as a CSS Snippet_ -> **Dataview Tables to Cards** feature removed and preserved as a CSS Snippet (check this repo folder: `/snippets`). 
+  - **Snippet**: Just add the file to the snippets folder: `magicuser_dataview_tables_to_cards.css`.
+
+- _Preserved as a CSS Snippet_ -> **MagicUser Underline Effects**:
+  - Hover underline.
+  - Normal underline.
+  - Hidden text underline.
+  - **Snippet**: `magicuser_underline-effects.css`
+  - You can customize it using the Style Settings usual options exactly like the when this was a built-in feature of the MagicUser theme.
+
 ## [25.0.2] 2026-08-31
 
 - Fixed: Default values of headings H1-H6 colors (light theme) -> Style Settings.
