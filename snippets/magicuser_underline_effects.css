@@ -1,0 +1,364 @@
+/* =====================================================
+MagicUser Theme by Bernardo Pires (@drbap)
+
+Snippet: Underline Effects
+
+This is part of the theme named MagicUser for Obsidian. 
+Designed to work with the MagicUser theme.
+
+GitHub Repository:
+https://github.com/drbap/magicuser-theme-for-obsidian
+
+MIT License
+Copyright (c) 2023-2026 Bernardo Pires (@drbap)
+*/
+
+body {
+  --mu-underline-text-color-rgb: 255, 40, 72;
+
+  --hidden-text-underline-background-color: #ffff0088;
+  --hidden-text-underline-foreground-color: var(--text-normal);
+
+  --mu-hover-underline-color: #ff0000cf;
+  --mu-hover-underline-style: solid;
+  --mu-hover-underline-thickness-value: 2;
+  --mu-hover-underline-thickness: calc(var(--mu-hover-underline-thickness-value)*1px);
+  --mu-hover-underline-offset-value: 2;
+  --mu-hover-underline-offset: calc(var(--mu-hover-underline-offset-value)*1px);
+
+}
+
+/* Underlined and highlighted text */
+.view-content u {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-color: rgb(var(--mu-underline-text-color-rgb));
+  color: var(--text-normal);
+}
+
+.view-content u:hover {
+  background-color: rgba(var(--mu-underline-text-color-rgb), .5);
+  transition: all .5s;
+}
+
+.view-content u.blue {
+  text-decoration-color: #00a3ff;
+}
+
+.view-content u.blue:hover {
+  background-color: #00a3ff64;
+  transition: all .5s;
+}
+
+.view-content u.green {
+  text-decoration-color: #48f148;
+}
+
+.view-content u.green:hover {
+  background-color: #48f14888;
+  transition: all .5s;
+}
+
+.view-content u.orange {
+  text-decoration-color: #ff7f00;
+}
+
+.view-content u.orange:hover {
+  background-color: #ff7f0088;
+  transition: all .5s;
+}
+
+.view-content u.red {
+  text-decoration-color: #ff2848;
+}
+
+.view-content u.red:hover {
+  background-color: #ff284864;
+  transition: all .5s;
+}
+
+.view-content u.yellow {
+  text-decoration-color: #ffd700;
+}
+
+.view-content u.yellow:hover {
+  background-color: #fff10088;
+  transition: all .5s;
+}
+
+.view-content u.purple {
+  text-decoration-color: #cf48ff;
+}
+
+.view-content u.purple:hover {
+  background-color: #cf48ff88;
+  transition: all .5s;
+}
+
+.view-content u.pink {
+  text-decoration-color: #ff48a3;
+}
+
+.view-content u.pink:hover {
+  background-color: #ff48a388;
+  transition: all .5s;
+}
+
+/* Hidden text underline */
+.view-content u.hide,
+.view-content u.hide-c {
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: transparent;
+  transition: none;
+}
+
+.view-content u.hide:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
+.view-content u.hide:hover {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.view-content u.hide-c:hover * {
+  color: transparent;
+}
+
+.view-content u.hide-c:hover {
+  background-color: var(--hidden-text-underline-background-color);
+  color: transparent;
+  cursor: help;
+}
+
+.view-content u.hide-c:active * {
+  color: var(--hidden-text-underline-foreground-color);
+}
+
+.view-content u.hide-c:active {
+  color: var(--hidden-text-underline-foreground-color);
+  text-decoration: none;
+  cursor: default;
+}
+
+/* Hide on reading mode only */
+
+.view-content u.hide-r,
+.view-content u.hide-rc {
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: var(--hidden-text-underline-foreground-color);
+  transition: none;
+}
+
+.view-content u.hide-r:hover,
+.view-content u.hide-rc:hover {
+  background-color: var(--hidden-text-underline-background-color);
+}
+
+.markdown-reading-view u.hide-rc *,
+.markdown-reading-view u.hide-r *,
+.markdown-reading-view u.hide-rc,
+.markdown-reading-view u.hide-r {
+  color: transparent;
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-r:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-r:hover {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-rc:hover * {
+  color: transparent;
+  cursor: help;
+}
+
+.markdown-reading-view u.hide-rc:hover {
+  background-color: var(--hidden-text-underline-background-color);
+  color: transparent;
+  cursor: help;
+}
+
+.markdown-reading-view u.hide-rc:active * {
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-rc:active {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+/* Underline hidden text full width - same line length */
+
+.view-content u.hide-w {
+  display: block;
+  padding: 0 4px;
+  text-decoration-color: var(--mu-text-1);
+  font-weight: var(--font-semibold);
+  color: var(--hidden-text-underline-foreground-color);
+  transition: none;
+  text-decoration: none;
+  border-bottom: 2px solid var(--mu-text-1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.view-content u.hide-w:hover {
+  background-color: var(--hidden-text-underline-background-color);
+}
+
+.markdown-reading-view u.hide-w *,
+.markdown-reading-view u.hide-w {
+  color: transparent;
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-w:hover * {
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+.markdown-reading-view u.hide-w:hover {
+  text-decoration: none;
+  background-color: var(--hidden-text-underline-background-color);
+  color: var(--hidden-text-underline-foreground-color);
+  cursor: default;
+}
+
+/* Reading hover underline */
+body.mu-hover-underline .markdown-reading-view .markdown-preview-sizer *:not(.mod-header, .inline-title):hover,
+body.mu-hover-underline .markdown-source-view.mod-cm6.is-readable-line-width .cm-content *:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--mu-hover-underline-color) !important;
+  text-decoration-skip-ink: none;
+  text-decoration-style: var(--mu-hover-underline-style) !important;
+  text-decoration-thickness: var(--mu-hover-underline-thickness) !important;
+  text-underline-offset: var(--mu-hover-underline-offset) !important;
+}
+
+.mu-hover-underline-style-dashed {
+  --mu-hover-underline-style: dashed;
+}
+
+.mu-hover-underline-style-dotted {
+  --mu-hover-underline-style: dotted;
+}
+
+.mu-hover-underline-style-double {
+  --mu-hover-underline-style: double;
+}
+
+/* Style Settings */
+/* @settings
+name: MagicUser theme - Underline Effects
+id: magicuser-theme-for-obsidian-underline-effects
+settings:
+    -
+        id: mu-underline-text-color-hex
+        title: Underline text color
+        type: variable-themed-color
+        description: Color used to underline text.
+        format: hex
+        opacity: false
+        alt-format:
+            -
+                id: mu-underline-text-color-rgb
+                format: rgb-values
+        default-light: '#ff2848'
+        default-dark: '#ff2848'
+    -
+        id: hidden-text-underline-background-color
+        title: Hidden text underline background color
+        type: variable-themed-color
+        description: Background color (highlight) of the hidden text underline.
+        format: hex
+        opacity: true
+        default-light: '#ffff0088'
+        default-dark: '#ffff0088'
+    -
+        id: hidden-text-underline-foreground-color
+        title: Hidden text underline foreground color
+        type: variable-themed-color
+        description: Foreground color of the hidden text underline.
+        format: hex
+        opacity: true
+        default-light: '#000'
+        default-dark: '#f1f1f1'
+    -
+        id: magicuser-theme-hover-underline
+        title: Hover underline
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: mu-hover-underline
+        title: Hover underline
+        description: Turn on hover underline (live preview, source and reading modes).
+        type: class-toggle
+        addCommand: true
+    -
+        id: mu-hover-underline-style
+        title: Hover underline style
+        type: class-select
+        description: Select hover underline style.
+        allowEmpty: false
+        default: none
+        options:
+            - 
+                label: Default
+                value: none
+            - 
+                label: Dashed
+                value: mu-hover-underline-style-dashed
+            - 
+                label: Dotted
+                value: mu-hover-underline-style-dotted
+            - 
+                label: Double
+                value: mu-hover-underline-style-double
+    - 
+        id: mu-hover-underline-color
+        title: Hover underline color
+        type: variable-themed-color
+        description: Select hover underline color.
+        format: hex
+        opacity: true
+        default-light: '#ff0000cf'
+        default-dark: '#ff0000cf'
+    - 
+        id: mu-hover-underline-thickness-value
+        title: Hover underline thickness
+        description: Select hover underline thickness.
+        type: variable-number-slider
+        default: 2
+        min: 1
+        max: 5
+        step: 1
+    -
+        id: mu-hover-underline-offset-value
+        title: Gap between text and hover underline
+        description: Select the gap between text and hover underline.
+        type: variable-number-slider
+        default: 2
+        min: 0
+        max: 5
+        step: 1
+
+*/
