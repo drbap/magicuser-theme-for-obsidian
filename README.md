@@ -321,6 +321,11 @@ This feature dynamically **adjusts the font size** of the current line for enhan
 
 ## Hover Underline
 
+> [!important]
+> **Required Snippet**: `magicuser_underline_effects.css`
+> 
+> Please check the `/snippets` folder in this repository to download it.
+
 ![Hover Underline](images/magicuser_theme_hover_underline.gif)
 
 **Hover underline** (live preview, source and reading modes).
@@ -965,6 +970,11 @@ This is the text of your note <i class="muc"><span>This is your inline comment.<
 
 ## Underlined Text Colors
 
+> [!important]
+> **Required Snippet**: `magicuser_underline_effects.css`
+> 
+> Please check the `/snippets` folder in this repository to download it.
+
 ![Underlined text](images/magicuser_theme_underlined_text.gif)
 
 The **default underline color** is **red**, but you can change it using the Style Settings plugin. You can also add 7 classes to make the text **underlined**. When you hover the underlined text it will become highlighted (underlined too). Please check the syntax below.
@@ -997,6 +1007,11 @@ Text <u class="pink">pink underline</u>.
 </details>
 
 ## Hidden Text Underline
+
+> [!important]
+> **Required Snippet**: `magicuser_underline_effects.css`
+> 
+> Please check the `/snippets` folder in this repository to download it.
 
 ![Hidden text underline](images/magicuser_theme_hidden_text_underline.gif)
 
@@ -1130,6 +1145,11 @@ To achieve the desired table layout for specific notes, you can apply the above 
 </details>
 
 ## Dataview Tables to Cards
+
+> [!important]
+> **Required Snippet**: `magicuser_dataview_tables_to_cards.css`
+> 
+> Please check the `/snippets` folder in this repository to download it.
 
 ![Dataview tables to cards](images/magicuser_theme_dataviewtables_to_cards.gif)
 
