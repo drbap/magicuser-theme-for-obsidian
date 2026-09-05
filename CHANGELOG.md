@@ -14,7 +14,7 @@
   - Normal underline.
   - Hidden text underline.
   - **Snippet**: `magicuser_underline_effects.css`
-  - You can customize the effects using the Style Settings usual options exactly like when these were built-in features of the MagicUser theme.
+  - You can customize the effects using the standard Style Settings options, just like when they were built-in MagicUser features.
 
 ## [25.0.2] 2026-08-31
 
