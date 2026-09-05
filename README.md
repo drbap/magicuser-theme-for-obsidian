@@ -503,11 +503,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 
 ![Custom Checkbox Icons](images/magicuser_checkboxes_icons.png)
 
-<details>
-<summary>✨ <b>MagicUser Checkboxes</b> (Expand to see more details)</summary>
-
----
-
 ### Checkbox Icons (Extra 1)
 
 ![Custom Checkbox Icons - Extra 1](images/magicuser_checkboxes_icons_extra_1.png)
@@ -517,10 +512,6 @@ To show the left ribbon, place your cursor on the left side of the screen, it wi
 ![Custom Checkbox Icons - Extra 2](images/magicuser_checkboxes_icons_extra_2.png)
 
 ![Custom Checkbox Icons - Extra 3](images/magicuser_checkboxes_icons_extra_3.png)
-
----
-
-</details>
 
 ## Checkbox Shape
 
