@@ -11,7 +11,13 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 ![MagicUser theme for Obsidian - Creativity preset](images/magicuser_creativity_dark_theme_01.png)
 
+![MagicUser theme for Obsidian - Accent preset](images/magicuser_accent_01.png)
+
 ![MagicUser theme for Obsidian](images/magicuser_gradient_dark_01.png)
+
+![MagicUser theme for Obsidian - Night preset - Cards UI](images/magicuser_gradient_dark_02.png)
+
+
 
 ## Installation
 
@@ -32,6 +38,10 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 ### MagicUser (Default) - Dark Theme
 
 ![MagicUser Dark Theme](images/magicuser_default_dark_theme_01.png)
+
+####  MagicUser (Default) - Dark Theme with Neon Mode ON
+
+![MagicUser Dark Theme - Neon mode](images/magicuser_neon_mode_01.png)
 
 ## Style Settings - Theme Options
 
