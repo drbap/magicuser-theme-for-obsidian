@@ -11,8 +11,6 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 ![MagicUser theme for Obsidian - Creativity preset](images/magicuser_creativity_dark_theme_01.png)
 
-![MagicUser theme for Obsidian - Accent preset](images/magicuser_accent_01.png)
-
 ![MagicUser theme for Obsidian](images/magicuser_gradient_dark_01.png)
 
 ![MagicUser theme for Obsidian - Night preset - Cards UI](images/magicuser_gradient_dark_02.png)
@@ -36,10 +34,6 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 ### MagicUser (Default) - Dark Theme
 
 ![MagicUser Dark Theme](images/magicuser_default_dark_theme_01.png)
-
-####  MagicUser (Default) - Dark Theme with Neon Mode On
-
-![MagicUser Dark Theme - Neon mode](images/magicuser_neon_mode_01.png)
 
 ## Style Settings - Theme Options
 
@@ -127,9 +121,11 @@ How it Works:
 
 ### MagicUser Accent Theme
 
-![MagicUser Accent -light modes](images/magicuser_theme_accent_dark_modes.png)
+![MagicUser theme for Obsidian - Accent preset](images/magicuser_accent_01.png)
 
-![MagicUser Accent - dark modes](images/magicuser_theme_accent_light_mode.png)
+![MagicUser Accent - dark modes](images/magicuser_theme_accent_dark_modes.png)
+
+![MagicUser Accent - light modes](images/magicuser_theme_accent_light_mode.png)
 
 The **MagicUser Accent** theme is also a special preset that you can use to create multiple color themes.
 
@@ -359,7 +355,7 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 
 ## Neon Mode
 
-![Neon mode](images/magicuser_neon_mode.png)
+![Neon mode](images/magicuser_neon_mode_01.png)
 
 ## Neon Mode Custom Headings Colors
 
