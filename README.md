@@ -17,8 +17,6 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 ![MagicUser theme for Obsidian - Night preset - Cards UI](images/magicuser_gradient_dark_02.png)
 
-
-
 ## Installation
 
 1. Open Obsidian **Settings** -> select **Appearance**
@@ -39,7 +37,7 @@ In conjunction with the **Style Settings** community plugin, **MagicUser** offer
 
 ![MagicUser Dark Theme](images/magicuser_default_dark_theme_01.png)
 
-####  MagicUser (Default) - Dark Theme with Neon Mode ON
+####  MagicUser (Default) - Dark Theme with Neon Mode On
 
 ![MagicUser Dark Theme - Neon mode](images/magicuser_neon_mode_01.png)
 
