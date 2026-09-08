@@ -1,5 +1,41 @@
 # Changelog
 
+## [27.0.0] 2026-09-08
+
+- Fully compatible with Obsidian 1.14.0.
+
+- **Preset BG themes dark and light adjustments** for a more consistent look.
+
+- **MagicUser Concentration** theme adjustments.
+
+- **Outline UI mode (sidebars)** can be triggered using the Command Palette. 
+
+- **Improved search sidebar results** contrast and hover (dropdown, hover and results count).
+
+- **Improved Outline Neon mode**.
+
+- **Tables and Callout tables refactored** (including testing all preset tables -> compatible with version 1.14.x).
+
+- **Colored tags adjustments**.
+
+- **Popover width** increased to 640px (popover preview).
+
+- **Improved footnotes** (new color for light and dark modes with WCAG AA and/or AAA - better contrast). You can also select the color using Style Settings.
+
+- Code refactor -> many features. Reduced **> 140** `!important` uses to **0 (zero)** (scorecard -> Community Site).
+
+- **Removed**:
+  - *Dark sidebar* in light mode.
+
+  - MagicUser Flashcards -> promoted to CSS snippet: `magicuser_flashcards.css` (check snippets folder).
+
+  - `tcw` and similar css helper classes -> promoted to CSS snippet: `magicuser_helper_cssclasses_1.css`
+
+  - Command Palette option to activate Numbered rainbow folders (**functionality is still working** -> activate using the Style Settings specific menu).
+
+- **Fixed**:
+  - Nested file title colors in automatic rainbow folders (Obsidian >= 1.13.x -> working as expected in version 1.14.0 too). Also fixed file format indicators (text color).
+
 ## [26.0.0] 2026-09-05
 
 - Style Settings: **Hidden default values** to increase readability and optimize screen display. To return to default values just click on the restore button.
