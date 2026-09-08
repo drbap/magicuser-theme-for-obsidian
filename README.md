@@ -347,12 +347,6 @@ You can customize the **indent guides colors** using the Style Settings plugin (
 - Style Settings: select sidebar open folder area **background color**.
 - Style Settings: **hide** sidebar open folder area.
   
-## Dark Sidebar (Light Mode)
-
-![Dark sidebar - light mode](images/magicuser_obsidian_themes_sidebar.png)
-
-- Style Settings: Enable dark sidebar in light mode (compatible with preset themes)
-
 ## Neon Mode
 
 ![Neon mode](images/magicuser_neon_mode_01.png)
