@@ -757,6 +757,11 @@ To align right, use `|right`.
 
 ### Flashcard Callouts
 
+> [!important]
+> **Required Snippet**: `magicuser_flashcards.css`
+> 
+> Please check the `/snippets` folder in this repository to download it.
+
 ![MagicUser flashcards - gif](images/magicuser_flashcards_001.gif)
 
 - Use flashcards to practice **active recall** and track your study progress. You can create **individual flashcards** or organize them into **groups** for specific subjects.
