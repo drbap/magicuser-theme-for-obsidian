@@ -1185,7 +1185,7 @@ cssclasses:
 
 ![MagicUser theme footnotes](images/magicuser_theme_footnotes.png)
 
-- You can customize the color of the footnotes (Style Settings). The default color is orange (light/dark modes).
+- You can customize the color of the footnotes (Style Settings). The default color is purple (light/dark modes).
 
 ## Mermaid
 
