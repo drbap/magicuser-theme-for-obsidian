@@ -1,0 +1,55 @@
+/* =====================================================
+MagicUser Theme by Bernardo Pires (@drbap)
+
+Snippet: Helper CSS  Classes 1
+
+This is part of the theme named MagicUser for Obsidian. 
+Designed to work with the MagicUser theme.
+
+GitHub Repository:
+https://github.com/drbap/magicuser-theme-for-obsidian
+
+MIT License
+Copyright (c) 2023-2026 Bernardo Pires (@drbap)
+*/
+
+.cw100+.markdown-reading-view .markdown-preview-sizer,
+.tcw100+.markdown-reading-view .markdown-preview-sizer,
+.tw100+.markdown-reading-view .markdown-preview-sizer {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.tw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(table) {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.tcw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(table, .callout) {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.cw100+.markdown-reading-view .markdown-preview-sizer>div>*:not(.callout) {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--file-line-width);
+  max-width: var(--file-line-width);
+}
+
+.tcw100+.markdown-preview-sizer>div>table,
+.tw100+.markdown-preview-sizer>div>table {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.tcw100 .block-language-dataview.node-insert-event,
+.tw100 .block-language-dataview.node-insert-event {
+  width: 100% !important;
+  max-width: 100% !important;
+}
