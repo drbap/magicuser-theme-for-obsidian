@@ -144,11 +144,11 @@ Advanced Color and Contrast Controls (Style Settings menu): Main theme colors no
 
 **Menu options** (easy-to-use sliders for granular control):
 
-- Backgrounds -> Lightness.
-- Backgrounds -> Saturation (0 results in grayscale colors - icons will still be colored).
-- Backgrounds -> Hue (shifts the color of the preset theme).
-- Headings -> Saturation (for normal and neon modes).
-- Text Lightness for Light and Dark modes (independent controllers).
+- **Backgrounds** -> **Lightness**.
+- **Backgrounds** -> **Saturation** (0 results in grayscale colors - icons will still be colored).
+- **Backgrounds** -> **Hue** (shifts the color of the preset theme).
+- **Headings** -> **Saturation** (for normal and neon modes).
+- **Text** Lightness for Light and Dark modes (independent controllers).
 
 ## Global Font Mode
 
