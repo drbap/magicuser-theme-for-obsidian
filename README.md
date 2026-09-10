@@ -379,7 +379,7 @@ You can toggle **underline headings** using a shortcut or the Command Palette.
 
 ## Tags Customization - Colored Tags
 
-![Colored tags](images/magicuser_theme_colored_tags.gif)
+![MagicUser theme - Colored tags](images/magicuser_colored_tags_01.png)
 
 <details>
 <summary>✨ <b>MagicUser Tags</b> (Expand to see more details)</summary>
