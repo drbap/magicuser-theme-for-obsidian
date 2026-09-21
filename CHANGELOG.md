@@ -29,7 +29,7 @@
 
   - MagicUser Flashcards -> promoted to CSS snippet: `magicuser_flashcards.css` (check snippets folder).
 
-  - `tcw` and similar css helper classes -> promoted to CSS snippet: `magicuser_helper_cssclasses_1.css`
+  - `tcw` and similar css helper classes -> promoted to CSS snippet: `magicuser_helper_cssclasses_1.css`.
 
   - Command Palette option to activate Numbered rainbow folders (**functionality is still working** -> activate using the Style Settings specific menu).
 
